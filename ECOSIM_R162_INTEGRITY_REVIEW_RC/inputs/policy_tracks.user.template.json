@@ -1,0 +1,16 @@
+{
+  "schema":"ECOSIM_R145_POLICY_TRACKS_V1",
+  "tracks":[
+    {
+      "track_id":"manual_policy_unknown_example",
+      "mode":"USER_HYPOTHESIS",
+      "assumption_note":"Complete with explicit assumptions and source IDs. Not an official EcoSim result.",
+      "project_envelope_excludes_policy_cash_deltas":false,
+      "actions":[
+        {"decision_key":"example_tax_rate","category":"tax","year":1,"duration":"PERSISTENT_FROM_START",
+         "factor_relative_percent":null,"annual_cash_delta_ecu":null,
+         "assumption_note":"No measured relative factor or cash response: leave null. No game change authorized."}
+      ]
+    }
+  ]
+}

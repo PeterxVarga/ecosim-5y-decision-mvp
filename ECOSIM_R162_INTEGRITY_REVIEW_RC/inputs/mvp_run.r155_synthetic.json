@@ -1,0 +1,60 @@
+{
+  "schema": "ECOSIM_R149_OFFLINE_DECISION_MVP_V1",
+  "mode": "HISTORICAL_ILLUSTRATION",
+  "state_path": "inputs/official_state.template.json",
+  "start_year": 1,
+  "project_cap_assumption": 4,
+  "annual_envelopes": [
+    {
+      "id": "narrow_50k",
+      "limits_ecu": [
+        50000,
+        50000,
+        50000,
+        50000,
+        50000
+      ],
+      "source_class": "EXPLICIT_HYPOTHESIS",
+      "reason": "Illustration only, not available funds"
+    },
+    {
+      "id": "middle_100k",
+      "limits_ecu": [
+        100000,
+        100000,
+        100000,
+        100000,
+        100000
+      ],
+      "source_class": "EXPLICIT_HYPOTHESIS",
+      "reason": "Illustration only, not available funds"
+    },
+    {
+      "id": "wide_150k",
+      "limits_ecu": [
+        150000,
+        150000,
+        150000,
+        150000,
+        150000
+      ],
+      "source_class": "EXPLICIT_HYPOTHESIS",
+      "reason": "Illustration only, not available funds"
+    }
+  ],
+  "search": {
+    "beam": 6,
+    "shortlist": 12,
+    "options_per_envelope": 5,
+    "same_year_conditions": "CONDITIONAL"
+  },
+  "historical_read_only_snapshots_path": "inputs/historical_passive_summary_20261030.json",
+  "policy_tracks_path": "inputs/policy_tracks.synthetic.example.json",
+  "policy_envelope_index": 1,
+  "league_observations_path": "inputs/league_observations.template.json",
+  "paired_plan_observations_path": "inputs/paired_plan.template.json",
+  "forecast_audit_path": "inputs/forecast_audit.template.json",
+  "tax_scenarios_path": "inputs/tax_counterfactual_r153.synthetic.json",
+  "tax_revenue_scenarios_path": "inputs/tax_revenue_r154.synthetic.json",
+  "operating_scenarios_path": "inputs/operating_r155.synthetic.json"
+}

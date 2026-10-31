@@ -1,0 +1,115 @@
+{
+  "schema": "ECOSIM_R146_PASSIVE_RECONCILIATION_V1",
+  "snapshots": [
+    {
+      "id": "R94_P0_UI_FACT",
+      "kind": "FACT",
+      "team": "Jutalom a nap végén",
+      "market": "Z",
+      "period": 0,
+      "captured_at": "2026-10-30",
+      "source_evidence_id": "HISTORICAL_UI_R94_SUMMARY",
+      "displayed_total_index": 51.96,
+      "reconstructed_from_display_factors": 51.965516667,
+      "display_factor_rounding_residual": 0.00551667,
+      "index_close_at_two_decimal_precision": true,
+      "six_component_indices": {
+        "Gazdaság": {
+          "index": 61.85,
+          "weight": 0.25,
+          "weighted_component": 15.4625
+        },
+        "Környezet": {
+          "index": 46.678,
+          "weight": 0.2,
+          "weighted_component": 9.3356
+        },
+        "Kormányzás": {
+          "index": 71.846666667,
+          "weight": 0.15,
+          "weighted_component": 10.777
+        },
+        "Életkörülmények": {
+          "index": 51.3325,
+          "weight": 0.15,
+          "weighted_component": 7.699875
+        },
+        "Mobilitás": {
+          "index": 45.996666667,
+          "weight": 0.1,
+          "weighted_component": 4.599666667
+        },
+        "Emberek": {
+          "index": 27.2725,
+          "weight": 0.15,
+          "weighted_component": 4.090875
+        }
+      },
+      "finance_arithmetic": {
+        "revenue_ecu": 5449828,
+        "expense_ecu": 4487043,
+        "arithmetic_difference_ecu": 962785,
+        "not_certified_spendable_cash": true
+      },
+      "annual_transition_or_causal_effect_validated": false
+    },
+    {
+      "id": "R94_P1_UI_PLAN",
+      "kind": "PLAN",
+      "team": "Jutalom a nap végén",
+      "market": "Z",
+      "period": 1,
+      "captured_at": "2026-10-30",
+      "source_evidence_id": "HISTORICAL_UI_R94_SUMMARY",
+      "displayed_total_index": 52.48,
+      "reconstructed_from_display_factors": 52.483733333,
+      "display_factor_rounding_residual": 0.00373333,
+      "index_close_at_two_decimal_precision": true,
+      "six_component_indices": {
+        "Gazdaság": {
+          "index": 62.1475,
+          "weight": 0.25,
+          "weighted_component": 15.536875
+        },
+        "Környezet": {
+          "index": 46.522,
+          "weight": 0.2,
+          "weighted_component": 9.3044
+        },
+        "Kormányzás": {
+          "index": 72.073333333,
+          "weight": 0.15,
+          "weighted_component": 10.811
+        },
+        "Életkörülmények": {
+          "index": 52.45,
+          "weight": 0.15,
+          "weighted_component": 7.8675
+        },
+        "Mobilitás": {
+          "index": 47.013333333,
+          "weight": 0.1,
+          "weighted_component": 4.701333333
+        },
+        "Emberek": {
+          "index": 28.4175,
+          "weight": 0.15,
+          "weighted_component": 4.262625
+        }
+      },
+      "finance_arithmetic": {
+        "revenue_ecu": 5376812,
+        "expense_ecu": 4511224,
+        "arithmetic_difference_ecu": 865588,
+        "not_certified_spendable_cash": true
+      },
+      "annual_transition_or_causal_effect_validated": false
+    }
+  ],
+  "paired_same_period_plan_fact": [],
+  "p0_fact_vs_p1_plan_is_not_a_realized_transition": true,
+  "calibrated_five_year_transition": false,
+  "passive_read_only": true,
+  "gameplay_gate": "STOP",
+  "actual_forecast_accuracy": null
+}

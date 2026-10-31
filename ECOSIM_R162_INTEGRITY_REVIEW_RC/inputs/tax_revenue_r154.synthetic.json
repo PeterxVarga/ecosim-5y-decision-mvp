@@ -1,0 +1,58 @@
+{
+  "schema": "ECOSIM_R154_FIXED_BASE_TAX_REVENUE_V1",
+  "source_class": "SYNTHETIC_TEST_ONLY",
+  "assumption_note": "All market sensitivities, divisors and five future city-state tax bases here are invented and unverified; testing four source formulas, NOT calibrated EcoSim forecasts. All base vectors are held fixed across tax-rate choices and are not predicted from the strategy.",
+  "market": {
+    "vehicle": {
+      "revenue_sensitivity": 0.32,
+      "index_divisor": 200.0
+    },
+    "communal": {
+      "revenue_sensitivity": 0.22,
+      "index_divisor": 250.0
+    },
+    "building": {
+      "revenue_sensitivity": 0.18,
+      "index_divisor": 250.0
+    }
+  },
+  "annual_city_bases": [
+    {
+      "business_taxable_base_ecu": 18000000,
+      "car_count_index": 330.0,
+      "population": 12000,
+      "housing_unit_count": 3100,
+      "communal_tax_amount": 8.0
+    },
+    {
+      "business_taxable_base_ecu": 18200000,
+      "car_count_index": 335.0,
+      "population": 12200,
+      "housing_unit_count": 3160,
+      "communal_tax_amount": 8.0
+    },
+    {
+      "business_taxable_base_ecu": 18400000,
+      "car_count_index": 340.0,
+      "population": 12400,
+      "housing_unit_count": 3220,
+      "communal_tax_amount": 8.0
+    },
+    {
+      "business_taxable_base_ecu": 18600000,
+      "car_count_index": 345.0,
+      "population": 12600,
+      "housing_unit_count": 3280,
+      "communal_tax_amount": 8.0
+    },
+    {
+      "business_taxable_base_ecu": 18800000,
+      "car_count_index": 350.0,
+      "population": 12800,
+      "housing_unit_count": 3340,
+      "communal_tax_amount": 8.0
+    }
+  ],
+  "fixed_bases_across_paths": true,
+  "excluded_from_nonproject_cash": true
+}

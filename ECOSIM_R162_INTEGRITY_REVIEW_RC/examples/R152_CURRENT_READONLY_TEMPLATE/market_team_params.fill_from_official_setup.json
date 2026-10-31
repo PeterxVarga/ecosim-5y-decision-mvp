@@ -1,0 +1,14 @@
+{
+  "market": {
+    "maxProjectPerTurn": null,
+    "cap_source": null,
+    "short_loan_max": null,
+    "long_loan_max": null,
+    "loan_constraints_source": null,
+    "loan_rate_short": null,
+    "loan_rate_long": null,
+    "loan_rate_variable": null,
+    "smartcity_total_weights": null
+  },
+  "team": {}
+}

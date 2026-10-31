@@ -1,0 +1,49 @@
+{
+  "no_live_actions": true,
+  "full_game_model_validated": false,
+  "gameplay_decision": "STOP",
+  "data_groups_missing": {
+    "passive_identification": [
+      "provenance.captured_at_local",
+      "provenance.current_period",
+      "provenance.round",
+      "provenance.team",
+      "provenance.market",
+      "provenance.source_evidence_id"
+    ],
+    "cap_calibration": [
+      "market.maxProjectPerTurn",
+      "market.cap_source",
+      "team.project1_active_previous_period",
+      "team.already_selected_new_project_ids_current_period",
+      "team.new_selection_count_source"
+    ],
+    "finance_validation": [
+      "team.confirmed_spendable_cash_ecu_by_year[0]",
+      "team.confirmed_spendable_cash_source",
+      "team.committed_costs_ecu_by_year[0]",
+      "market.loan_constraints_source"
+    ],
+    "optional_approved_candidate_validation": [
+      "verification.game_preview_candidate",
+      "verification.game_preview_index",
+      "verification.game_preview_cashflow_ecu"
+    ]
+  },
+  "passive_data_capture_ready": false,
+  "actual_cap_fully_contextualized": false,
+  "finance_approval_not_possible_from_client_code": true,
+  "candidate_preview_optional_requires_separate_approval": true,
+  "candidate_preview_independently_verified": false,
+  "observed_league_only": {
+    "status": "UNKNOWN_NO_OFFICIAL_LEAGUE_SNAPSHOT"
+  },
+  "self_reported_observation_deltas_not_causal_proof": [],
+  "untrusted_or_incomplete_experiments": [],
+  "actual_market_cap": null,
+  "video_spoken_base_cap_hypothesis": 4,
+  "video_spoken_loan_rate_hypothesis": 0.12,
+  "video_matches_cap_if_known": null,
+  "project1_previous_period_bonus": "client predicate numeric previous project1 == 1; cannot infer from active flag alone",
+  "next_step": "Resolve passive market/team provenance first; financing approval and candidate preview are separate gates, not prerequisites to drafting a calibrated skeleton."
+}

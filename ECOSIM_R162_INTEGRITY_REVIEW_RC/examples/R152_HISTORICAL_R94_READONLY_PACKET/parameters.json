@@ -1,0 +1,12 @@
+{
+  "market": {
+    "smartcity_total_weights": {
+      "Gazdaság": 0.25,
+      "Környezet": 0.2,
+      "Kormányzás": 0.15,
+      "Életkörülmények": 0.15,
+      "Mobilitás": 0.1,
+      "Emberek": 0.15
+    }
+  }
+}

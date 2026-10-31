@@ -1,0 +1,259 @@
+{
+  "schema": "ECOSIM_R155_FORMULA_ANCHORS_V1",
+  "anchors": [
+    {
+      "name": "fee_burial",
+      "webpack_module": 5168,
+      "source_filename": "840.41fdc8e1.chunk.js",
+      "byte_span": [
+        45574,
+        45618
+      ],
+      "sha256": "9ab66912f852c57debd447ad2ff23d1216e6de9c076ecb19a8285b70c1c30fd1",
+      "full_source_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "not_server_authority": true
+    },
+    {
+      "name": "fee_parking",
+      "webpack_module": 5168,
+      "source_filename": "840.41fdc8e1.chunk.js",
+      "byte_span": [
+        45618,
+        45852
+      ],
+      "sha256": "568d06981d2c3e820f7a68b4ef7b7c8a040fd6af7897193274c5684cdc29e743",
+      "full_source_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "not_server_authority": true
+    },
+    {
+      "name": "fee_communal",
+      "webpack_module": 5168,
+      "source_filename": "840.41fdc8e1.chunk.js",
+      "byte_span": [
+        45852,
+        45898
+      ],
+      "sha256": "7cb7d0d666af048e660157578b7f2c267bfcc414ef311d39b78d90f95cb90396",
+      "full_source_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "not_server_authority": true
+    },
+    {
+      "name": "fee_services",
+      "webpack_module": 5168,
+      "source_filename": "840.41fdc8e1.chunk.js",
+      "byte_span": [
+        45898,
+        45944
+      ],
+      "sha256": "3deb04e5c7f498f90925d39342916a5482a1b8d401cf34e3625a862e5468c373",
+      "full_source_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "not_server_authority": true
+    },
+    {
+      "name": "fee_rental",
+      "webpack_module": 5168,
+      "source_filename": "840.41fdc8e1.chunk.js",
+      "byte_span": [
+        45944,
+        46087
+      ],
+      "sha256": "73a01de099bb6ff22fb5bf1153b728a98fb22a4943fdb6b0045deb4265b2acbf",
+      "full_source_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "not_server_authority": true
+    },
+    {
+      "name": "fee_transport",
+      "webpack_module": 5168,
+      "source_filename": "840.41fdc8e1.chunk.js",
+      "byte_span": [
+        46087,
+        46144
+      ],
+      "sha256": "db3f954d5fa1fa7ca62d2725238ad497238cd4945abbcf5ce8b502916aa1d085",
+      "full_source_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "not_server_authority": true
+    },
+    {
+      "name": "wage_education",
+      "webpack_module": 5168,
+      "source_filename": "840.41fdc8e1.chunk.js",
+      "byte_span": [
+        41220,
+        41294
+      ],
+      "sha256": "ef2141fc848dd869744c20d39c0915ceda5cb71e4a1ede09aa2d251e6c133b0d",
+      "full_source_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "not_server_authority": true
+    },
+    {
+      "name": "wage_sport",
+      "webpack_module": 5168,
+      "source_filename": "840.41fdc8e1.chunk.js",
+      "byte_span": [
+        41294,
+        41338
+      ],
+      "sha256": "59b588ba286c7ee2ec48bc788f41e3b197147fd42d66d794e937e4af3fc11937",
+      "full_source_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "not_server_authority": true
+    },
+    {
+      "name": "wage_culture",
+      "webpack_module": 5168,
+      "source_filename": "840.41fdc8e1.chunk.js",
+      "byte_span": [
+        41338,
+        41382
+      ],
+      "sha256": "25f5a2f41649b7a07629fb9fdbec61c22784654d26ec5949e3b39e0081f1b125",
+      "full_source_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "not_server_authority": true
+    },
+    {
+      "name": "wage_health",
+      "webpack_module": 5168,
+      "source_filename": "840.41fdc8e1.chunk.js",
+      "byte_span": [
+        41382,
+        41431
+      ],
+      "sha256": "3939469fd8dd411f9c64a772ac8e7c54500c606180ac4f204aca0498b22971a5",
+      "full_source_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "not_server_authority": true
+    },
+    {
+      "name": "wage_social",
+      "webpack_module": 5168,
+      "source_filename": "840.41fdc8e1.chunk.js",
+      "byte_span": [
+        41431,
+        41476
+      ],
+      "sha256": "548400c50596866486597319119a65c67ff667319ccecaf4ec8578dda49e1bc1",
+      "full_source_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "not_server_authority": true
+    },
+    {
+      "name": "wage_services",
+      "webpack_module": 5168,
+      "source_filename": "840.41fdc8e1.chunk.js",
+      "byte_span": [
+        41476,
+        41565
+      ],
+      "sha256": "e9c07e27c16ffa7805e29f72fb63aba9d2690806373d71257c1d65d7e6a2ac9a",
+      "full_source_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "not_server_authority": true
+    },
+    {
+      "name": "wage_transport",
+      "webpack_module": 5168,
+      "source_filename": "840.41fdc8e1.chunk.js",
+      "byte_span": [
+        41565,
+        41622
+      ],
+      "sha256": "e714ed719176fa74c7cc48657059f5189ad15ccefb04a89466b065109f821a66",
+      "full_source_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "not_server_authority": true
+    },
+    {
+      "name": "wage_bureau",
+      "webpack_module": 5168,
+      "source_filename": "840.41fdc8e1.chunk.js",
+      "byte_span": [
+        41622,
+        41667
+      ],
+      "sha256": "762842da148ee5034f5a77af6326f40318c9ca786e5f3608272ce5ec215ce76f",
+      "full_source_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "not_server_authority": true
+    },
+    {
+      "name": "material_education",
+      "webpack_module": 5168,
+      "source_filename": "840.41fdc8e1.chunk.js",
+      "byte_span": [
+        41667,
+        41703
+      ],
+      "sha256": "6f0936118d7d1c994487d62ea0ec5e3fc2cdba87fdf566dfc3bae927f781dc3d",
+      "full_source_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "not_server_authority": true
+    },
+    {
+      "name": "material_sport",
+      "webpack_module": 5168,
+      "source_filename": "840.41fdc8e1.chunk.js",
+      "byte_span": [
+        41703,
+        41739
+      ],
+      "sha256": "c3a9b38c4b7019c78428d3eeca07c7998d401a27335c1f1ac7830f5215bf1fbf",
+      "full_source_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "not_server_authority": true
+    },
+    {
+      "name": "material_culture",
+      "webpack_module": 5168,
+      "source_filename": "840.41fdc8e1.chunk.js",
+      "byte_span": [
+        41739,
+        41775
+      ],
+      "sha256": "16e553aec21245fe4282f20161b9c657242b327413e2c163e5a72e177af07615",
+      "full_source_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "not_server_authority": true
+    },
+    {
+      "name": "material_health",
+      "webpack_module": 5168,
+      "source_filename": "840.41fdc8e1.chunk.js",
+      "byte_span": [
+        41775,
+        41811
+      ],
+      "sha256": "785e0456aa15888498f59bf6ce6f2f98e38acb2aedd62fc3d792a8de473dc56c",
+      "full_source_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "not_server_authority": true
+    },
+    {
+      "name": "material_social",
+      "webpack_module": 5168,
+      "source_filename": "840.41fdc8e1.chunk.js",
+      "byte_span": [
+        41811,
+        41847
+      ],
+      "sha256": "53e5e3c050f1c63125deb2e276a442426e525f281d0d417da3decf82aa45f479",
+      "full_source_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "not_server_authority": true
+    },
+    {
+      "name": "material_services",
+      "webpack_module": 5168,
+      "source_filename": "840.41fdc8e1.chunk.js",
+      "byte_span": [
+        41847,
+        41919
+      ],
+      "sha256": "bcca49ef8cbfd596cfbab05581ab8aca14cdbae9c956922e6bc77fbaee1c7e2c",
+      "full_source_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "not_server_authority": true
+    },
+    {
+      "name": "material_bureau",
+      "webpack_module": 5168,
+      "source_filename": "840.41fdc8e1.chunk.js",
+      "byte_span": [
+        41919,
+        41955
+      ],
+      "sha256": "283f98f6a790f7d6865c9e22d09c35841d7b78c2df2e91749e6be863d18ea5a7",
+      "full_source_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "not_server_authority": true
+    }
+  ],
+  "actual_source_js_not_redistributed": true,
+  "server_equivalence": "NOT_VERIFIED"
+}

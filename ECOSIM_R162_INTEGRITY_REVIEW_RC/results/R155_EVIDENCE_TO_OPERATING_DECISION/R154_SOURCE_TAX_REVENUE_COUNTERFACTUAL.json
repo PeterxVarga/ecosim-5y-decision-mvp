@@ -1,0 +1,280 @@
+{
+  "schema": "ECOSIM_R154_SOURCE_ANCHORED_FOUR_TAX_TRADEOFFS_V1",
+  "source_class": "SYNTHETIC_TEST_ONLY",
+  "calculation_source": "840.41fdc8e1.chunk.js Webpack module 5168 Bi/_i/Ui/Yi",
+  "path_counterfactuals": [
+    {
+      "tax_path_id": "unchanged_synthetic",
+      "fiscal_comparison": {
+        "schema": "ECOSIM_R154_FIXED_BASE_FISCAL_COUNTERFACTUAL_V1",
+        "source_class": "SYNTHETIC_TEST_ONLY",
+        "yearly": [
+          {
+            "year": 1,
+            "baseline_four_tax_income_ecu": 454368.608,
+            "counterfactual_four_tax_income_ecu": 454368.608,
+            "fixed_base_four_tax_delta_ecu": 0.0,
+            "four_tax_channel_deltas_ecu": {
+              "business": 0.0,
+              "vehicle": 0.0,
+              "communal": 0.0,
+              "building": 0.0
+            },
+            "base_response_to_policy": "UNMODELLED",
+            "real_cash_available_ecu": null,
+            "server_settled_tax_income_ecu": null
+          },
+          {
+            "year": 2,
+            "baseline_four_tax_income_ecu": 460690.5888,
+            "counterfactual_four_tax_income_ecu": 460690.5888,
+            "fixed_base_four_tax_delta_ecu": 0.0,
+            "four_tax_channel_deltas_ecu": {
+              "business": 0.0,
+              "vehicle": 0.0,
+              "communal": 0.0,
+              "building": 0.0
+            },
+            "base_response_to_policy": "UNMODELLED",
+            "real_cash_available_ecu": null,
+            "server_settled_tax_income_ecu": null
+          },
+          {
+            "year": 3,
+            "baseline_four_tax_income_ecu": 467032.2496,
+            "counterfactual_four_tax_income_ecu": 467032.2496,
+            "fixed_base_four_tax_delta_ecu": 0.0,
+            "four_tax_channel_deltas_ecu": {
+              "business": 0.0,
+              "vehicle": 0.0,
+              "communal": 0.0,
+              "building": 0.0
+            },
+            "base_response_to_policy": "UNMODELLED",
+            "real_cash_available_ecu": null,
+            "server_settled_tax_income_ecu": null
+          },
+          {
+            "year": 4,
+            "baseline_four_tax_income_ecu": 473393.5904,
+            "counterfactual_four_tax_income_ecu": 473393.5904,
+            "fixed_base_four_tax_delta_ecu": 0.0,
+            "four_tax_channel_deltas_ecu": {
+              "business": 0.0,
+              "vehicle": 0.0,
+              "communal": 0.0,
+              "building": 0.0
+            },
+            "base_response_to_policy": "UNMODELLED",
+            "real_cash_available_ecu": null,
+            "server_settled_tax_income_ecu": null
+          },
+          {
+            "year": 5,
+            "baseline_four_tax_income_ecu": 479774.6112,
+            "counterfactual_four_tax_income_ecu": 479774.6112,
+            "fixed_base_four_tax_delta_ecu": 0.0,
+            "four_tax_channel_deltas_ecu": {
+              "business": 0.0,
+              "vehicle": 0.0,
+              "communal": 0.0,
+              "building": 0.0
+            },
+            "base_response_to_policy": "UNMODELLED",
+            "real_cash_available_ecu": null,
+            "server_settled_tax_income_ecu": null
+          }
+        ],
+        "five_year_fixed_base_tax_delta_ecu": 0.0,
+        "year_5_delta_ecu": 0.0,
+        "fiscal_tradeoff_not_an_authorized_budget": true,
+        "unmodeled_city_state_and_indirect_revenue": "UNKNOWN_NOT_ZERO",
+        "gameplay_gate": "STOP"
+      }
+    },
+    {
+      "tax_path_id": "business_tax_reduced_synthetic",
+      "fiscal_comparison": {
+        "schema": "ECOSIM_R154_FIXED_BASE_FISCAL_COUNTERFACTUAL_V1",
+        "source_class": "SYNTHETIC_TEST_ONLY",
+        "yearly": [
+          {
+            "year": 1,
+            "baseline_four_tax_income_ecu": 454368.608,
+            "counterfactual_four_tax_income_ecu": 274368.608,
+            "fixed_base_four_tax_delta_ecu": -180000.0,
+            "four_tax_channel_deltas_ecu": {
+              "business": -180000.0,
+              "vehicle": 0.0,
+              "communal": 0.0,
+              "building": 0.0
+            },
+            "base_response_to_policy": "UNMODELLED",
+            "real_cash_available_ecu": null,
+            "server_settled_tax_income_ecu": null
+          },
+          {
+            "year": 2,
+            "baseline_four_tax_income_ecu": 460690.5888,
+            "counterfactual_four_tax_income_ecu": 278690.5888,
+            "fixed_base_four_tax_delta_ecu": -182000.0,
+            "four_tax_channel_deltas_ecu": {
+              "business": -182000.0,
+              "vehicle": 0.0,
+              "communal": 0.0,
+              "building": 0.0
+            },
+            "base_response_to_policy": "UNMODELLED",
+            "real_cash_available_ecu": null,
+            "server_settled_tax_income_ecu": null
+          },
+          {
+            "year": 3,
+            "baseline_four_tax_income_ecu": 467032.2496,
+            "counterfactual_four_tax_income_ecu": 283032.2496,
+            "fixed_base_four_tax_delta_ecu": -184000.0,
+            "four_tax_channel_deltas_ecu": {
+              "business": -184000.0,
+              "vehicle": 0.0,
+              "communal": 0.0,
+              "building": 0.0
+            },
+            "base_response_to_policy": "UNMODELLED",
+            "real_cash_available_ecu": null,
+            "server_settled_tax_income_ecu": null
+          },
+          {
+            "year": 4,
+            "baseline_four_tax_income_ecu": 473393.5904,
+            "counterfactual_four_tax_income_ecu": 287393.5904,
+            "fixed_base_four_tax_delta_ecu": -186000.0,
+            "four_tax_channel_deltas_ecu": {
+              "business": -186000.0,
+              "vehicle": 0.0,
+              "communal": 0.0,
+              "building": 0.0
+            },
+            "base_response_to_policy": "UNMODELLED",
+            "real_cash_available_ecu": null,
+            "server_settled_tax_income_ecu": null
+          },
+          {
+            "year": 5,
+            "baseline_four_tax_income_ecu": 479774.6112,
+            "counterfactual_four_tax_income_ecu": 291774.6112,
+            "fixed_base_four_tax_delta_ecu": -188000.0,
+            "four_tax_channel_deltas_ecu": {
+              "business": -188000.0,
+              "vehicle": 0.0,
+              "communal": 0.0,
+              "building": 0.0
+            },
+            "base_response_to_policy": "UNMODELLED",
+            "real_cash_available_ecu": null,
+            "server_settled_tax_income_ecu": null
+          }
+        ],
+        "five_year_fixed_base_tax_delta_ecu": -920000.0,
+        "year_5_delta_ecu": -188000.0,
+        "fiscal_tradeoff_not_an_authorized_budget": true,
+        "unmodeled_city_state_and_indirect_revenue": "UNKNOWN_NOT_ZERO",
+        "gameplay_gate": "STOP"
+      }
+    },
+    {
+      "tax_path_id": "business_tax_increased_synthetic",
+      "fiscal_comparison": {
+        "schema": "ECOSIM_R154_FIXED_BASE_FISCAL_COUNTERFACTUAL_V1",
+        "source_class": "SYNTHETIC_TEST_ONLY",
+        "yearly": [
+          {
+            "year": 1,
+            "baseline_four_tax_income_ecu": 454368.608,
+            "counterfactual_four_tax_income_ecu": 634368.608,
+            "fixed_base_four_tax_delta_ecu": 180000.0,
+            "four_tax_channel_deltas_ecu": {
+              "business": 180000.0,
+              "vehicle": 0.0,
+              "communal": 0.0,
+              "building": 0.0
+            },
+            "base_response_to_policy": "UNMODELLED",
+            "real_cash_available_ecu": null,
+            "server_settled_tax_income_ecu": null
+          },
+          {
+            "year": 2,
+            "baseline_four_tax_income_ecu": 460690.5888,
+            "counterfactual_four_tax_income_ecu": 642690.5888,
+            "fixed_base_four_tax_delta_ecu": 182000.0,
+            "four_tax_channel_deltas_ecu": {
+              "business": 182000.0,
+              "vehicle": 0.0,
+              "communal": 0.0,
+              "building": 0.0
+            },
+            "base_response_to_policy": "UNMODELLED",
+            "real_cash_available_ecu": null,
+            "server_settled_tax_income_ecu": null
+          },
+          {
+            "year": 3,
+            "baseline_four_tax_income_ecu": 467032.2496,
+            "counterfactual_four_tax_income_ecu": 651032.2496,
+            "fixed_base_four_tax_delta_ecu": 184000.0,
+            "four_tax_channel_deltas_ecu": {
+              "business": 184000.0,
+              "vehicle": 0.0,
+              "communal": 0.0,
+              "building": 0.0
+            },
+            "base_response_to_policy": "UNMODELLED",
+            "real_cash_available_ecu": null,
+            "server_settled_tax_income_ecu": null
+          },
+          {
+            "year": 4,
+            "baseline_four_tax_income_ecu": 473393.5904,
+            "counterfactual_four_tax_income_ecu": 659393.5904,
+            "fixed_base_four_tax_delta_ecu": 186000.0,
+            "four_tax_channel_deltas_ecu": {
+              "business": 186000.0,
+              "vehicle": 0.0,
+              "communal": 0.0,
+              "building": 0.0
+            },
+            "base_response_to_policy": "UNMODELLED",
+            "real_cash_available_ecu": null,
+            "server_settled_tax_income_ecu": null
+          },
+          {
+            "year": 5,
+            "baseline_four_tax_income_ecu": 479774.6112,
+            "counterfactual_four_tax_income_ecu": 667774.6112,
+            "fixed_base_four_tax_delta_ecu": 188000.0,
+            "four_tax_channel_deltas_ecu": {
+              "business": 188000.0,
+              "vehicle": 0.0,
+              "communal": 0.0,
+              "building": 0.0
+            },
+            "base_response_to_policy": "UNMODELLED",
+            "real_cash_available_ecu": null,
+            "server_settled_tax_income_ecu": null
+          }
+        ],
+        "five_year_fixed_base_tax_delta_ecu": 920000.0,
+        "year_5_delta_ecu": 188000.0,
+        "fiscal_tradeoff_not_an_authorized_budget": true,
+        "unmodeled_city_state_and_indirect_revenue": "UNKNOWN_NOT_ZERO",
+        "gameplay_gate": "STOP"
+      }
+    }
+  ],
+  "all_project_candidates_share_the_same_exogenous_tax_bases": true,
+  "candidate_dependent_business_car_population_or_housing": "UNMODELLED",
+  "taxable_base_feedback": "UNMODELLED_NOT_ZERO",
+  "revenue_cannot_be_added_to_project_budget": true,
+  "actual_five_year_cash_or_profit": null,
+  "gameplay_gate": "STOP"
+}

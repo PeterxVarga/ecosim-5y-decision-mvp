@@ -1,0 +1,61 @@
+{
+  "no_live_actions": true,
+  "full_game_model_validated": false,
+  "gameplay_decision": "STOP",
+  "observed_historical_league": {
+    "status": "UNKNOWN_NO_OFFICIAL_LEAGUE_SNAPSHOT"
+  },
+  "trusted_experiment_deltas_not_causal_proof": [],
+  "untrusted_or_incomplete_experiments": [],
+  "actual_market_cap": null,
+  "reported_video_cap": 4,
+  "reported_video_loan_rate": 0.12,
+  "official_cap_matches_video_if_known": null,
+  "missing_official_fields": [
+    {
+      "group": "live_project_limit",
+      "path": "market.maxProjectPerTurn"
+    },
+    {
+      "group": "live_project_limit",
+      "path": "market.cap_source"
+    },
+    {
+      "group": "live_project_limit",
+      "path": "team.project1_active_previous_period"
+    },
+    {
+      "group": "live_project_limit",
+      "path": "team.already_selected_project_ids_current_period"
+    },
+    {
+      "group": "finance",
+      "path": "team.confirmed_spendable_cash_ecu_by_year[0]"
+    },
+    {
+      "group": "finance",
+      "path": "team.committed_costs_ecu_by_year[0]"
+    },
+    {
+      "group": "finance",
+      "path": "market.loan_constraints_source"
+    },
+    {
+      "group": "current_provenance",
+      "path": "provenance.captured_at_local"
+    },
+    {
+      "group": "current_provenance",
+      "path": "provenance.current_period"
+    },
+    {
+      "group": "calibrated_preview",
+      "path": "verification.game_preview_index"
+    },
+    {
+      "group": "calibrated_preview",
+      "path": "verification.game_preview_cashflow_ecu"
+    }
+  ],
+  "next_gate": "Capture official market/team state and confirmed spendable financing; approved reversible before/after UI preview if and only if owner separately approves."
+}

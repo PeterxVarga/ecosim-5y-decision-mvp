@@ -1,0 +1,46 @@
+{
+  "source_evidence_id": "HISTORICAL_UI_R94_SUMMARY",
+  "capture_mode": "HISTORICAL_REFERENCE",
+  "kind": "PLAN",
+  "recomputed_display_index": 52.483733,
+  "index_reconciliation_status": "AGREES_WITH_DISPLAYED_FACTORS_NOT_SERVER_VERIFIED",
+  "original_display_index": 52.48,
+  "rounding_residual": 0.00373333,
+  "live_state_verified_from_capture": false,
+  "operator_trust_not_server_verified": true,
+  "gameplay_gate": "STOP",
+  "bundle_schema": "ECOSIM_R152_LOCAL_OBSERVATION_BUNDLE_V1",
+  "evidence_files": {
+    "manifest": {
+      "filename": "manifest.json",
+      "sha256": "38717a117e0f58a542c8396499d3c537feee2afe5c4d6c64257c5ea8e4e5d963",
+      "bytes": 439
+    },
+    "factors": {
+      "filename": "factors.csv",
+      "sha256": "a4565791738a91b233570bd3d056c2646d34c9402f29ac7d6681ea5a7a1ed9d5",
+      "bytes": 818
+    },
+    "parameters": {
+      "filename": "parameters.json",
+      "sha256": "fc490cd98b8699f2cb497233088f77047c15ff564eb4d6ec32543e87674b3aed",
+      "bytes": 221
+    },
+    "project_status": {
+      "filename": "projects.csv",
+      "sha256": "07a67443a2e4ecfe10c4d7a0b28902a49b92981b79252add581f3ae2c67f3082",
+      "bytes": 551
+    }
+  },
+  "finance_R94_reconciliation": null,
+  "project_states": {
+    "rows": 35,
+    "prior_running": 6,
+    "new_selected": 0,
+    "previous_project1": false,
+    "is_operator_transcription_not_server_verified": true
+  },
+  "input_classification": "HISTORICAL_TEST_ROUND_NOT_CURRENT",
+  "realized_transition_pair_count": 0,
+  "authoritative_server_state_verified": false
+}

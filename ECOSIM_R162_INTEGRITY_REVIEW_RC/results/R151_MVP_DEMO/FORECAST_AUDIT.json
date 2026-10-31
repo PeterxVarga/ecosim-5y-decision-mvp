@@ -1,0 +1,18 @@
+{
+  "schema": "ECOSIM_R151_FORECAST_AUDIT_REPORT_V1",
+  "comparison_count": 0,
+  "operator_declared_official_pair_count": 0,
+  "synthetic_pair_count": 0,
+  "paired_full_model_prediction_count": 0,
+  "operator_declared_plan_vs_fact_mae": null,
+  "operator_declared_frozen_full_model_vs_fact_mae": null,
+  "independently_validated_accuracy": null,
+  "out_of_sample_accuracy": null,
+  "game_win_probability": null,
+  "reliability_status": "NO_REAL_PLAN_FACT_PAIRS",
+  "not_annual_state_transition_identification": true,
+  "source_verified_independently": false,
+  "gameplay_gate": "STOP",
+  "game_writes": 0,
+  "pairs": []
+}

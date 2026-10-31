@@ -1,0 +1,2590 @@
+{
+  "schema_version": "ecosim.project-export.v1",
+  "metadata": {
+    "simulation": "X-Challenge 2026 Tesztforduló",
+    "round": "Tesztforduló",
+    "market": "Z",
+    "team": "Jutalom a nap végén",
+    "period": "1/1",
+    "captured_date_local": "2026-10-30",
+    "timezone": "Europe/Budapest",
+    "source_urls": [
+      "https://edu.ecosim.hu/simulation/projects",
+      "https://edu.ecosim.hu/simulation/summary"
+    ],
+    "method": "Read-only extraction from displayed project cards in all four categories, matched by exact name to the Summary project table.",
+    "money_unit": null,
+    "money_unit_note": "The project cards do not display a monetary unit. Values preserve the displayed scale; commas were thousands separators.",
+    "percent_encoding": "value_percent is the displayed numeric percentage: 1 means 1%, 0.04 means 0.04%. No relative-versus-percentage-point interpretation is assumed.",
+    "missing_effect_note": "Empty effects lists and absent metrics are not converted to zero. All six already-running projects display four zero financial values and an empty effects list.",
+    "csv_format": "UTF-8 BOM, comma delimiter, decimal point; one row per project, effect columns in displayed percent units.",
+    "read_only": true
+  },
+  "reconciliation": {
+    "total_projects": 35,
+    "category_counts": [
+      {
+        "category": "Gazdaságfejlesztés",
+        "projects": 14,
+        "running": 1
+      },
+      {
+        "category": "Sport és Kultúra",
+        "projects": 10,
+        "running": 3
+      },
+      {
+        "category": "Közlekedés",
+        "projects": 7,
+        "running": 0
+      },
+      {
+        "category": "Környezet",
+        "projects": 4,
+        "running": 2
+      }
+    ],
+    "summary_project_count": 35,
+    "all_names_match": true,
+    "all_statuses_match": true,
+    "running_p0": 6,
+    "running_p1": 6,
+    "running_project_ids": [
+      14,
+      22,
+      23,
+      24,
+      34,
+      35
+    ],
+    "total_displayed_percentage_effects": 272,
+    "summary_tables_unchanged": true,
+    "started_projects": 0,
+    "saved_decisions": 0
+  },
+  "projects": [
+    {
+      "id": 1,
+      "name": "Szomszédsági Gazdaság Modell",
+      "category": "Gazdaságfejlesztés",
+      "description": "Miért kellene mindenért a város másik végébe menni, ha helyben is megoldható? A projekt helyi kispiacok, közösségi kertek, javítóműhelyek, családi szolgáltatások és közösségi vállalkozások létrejöttét támogatja. A lakóközösségek saját ötleteikre és igényeikre építve alakíthatják környezetüket, miközben új munkahelyek és könnyebben elérhető szolgáltatások jönnek létre. A fejlesztés erősíti a szomszédsági kapcsolatokat, és időt, pénzt takaríthat meg a lakóknak.",
+      "startup_cost": 6000,
+      "maintenance_cost": 2400,
+      "investment": 18000,
+      "partner_support": 3000,
+      "financial_values_as_displayed": [
+        "Indítási költség: 6,000",
+        "Fenntartási költség: 2,400",
+        "Beruházás: 18,000",
+        "Fejlesztési támogatás a partnervállalattól: 3,000"
+      ],
+      "effects": [
+        {
+          "metric": "Vállalkozóbarátság",
+          "value_percent": 1,
+          "displayed_value": "1%"
+        },
+        {
+          "metric": "Fenntarthatóság",
+          "value_percent": 0.5,
+          "displayed_value": "0.5%"
+        },
+        {
+          "metric": "Zöld területek aránya",
+          "value_percent": 0.1,
+          "displayed_value": "0.1%"
+        },
+        {
+          "metric": "Hulladékgazdálkodási helyzet",
+          "value_percent": 0.5,
+          "displayed_value": "0.5%"
+        },
+        {
+          "metric": "Szociális",
+          "value_percent": 0.4,
+          "displayed_value": "0.4%"
+        },
+        {
+          "metric": "Rossz szoc. helyzetben lévők aránya",
+          "value_percent": -0.2,
+          "displayed_value": "-0.2%"
+        },
+        {
+          "metric": "Településfejlettség",
+          "value_percent": 0.4,
+          "displayed_value": "0.4%"
+        },
+        {
+          "metric": "Lakossági viszonyok/elégedettség",
+          "value_percent": 0.5,
+          "displayed_value": "0.5%"
+        },
+        {
+          "metric": "Munkanélküliség",
+          "value_percent": -0.3,
+          "displayed_value": "-0.3%"
+        },
+        {
+          "metric": "Kisvállalkozások száma",
+          "value_percent": 0.04,
+          "displayed_value": "0.04%"
+        }
+      ],
+      "effects_count": 10,
+      "effects_display_status": "listed",
+      "project_conditions": [],
+      "status_p0": "Nem fut",
+      "status_p1": "Nem fut",
+      "project_page_control": "Start",
+      "project_page_control_disabled": false,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:03.583Z"
+    },
+    {
+      "id": 2,
+      "name": "Kereskedelmi és Kulturális Központ",
+      "category": "Gazdaságfejlesztés",
+      "description": "Egy pezsgő, nemzetközi hangulatú városközpont jön létre, ahol a kereskedelem, a kultúra és a közösségi élet találkozik. A fejlesztés modern üzletekkel, éttermekkel, szolgáltatásokkal, lakóépületekkel és közösségi terekkel bővíti a meglévő kereskedelmi negyedet. Megújulnak a közterületek, javulnak a gyalogos- és közlekedési kapcsolatok, a környék pedig rendezettebbé és élhetőbbé válik. A beruházás új munkahelyeket teremt, támogatja a helyi vállalkozásokat, és élhetőbbé, vonzóbbá teszi a környéket.",
+      "startup_cost": 28000,
+      "maintenance_cost": 8000,
+      "investment": 120000,
+      "partner_support": 25000,
+      "financial_values_as_displayed": [
+        "Indítási költség: 28,000",
+        "Fenntartási költség: 8,000",
+        "Beruházás: 120,000",
+        "Fejlesztési támogatás a partnervállalattól: 25,000"
+      ],
+      "effects": [
+        {
+          "metric": "Vállalkozóbarátság",
+          "value_percent": 1,
+          "displayed_value": "1%"
+        },
+        {
+          "metric": "Fenntarthatóság",
+          "value_percent": -0.2,
+          "displayed_value": "-0.2%"
+        },
+        {
+          "metric": "Levegőminőség",
+          "value_percent": -0.3,
+          "displayed_value": "-0.3%"
+        },
+        {
+          "metric": "Zöld területek aránya",
+          "value_percent": -0.7,
+          "displayed_value": "-0.7%"
+        },
+        {
+          "metric": "Digitalizáció",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Közbiztonság",
+          "value_percent": 0.5,
+          "displayed_value": "0.5%"
+        },
+        {
+          "metric": "Művelődés",
+          "value_percent": 0.8,
+          "displayed_value": "0.8%"
+        },
+        {
+          "metric": "Rossz szoc. helyzetben lévők aránya",
+          "value_percent": -0.1,
+          "displayed_value": "-0.1%"
+        },
+        {
+          "metric": "Településfejlettség",
+          "value_percent": 1.7,
+          "displayed_value": "1.7%"
+        },
+        {
+          "metric": "Közlekedési minőség",
+          "value_percent": 0.7,
+          "displayed_value": "0.7%"
+        },
+        {
+          "metric": "Tömegközlekedők aránya, %",
+          "value_percent": 0.1,
+          "displayed_value": "0.1%"
+        },
+        {
+          "metric": "Lakossági viszonyok/elégedettség",
+          "value_percent": 0.8,
+          "displayed_value": "0.8%"
+        },
+        {
+          "metric": "Munkakörülmények",
+          "value_percent": 0.4,
+          "displayed_value": "0.4%"
+        },
+        {
+          "metric": "Munkanélküliség",
+          "value_percent": -0.8,
+          "displayed_value": "-0.8%"
+        },
+        {
+          "metric": "Kisvállalkozások száma",
+          "value_percent": 0.06,
+          "displayed_value": "0.06%"
+        },
+        {
+          "metric": "Középvállalkozások száma",
+          "value_percent": 1,
+          "displayed_value": "1%"
+        }
+      ],
+      "effects_count": 16,
+      "effects_display_status": "listed",
+      "project_conditions": [],
+      "status_p0": "Nem fut",
+      "status_p1": "Nem fut",
+      "project_page_control": "Start",
+      "project_page_control_disabled": false,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:03.583Z"
+    },
+    {
+      "id": 3,
+      "name": "Helyi élelmiszerellátás",
+      "category": "Gazdaságfejlesztés",
+      "description": "A meglévő négy termelői piac korszerűsítésével és kínálatuk bővítésével több helyen válik elérhetővé a friss, helyi élelmiszer. Új árusítóhelyek, hűtési és tárolási lehetőségek létesülnek, az online piactér pedig előrendelést és helyi átvételt biztosít. A piacokat rendszeres gasztronómiai és családi programok teszik vonzóbbá. A fejlesztés növeli a helyi termelők bevételeit, új értékesítési lehetőségeket és munkahelyeket teremt, csökkenti az élelmiszerek szállítási igényét, és kényelmesebbé teszi a lakosság bevásárlását.",
+      "startup_cost": 7000,
+      "maintenance_cost": 1500,
+      "investment": 25000,
+      "partner_support": 3000,
+      "financial_values_as_displayed": [
+        "Indítási költség: 7,000",
+        "Fenntartási költség: 1,500",
+        "Beruházás: 25,000",
+        "Fejlesztési támogatás a partnervállalattól: 3,000"
+      ],
+      "effects": [
+        {
+          "metric": "Vállalkozóbarátság",
+          "value_percent": 0.6,
+          "displayed_value": "0.6%"
+        },
+        {
+          "metric": "Fenntarthatóság",
+          "value_percent": 0.4,
+          "displayed_value": "0.4%"
+        },
+        {
+          "metric": "Levegőminőség",
+          "value_percent": 0.1,
+          "displayed_value": "0.1%"
+        },
+        {
+          "metric": "Hulladékgazdálkodási helyzet",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Digitalizáció",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Egészségügy",
+          "value_percent": 0.1,
+          "displayed_value": "0.1%"
+        },
+        {
+          "metric": "Szociális",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Rossz szoc. helyzetben lévők aránya",
+          "value_percent": -0.4,
+          "displayed_value": "-0.4%"
+        },
+        {
+          "metric": "Településfejlettség",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Lakossági viszonyok/elégedettség",
+          "value_percent": 0.5,
+          "displayed_value": "0.5%"
+        },
+        {
+          "metric": "Munkanélküliség",
+          "value_percent": -0.2,
+          "displayed_value": "-0.2%"
+        },
+        {
+          "metric": "Kisvállalkozások száma",
+          "value_percent": 0.03,
+          "displayed_value": "0.03%"
+        }
+      ],
+      "effects_count": 12,
+      "effects_display_status": "listed",
+      "project_conditions": [],
+      "status_p0": "Nem fut",
+      "status_p1": "Nem fut",
+      "project_page_control": "Start",
+      "project_page_control_disabled": false,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:03.583Z"
+    },
+    {
+      "id": 4,
+      "name": "Körforgásos gazdaság mintaprojekt",
+      "category": "Gazdaságfejlesztés",
+      "description": "Ami az egyik vállalatnál hulladék, az a másiknál értékes alapanyag lehet! A projekt keretében az önkormányzat és a helyi cégek közös rendszert alakítanak ki az ipari melléktermékek, hulladékok és felesleges energia újrahasznosítására. Új gyűjtési, feldolgozási és anyagcsere-megoldások indulnak, amelyek csökkentik a hulladéklerakást, az energiafelhasználást és a környezetszennyezést. A fejlesztés mérsékli a vállalkozások működési költségeit, új üzleti lehetőségeket és zöld munkahelyeket teremt.",
+      "startup_cost": 8000,
+      "maintenance_cost": 2000,
+      "investment": 33000,
+      "partner_support": 14000,
+      "financial_values_as_displayed": [
+        "Indítási költség: 8,000",
+        "Fenntartási költség: 2,000",
+        "Beruházás: 33,000",
+        "Fejlesztési támogatás a partnervállalattól: 14,000"
+      ],
+      "effects": [
+        {
+          "metric": "Vállalkozóbarátság",
+          "value_percent": 0.4,
+          "displayed_value": "0.4%"
+        },
+        {
+          "metric": "Fenntarthatóság",
+          "value_percent": 1.5,
+          "displayed_value": "1.5%"
+        },
+        {
+          "metric": "Levegőminőség",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Hulladékgazdálkodási helyzet",
+          "value_percent": 3,
+          "displayed_value": "3%"
+        },
+        {
+          "metric": "Digitalizáció",
+          "value_percent": 0.1,
+          "displayed_value": "0.1%"
+        },
+        {
+          "metric": "Településfejlettség",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Lakossági viszonyok/elégedettség",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Lakosság képzettsége",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Munkanélküliség",
+          "value_percent": -0.2,
+          "displayed_value": "-0.2%"
+        },
+        {
+          "metric": "Kisvállalkozások száma",
+          "value_percent": 0.02,
+          "displayed_value": "0.02%"
+        },
+        {
+          "metric": "Középvállalkozások száma",
+          "value_percent": 1,
+          "displayed_value": "1%"
+        }
+      ],
+      "effects_count": 11,
+      "effects_display_status": "listed",
+      "project_conditions": [],
+      "status_p0": "Nem fut",
+      "status_p1": "Nem fut",
+      "project_page_control": "Start",
+      "project_page_control_disabled": false,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:03.583Z"
+    },
+    {
+      "id": 5,
+      "name": "Vállalati Társadalmi Felelősség Platform",
+      "category": "Gazdaságfejlesztés",
+      "description": "A helyi nagyvállalatok és az önkormányzat közös platformot hoznak létre, amely összekapcsolja a cégek támogatási lehetőségeit a kerület fejlesztési és közösségi igényeivel. A vállalatok pénzügyi támogatással, szakértelemmel, eszközökkel és önkéntes munkával járulnak hozzá oktatási, szociális, környezetvédelmi és közösségi programokhoz. Az összehangolt együttműködés több forrást biztosít a helyi kezdeményezéseknek, javítja a közszolgáltatásokat és a lakók életminőségét, miközben erősíti a vállalatok helyi kötődését.",
+      "startup_cost": 3000,
+      "maintenance_cost": 2000,
+      "investment": 2000,
+      "partner_support": 15000,
+      "financial_values_as_displayed": [
+        "Indítási költség: 3,000",
+        "Fenntartási költség: 2,000",
+        "Beruházás: 2,000",
+        "Fejlesztési támogatás a partnervállalattól: 15,000"
+      ],
+      "effects": [
+        {
+          "metric": "Fenntarthatóság",
+          "value_percent": 0.1,
+          "displayed_value": "0.1%"
+        },
+        {
+          "metric": "Adminisztráció",
+          "value_percent": 0.5,
+          "displayed_value": "0.5%"
+        },
+        {
+          "metric": "Lakásgazdálkodás",
+          "value_percent": 0.1,
+          "displayed_value": "0.1%"
+        },
+        {
+          "metric": "Digitalizáció",
+          "value_percent": 0.1,
+          "displayed_value": "0.1%"
+        },
+        {
+          "metric": "Oktatási intézmények",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Művelődés",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Lakossági viszonyok/elégedettség",
+          "value_percent": 0.4,
+          "displayed_value": "0.4%"
+        },
+        {
+          "metric": "Lakosság képzettsége",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        }
+      ],
+      "effects_count": 8,
+      "effects_display_status": "listed",
+      "project_conditions": [],
+      "status_p0": "Nem fut",
+      "status_p1": "Nem fut",
+      "project_page_control": "Start",
+      "project_page_control_disabled": false,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:03.583Z"
+    },
+    {
+      "id": 6,
+      "name": "Gazdasági és Foglalkoztatási Együttműködés",
+      "category": "Gazdaságfejlesztés",
+      "description": "A helyi vállalkozások, az önkormányzat, a munkaügyi szervezetek és a képzőintézmények közös programot indítanak a foglalkoztatás bővítésére. A cégek munkaerőigényeihez igazodó állásközvetítés, szakmai képzések, átképzések és támogatott foglalkoztatási programok segítik az elhelyezkedést. Kiemelt figyelmet kapnak a pályakezdők és a nehezebb helyzetben lévő álláskeresők. Az együttműködés csökkenti a helyi munkanélküliséget és munkaerőhiányt, támogatja a kisvállalkozásokat, és növeli a lakosság jövedelmét.",
+      "startup_cost": 5000,
+      "maintenance_cost": 8000,
+      "investment": 3000,
+      "partner_support": 2000,
+      "financial_values_as_displayed": [
+        "Indítási költség: 5,000",
+        "Fenntartási költség: 8,000",
+        "Beruházás: 3,000",
+        "Fejlesztési támogatás a partnervállalattól: 2,000"
+      ],
+      "effects": [
+        {
+          "metric": "Vállalkozóbarátság",
+          "value_percent": 0.7,
+          "displayed_value": "0.7%"
+        },
+        {
+          "metric": "Oktatási intézmények",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Szociális",
+          "value_percent": 0.4,
+          "displayed_value": "0.4%"
+        },
+        {
+          "metric": "Rossz szoc. helyzetben lévők aránya",
+          "value_percent": -0.5,
+          "displayed_value": "-0.5%"
+        },
+        {
+          "metric": "Lakossági viszonyok/elégedettség",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Munkakörülmények",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Lakosság képzettsége",
+          "value_percent": 0.5,
+          "displayed_value": "0.5%"
+        },
+        {
+          "metric": "Munkanélküliség",
+          "value_percent": -1,
+          "displayed_value": "-1%"
+        },
+        {
+          "metric": "Kisvállalkozások száma",
+          "value_percent": 0.01,
+          "displayed_value": "0.01%"
+        },
+        {
+          "metric": "Középvállalkozások száma",
+          "value_percent": 1,
+          "displayed_value": "1%"
+        }
+      ],
+      "effects_count": 10,
+      "effects_display_status": "listed",
+      "project_conditions": [],
+      "status_p0": "Nem fut",
+      "status_p1": "Nem fut",
+      "project_page_control": "Start",
+      "project_page_control_disabled": false,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:03.583Z"
+    },
+    {
+      "id": 7,
+      "name": "HGF Innovációs Tudásközpont",
+      "category": "Gazdaságfejlesztés",
+      "description": "A helyi gazdaság fejlesztését egy új tudás- és innovációs központ fogja össze, amely az önkormányzat, a vállalkozások és a szakmai partnerek együttműködésére épül. A központ folyamatosan elemzi a gazdasági folyamatokat, nyomon követi a fejlesztési projektek eredményeit, új beruházási lehetőségeket azonosít, és támogatja az innovatív kezdeményezéseket. A rendszeres kutatások, szakmai programok és tudásmegosztás megalapozottabb önkormányzati döntéseket, hatékonyabb forrásfelhasználást és sikeresebb gazdaságfejlesztést eredményeznek.",
+      "startup_cost": 6000,
+      "maintenance_cost": 12000,
+      "investment": 15000,
+      "partner_support": 8000,
+      "financial_values_as_displayed": [
+        "Indítási költség: 6,000",
+        "Fenntartási költség: 12,000",
+        "Beruházás: 15,000",
+        "Fejlesztési támogatás a partnervállalattól: 8,000"
+      ],
+      "effects": [
+        {
+          "metric": "Vállalkozóbarátság",
+          "value_percent": 0.8,
+          "displayed_value": "0.8%"
+        },
+        {
+          "metric": "Adminisztráció",
+          "value_percent": 0.7,
+          "displayed_value": "0.7%"
+        },
+        {
+          "metric": "Digitalizáció",
+          "value_percent": 0.5,
+          "displayed_value": "0.5%"
+        },
+        {
+          "metric": "Településfejlettség",
+          "value_percent": 0.1,
+          "displayed_value": "0.1%"
+        },
+        {
+          "metric": "Lakosság képzettsége",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Kisvállalkozások száma",
+          "value_percent": 0.01,
+          "displayed_value": "0.01%"
+        }
+      ],
+      "effects_count": 6,
+      "effects_display_status": "listed",
+      "project_conditions": [],
+      "status_p0": "Nem fut",
+      "status_p1": "Nem fut",
+      "project_page_control": "Start",
+      "project_page_control_disabled": false,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:03.583Z"
+    },
+    {
+      "id": 8,
+      "name": "Okos Gazdaság Alkalmazások",
+      "category": "Gazdaságfejlesztés",
+      "description": "Egy új digitális platform kapcsolja össze a helyi vállalkozásokat, az önkormányzatot és a lakosságot. A cégek egy helyen érhetik el a gazdasági információkat, támogatási lehetőségeket, tanácsadást és üzleti partnereket, míg a lakók könnyebben megtalálhatják a helyi szolgáltatásokat. Az adatvezérelt és térinformatikai megoldások segítik a beruházások tervezését, a városüzemeltetést és a gazdasági döntéseket. A fejlesztés csökkenti az ügyintézési terheket, javítja a közszolgáltatások hatékonyságát és erősíti a helyi vállalkozások versenyképességét.",
+      "startup_cost": 4000,
+      "maintenance_cost": 3000,
+      "investment": 22000,
+      "partner_support": 3500,
+      "financial_values_as_displayed": [
+        "Indítási költség: 4,000",
+        "Fenntartási költség: 3,000",
+        "Beruházás: 22,000",
+        "Fejlesztési támogatás a partnervállalattól: 3,500"
+      ],
+      "effects": [
+        {
+          "metric": "Vállalkozóbarátság",
+          "value_percent": 0.5,
+          "displayed_value": "0.5%"
+        },
+        {
+          "metric": "Adminisztráció",
+          "value_percent": 1.1,
+          "displayed_value": "1.1%"
+        },
+        {
+          "metric": "Digitalizáció",
+          "value_percent": 2,
+          "displayed_value": "2%"
+        },
+        {
+          "metric": "Munkakörülmények",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Kisvállalkozások száma",
+          "value_percent": 0.03,
+          "displayed_value": "0.03%"
+        }
+      ],
+      "effects_count": 5,
+      "effects_display_status": "listed",
+      "project_conditions": [],
+      "status_p0": "Nem fut",
+      "status_p1": "Nem fut",
+      "project_page_control": "Start",
+      "project_page_control_disabled": false,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:03.583Z"
+    },
+    {
+      "id": 9,
+      "name": "Közösségi Finanszírozási Rendszer",
+      "category": "Gazdaságfejlesztés",
+      "description": "A lakosok és a helyi vállalkozások közösen finanszírozhatják a számukra fontos fejlesztéseket. Egy új online platformon bárki megismerheti a támogatásra váró projekteket, pénzügyi hozzájárulást tehet, és nyomon követheti az összegyűlt források felhasználását. A támogatásokból játszóterek, közösségi terek, zöldfelületek és helyi civil kezdeményezések valósulhatnak meg. A rendszer új forrásokat von be a városfejlesztésbe, felgyorsítja a kisebb beruházásokat, és erősíti a lakosság részvételét a helyi ügyekben.",
+      "startup_cost": 2500,
+      "maintenance_cost": 1500,
+      "investment": 6500,
+      "partner_support": 12000,
+      "financial_values_as_displayed": [
+        "Indítási költség: 2,500",
+        "Fenntartási költség: 1,500",
+        "Beruházás: 6,500",
+        "Fejlesztési támogatás a partnervállalattól: 12,000"
+      ],
+      "effects": [
+        {
+          "metric": "Fenntarthatóság",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Adminisztráció",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Lakásgazdálkodás",
+          "value_percent": 0.1,
+          "displayed_value": "0.1%"
+        },
+        {
+          "metric": "Digitalizáció",
+          "value_percent": 0.5,
+          "displayed_value": "0.5%"
+        },
+        {
+          "metric": "Szociális",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Sport",
+          "value_percent": 0.1,
+          "displayed_value": "0.1%"
+        },
+        {
+          "metric": "Művelődés",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Településfejlettség",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Lakossági viszonyok/elégedettség",
+          "value_percent": 0.6,
+          "displayed_value": "0.6%"
+        },
+        {
+          "metric": "Kisvállalkozások száma",
+          "value_percent": 0.01,
+          "displayed_value": "0.01%"
+        }
+      ],
+      "effects_count": 10,
+      "effects_display_status": "listed",
+      "project_conditions": [],
+      "status_p0": "Nem fut",
+      "status_p1": "Nem fut",
+      "project_page_control": "Start",
+      "project_page_control_disabled": false,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:03.583Z"
+    },
+    {
+      "id": 10,
+      "name": "Innovációs Alap",
+      "category": "Gazdaságfejlesztés",
+      "description": "Az önkormányzat és a helyi vállalatok közös finanszírozású innovációs alapot hoznak létre, amely pályázatokon keresztül támogatja az új technológiai, gazdasági és társadalmi megoldásokat. A forrásokból okosváros-fejlesztések, környezetvédelmi projektek, digitális szolgáltatások és helyi vállalkozások innovációi valósulnak meg. A támogatásokat a várható eredmények és a megvalósíthatóság alapján ítélik oda. Az alap új beruházásokat ösztönöz, további fejlesztési forrásokat vonz, és erősíti a helyi gazdaság versenyképességét.",
+      "startup_cost": 3500,
+      "maintenance_cost": 14000,
+      "investment": 12000,
+      "partner_support": 10000,
+      "financial_values_as_displayed": [
+        "Indítási költség: 3,500",
+        "Fenntartási költség: 14,000",
+        "Beruházás: 12,000",
+        "Fejlesztési támogatás a partnervállalattól: 10,000"
+      ],
+      "effects": [
+        {
+          "metric": "Vállalkozóbarátság",
+          "value_percent": 1,
+          "displayed_value": "1%"
+        },
+        {
+          "metric": "Fenntarthatóság",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Adminisztráció",
+          "value_percent": 0.1,
+          "displayed_value": "0.1%"
+        },
+        {
+          "metric": "Digitalizáció",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Lakossági viszonyok/elégedettség",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Munkakörülmények",
+          "value_percent": 0.4,
+          "displayed_value": "0.4%"
+        },
+        {
+          "metric": "Lakosság képzettsége",
+          "value_percent": 0.1,
+          "displayed_value": "0.1%"
+        },
+        {
+          "metric": "Munkanélküliség",
+          "value_percent": -0.3,
+          "displayed_value": "-0.3%"
+        },
+        {
+          "metric": "Kisvállalkozások száma",
+          "value_percent": 0.04,
+          "displayed_value": "0.04%"
+        },
+        {
+          "metric": "Középvállalkozások száma",
+          "value_percent": 2,
+          "displayed_value": "2%"
+        }
+      ],
+      "effects_count": 10,
+      "effects_display_status": "listed",
+      "project_conditions": [],
+      "status_p0": "Nem fut",
+      "status_p1": "Nem fut",
+      "project_page_control": "Start",
+      "project_page_control_disabled": false,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:03.583Z"
+    },
+    {
+      "id": 11,
+      "name": "Helyi Krízisalap",
+      "category": "Gazdaságfejlesztés",
+      "description": "A helyi kisvállalkozások gyors pénzügyi segítséget kapnak, ha váratlan gazdasági nehézségek veszélyeztetik működésüket. Az önkormányzat, a vállalatok és más támogatók közös krízisalapot hoznak létre, amely kedvezményes áthidaló kölcsönökkel, vissza nem térítendő támogatásokkal és üzleti tanácsadással segíti a bajba jutott cégeket. A program elsősorban a kisebb üzleteket, szolgáltatókat és kezdő vállalkozásokat támogatja. Célja a munkahelyek megőrzése, a vállalkozások megszűnésének megelőzése és a helyi gazdaság stabilitásának erősítése.",
+      "startup_cost": 3000,
+      "maintenance_cost": 5000,
+      "investment": 18000,
+      "partner_support": 8000,
+      "financial_values_as_displayed": [
+        "Indítási költség: 3,000",
+        "Fenntartási költség: 5,000",
+        "Beruházás: 18,000",
+        "Fejlesztési támogatás a partnervállalattól: 8,000"
+      ],
+      "effects": [
+        {
+          "metric": "Vállalkozóbarátság",
+          "value_percent": 0.4,
+          "displayed_value": "0.4%"
+        },
+        {
+          "metric": "Adminisztráció",
+          "value_percent": 0.1,
+          "displayed_value": "0.1%"
+        },
+        {
+          "metric": "Digitalizáció",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Szociális",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Lakossági viszonyok/elégedettség",
+          "value_percent": 0.1,
+          "displayed_value": "0.1%"
+        },
+        {
+          "metric": "Munkakörülmények",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Munkanélküliség",
+          "value_percent": -0.6,
+          "displayed_value": "-0.6%"
+        },
+        {
+          "metric": "Kisvállalkozások száma",
+          "value_percent": 0.02,
+          "displayed_value": "0.02%"
+        }
+      ],
+      "effects_count": 8,
+      "effects_display_status": "listed",
+      "project_conditions": [],
+      "status_p0": "Nem fut",
+      "status_p1": "Nem fut",
+      "project_page_control": "Start",
+      "project_page_control_disabled": false,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:03.583Z"
+    },
+    {
+      "id": 12,
+      "name": "Lakás- és helyiséggazdálkodás",
+      "category": "Gazdaságfejlesztés",
+      "description": "Az önkormányzati bérlakások és üzlethelyiségek korszerűsítésével, valamint magántulajdonú ingatlanok bevonásával új lakhatási és közösségi lehetőségek jönnek létre. A program keretében felújítják a leromlott állapotú lakásokat, hasznosítják az üresen álló helyiségeket, és megfizethető bérleti lehetőségeket biztosítanak a rászorulóknak, fiataloknak és helyi vállalkozásoknak. A fejlesztés növeli az ingatlanvagyon kihasználtságát, javítja a lakhatási körülményeket, élénkíti a városrészek közösségi életét és növeli az önkormányzat bérleti bevételeit.",
+      "startup_cost": 8000,
+      "maintenance_cost": -12000,
+      "investment": 75000,
+      "partner_support": 5000,
+      "financial_values_as_displayed": [
+        "Indítási költség: 8,000",
+        "Fenntartási költség: -12,000",
+        "Beruházás: 75,000",
+        "Fejlesztési támogatás a partnervállalattól: 5,000"
+      ],
+      "effects": [
+        {
+          "metric": "Vállalkozóbarátság",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Fenntarthatóság",
+          "value_percent": 0.4,
+          "displayed_value": "0.4%"
+        },
+        {
+          "metric": "Hulladékgazdálkodási helyzet",
+          "value_percent": 0.1,
+          "displayed_value": "0.1%"
+        },
+        {
+          "metric": "Adminisztráció",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Lakásgazdálkodás",
+          "value_percent": 3,
+          "displayed_value": "3%"
+        },
+        {
+          "metric": "Digitalizáció",
+          "value_percent": 0.1,
+          "displayed_value": "0.1%"
+        },
+        {
+          "metric": "Közbiztonság",
+          "value_percent": 1,
+          "displayed_value": "1%"
+        },
+        {
+          "metric": "Szociális",
+          "value_percent": 1,
+          "displayed_value": "1%"
+        },
+        {
+          "metric": "Rossz szoc. helyzetben lévők aránya",
+          "value_percent": -1.6,
+          "displayed_value": "-1.6%"
+        },
+        {
+          "metric": "Településfejlettség",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Lakossági viszonyok/elégedettség",
+          "value_percent": 0.6,
+          "displayed_value": "0.6%"
+        },
+        {
+          "metric": "Munkanélküliség",
+          "value_percent": -0.2,
+          "displayed_value": "-0.2%"
+        },
+        {
+          "metric": "Kisvállalkozások száma",
+          "value_percent": 0.03,
+          "displayed_value": "0.03%"
+        }
+      ],
+      "effects_count": 13,
+      "effects_display_status": "listed",
+      "project_conditions": [],
+      "status_p0": "Nem fut",
+      "status_p1": "Nem fut",
+      "project_page_control": "Start",
+      "project_page_control_disabled": false,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:03.583Z"
+    },
+    {
+      "id": 13,
+      "name": "Informatikai fejlesztés",
+      "category": "Gazdaságfejlesztés",
+      "description": "Az önkormányzat saját informatikai rendszereinek egységesre cserélése, a szükséges infrastruktúra-beruházásokkal, a belső folyamatok részleges digitalizálása (vállalati információs rendszer).",
+      "startup_cost": 12000,
+      "maintenance_cost": -8800,
+      "investment": 43000,
+      "partner_support": 0,
+      "financial_values_as_displayed": [
+        "Indítási költség: 12,000",
+        "Fenntartási költség: -8,800",
+        "Beruházás: 43,000",
+        "Fejlesztési támogatás a partnervállalattól: 0"
+      ],
+      "effects": [
+        {
+          "metric": "Adminisztráció",
+          "value_percent": 4,
+          "displayed_value": "4%"
+        },
+        {
+          "metric": "Digitalizáció",
+          "value_percent": 3,
+          "displayed_value": "3%"
+        },
+        {
+          "metric": "Lakossági viszonyok/elégedettség",
+          "value_percent": 0.7,
+          "displayed_value": "0.7%"
+        },
+        {
+          "metric": "Munkakörülmények",
+          "value_percent": 1.3,
+          "displayed_value": "1.3%"
+        },
+        {
+          "metric": "Lakosság képzettsége",
+          "value_percent": 0.6,
+          "displayed_value": "0.6%"
+        }
+      ],
+      "effects_count": 5,
+      "effects_display_status": "listed",
+      "project_conditions": [],
+      "status_p0": "Nem fut",
+      "status_p1": "Nem fut",
+      "project_page_control": "Start",
+      "project_page_control_disabled": false,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:03.583Z"
+    },
+    {
+      "id": 14,
+      "name": "Új ügyfélközpont",
+      "category": "Gazdaságfejlesztés",
+      "description": "Az Állomás utca 26. szám alatt új, akadálymentes önkormányzati ügyfélközpont létesül, amely egy helyre szervezi a legfontosabb lakossági és vállalkozói ügyintézési szolgáltatásokat. A digitális ügyintézés, az online időpontfoglalás és a korszerű ügyfélfogadó terek csökkentik a várakozási időt és a személyes ügyintézések számát. Az épület felújításával rendezettebbé válik a környezet, az energiahatékony működés pedig mérsékli a fenntartási költségeket. A fejlesztés gyorsabb ügyintézést, hatékonyabb hivatali működést és magasabb lakossági elégedettséget eredményez.",
+      "startup_cost": 0,
+      "maintenance_cost": 0,
+      "investment": 0,
+      "partner_support": 0,
+      "financial_values_as_displayed": [
+        "Indítási költség: 0",
+        "Fenntartási költség: 0",
+        "Beruházás: 0",
+        "Fejlesztési támogatás a partnervállalattól: 0"
+      ],
+      "effects": [],
+      "effects_count": 0,
+      "effects_display_status": "empty_list_on_page",
+      "project_conditions": [],
+      "status_p0": "Fut",
+      "status_p1": "Fut",
+      "project_page_control": "Fut",
+      "project_page_control_disabled": true,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:03.583Z"
+    },
+    {
+      "id": 15,
+      "name": "Pincerendszer hasznosítása",
+      "category": "Sport és Kultúra",
+      "description": "Kőbánya egykori mészkőbányájának több mint 30 km hosszú pincerendszere rengeteg lehetőséget rejt. A projekt célja, hogy ez a különleges föld alatti világ új életre keljen: koncerteknek, sport- és kulturális programoknak, rendezvényeknek és filmforgatásoknak adjon otthont. A fejlesztés növeli Kőbánya vonzerejét és ismertségét, miközben a programokból és bérbeadásból származó bevételek hozzájárulnak a pincerendszer fenntartásához és állagmegóvásához.",
+      "startup_cost": 12000,
+      "maintenance_cost": -4000,
+      "investment": 63000,
+      "partner_support": 2000,
+      "financial_values_as_displayed": [
+        "Indítási költség: 12,000",
+        "Fenntartási költség: -4,000",
+        "Beruházás: 63,000",
+        "Fejlesztési támogatás a partnervállalattól: 2,000"
+      ],
+      "effects": [
+        {
+          "metric": "Vállalkozóbarátság",
+          "value_percent": 0.1,
+          "displayed_value": "0.1%"
+        },
+        {
+          "metric": "Digitalizáció",
+          "value_percent": 0.1,
+          "displayed_value": "0.1%"
+        },
+        {
+          "metric": "Közbiztonság",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Művelődés",
+          "value_percent": 2,
+          "displayed_value": "2%"
+        },
+        {
+          "metric": "Településfejlettség",
+          "value_percent": 0.5,
+          "displayed_value": "0.5%"
+        },
+        {
+          "metric": "Lakossági viszonyok/elégedettség",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Munkakörülmények",
+          "value_percent": 0.1,
+          "displayed_value": "0.1%"
+        },
+        {
+          "metric": "Kisvállalkozások száma",
+          "value_percent": 0.01,
+          "displayed_value": "0.01%"
+        }
+      ],
+      "effects_count": 8,
+      "effects_display_status": "listed",
+      "project_conditions": [],
+      "status_p0": "Nem fut",
+      "status_p1": "Nem fut",
+      "project_page_control": "Start",
+      "project_page_control_disabled": false,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:14.970Z"
+    },
+    {
+      "id": 16,
+      "name": "Nyitott Alkotó és Innovációs Terek",
+      "category": "Sport és Kultúra",
+      "description": "Kőbánya ipari múltja új, kreatív funkciókkal kel életre! Modern alkotóműhelyek és innovációs központok (living lab, makerspace) jönnek létre, ahol a látogatók kipróbálhatják a 3D nyomtatást, a robotikát és más digitális technológiákat. A kerület több pontján kialakított, egymással együttműködő közösségi terek lehetőséget adnak a tanulásra, kísérletezésre, saját ötletek, projektek megvalósítására és akár új vállalkozások elindítására is.",
+      "startup_cost": 6000,
+      "maintenance_cost": 4000,
+      "investment": 33000,
+      "partner_support": 10000,
+      "financial_values_as_displayed": [
+        "Indítási költség: 6,000",
+        "Fenntartási költség: 4,000",
+        "Beruházás: 33,000",
+        "Fejlesztési támogatás a partnervállalattól: 10,000"
+      ],
+      "effects": [
+        {
+          "metric": "Vállalkozóbarátság",
+          "value_percent": 1,
+          "displayed_value": "1%"
+        },
+        {
+          "metric": "Digitalizáció",
+          "value_percent": 1,
+          "displayed_value": "1%"
+        },
+        {
+          "metric": "Oktatási intézmények",
+          "value_percent": 0.5,
+          "displayed_value": "0.5%"
+        },
+        {
+          "metric": "Művelődés",
+          "value_percent": 0.4,
+          "displayed_value": "0.4%"
+        },
+        {
+          "metric": "Településfejlettség",
+          "value_percent": 0.6,
+          "displayed_value": "0.6%"
+        },
+        {
+          "metric": "Lakossági viszonyok/elégedettség",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Munkakörülmények",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Lakosság képzettsége",
+          "value_percent": 0.7,
+          "displayed_value": "0.7%"
+        },
+        {
+          "metric": "Munkanélküliség",
+          "value_percent": -0.3,
+          "displayed_value": "-0.3%"
+        },
+        {
+          "metric": "Kisvállalkozások száma",
+          "value_percent": 0.03,
+          "displayed_value": "0.03%"
+        }
+      ],
+      "effects_count": 10,
+      "effects_display_status": "listed",
+      "project_conditions": [],
+      "status_p0": "Nem fut",
+      "status_p1": "Nem fut",
+      "project_page_control": "Start",
+      "project_page_control_disabled": false,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:14.970Z"
+    },
+    {
+      "id": 17,
+      "name": "Pályaorientáció és Tehetséggondozás",
+      "category": "Sport és Kultúra",
+      "description": "Milyen szakmákban dolgozhatnak a jövő mérnökei, kutatói és technológiai szakemberei? A projekt az iskolák és a helyi vállalatok együttműködésével segíti a fiatalokat a pályaválasztásban és tehetségük kibontakoztatásában. Üzemlátogatások, gyakorlati foglalkozások, mentorprogramok és innovációs műhelyek hozzák közelebb a műszaki és természettudományos pályákat.",
+      "startup_cost": 2500,
+      "maintenance_cost": 0,
+      "investment": 8000,
+      "partner_support": 10000,
+      "financial_values_as_displayed": [
+        "Indítási költség: 2,500",
+        "Fenntartási költség: 0",
+        "Beruházás: 8,000",
+        "Fejlesztési támogatás a partnervállalattól: 10,000"
+      ],
+      "effects": [
+        {
+          "metric": "Vállalkozóbarátság",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Digitalizáció",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Oktatási intézmények",
+          "value_percent": 0.7,
+          "displayed_value": "0.7%"
+        },
+        {
+          "metric": "Lakossági viszonyok/elégedettség",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Munkakörülmények",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Lakosság képzettsége",
+          "value_percent": 1,
+          "displayed_value": "1%"
+        },
+        {
+          "metric": "Munkanélküliség",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Kisvállalkozások száma",
+          "value_percent": 0.01,
+          "displayed_value": "0.01%"
+        },
+        {
+          "metric": "Középvállalkozások száma",
+          "value_percent": 1,
+          "displayed_value": "1%"
+        }
+      ],
+      "effects_count": 9,
+      "effects_display_status": "listed",
+      "project_conditions": [],
+      "status_p0": "Nem fut",
+      "status_p1": "Nem fut",
+      "project_page_control": "Start",
+      "project_page_control_disabled": false,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:14.970Z"
+    },
+    {
+      "id": 18,
+      "name": "Műemléki Dreher-villa új funkcióval",
+      "category": "Sport és Kultúra",
+      "description": "A történelmi Dreher villa felújításával új kulturális és közösségi központ születik a kerület szívében. A kétszintes, klasszicista épület kiállításoknak, koncerteknek, közösségi programoknak, konferenciáknak és exkluzív rendezvényeknek ad otthont. A beruházás részeként megújul a villa homlokzata, belső terei és parkosított környezete is. A rendezvényekből és terembérlésből származó bevételek hozzájárulnak az épület hosszú távú fenntartásához, miközben új élettel telik meg a környék.",
+      "startup_cost": 10000,
+      "maintenance_cost": -3500,
+      "investment": 65000,
+      "partner_support": 5000,
+      "financial_values_as_displayed": [
+        "Indítási költség: 10,000",
+        "Fenntartási költség: -3,500",
+        "Beruházás: 65,000",
+        "Fejlesztési támogatás a partnervállalattól: 5,000"
+      ],
+      "effects": [
+        {
+          "metric": "Zöld területek aránya",
+          "value_percent": 0.1,
+          "displayed_value": "0.1%"
+        },
+        {
+          "metric": "Digitalizáció",
+          "value_percent": 0.1,
+          "displayed_value": "0.1%"
+        },
+        {
+          "metric": "Közbiztonság",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Művelődés",
+          "value_percent": 1.5,
+          "displayed_value": "1.5%"
+        },
+        {
+          "metric": "Településfejlettség",
+          "value_percent": 0.6,
+          "displayed_value": "0.6%"
+        },
+        {
+          "metric": "Lakossági viszonyok/elégedettség",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Kisvállalkozások száma",
+          "value_percent": 0.01,
+          "displayed_value": "0.01%"
+        }
+      ],
+      "effects_count": 7,
+      "effects_display_status": "listed",
+      "project_conditions": [],
+      "status_p0": "Nem fut",
+      "status_p1": "Nem fut",
+      "project_page_control": "Start",
+      "project_page_control_disabled": false,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:14.970Z"
+    },
+    {
+      "id": 19,
+      "name": "Multifunkcionális Sportcentrum",
+      "category": "Sport és Kultúra",
+      "description": "Modern sport- és uszodakomplexum épül, amely új lehetőségeket kínál a sportolásra, kikapcsolódásra és az egészséges életmódra. A létesítmény úszómedencékkel, sportpályákkal, edzőtermekkel és közösségi terekkel várja a lakosokat, miközben sporteseményeknek és versenyeknek is otthont ad. A beruházással megújul a környék közterületeinek és közlekedési kapcsolatainak egy része, vonzóbbá válik a városrész, és új vendéglátóipari, valamint szolgáltató vállalkozások jelenhetnek meg.",
+      "startup_cost": 15000,
+      "maintenance_cost": 27000,
+      "investment": 240000,
+      "partner_support": 88000,
+      "financial_values_as_displayed": [
+        "Indítási költség: 15,000",
+        "Fenntartási költség: 27,000",
+        "Beruházás: 240,000",
+        "Fejlesztési támogatás a partnervállalattól: 88,000"
+      ],
+      "effects": [
+        {
+          "metric": "Fenntarthatóság",
+          "value_percent": -0.2,
+          "displayed_value": "-0.2%"
+        },
+        {
+          "metric": "Zöld területek aránya",
+          "value_percent": -0.3,
+          "displayed_value": "-0.3%"
+        },
+        {
+          "metric": "Digitalizáció",
+          "value_percent": 0.1,
+          "displayed_value": "0.1%"
+        },
+        {
+          "metric": "Közbiztonság",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Oktatási intézmények",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Egészségügy",
+          "value_percent": 0.6,
+          "displayed_value": "0.6%"
+        },
+        {
+          "metric": "Sport",
+          "value_percent": 3,
+          "displayed_value": "3%"
+        },
+        {
+          "metric": "Településfejlettség",
+          "value_percent": 1.8,
+          "displayed_value": "1.8%"
+        },
+        {
+          "metric": "Közlekedési minőség",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Lakossági viszonyok/elégedettség",
+          "value_percent": 1.3,
+          "displayed_value": "1.3%"
+        },
+        {
+          "metric": "Kisvállalkozások száma",
+          "value_percent": 0.05,
+          "displayed_value": "0.05%"
+        }
+      ],
+      "effects_count": 11,
+      "effects_display_status": "listed",
+      "project_conditions": [],
+      "status_p0": "Nem fut",
+      "status_p1": "Nem fut",
+      "project_page_control": "Start",
+      "project_page_control_disabled": false,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:14.970Z"
+    },
+    {
+      "id": 20,
+      "name": "Képzési együttműködések koordinációja",
+      "category": "Sport és Kultúra",
+      "description": "A helyi iskolák, egyetemek és vállalatok együttműködésével olyan képzések indulnak, amelyek közvetlenül a kerület munkaerőpiaci igényeire épülnek. Új gyakorlati helyek, vállalati tanműhelyek, felnőttképzések és kihelyezett egyetemi programok jönnek létre. A fiatalok lakóhelyük közelében tanulhatnak és helyezkedhetnek el, a helyi cégek könnyebben találnak képzett munkaerőt. A fejlesztés csökkenti a munkaerőhiányt, növeli a helyi foglalkoztatást, és erősíti a kerület gazdasági versenyképességét.",
+      "startup_cost": 5000,
+      "maintenance_cost": 3000,
+      "investment": 11000,
+      "partner_support": 1500,
+      "financial_values_as_displayed": [
+        "Indítási költség: 5,000",
+        "Fenntartási költség: 3,000",
+        "Beruházás: 11,000",
+        "Fejlesztési támogatás a partnervállalattól: 1,500"
+      ],
+      "effects": [
+        {
+          "metric": "Vállalkozóbarátság",
+          "value_percent": 0.4,
+          "displayed_value": "0.4%"
+        },
+        {
+          "metric": "Digitalizáció",
+          "value_percent": 0.1,
+          "displayed_value": "0.1%"
+        },
+        {
+          "metric": "Oktatási intézmények",
+          "value_percent": 1.2,
+          "displayed_value": "1.2%"
+        },
+        {
+          "metric": "Szociális",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Rossz szoc. helyzetben lévők aránya",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Lakossági viszonyok/elégedettség",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Munkakörülmények",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Lakosság képzettsége",
+          "value_percent": 1,
+          "displayed_value": "1%"
+        },
+        {
+          "metric": "Munkanélküliség",
+          "value_percent": -1.3,
+          "displayed_value": "-1.3%"
+        }
+      ],
+      "effects_count": 9,
+      "effects_display_status": "listed",
+      "project_conditions": [],
+      "status_p0": "Nem fut",
+      "status_p1": "Nem fut",
+      "project_page_control": "Start",
+      "project_page_control_disabled": false,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:14.970Z"
+    },
+    {
+      "id": 21,
+      "name": "Közlekedési Múzeum",
+      "category": "Sport és Kultúra",
+      "description": "A Magyar Műszaki és Közlekedési Múzeum új épületegyüttese a volt Északi Járműjavító ipari területének átalakításával jön létre. A beruházás megőrzi és új funkciókkal tölti meg az értékes ipari épületeket, miközben rendezett közterületek, zöldfelületek és új gyalogos kapcsolatok létesülnek. Az országos jelentőségű kulturális központ látogatókat és további beruházásokat vonz a környékre, élénkíti a vendéglátást és a kereskedelmet, új munkahelyeket teremt, valamint növeli a környező ingatlanok értékét és a kerület vonzerejét.",
+      "startup_cost": 7000,
+      "maintenance_cost": 0,
+      "investment": 28000,
+      "partner_support": 0,
+      "financial_values_as_displayed": [
+        "Indítási költség: 7,000",
+        "Fenntartási költség: 0",
+        "Beruházás: 28,000",
+        "Fejlesztési támogatás a partnervállalattól: 0"
+      ],
+      "effects": [
+        {
+          "metric": "Fenntarthatóság",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Levegőminőség",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Zöld területek aránya",
+          "value_percent": 1.1,
+          "displayed_value": "1.1%"
+        },
+        {
+          "metric": "Digitalizáció",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Közbiztonság",
+          "value_percent": 0.4,
+          "displayed_value": "0.4%"
+        },
+        {
+          "metric": "Oktatási intézmények",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Művelődés",
+          "value_percent": 2.5,
+          "displayed_value": "2.5%"
+        },
+        {
+          "metric": "Településfejlettség",
+          "value_percent": 1.6,
+          "displayed_value": "1.6%"
+        },
+        {
+          "metric": "Közlekedési minőség",
+          "value_percent": 0.4,
+          "displayed_value": "0.4%"
+        },
+        {
+          "metric": "Lakossági viszonyok/elégedettség",
+          "value_percent": 0.8,
+          "displayed_value": "0.8%"
+        },
+        {
+          "metric": "Munkakörülmények",
+          "value_percent": 0.1,
+          "displayed_value": "0.1%"
+        },
+        {
+          "metric": "Kisvállalkozások száma",
+          "value_percent": 0.01,
+          "displayed_value": "0.01%"
+        }
+      ],
+      "effects_count": 12,
+      "effects_display_status": "listed",
+      "project_conditions": [],
+      "status_p0": "Nem fut",
+      "status_p1": "Nem fut",
+      "project_page_control": "Start",
+      "project_page_control_disabled": false,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:14.970Z"
+    },
+    {
+      "id": 22,
+      "name": "Operaház próbacentrum és műhelyház",
+      "category": "Sport és Kultúra",
+      "description": "Az egykori Északi Járműjavító elhagyott ipari csarnokai új életre kelnek a Magyar Állami Operaház műhely- és próbacentrumaként. A 33 000 m²-es komplexumban színházterem, próbatermek, díszlet- és jelmezműhelyek, valamint kiállítóterek kapnak helyet. A barnamezős beruházás megőrzi az ipari műemlékeket, és egy 3 hektáros parkot is létrehoz játszótérrel, sport- és pihenőhelyekkel. A fejlesztés új kulturális és közösségi célpontot teremt, munkahelyeket biztosít, látogatókat vonz, és jelentősen növeli a környék vonzerejét.",
+      "startup_cost": 0,
+      "maintenance_cost": 0,
+      "investment": 0,
+      "partner_support": 0,
+      "financial_values_as_displayed": [
+        "Indítási költség: 0",
+        "Fenntartási költség: 0",
+        "Beruházás: 0",
+        "Fejlesztési támogatás a partnervállalattól: 0"
+      ],
+      "effects": [],
+      "effects_count": 0,
+      "effects_display_status": "empty_list_on_page",
+      "project_conditions": [],
+      "status_p0": "Fut",
+      "status_p1": "Fut",
+      "project_page_control": "Fut",
+      "project_page_control_disabled": true,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:14.970Z"
+    },
+    {
+      "id": 23,
+      "name": "Kosárlabdacsarnok",
+      "category": "Sport és Kultúra",
+      "description": "A Harmat utca 88. szám alatt modern kosárlabdacsarnok épül, amely új lehetőségeket teremt az utánpótlás-nevelés, a versenysport és a szabadidős sportolás számára. A létesítmény edzéseknek, bajnoki mérkőzéseknek, iskolai sportprogramoknak és közösségi rendezvényeknek ad otthont. A beruházás részeként rendezik az épület környezetét és a kapcsolódó közlekedési területeket. A fejlesztés bővíti a kerület sportinfrastruktúráját, ösztönzi a fiatalok sportolását, és növeli a környék vonzerejét.",
+      "startup_cost": 0,
+      "maintenance_cost": 0,
+      "investment": 0,
+      "partner_support": 0,
+      "financial_values_as_displayed": [
+        "Indítási költség: 0",
+        "Fenntartási költség: 0",
+        "Beruházás: 0",
+        "Fejlesztési támogatás a partnervállalattól: 0"
+      ],
+      "effects": [],
+      "effects_count": 0,
+      "effects_display_status": "empty_list_on_page",
+      "project_conditions": [],
+      "status_p0": "Fut",
+      "status_p1": "Fut",
+      "project_page_control": "Fut",
+      "project_page_control_disabled": true,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:14.970Z"
+    },
+    {
+      "id": 24,
+      "name": "Velodrom",
+      "category": "Sport és Kultúra",
+      "description": "A Hangár utcában modern velodrom, azaz fedett kerékpáros versenypálya létesül, amely az országúti és pályakerékpáros sportágak számára is új lehetőségeket teremt. A sportközpont edzéseknek, hazai és nemzetközi versenyeknek, utánpótlás-nevelési programoknak és közösségi sporteseményeknek ad otthont. A beruházás fejleszti a kerület sportinfrastruktúráját, új látogatókat vonz, élénkíti a helyi vendéglátást és szolgáltatásokat, miközben erősíti a kerékpározás népszerűségét és a kerület sportéletét.",
+      "startup_cost": 0,
+      "maintenance_cost": 0,
+      "investment": 0,
+      "partner_support": 0,
+      "financial_values_as_displayed": [
+        "Indítási költség: 0",
+        "Fenntartási költség: 0",
+        "Beruházás: 0",
+        "Fejlesztési támogatás a partnervállalattól: 0"
+      ],
+      "effects": [],
+      "effects_count": 0,
+      "effects_display_status": "empty_list_on_page",
+      "project_conditions": [],
+      "status_p0": "Fut",
+      "status_p1": "Fut",
+      "project_page_control": "Fut",
+      "project_page_control_disabled": true,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:14.970Z"
+    },
+    {
+      "id": 25,
+      "name": "Bosch Önvezető Jármű Tesztközpont",
+      "category": "Közlekedés",
+      "description": "A Bosch új, 10 000 m²-es tesztpályája az önvezető és elektromos járművek legújabb technológiáinak fejlesztésére és tesztelésére kínál lehetőséget. A projekt a cég, az önkormányzat, az egyetemek és a hazai startupok együttműködésére épít, új kutatás-fejlesztési lehetőségeket teremtve. A beruházás innovatív vállalkozásokat vonzhat a kerületbe, miközben a helyi oktatási és képzési programokat is erősíti.",
+      "startup_cost": 5000,
+      "maintenance_cost": 0,
+      "investment": 15000,
+      "partner_support": 4500,
+      "financial_values_as_displayed": [
+        "Indítási költség: 5,000",
+        "Fenntartási költség: 0",
+        "Beruházás: 15,000",
+        "Fejlesztési támogatás a partnervállalattól: 4,500"
+      ],
+      "effects": [
+        {
+          "metric": "Vállalkozóbarátság",
+          "value_percent": 1,
+          "displayed_value": "1%"
+        },
+        {
+          "metric": "Levegőminőség",
+          "value_percent": -0.1,
+          "displayed_value": "-0.1%"
+        },
+        {
+          "metric": "Zöld területek aránya",
+          "value_percent": -0.2,
+          "displayed_value": "-0.2%"
+        },
+        {
+          "metric": "Oktatási intézmények",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Településfejlettség",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Lakossági viszonyok/elégedettség",
+          "value_percent": -0.3,
+          "displayed_value": "-0.3%"
+        },
+        {
+          "metric": "Munkakörülmények",
+          "value_percent": 0.4,
+          "displayed_value": "0.4%"
+        },
+        {
+          "metric": "Lakosság képzettsége",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Munkanélküliség",
+          "value_percent": -0.1,
+          "displayed_value": "-0.1%"
+        },
+        {
+          "metric": "Kisvállalkozások száma",
+          "value_percent": 0.02,
+          "displayed_value": "0.02%"
+        },
+        {
+          "metric": "Középvállalkozások száma",
+          "value_percent": 1,
+          "displayed_value": "1%"
+        }
+      ],
+      "effects_count": 11,
+      "effects_display_status": "listed",
+      "project_conditions": [],
+      "status_p0": "Nem fut",
+      "status_p1": "Nem fut",
+      "project_page_control": "Start",
+      "project_page_control_disabled": false,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:27.452Z"
+    },
+    {
+      "id": 26,
+      "name": "Reptér elérhetőség javítása",
+      "category": "Közlekedés",
+      "description": "A Budapest Liszt Ferenc Nemzetközi Repülőtér közúti elérhetőségének javítása. Állami beruházás, melyhez az önkormányzat a közlekedésszervezés és területhasználat biztosításával járul hozzá. Az új gyorsforgalmi út a reptéri forgalom mellett a lakosság mindennapi közlekedését is támogatja.",
+      "startup_cost": 8000,
+      "maintenance_cost": 0,
+      "investment": 20000,
+      "partner_support": 0,
+      "financial_values_as_displayed": [
+        "Indítási költség: 8,000",
+        "Fenntartási költség: 0",
+        "Beruházás: 20,000",
+        "Fejlesztési támogatás a partnervállalattól: 0"
+      ],
+      "effects": [
+        {
+          "metric": "Fenntarthatóság",
+          "value_percent": -0.2,
+          "displayed_value": "-0.2%"
+        },
+        {
+          "metric": "Levegőminőség",
+          "value_percent": 0.1,
+          "displayed_value": "0.1%"
+        },
+        {
+          "metric": "Közbiztonság",
+          "value_percent": 2,
+          "displayed_value": "2%"
+        },
+        {
+          "metric": "Településfejlettség",
+          "value_percent": 1,
+          "displayed_value": "1%"
+        },
+        {
+          "metric": "Közlekedési minőség",
+          "value_percent": 3,
+          "displayed_value": "3%"
+        },
+        {
+          "metric": "Tömegközlekedők aránya, %",
+          "value_percent": -0.4,
+          "displayed_value": "-0.4%"
+        },
+        {
+          "metric": "Lakossági viszonyok/elégedettség",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Munkakörülmények",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Munkanélküliség",
+          "value_percent": -0.1,
+          "displayed_value": "-0.1%"
+        },
+        {
+          "metric": "Kisvállalkozások száma",
+          "value_percent": 0.01,
+          "displayed_value": "0.01%"
+        },
+        {
+          "metric": "Középvállalkozások száma",
+          "value_percent": 1,
+          "displayed_value": "1%"
+        }
+      ],
+      "effects_count": 11,
+      "effects_display_status": "listed",
+      "project_conditions": [],
+      "status_p0": "Nem fut",
+      "status_p1": "Nem fut",
+      "project_page_control": "Start",
+      "project_page_control_disabled": false,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:27.452Z"
+    },
+    {
+      "id": 27,
+      "name": "Vasútfejlesztés",
+      "category": "Közlekedés",
+      "description": "A Budapesti Körvasút fejlesztése részeként új vasúti megállók, a Népliget vasúti megálló és a Hungária körút menti vasúti megálló fejlesztése.",
+      "startup_cost": 3000,
+      "maintenance_cost": 0,
+      "investment": 12000,
+      "partner_support": 0,
+      "financial_values_as_displayed": [
+        "Indítási költség: 3,000",
+        "Fenntartási költség: 0",
+        "Beruházás: 12,000",
+        "Fejlesztési támogatás a partnervállalattól: 0"
+      ],
+      "effects": [
+        {
+          "metric": "Vállalkozóbarátság",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Fenntarthatóság",
+          "value_percent": 1,
+          "displayed_value": "1%"
+        },
+        {
+          "metric": "Levegőminőség",
+          "value_percent": 0.4,
+          "displayed_value": "0.4%"
+        },
+        {
+          "metric": "Digitalizáció",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Közbiztonság",
+          "value_percent": 0.6,
+          "displayed_value": "0.6%"
+        },
+        {
+          "metric": "Településfejlettség",
+          "value_percent": 1,
+          "displayed_value": "1%"
+        },
+        {
+          "metric": "Közlekedési minőség",
+          "value_percent": 2.5,
+          "displayed_value": "2.5%"
+        },
+        {
+          "metric": "Tömegközlekedők aránya, %",
+          "value_percent": 1.4,
+          "displayed_value": "1.4%"
+        },
+        {
+          "metric": "Lakossági viszonyok/elégedettség",
+          "value_percent": 0.6,
+          "displayed_value": "0.6%"
+        },
+        {
+          "metric": "Munkakörülmények",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Kisvállalkozások száma",
+          "value_percent": 0.01,
+          "displayed_value": "0.01%"
+        }
+      ],
+      "effects_count": 11,
+      "effects_display_status": "listed",
+      "project_conditions": [],
+      "status_p0": "Nem fut",
+      "status_p1": "Nem fut",
+      "project_page_control": "Start",
+      "project_page_control_disabled": false,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:27.452Z"
+    },
+    {
+      "id": 28,
+      "name": "Új trolibuszútvonal",
+      "category": "Közlekedés",
+      "description": "Kőbánya tömegközlekedési hálózatának fejlesztése a Kápolna utca felé tervezett trolibuszvonallal.",
+      "startup_cost": 1200,
+      "maintenance_cost": 0,
+      "investment": 3800,
+      "partner_support": 0,
+      "financial_values_as_displayed": [
+        "Indítási költség: 1,200",
+        "Fenntartási költség: 0",
+        "Beruházás: 3,800",
+        "Fejlesztési támogatás a partnervállalattól: 0"
+      ],
+      "effects": [
+        {
+          "metric": "Fenntarthatóság",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Levegőminőség",
+          "value_percent": 0.5,
+          "displayed_value": "0.5%"
+        },
+        {
+          "metric": "Településfejlettség",
+          "value_percent": 0.1,
+          "displayed_value": "0.1%"
+        },
+        {
+          "metric": "Közlekedési minőség",
+          "value_percent": 0.8,
+          "displayed_value": "0.8%"
+        },
+        {
+          "metric": "Tömegközlekedők aránya, %",
+          "value_percent": 0.4,
+          "displayed_value": "0.4%"
+        },
+        {
+          "metric": "Lakossági viszonyok/elégedettség",
+          "value_percent": 0.1,
+          "displayed_value": "0.1%"
+        }
+      ],
+      "effects_count": 6,
+      "effects_display_status": "listed",
+      "project_conditions": [],
+      "status_p0": "Nem fut",
+      "status_p1": "Nem fut",
+      "project_page_control": "Start",
+      "project_page_control_disabled": false,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:27.452Z"
+    },
+    {
+      "id": 29,
+      "name": "Bicikliútfejlesztés",
+      "category": "Közlekedés",
+      "description": "A Rákos-patak mentén új, összefüggő kerékpáros útvonal épül, amely Kőbányát Zuglóval és a XVII. kerülettel köti össze, és csatlakozik a főváros kerékpárút-hálózatához. A fejlesztés biztonságosabb közlekedést biztosít a környező lakónegyedekből munkába, iskolába vagy sportolni indulóknak. Az útvonal mentén pihenőhelyek, kerékpártárolók és rendezett zöldfelületek létesülnek. A beruházás csökkenti az autóhasználatot és a légszennyezést, miközben a patakpartot vonzó szabadidős útvonallá alakítja.",
+      "startup_cost": 8000,
+      "maintenance_cost": 2500,
+      "investment": 43000,
+      "partner_support": 2000,
+      "financial_values_as_displayed": [
+        "Indítási költség: 8,000",
+        "Fenntartási költség: 2,500",
+        "Beruházás: 43,000",
+        "Fejlesztési támogatás a partnervállalattól: 2,000"
+      ],
+      "effects": [
+        {
+          "metric": "Fenntarthatóság",
+          "value_percent": 0.8,
+          "displayed_value": "0.8%"
+        },
+        {
+          "metric": "Levegőminőség",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Zöld területek aránya",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Közbiztonság",
+          "value_percent": 0.6,
+          "displayed_value": "0.6%"
+        },
+        {
+          "metric": "Településfejlettség",
+          "value_percent": 0.7,
+          "displayed_value": "0.7%"
+        },
+        {
+          "metric": "Közlekedési minőség",
+          "value_percent": 1.5,
+          "displayed_value": "1.5%"
+        },
+        {
+          "metric": "Tömegközlekedők aránya, %",
+          "value_percent": -0.2,
+          "displayed_value": "-0.2%"
+        },
+        {
+          "metric": "Lakossági viszonyok/elégedettség",
+          "value_percent": 0.6,
+          "displayed_value": "0.6%"
+        },
+        {
+          "metric": "Kisvállalkozások száma",
+          "value_percent": 0.02,
+          "displayed_value": "0.02%"
+        }
+      ],
+      "effects_count": 9,
+      "effects_display_status": "listed",
+      "project_conditions": [],
+      "status_p0": "Nem fut",
+      "status_p1": "Nem fut",
+      "project_page_control": "Start",
+      "project_page_control_disabled": false,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:27.452Z"
+    },
+    {
+      "id": 30,
+      "name": "Közösségi kerékpár szolgáltatás bővítés (Bubi)",
+      "category": "Közlekedés",
+      "description": "Új megállók és a tárolásukra, karbantartásukra, szállításukra szolgáló infrastruktúra kialakítása, a meglévő lefedettség kétszeresére növelése (a kerület 42%-ára).",
+      "startup_cost": 3000,
+      "maintenance_cost": 5000,
+      "investment": 18000,
+      "partner_support": 3000,
+      "financial_values_as_displayed": [
+        "Indítási költség: 3,000",
+        "Fenntartási költség: 5,000",
+        "Beruházás: 18,000",
+        "Fejlesztési támogatás a partnervállalattól: 3,000"
+      ],
+      "effects": [
+        {
+          "metric": "Fenntarthatóság",
+          "value_percent": 0.4,
+          "displayed_value": "0.4%"
+        },
+        {
+          "metric": "Levegőminőség",
+          "value_percent": 0.1,
+          "displayed_value": "0.1%"
+        },
+        {
+          "metric": "Digitalizáció",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Közbiztonság",
+          "value_percent": -0.1,
+          "displayed_value": "-0.1%"
+        },
+        {
+          "metric": "Településfejlettség",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Közlekedési minőség",
+          "value_percent": 1.1,
+          "displayed_value": "1.1%"
+        },
+        {
+          "metric": "Tömegközlekedők aránya, %",
+          "value_percent": -0.3,
+          "displayed_value": "-0.3%"
+        },
+        {
+          "metric": "Lakossági viszonyok/elégedettség",
+          "value_percent": 0.4,
+          "displayed_value": "0.4%"
+        }
+      ],
+      "effects_count": 8,
+      "effects_display_status": "listed",
+      "project_conditions": [
+        "Bicikliútfejlesztés — Fut"
+      ],
+      "status_p0": "Nem fut",
+      "status_p1": "Nem fut",
+      "project_page_control": "Start",
+      "project_page_control_disabled": true,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:27.452Z"
+    },
+    {
+      "id": 31,
+      "name": "P+R parkolók a vasút mellett",
+      "category": "Közlekedés",
+      "description": "A fontosabb vasúti és tömegközlekedési csomópontok mellett, valamint a város határán és az agglomerációban P+R parkolók kialakítása, elsősorban barnamezős területeken, vagy mélygarázsban",
+      "startup_cost": 8000,
+      "maintenance_cost": -3500,
+      "investment": 64000,
+      "partner_support": 4000,
+      "financial_values_as_displayed": [
+        "Indítási költség: 8,000",
+        "Fenntartási költség: -3,500",
+        "Beruházás: 64,000",
+        "Fejlesztési támogatás a partnervállalattól: 4,000"
+      ],
+      "effects": [
+        {
+          "metric": "Vállalkozóbarátság",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Levegőminőség",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Zöld területek aránya",
+          "value_percent": -0.6,
+          "displayed_value": "-0.6%"
+        },
+        {
+          "metric": "Digitalizáció",
+          "value_percent": 0.1,
+          "displayed_value": "0.1%"
+        },
+        {
+          "metric": "Közbiztonság",
+          "value_percent": 0.7,
+          "displayed_value": "0.7%"
+        },
+        {
+          "metric": "Településfejlettség",
+          "value_percent": 0.4,
+          "displayed_value": "0.4%"
+        },
+        {
+          "metric": "Közlekedési minőség",
+          "value_percent": 1.2,
+          "displayed_value": "1.2%"
+        },
+        {
+          "metric": "Tömegközlekedők aránya, %",
+          "value_percent": 1.5,
+          "displayed_value": "1.5%"
+        },
+        {
+          "metric": "Lakossági viszonyok/elégedettség",
+          "value_percent": 0.4,
+          "displayed_value": "0.4%"
+        }
+      ],
+      "effects_count": 9,
+      "effects_display_status": "listed",
+      "project_conditions": [
+        "Vasútfejlesztés — Fut"
+      ],
+      "status_p0": "Nem fut",
+      "status_p1": "Nem fut",
+      "project_page_control": "Start",
+      "project_page_control_disabled": true,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:27.452Z"
+    },
+    {
+      "id": 32,
+      "name": "Megújuló energia park",
+      "category": "Környezet",
+      "description": "Kőbánya egykori agyagbányája, az Aknabánya új szerepet kap: a rekultivált területen 10 hektáros energiaerdő, napelempark, valamint biogáz- és depóniagáz-hasznosító létesítmények jönnek létre. A komplexum évente 8 000 MWh villamos energiát és 6 000 MWh hőenergiát termel, a villamos energia 80%-át a hálózatba táplálva. A fejlesztés becslések szerint évente 3 000 tonnával csökkenti a CO₂-kibocsátást, miközben javítja a környék környezeti állapotát.",
+      "startup_cost": 25000,
+      "maintenance_cost": -45000,
+      "investment": 210000,
+      "partner_support": 10000,
+      "financial_values_as_displayed": [
+        "Indítási költség: 25,000",
+        "Fenntartási költség: -45,000",
+        "Beruházás: 210,000",
+        "Fejlesztési támogatás a partnervállalattól: 10,000"
+      ],
+      "effects": [
+        {
+          "metric": "Fenntarthatóság",
+          "value_percent": 2.5,
+          "displayed_value": "2.5%"
+        },
+        {
+          "metric": "Levegőminőség",
+          "value_percent": 0.5,
+          "displayed_value": "0.5%"
+        },
+        {
+          "metric": "Zöld területek aránya",
+          "value_percent": 0.6,
+          "displayed_value": "0.6%"
+        },
+        {
+          "metric": "Hulladékgazdálkodási helyzet",
+          "value_percent": 0.8,
+          "displayed_value": "0.8%"
+        },
+        {
+          "metric": "Településfejlettség",
+          "value_percent": 0.5,
+          "displayed_value": "0.5%"
+        },
+        {
+          "metric": "Lakossági viszonyok/elégedettség",
+          "value_percent": 0.2,
+          "displayed_value": "0.2%"
+        },
+        {
+          "metric": "Munkakörülmények",
+          "value_percent": 0.1,
+          "displayed_value": "0.1%"
+        },
+        {
+          "metric": "Középvállalkozások száma",
+          "value_percent": 1,
+          "displayed_value": "1%"
+        }
+      ],
+      "effects_count": 8,
+      "effects_display_status": "listed",
+      "project_conditions": [],
+      "status_p0": "Nem fut",
+      "status_p1": "Nem fut",
+      "project_page_control": "Start",
+      "project_page_control_disabled": false,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:36.282Z"
+    },
+    {
+      "id": 33,
+      "name": "A Népliget megújítása",
+      "category": "Környezet",
+      "description": "A főváros egyik legnagyobb közparkja megújul, és a sportolás, kikapcsolódás és közösségi élet népszerű helyszínévé válik. Új futókörök, kerékpárutak, játszóterek és pihenőhelyek létesülnek, miközben rendezik a zöldfelületeket, javítják a közvilágítást és a közbiztonságot. A fejlesztés növeli a park látogatottságát, ösztönzi a szabadtéri sportolást, és erősíti a környék vendéglátó- és szolgáltató vállalkozásait. A megújult zöldterület javítja a városi mikroklímát, támogatja a biodiverzitást, növeli a környező ingatlanok értékét és a lakók életminőségét.",
+      "startup_cost": 18000,
+      "maintenance_cost": 3000,
+      "investment": 180000,
+      "partner_support": 5000,
+      "financial_values_as_displayed": [
+        "Indítási költség: 18,000",
+        "Fenntartási költség: 3,000",
+        "Beruházás: 180,000",
+        "Fejlesztési támogatás a partnervállalattól: 5,000"
+      ],
+      "effects": [
+        {
+          "metric": "Fenntarthatóság",
+          "value_percent": 0.7,
+          "displayed_value": "0.7%"
+        },
+        {
+          "metric": "Levegőminőség",
+          "value_percent": 0.4,
+          "displayed_value": "0.4%"
+        },
+        {
+          "metric": "Zöld területek aránya",
+          "value_percent": 10,
+          "displayed_value": "10%"
+        },
+        {
+          "metric": "Közbiztonság",
+          "value_percent": 1.8,
+          "displayed_value": "1.8%"
+        },
+        {
+          "metric": "Sport",
+          "value_percent": 1.5,
+          "displayed_value": "1.5%"
+        },
+        {
+          "metric": "Településfejlettség",
+          "value_percent": 1,
+          "displayed_value": "1%"
+        },
+        {
+          "metric": "Közlekedési minőség",
+          "value_percent": 0.3,
+          "displayed_value": "0.3%"
+        },
+        {
+          "metric": "Lakossági viszonyok/elégedettség",
+          "value_percent": 1.4,
+          "displayed_value": "1.4%"
+        },
+        {
+          "metric": "Kisvállalkozások száma",
+          "value_percent": 0.01,
+          "displayed_value": "0.01%"
+        }
+      ],
+      "effects_count": 9,
+      "effects_display_status": "listed",
+      "project_conditions": [],
+      "status_p0": "Nem fut",
+      "status_p1": "Nem fut",
+      "project_page_control": "Start",
+      "project_page_control_disabled": false,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:36.282Z"
+    },
+    {
+      "id": 34,
+      "name": "Robert Bosch campus bővítés",
+      "category": "Környezet",
+      "description": "A Robert Bosch fejlesztési kampuszának bővítésével 90 000 m²-es innovációs központ jön létre, modern kutatólaborokkal, járműtesztpályával és 1 800 munkahellyel. A korábbi ipari terület átalakul, az épületek körül parkosított zöldterületek, sétányok, tavak és pihenőhelyek létesülnek, több mint 200 új fa telepítésével. A kampusz épületeit új gyalogos összeköttetések kapcsolják össze. A beruházás erősíti a kerület technológiai szerepét, növeli gazdasági teljesítményét, és rendezettebb, zöldebb környezetet teremt.",
+      "startup_cost": 0,
+      "maintenance_cost": 0,
+      "investment": 0,
+      "partner_support": 0,
+      "financial_values_as_displayed": [
+        "Indítási költség: 0",
+        "Fenntartási költség: 0",
+        "Beruházás: 0",
+        "Fejlesztési támogatás a partnervállalattól: 0"
+      ],
+      "effects": [],
+      "effects_count": 0,
+      "effects_display_status": "empty_list_on_page",
+      "project_conditions": [],
+      "status_p0": "Fut",
+      "status_p1": "Fut",
+      "project_page_control": "Fut",
+      "project_page_control_disabled": true,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:36.282Z"
+    },
+    {
+      "id": 35,
+      "name": "Richter Központ – Új vállalati székház",
+      "category": "Környezet",
+      "description": "A Richter Gedeon új, 17 400 m²-es, hatszintes székháza a Gyömrői úton épül meg, mintegy 20 milliárd forintos beruházással. A modern irodaház több mint 400 munkaállomással, konferencia- és közösségi terekkel bővíti a vállalat központját. A fejlesztés részeként parkosított zöldfelületek, kerékpártárolók, elektromosautó-töltők és új parkolóhelyek létesülnek. Az energiahatékony épület korszerűsíti a környék városképét, erősíti a kerület gyógyszeripari és innovációs szerepét, valamint hozzájárul a magas képzettségű munkaerő helyben tartásához.",
+      "startup_cost": 0,
+      "maintenance_cost": 0,
+      "investment": 0,
+      "partner_support": 0,
+      "financial_values_as_displayed": [
+        "Indítási költség: 0",
+        "Fenntartási költség: 0",
+        "Beruházás: 0",
+        "Fejlesztési támogatás a partnervállalattól: 0"
+      ],
+      "effects": [],
+      "effects_count": 0,
+      "effects_display_status": "empty_list_on_page",
+      "project_conditions": [],
+      "status_p0": "Fut",
+      "status_p1": "Fut",
+      "project_page_control": "Fut",
+      "project_page_control_disabled": true,
+      "status_matches_summary": true,
+      "source_url": "https://edu.ecosim.hu/simulation/projects",
+      "captured_at": "2026-10-30T18:39:36.282Z"
+    }
+  ],
+  "summary_project_table": {
+    "header": [
+      "",
+      "p0 (tény)",
+      "p1 (terv)"
+    ],
+    "rows": [
+      [
+        "Szomszédsági Gazdaság Modell",
+        "Nem fut",
+        "Nem fut"
+      ],
+      [
+        "Kereskedelmi és Kulturális Központ",
+        "Nem fut",
+        "Nem fut"
+      ],
+      [
+        "Helyi élelmiszerellátás",
+        "Nem fut",
+        "Nem fut"
+      ],
+      [
+        "Körforgásos gazdaság mintaprojekt",
+        "Nem fut",
+        "Nem fut"
+      ],
+      [
+        "Vállalati Társadalmi Felelősség Platform",
+        "Nem fut",
+        "Nem fut"
+      ],
+      [
+        "Gazdasági és Foglalkoztatási Együttműködés",
+        "Nem fut",
+        "Nem fut"
+      ],
+      [
+        "HGF Innovációs Tudásközpont",
+        "Nem fut",
+        "Nem fut"
+      ],
+      [
+        "Okos Gazdaság Alkalmazások",
+        "Nem fut",
+        "Nem fut"
+      ],
+      [
+        "Közösségi Finanszírozási Rendszer",
+        "Nem fut",
+        "Nem fut"
+      ],
+      [
+        "Innovációs Alap",
+        "Nem fut",
+        "Nem fut"
+      ],
+      [
+        "Helyi Krízisalap",
+        "Nem fut",
+        "Nem fut"
+      ],
+      [
+        "Lakás- és helyiséggazdálkodás",
+        "Nem fut",
+        "Nem fut"
+      ],
+      [
+        "Informatikai fejlesztés",
+        "Nem fut",
+        "Nem fut"
+      ],
+      [
+        "Új ügyfélközpont",
+        "Fut",
+        "Fut"
+      ],
+      [
+        "Pincerendszer hasznosítása",
+        "Nem fut",
+        "Nem fut"
+      ],
+      [
+        "Nyitott Alkotó és Innovációs Terek",
+        "Nem fut",
+        "Nem fut"
+      ],
+      [
+        "Pályaorientáció és Tehetséggondozás",
+        "Nem fut",
+        "Nem fut"
+      ],
+      [
+        "Műemléki Dreher-villa új funkcióval",
+        "Nem fut",
+        "Nem fut"
+      ],
+      [
+        "Multifunkcionális Sportcentrum",
+        "Nem fut",
+        "Nem fut"
+      ],
+      [
+        "Képzési együttműködések koordinációja",
+        "Nem fut",
+        "Nem fut"
+      ],
+      [
+        "Közlekedési Múzeum",
+        "Nem fut",
+        "Nem fut"
+      ],
+      [
+        "Operaház próbacentrum és műhelyház",
+        "Fut",
+        "Fut"
+      ],
+      [
+        "Kosárlabdacsarnok",
+        "Fut",
+        "Fut"
+      ],
+      [
+        "Velodrom",
+        "Fut",
+        "Fut"
+      ],
+      [
+        "Bosch Önvezető Jármű Tesztközpont",
+        "Nem fut",
+        "Nem fut"
+      ],
+      [
+        "Reptér elérhetőség javítása",
+        "Nem fut",
+        "Nem fut"
+      ],
+      [
+        "Vasútfejlesztés",
+        "Nem fut",
+        "Nem fut"
+      ],
+      [
+        "Új trolibuszútvonal",
+        "Nem fut",
+        "Nem fut"
+      ],
+      [
+        "Bicikliútfejlesztés",
+        "Nem fut",
+        "Nem fut"
+      ],
+      [
+        "Közösségi kerékpár szolgáltatás bővítés (Bubi)",
+        "Nem fut",
+        "Nem fut"
+      ],
+      [
+        "P+R parkolók a vasút mellett",
+        "Nem fut",
+        "Nem fut"
+      ],
+      [
+        "Megújuló energia park",
+        "Nem fut",
+        "Nem fut"
+      ],
+      [
+        "A Népliget megújítása",
+        "Nem fut",
+        "Nem fut"
+      ],
+      [
+        "Robert Bosch campus bővítés",
+        "Fut",
+        "Fut"
+      ],
+      [
+        "Richter Központ – Új vállalati székház",
+        "Fut",
+        "Fut"
+      ]
+    ],
+    "before_and_after_equal": true
+  }
+}

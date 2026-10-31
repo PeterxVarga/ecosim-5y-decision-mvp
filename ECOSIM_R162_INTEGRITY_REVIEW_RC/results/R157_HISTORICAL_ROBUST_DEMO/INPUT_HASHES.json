@@ -1,0 +1,52 @@
+{
+  "run_config": {
+    "filename": "mvp_run.r157_robust_historical.json",
+    "sha256": "43690da62fa1ab7f17d54a478a548fdace7b9a870495323c3d1a7a4befacf386",
+    "bytes": 1765
+  },
+  "state": {
+    "filename": "official_state.template.json",
+    "sha256": "1e9f82948d614de5fcbba68a955d1c079daaf8c9004c2101ec489fefa1a4f196",
+    "bytes": 1354
+  },
+  "historical_passive_summary": {
+    "filename": "historical_passive_summary_20261030.json",
+    "sha256": "7f044cb25e8770fa768d1435d9403ec82e89196284c604765317a9f6839914b0",
+    "bytes": 3116
+  },
+  "tax_scenarios": {
+    "filename": "tax_counterfactual_r153.synthetic.json",
+    "sha256": "998b038c9f715da70ba2a76c2822c39d712863baa23467ff57309e84da722495",
+    "bytes": 4005
+  },
+  "tax_revenue_scenarios": {
+    "filename": "tax_revenue_r154.synthetic.json",
+    "sha256": "237d25e68c6d20f77290e902bc59fc4821acc266cdab175e4b85dd4008efc011",
+    "bytes": 1697
+  },
+  "operating_scenarios": {
+    "filename": "operating_r155.synthetic.json",
+    "sha256": "84394c0cd3986c9886115f22d4da420fa9bd2109efd7b1214dcba8909e28a477",
+    "bytes": 16172
+  },
+  "policy_tracks": {
+    "filename": "policy_tracks.synthetic.example.json",
+    "sha256": "6d068513340c60a2e23ddcd2615812b978dca5c156c8a82b8d016cf6cd9e93b2",
+    "bytes": 1357
+  },
+  "league_readonly": {
+    "filename": "league_observations.template.json",
+    "sha256": "d5f91f52108f682e4ce5ebffb086b486c19d491e96a5458b7ce40ef763fdfefa",
+    "bytes": 537
+  },
+  "paired_plan_observations": {
+    "filename": "paired_plan.template.json",
+    "sha256": "44c73ebc284596ab3b16d562e2ff930fd8318cf7bdd0230201c613afab10bf13",
+    "bytes": 73
+  },
+  "frozen_forecast_fact_audit": {
+    "filename": "forecast_audit.template.json",
+    "sha256": "a813e3758912b6885a3181789da432d3407931088190461e329325795295d96e",
+    "bytes": 69
+  }
+}

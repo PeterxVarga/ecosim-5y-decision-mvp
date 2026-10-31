@@ -1,0 +1,16 @@
+{
+  "file_count": 330,
+  "game_actions": 0,
+  "gameplay_gate": "STOP",
+  "historical_candidate_ids_unchanged_count": 20,
+  "historical_e2e_runs": 1,
+  "independent_external_reviewer": false,
+  "live_eco_sim_data_verified": false,
+  "new_adversarial_checks_executed": 62,
+  "prior_r160_checks_documented_not_rerun": 63,
+  "qualifier": "PASS_OFFLINE_ONLY",
+  "schema": "ECOSIM_R161_IMMUTABLE_OFFLINE_RELEASE_V1",
+  "scope": "ECOSIM_R160_CODEBASE_PLUS_R161_INPUT_AND_RELEASE_HARDENING",
+  "sha256sums_sha256": "3996a8caf29b1fb063f352af3ee9adf9adf04a94721fb4c595cace5969195592",
+  "true_five_year_game_score_validated": false
+}

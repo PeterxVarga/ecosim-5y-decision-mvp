@@ -1,0 +1,195 @@
+{
+  "schema": "ECOSIM_R159_HISTORICAL_R158_VS_R159_FALSIFICATION_V1",
+  "basis": "R94 historical snapshot + explicitly synthetic tax/operating scenarios; NOT observed game cash",
+  "evaluated_combinations": 78,
+  "changed_deferred_cash_pressure_count": 26,
+  "largest_upward_correction_ecu": 5763.0,
+  "largest_downward_correction_ecu": 0,
+  "core_project_candidate_set_unchanged": true,
+  "finance_feasibility_verified": false,
+  "gameplay_gate": "STOP",
+  "changes": [
+    {
+      "candidate_id": "P-027954559c67",
+      "path_id": "business_tax_increased_synthetic",
+      "r158_peak_deferred_pressure_ecu": 99500.0,
+      "r159_peak_deferred_pressure_ecu": 105263.0,
+      "correction_ecu": 5763.0
+    },
+    {
+      "candidate_id": "P-38dcd54304ff",
+      "path_id": "business_tax_increased_synthetic",
+      "r158_peak_deferred_pressure_ecu": 99500.0,
+      "r159_peak_deferred_pressure_ecu": 105263.0,
+      "correction_ecu": 5763.0
+    },
+    {
+      "candidate_id": "P-3e06cde819a6",
+      "path_id": "business_tax_increased_synthetic",
+      "r158_peak_deferred_pressure_ecu": 98000.0,
+      "r159_peak_deferred_pressure_ecu": 103763.0,
+      "correction_ecu": 5763.0
+    },
+    {
+      "candidate_id": "P-4dd0b056939c",
+      "path_id": "business_tax_increased_synthetic",
+      "r158_peak_deferred_pressure_ecu": 142000.0,
+      "r159_peak_deferred_pressure_ecu": 147763.0,
+      "correction_ecu": 5763.0
+    },
+    {
+      "candidate_id": "P-5751d0c900aa",
+      "path_id": "business_tax_increased_synthetic",
+      "r158_peak_deferred_pressure_ecu": 99500.0,
+      "r159_peak_deferred_pressure_ecu": 105263.0,
+      "correction_ecu": 5763.0
+    },
+    {
+      "candidate_id": "P-61ce97c60a3b",
+      "path_id": "business_tax_increased_synthetic",
+      "r158_peak_deferred_pressure_ecu": 49000.0,
+      "r159_peak_deferred_pressure_ecu": 54763.0,
+      "correction_ecu": 5763.0
+    },
+    {
+      "candidate_id": "P-678df6e638a7",
+      "path_id": "business_tax_increased_synthetic",
+      "r158_peak_deferred_pressure_ecu": 142000.0,
+      "r159_peak_deferred_pressure_ecu": 147763.0,
+      "correction_ecu": 5763.0
+    },
+    {
+      "candidate_id": "P-68be1bc65a7b",
+      "path_id": "business_tax_increased_synthetic",
+      "r158_peak_deferred_pressure_ecu": 48000.0,
+      "r159_peak_deferred_pressure_ecu": 53763.0,
+      "correction_ecu": 5763.0
+    },
+    {
+      "candidate_id": "P-7128a45f8542",
+      "path_id": "business_tax_increased_synthetic",
+      "r158_peak_deferred_pressure_ecu": 142000.0,
+      "r159_peak_deferred_pressure_ecu": 147763.0,
+      "correction_ecu": 5763.0
+    },
+    {
+      "candidate_id": "P-71895ba56dd7",
+      "path_id": "business_tax_increased_synthetic",
+      "r158_peak_deferred_pressure_ecu": 142000.0,
+      "r159_peak_deferred_pressure_ecu": 147763.0,
+      "correction_ecu": 5763.0
+    },
+    {
+      "candidate_id": "P-780aee4394fa",
+      "path_id": "business_tax_increased_synthetic",
+      "r158_peak_deferred_pressure_ecu": 50000.0,
+      "r159_peak_deferred_pressure_ecu": 55763.0,
+      "correction_ecu": 5763.0
+    },
+    {
+      "candidate_id": "P-7987f0e1a89d",
+      "path_id": "business_tax_increased_synthetic",
+      "r158_peak_deferred_pressure_ecu": 98000.0,
+      "r159_peak_deferred_pressure_ecu": 103763.0,
+      "correction_ecu": 5763.0
+    },
+    {
+      "candidate_id": "P-7af7b223be3a",
+      "path_id": "business_tax_increased_synthetic",
+      "r158_peak_deferred_pressure_ecu": 48000.0,
+      "r159_peak_deferred_pressure_ecu": 53763.0,
+      "correction_ecu": 5763.0
+    },
+    {
+      "candidate_id": "P-9f220f6f225b",
+      "path_id": "business_tax_increased_synthetic",
+      "r158_peak_deferred_pressure_ecu": 142000.0,
+      "r159_peak_deferred_pressure_ecu": 147763.0,
+      "correction_ecu": 5763.0
+    },
+    {
+      "candidate_id": "P-9ffda18c4ae7",
+      "path_id": "business_tax_increased_synthetic",
+      "r158_peak_deferred_pressure_ecu": 142000.0,
+      "r159_peak_deferred_pressure_ecu": 147763.0,
+      "correction_ecu": 5763.0
+    },
+    {
+      "candidate_id": "P-a2f6bade1bf2",
+      "path_id": "business_tax_increased_synthetic",
+      "r158_peak_deferred_pressure_ecu": 142000.0,
+      "r159_peak_deferred_pressure_ecu": 147763.0,
+      "correction_ecu": 5763.0
+    },
+    {
+      "candidate_id": "P-aa61047c535c",
+      "path_id": "business_tax_increased_synthetic",
+      "r158_peak_deferred_pressure_ecu": 48000.0,
+      "r159_peak_deferred_pressure_ecu": 53763.0,
+      "correction_ecu": 5763.0
+    },
+    {
+      "candidate_id": "P-b97fc8b30724",
+      "path_id": "business_tax_increased_synthetic",
+      "r158_peak_deferred_pressure_ecu": 98000.0,
+      "r159_peak_deferred_pressure_ecu": 103763.0,
+      "correction_ecu": 5763.0
+    },
+    {
+      "candidate_id": "P-d440783cfc88",
+      "path_id": "business_tax_increased_synthetic",
+      "r158_peak_deferred_pressure_ecu": 50000.0,
+      "r159_peak_deferred_pressure_ecu": 55763.0,
+      "correction_ecu": 5763.0
+    },
+    {
+      "candidate_id": "P-da1be457c9c4",
+      "path_id": "business_tax_increased_synthetic",
+      "r158_peak_deferred_pressure_ecu": 99500.0,
+      "r159_peak_deferred_pressure_ecu": 105263.0,
+      "correction_ecu": 5763.0
+    },
+    {
+      "candidate_id": "P-e10fc0617d3e",
+      "path_id": "business_tax_increased_synthetic",
+      "r158_peak_deferred_pressure_ecu": 142000.0,
+      "r159_peak_deferred_pressure_ecu": 147763.0,
+      "correction_ecu": 5763.0
+    },
+    {
+      "candidate_id": "P-e333150e7648",
+      "path_id": "business_tax_increased_synthetic",
+      "r158_peak_deferred_pressure_ecu": 142000.0,
+      "r159_peak_deferred_pressure_ecu": 147763.0,
+      "correction_ecu": 5763.0
+    },
+    {
+      "candidate_id": "P-ec40afec9ed4",
+      "path_id": "business_tax_increased_synthetic",
+      "r158_peak_deferred_pressure_ecu": 99500.0,
+      "r159_peak_deferred_pressure_ecu": 105263.0,
+      "correction_ecu": 5763.0
+    },
+    {
+      "candidate_id": "P-efee28562fae",
+      "path_id": "business_tax_increased_synthetic",
+      "r158_peak_deferred_pressure_ecu": 49000.0,
+      "r159_peak_deferred_pressure_ecu": 54763.0,
+      "correction_ecu": 5763.0
+    },
+    {
+      "candidate_id": "P-f7360b35019c",
+      "path_id": "business_tax_increased_synthetic",
+      "r158_peak_deferred_pressure_ecu": 148000.0,
+      "r159_peak_deferred_pressure_ecu": 153763.0,
+      "correction_ecu": 5763.0
+    },
+    {
+      "candidate_id": "P-f8621e760ebd",
+      "path_id": "business_tax_increased_synthetic",
+      "r158_peak_deferred_pressure_ecu": 99500.0,
+      "r159_peak_deferred_pressure_ecu": 105263.0,
+      "correction_ecu": 5763.0
+    }
+  ]
+}

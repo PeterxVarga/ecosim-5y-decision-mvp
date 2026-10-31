@@ -1,0 +1,6 @@
+{
+  "mode": "EXPLICIT_HYPOTHETICAL_NONPROJECT_NET_ONLY",
+  "initial_uncommitted_cash_ecu": 100000,
+  "annual_nonproject_net_cash_ecu": [100000, 100000, 100000, 100000, 100000],
+  "assumption_note": "Illustrative only. Not official EcoSim reserve, financing or cash projection. No new borrowing or grants."
+}

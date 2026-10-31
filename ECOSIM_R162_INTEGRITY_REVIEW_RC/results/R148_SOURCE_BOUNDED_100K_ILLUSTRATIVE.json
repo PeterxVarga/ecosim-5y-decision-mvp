@@ -1,0 +1,994 @@
+{
+  "game_decision": "STOP",
+  "scenario_budget_not_verified": 100000,
+  "first_three_project_ids": [
+    8,
+    13,
+    27
+  ],
+  "terminal_project_only_score": "UNVALIDATED",
+  "annual_ledger": {
+    "schema": "ECOSIM_R148_PARTIAL_ANNUAL_LEDGER_V1",
+    "yearly_state_records": [
+      {
+        "year": 1,
+        "new_project_ids": [
+          8,
+          13,
+          27
+        ],
+        "active_project_ids": [
+          8,
+          13,
+          14,
+          22,
+          23,
+          24,
+          27,
+          34,
+          35
+        ],
+        "factor_replay": {
+          "factors_conditional": {
+            "Fizetőképes piac": 72.5,
+            "Vállalkozások száma": 50.45,
+            "Vállalkozóbarátság": 28.528593299999997,
+            "Foglalkoztatottság": 97.31,
+            "Fenntarthatóság": 49.883900000000004,
+            "Vízgazdálkodás": 53.0,
+            "Levegőminőség": 50.31044,
+            "Zöld területek aránya": 30.95,
+            "Hulladékgazdálkodási helyzet": 49.16,
+            "Adminisztráció": 31.7219448,
+            "Lakásgazdálkodás": 36.4,
+            "Digitalizáció": 78.58414458,
+            "Közbiztonság": 31.45762,
+            "Oktatási intézmények": 62.11,
+            "Egészségügy": 45.98,
+            "Szociális": 66.76,
+            "Sport": 41.94,
+            "Művelődés": 41.93,
+            "Átlagos lakásérték": 50.59,
+            "Rossz szoc. helyzetben lévők aránya": 20.98,
+            "Településfejlettség": 56.156,
+            "Közlekedési minőség": 62.381499999999996,
+            "Tömegközlekedők aránya, %": 61.03266,
+            "Autók száma / 100 fő": 47.48,
+            "Lakossági viszonyok/elégedettség": 18.16384306,
+            "Munkakörülmények": 49.62954259789998,
+            "Lakosság képzettsége": 20.763840000000002,
+            "Munkanélküli arány": 2.69,
+            "Adósság / vagyon": 100.0
+          },
+          "baseline_mapped_index": 52.483733333,
+          "mapped_conditional_index": 52.963441308,
+          "mapped_index_if_only_saturation_uncertain": [
+            52.963441308,
+            52.963441308
+          ],
+          "ambiguous_saturated_factors": [],
+          "unmapped_project_effects": [
+            {
+              "project_id": 8,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 27,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            }
+          ],
+          "direct_effects_used": 19,
+          "policy_multipliers_are_user_supplied_hypotheses": true,
+          "partial_score_is_full_city_or_server_forecast": false,
+          "total_score_uncertainty_is_bounded": false
+        },
+        "index_snapshot_aggregation": {
+          "partial_indexes": {
+            "Gazdaság": {
+              "index": 62.197148325,
+              "weight": 0.25,
+              "weighted_component": 15.549287081
+            },
+            "Környezet": {
+              "index": 46.660868,
+              "weight": 0.2,
+              "weighted_component": 9.3321736
+            },
+            "Kormányzás": {
+              "index": 73.902029793,
+              "weight": 0.15,
+              "weighted_component": 11.085304469
+            },
+            "Életkörülmények": {
+              "index": 52.4734525,
+              "weight": 0.15,
+              "weighted_component": 7.871017875
+            },
+            "Mobilitás": {
+              "index": 47.98672,
+              "weight": 0.1,
+              "weighted_component": 4.798672
+            },
+            "Emberek": {
+              "index": 28.846575219,
+              "weight": 0.15,
+              "weighted_component": 4.326986283
+            }
+          },
+          "total_index_from_displayed_factors": 52.963441308,
+          "known_display_rounding_uncertainty": true,
+          "weight_source": "R141_TEST_UI_SIX_WEIGHTS_NOT_LIVE_CONFIG",
+          "calculates_future_factor_changes": false
+        },
+        "finance_components": {
+          "source": "EXPLICIT_HYPOTHETICAL_COMPONENT_LEDGER_NOT_ECOSIM_CASHFLOW",
+          "project_client_expense_line_ecu": 90200,
+          "conservative_project_funding_need_ecu": 99000,
+          "support_separate_label_ecu": 3500,
+          "support_guaranteed_cash_ecu": null,
+          "loan": null,
+          "short_loan": null,
+          "project_budget_approval": false,
+          "actual_cashflow_ecu": null,
+          "hypothetical_closing_cash_ecu": null,
+          "hypothetical_shortfall_ecu": null
+        },
+        "actual_annual_city_state_transition": null,
+        "unobserved_city_drift_and_competitors": "UNKNOWN"
+      },
+      {
+        "year": 2,
+        "new_project_ids": [
+          4,
+          17,
+          21,
+          28
+        ],
+        "active_project_ids": [
+          4,
+          8,
+          13,
+          14,
+          17,
+          21,
+          22,
+          23,
+          24,
+          27,
+          28,
+          34,
+          35
+        ],
+        "factor_replay": {
+          "factors_conditional": {
+            "Fizetőképes piac": 72.5,
+            "Vállalkozások száma": 50.45,
+            "Vállalkozóbarátság": 28.728635796219592,
+            "Foglalkoztatottság": 97.31,
+            "Fenntarthatóság": 50.93640714042649,
+            "Vízgazdálkodás": 53.0,
+            "Levegőminőség": 50.815105532953176,
+            "Zöld területek aránya": 31.290449999999996,
+            "Hulladékgazdálkodási helyzet": 50.6348,
+            "Adminisztráció": 31.7219448,
+            "Lakásgazdálkodás": 36.4,
+            "Digitalizáció": 78.97769429039322,
+            "Közbiztonság": 31.58345048,
+            "Oktatási intézmények": 62.73240430999999,
+            "Egészségügy": 45.98,
+            "Szociális": 66.76,
+            "Sport": 41.94,
+            "Művelődés": 42.978249999999996,
+            "Átlagos lakásérték": 50.59,
+            "Rossz szoc. helyzetben lévők aránya": 20.98,
+            "Településfejlettség": 57.282885147488,
+            "Közlekedési minőség": 63.132074208,
+            "Tömegközlekedők aránya, %": 61.27679064,
+            "Autók száma / 100 fő": 47.48,
+            "Lakossági viszonyok/elégedettség": 18.400846119969447,
+            "Munkakörülmények": 49.82820965691936,
+            "Lakosság képzettsége": 21.0134213568,
+            "Munkanélküli arány": 2.6926738599999998,
+            "Adósság / vagyon": 100.0
+          },
+          "baseline_mapped_index": 52.483733333,
+          "mapped_conditional_index": 53.269084418,
+          "mapped_index_if_only_saturation_uncertain": [
+            53.269084418,
+            53.269084418
+          ],
+          "ambiguous_saturated_factors": [],
+          "unmapped_project_effects": [
+            {
+              "project_id": 4,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 4,
+              "effect_label": "Középvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 8,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 17,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 17,
+              "effect_label": "Középvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 21,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 27,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            }
+          ],
+          "direct_effects_used": 52,
+          "policy_multipliers_are_user_supplied_hypotheses": true,
+          "partial_score_is_full_city_or_server_forecast": false,
+          "total_score_uncertainty_is_bounded": false
+        },
+        "index_snapshot_aggregation": {
+          "partial_indexes": {
+            "Gazdaság": {
+              "index": 62.247158949,
+              "weight": 0.25,
+              "weighted_component": 15.561789737
+            },
+            "Környezet": {
+              "index": 47.335352535,
+              "weight": 0.2,
+              "weighted_component": 9.467070507
+            },
+            "Kormányzás": {
+              "index": 74.03321303,
+              "weight": 0.15,
+              "weighted_component": 11.104981955
+            },
+            "Életkörülmények": {
+              "index": 52.698013099,
+              "weight": 0.15,
+              "weighted_component": 7.904701965
+            },
+            "Mobilitás": {
+              "index": 48.693916665,
+              "weight": 0.1,
+              "weighted_component": 4.869391667
+            },
+            "Emberek": {
+              "index": 29.074323913,
+              "weight": 0.15,
+              "weighted_component": 4.361148587
+            }
+          },
+          "total_index_from_displayed_factors": 53.269084418,
+          "known_display_rounding_uncertainty": true,
+          "weight_source": "R141_TEST_UI_SIX_WEIGHTS_NOT_LIVE_CONFIG",
+          "calculates_future_factor_changes": false
+        },
+        "finance_components": {
+          "source": "EXPLICIT_HYPOTHETICAL_COMPONENT_LEDGER_NOT_ECOSIM_CASHFLOW",
+          "project_client_expense_line_ecu": 87700,
+          "conservative_project_funding_need_ecu": 96500,
+          "support_separate_label_ecu": 24000,
+          "support_guaranteed_cash_ecu": null,
+          "loan": null,
+          "short_loan": null,
+          "project_budget_approval": false,
+          "actual_cashflow_ecu": null,
+          "hypothetical_closing_cash_ecu": null,
+          "hypothetical_shortfall_ecu": null
+        },
+        "actual_annual_city_state_transition": null,
+        "unobserved_city_drift_and_competitors": "UNKNOWN"
+      },
+      {
+        "year": 3,
+        "new_project_ids": [
+          5,
+          9,
+          16,
+          26
+        ],
+        "active_project_ids": [
+          4,
+          5,
+          8,
+          9,
+          13,
+          14,
+          16,
+          17,
+          21,
+          22,
+          23,
+          24,
+          26,
+          27,
+          28,
+          34,
+          35
+        ],
+        "factor_replay": {
+          "factors_conditional": {
+            "Fizetőképes piac": 72.5,
+            "Vállalkozások száma": 50.45,
+            "Vállalkozóbarátság": 29.01592215418179,
+            "Foglalkoztatottság": 97.31,
+            "Fenntarthatóság": 50.98713959819272,
+            "Vízgazdálkodás": 53.0,
+            "Levegőminőség": 50.865920638486145,
+            "Zöld területek aránya": 31.290449999999996,
+            "Hulladékgazdálkodási helyzet": 50.6348,
+            "Adminisztráció": 31.97619618757199,
+            "Lakásgazdálkodás": 36.472836399999984,
+            "Digitalizáció": 80.24647489805308,
+            "Közbiztonság": 32.2151194896,
+            "Oktatási intézmények": 63.23520453054463,
+            "Egészségügy": 45.98,
+            "Szociális": 66.96028,
+            "Sport": 41.981939999999994,
+            "Művelődés": 43.32293625265199,
+            "Átlagos lakásérték": 50.59,
+            "Rossz szoc. helyzetben lévők aránya": 20.98,
+            "Településfejlettség": 58.31925397952257,
+            "Közlekedési minőség": 65.02603643423998,
+            "Tömegközlekedők aránya, %": 61.03168347743999,
+            "Autók száma / 100 fő": 47.48,
+            "Lakossági viszonyok/elégedettség": 18.678334194260607,
+            "Munkakörülmények": 50.077649674461895,
+            "Lakosság képzettsége": 21.223996852216494,
+            "Munkanélküli arány": 2.681911242581579,
+            "Adósság / vagyon": 100.0
+          },
+          "baseline_mapped_index": 52.483733333,
+          "mapped_conditional_index": 53.529957167,
+          "mapped_index_if_only_saturation_uncertain": [
+            53.529957167,
+            53.529957167
+          ],
+          "ambiguous_saturated_factors": [],
+          "unmapped_project_effects": [
+            {
+              "project_id": 4,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 4,
+              "effect_label": "Középvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 8,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 9,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 16,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 17,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 17,
+              "effect_label": "Középvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 21,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 26,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 26,
+              "effect_label": "Középvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 27,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            }
+          ],
+          "direct_effects_used": 87,
+          "policy_multipliers_are_user_supplied_hypotheses": true,
+          "partial_score_is_full_city_or_server_forecast": false,
+          "total_score_uncertainty_is_bounded": false
+        },
+        "index_snapshot_aggregation": {
+          "partial_indexes": {
+            "Gazdaság": {
+              "index": 62.318980539,
+              "weight": 0.25,
+              "weighted_component": 15.579745135
+            },
+            "Környezet": {
+              "index": 47.355662047,
+              "weight": 0.2,
+              "weighted_component": 9.471132409
+            },
+            "Kormányzás": {
+              "index": 74.565169162,
+              "weight": 0.15,
+              "weighted_component": 11.184775374
+            },
+            "Életkörülmények": {
+              "index": 52.913185034,
+              "weight": 0.15,
+              "weighted_component": 7.936977755
+            },
+            "Mobilitás": {
+              "index": 49.588991297,
+              "weight": 0.1,
+              "weighted_component": 4.95889913
+            },
+            "Emberek": {
+              "index": 29.322849096,
+              "weight": 0.15,
+              "weighted_component": 4.398427364
+            }
+          },
+          "total_index_from_displayed_factors": 53.529957167,
+          "known_display_rounding_uncertainty": true,
+          "weight_source": "R141_TEST_UI_SIX_WEIGHTS_NOT_LIVE_CONFIG",
+          "calculates_future_factor_changes": false
+        },
+        "finance_components": {
+          "source": "EXPLICIT_HYPOTHETICAL_COMPONENT_LEDGER_NOT_ECOSIM_CASHFLOW",
+          "project_client_expense_line_ecu": 84700,
+          "conservative_project_funding_need_ecu": 93500,
+          "support_separate_label_ecu": 37000,
+          "support_guaranteed_cash_ecu": null,
+          "loan": null,
+          "short_loan": null,
+          "project_budget_approval": false,
+          "actual_cashflow_ecu": null,
+          "hypothetical_closing_cash_ecu": null,
+          "hypothetical_shortfall_ecu": null
+        },
+        "actual_annual_city_state_transition": null,
+        "unobserved_city_drift_and_competitors": "UNKNOWN"
+      },
+      {
+        "year": 4,
+        "new_project_ids": [
+          1,
+          6,
+          20,
+          25
+        ],
+        "active_project_ids": [
+          1,
+          4,
+          5,
+          6,
+          8,
+          9,
+          13,
+          14,
+          16,
+          17,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          34,
+          35
+        ],
+        "factor_replay": {
+          "factors_conditional": {
+            "Fizetőképes piac": 72.5,
+            "Vállalkozások száma": 50.45,
+            "Vállalkozóbarátság": 29.925561529546435,
+            "Foglalkoztatottság": 97.31,
+            "Fenntarthatóság": 51.24207529618368,
+            "Vízgazdálkodás": 53.0,
+            "Levegőminőség": 50.81505471784766,
+            "Zöld területek aránya": 31.25909696909999,
+            "Hulladékgazdálkodási helyzet": 50.887974,
+            "Adminisztráció": 31.97619618757199,
+            "Lakásgazdálkodás": 36.472836399999984,
+            "Digitalizáció": 80.32672137295111,
+            "Közbiztonság": 32.2151194896,
+            "Oktatási intézmények": 64.37856709306347,
+            "Egészségügy": 45.98,
+            "Szociális": 67.63202767168896,
+            "Sport": 41.981939999999994,
+            "Művelődés": 43.32293625265199,
+            "Átlagos lakásérték": 50.59,
+            "Rossz szoc. helyzetben lévők aránya": 20.895849849399998,
+            "Településfejlettség": 58.669636057431525,
+            "Közlekedési minőség": 65.02603643423998,
+            "Tömegközlekedők aránya, %": 61.03168347743999,
+            "Autók száma / 100 fő": 47.48,
+            "Lakossági viszonyok/elégedettség": 18.827871590458216,
+            "Munkakörülmények": 50.479273226093476,
+            "Lakosság képzettsége": 21.608048258856865,
+            "Munkanélküli arány": 2.6101014904616813,
+            "Adósság / vagyon": 100.0
+          },
+          "baseline_mapped_index": 52.483733333,
+          "mapped_conditional_index": 53.7046016,
+          "mapped_index_if_only_saturation_uncertain": [
+            53.7046016,
+            53.7046016
+          ],
+          "ambiguous_saturated_factors": [],
+          "unmapped_project_effects": [
+            {
+              "project_id": 1,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 4,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 4,
+              "effect_label": "Középvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 6,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 6,
+              "effect_label": "Középvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 8,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 9,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 16,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 17,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 17,
+              "effect_label": "Középvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 21,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 25,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 25,
+              "effect_label": "Középvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 26,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 26,
+              "effect_label": "Középvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 27,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            }
+          ],
+          "direct_effects_used": 122,
+          "policy_multipliers_are_user_supplied_hypotheses": true,
+          "partial_score_is_full_city_or_server_forecast": false,
+          "total_score_uncertainty_is_bounded": false
+        },
+        "index_snapshot_aggregation": {
+          "partial_indexes": {
+            "Gazdaság": {
+              "index": 62.546390382,
+              "weight": 0.25,
+              "weighted_component": 15.636597596
+            },
+            "Környezet": {
+              "index": 47.440840197,
+              "weight": 0.2,
+              "weighted_component": 9.488168039
+            },
+            "Kormányzás": {
+              "index": 74.591917987,
+              "weight": 0.15,
+              "weighted_component": 11.188787698
+            },
+            "Életkörülmények": {
+              "index": 53.150592582,
+              "weight": 0.15,
+              "weighted_component": 7.972588887
+            },
+            "Mobilitás": {
+              "index": 49.705785323,
+              "weight": 0.1,
+              "weighted_component": 4.970578532
+            },
+            "Emberek": {
+              "index": 29.652538986,
+              "weight": 0.15,
+              "weighted_component": 4.447880848
+            }
+          },
+          "total_index_from_displayed_factors": 53.7046016,
+          "known_display_rounding_uncertainty": true,
+          "weight_source": "R141_TEST_UI_SIX_WEIGHTS_NOT_LIVE_CONFIG",
+          "calculates_future_factor_changes": false
+        },
+        "finance_components": {
+          "source": "EXPLICIT_HYPOTHETICAL_COMPONENT_LEDGER_NOT_ECOSIM_CASHFLOW",
+          "project_client_expense_line_ecu": 85100,
+          "conservative_project_funding_need_ecu": 93900,
+          "support_separate_label_ecu": 11000,
+          "support_guaranteed_cash_ecu": null,
+          "loan": null,
+          "short_loan": null,
+          "project_budget_approval": false,
+          "actual_cashflow_ecu": null,
+          "hypothetical_closing_cash_ecu": null,
+          "hypothetical_shortfall_ecu": null
+        },
+        "actual_annual_city_state_transition": null,
+        "unobserved_city_drift_and_competitors": "UNKNOWN"
+      },
+      {
+        "year": 5,
+        "new_project_ids": [
+          3,
+          7
+        ],
+        "active_project_ids": [
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          13,
+          14,
+          16,
+          17,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          34,
+          35
+        ],
+        "factor_replay": {
+          "factors_conditional": {
+            "Fizetőképes piac": 72.5,
+            "Vállalkozások száma": 50.45,
+            "Vállalkozóbarátság": 30.345955817913502,
+            "Foglalkoztatottság": 97.31,
+            "Fenntarthatóság": 51.44704359736841,
+            "Vízgazdálkodás": 53.0,
+            "Levegőminőség": 50.865869772565496,
+            "Zöld területek aránya": 31.25909696909999,
+            "Hulladékgazdálkodási helyzet": 51.04063792199999,
+            "Adminisztráció": 32.20002956088499,
+            "Lakásgazdálkodás": 36.472836399999984,
+            "Digitalizáció": 80.9705400447553,
+            "Közbiztonság": 32.2151194896,
+            "Oktatási intézmények": 64.37856709306347,
+            "Egészségügy": 46.02597999999999,
+            "Szociális": 67.76729172703234,
+            "Sport": 41.981939999999994,
+            "Művelődés": 43.32293625265199,
+            "Átlagos lakásérték": 50.59,
+            "Rossz szoc. helyzetben lévők aránya": 20.812266450002397,
+            "Településfejlettség": 58.9044906105694,
+            "Közlekedési minőség": 65.02603643423998,
+            "Tömegközlekedők aránya, %": 61.03168347743999,
+            "Autók száma / 100 fő": 47.48,
+            "Lakossági viszonyok/elégedettség": 18.922010948410506,
+            "Munkakörülmények": 50.479273226093476,
+            "Lakosság képzettsége": 21.651264355374582,
+            "Munkanélküli arány": 2.6048812874807576,
+            "Adósság / vagyon": 100.0
+          },
+          "baseline_mapped_index": 52.483733333,
+          "mapped_conditional_index": 53.810454266,
+          "mapped_index_if_only_saturation_uncertain": [
+            53.810454266,
+            53.810454266
+          ],
+          "ambiguous_saturated_factors": [],
+          "unmapped_project_effects": [
+            {
+              "project_id": 1,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 3,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 4,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 4,
+              "effect_label": "Középvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 6,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 6,
+              "effect_label": "Középvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 7,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 8,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 9,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 16,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 17,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 17,
+              "effect_label": "Középvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 21,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 25,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 25,
+              "effect_label": "Középvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 26,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 26,
+              "effect_label": "Középvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            },
+            {
+              "project_id": 27,
+              "effect_label": "Kisvállalkozások száma",
+              "reason": "INDIRECT_EFFECT_NOT_MAPPED"
+            }
+          ],
+          "direct_effects_used": 138,
+          "policy_multipliers_are_user_supplied_hypotheses": true,
+          "partial_score_is_full_city_or_server_forecast": false,
+          "total_score_uncertainty_is_bounded": false
+        },
+        "index_snapshot_aggregation": {
+          "partial_indexes": {
+            "Gazdaság": {
+              "index": 62.651488954,
+              "weight": 0.25,
+              "weighted_component": 15.662872239
+            },
+            "Környezet": {
+              "index": 47.522529652,
+              "weight": 0.2,
+              "weighted_component": 9.50450593
+            },
+            "Kormányzás": {
+              "index": 74.881135335,
+              "weight": 0.15,
+              "weighted_component": 11.2321703
+            },
+            "Életkörülmények": {
+              "index": 53.183696014,
+              "weight": 0.15,
+              "weighted_component": 7.977554402
+            },
+            "Mobilitás": {
+              "index": 49.784070174,
+              "weight": 0.1,
+              "weighted_component": 4.978407017
+            },
+            "Emberek": {
+              "index": 29.699629188,
+              "weight": 0.15,
+              "weighted_component": 4.454944378
+            }
+          },
+          "total_index_from_displayed_factors": 53.810454266,
+          "known_display_rounding_uncertainty": true,
+          "weight_source": "R141_TEST_UI_SIX_WEIGHTS_NOT_LIVE_CONFIG",
+          "calculates_future_factor_changes": false
+        },
+        "finance_components": {
+          "source": "EXPLICIT_HYPOTHETICAL_COMPONENT_LEDGER_NOT_ECOSIM_CASHFLOW",
+          "project_client_expense_line_ecu": 83600,
+          "conservative_project_funding_need_ecu": 92400,
+          "support_separate_label_ecu": 11000,
+          "support_guaranteed_cash_ecu": null,
+          "loan": null,
+          "short_loan": null,
+          "project_budget_approval": false,
+          "actual_cashflow_ecu": null,
+          "hypothetical_closing_cash_ecu": null,
+          "hypothetical_shortfall_ecu": null
+        },
+        "actual_annual_city_state_transition": null,
+        "unobserved_city_drift_and_competitors": "UNKNOWN"
+      }
+    ],
+    "cash_projection_if_no_explicit_nonproject_scenario": null,
+    "actual_terminal_game_score": null,
+    "gameplay_action": "STOP"
+  },
+  "official_state_evidence_gate": {
+    "schema": "ECOSIM_R148_INPUT_READINESS_V1",
+    "fields_observed": [],
+    "specific_missing_or_invalid_evidence": [
+      {
+        "field": "source_evidence_id",
+        "issue": "MISSING_PROVENANCE"
+      },
+      {
+        "field": "timestamp",
+        "issue": "MISSING_PROVENANCE"
+      },
+      {
+        "field": "team",
+        "issue": "MISSING_PROVENANCE"
+      },
+      {
+        "field": "market",
+        "issue": "MISSING_PROVENANCE"
+      },
+      {
+        "field": "period",
+        "issue": "MISSING_PROVENANCE"
+      },
+      {
+        "field": "period",
+        "issue": "NOT_INTEGER_1_TO_5"
+      },
+      {
+        "field": "project_cap",
+        "issue": "UNKNOWN_OR_INVALID"
+      },
+      {
+        "field": "prior_project1",
+        "issue": "MUST_EXPLICITLY_BE_BOOLEAN"
+      },
+      {
+        "field": "active_projects",
+        "issue": "UNAVAILABLE_OR_INVALID_ID_LIST"
+      },
+      {
+        "field": "current_selections",
+        "issue": "UNAVAILABLE_OR_INVALID_ID_LIST"
+      },
+      {
+        "field": "baseline_index_factors",
+        "issue": "ALL_FACTOR_VALUES_REQUIRED"
+      },
+      {
+        "field": "current_index_weights",
+        "issue": "SIX_NONNEGATIVE_WEIGHTS_SUM_TO_ONE"
+      },
+      {
+        "field": "loan_rates",
+        "issue": "ALL_THREE_NONNEGATIVE_RATES_REQUIRED_FOR_LOAN_MODEL"
+      },
+      {
+        "field": "confirmed_spendable_cash",
+        "issue": "FIVE_YEAR_CONFIRMED_ENVELOPES_UNAVAILABLE; scenario-only financing remains"
+      },
+      {
+        "field": "committed_costs",
+        "issue": "FIVE_YEAR_CONFIRMED_ENVELOPES_UNAVAILABLE; scenario-only financing remains"
+      },
+      {
+        "field": "official_preview",
+        "issue": "NO_SAME_PERIOD_CONTROLLED_PREVIEW"
+      }
+    ],
+    "derived_if_valid": {},
+    "official_state_complete_for_all_future_years": false,
+    "actual_game_score_forecast_verified": false,
+    "gameplay_decision": "STOP",
+    "does_not_treat_historical_test_as_live": true
+  },
+  "real_observational_calibration": null
+}

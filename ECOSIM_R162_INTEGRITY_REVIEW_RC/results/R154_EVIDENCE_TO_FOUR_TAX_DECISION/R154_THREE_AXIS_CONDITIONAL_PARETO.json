@@ -1,0 +1,205 @@
+{
+  "schema": "ECOSIM_R154_CONDITIONAL_THREE_AXIS_SAMPLED_PARETO_V1",
+  "status": "CONDITIONAL_SAMPLED_NONDOMINATED_NOT_GLOBAL_OPTIMUM",
+  "evaluated": 45,
+  "front": [
+    {
+      "candidate_id": "P-9ffda18c4ae7",
+      "tax_path_id": "business_tax_reduced_synthetic",
+      "conditional_mapped_terminal_proxy_delta": 1.61870538,
+      "five_year_fixed_base_four_tax_delta_ecu": -920000.0,
+      "five_year_conservative_card_cost_ecu": 700600,
+      "hypothetical_budget_authorized": false,
+      "real_five_year_smartcity_score": null
+    },
+    {
+      "candidate_id": "P-9ffda18c4ae7",
+      "tax_path_id": "unchanged_synthetic",
+      "conditional_mapped_terminal_proxy_delta": 1.613609,
+      "five_year_fixed_base_four_tax_delta_ecu": 0.0,
+      "five_year_conservative_card_cost_ecu": 700600,
+      "hypothetical_budget_authorized": false,
+      "real_five_year_smartcity_score": null
+    },
+    {
+      "candidate_id": "P-9ffda18c4ae7",
+      "tax_path_id": "business_tax_increased_synthetic",
+      "conditional_mapped_terminal_proxy_delta": 1.60851262,
+      "five_year_fixed_base_four_tax_delta_ecu": 920000.0,
+      "five_year_conservative_card_cost_ecu": 700600,
+      "hypothetical_budget_authorized": false,
+      "real_five_year_smartcity_score": null
+    },
+    {
+      "candidate_id": "P-a2f6bade1bf2",
+      "tax_path_id": "business_tax_reduced_synthetic",
+      "conditional_mapped_terminal_proxy_delta": 1.59558716,
+      "five_year_fixed_base_four_tax_delta_ecu": -920000.0,
+      "five_year_conservative_card_cost_ecu": 693600,
+      "hypothetical_budget_authorized": false,
+      "real_five_year_smartcity_score": null
+    },
+    {
+      "candidate_id": "P-a2f6bade1bf2",
+      "tax_path_id": "unchanged_synthetic",
+      "conditional_mapped_terminal_proxy_delta": 1.590511,
+      "five_year_fixed_base_four_tax_delta_ecu": 0.0,
+      "five_year_conservative_card_cost_ecu": 693600,
+      "hypothetical_budget_authorized": false,
+      "real_five_year_smartcity_score": null
+    },
+    {
+      "candidate_id": "P-a2f6bade1bf2",
+      "tax_path_id": "business_tax_increased_synthetic",
+      "conditional_mapped_terminal_proxy_delta": 1.58543484,
+      "five_year_fixed_base_four_tax_delta_ecu": 920000.0,
+      "five_year_conservative_card_cost_ecu": 693600,
+      "hypothetical_budget_authorized": false,
+      "real_five_year_smartcity_score": null
+    },
+    {
+      "candidate_id": "P-5751d0c900aa",
+      "tax_path_id": "business_tax_reduced_synthetic",
+      "conditional_mapped_terminal_proxy_delta": 1.34941783,
+      "five_year_fixed_base_four_tax_delta_ecu": -920000.0,
+      "five_year_conservative_card_cost_ecu": 487800,
+      "hypothetical_budget_authorized": false,
+      "real_five_year_smartcity_score": null
+    },
+    {
+      "candidate_id": "P-5751d0c900aa",
+      "tax_path_id": "unchanged_synthetic",
+      "conditional_mapped_terminal_proxy_delta": 1.344387,
+      "five_year_fixed_base_four_tax_delta_ecu": 0.0,
+      "five_year_conservative_card_cost_ecu": 487800,
+      "hypothetical_budget_authorized": false,
+      "real_five_year_smartcity_score": null
+    },
+    {
+      "candidate_id": "P-5751d0c900aa",
+      "tax_path_id": "business_tax_increased_synthetic",
+      "conditional_mapped_terminal_proxy_delta": 1.33935617,
+      "five_year_fixed_base_four_tax_delta_ecu": 920000.0,
+      "five_year_conservative_card_cost_ecu": 487800,
+      "hypothetical_budget_authorized": false,
+      "real_five_year_smartcity_score": null
+    },
+    {
+      "candidate_id": "P-027954559c67",
+      "tax_path_id": "business_tax_reduced_synthetic",
+      "conditional_mapped_terminal_proxy_delta": 1.33175183,
+      "five_year_fixed_base_four_tax_delta_ecu": -920000.0,
+      "five_year_conservative_card_cost_ecu": 477700,
+      "hypothetical_budget_authorized": false,
+      "real_five_year_smartcity_score": null
+    },
+    {
+      "candidate_id": "P-027954559c67",
+      "tax_path_id": "unchanged_synthetic",
+      "conditional_mapped_terminal_proxy_delta": 1.326721,
+      "five_year_fixed_base_four_tax_delta_ecu": 0.0,
+      "five_year_conservative_card_cost_ecu": 477700,
+      "hypothetical_budget_authorized": false,
+      "real_five_year_smartcity_score": null
+    },
+    {
+      "candidate_id": "P-027954559c67",
+      "tax_path_id": "business_tax_increased_synthetic",
+      "conditional_mapped_terminal_proxy_delta": 1.32169017,
+      "five_year_fixed_base_four_tax_delta_ecu": 920000.0,
+      "five_year_conservative_card_cost_ecu": 477700,
+      "hypothetical_budget_authorized": false,
+      "real_five_year_smartcity_score": null
+    },
+    {
+      "candidate_id": "P-38dcd54304ff",
+      "tax_path_id": "business_tax_reduced_synthetic",
+      "conditional_mapped_terminal_proxy_delta": 1.2812029,
+      "five_year_fixed_base_four_tax_delta_ecu": -920000.0,
+      "five_year_conservative_card_cost_ecu": 445300,
+      "hypothetical_budget_authorized": false,
+      "real_five_year_smartcity_score": null
+    },
+    {
+      "candidate_id": "P-38dcd54304ff",
+      "tax_path_id": "unchanged_synthetic",
+      "conditional_mapped_terminal_proxy_delta": 1.276212,
+      "five_year_fixed_base_four_tax_delta_ecu": 0.0,
+      "five_year_conservative_card_cost_ecu": 445300,
+      "hypothetical_budget_authorized": false,
+      "real_five_year_smartcity_score": null
+    },
+    {
+      "candidate_id": "P-38dcd54304ff",
+      "tax_path_id": "business_tax_increased_synthetic",
+      "conditional_mapped_terminal_proxy_delta": 1.2712211,
+      "five_year_fixed_base_four_tax_delta_ecu": 920000.0,
+      "five_year_conservative_card_cost_ecu": 445300,
+      "hypothetical_budget_authorized": false,
+      "real_five_year_smartcity_score": null
+    },
+    {
+      "candidate_id": "P-68be1bc65a7b",
+      "tax_path_id": "business_tax_reduced_synthetic",
+      "conditional_mapped_terminal_proxy_delta": 0.81682923,
+      "five_year_fixed_base_four_tax_delta_ecu": -920000.0,
+      "five_year_conservative_card_cost_ecu": 237500,
+      "hypothetical_budget_authorized": false,
+      "real_five_year_smartcity_score": null
+    },
+    {
+      "candidate_id": "P-aa61047c535c",
+      "tax_path_id": "business_tax_reduced_synthetic",
+      "conditional_mapped_terminal_proxy_delta": 0.81682923,
+      "five_year_fixed_base_four_tax_delta_ecu": -920000.0,
+      "five_year_conservative_card_cost_ecu": 237500,
+      "hypothetical_budget_authorized": false,
+      "real_five_year_smartcity_score": null
+    },
+    {
+      "candidate_id": "P-68be1bc65a7b",
+      "tax_path_id": "unchanged_synthetic",
+      "conditional_mapped_terminal_proxy_delta": 0.812014,
+      "five_year_fixed_base_four_tax_delta_ecu": 0.0,
+      "five_year_conservative_card_cost_ecu": 237500,
+      "hypothetical_budget_authorized": false,
+      "real_five_year_smartcity_score": null
+    },
+    {
+      "candidate_id": "P-aa61047c535c",
+      "tax_path_id": "unchanged_synthetic",
+      "conditional_mapped_terminal_proxy_delta": 0.812014,
+      "five_year_fixed_base_four_tax_delta_ecu": 0.0,
+      "five_year_conservative_card_cost_ecu": 237500,
+      "hypothetical_budget_authorized": false,
+      "real_five_year_smartcity_score": null
+    },
+    {
+      "candidate_id": "P-68be1bc65a7b",
+      "tax_path_id": "business_tax_increased_synthetic",
+      "conditional_mapped_terminal_proxy_delta": 0.80719877,
+      "five_year_fixed_base_four_tax_delta_ecu": 920000.0,
+      "five_year_conservative_card_cost_ecu": 237500,
+      "hypothetical_budget_authorized": false,
+      "real_five_year_smartcity_score": null
+    },
+    {
+      "candidate_id": "P-aa61047c535c",
+      "tax_path_id": "business_tax_increased_synthetic",
+      "conditional_mapped_terminal_proxy_delta": 0.80719877,
+      "five_year_fixed_base_four_tax_delta_ecu": 920000.0,
+      "five_year_conservative_card_cost_ecu": 237500,
+      "hypothetical_budget_authorized": false,
+      "real_five_year_smartcity_score": null
+    }
+  ],
+  "objectives": [
+    "higher partial mapped index proxy",
+    "higher direct four-tax revenue difference under fixed exogenous bases",
+    "lower conservative card cost"
+  ],
+  "actual_cash_effect": "UNKNOWN",
+  "tax_base_feedback": "UNKNOWN",
+  "all_35_cards_and_5_years_server_validated": false,
+  "gameplay_gate": "STOP"
+}

@@ -1,0 +1,138 @@
+{
+  "schema": "ECOSIM_R153_TAX_COUNTERFACTUAL_V1",
+  "source_class": "SYNTHETIC_TEST_ONLY",
+  "assumption_note": "Fictional parameters chosen algebraically to reproduce 28.33 for testing; not a recovered market setup or official tax rate.",
+  "market": {
+    "base_multiplier": 0.3005835543766578,
+    "weights": {
+      "services_and_building": 0.15,
+      "business_tax": 0.25,
+      "environment_and_vehicle": 0.15
+    },
+    "tax_index_divisors": {
+      "business": 1.0,
+      "vehicle": 200.0,
+      "building": 200.0
+    }
+  },
+  "baseline": {
+    "decisions": {
+      "services_fee_percentage": 25,
+      "business_tax_percentage": 2,
+      "vehicle_tax_amount": 10,
+      "building_tax_amount": 10
+    },
+    "project_multiplier": 1.0,
+    "observed_company_friendliness_percent": 28.33
+  },
+  "paths": [
+    {
+      "id": "unchanged_synthetic",
+      "assumption_note": "Purely synthetic rate path, no game rate or funding validated",
+      "decisions_by_year": [
+        {
+          "services_fee_percentage": 25,
+          "business_tax_percentage": 2.0,
+          "vehicle_tax_amount": 10,
+          "building_tax_amount": 10
+        },
+        {
+          "services_fee_percentage": 25,
+          "business_tax_percentage": 2.0,
+          "vehicle_tax_amount": 10,
+          "building_tax_amount": 10
+        },
+        {
+          "services_fee_percentage": 25,
+          "business_tax_percentage": 2.0,
+          "vehicle_tax_amount": 10,
+          "building_tax_amount": 10
+        },
+        {
+          "services_fee_percentage": 25,
+          "business_tax_percentage": 2.0,
+          "vehicle_tax_amount": 10,
+          "building_tax_amount": 10
+        },
+        {
+          "services_fee_percentage": 25,
+          "business_tax_percentage": 2.0,
+          "vehicle_tax_amount": 10,
+          "building_tax_amount": 10
+        }
+      ]
+    },
+    {
+      "id": "business_tax_reduced_synthetic",
+      "assumption_note": "Purely synthetic rate path, no game rate or funding validated",
+      "decisions_by_year": [
+        {
+          "services_fee_percentage": 25,
+          "business_tax_percentage": 1.0,
+          "vehicle_tax_amount": 10,
+          "building_tax_amount": 10
+        },
+        {
+          "services_fee_percentage": 25,
+          "business_tax_percentage": 1.0,
+          "vehicle_tax_amount": 10,
+          "building_tax_amount": 10
+        },
+        {
+          "services_fee_percentage": 25,
+          "business_tax_percentage": 1.0,
+          "vehicle_tax_amount": 10,
+          "building_tax_amount": 10
+        },
+        {
+          "services_fee_percentage": 25,
+          "business_tax_percentage": 1.0,
+          "vehicle_tax_amount": 10,
+          "building_tax_amount": 10
+        },
+        {
+          "services_fee_percentage": 25,
+          "business_tax_percentage": 1.0,
+          "vehicle_tax_amount": 10,
+          "building_tax_amount": 10
+        }
+      ]
+    },
+    {
+      "id": "business_tax_increased_synthetic",
+      "assumption_note": "Purely synthetic rate path, no game rate or funding validated",
+      "decisions_by_year": [
+        {
+          "services_fee_percentage": 25,
+          "business_tax_percentage": 3.0,
+          "vehicle_tax_amount": 10,
+          "building_tax_amount": 10
+        },
+        {
+          "services_fee_percentage": 25,
+          "business_tax_percentage": 3.0,
+          "vehicle_tax_amount": 10,
+          "building_tax_amount": 10
+        },
+        {
+          "services_fee_percentage": 25,
+          "business_tax_percentage": 3.0,
+          "vehicle_tax_amount": 10,
+          "building_tax_amount": 10
+        },
+        {
+          "services_fee_percentage": 25,
+          "business_tax_percentage": 3.0,
+          "vehicle_tax_amount": 10,
+          "building_tax_amount": 10
+        },
+        {
+          "services_fee_percentage": 25,
+          "business_tax_percentage": 3.0,
+          "vehicle_tax_amount": 10,
+          "building_tax_amount": 10
+        }
+      ]
+    }
+  ]
+}

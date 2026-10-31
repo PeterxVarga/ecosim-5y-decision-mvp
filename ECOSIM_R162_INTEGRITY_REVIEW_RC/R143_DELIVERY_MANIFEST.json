@@ -1,0 +1,184 @@
+{
+  "artifact": "ECOSIM_R143_5Y_INTEGRATED_ENGINE",
+  "date": "2026-10-31",
+  "origin": "R143 V2.1, reuse R142/R143 project proxy/cost calendar",
+  "no_live_actions": true,
+  "integrated_qualification": "30/30 PASS",
+  "gameplay_gate": "STOP",
+  "validated_five_year_game_forecast": false,
+  "file_count": 43,
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "3f3b0236e833fdd264cf5092acf2c0c037ae55fd3a2ad2cf14766dcbb64f50ee"
+    },
+    {
+      "path": "R143_EVIDENCE_DECISION_MATRIX.json",
+      "sha256": "73d105faae6a33289a864d7592e693a075b2ce1829f617feab04b37944d16644"
+    },
+    {
+      "path": "R143_INTEGRATED_DELIVERY.md",
+      "sha256": "512e9b3d23f065e8ec50833b9bb43d58bbca973e9fd4cc6add37c04ef171a07a"
+    },
+    {
+      "path": "R143_V21_CHANGES_AND_GATES.md",
+      "sha256": "fc693afb6b9c0ff18b10e70b93e34eead4ba569be38e1ca1faf05f28671209a4"
+    },
+    {
+      "path": "README.md",
+      "sha256": "67d0470eccf55604caf267f8815161c4bdf33e872ea9f04fa4d88db632cedb5b"
+    },
+    {
+      "path": "README_V21_ARCHIVED.md",
+      "sha256": "1bf1daddb61f202cf1e841b51dca52768c0f575bd95830ed1fa56f5296b0b3f9"
+    },
+    {
+      "path": "data/ECOSIM_R141_PROJECT_PROXY.json",
+      "sha256": "9345daaf272f1408404bc2be20d2d62a2f504092c2e287fe412d03a3b0047658"
+    },
+    {
+      "path": "data/ecosim_projects_20261030.json",
+      "sha256": "0438d35a1ea04fa4ee71a02a2205c652ea80a2ca8a61d2c99b8c30953ef3e944"
+    },
+    {
+      "path": "data/source_sha256.json",
+      "sha256": "cefee285868d4646923d6fb39755c6aaf779396196a3d0d60878fe1ba81f7a7d"
+    },
+    {
+      "path": "evidence/CODEX_LAST.md",
+      "sha256": "102adfd4fb01b678d9c72bdf6fedb9c6dfdf603447b8bec0dcf89a95cde553ff"
+    },
+    {
+      "path": "evidence/R142A_DECISION_GATE.md",
+      "sha256": "7879616418eb6ca97dfe08e37a2f58f8f8f2800f7a70c85fddc92da7c7930463"
+    },
+    {
+      "path": "evidence/R142A_FINANCE_EVIDENCE.md",
+      "sha256": "082fd72a7925e753ad8bd599266b076d40796c9ec0a92fbfe8a52877c66ac713"
+    },
+    {
+      "path": "evidence/R142A_LIMIT_EVIDENCE.md",
+      "sha256": "392e993b671fb2d68618a229067e55635affc9531eae62d526b96273bc911451"
+    },
+    {
+      "path": "evidence/R142A_STATIC_ANCHORS.json",
+      "sha256": "d5f2febbede4780bc8d0ec89ba49b09f4e869c3a6bfab0f39579b5a99a404969"
+    },
+    {
+      "path": "evidence/R142A_STATUS.json",
+      "sha256": "670e8c300df0ea70609318a0bece8823a7cf619ba0010a0b34d4c746bd06fab8"
+    },
+    {
+      "path": "evidence/R142A_UI_MANUAL_CHECK.md",
+      "sha256": "63a74078d781bb9b83695c52da46b4cffc187d4ed9ff6f3656493d07402040db"
+    },
+    {
+      "path": "evidence/R143_RULES_EVIDENCE.json",
+      "sha256": "2f57535a6e22512bb8c22af18c90a6c9121dfe407af0e94e3928c0730db7974c"
+    },
+    {
+      "path": "evidence/R143_VIDEO_RULES_AND_GAPS.md",
+      "sha256": "569fe9bdc6e7fd28ca0cc7803bd974f415953cab0df38983a3d7b5df38336f58"
+    },
+    {
+      "path": "examples/illustrative_plan.json",
+      "sha256": "d49775d662e504b900c9ef29aef43aa0fdec2fb692aaf377daf4fa59335b3ecd"
+    },
+    {
+      "path": "inputs/calibration_observations.template.json",
+      "sha256": "e09e2a297aa6396ff892a701d9eaaabf81712de42acd0c8cfac6a701e7304ef5"
+    },
+    {
+      "path": "inputs/league_observations.template.json",
+      "sha256": "d5f91f52108f682e4ce5ebffb086b486c19d491e96a5458b7ce40ef763fdfefa"
+    },
+    {
+      "path": "inputs/official_state.template.json",
+      "sha256": "4c104f1d53b539b0a8a3884e48f9033d0c957a278d676e5a0ad76ae23fe11653"
+    },
+    {
+      "path": "legacy_v21/CODEX_TASK_V21_ARCHIVED.md",
+      "sha256": "6b3c36f06f9d6727186c870c38bdc75b499db8d8f257b739e86998f65690407a"
+    },
+    {
+      "path": "legacy_v21/run_r143_codex_DISABLED_BY_DEFAULT.sh",
+      "sha256": "11418547056317a9fe15c6f9b17dfc810ab9b486c529d2566f79fd717e2280a6"
+    },
+    {
+      "path": "qualify_once.sh",
+      "sha256": "a06d0b3b848f01dca962b6ed52ba92b60bc9881863fd0d230f4578f461173b51"
+    },
+    {
+      "path": "results/R143_5Y_SCENARIO_COMPARISON.json",
+      "sha256": "4ffc1a5ffa9c3ba78643576d12417dd2bf9617a989a2bf897a7b912e7bc3a872"
+    },
+    {
+      "path": "results/R143_5Y_STRATEGIES_100K_ILLUSTRATIVE.json",
+      "sha256": "f7213fdf002019ac65c2d3aa27addef7291c6d4be8f13c6aeeca173eaf5f2628"
+    },
+    {
+      "path": "results/R143_5Y_STRATEGIES_100K_ILLUSTRATIVE.md",
+      "sha256": "15c874ecb1a7acd2e8a9669619cf70f47b39218898368fe941de326852a0c8cd"
+    },
+    {
+      "path": "results/R143_ENGINE_QUALIFICATION.json",
+      "sha256": "e6c464bffeb601e38025a91054532d2f45df04ac672cd7324adc9128b64f4029"
+    },
+    {
+      "path": "results/R143_PROJECT_CASH_CALENDAR.json",
+      "sha256": "4244ace64f1d7b5d54daf25f43fb16c0c821502befeb3d3a6a65de53e04606a2"
+    },
+    {
+      "path": "results/R143_READINESS.json",
+      "sha256": "af2d2f56488162b41f5481c34e3b6d7e3c2bfd3a73e9aae58757b728d854824c"
+    },
+    {
+      "path": "results/R143_V2_OLD_COST_CALENDAR_NOT_V21.json",
+      "sha256": "9a79daade13151716a2ac6a47810214fbbac6133ae7ecbcdf8ceaabd92d5cda2"
+    },
+    {
+      "path": "results/R143_V2_OLD_READINESS_NOT_V21.json",
+      "sha256": "b493b95740057254f5814d071a5c83a4d9e0f5122f9a48af68eddff622272cc6"
+    },
+    {
+      "path": "results/SOURCE_PREFLIGHT.json",
+      "sha256": "6a86d0654c335eb572ec13d4bf2b61c2b3efcc15ff3057619df1a0515e619040"
+    },
+    {
+      "path": "run_offline_strategy.sh",
+      "sha256": "41ae4f26e574933b94a7ef713f455b4f9bd85f5fee4076e37b2e68cd37d8d2e1"
+    },
+    {
+      "path": "tools/decision_evidence.py",
+      "sha256": "6bcf15a1b14575b0f4dc9784bace827f57d283d6b8fed8d5204486aa152c5fc0"
+    },
+    {
+      "path": "tools/pack_review.py",
+      "sha256": "479beadb55b31d56b67457d626b518a892e649ae968fc00ff5c1978fd7d97ada"
+    },
+    {
+      "path": "tools/portfolio_5y.py",
+      "sha256": "e2c66805d01fcefe15ba8df9fcb78336ab5237a54ae80cf6096ff29447230261"
+    },
+    {
+      "path": "tools/prepare_inputs.py",
+      "sha256": "04183afeae69eef618bafb4477864eb5345849db1c382dded69942e0351902b5"
+    },
+    {
+      "path": "tools/qualify_integrated.py",
+      "sha256": "bf6cb035153d402258abd158e194c98b713fd317d52d53fc4ee2758e9d1ab7ae"
+    },
+    {
+      "path": "tools/r142_proxy_reference.py",
+      "sha256": "1cf693458ce5eae1318318df82bda8ca1b15bcd8dad7fc6f0d73bd52fee4093e"
+    },
+    {
+      "path": "tools/readiness.py",
+      "sha256": "e2698eb2c448590b2a0c28c82614f118769673cfe888a00e9b68ceccdfc38cee"
+    },
+    {
+      "path": "tools/strategy_5y.py",
+      "sha256": "5eee2ee5e53b887aa35caab87cceecc5a677828dde03a8fdb41929e453c7d7e7"
+    }
+  ]
+}

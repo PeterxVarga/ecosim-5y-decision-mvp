@@ -1,0 +1,22 @@
+{
+  "release": "ECOSIM_R145_5Y_POLICY_INTEGRATED_20261031",
+  "derived_from": "R144 single existing engine",
+  "parent_zip_sha256": "5bcf223e4e0a0b63517c9ed49d464eeec3b421c549967f2b1cf76c09eb327c55",
+  "qualification_checks": 85,
+  "legacy_regression_checks": 59,
+  "new_r145_checks": 26,
+  "gameplay_state_changes": 0,
+  "network_calls": 0,
+  "new_external_deps": 0,
+  "evidence_status": "CONDITIONAL_HYPOTHETICAL_NOT_ECOSIM_GAME_FORECAST",
+  "verified_win_strategy": false,
+  "manual_user_action_required_now": false,
+  "source_files_with_new_functionality": [
+    "tools/policy_tracks.py",
+    "tools/joint_5y.py",
+    "tools/qualify_r145.py",
+    "inputs/policy_tracks.synthetic.example.json",
+    "inputs/policy_tracks.user.template.json",
+    "run_joint_offline.sh"
+  ]
+}

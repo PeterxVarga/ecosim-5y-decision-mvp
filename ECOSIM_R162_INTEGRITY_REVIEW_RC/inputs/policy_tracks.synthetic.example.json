@@ -1,0 +1,8 @@
+{
+  "schema":"ECOSIM_R145_POLICY_TRACKS_V1",
+  "tracks":[
+    {"track_id":"test_no_new_policy","mode":"SYNTHETIC_TEST_ONLY","assumption_note":"Synthetic neutral track to test integration; not evidence that unchanged policy yields unchanged outcome.","project_envelope_excludes_policy_cash_deltas":true,"actions":[]},
+    {"track_id":"synthetic_training_capacity","mode":"SYNTHETIC_TEST_ONLY","assumption_note":"Synthetic factor/cash response invented ONLY to test software; NEVER use as an EcoSim recommendation.","project_envelope_excludes_policy_cash_deltas":true,"actions":[{"decision_key":"training_capacity_test","category":"institution_capacity","year":1,"duration":"PERSISTENT_FROM_START","factor_relative_percent":{"Lakosság képzettsége":2},"annual_cash_delta_ecu":-5000,"assumption_note":"Fictitious +2% and -5000 ECU per year to exercise the integration."}]},
+    {"track_id":"synthetic_unknown_tax","mode":"SYNTHETIC_TEST_ONLY","assumption_note":"Illustrates strict UNKNOWN treatment for a real category without a response coefficient.","project_envelope_excludes_policy_cash_deltas":false,"actions":[{"decision_key":"tax_rate_uncalibrated","category":"tax","year":1,"duration":"PERSISTENT_FROM_START","factor_relative_percent":null,"annual_cash_delta_ecu":null,"assumption_note":"No observed response; cannot predict cash or index."}]}
+  ]
+}

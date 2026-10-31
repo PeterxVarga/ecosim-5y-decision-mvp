@@ -1,0 +1,30 @@
+{
+  "schema": "ECOSIM_R158_TEMPORAL_CASH_RELEASE_V1",
+  "date_local": "2026-10-31",
+  "parent_release": "R157",
+  "architecture": "ONE_EXISTING_STRATEGY_5Y_SEARCH_NO_PARALLEL_OPTIMIZER",
+  "new_qualifications_reexecuted": 58,
+  "previous_r156_qualifications_preserved_not_rerun": 68,
+  "previous_r157_qualifications_preserved_not_rerun": 66,
+  "historical_counterfactual_combinations": 78,
+  "release_output": "results/R158_HISTORICAL_TIMING_DEMO",
+  "source_class": "HISTORICAL_R94_AND_SYNTHETIC_TAX_OPERATING_BASES",
+  "real_market_team_current_available": false,
+  "actual_game_forecast_accuracy": null,
+  "five_year_cash_authority": false,
+  "game_writes": 0,
+  "gameplay_gate": "STOP",
+  "new_files": [
+    "tools/temporal_cash_r158.py",
+    "tools/qualify_r158.py",
+    "run_r158_offline.sh",
+    "README_R158.md",
+    "R158_DELIVERY.md"
+  ],
+  "modified_existing": [
+    "tools/decision_desk_r149.py",
+    "tools/decision_view_r149.py",
+    "qualify_once.sh",
+    "README.md"
+  ]
+}

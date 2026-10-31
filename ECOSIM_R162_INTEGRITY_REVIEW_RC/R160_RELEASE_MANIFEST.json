@@ -1,0 +1,21 @@
+{
+  "schema": "ECOSIM_R160_CONSISTENCY_GATED_RELEASE_MANIFEST_V1",
+  "source_release": "ECOSIM_R159_FALSIFICATION_HARDENED_MVP_20261031.zip",
+  "source_release_sha256": "e5655c58d99da8e6d1c719925e127527c2ef560417eb39fd978ad4d560884a42",
+  "new_checks_current_run": 63,
+  "prior_checks_preserved_not_rerun": 51,
+  "unique_illustrative_plan_candidates_replayed": 26,
+  "internal_rule_cost_failures": 0,
+  "actual_server_validations": 0,
+  "gameplay_gate": "STOP",
+  "codex_required": false,
+  "user_terminal_required": false,
+  "changes": [
+    "independent_plan_audit",
+    "fail_closed_in_search_and_comparison",
+    "unknown_effect_is_not_numeric_loss",
+    "static_decision_report_r160"
+  ],
+  "qualification_path": "results/R160_QUALIFICATION.json",
+  "historical_demo_path": "results/R160_HISTORICAL_CONSISTENCY_DEMO/DECISION_DESK.html"
+}

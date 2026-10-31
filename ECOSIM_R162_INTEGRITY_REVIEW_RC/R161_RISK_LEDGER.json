@@ -1,0 +1,22 @@
+{
+  "schema": "ECOSIM_R161_RELEASE_RISK_LEDGER_V1",
+  "release_status": "PASS_OFFLINE_ONLY",
+  "gameplay_gate": "STOP",
+  "confirmed_and_remediated": [
+    {"id":"R161-01","severity":"HIGH","finding":"Duplicate input JSON keys and nonstandard nonfinite constants silently accepted by default parser","remediation":"Single strict JSON parser with duplicate-key and NaN/Infinity rejection","validation":"R161 adversarial parser checks"},
+    {"id":"R161-02","severity":"HIGH","finding":"Run-config paths could access arbitrary local host files","remediation":"Resolve only within release root or run-config directory; block traversal and symlink escape","validation":"R161 path adversarial checks"},
+    {"id":"R161-03","severity":"MEDIUM","finding":"Self-asserted source metadata promoted to verified field and misleading source labels","remediation":"Operator-declared provenance remains unverified until independent server attestation exists","validation":"R161 forged metadata fixtures"},
+    {"id":"R161-04","severity":"MEDIUM","finding":"Release verification did not verify exact file set, ZIP members and STOP status in one gate","remediation":"SHA256SUMS and manifest-bound immutable tree/ZIP checks; deterministic ZIP packaging","validation":"R161 integrity-adversarial checks and complete release verification"}
+  ],
+  "unresolved_blockers": [
+    {"id":"LIVE_STATE","severity":"CRITICAL","finding":"No authenticated current market/team state","evidence_to_unblock":"Authorized current read-only market/team export"},
+    {"id":"MODEL_CAUSALITY","severity":"CRITICAL","finding":"No complete city transition for taxation, migration, institutions and competitors","evidence_to_unblock":"Official model rules and paired observations"},
+    {"id":"REAL_ACCURACY","severity":"CRITICAL","finding":"No genuine frozen prediction vs independently observed final fact pairs","evidence_to_unblock":"Comparable time-ordered, finalized observations"},
+    {"id":"FINANCE","severity":"HIGH","finding":"Illustrative envelopes do not establish available cash or approved credit","evidence_to_unblock":"Verified cash/commitments and credit terms"},
+    {"id":"EXTERNAL_REVIEW","severity":"MEDIUM","finding":"No independent fresh-context review or third-party signing","evidence_to_unblock":"Independent review and optional signed release artifact"}
+  ],
+  "new_qualifications_executed": 62,
+  "historical_full_end_to_end_runs_executed": 1,
+  "game_actions": 0,
+  "true_predictive_accuracy_measured": false
+}

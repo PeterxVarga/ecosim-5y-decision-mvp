@@ -1,0 +1,22 @@
+{
+  "schema": "ECOSIM_R151_RELEASE_MANIFEST_V1",
+  "date": "2026-10-31",
+  "inherits": "R150 offline decision desk",
+  "single_optimizer": "tools/strategy_5y.py",
+  "new_module": "tools/forecast_audit_r151.py",
+  "extended_modules": [
+    "tools/decision_desk_r149.py",
+    "tools/decision_view_r149.py"
+  ],
+  "regression": {
+    "previously_verified_checks": 330,
+    "new_executed_checks": 47,
+    "cumulative": 377,
+    "fresh_full_inherited_rerun": false
+  },
+  "genuine_full_index_forecast_realized_pairs": 0,
+  "actual_model_accuracy": null,
+  "gameplay_gate": "STOP",
+  "game_writes": 0,
+  "no_remote_or_codex_execution": true
+}

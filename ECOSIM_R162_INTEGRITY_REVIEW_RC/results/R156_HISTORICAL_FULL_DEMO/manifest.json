@@ -1,0 +1,14 @@
+{
+  "capture_mode": "HISTORICAL_REFERENCE",
+  "kind": "PLAN",
+  "team": "Jutalom a nap végén",
+  "market": "Z",
+  "round": "X-Challenge 2026 Tesztforduló",
+  "period": 1,
+  "captured_at_local": "2026-10-30",
+  "source_evidence_id": "HISTORICAL_UI_R94_SUMMARY",
+  "schema": "ECOSIM_R152_LOCAL_OBSERVATION_BUNDLE_V1",
+  "factor_table_path": "factors.csv",
+  "project_states_path": "projects.csv",
+  "parameters_path": "parameters.json"
+}

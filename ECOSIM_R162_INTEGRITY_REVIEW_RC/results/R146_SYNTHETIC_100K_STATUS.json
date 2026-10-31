@@ -1,0 +1,13 @@
+{
+  "schema": "ECOSIM_R146_OFFLINE_OUTPUT_GATE_V1",
+  "game_state_changed": false,
+  "external_actions": 0,
+  "codex_used": false,
+  "gameplay_gate": "STOP",
+  "verified_5y_winning_strategy": false,
+  "policy_conditioned_search": true,
+  "actual_game_outcome_bounds": null,
+  "read_only_reconciliation_records": 2,
+  "illustrative_tracks": 3,
+  "requires_user_action_now": false
+}

@@ -1,0 +1,24 @@
+{
+  "schema": "ECOSIM_R155_RELEASE_MANIFEST_V1",
+  "release": "R155",
+  "built_from": "R154 source integrated offline decision engine",
+  "source_anchors_count": 21,
+  "new_r155_pass": 99,
+  "current_release_r153_regression_pass": 46,
+  "current_release_r154_regression_pass": 69,
+  "current_release_checks_executed": 214,
+  "older_documented_pass_not_rerun": 421,
+  "real_forecast_accuracy": "UNKNOWN",
+  "gameplay_gate": "STOP",
+  "historical_run_mode": "HISTORICAL_REFERENCE",
+  "current_real_market_evidence": "NOT_AVAILABLE",
+  "core_outputs": [
+    "results/R155_EVIDENCE_TO_OPERATING_DECISION/DECISION_DESK.html",
+    "results/R155_EVIDENCE_TO_OPERATING_DECISION/DECISION_DESK.json",
+    "results/R155_EVIDENCE_TO_OPERATING_DECISION/R155_SOURCE_OPERATING_COUNTERFACTUAL.json",
+    "results/R155_EVIDENCE_TO_OPERATING_DECISION/R155_THREE_AXIS_OPERATING_PARETO.json",
+    "results/R155_QUALIFICATION.json"
+  ],
+  "source_js_embedded": false,
+  "independent_server_verification": false
+}

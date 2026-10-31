@@ -1,0 +1,31 @@
+{
+  "schema": "ECOSIM_R156_LOCAL_OPERATOR_EXPORT_V1",
+  "capture_mode": "HISTORICAL_REFERENCE",
+  "kind": "PLAN",
+  "team": "Jutalom a nap végén",
+  "market": "Z",
+  "round": "X-Challenge 2026 Tesztforduló",
+  "period": 1,
+  "captured_at_local": "2026-10-30",
+  "source_evidence_id": "HISTORICAL_UI_R94_SUMMARY",
+  "source_note": "Historical original R94 p1 PLAN, not latest market; no login, no live validation",
+  "factors_csv": "metric,value\nFizetőképes piac,72.5\nVállalkozások száma,50.45\nVállalkozóbarátság,28.33\nFoglalkoztatottság,97.31\nFenntarthatóság,49.39\nVízgazdálkodás,53\nLevegőminőség,50.11\nZöld területek aránya,30.95\nHulladékgazdálkodási helyzet,49.16\nAdminisztráció,30.17\nAdósság / vagyon,100\nLakásgazdálkodás,36.4\nDigitalizáció,74.65\nKözbiztonság,31.27\nOktatási intézmények,62.11\nEgészségügy,45.98\nSzociális,66.76\nSport,41.94\nMűvelődés,41.93\nRossz szoc. helyzetben lévők aránya,20.98\nÁtlagos lakásérték,50.59\nTelepülésfejlettség,55.6\nKözlekedési minőség,60.86\n\"Tömegközlekedők aránya, %\",60.19\nAutók száma / 100 fő,47.48\nLakossági viszonyok/elégedettség,17.93\nMunkakörülmények,48.7\nLakosság képzettsége,20.64\nMunkanélküli arány,2.69\nOkosváros index,52.48\n",
+  "projects_csv": "project_id,previous_running,selected_new\n1,false,false\n2,false,false\n3,false,false\n4,false,false\n5,false,false\n6,false,false\n7,false,false\n8,false,false\n9,false,false\n10,false,false\n11,false,false\n12,false,false\n13,false,false\n14,true,false\n15,false,false\n16,false,false\n17,false,false\n18,false,false\n19,false,false\n20,false,false\n21,false,false\n22,true,false\n23,true,false\n24,true,false\n25,false,false\n26,false,false\n27,false,false\n28,false,false\n29,false,false\n30,false,false\n31,false,false\n32,false,false\n33,false,false\n34,true,false\n35,true,false\n",
+  "parameters": {
+    "market": {
+      "smartcity_total_weights": {
+        "Gazdaság": 0.25,
+        "Környezet": 0.2,
+        "Kormányzás": 0.15,
+        "Életkörülmények": 0.15,
+        "Mobilitás": 0.1,
+        "Emberek": 0.15
+      }
+    }
+  },
+  "field_sources": {
+    "factors": "R94 2026-10-30 PLAN analysis export",
+    "projects": "R94 2026-10-30 PLAN project cards",
+    "market_index_weights": "Archived client aggregation weights, test only"
+  }
+}

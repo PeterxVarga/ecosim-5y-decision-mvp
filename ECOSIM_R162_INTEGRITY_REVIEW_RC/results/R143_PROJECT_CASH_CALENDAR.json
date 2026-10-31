@@ -1,0 +1,141 @@
+{
+  "type": "HISTORICAL_TEST_CARD_COST_CALENDAR_NOT_5Y_GAME_SIMULATOR",
+  "no_live_actions": true,
+  "final_gameplay_decision": "STOP",
+  "score_forecast": "UNKNOWN_NOT_CALCULATED",
+  "initial_state_source": "2026-10-30_TEST_ROUND_PROJECT_CARDS_NOT_LIVE",
+  "video_assumptions_not_live_params": {
+    "reported_project_cap_per_year": 4,
+    "reported_loan_rate_example": 0.12
+  },
+  "annual": [
+    {
+      "year": 1,
+      "new_project_ids": [
+        8,
+        13,
+        27
+      ],
+      "all_started_ids": [
+        8,
+        13,
+        27
+      ],
+      "project_conditions_interpreted": [],
+      "conservative_project_cash_requirement_ecu": 99000,
+      "signed_client_project_expense_proxy_ecu": 90200,
+      "new_partner_support_label_ecu_not_available_cash": 3500,
+      "positive_maintenance_only_ecu": 3000,
+      "signed_maintenance_ecu": -5800,
+      "funding_status": "UNKNOWN_NOT_SERVER_VALIDATED"
+    },
+    {
+      "year": 2,
+      "new_project_ids": [],
+      "all_started_ids": [
+        8,
+        13,
+        27
+      ],
+      "project_conditions_interpreted": [],
+      "conservative_project_cash_requirement_ecu": 3000,
+      "signed_client_project_expense_proxy_ecu": -5800,
+      "new_partner_support_label_ecu_not_available_cash": 0,
+      "positive_maintenance_only_ecu": 3000,
+      "signed_maintenance_ecu": -5800,
+      "funding_status": "UNKNOWN_NOT_SERVER_VALIDATED"
+    },
+    {
+      "year": 3,
+      "new_project_ids": [],
+      "all_started_ids": [
+        8,
+        13,
+        27
+      ],
+      "project_conditions_interpreted": [],
+      "conservative_project_cash_requirement_ecu": 3000,
+      "signed_client_project_expense_proxy_ecu": -5800,
+      "new_partner_support_label_ecu_not_available_cash": 0,
+      "positive_maintenance_only_ecu": 3000,
+      "signed_maintenance_ecu": -5800,
+      "funding_status": "UNKNOWN_NOT_SERVER_VALIDATED"
+    },
+    {
+      "year": 4,
+      "new_project_ids": [],
+      "all_started_ids": [
+        8,
+        13,
+        27
+      ],
+      "project_conditions_interpreted": [],
+      "conservative_project_cash_requirement_ecu": 3000,
+      "signed_client_project_expense_proxy_ecu": -5800,
+      "new_partner_support_label_ecu_not_available_cash": 0,
+      "positive_maintenance_only_ecu": 3000,
+      "signed_maintenance_ecu": -5800,
+      "funding_status": "UNKNOWN_NOT_SERVER_VALIDATED"
+    },
+    {
+      "year": 5,
+      "new_project_ids": [],
+      "all_started_ids": [
+        8,
+        13,
+        27
+      ],
+      "project_conditions_interpreted": [],
+      "conservative_project_cash_requirement_ecu": 3000,
+      "signed_client_project_expense_proxy_ecu": -5800,
+      "new_partner_support_label_ecu_not_available_cash": 0,
+      "positive_maintenance_only_ecu": 3000,
+      "signed_maintenance_ecu": -5800,
+      "funding_status": "UNKNOWN_NOT_SERVER_VALIDATED"
+    }
+  ],
+  "five_year_conservative_project_cash_requirement_sum_ecu": 111000,
+  "warnings": [
+    {
+      "issue": "BASELINE_NOT_VERIFIED_FOR_CURRENT_LIVE_MARKET",
+      "source": "2026-10-30_TEST_ROUND_PROJECT_CARDS_NOT_LIVE"
+    },
+    {
+      "issue": "YEAR_1_GAME_CAP_NOT_VERIFIED",
+      "requires": [
+        "official_base_cap",
+        "previous_project1_numeric_state_eq_1",
+        "already_selected_NEW_project_ids"
+      ]
+    },
+    {
+      "year": 1,
+      "issue": "CASH_AND_COMMITMENTS_NOT_CONFIRMED"
+    },
+    {
+      "year": 2,
+      "issue": "CASH_AND_COMMITMENTS_NOT_CONFIRMED"
+    },
+    {
+      "year": 3,
+      "issue": "CASH_AND_COMMITMENTS_NOT_CONFIRMED"
+    },
+    {
+      "year": 4,
+      "issue": "CASH_AND_COMMITMENTS_NOT_CONFIRMED"
+    },
+    {
+      "year": 5,
+      "issue": "CASH_AND_COMMITMENTS_NOT_CONFIRMED"
+    }
+  ],
+  "limitations": [
+    "Only nonrepeatable card costs, 2026-10-30 test catalog; repeatable actions, delays and changes to active set not simulated",
+    "Same-year dependencies can be possible in client selected state; exact ordering and server acceptance are not verified",
+    "Signed negative maintenance is shown as a client proxy, but zeroed in funding envelope",
+    "Support not netted against upfront costs; schedule and collection not known",
+    "Annual loan interest, project grant settlement, other financial obligations, taxes, market migration and SmartCity index not simulated",
+    "A user-input cash-envelope comparison is not credit approval or actual availability",
+    "No true future game state, market cap or league qualification predicted"
+  ]
+}

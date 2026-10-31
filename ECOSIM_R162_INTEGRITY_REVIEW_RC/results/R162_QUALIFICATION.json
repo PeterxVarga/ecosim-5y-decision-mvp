@@ -1,0 +1,190 @@
+{
+  "schema": "ECOSIM_R162_FRESH_CONTEXT_SECURITY_AND_DEPENDENCY_REVIEW_V1",
+  "new_checks_executed": 44,
+  "status": "PASS_OFFLINE_ONLY",
+  "checks": [
+    {
+      "name": "Conforming JSON accepted",
+      "status": "PASS"
+    },
+    {
+      "name": "Finite exponent retained",
+      "status": "PASS"
+    },
+    {
+      "name": "Subnormal exponent retained",
+      "status": "PASS"
+    },
+    {
+      "name": "Overflow exponent rejected 1e999",
+      "status": "PASS"
+    },
+    {
+      "name": "Overflow exponent rejected -1e999",
+      "status": "PASS"
+    },
+    {
+      "name": "Overflow exponent rejected 9.99e9999",
+      "status": "PASS"
+    },
+    {
+      "name": "Overflow exponent rejected 1e309",
+      "status": "PASS"
+    },
+    {
+      "name": "Overflow exponent rejected -1e309",
+      "status": "PASS"
+    },
+    {
+      "name": "Nonstandard literal rejected NaN",
+      "status": "PASS"
+    },
+    {
+      "name": "Nonstandard literal rejected Infinity",
+      "status": "PASS"
+    },
+    {
+      "name": "Nonstandard literal rejected -Infinity",
+      "status": "PASS"
+    },
+    {
+      "name": "Nested duplicate rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Top-level duplicate rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Malformed JSON rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing JSON rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Size guard retained",
+      "status": "PASS"
+    },
+    {
+      "name": "Legacy strategy import uses shared strict reader",
+      "status": "PASS"
+    },
+    {
+      "name": "Raw shared parser rejects {\"v\":1e999}",
+      "status": "PASS"
+    },
+    {
+      "name": "Raw shared parser rejects {\"a\":1,\"a\":2}",
+      "status": "PASS"
+    },
+    {
+      "name": "Raw shared parser rejects {\"v\":NaN}",
+      "status": "PASS"
+    },
+    {
+      "name": "Policy track input guards exponent overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "Policy track guards ambiguous schema",
+      "status": "PASS"
+    },
+    {
+      "name": "Tax path input guards overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "Passive evidence input guards duplicate",
+      "status": "PASS"
+    },
+    {
+      "name": "Negative condition rejects same-year forbidden project in strict mode",
+      "status": "PASS"
+    },
+    {
+      "name": "Negative condition rejects same-year forbidden project in conditional mode",
+      "status": "PASS"
+    },
+    {
+      "name": "Negative condition rejects prior-year forbidden project",
+      "status": "PASS"
+    },
+    {
+      "name": "Negative condition allows absence of forbidden project",
+      "status": "PASS"
+    },
+    {
+      "name": "Positive condition disallows same-year strict",
+      "status": "PASS"
+    },
+    {
+      "name": "Positive condition allows explicitly conditional same-year",
+      "status": "PASS"
+    },
+    {
+      "name": "Positive condition allows prior-year running",
+      "status": "PASS"
+    },
+    {
+      "name": "Historical 30 positive requires 29",
+      "status": "PASS"
+    },
+    {
+      "name": "Historical 31 positive requires 27",
+      "status": "PASS"
+    },
+    {
+      "name": "Historical display label mapping remains complete",
+      "status": "PASS"
+    },
+    {
+      "name": "No input promoted to verified game state",
+      "status": "PASS"
+    },
+    {
+      "name": "STOP authority remains outside search",
+      "status": "PASS"
+    },
+    {
+      "name": "Historical report schema unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "Twenty candidate IDs remain identical",
+      "status": "PASS"
+    },
+    {
+      "name": "Historical candidate count retained",
+      "status": "PASS"
+    },
+    {
+      "name": "Independent plan auditing retained",
+      "status": "PASS"
+    },
+    {
+      "name": "Historical, not live mode",
+      "status": "PASS"
+    },
+    {
+      "name": "No game writes",
+      "status": "PASS"
+    },
+    {
+      "name": "Mandatory STOP",
+      "status": "PASS"
+    },
+    {
+      "name": "No true game result claimed",
+      "status": "PASS"
+    }
+  ],
+  "historical_e2e_runs_now": 1,
+  "historic_r161_tests_not_rerun": 62,
+  "historic_candidates_identical": true,
+  "authenticated_live_state_confirmed": false,
+  "actual_predictive_accuracy_validated": false,
+  "game_writes": 0,
+  "gameplay_gate": "STOP"
+}

@@ -1,0 +1,94 @@
+{
+  "schema": "ECOSIM_R147_SOURCE_ANCHORS_V1",
+  "file_verified_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+  "anchor_records": [
+    {
+      "id": "unemployment_project_multiplier",
+      "filename": "840.41fdc8e1.chunk.js",
+      "byte_start": 22273,
+      "byte_end": 22309,
+      "sha256": "dead3c8b628c556697e67b625518bf9f2932acbfc2ff56ec59b7b48532a721fc",
+      "expected_full_file_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "source_class": "STATIC_CLIENT_BUNDLE_NOT_SERVER"
+    },
+    {
+      "id": "company_friendliness_clamp",
+      "filename": "840.41fdc8e1.chunk.js",
+      "byte_start": 14160,
+      "byte_end": 14219,
+      "sha256": "6669729bcfffdb93a8dd0168a30f05b29a2f681c1fc9e27ddc0b72f813a68260",
+      "expected_full_file_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "source_class": "STATIC_CLIENT_BUNDLE_NOT_SERVER"
+    },
+    {
+      "id": "settlement_development_clamp",
+      "filename": "840.41fdc8e1.chunk.js",
+      "byte_start": 20480,
+      "byte_end": 20501,
+      "sha256": "8deff477577041849aa41a15b603d456e083b7060cc24d6f1c74e250458a7c2e",
+      "expected_full_file_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "source_class": "STATIC_CLIENT_BUNDLE_NOT_SERVER"
+    },
+    {
+      "id": "transport_quality_clamp",
+      "filename": "840.41fdc8e1.chunk.js",
+      "byte_start": 7865,
+      "byte_end": 7911,
+      "sha256": "c1e2deea3f11a9e1c825d7135d914783d7d4dc78b5024c5e14df83dbd0c3203a",
+      "expected_full_file_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "source_class": "STATIC_CLIENT_BUNDLE_NOT_SERVER"
+    },
+    {
+      "id": "public_transport_ratio_clamp",
+      "filename": "840.41fdc8e1.chunk.js",
+      "byte_start": 21238,
+      "byte_end": 21289,
+      "sha256": "0b60f3a7cfd7af23243f8886227da175b5dcfaf3a6eb461fa90d2ab33f4084ca",
+      "expected_full_file_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "source_class": "STATIC_CLIENT_BUNDLE_NOT_SERVER"
+    },
+    {
+      "id": "company_count_derived_not_direct_project_multiplier",
+      "filename": "840.41fdc8e1.chunk.js",
+      "byte_start": 14076,
+      "byte_end": 14118,
+      "sha256": "174176c79c1a3477ea030ac3a198b007e371db174c33d154a5214e2ee89897ba",
+      "expected_full_file_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "source_class": "STATIC_CLIENT_BUNDLE_NOT_SERVER"
+    },
+    {
+      "id": "government_factor_aggregator",
+      "filename": "840.41fdc8e1.chunk.js",
+      "byte_start": 17067,
+      "byte_end": 17124,
+      "sha256": "9ccbf4b13f91eaf98224396f63e195e3aba4e838729ac2db64a9171abe54ae1a",
+      "expected_full_file_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "source_class": "STATIC_CLIENT_BUNDLE_NOT_SERVER"
+    },
+    {
+      "id": "people_factor_aggregator",
+      "filename": "840.41fdc8e1.chunk.js",
+      "byte_start": 22333,
+      "byte_end": 22390,
+      "sha256": "f839e5657beca7b30fc151ff955e4e46259eaf021634c22f74929266cba7b7a3",
+      "expected_full_file_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "source_class": "STATIC_CLIENT_BUNDLE_NOT_SERVER"
+    },
+    {
+      "id": "bounded_curve_qE_clamp_helper",
+      "filename": "45.4ed483b5.chunk.js",
+      "byte_start": 14644,
+      "byte_end": 14695,
+      "sha256": "b920e955867f6419d2dd5c1a0b8b72e6752aef82d27de816c99d36782495b3ba",
+      "expected_full_file_sha256": "8d012cbe5e57eb2c0d572cb6d2760e7cdcadce434f8cea82973923f477c19bdb",
+      "source_class": "STATIC_CLIENT_BUNDLE_NOT_SERVER"
+    }
+  ],
+  "source_bytes_not_distributed": true,
+  "created_from": "User-shared R140B source static assets",
+  "file_hashes": {
+    "840.41fdc8e1.chunk.js": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+    "45.4ed483b5.chunk.js": "8d012cbe5e57eb2c0d572cb6d2760e7cdcadce434f8cea82973923f477c19bdb"
+  },
+  "note": "qE helper function in 45 chunk proves min(max(value,lo),hi) clamp used in settlementDevelopment factor."
+}

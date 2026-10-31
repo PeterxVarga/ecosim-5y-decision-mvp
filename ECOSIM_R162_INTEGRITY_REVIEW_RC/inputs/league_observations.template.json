@@ -1,0 +1,16 @@
+{
+  "provenance": {
+    "type": "OFFICIAL_UI_OR_EXPORT_REQUIRED",
+    "captured_at": null,
+    "period": null,
+    "market": null,
+    "notes": "No real league scores contained here",
+    "league_id": null,
+    "round": null
+  },
+  "our_team_id": null,
+  "teams": [],
+  "guidance": "Only identical market/league, period, timestamp and index kind. Complete league required for certified rank; otherwise sample-only. No official tie-break or third-place formula inferred.",
+  "league_snapshot_complete": null,
+  "index_value_kind": null
+}

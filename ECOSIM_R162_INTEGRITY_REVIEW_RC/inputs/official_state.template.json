@@ -1,0 +1,53 @@
+{
+  "provenance": {
+    "source": "OFFICIAL UI EXPORT ONLY (complete manually, no credentials)",
+    "captured_at_local": null,
+    "team": null,
+    "market": null,
+    "current_period": null,
+    "round": null,
+    "source_evidence_id": null
+  },
+  "market": {
+    "maxProjectPerTurn": null,
+    "cap_source": null,
+    "short_loan_max": null,
+    "long_loan_max": null,
+    "loan_constraints_source": null,
+    "loan_rate_short": null,
+    "loan_rate_long": null,
+    "loan_rate_variable": null,
+    "smartcity_total_weights": null
+  },
+  "team": {
+    "project1_active_previous_period": null,
+    "confirmed_spendable_cash_ecu_by_year": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "committed_costs_ecu_by_year": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "already_selected_new_project_ids_current_period": null,
+    "new_selection_count_source": null,
+    "confirmed_spendable_cash_source": null,
+    "initially_active_project_ids": null,
+    "baseline_smartcity_factors": null
+  },
+  "verification": {
+    "game_preview_candidate": null,
+    "game_preview_index": null,
+    "game_preview_cashflow_ecu": null,
+    "preview_reversible_and_owner_approved": false,
+    "game_preview_baseline_index": null,
+    "original_state_restored_and_verified": false
+  },
+  "finance_counterfactual": null
+}

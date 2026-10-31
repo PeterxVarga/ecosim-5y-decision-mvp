@@ -1,0 +1,22 @@
+{
+  "provenance": {
+    "source": "OFFICIAL_UI_OR_EXPORT_REQUIRED",
+    "captured_at": null,
+    "market": null,
+    "period": null
+  },
+  "verified_observations": [],
+  "observation_fields": [
+    "experiment_id",
+    "before_index",
+    "after_index",
+    "before_cashflow_ecu",
+    "after_cashflow_ecu",
+    "changed_fields",
+    "approved_by_owner",
+    "reversibility_preverified",
+    "original_state_restored_and_verified",
+    "note"
+  ],
+  "warning": "Passive observations are allowed. Do not alter an EcoSim state to create A/B evidence without explicit owner approval and preverified reversibility; even navigating project cards may dispatch state resets."
+}

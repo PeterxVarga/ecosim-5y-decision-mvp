@@ -1,0 +1,8 @@
+# Keep original R162 release archive as a GitHub Release asset, not duplicate git history
+ECOSIM_R162_INTEGRITY_REVIEW_RC_20261031.zip
+*.pyc
+__pycache__/
+.venv/
+.env
+.env.*
+.DS_Store

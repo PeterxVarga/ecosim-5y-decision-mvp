@@ -1,0 +1,12 @@
+{
+  "schema": "ECOSIM_R147_PAIRED_CLIENT_PLAN_CALIBRATION_V1",
+  "pair_count": 0,
+  "pairs_with_operator_control_declarations": 0,
+  "forecast_accuracy_validated": false,
+  "realized_annual_state_transition_validated": false,
+  "independent_control_verification_available": false,
+  "no_observation_means_accuracy_unknown": true,
+  "game_writes": 0,
+  "gameplay_gate": "STOP",
+  "pairs": []
+}

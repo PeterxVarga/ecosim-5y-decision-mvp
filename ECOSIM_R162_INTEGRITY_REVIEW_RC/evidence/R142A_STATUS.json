@@ -1,0 +1,145 @@
+{
+  "no_live_actions": true,
+  "cap_value": null,
+  "spendable_budget": null,
+  "preview_verified": false,
+  "final_decision": "STOP",
+  "next_operator_action": "Obtain authorized official market cap, current and prior project states, and confirmed available finance; do not alter draft. Verify preview undo and autosave semantics and obtain separate owner approval before any candidate preview.",
+  "source_sha256": {
+    "private_js": {
+      "117.1fcbb858.chunk.js": "d75d5b467dd0778adb3a2919bf3603f9fbfa93cf1b768bf0c5bfc3cff7513b42",
+      "202.9a5bf90a.chunk.js": "59e0ad51e89198dc141b6f3ddc0b348962019bac7053f81d97c89c39ad3c61b2",
+      "245.6b0f6190.chunk.js": "9cd61f81a5f7824e421fa22eb0394eabd138b70ab7ca66aa120ffbac80f64b8b",
+      "31.e736c35f.chunk.js": "577bf78603e30dde0bebff702ef01f376c4bd9bc222b4cfd303e6f080f253e58",
+      "337.a889fc97.chunk.js": "33ced7298e28e08d6c7f81a3474898915bbeaaa4eff48b4f275d73e5571b2653",
+      "45.4ed483b5.chunk.js": "8d012cbe5e57eb2c0d572cb6d2760e7cdcadce434f8cea82973923f477c19bdb",
+      "495.81eade59.chunk.js": "1c0c44b18d4b7f45a3c83acf8cd0a47e695ac8da6035c0513fbfa9b8c06b1e93",
+      "502.8743ac64.chunk.js": "78297b15ec77aad26100fc7f0162d0cb9ffbe33e6f5e108759cab70d64aba51b",
+      "629.b0136357.chunk.js": "beb85fd7842cbe07d76da544ce8c76db8ef5020291e5ea37f9649cb3a7a0c0b6",
+      "630.1125f6db.chunk.js": "38705843dc01db66caf23095a54cdbf86bb6dd94fe50c3d9215e5cac676315d7",
+      "653.201cb260.chunk.js": "eea468fffbfcb94d377ba6640e5b8a6cc08edf2ca993fb63326b3e0e816cf4a9",
+      "685.6f26d276.chunk.js": "747ed7fd7a5956d297b96338be09bb31256fcffbc1600820e132a69d84c861bf",
+      "694.02a6ba8f.chunk.js": "a73acf8211412d35f3379ef19571b542555e957f3ee7bc4c3272545b1dae9d8f",
+      "765.34e0ab8e.chunk.js": "32aefddded7f935b65ee4f62e7286d6dd809b9e94b35f657fe95c132afdfe3c2",
+      "840.41fdc8e1.chunk.js": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "847.6274206c.chunk.js": "856d401c8bb3370ff1b7d0ee86fb27c350200b3660d2563cef1b392dbeb55fe6",
+      "900.3efcfc80.chunk.js": "9f25cbe843bdf04f77b74905078e03a21705b6be21dd31549cd582fe87fd033a",
+      "main.97a786da.js": "be03faf4eece31663e8cb8f8df0c364fd8a0701d16a300563d3356c191d64fc5"
+    },
+    "other": {
+      "data/ecosim_projects_20261030.json": "0438d35a1ea04fa4ee71a02a2205c652ea80a2ca8a61d2c99b8c30953ef3e944",
+      "data/ECOSIM_R141_PROJECT_PROXY.json": "9345daaf272f1408404bc2be20d2d62a2f504092c2e287fe412d03a3b0047658",
+      "tools/optimize.py": "1cf693458ce5eae1318318df82bda8ca1b15bcd8dad7fc6f0d73bd52fee4093e",
+      "evidence/R142A_STATIC_ANCHORS.json": "d5f2febbede4780bc8d0ec89ba49b09f4e869c3a6bfab0f39579b5a99a404969",
+      "evidence/ECOSIM_R139_FUGGETLEN_AUDIT.md": "ae015c203043a0db2ba07a786dd866a68aa4733b0554fbe510d490f972636240",
+      "evidence/ECOSIM_R140B_FUGGETLEN_AUDIT.md": "44ff0fc29bbfa69e89419f492ddf5d379d33c9c5adff794ee976951830c1e334",
+      "evidence/ECOSIM_R141_DECISION_PREFLIGHT.md": "89a8d96bf20a37a66ee5e2dd34660e4f48a624511f66a6ded69662c32af24c6d"
+    }
+  },
+  "source_integrity": "18 of 18 match data/source_sha256.json; all supplied static anchor windows match",
+  "evidence_levels": {
+    "project_limit": "static client code, not server",
+    "finance": "static client code; prior manual claims are document statements from audit",
+    "baseline": "prior UI observation, not current verified",
+    "ranking": "hypothetical proxy",
+    "actual_cap_and_budget": "unknown"
+  },
+  "unresolved": {
+    "P2_FREE": "Actual cash available, reserves, liabilities, eligible borrowing and enforceable caps unknown.",
+    "P5_TIMING": "Server settlement, grant availability and timing, delay effects and borrowing limits unknown.",
+    "P6_SCORE": "Small-business alias and indirect effects, current market weights, nonlinear response and preview unknown."
+  },
+  "factor_call_windows_840": {
+    "7876": {
+      "range": [
+        7786,
+        7966
+      ],
+      "sha256": "d6a0a639c4017b8883100cce8f0bf81d2824e3b874a3ac781bac91992a614461"
+    },
+    "14643": {
+      "range": [
+        14553,
+        14733
+      ],
+      "sha256": "5f6799bba22a32969ad665ca2b0731811e894bb79c2fe2667467db2a2aec5162"
+    },
+    "14923": {
+      "range": [
+        14833,
+        15013
+      ],
+      "sha256": "549727e2fdc4e62138a17e6ab62c52650c921755c110316f8493a820ce39ec84"
+    },
+    "15316": {
+      "range": [
+        15226,
+        15406
+      ],
+      "sha256": "229e37a64d9716e9c867f2f81657aba4ef50a5d6c1913346bbb9ceb28d16ab86"
+    },
+    "16421": {
+      "range": [
+        16331,
+        16511
+      ],
+      "sha256": "9bbcccdf0e50ca659167d4abfc314ea06e1bd5def4dda754a9131994bf82f35b"
+    },
+    "17013": {
+      "range": [
+        16923,
+        17103
+      ],
+      "sha256": "ab6c65280b58a425e78e124d0cefebe9357d4b46a95cda01c63eca3b5416e66a"
+    },
+    "17335": {
+      "range": [
+        17245,
+        17425
+      ],
+      "sha256": "67fe1516fbbd8e285bad79b8989d2bfe0194034e7f49936dfd17b0684bedbc97"
+    },
+    "20574": {
+      "range": [
+        20484,
+        20664
+      ],
+      "sha256": "d3ce8bd110e4e59b1e9b6348380a7d600e09c3961bf8cdb300c9e22e23c80cd4"
+    },
+    "21249": {
+      "range": [
+        21159,
+        21339
+      ],
+      "sha256": "a249b3ead36a693a82446532f25aceae410b7fc40f4c8d17e1c851c737dc2e12"
+    },
+    "21753": {
+      "range": [
+        21663,
+        21843
+      ],
+      "sha256": "bf260b2e50515e4cd3b4d57af86afcaa057aadab85b3f473b1773a8f74386bef"
+    },
+    "21905": {
+      "range": [
+        21815,
+        21995
+      ],
+      "sha256": "fbf1fbf1c7b131f1904e8579d9130b72e61bce38c373814a7c82ce08176bc3ee"
+    },
+    "22190": {
+      "range": [
+        22100,
+        22280
+      ],
+      "sha256": "408894d645e542a5bb4bc38ec659fd3684f415994241e79d5e6245e38d86a7c0"
+    }
+  },
+  "optimizer": {
+    "runs": 1,
+    "eligible": 27,
+    "excluded": 2,
+    "combinations_within_200000": 36480
+  },
+  "deadline": "2026-11-01 23:59 CET"
+}

@@ -1,0 +1,38 @@
+{
+  "schema": "ECOSIM_R149_RELEASE_MANIFEST_V1",
+  "release": "2026-10-31",
+  "parent": "ECOSIM_R148_5Y_ENGINE",
+  "retained_unmodified_files": 112,
+  "inherited_files_updated": [
+    "README.md",
+    "qualify_once.sh"
+  ],
+  "added_files": [
+    "R149_DELIVERY.md",
+    "README_R149.md",
+    "inputs/capture_current.template.json",
+    "inputs/capture_historical_example.json",
+    "inputs/mvp_run.current.template.json",
+    "inputs/mvp_run.from_capture.illustrative.json",
+    "inputs/mvp_run.illustrative.json",
+    "results/R149_MVP_DEMO/DECISION_DESK.json",
+    "results/R149_MVP_DEMO/DECISION_DESK.md",
+    "results/R149_MVP_DEMO/INPUT_HASHES.json",
+    "results/R149_QUALIFICATION.json",
+    "run_mvp.sh",
+    "tools/decision_desk_r149.py",
+    "tools/decision_view_r149.py",
+    "tools/intake_r149.py",
+    "tools/qualify_r149.py"
+  ],
+  "source_legacy_optimizer_unchanged": true,
+  "source_legacy_joint_unchanged": true,
+  "source_legacy_transition_unchanged": true,
+  "qualification_json": "results/R149_QUALIFICATION.json",
+  "offline_demo": "results/R149_MVP_DEMO/DECISION_DESK.json",
+  "game_writes": 0,
+  "browser_actions": 0,
+  "codex_called": false,
+  "actual_game_forecast_validated": false,
+  "gameplay_gate": "STOP"
+}

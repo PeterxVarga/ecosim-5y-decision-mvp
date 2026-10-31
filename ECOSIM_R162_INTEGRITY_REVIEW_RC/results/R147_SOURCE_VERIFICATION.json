@@ -1,0 +1,11 @@
+{
+  "schema": "ECOSIM_R147_SOURCE_ANCHOR_VERIFICATION_V2",
+  "source_file_sha256": {
+    "840.41fdc8e1.chunk.js": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+    "45.4ed483b5.chunk.js": "8d012cbe5e57eb2c0d572cb6d2760e7cdcadce434f8cea82973923f477c19bdb"
+  },
+  "anchors_checked": 9,
+  "matching": true,
+  "code_executed": false,
+  "no_game_actions": true
+}

@@ -1,0 +1,67 @@
+{
+  "schema": "ECOSIM_R149_READONLY_CAPTURE_V1",
+  "capture_mode": "HISTORICAL_REFERENCE",
+  "kind": "PLAN",
+  "team": "Jutalom a nap végén",
+  "market": "Z",
+  "period": 1,
+  "round": "X-Challenge 2026 Tesztforduló",
+  "captured_at_local": "2026-10-30",
+  "source_evidence_id": "HISTORICAL_UI_R94_SUMMARY",
+  "factors": {
+    "Fizetőképes piac": 72.5,
+    "Vállalkozások száma": 50.45,
+    "Vállalkozóbarátság": 28.33,
+    "Foglalkoztatottság": 97.31,
+    "Fenntarthatóság": 49.39,
+    "Vízgazdálkodás": 53.0,
+    "Levegőminőség": 50.11,
+    "Zöld területek aránya": 30.95,
+    "Hulladékgazdálkodási helyzet": 49.16,
+    "Adminisztráció": 30.17,
+    "Adósság / vagyon": 100.0,
+    "Lakásgazdálkodás": 36.4,
+    "Digitalizáció": 74.65,
+    "Közbiztonság": 31.27,
+    "Oktatási intézmények": 62.11,
+    "Egészségügy": 45.98,
+    "Szociális": 66.76,
+    "Sport": 41.94,
+    "Művelődés": 41.93,
+    "Rossz szoc. helyzetben lévők aránya": 20.98,
+    "Átlagos lakásérték": 50.59,
+    "Településfejlettség": 55.6,
+    "Közlekedési minőség": 60.86,
+    "Tömegközlekedők aránya, %": 60.19,
+    "Autók száma / 100 fő": 47.48,
+    "Lakossági viszonyok/elégedettség": 17.93,
+    "Munkakörülmények": 48.7,
+    "Lakosság képzettsége": 20.64,
+    "Munkanélküli arány": 2.69
+  },
+  "displayed_index": 52.48,
+  "parameters": {
+    "market": {
+      "smartcity_total_weights": {
+        "Gazdaság": 0.25,
+        "Környezet": 0.2,
+        "Kormányzás": 0.15,
+        "Életkörülmények": 0.15,
+        "Mobilitás": 0.1,
+        "Emberek": 0.15
+      }
+    },
+    "team": {
+      "initially_active_project_ids": [
+        14,
+        22,
+        23,
+        24,
+        34,
+        35
+      ],
+      "already_selected_new_project_ids_current_period": [],
+      "project1_active_previous_period": false
+    }
+  }
+}

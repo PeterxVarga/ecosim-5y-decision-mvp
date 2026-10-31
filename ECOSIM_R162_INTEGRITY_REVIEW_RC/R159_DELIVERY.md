@@ -1,0 +1,3 @@
+# R159 Delivery — offline falszifikációs és modelljavító chunk
+
+Egyetlen meglévő R158 motor továbbfejlesztése. Kritikus R158 nettósítási sorrendi hiba javítva a késleltetett pozitív adó- és díjcsatorna-változásokra; ugyanazon évben elszámolandó intézményi kiadás/savings nincs késleltetve. Szigorú csatornaszintű bizonyíték és egyeztetési kapu. A költségkeret-nézet deduplikációja megerősítve. Offline teljes R157 döntési futás + negatív falszifikációk **51/51 PASS**. R158 régóta minősített tesztek megőrizve, nem most újrafuttatva. 78 historikus kombinációból 26 változó kockázati érték, legfeljebb +5 763 ECU **szintetikus példa**. Éles konfiguráció és szerverfinanszírozás ismeretlen. EcoSim játékbeli írás 0; `STOP`.

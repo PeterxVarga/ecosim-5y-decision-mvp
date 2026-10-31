@@ -1,0 +1,75 @@
+{
+  "artifact": "ECOSIM_R143_5Y_CODEX_V2_REFINED",
+  "produced_at": "2026-10-31",
+  "no_codex_run": true,
+  "no_live_game_access": true,
+  "gameplay_gate": "STOP",
+  "evidence": [
+    {
+      "claim": "4 projects/year",
+      "source": "video 2026-10-29 ~21:08",
+      "level": "OFFICIAL_SPOKEN",
+      "status": "NUMERIC_MARKET_VALUE_NOT_CONFIRMED"
+    },
+    {
+      "claim": "12% lending interest",
+      "source": "video ~21:57",
+      "level": "OFFICIAL_SPOKEN",
+      "status": "LOAN_TYPE_AND_LIVE_RATE_NOT_CONFIRMED"
+    },
+    {
+      "claim": "previous project1 adds 1 to cap",
+      "source": "R142A static JS limit evidence",
+      "level": "STATIC_CLIENT",
+      "status": "CLIENT_RULE_SUPPORTED_SERVER_UNKNOWN"
+    },
+    {
+      "claim": "two visible project prerequisites",
+      "source": "35-card export 2026-10-30",
+      "level": "HISTORICAL_TEST_UI",
+      "status": "SAME_YEAR_CLIENT_CONDITION_POSSIBLE_SERVER_UNKNOWN"
+    },
+    {
+      "claim": "5th year final league position important",
+      "source": "video ~39:49",
+      "level": "OFFICIAL_SPOKEN",
+      "status": "SUPPORTED"
+    },
+    {
+      "claim": "top2 progression / possible 3rd relative gap",
+      "source": "video ~38:23",
+      "level": "PRELIMINARY_SPOKEN",
+      "status": "FINAL_RULES_UNKNOWN"
+    },
+    {
+      "claim": "p1 index 52.48 and p1 865588 net",
+      "source": "historic UI/R94 evidence",
+      "level": "HISTORICAL_TEST_UI",
+      "status": "NOT_SPENDABLE_BUDGET_OR_VALIDATED_CANDIDATE"
+    },
+    {
+      "claim": "3-year/5-year project direct costs",
+      "source": "R143 static scenario engine",
+      "level": "CONDITIONAL_OFFLINE",
+      "status": "NOT_FUTURE_CASHFLOW_FORECAST"
+    },
+    {
+      "claim": "official market, borrowing and grants",
+      "source": "not in provided data",
+      "level": "MISSING",
+      "status": "UNKNOWN"
+    },
+    {
+      "claim": "external optimizer admissibility",
+      "source": "written organizer rules not provided",
+      "level": "MISSING",
+      "status": "UNKNOWN"
+    }
+  ],
+  "gates": {
+    "passive_configuration": "needed for concrete cap and initial state",
+    "financial_validation": "separate from p1 cashflow result",
+    "candidate_preview": "requires explicit reversible trial approval",
+    "final_gameplay_decision": "STOP"
+  }
+}

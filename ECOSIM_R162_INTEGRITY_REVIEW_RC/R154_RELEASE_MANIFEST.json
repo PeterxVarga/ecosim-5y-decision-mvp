@@ -1,0 +1,14 @@
+{
+  "schema": "ECOSIM_R154_RELEASE_MANIFEST_V1",
+  "created_date": "2026-10-31",
+  "parent_release": "ECOSIM_R153_SOURCE_BACKED_TAX_5Y_MVP_20261031.zip",
+  "intent": "R154 four tax client formulas integrated into old R153 decision desk",
+  "source_expression_anchors_verified_against_original_local_bundle": true,
+  "new_checks_pass": 69,
+  "prior_r153_checks_rerun_pass": 46,
+  "earlier_documented_checks_not_rerun": 421,
+  "actual_game_forecast_accuracy": "UNKNOWN",
+  "gameplay": "STOP",
+  "external_game_writes": 0,
+  "offline_e2e_example": "results/R154_EVIDENCE_TO_FOUR_TAX_DECISION/DECISION_DESK.json"
+}

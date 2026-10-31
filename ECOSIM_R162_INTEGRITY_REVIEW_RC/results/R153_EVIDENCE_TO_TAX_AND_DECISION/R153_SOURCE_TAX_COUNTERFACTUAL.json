@@ -1,0 +1,4002 @@
+{
+  "schema": "ECOSIM_R153_SOURCE_BACKED_TAX_RESPONSE_REPORT_V1",
+  "source_expression_sha256": "cd4c23b0e57a2019ca3fe69151e19fb9c314e94e8cf5e0920f258e370eb3abf0",
+  "source_class": "SYNTHETIC_TEST_ONLY",
+  "baseline_factor_reproduced_within_0_04": true,
+  "baseline_formula_factor_percent": 28.33,
+  "observed_company_friendliness_percent": 28.33,
+  "index_weight_source": "OPERATOR_DECLARED_MARKET_WEIGHTS_NOT_SERVER_AUTHENTICATED",
+  "tax_revenue_and_migration_model": "UNMODELLED_NOT_ZERO",
+  "future_project_effects_persistent": "CONDITIONAL_ASSUMPTION",
+  "gameplay_gate": "STOP",
+  "paths": [
+    {
+      "path_id": "unchanged_synthetic",
+      "assumption_note": "Purely synthetic rate path, no game rate or funding validated",
+      "conditional_candidate_comparison": [
+        {
+          "candidate_id": "P-9ffda18c4ae7",
+          "project_ids_by_year": [
+            [
+              4,
+              8,
+              13,
+              27
+            ],
+            [
+              1,
+              16,
+              21,
+              26
+            ],
+            [
+              9,
+              12,
+              17,
+              20,
+              28
+            ],
+            [
+              5,
+              6,
+              10,
+              29,
+              30
+            ],
+            [
+              3,
+              7,
+              25
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 1.613609,
+          "tax_delta_in_terminal_partial_index": 0.0,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.01103804,
+              "business_friendliness_factor_if_baseline_tax": 28.6427077,
+              "business_friendliness_factor_if_tax_path": 28.6427077,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.0313599046,
+              "business_friendliness_factor_if_baseline_tax": 29.2184261,
+              "business_friendliness_factor_if_tax_path": 29.2184261,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.0417075757,
+              "business_friendliness_factor_if_baseline_tax": 29.5115756,
+              "business_friendliness_factor_if_tax_path": 29.5115756,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.059489524,
+              "business_friendliness_factor_if_baseline_tax": 30.0153382,
+              "business_friendliness_factor_if_tax_path": 30.0153382,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0851169651,
+              "business_friendliness_factor_if_baseline_tax": 30.7413636,
+              "business_friendliness_factor_if_tax_path": 30.7413636,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-f7360b35019c",
+          "project_ids_by_year": [
+            [
+              4,
+              13,
+              21,
+              27
+            ],
+            [
+              1,
+              8,
+              16,
+              26
+            ],
+            [
+              9,
+              10,
+              12,
+              17,
+              28
+            ],
+            [
+              5,
+              6,
+              20,
+              29,
+              30
+            ],
+            [
+              3,
+              7,
+              25
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 1.613609,
+          "tax_delta_in_terminal_partial_index": 0.0,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.006008,
+              "business_friendliness_factor_if_baseline_tax": 28.5002066,
+              "business_friendliness_factor_if_tax_path": 28.5002066,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.0313599046,
+              "business_friendliness_factor_if_baseline_tax": 29.2184261,
+              "business_friendliness_factor_if_tax_path": 29.2184261,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.0479329197,
+              "business_friendliness_factor_if_baseline_tax": 29.6879396,
+              "business_friendliness_factor_if_tax_path": 29.6879396,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.059489524,
+              "business_friendliness_factor_if_baseline_tax": 30.0153382,
+              "business_friendliness_factor_if_tax_path": 30.0153382,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0851169651,
+              "business_friendliness_factor_if_baseline_tax": 30.7413636,
+              "business_friendliness_factor_if_tax_path": 30.7413636,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-678df6e638a7",
+          "project_ids_by_year": [
+            [
+              4,
+              8,
+              13,
+              27
+            ],
+            [
+              1,
+              16,
+              21,
+              26
+            ],
+            [
+              9,
+              10,
+              12,
+              17,
+              28
+            ],
+            [
+              5,
+              6,
+              20,
+              29,
+              30
+            ],
+            [
+              3,
+              7,
+              25
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 1.613609,
+          "tax_delta_in_terminal_partial_index": 0.0,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.01103804,
+              "business_friendliness_factor_if_baseline_tax": 28.6427077,
+              "business_friendliness_factor_if_tax_path": 28.6427077,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.0313599046,
+              "business_friendliness_factor_if_baseline_tax": 29.2184261,
+              "business_friendliness_factor_if_tax_path": 29.2184261,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.0479329197,
+              "business_friendliness_factor_if_baseline_tax": 29.6879396,
+              "business_friendliness_factor_if_tax_path": 29.6879396,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.059489524,
+              "business_friendliness_factor_if_baseline_tax": 30.0153382,
+              "business_friendliness_factor_if_tax_path": 30.0153382,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0851169651,
+              "business_friendliness_factor_if_baseline_tax": 30.7413636,
+              "business_friendliness_factor_if_tax_path": 30.7413636,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-a2f6bade1bf2",
+          "project_ids_by_year": [
+            [
+              4,
+              8,
+              13,
+              27
+            ],
+            [
+              1,
+              16,
+              21,
+              26
+            ],
+            [
+              9,
+              12,
+              17,
+              20,
+              28
+            ],
+            [
+              5,
+              6,
+              10,
+              29,
+              30
+            ],
+            [
+              3,
+              11,
+              25
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 1.590511,
+          "tax_delta_in_terminal_partial_index": 0.0,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.01103804,
+              "business_friendliness_factor_if_baseline_tax": 28.6427077,
+              "business_friendliness_factor_if_tax_path": 28.6427077,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.0313599046,
+              "business_friendliness_factor_if_baseline_tax": 29.2184261,
+              "business_friendliness_factor_if_tax_path": 29.2184261,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.0417075757,
+              "business_friendliness_factor_if_baseline_tax": 29.5115756,
+              "business_friendliness_factor_if_tax_path": 29.5115756,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.059489524,
+              "business_friendliness_factor_if_baseline_tax": 30.0153382,
+              "business_friendliness_factor_if_tax_path": 30.0153382,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0808109454,
+              "business_friendliness_factor_if_baseline_tax": 30.6193741,
+              "business_friendliness_factor_if_tax_path": 30.6193741,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-e333150e7648",
+          "project_ids_by_year": [
+            [
+              4,
+              8,
+              13,
+              27
+            ],
+            [
+              1,
+              16,
+              21,
+              26
+            ],
+            [
+              9,
+              10,
+              12,
+              17,
+              28
+            ],
+            [
+              3,
+              6,
+              20,
+              29
+            ],
+            [
+              7,
+              31
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 1.584151,
+          "tax_delta_in_terminal_partial_index": 0.0,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.01103804,
+              "business_friendliness_factor_if_baseline_tax": 28.6427077,
+              "business_friendliness_factor_if_tax_path": 28.6427077,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.0313599046,
+              "business_friendliness_factor_if_baseline_tax": 29.2184261,
+              "business_friendliness_factor_if_tax_path": 29.2184261,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.0479329197,
+              "business_friendliness_factor_if_baseline_tax": 29.6879396,
+              "business_friendliness_factor_if_tax_path": 29.6879396,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.0658464611,
+              "business_friendliness_factor_if_baseline_tax": 30.1954302,
+              "business_friendliness_factor_if_tax_path": 30.1954302,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0765219793,
+              "business_friendliness_factor_if_baseline_tax": 30.4978677,
+              "business_friendliness_factor_if_tax_path": 30.4978677,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-5751d0c900aa",
+          "project_ids_by_year": [
+            [
+              13,
+              17,
+              20,
+              27
+            ],
+            [
+              8,
+              21,
+              26,
+              28
+            ],
+            [
+              3,
+              4,
+              5,
+              9
+            ],
+            [
+              1,
+              6,
+              16
+            ],
+            [
+              7,
+              10
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 1.344387,
+          "tax_delta_in_terminal_partial_index": 0.0,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.009026024,
+              "business_friendliness_factor_if_baseline_tax": 28.5857073,
+              "business_friendliness_factor_if_tax_path": 28.5857073,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.0140711541,
+              "business_friendliness_factor_if_baseline_tax": 28.7286358,
+              "business_friendliness_factor_if_tax_path": 28.7286358,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.0242362034,
+              "business_friendliness_factor_if_baseline_tax": 29.0166116,
+              "business_friendliness_factor_if_tax_path": 29.0166116,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.0521371145,
+              "business_friendliness_factor_if_baseline_tax": 29.8070445,
+              "business_friendliness_factor_if_tax_path": 29.8070445,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0711597535,
+              "business_friendliness_factor_if_baseline_tax": 30.3459558,
+              "business_friendliness_factor_if_tax_path": 30.3459558,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-027954559c67",
+          "project_ids_by_year": [
+            [
+              13,
+              17,
+              20,
+              27
+            ],
+            [
+              8,
+              21,
+              26,
+              28
+            ],
+            [
+              1,
+              4,
+              5,
+              9
+            ],
+            [
+              6,
+              16,
+              25
+            ],
+            [
+              3,
+              7
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 1.326721,
+          "tax_delta_in_terminal_partial_index": 0.0,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.009026024,
+              "business_friendliness_factor_if_baseline_tax": 28.5857073,
+              "business_friendliness_factor_if_tax_path": 28.5857073,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.0140711541,
+              "business_friendliness_factor_if_baseline_tax": 28.7286358,
+              "business_friendliness_factor_if_tax_path": 28.7286358,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.0283087131,
+              "business_friendliness_factor_if_baseline_tax": 29.1319858,
+              "business_friendliness_factor_if_tax_path": 29.1319858,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.0563205623,
+              "business_friendliness_factor_if_baseline_tax": 29.9255615,
+              "business_friendliness_factor_if_tax_path": 29.9255615,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0711597535,
+              "business_friendliness_factor_if_baseline_tax": 30.3459558,
+              "business_friendliness_factor_if_tax_path": 30.3459558,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-f8621e760ebd",
+          "project_ids_by_year": [
+            [
+              13,
+              17,
+              20,
+              27
+            ],
+            [
+              8,
+              21,
+              26,
+              28
+            ],
+            [
+              3,
+              4,
+              5,
+              9
+            ],
+            [
+              1,
+              6,
+              16
+            ],
+            [
+              7,
+              25
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 1.326721,
+          "tax_delta_in_terminal_partial_index": 0.0,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.009026024,
+              "business_friendliness_factor_if_baseline_tax": 28.5857073,
+              "business_friendliness_factor_if_tax_path": 28.5857073,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.0140711541,
+              "business_friendliness_factor_if_baseline_tax": 28.7286358,
+              "business_friendliness_factor_if_tax_path": 28.7286358,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.0242362034,
+              "business_friendliness_factor_if_baseline_tax": 29.0166116,
+              "business_friendliness_factor_if_tax_path": 29.0166116,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.0521371145,
+              "business_friendliness_factor_if_baseline_tax": 29.8070445,
+              "business_friendliness_factor_if_tax_path": 29.8070445,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0711597535,
+              "business_friendliness_factor_if_baseline_tax": 30.3459558,
+              "business_friendliness_factor_if_tax_path": 30.3459558,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-ec40afec9ed4",
+          "project_ids_by_year": [
+            [
+              13,
+              17,
+              20,
+              27
+            ],
+            [
+              8,
+              21,
+              26,
+              28
+            ],
+            [
+              4,
+              5,
+              16
+            ],
+            [
+              1,
+              6,
+              7,
+              9
+            ],
+            [
+              3,
+              25
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 1.326721,
+          "tax_delta_in_terminal_partial_index": 0.0,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.009026024,
+              "business_friendliness_factor_if_baseline_tax": 28.5857073,
+              "business_friendliness_factor_if_tax_path": 28.5857073,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.0140711541,
+              "business_friendliness_factor_if_baseline_tax": 28.7286358,
+              "business_friendliness_factor_if_tax_path": 28.7286358,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.0283087131,
+              "business_friendliness_factor_if_baseline_tax": 29.1319858,
+              "business_friendliness_factor_if_tax_path": 29.1319858,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.0542288384,
+              "business_friendliness_factor_if_baseline_tax": 29.866303,
+              "business_friendliness_factor_if_tax_path": 29.866303,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0711597535,
+              "business_friendliness_factor_if_baseline_tax": 30.3459558,
+              "business_friendliness_factor_if_tax_path": 30.3459558,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-38dcd54304ff",
+          "project_ids_by_year": [
+            [
+              13,
+              17,
+              20,
+              27
+            ],
+            [
+              8,
+              21,
+              26,
+              28
+            ],
+            [
+              3,
+              4,
+              5,
+              9
+            ],
+            [
+              1,
+              6,
+              16
+            ],
+            [
+              25
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 1.276212,
+          "tax_delta_in_terminal_partial_index": 0.0,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.009026024,
+              "business_friendliness_factor_if_baseline_tax": 28.5857073,
+              "business_friendliness_factor_if_tax_path": 28.5857073,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.0140711541,
+              "business_friendliness_factor_if_baseline_tax": 28.7286358,
+              "business_friendliness_factor_if_tax_path": 28.7286358,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.0242362034,
+              "business_friendliness_factor_if_baseline_tax": 29.0166116,
+              "business_friendliness_factor_if_tax_path": 29.0166116,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.0521371145,
+              "business_friendliness_factor_if_baseline_tax": 29.8070445,
+              "business_friendliness_factor_if_tax_path": 29.8070445,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0626584857,
+              "business_friendliness_factor_if_baseline_tax": 30.1051149,
+              "business_friendliness_factor_if_tax_path": 30.1051149,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-68be1bc65a7b",
+          "project_ids_by_year": [
+            [
+              26,
+              27,
+              28
+            ],
+            [
+              8,
+              9,
+              17
+            ],
+            [
+              5,
+              21
+            ],
+            [
+              4
+            ],
+            [
+              6,
+              20
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 0.812014,
+          "tax_delta_in_terminal_partial_index": 0.0,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.002,
+              "business_friendliness_factor_if_baseline_tax": 28.38666,
+              "business_friendliness_factor_if_tax_path": 28.38666,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.01003103,
+              "business_friendliness_factor_if_baseline_tax": 28.6141791,
+              "business_friendliness_factor_if_tax_path": 28.6141791,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.01003103,
+              "business_friendliness_factor_if_baseline_tax": 28.6141791,
+              "business_friendliness_factor_if_tax_path": 28.6141791,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.0140711541,
+              "business_friendliness_factor_if_baseline_tax": 28.7286358,
+              "business_friendliness_factor_if_tax_path": 28.7286358,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0252543308,
+              "business_friendliness_factor_if_baseline_tax": 29.0454552,
+              "business_friendliness_factor_if_tax_path": 29.0454552,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-aa61047c535c",
+          "project_ids_by_year": [
+            [
+              26,
+              27,
+              28
+            ],
+            [
+              8,
+              9,
+              17
+            ],
+            [
+              4
+            ],
+            [
+              5,
+              21
+            ],
+            [
+              6,
+              20
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 0.812014,
+          "tax_delta_in_terminal_partial_index": 0.0,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.002,
+              "business_friendliness_factor_if_baseline_tax": 28.38666,
+              "business_friendliness_factor_if_tax_path": 28.38666,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.01003103,
+              "business_friendliness_factor_if_baseline_tax": 28.6141791,
+              "business_friendliness_factor_if_tax_path": 28.6141791,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.0140711541,
+              "business_friendliness_factor_if_baseline_tax": 28.7286358,
+              "business_friendliness_factor_if_tax_path": 28.7286358,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.0140711541,
+              "business_friendliness_factor_if_baseline_tax": 28.7286358,
+              "business_friendliness_factor_if_tax_path": 28.7286358,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0252543308,
+              "business_friendliness_factor_if_baseline_tax": 29.0454552,
+              "business_friendliness_factor_if_tax_path": 29.0454552,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-efee28562fae",
+          "project_ids_by_year": [
+            [
+              8,
+              27,
+              28
+            ],
+            [
+              9,
+              21
+            ],
+            [
+              5,
+              17,
+              26
+            ],
+            [
+              4
+            ],
+            [
+              6,
+              20
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 0.812014,
+          "tax_delta_in_terminal_partial_index": 0.0,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.00701,
+              "business_friendliness_factor_if_baseline_tax": 28.5285933,
+              "business_friendliness_factor_if_tax_path": 28.5285933,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.00701,
+              "business_friendliness_factor_if_baseline_tax": 28.5285933,
+              "business_friendliness_factor_if_tax_path": 28.5285933,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.01003103,
+              "business_friendliness_factor_if_baseline_tax": 28.6141791,
+              "business_friendliness_factor_if_tax_path": 28.6141791,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.0140711541,
+              "business_friendliness_factor_if_baseline_tax": 28.7286358,
+              "business_friendliness_factor_if_tax_path": 28.7286358,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0252543308,
+              "business_friendliness_factor_if_baseline_tax": 29.0454552,
+              "business_friendliness_factor_if_tax_path": 29.0454552,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-7af7b223be3a",
+          "project_ids_by_year": [
+            [
+              26,
+              27,
+              28
+            ],
+            [
+              8,
+              9,
+              17
+            ],
+            [
+              5,
+              21
+            ],
+            [
+              4
+            ],
+            [
+              20,
+              25
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 0.806101,
+          "tax_delta_in_terminal_partial_index": 0.0,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.002,
+              "business_friendliness_factor_if_baseline_tax": 28.38666,
+              "business_friendliness_factor_if_tax_path": 28.38666,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.01003103,
+              "business_friendliness_factor_if_baseline_tax": 28.6141791,
+              "business_friendliness_factor_if_tax_path": 28.6141791,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.01003103,
+              "business_friendliness_factor_if_baseline_tax": 28.6141791,
+              "business_friendliness_factor_if_tax_path": 28.6141791,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.0140711541,
+              "business_friendliness_factor_if_baseline_tax": 28.7286358,
+              "business_friendliness_factor_if_tax_path": 28.7286358,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0283087131,
+              "business_friendliness_factor_if_baseline_tax": 29.1319858,
+              "business_friendliness_factor_if_tax_path": 29.1319858,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-61ce97c60a3b",
+          "project_ids_by_year": [
+            [
+              8,
+              27,
+              28
+            ],
+            [
+              9,
+              21
+            ],
+            [
+              5,
+              17,
+              26
+            ],
+            [
+              4
+            ],
+            [
+              20,
+              25
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 0.806101,
+          "tax_delta_in_terminal_partial_index": 0.0,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.00701,
+              "business_friendliness_factor_if_baseline_tax": 28.5285933,
+              "business_friendliness_factor_if_tax_path": 28.5285933,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.00701,
+              "business_friendliness_factor_if_baseline_tax": 28.5285933,
+              "business_friendliness_factor_if_tax_path": 28.5285933,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.01003103,
+              "business_friendliness_factor_if_baseline_tax": 28.6141791,
+              "business_friendliness_factor_if_tax_path": 28.6141791,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.0140711541,
+              "business_friendliness_factor_if_baseline_tax": 28.7286358,
+              "business_friendliness_factor_if_tax_path": 28.7286358,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0283087131,
+              "business_friendliness_factor_if_baseline_tax": 29.1319858,
+              "business_friendliness_factor_if_tax_path": 29.1319858,
+              "source_conditional_factor_difference": 0.0,
+              "static_partial_index_delta_from_tax_only": 0.0,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        }
+      ],
+      "not_actual_tax_policy_ranking": true
+    },
+    {
+      "path_id": "business_tax_reduced_synthetic",
+      "assumption_note": "Purely synthetic rate path, no game rate or funding validated",
+      "conditional_candidate_comparison": [
+        {
+          "candidate_id": "P-9ffda18c4ae7",
+          "project_ids_by_year": [
+            [
+              4,
+              8,
+              13,
+              27
+            ],
+            [
+              1,
+              16,
+              21,
+              26
+            ],
+            [
+              9,
+              12,
+              17,
+              20,
+              28
+            ],
+            [
+              5,
+              6,
+              10,
+              29,
+              30
+            ],
+            [
+              3,
+              7,
+              25
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 1.61870538,
+          "tax_delta_in_terminal_partial_index": 0.00509638,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.01103804,
+              "business_friendliness_factor_if_baseline_tax": 28.6427077,
+              "business_friendliness_factor_if_tax_path": 28.718683,
+              "source_conditional_factor_difference": 0.0759754,
+              "static_partial_index_delta_from_tax_only": 0.00474846,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.0313599046,
+              "business_friendliness_factor_if_baseline_tax": 29.2184261,
+              "business_friendliness_factor_if_tax_path": 29.2959286,
+              "source_conditional_factor_difference": 0.0775025,
+              "static_partial_index_delta_from_tax_only": 0.0048439,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.0417075757,
+              "business_friendliness_factor_if_baseline_tax": 29.5115756,
+              "business_friendliness_factor_if_tax_path": 29.5898557,
+              "source_conditional_factor_difference": 0.07828,
+              "static_partial_index_delta_from_tax_only": 0.0048925,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.059489524,
+              "business_friendliness_factor_if_baseline_tax": 30.0153382,
+              "business_friendliness_factor_if_tax_path": 30.0949545,
+              "source_conditional_factor_difference": 0.0796163,
+              "static_partial_index_delta_from_tax_only": 0.00497602,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0851169651,
+              "business_friendliness_factor_if_baseline_tax": 30.7413636,
+              "business_friendliness_factor_if_tax_path": 30.8229057,
+              "source_conditional_factor_difference": 0.0815421,
+              "static_partial_index_delta_from_tax_only": 0.00509638,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-f7360b35019c",
+          "project_ids_by_year": [
+            [
+              4,
+              13,
+              21,
+              27
+            ],
+            [
+              1,
+              8,
+              16,
+              26
+            ],
+            [
+              9,
+              10,
+              12,
+              17,
+              28
+            ],
+            [
+              5,
+              6,
+              20,
+              29,
+              30
+            ],
+            [
+              3,
+              7,
+              25
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 1.61870538,
+          "tax_delta_in_terminal_partial_index": 0.00509638,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.006008,
+              "business_friendliness_factor_if_baseline_tax": 28.5002066,
+              "business_friendliness_factor_if_tax_path": 28.575804,
+              "source_conditional_factor_difference": 0.0755974,
+              "static_partial_index_delta_from_tax_only": 0.00472484,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.0313599046,
+              "business_friendliness_factor_if_baseline_tax": 29.2184261,
+              "business_friendliness_factor_if_tax_path": 29.2959286,
+              "source_conditional_factor_difference": 0.0775025,
+              "static_partial_index_delta_from_tax_only": 0.0048439,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.0479329197,
+              "business_friendliness_factor_if_baseline_tax": 29.6879396,
+              "business_friendliness_factor_if_tax_path": 29.7666875,
+              "source_conditional_factor_difference": 0.0787479,
+              "static_partial_index_delta_from_tax_only": 0.00492174,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.059489524,
+              "business_friendliness_factor_if_baseline_tax": 30.0153382,
+              "business_friendliness_factor_if_tax_path": 30.0949545,
+              "source_conditional_factor_difference": 0.0796163,
+              "static_partial_index_delta_from_tax_only": 0.00497602,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0851169651,
+              "business_friendliness_factor_if_baseline_tax": 30.7413636,
+              "business_friendliness_factor_if_tax_path": 30.8229057,
+              "source_conditional_factor_difference": 0.0815421,
+              "static_partial_index_delta_from_tax_only": 0.00509638,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-678df6e638a7",
+          "project_ids_by_year": [
+            [
+              4,
+              8,
+              13,
+              27
+            ],
+            [
+              1,
+              16,
+              21,
+              26
+            ],
+            [
+              9,
+              10,
+              12,
+              17,
+              28
+            ],
+            [
+              5,
+              6,
+              20,
+              29,
+              30
+            ],
+            [
+              3,
+              7,
+              25
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 1.61870538,
+          "tax_delta_in_terminal_partial_index": 0.00509638,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.01103804,
+              "business_friendliness_factor_if_baseline_tax": 28.6427077,
+              "business_friendliness_factor_if_tax_path": 28.718683,
+              "source_conditional_factor_difference": 0.0759754,
+              "static_partial_index_delta_from_tax_only": 0.00474846,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.0313599046,
+              "business_friendliness_factor_if_baseline_tax": 29.2184261,
+              "business_friendliness_factor_if_tax_path": 29.2959286,
+              "source_conditional_factor_difference": 0.0775025,
+              "static_partial_index_delta_from_tax_only": 0.0048439,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.0479329197,
+              "business_friendliness_factor_if_baseline_tax": 29.6879396,
+              "business_friendliness_factor_if_tax_path": 29.7666875,
+              "source_conditional_factor_difference": 0.0787479,
+              "static_partial_index_delta_from_tax_only": 0.00492174,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.059489524,
+              "business_friendliness_factor_if_baseline_tax": 30.0153382,
+              "business_friendliness_factor_if_tax_path": 30.0949545,
+              "source_conditional_factor_difference": 0.0796163,
+              "static_partial_index_delta_from_tax_only": 0.00497602,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0851169651,
+              "business_friendliness_factor_if_baseline_tax": 30.7413636,
+              "business_friendliness_factor_if_tax_path": 30.8229057,
+              "source_conditional_factor_difference": 0.0815421,
+              "static_partial_index_delta_from_tax_only": 0.00509638,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-a2f6bade1bf2",
+          "project_ids_by_year": [
+            [
+              4,
+              8,
+              13,
+              27
+            ],
+            [
+              1,
+              16,
+              21,
+              26
+            ],
+            [
+              9,
+              12,
+              17,
+              20,
+              28
+            ],
+            [
+              5,
+              6,
+              10,
+              29,
+              30
+            ],
+            [
+              3,
+              11,
+              25
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 1.59558716,
+          "tax_delta_in_terminal_partial_index": 0.00507616,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.01103804,
+              "business_friendliness_factor_if_baseline_tax": 28.6427077,
+              "business_friendliness_factor_if_tax_path": 28.718683,
+              "source_conditional_factor_difference": 0.0759754,
+              "static_partial_index_delta_from_tax_only": 0.00474846,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.0313599046,
+              "business_friendliness_factor_if_baseline_tax": 29.2184261,
+              "business_friendliness_factor_if_tax_path": 29.2959286,
+              "source_conditional_factor_difference": 0.0775025,
+              "static_partial_index_delta_from_tax_only": 0.0048439,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.0417075757,
+              "business_friendliness_factor_if_baseline_tax": 29.5115756,
+              "business_friendliness_factor_if_tax_path": 29.5898557,
+              "source_conditional_factor_difference": 0.07828,
+              "static_partial_index_delta_from_tax_only": 0.0048925,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.059489524,
+              "business_friendliness_factor_if_baseline_tax": 30.0153382,
+              "business_friendliness_factor_if_tax_path": 30.0949545,
+              "source_conditional_factor_difference": 0.0796163,
+              "static_partial_index_delta_from_tax_only": 0.00497602,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0808109454,
+              "business_friendliness_factor_if_baseline_tax": 30.6193741,
+              "business_friendliness_factor_if_tax_path": 30.7005926,
+              "source_conditional_factor_difference": 0.0812185,
+              "static_partial_index_delta_from_tax_only": 0.00507616,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-e333150e7648",
+          "project_ids_by_year": [
+            [
+              4,
+              8,
+              13,
+              27
+            ],
+            [
+              1,
+              16,
+              21,
+              26
+            ],
+            [
+              9,
+              10,
+              12,
+              17,
+              28
+            ],
+            [
+              3,
+              6,
+              20,
+              29
+            ],
+            [
+              7,
+              31
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 1.58920701,
+          "tax_delta_in_terminal_partial_index": 0.00505601,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.01103804,
+              "business_friendliness_factor_if_baseline_tax": 28.6427077,
+              "business_friendliness_factor_if_tax_path": 28.718683,
+              "source_conditional_factor_difference": 0.0759754,
+              "static_partial_index_delta_from_tax_only": 0.00474846,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.0313599046,
+              "business_friendliness_factor_if_baseline_tax": 29.2184261,
+              "business_friendliness_factor_if_tax_path": 29.2959286,
+              "source_conditional_factor_difference": 0.0775025,
+              "static_partial_index_delta_from_tax_only": 0.0048439,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.0479329197,
+              "business_friendliness_factor_if_baseline_tax": 29.6879396,
+              "business_friendliness_factor_if_tax_path": 29.7666875,
+              "source_conditional_factor_difference": 0.0787479,
+              "static_partial_index_delta_from_tax_only": 0.00492174,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.0658464611,
+              "business_friendliness_factor_if_baseline_tax": 30.1954302,
+              "business_friendliness_factor_if_tax_path": 30.2755242,
+              "source_conditional_factor_difference": 0.080094,
+              "static_partial_index_delta_from_tax_only": 0.00500587,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0765219793,
+              "business_friendliness_factor_if_baseline_tax": 30.4978677,
+              "business_friendliness_factor_if_tax_path": 30.5787639,
+              "source_conditional_factor_difference": 0.0808962,
+              "static_partial_index_delta_from_tax_only": 0.00505601,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-5751d0c900aa",
+          "project_ids_by_year": [
+            [
+              13,
+              17,
+              20,
+              27
+            ],
+            [
+              8,
+              21,
+              26,
+              28
+            ],
+            [
+              3,
+              4,
+              5,
+              9
+            ],
+            [
+              1,
+              6,
+              16
+            ],
+            [
+              7,
+              10
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 1.34941783,
+          "tax_delta_in_terminal_partial_index": 0.00503083,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.009026024,
+              "business_friendliness_factor_if_baseline_tax": 28.5857073,
+              "business_friendliness_factor_if_tax_path": 28.6615314,
+              "source_conditional_factor_difference": 0.0758242,
+              "static_partial_index_delta_from_tax_only": 0.00473901,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.0140711541,
+              "business_friendliness_factor_if_baseline_tax": 28.7286358,
+              "business_friendliness_factor_if_tax_path": 28.8048391,
+              "source_conditional_factor_difference": 0.0762033,
+              "static_partial_index_delta_from_tax_only": 0.0047627,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.0242362034,
+              "business_friendliness_factor_if_baseline_tax": 29.0166116,
+              "business_friendliness_factor_if_tax_path": 29.0935788,
+              "source_conditional_factor_difference": 0.0769671,
+              "static_partial_index_delta_from_tax_only": 0.00481045,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.0521371145,
+              "business_friendliness_factor_if_baseline_tax": 29.8070445,
+              "business_friendliness_factor_if_tax_path": 29.8861082,
+              "source_conditional_factor_difference": 0.0790638,
+              "static_partial_index_delta_from_tax_only": 0.00494149,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0711597535,
+              "business_friendliness_factor_if_baseline_tax": 30.3459558,
+              "business_friendliness_factor_if_tax_path": 30.4264491,
+              "source_conditional_factor_difference": 0.0804933,
+              "static_partial_index_delta_from_tax_only": 0.00503083,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-027954559c67",
+          "project_ids_by_year": [
+            [
+              13,
+              17,
+              20,
+              27
+            ],
+            [
+              8,
+              21,
+              26,
+              28
+            ],
+            [
+              1,
+              4,
+              5,
+              9
+            ],
+            [
+              6,
+              16,
+              25
+            ],
+            [
+              3,
+              7
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 1.33175183,
+          "tax_delta_in_terminal_partial_index": 0.00503083,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.009026024,
+              "business_friendliness_factor_if_baseline_tax": 28.5857073,
+              "business_friendliness_factor_if_tax_path": 28.6615314,
+              "source_conditional_factor_difference": 0.0758242,
+              "static_partial_index_delta_from_tax_only": 0.00473901,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.0140711541,
+              "business_friendliness_factor_if_baseline_tax": 28.7286358,
+              "business_friendliness_factor_if_tax_path": 28.8048391,
+              "source_conditional_factor_difference": 0.0762033,
+              "static_partial_index_delta_from_tax_only": 0.0047627,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.0283087131,
+              "business_friendliness_factor_if_baseline_tax": 29.1319858,
+              "business_friendliness_factor_if_tax_path": 29.209259,
+              "source_conditional_factor_difference": 0.0772732,
+              "static_partial_index_delta_from_tax_only": 0.00482957,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.0563205623,
+              "business_friendliness_factor_if_baseline_tax": 29.9255615,
+              "business_friendliness_factor_if_tax_path": 30.0049397,
+              "source_conditional_factor_difference": 0.0793781,
+              "static_partial_index_delta_from_tax_only": 0.00496113,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0711597535,
+              "business_friendliness_factor_if_baseline_tax": 30.3459558,
+              "business_friendliness_factor_if_tax_path": 30.4264491,
+              "source_conditional_factor_difference": 0.0804933,
+              "static_partial_index_delta_from_tax_only": 0.00503083,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-f8621e760ebd",
+          "project_ids_by_year": [
+            [
+              13,
+              17,
+              20,
+              27
+            ],
+            [
+              8,
+              21,
+              26,
+              28
+            ],
+            [
+              3,
+              4,
+              5,
+              9
+            ],
+            [
+              1,
+              6,
+              16
+            ],
+            [
+              7,
+              25
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 1.33175183,
+          "tax_delta_in_terminal_partial_index": 0.00503083,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.009026024,
+              "business_friendliness_factor_if_baseline_tax": 28.5857073,
+              "business_friendliness_factor_if_tax_path": 28.6615314,
+              "source_conditional_factor_difference": 0.0758242,
+              "static_partial_index_delta_from_tax_only": 0.00473901,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.0140711541,
+              "business_friendliness_factor_if_baseline_tax": 28.7286358,
+              "business_friendliness_factor_if_tax_path": 28.8048391,
+              "source_conditional_factor_difference": 0.0762033,
+              "static_partial_index_delta_from_tax_only": 0.0047627,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.0242362034,
+              "business_friendliness_factor_if_baseline_tax": 29.0166116,
+              "business_friendliness_factor_if_tax_path": 29.0935788,
+              "source_conditional_factor_difference": 0.0769671,
+              "static_partial_index_delta_from_tax_only": 0.00481045,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.0521371145,
+              "business_friendliness_factor_if_baseline_tax": 29.8070445,
+              "business_friendliness_factor_if_tax_path": 29.8861082,
+              "source_conditional_factor_difference": 0.0790638,
+              "static_partial_index_delta_from_tax_only": 0.00494149,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0711597535,
+              "business_friendliness_factor_if_baseline_tax": 30.3459558,
+              "business_friendliness_factor_if_tax_path": 30.4264491,
+              "source_conditional_factor_difference": 0.0804933,
+              "static_partial_index_delta_from_tax_only": 0.00503083,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-ec40afec9ed4",
+          "project_ids_by_year": [
+            [
+              13,
+              17,
+              20,
+              27
+            ],
+            [
+              8,
+              21,
+              26,
+              28
+            ],
+            [
+              4,
+              5,
+              16
+            ],
+            [
+              1,
+              6,
+              7,
+              9
+            ],
+            [
+              3,
+              25
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 1.33175183,
+          "tax_delta_in_terminal_partial_index": 0.00503083,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.009026024,
+              "business_friendliness_factor_if_baseline_tax": 28.5857073,
+              "business_friendliness_factor_if_tax_path": 28.6615314,
+              "source_conditional_factor_difference": 0.0758242,
+              "static_partial_index_delta_from_tax_only": 0.00473901,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.0140711541,
+              "business_friendliness_factor_if_baseline_tax": 28.7286358,
+              "business_friendliness_factor_if_tax_path": 28.8048391,
+              "source_conditional_factor_difference": 0.0762033,
+              "static_partial_index_delta_from_tax_only": 0.0047627,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.0283087131,
+              "business_friendliness_factor_if_baseline_tax": 29.1319858,
+              "business_friendliness_factor_if_tax_path": 29.209259,
+              "source_conditional_factor_difference": 0.0772732,
+              "static_partial_index_delta_from_tax_only": 0.00482957,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.0542288384,
+              "business_friendliness_factor_if_baseline_tax": 29.866303,
+              "business_friendliness_factor_if_tax_path": 29.945524,
+              "source_conditional_factor_difference": 0.079221,
+              "static_partial_index_delta_from_tax_only": 0.00495131,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0711597535,
+              "business_friendliness_factor_if_baseline_tax": 30.3459558,
+              "business_friendliness_factor_if_tax_path": 30.4264491,
+              "source_conditional_factor_difference": 0.0804933,
+              "static_partial_index_delta_from_tax_only": 0.00503083,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-38dcd54304ff",
+          "project_ids_by_year": [
+            [
+              13,
+              17,
+              20,
+              27
+            ],
+            [
+              8,
+              21,
+              26,
+              28
+            ],
+            [
+              3,
+              4,
+              5,
+              9
+            ],
+            [
+              1,
+              6,
+              16
+            ],
+            [
+              25
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 1.2812029,
+          "tax_delta_in_terminal_partial_index": 0.0049909,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.009026024,
+              "business_friendliness_factor_if_baseline_tax": 28.5857073,
+              "business_friendliness_factor_if_tax_path": 28.6615314,
+              "source_conditional_factor_difference": 0.0758242,
+              "static_partial_index_delta_from_tax_only": 0.00473901,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.0140711541,
+              "business_friendliness_factor_if_baseline_tax": 28.7286358,
+              "business_friendliness_factor_if_tax_path": 28.8048391,
+              "source_conditional_factor_difference": 0.0762033,
+              "static_partial_index_delta_from_tax_only": 0.0047627,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.0242362034,
+              "business_friendliness_factor_if_baseline_tax": 29.0166116,
+              "business_friendliness_factor_if_tax_path": 29.0935788,
+              "source_conditional_factor_difference": 0.0769671,
+              "static_partial_index_delta_from_tax_only": 0.00481045,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.0521371145,
+              "business_friendliness_factor_if_baseline_tax": 29.8070445,
+              "business_friendliness_factor_if_tax_path": 29.8861082,
+              "source_conditional_factor_difference": 0.0790638,
+              "static_partial_index_delta_from_tax_only": 0.00494149,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0626584857,
+              "business_friendliness_factor_if_baseline_tax": 30.1051149,
+              "business_friendliness_factor_if_tax_path": 30.1849693,
+              "source_conditional_factor_difference": 0.0798544,
+              "static_partial_index_delta_from_tax_only": 0.0049909,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-68be1bc65a7b",
+          "project_ids_by_year": [
+            [
+              26,
+              27,
+              28
+            ],
+            [
+              8,
+              9,
+              17
+            ],
+            [
+              5,
+              21
+            ],
+            [
+              4
+            ],
+            [
+              6,
+              20
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 0.81682923,
+          "tax_delta_in_terminal_partial_index": 0.00481523,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.002,
+              "business_friendliness_factor_if_baseline_tax": 28.38666,
+              "business_friendliness_factor_if_tax_path": 28.4619562,
+              "source_conditional_factor_difference": 0.0752962,
+              "static_partial_index_delta_from_tax_only": 0.00470601,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.01003103,
+              "business_friendliness_factor_if_baseline_tax": 28.6141791,
+              "business_friendliness_factor_if_tax_path": 28.6900788,
+              "source_conditional_factor_difference": 0.0758997,
+              "static_partial_index_delta_from_tax_only": 0.00474373,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.01003103,
+              "business_friendliness_factor_if_baseline_tax": 28.6141791,
+              "business_friendliness_factor_if_tax_path": 28.6900788,
+              "source_conditional_factor_difference": 0.0758997,
+              "static_partial_index_delta_from_tax_only": 0.00474373,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.0140711541,
+              "business_friendliness_factor_if_baseline_tax": 28.7286358,
+              "business_friendliness_factor_if_tax_path": 28.8048391,
+              "source_conditional_factor_difference": 0.0762033,
+              "static_partial_index_delta_from_tax_only": 0.0047627,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0252543308,
+              "business_friendliness_factor_if_baseline_tax": 29.0454552,
+              "business_friendliness_factor_if_tax_path": 29.1224988,
+              "source_conditional_factor_difference": 0.0770436,
+              "static_partial_index_delta_from_tax_only": 0.00481523,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-aa61047c535c",
+          "project_ids_by_year": [
+            [
+              26,
+              27,
+              28
+            ],
+            [
+              8,
+              9,
+              17
+            ],
+            [
+              4
+            ],
+            [
+              5,
+              21
+            ],
+            [
+              6,
+              20
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 0.81682923,
+          "tax_delta_in_terminal_partial_index": 0.00481523,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.002,
+              "business_friendliness_factor_if_baseline_tax": 28.38666,
+              "business_friendliness_factor_if_tax_path": 28.4619562,
+              "source_conditional_factor_difference": 0.0752962,
+              "static_partial_index_delta_from_tax_only": 0.00470601,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.01003103,
+              "business_friendliness_factor_if_baseline_tax": 28.6141791,
+              "business_friendliness_factor_if_tax_path": 28.6900788,
+              "source_conditional_factor_difference": 0.0758997,
+              "static_partial_index_delta_from_tax_only": 0.00474373,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.0140711541,
+              "business_friendliness_factor_if_baseline_tax": 28.7286358,
+              "business_friendliness_factor_if_tax_path": 28.8048391,
+              "source_conditional_factor_difference": 0.0762033,
+              "static_partial_index_delta_from_tax_only": 0.0047627,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.0140711541,
+              "business_friendliness_factor_if_baseline_tax": 28.7286358,
+              "business_friendliness_factor_if_tax_path": 28.8048391,
+              "source_conditional_factor_difference": 0.0762033,
+              "static_partial_index_delta_from_tax_only": 0.0047627,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0252543308,
+              "business_friendliness_factor_if_baseline_tax": 29.0454552,
+              "business_friendliness_factor_if_tax_path": 29.1224988,
+              "source_conditional_factor_difference": 0.0770436,
+              "static_partial_index_delta_from_tax_only": 0.00481523,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-efee28562fae",
+          "project_ids_by_year": [
+            [
+              8,
+              27,
+              28
+            ],
+            [
+              9,
+              21
+            ],
+            [
+              5,
+              17,
+              26
+            ],
+            [
+              4
+            ],
+            [
+              6,
+              20
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 0.81682923,
+          "tax_delta_in_terminal_partial_index": 0.00481523,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.00701,
+              "business_friendliness_factor_if_baseline_tax": 28.5285933,
+              "business_friendliness_factor_if_tax_path": 28.604266,
+              "source_conditional_factor_difference": 0.0756727,
+              "static_partial_index_delta_from_tax_only": 0.00472954,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.00701,
+              "business_friendliness_factor_if_baseline_tax": 28.5285933,
+              "business_friendliness_factor_if_tax_path": 28.604266,
+              "source_conditional_factor_difference": 0.0756727,
+              "static_partial_index_delta_from_tax_only": 0.00472954,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.01003103,
+              "business_friendliness_factor_if_baseline_tax": 28.6141791,
+              "business_friendliness_factor_if_tax_path": 28.6900788,
+              "source_conditional_factor_difference": 0.0758997,
+              "static_partial_index_delta_from_tax_only": 0.00474373,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.0140711541,
+              "business_friendliness_factor_if_baseline_tax": 28.7286358,
+              "business_friendliness_factor_if_tax_path": 28.8048391,
+              "source_conditional_factor_difference": 0.0762033,
+              "static_partial_index_delta_from_tax_only": 0.0047627,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0252543308,
+              "business_friendliness_factor_if_baseline_tax": 29.0454552,
+              "business_friendliness_factor_if_tax_path": 29.1224988,
+              "source_conditional_factor_difference": 0.0770436,
+              "static_partial_index_delta_from_tax_only": 0.00481523,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-7af7b223be3a",
+          "project_ids_by_year": [
+            [
+              26,
+              27,
+              28
+            ],
+            [
+              8,
+              9,
+              17
+            ],
+            [
+              5,
+              21
+            ],
+            [
+              4
+            ],
+            [
+              20,
+              25
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 0.81093057,
+          "tax_delta_in_terminal_partial_index": 0.00482957,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.002,
+              "business_friendliness_factor_if_baseline_tax": 28.38666,
+              "business_friendliness_factor_if_tax_path": 28.4619562,
+              "source_conditional_factor_difference": 0.0752962,
+              "static_partial_index_delta_from_tax_only": 0.00470601,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.01003103,
+              "business_friendliness_factor_if_baseline_tax": 28.6141791,
+              "business_friendliness_factor_if_tax_path": 28.6900788,
+              "source_conditional_factor_difference": 0.0758997,
+              "static_partial_index_delta_from_tax_only": 0.00474373,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.01003103,
+              "business_friendliness_factor_if_baseline_tax": 28.6141791,
+              "business_friendliness_factor_if_tax_path": 28.6900788,
+              "source_conditional_factor_difference": 0.0758997,
+              "static_partial_index_delta_from_tax_only": 0.00474373,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.0140711541,
+              "business_friendliness_factor_if_baseline_tax": 28.7286358,
+              "business_friendliness_factor_if_tax_path": 28.8048391,
+              "source_conditional_factor_difference": 0.0762033,
+              "static_partial_index_delta_from_tax_only": 0.0047627,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0283087131,
+              "business_friendliness_factor_if_baseline_tax": 29.1319858,
+              "business_friendliness_factor_if_tax_path": 29.209259,
+              "source_conditional_factor_difference": 0.0772732,
+              "static_partial_index_delta_from_tax_only": 0.00482957,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-61ce97c60a3b",
+          "project_ids_by_year": [
+            [
+              8,
+              27,
+              28
+            ],
+            [
+              9,
+              21
+            ],
+            [
+              5,
+              17,
+              26
+            ],
+            [
+              4
+            ],
+            [
+              20,
+              25
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 0.81093057,
+          "tax_delta_in_terminal_partial_index": 0.00482957,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.00701,
+              "business_friendliness_factor_if_baseline_tax": 28.5285933,
+              "business_friendliness_factor_if_tax_path": 28.604266,
+              "source_conditional_factor_difference": 0.0756727,
+              "static_partial_index_delta_from_tax_only": 0.00472954,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.00701,
+              "business_friendliness_factor_if_baseline_tax": 28.5285933,
+              "business_friendliness_factor_if_tax_path": 28.604266,
+              "source_conditional_factor_difference": 0.0756727,
+              "static_partial_index_delta_from_tax_only": 0.00472954,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.01003103,
+              "business_friendliness_factor_if_baseline_tax": 28.6141791,
+              "business_friendliness_factor_if_tax_path": 28.6900788,
+              "source_conditional_factor_difference": 0.0758997,
+              "static_partial_index_delta_from_tax_only": 0.00474373,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.0140711541,
+              "business_friendliness_factor_if_baseline_tax": 28.7286358,
+              "business_friendliness_factor_if_tax_path": 28.8048391,
+              "source_conditional_factor_difference": 0.0762033,
+              "static_partial_index_delta_from_tax_only": 0.0047627,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0283087131,
+              "business_friendliness_factor_if_baseline_tax": 29.1319858,
+              "business_friendliness_factor_if_tax_path": 29.209259,
+              "source_conditional_factor_difference": 0.0772732,
+              "static_partial_index_delta_from_tax_only": 0.00482957,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        }
+      ],
+      "not_actual_tax_policy_ranking": true
+    },
+    {
+      "path_id": "business_tax_increased_synthetic",
+      "assumption_note": "Purely synthetic rate path, no game rate or funding validated",
+      "conditional_candidate_comparison": [
+        {
+          "candidate_id": "P-9ffda18c4ae7",
+          "project_ids_by_year": [
+            [
+              4,
+              8,
+              13,
+              27
+            ],
+            [
+              1,
+              16,
+              21,
+              26
+            ],
+            [
+              9,
+              12,
+              17,
+              20,
+              28
+            ],
+            [
+              5,
+              6,
+              10,
+              29,
+              30
+            ],
+            [
+              3,
+              7,
+              25
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 1.60851262,
+          "tax_delta_in_terminal_partial_index": -0.00509638,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.01103804,
+              "business_friendliness_factor_if_baseline_tax": 28.6427077,
+              "business_friendliness_factor_if_tax_path": 28.5667323,
+              "source_conditional_factor_difference": -0.0759754,
+              "static_partial_index_delta_from_tax_only": -0.00474846,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.0313599046,
+              "business_friendliness_factor_if_baseline_tax": 29.2184261,
+              "business_friendliness_factor_if_tax_path": 29.1409236,
+              "source_conditional_factor_difference": -0.0775025,
+              "static_partial_index_delta_from_tax_only": -0.0048439,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.0417075757,
+              "business_friendliness_factor_if_baseline_tax": 29.5115756,
+              "business_friendliness_factor_if_tax_path": 29.4332956,
+              "source_conditional_factor_difference": -0.07828,
+              "static_partial_index_delta_from_tax_only": -0.0048925,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.059489524,
+              "business_friendliness_factor_if_baseline_tax": 30.0153382,
+              "business_friendliness_factor_if_tax_path": 29.9357219,
+              "source_conditional_factor_difference": -0.0796163,
+              "static_partial_index_delta_from_tax_only": -0.00497602,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0851169651,
+              "business_friendliness_factor_if_baseline_tax": 30.7413636,
+              "business_friendliness_factor_if_tax_path": 30.6598215,
+              "source_conditional_factor_difference": -0.0815421,
+              "static_partial_index_delta_from_tax_only": -0.00509638,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-f7360b35019c",
+          "project_ids_by_year": [
+            [
+              4,
+              13,
+              21,
+              27
+            ],
+            [
+              1,
+              8,
+              16,
+              26
+            ],
+            [
+              9,
+              10,
+              12,
+              17,
+              28
+            ],
+            [
+              5,
+              6,
+              20,
+              29,
+              30
+            ],
+            [
+              3,
+              7,
+              25
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 1.60851262,
+          "tax_delta_in_terminal_partial_index": -0.00509638,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.006008,
+              "business_friendliness_factor_if_baseline_tax": 28.5002066,
+              "business_friendliness_factor_if_tax_path": 28.4246093,
+              "source_conditional_factor_difference": -0.0755974,
+              "static_partial_index_delta_from_tax_only": -0.00472484,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.0313599046,
+              "business_friendliness_factor_if_baseline_tax": 29.2184261,
+              "business_friendliness_factor_if_tax_path": 29.1409236,
+              "source_conditional_factor_difference": -0.0775025,
+              "static_partial_index_delta_from_tax_only": -0.0048439,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.0479329197,
+              "business_friendliness_factor_if_baseline_tax": 29.6879396,
+              "business_friendliness_factor_if_tax_path": 29.6091918,
+              "source_conditional_factor_difference": -0.0787479,
+              "static_partial_index_delta_from_tax_only": -0.00492174,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.059489524,
+              "business_friendliness_factor_if_baseline_tax": 30.0153382,
+              "business_friendliness_factor_if_tax_path": 29.9357219,
+              "source_conditional_factor_difference": -0.0796163,
+              "static_partial_index_delta_from_tax_only": -0.00497602,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0851169651,
+              "business_friendliness_factor_if_baseline_tax": 30.7413636,
+              "business_friendliness_factor_if_tax_path": 30.6598215,
+              "source_conditional_factor_difference": -0.0815421,
+              "static_partial_index_delta_from_tax_only": -0.00509638,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-678df6e638a7",
+          "project_ids_by_year": [
+            [
+              4,
+              8,
+              13,
+              27
+            ],
+            [
+              1,
+              16,
+              21,
+              26
+            ],
+            [
+              9,
+              10,
+              12,
+              17,
+              28
+            ],
+            [
+              5,
+              6,
+              20,
+              29,
+              30
+            ],
+            [
+              3,
+              7,
+              25
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 1.60851262,
+          "tax_delta_in_terminal_partial_index": -0.00509638,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.01103804,
+              "business_friendliness_factor_if_baseline_tax": 28.6427077,
+              "business_friendliness_factor_if_tax_path": 28.5667323,
+              "source_conditional_factor_difference": -0.0759754,
+              "static_partial_index_delta_from_tax_only": -0.00474846,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.0313599046,
+              "business_friendliness_factor_if_baseline_tax": 29.2184261,
+              "business_friendliness_factor_if_tax_path": 29.1409236,
+              "source_conditional_factor_difference": -0.0775025,
+              "static_partial_index_delta_from_tax_only": -0.0048439,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.0479329197,
+              "business_friendliness_factor_if_baseline_tax": 29.6879396,
+              "business_friendliness_factor_if_tax_path": 29.6091918,
+              "source_conditional_factor_difference": -0.0787479,
+              "static_partial_index_delta_from_tax_only": -0.00492174,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.059489524,
+              "business_friendliness_factor_if_baseline_tax": 30.0153382,
+              "business_friendliness_factor_if_tax_path": 29.9357219,
+              "source_conditional_factor_difference": -0.0796163,
+              "static_partial_index_delta_from_tax_only": -0.00497602,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0851169651,
+              "business_friendliness_factor_if_baseline_tax": 30.7413636,
+              "business_friendliness_factor_if_tax_path": 30.6598215,
+              "source_conditional_factor_difference": -0.0815421,
+              "static_partial_index_delta_from_tax_only": -0.00509638,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-a2f6bade1bf2",
+          "project_ids_by_year": [
+            [
+              4,
+              8,
+              13,
+              27
+            ],
+            [
+              1,
+              16,
+              21,
+              26
+            ],
+            [
+              9,
+              12,
+              17,
+              20,
+              28
+            ],
+            [
+              5,
+              6,
+              10,
+              29,
+              30
+            ],
+            [
+              3,
+              11,
+              25
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 1.58543484,
+          "tax_delta_in_terminal_partial_index": -0.00507616,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.01103804,
+              "business_friendliness_factor_if_baseline_tax": 28.6427077,
+              "business_friendliness_factor_if_tax_path": 28.5667323,
+              "source_conditional_factor_difference": -0.0759754,
+              "static_partial_index_delta_from_tax_only": -0.00474846,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.0313599046,
+              "business_friendliness_factor_if_baseline_tax": 29.2184261,
+              "business_friendliness_factor_if_tax_path": 29.1409236,
+              "source_conditional_factor_difference": -0.0775025,
+              "static_partial_index_delta_from_tax_only": -0.0048439,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.0417075757,
+              "business_friendliness_factor_if_baseline_tax": 29.5115756,
+              "business_friendliness_factor_if_tax_path": 29.4332956,
+              "source_conditional_factor_difference": -0.07828,
+              "static_partial_index_delta_from_tax_only": -0.0048925,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.059489524,
+              "business_friendliness_factor_if_baseline_tax": 30.0153382,
+              "business_friendliness_factor_if_tax_path": 29.9357219,
+              "source_conditional_factor_difference": -0.0796163,
+              "static_partial_index_delta_from_tax_only": -0.00497602,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0808109454,
+              "business_friendliness_factor_if_baseline_tax": 30.6193741,
+              "business_friendliness_factor_if_tax_path": 30.5381556,
+              "source_conditional_factor_difference": -0.0812185,
+              "static_partial_index_delta_from_tax_only": -0.00507616,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-e333150e7648",
+          "project_ids_by_year": [
+            [
+              4,
+              8,
+              13,
+              27
+            ],
+            [
+              1,
+              16,
+              21,
+              26
+            ],
+            [
+              9,
+              10,
+              12,
+              17,
+              28
+            ],
+            [
+              3,
+              6,
+              20,
+              29
+            ],
+            [
+              7,
+              31
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 1.57909499,
+          "tax_delta_in_terminal_partial_index": -0.00505601,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.01103804,
+              "business_friendliness_factor_if_baseline_tax": 28.6427077,
+              "business_friendliness_factor_if_tax_path": 28.5667323,
+              "source_conditional_factor_difference": -0.0759754,
+              "static_partial_index_delta_from_tax_only": -0.00474846,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.0313599046,
+              "business_friendliness_factor_if_baseline_tax": 29.2184261,
+              "business_friendliness_factor_if_tax_path": 29.1409236,
+              "source_conditional_factor_difference": -0.0775025,
+              "static_partial_index_delta_from_tax_only": -0.0048439,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.0479329197,
+              "business_friendliness_factor_if_baseline_tax": 29.6879396,
+              "business_friendliness_factor_if_tax_path": 29.6091918,
+              "source_conditional_factor_difference": -0.0787479,
+              "static_partial_index_delta_from_tax_only": -0.00492174,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.0658464611,
+              "business_friendliness_factor_if_baseline_tax": 30.1954302,
+              "business_friendliness_factor_if_tax_path": 30.1153363,
+              "source_conditional_factor_difference": -0.080094,
+              "static_partial_index_delta_from_tax_only": -0.00500587,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0765219793,
+              "business_friendliness_factor_if_baseline_tax": 30.4978677,
+              "business_friendliness_factor_if_tax_path": 30.4169715,
+              "source_conditional_factor_difference": -0.0808962,
+              "static_partial_index_delta_from_tax_only": -0.00505601,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-5751d0c900aa",
+          "project_ids_by_year": [
+            [
+              13,
+              17,
+              20,
+              27
+            ],
+            [
+              8,
+              21,
+              26,
+              28
+            ],
+            [
+              3,
+              4,
+              5,
+              9
+            ],
+            [
+              1,
+              6,
+              16
+            ],
+            [
+              7,
+              10
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 1.33935617,
+          "tax_delta_in_terminal_partial_index": -0.00503083,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.009026024,
+              "business_friendliness_factor_if_baseline_tax": 28.5857073,
+              "business_friendliness_factor_if_tax_path": 28.5098831,
+              "source_conditional_factor_difference": -0.0758242,
+              "static_partial_index_delta_from_tax_only": -0.00473901,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.0140711541,
+              "business_friendliness_factor_if_baseline_tax": 28.7286358,
+              "business_friendliness_factor_if_tax_path": 28.6524325,
+              "source_conditional_factor_difference": -0.0762033,
+              "static_partial_index_delta_from_tax_only": -0.0047627,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.0242362034,
+              "business_friendliness_factor_if_baseline_tax": 29.0166116,
+              "business_friendliness_factor_if_tax_path": 28.9396445,
+              "source_conditional_factor_difference": -0.0769671,
+              "static_partial_index_delta_from_tax_only": -0.00481045,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.0521371145,
+              "business_friendliness_factor_if_baseline_tax": 29.8070445,
+              "business_friendliness_factor_if_tax_path": 29.7279807,
+              "source_conditional_factor_difference": -0.0790638,
+              "static_partial_index_delta_from_tax_only": -0.00494149,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0711597535,
+              "business_friendliness_factor_if_baseline_tax": 30.3459558,
+              "business_friendliness_factor_if_tax_path": 30.2654626,
+              "source_conditional_factor_difference": -0.0804933,
+              "static_partial_index_delta_from_tax_only": -0.00503083,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-027954559c67",
+          "project_ids_by_year": [
+            [
+              13,
+              17,
+              20,
+              27
+            ],
+            [
+              8,
+              21,
+              26,
+              28
+            ],
+            [
+              1,
+              4,
+              5,
+              9
+            ],
+            [
+              6,
+              16,
+              25
+            ],
+            [
+              3,
+              7
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 1.32169017,
+          "tax_delta_in_terminal_partial_index": -0.00503083,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.009026024,
+              "business_friendliness_factor_if_baseline_tax": 28.5857073,
+              "business_friendliness_factor_if_tax_path": 28.5098831,
+              "source_conditional_factor_difference": -0.0758242,
+              "static_partial_index_delta_from_tax_only": -0.00473901,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.0140711541,
+              "business_friendliness_factor_if_baseline_tax": 28.7286358,
+              "business_friendliness_factor_if_tax_path": 28.6524325,
+              "source_conditional_factor_difference": -0.0762033,
+              "static_partial_index_delta_from_tax_only": -0.0047627,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.0283087131,
+              "business_friendliness_factor_if_baseline_tax": 29.1319858,
+              "business_friendliness_factor_if_tax_path": 29.0547127,
+              "source_conditional_factor_difference": -0.0772732,
+              "static_partial_index_delta_from_tax_only": -0.00482957,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.0563205623,
+              "business_friendliness_factor_if_baseline_tax": 29.9255615,
+              "business_friendliness_factor_if_tax_path": 29.8461834,
+              "source_conditional_factor_difference": -0.0793781,
+              "static_partial_index_delta_from_tax_only": -0.00496113,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0711597535,
+              "business_friendliness_factor_if_baseline_tax": 30.3459558,
+              "business_friendliness_factor_if_tax_path": 30.2654626,
+              "source_conditional_factor_difference": -0.0804933,
+              "static_partial_index_delta_from_tax_only": -0.00503083,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-f8621e760ebd",
+          "project_ids_by_year": [
+            [
+              13,
+              17,
+              20,
+              27
+            ],
+            [
+              8,
+              21,
+              26,
+              28
+            ],
+            [
+              3,
+              4,
+              5,
+              9
+            ],
+            [
+              1,
+              6,
+              16
+            ],
+            [
+              7,
+              25
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 1.32169017,
+          "tax_delta_in_terminal_partial_index": -0.00503083,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.009026024,
+              "business_friendliness_factor_if_baseline_tax": 28.5857073,
+              "business_friendliness_factor_if_tax_path": 28.5098831,
+              "source_conditional_factor_difference": -0.0758242,
+              "static_partial_index_delta_from_tax_only": -0.00473901,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.0140711541,
+              "business_friendliness_factor_if_baseline_tax": 28.7286358,
+              "business_friendliness_factor_if_tax_path": 28.6524325,
+              "source_conditional_factor_difference": -0.0762033,
+              "static_partial_index_delta_from_tax_only": -0.0047627,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.0242362034,
+              "business_friendliness_factor_if_baseline_tax": 29.0166116,
+              "business_friendliness_factor_if_tax_path": 28.9396445,
+              "source_conditional_factor_difference": -0.0769671,
+              "static_partial_index_delta_from_tax_only": -0.00481045,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.0521371145,
+              "business_friendliness_factor_if_baseline_tax": 29.8070445,
+              "business_friendliness_factor_if_tax_path": 29.7279807,
+              "source_conditional_factor_difference": -0.0790638,
+              "static_partial_index_delta_from_tax_only": -0.00494149,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0711597535,
+              "business_friendliness_factor_if_baseline_tax": 30.3459558,
+              "business_friendliness_factor_if_tax_path": 30.2654626,
+              "source_conditional_factor_difference": -0.0804933,
+              "static_partial_index_delta_from_tax_only": -0.00503083,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-ec40afec9ed4",
+          "project_ids_by_year": [
+            [
+              13,
+              17,
+              20,
+              27
+            ],
+            [
+              8,
+              21,
+              26,
+              28
+            ],
+            [
+              4,
+              5,
+              16
+            ],
+            [
+              1,
+              6,
+              7,
+              9
+            ],
+            [
+              3,
+              25
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 1.32169017,
+          "tax_delta_in_terminal_partial_index": -0.00503083,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.009026024,
+              "business_friendliness_factor_if_baseline_tax": 28.5857073,
+              "business_friendliness_factor_if_tax_path": 28.5098831,
+              "source_conditional_factor_difference": -0.0758242,
+              "static_partial_index_delta_from_tax_only": -0.00473901,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.0140711541,
+              "business_friendliness_factor_if_baseline_tax": 28.7286358,
+              "business_friendliness_factor_if_tax_path": 28.6524325,
+              "source_conditional_factor_difference": -0.0762033,
+              "static_partial_index_delta_from_tax_only": -0.0047627,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.0283087131,
+              "business_friendliness_factor_if_baseline_tax": 29.1319858,
+              "business_friendliness_factor_if_tax_path": 29.0547127,
+              "source_conditional_factor_difference": -0.0772732,
+              "static_partial_index_delta_from_tax_only": -0.00482957,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.0542288384,
+              "business_friendliness_factor_if_baseline_tax": 29.866303,
+              "business_friendliness_factor_if_tax_path": 29.787082,
+              "source_conditional_factor_difference": -0.079221,
+              "static_partial_index_delta_from_tax_only": -0.00495131,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0711597535,
+              "business_friendliness_factor_if_baseline_tax": 30.3459558,
+              "business_friendliness_factor_if_tax_path": 30.2654626,
+              "source_conditional_factor_difference": -0.0804933,
+              "static_partial_index_delta_from_tax_only": -0.00503083,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-38dcd54304ff",
+          "project_ids_by_year": [
+            [
+              13,
+              17,
+              20,
+              27
+            ],
+            [
+              8,
+              21,
+              26,
+              28
+            ],
+            [
+              3,
+              4,
+              5,
+              9
+            ],
+            [
+              1,
+              6,
+              16
+            ],
+            [
+              25
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 1.2712211,
+          "tax_delta_in_terminal_partial_index": -0.0049909,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.009026024,
+              "business_friendliness_factor_if_baseline_tax": 28.5857073,
+              "business_friendliness_factor_if_tax_path": 28.5098831,
+              "source_conditional_factor_difference": -0.0758242,
+              "static_partial_index_delta_from_tax_only": -0.00473901,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.0140711541,
+              "business_friendliness_factor_if_baseline_tax": 28.7286358,
+              "business_friendliness_factor_if_tax_path": 28.6524325,
+              "source_conditional_factor_difference": -0.0762033,
+              "static_partial_index_delta_from_tax_only": -0.0047627,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.0242362034,
+              "business_friendliness_factor_if_baseline_tax": 29.0166116,
+              "business_friendliness_factor_if_tax_path": 28.9396445,
+              "source_conditional_factor_difference": -0.0769671,
+              "static_partial_index_delta_from_tax_only": -0.00481045,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.0521371145,
+              "business_friendliness_factor_if_baseline_tax": 29.8070445,
+              "business_friendliness_factor_if_tax_path": 29.7279807,
+              "source_conditional_factor_difference": -0.0790638,
+              "static_partial_index_delta_from_tax_only": -0.00494149,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0626584857,
+              "business_friendliness_factor_if_baseline_tax": 30.1051149,
+              "business_friendliness_factor_if_tax_path": 30.0252605,
+              "source_conditional_factor_difference": -0.0798544,
+              "static_partial_index_delta_from_tax_only": -0.0049909,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-68be1bc65a7b",
+          "project_ids_by_year": [
+            [
+              26,
+              27,
+              28
+            ],
+            [
+              8,
+              9,
+              17
+            ],
+            [
+              5,
+              21
+            ],
+            [
+              4
+            ],
+            [
+              6,
+              20
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 0.80719877,
+          "tax_delta_in_terminal_partial_index": -0.00481523,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.002,
+              "business_friendliness_factor_if_baseline_tax": 28.38666,
+              "business_friendliness_factor_if_tax_path": 28.3113638,
+              "source_conditional_factor_difference": -0.0752962,
+              "static_partial_index_delta_from_tax_only": -0.00470601,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.01003103,
+              "business_friendliness_factor_if_baseline_tax": 28.6141791,
+              "business_friendliness_factor_if_tax_path": 28.5382794,
+              "source_conditional_factor_difference": -0.0758997,
+              "static_partial_index_delta_from_tax_only": -0.00474373,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.01003103,
+              "business_friendliness_factor_if_baseline_tax": 28.6141791,
+              "business_friendliness_factor_if_tax_path": 28.5382794,
+              "source_conditional_factor_difference": -0.0758997,
+              "static_partial_index_delta_from_tax_only": -0.00474373,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.0140711541,
+              "business_friendliness_factor_if_baseline_tax": 28.7286358,
+              "business_friendliness_factor_if_tax_path": 28.6524325,
+              "source_conditional_factor_difference": -0.0762033,
+              "static_partial_index_delta_from_tax_only": -0.0047627,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0252543308,
+              "business_friendliness_factor_if_baseline_tax": 29.0454552,
+              "business_friendliness_factor_if_tax_path": 28.9684115,
+              "source_conditional_factor_difference": -0.0770436,
+              "static_partial_index_delta_from_tax_only": -0.00481523,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-aa61047c535c",
+          "project_ids_by_year": [
+            [
+              26,
+              27,
+              28
+            ],
+            [
+              8,
+              9,
+              17
+            ],
+            [
+              4
+            ],
+            [
+              5,
+              21
+            ],
+            [
+              6,
+              20
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 0.80719877,
+          "tax_delta_in_terminal_partial_index": -0.00481523,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.002,
+              "business_friendliness_factor_if_baseline_tax": 28.38666,
+              "business_friendliness_factor_if_tax_path": 28.3113638,
+              "source_conditional_factor_difference": -0.0752962,
+              "static_partial_index_delta_from_tax_only": -0.00470601,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.01003103,
+              "business_friendliness_factor_if_baseline_tax": 28.6141791,
+              "business_friendliness_factor_if_tax_path": 28.5382794,
+              "source_conditional_factor_difference": -0.0758997,
+              "static_partial_index_delta_from_tax_only": -0.00474373,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.0140711541,
+              "business_friendliness_factor_if_baseline_tax": 28.7286358,
+              "business_friendliness_factor_if_tax_path": 28.6524325,
+              "source_conditional_factor_difference": -0.0762033,
+              "static_partial_index_delta_from_tax_only": -0.0047627,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.0140711541,
+              "business_friendliness_factor_if_baseline_tax": 28.7286358,
+              "business_friendliness_factor_if_tax_path": 28.6524325,
+              "source_conditional_factor_difference": -0.0762033,
+              "static_partial_index_delta_from_tax_only": -0.0047627,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0252543308,
+              "business_friendliness_factor_if_baseline_tax": 29.0454552,
+              "business_friendliness_factor_if_tax_path": 28.9684115,
+              "source_conditional_factor_difference": -0.0770436,
+              "static_partial_index_delta_from_tax_only": -0.00481523,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-efee28562fae",
+          "project_ids_by_year": [
+            [
+              8,
+              27,
+              28
+            ],
+            [
+              9,
+              21
+            ],
+            [
+              5,
+              17,
+              26
+            ],
+            [
+              4
+            ],
+            [
+              6,
+              20
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 0.80719877,
+          "tax_delta_in_terminal_partial_index": -0.00481523,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.00701,
+              "business_friendliness_factor_if_baseline_tax": 28.5285933,
+              "business_friendliness_factor_if_tax_path": 28.4529206,
+              "source_conditional_factor_difference": -0.0756727,
+              "static_partial_index_delta_from_tax_only": -0.00472954,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.00701,
+              "business_friendliness_factor_if_baseline_tax": 28.5285933,
+              "business_friendliness_factor_if_tax_path": 28.4529206,
+              "source_conditional_factor_difference": -0.0756727,
+              "static_partial_index_delta_from_tax_only": -0.00472954,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.01003103,
+              "business_friendliness_factor_if_baseline_tax": 28.6141791,
+              "business_friendliness_factor_if_tax_path": 28.5382794,
+              "source_conditional_factor_difference": -0.0758997,
+              "static_partial_index_delta_from_tax_only": -0.00474373,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.0140711541,
+              "business_friendliness_factor_if_baseline_tax": 28.7286358,
+              "business_friendliness_factor_if_tax_path": 28.6524325,
+              "source_conditional_factor_difference": -0.0762033,
+              "static_partial_index_delta_from_tax_only": -0.0047627,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0252543308,
+              "business_friendliness_factor_if_baseline_tax": 29.0454552,
+              "business_friendliness_factor_if_tax_path": 28.9684115,
+              "source_conditional_factor_difference": -0.0770436,
+              "static_partial_index_delta_from_tax_only": -0.00481523,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-7af7b223be3a",
+          "project_ids_by_year": [
+            [
+              26,
+              27,
+              28
+            ],
+            [
+              8,
+              9,
+              17
+            ],
+            [
+              5,
+              21
+            ],
+            [
+              4
+            ],
+            [
+              20,
+              25
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 0.80127143,
+          "tax_delta_in_terminal_partial_index": -0.00482957,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.002,
+              "business_friendliness_factor_if_baseline_tax": 28.38666,
+              "business_friendliness_factor_if_tax_path": 28.3113638,
+              "source_conditional_factor_difference": -0.0752962,
+              "static_partial_index_delta_from_tax_only": -0.00470601,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.01003103,
+              "business_friendliness_factor_if_baseline_tax": 28.6141791,
+              "business_friendliness_factor_if_tax_path": 28.5382794,
+              "source_conditional_factor_difference": -0.0758997,
+              "static_partial_index_delta_from_tax_only": -0.00474373,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.01003103,
+              "business_friendliness_factor_if_baseline_tax": 28.6141791,
+              "business_friendliness_factor_if_tax_path": 28.5382794,
+              "source_conditional_factor_difference": -0.0758997,
+              "static_partial_index_delta_from_tax_only": -0.00474373,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.0140711541,
+              "business_friendliness_factor_if_baseline_tax": 28.7286358,
+              "business_friendliness_factor_if_tax_path": 28.6524325,
+              "source_conditional_factor_difference": -0.0762033,
+              "static_partial_index_delta_from_tax_only": -0.0047627,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0283087131,
+              "business_friendliness_factor_if_baseline_tax": 29.1319858,
+              "business_friendliness_factor_if_tax_path": 29.0547127,
+              "source_conditional_factor_difference": -0.0772732,
+              "static_partial_index_delta_from_tax_only": -0.00482957,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        },
+        {
+          "candidate_id": "P-61ce97c60a3b",
+          "project_ids_by_year": [
+            [
+              8,
+              27,
+              28
+            ],
+            [
+              9,
+              21
+            ],
+            [
+              5,
+              17,
+              26
+            ],
+            [
+              4
+            ],
+            [
+              20,
+              25
+            ]
+          ],
+          "mapped_terminal_proxy_plus_tax_path_delta": 0.80127143,
+          "tax_delta_in_terminal_partial_index": -0.00482957,
+          "yearly_factor_counterfactual": [
+            {
+              "year": 1,
+              "project_multiplier_if_active": 1.00701,
+              "business_friendliness_factor_if_baseline_tax": 28.5285933,
+              "business_friendliness_factor_if_tax_path": 28.4529206,
+              "source_conditional_factor_difference": -0.0756727,
+              "static_partial_index_delta_from_tax_only": -0.00472954,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 2,
+              "project_multiplier_if_active": 1.00701,
+              "business_friendliness_factor_if_baseline_tax": 28.5285933,
+              "business_friendliness_factor_if_tax_path": 28.4529206,
+              "source_conditional_factor_difference": -0.0756727,
+              "static_partial_index_delta_from_tax_only": -0.00472954,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 3,
+              "project_multiplier_if_active": 1.01003103,
+              "business_friendliness_factor_if_baseline_tax": 28.6141791,
+              "business_friendliness_factor_if_tax_path": 28.5382794,
+              "source_conditional_factor_difference": -0.0758997,
+              "static_partial_index_delta_from_tax_only": -0.00474373,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 4,
+              "project_multiplier_if_active": 1.0140711541,
+              "business_friendliness_factor_if_baseline_tax": 28.7286358,
+              "business_friendliness_factor_if_tax_path": 28.6524325,
+              "source_conditional_factor_difference": -0.0762033,
+              "static_partial_index_delta_from_tax_only": -0.0047627,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            },
+            {
+              "year": 5,
+              "project_multiplier_if_active": 1.0283087131,
+              "business_friendliness_factor_if_baseline_tax": 29.1319858,
+              "business_friendliness_factor_if_tax_path": 29.0547127,
+              "source_conditional_factor_difference": -0.0772732,
+              "static_partial_index_delta_from_tax_only": -0.00482957,
+              "actual_market_or_migration_response": null,
+              "tax_income_effect": null
+            }
+          ],
+          "real_five_year_score": null,
+          "real_budget_impact": null,
+          "not_a_new_optimizer": true
+        }
+      ],
+      "not_actual_tax_policy_ranking": true
+    }
+  ],
+  "current_market_state_authenticity": "UNVERIFIED"
+}

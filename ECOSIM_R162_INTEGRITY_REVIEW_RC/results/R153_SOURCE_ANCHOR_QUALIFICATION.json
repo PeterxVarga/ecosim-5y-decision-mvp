@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "source_file_sha256_matched": true,
+  "source_expression_sha256_matched": true,
+  "method": "User-supplied original R140B Webpack 840 JS byte range; source bytes are not distributed in this archive",
+  "source_anchor": {
+    "source_file": "840.41fdc8e1.chunk.js",
+    "module": "5168",
+    "source_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+    "range_utf8_bytes": [
+      14141,
+      14680
+    ],
+    "expression_sha256": "cd4c23b0e57a2019ca3fe69151e19fb9c314e94e8cf5e0920f258e370eb3abf0",
+    "source_formula_summary": "Re = min(1, baseMultiplier * (1 - service/100 * servicesAndBuilding - (business/100)/business.indexDivisor * businessTax - vehicle/vehicle.indexDivisor * environmentAndVehicle - building/building.indexDivisor * servicesAndBuilding) * projectFactor(companyFriendliness))",
+    "source_provenance": "R140B original JS supplied by operator; source not included in public decision ZIP",
+    "assumptions": [
+      "Tax rate J(services) expressed in percentages per client /100",
+      "Business rate q(business) is original decision /100",
+      "Vehicle and building G() are original unscaled decisions",
+      "Project factor Pr is multiplicative across active project effects",
+      "No lower clamp on this factor branch; upper 1 only"
+    ],
+    "does_not_prove": [
+      "Current market parameters",
+      "Business and population dynamics",
+      "Tax income or budget",
+      "Server settlement",
+      "Five year outcome"
+    ]
+  },
+  "gameplay_gate": "STOP"
+}

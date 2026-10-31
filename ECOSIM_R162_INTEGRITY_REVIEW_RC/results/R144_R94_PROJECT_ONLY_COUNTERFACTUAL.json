@@ -1,0 +1,19 @@
+{
+  "status": "R94_TEST_P1_STATIC_OTHER_LINES_COUNTERFACTUAL_ONLY",
+  "project_ids": [
+    8,
+    13,
+    27
+  ],
+  "reference_p1_unreserved_net_ecu": 865588.0,
+  "client_signed_project_expense_component_ecu": 90200,
+  "separate_company_support_label_not_confirmed_collected_ecu": 3500,
+  "scenario_net_if_no_grant_collected_and_no_indirect_effect_ecu": 775388.0,
+  "scenario_net_if_all_support_booked_same_period_and_no_indirect_effect_ecu": 778888.0,
+  "conservative_upfront_cash_requirement_ecu": 99000,
+  "actual_ecosim_candidate_preview": null,
+  "actual_cash_available": null,
+  "project_indirect_feedback": "UNKNOWN",
+  "financing_approval": "UNKNOWN",
+  "gameplay_decision": "STOP"
+}

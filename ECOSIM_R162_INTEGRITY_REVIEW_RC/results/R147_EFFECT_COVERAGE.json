@@ -1,0 +1,35 @@
+{
+  "schema": "ECOSIM_R147_CARD_EFFECT_COVERAGE_V1",
+  "test_round_project_catalog_rows": 272,
+  "distinct_project_count": 35,
+  "direct_recognized_effect_rows": 242,
+  "indirect_effect_rows_unquantified": 30,
+  "unquantified_metric_labels": [
+    "Kisvállalkozások száma",
+    "Középvállalkozások száma"
+  ],
+  "factor_aliases_source_anchored": {
+    "Munkanélküliség": "Munkanélküli arány"
+  },
+  "source_anchored_caps": {
+    "Vállalkozóbarátság": [
+      null,
+      100.0
+    ],
+    "Településfejlettség": [
+      2.1,
+      95.6
+    ],
+    "Közlekedési minőség": [
+      null,
+      200.0
+    ],
+    "Tömegközlekedők aránya, %": [
+      null,
+      80.0
+    ]
+  },
+  "partial_effect_replay_is_complete_city_score": false,
+  "latency_or_project_effect_delay_known": false,
+  "actual_gameplay_approval": false
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "ECOSIM_R162_RISK_LEDGER_V1",
+  "confirmed_and_fixed": [
+    {
+      "id": "R162-1",
+      "severity": "HIGH",
+      "title": "Finite JSON exponent overflow accepted in R161",
+      "tests": "R162_QUALIFICATION"
+    },
+    {
+      "id": "R162-2",
+      "severity": "MEDIUM",
+      "title": "Strict negative co-start inconsistency",
+      "tests": "R162_QUALIFICATION"
+    }
+  ],
+  "remaining_blockers": [
+    "NO_CURRENT_AUTHENTICATED_ECOSIM_STATE",
+    "NO_COMPLETE_CITY_TRANSITION",
+    "NO_PAIRED_PREDICTION_FACT",
+    "NO_VERIFIED_FINANCE",
+    "NO_INDEPENDENT_HUMAN_REVIEW"
+  ],
+  "gameplay_gate": "STOP"
+}

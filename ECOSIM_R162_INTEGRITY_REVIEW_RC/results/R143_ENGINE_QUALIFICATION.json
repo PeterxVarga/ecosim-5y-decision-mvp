@@ -1,0 +1,80 @@
+{
+  "qualification": "PASS_OFFLINE_INTEGRATION_ONLY",
+  "offline_only": true,
+  "gameplay_gate": "STOP",
+  "true_5yr_game_prediction_validated": false,
+  "checks": [
+    "35 cards exactly",
+    "test running count 6",
+    "R141 baseline projection matches UI two decimals",
+    "prior R142 combo mapped proxy +0.480",
+    "signed negative maintenance cannot increase available budget",
+    "signed negative maintenance not used in portfolio envelope",
+    "dependency label mapping complete for test projects",
+    "Bubi with bike route same-year conditional allowed",
+    "Bubi with bike route same-year strict blocked",
+    "Bubi without bike route invalid",
+    "Bubi next-year after bike route allowed",
+    "budget number replicated",
+    "cap overrun not silently approved",
+    "over-cap current selections are rejected",
+    "empty evidence does not grant qualification",
+    "zero budget selects no projects",
+    "zero budget has zero project index delta",
+    "five annual decisions produced",
+    "all alternatives declare STOP",
+    "all alternatives below hypothetical cost envelope",
+    "all selections unique across years",
+    "no live source claimed",
+    "all effect aliases not silently counted",
+    "all three proxy sensitivities present",
+    "rolling replanning creates years 2..5 only",
+    "later-year baseline source remains unverifed",
+    "empty league produces no certified rank",
+    "robust sensitivity is tracked without certainty claims",
+    "envelope_50000_respected",
+    "envelope_200000_respected"
+  ],
+  "check_count": 30,
+  "source_project_catalog_sha256": "0438d35a1ea04fa4ee71a02a2205c652ea80a2ca8a61d2c99b8c30953ef3e944",
+  "source_r143_proxy_sha256": "134541ee25e9e7b16b2551ea5cfbebf93e7922fdca6bc919cfefa60793b3d568",
+  "source_r143_card_cost_sha256": "e2c66805d01fcefe15ba8df9fcb78336ab5237a54ae80cf6096ff29447230261",
+  "optimizer_beam_width": 12,
+  "budget_scenario_ecu_per_year": 100000,
+  "expansion": [
+    {
+      "year": 1,
+      "expanded_valid_actions": 3139,
+      "distinct_shortlisted": 40,
+      "beam_kept": 12
+    },
+    {
+      "year": 2,
+      "expanded_valid_actions": 14326,
+      "distinct_shortlisted": 480,
+      "beam_kept": 12
+    },
+    {
+      "year": 3,
+      "expanded_valid_actions": 5613,
+      "distinct_shortlisted": 480,
+      "beam_kept": 12
+    },
+    {
+      "year": 4,
+      "expanded_valid_actions": 868,
+      "distinct_shortlisted": 480,
+      "beam_kept": 12
+    },
+    {
+      "year": 5,
+      "expanded_valid_actions": 256,
+      "distinct_shortlisted": 206,
+      "beam_kept": 12
+    }
+  ],
+  "candidate_count": 10,
+  "best_illustrative_mapped_index_delta": 1.351972,
+  "unknown_effects_best": 18,
+  "biggest_blocker": "Actual game-state transitions, policy choices, competing teams and validated financing are unknown."
+}

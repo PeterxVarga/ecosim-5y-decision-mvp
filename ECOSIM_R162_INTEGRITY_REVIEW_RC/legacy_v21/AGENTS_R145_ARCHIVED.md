@@ -1,0 +1,3 @@
+# EcoSim R143 integrated engine
+
+Research → Reuse → Build. Reuse `r142_proxy_reference.py`, `portfolio_5y.py`, `readiness.py`; do not fork or parallel-rebuild core project data. Do not run Codex automatically. Run only local Python standard library. Be evidence-first: project cap, finance, index and league results require provenance. User must separately approve any state-changing UI test. No live website, requests, saving, project starts, loans or finale. Project cards can trigger resets on rendering. Never describe an offline mapped proxy as a server-validated 5-year prediction or a guaranteed winner. Test with the consolidated `qualify_once.sh` only if requested. The final approval state stays STOP unless independent evidence arrives.

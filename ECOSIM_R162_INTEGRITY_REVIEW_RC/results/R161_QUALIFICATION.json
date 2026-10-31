@@ -1,0 +1,264 @@
+{
+  "schema": "ECOSIM_R161_OFFLINE_ADVERSARIAL_QUALIFICATION_V1",
+  "status": "PASS_OFFLINE_ONLY",
+  "new_checks": 62,
+  "checks": [
+    {
+      "name": "Normal JSON parses",
+      "result": "PASS"
+    },
+    {
+      "name": "Booleans and null remain typed",
+      "result": "PASS"
+    },
+    {
+      "name": "Top-level duplicate provenance rejected",
+      "result": "PASS"
+    },
+    {
+      "name": "Nested duplicate market cap rejected",
+      "result": "PASS"
+    },
+    {
+      "name": "Duplicate financial source class rejected",
+      "result": "PASS"
+    },
+    {
+      "name": "Nonstandard JSON constant rejected NaN",
+      "result": "PASS"
+    },
+    {
+      "name": "Nonstandard JSON constant rejected Infinity",
+      "result": "PASS"
+    },
+    {
+      "name": "Nonstandard JSON constant rejected -Infinity",
+      "result": "PASS"
+    },
+    {
+      "name": "Malformed JSON rejected",
+      "result": "PASS"
+    },
+    {
+      "name": "Missing JSON file rejected",
+      "result": "PASS"
+    },
+    {
+      "name": "Oversized JSON rejected",
+      "result": "PASS"
+    },
+    {
+      "name": "Legacy relative release-root input retained",
+      "result": "PASS"
+    },
+    {
+      "name": "Legacy nested config input retained",
+      "result": "PASS"
+    },
+    {
+      "name": "Inside-root absolute input retained",
+      "result": "PASS"
+    },
+    {
+      "name": "Host absolute secrets path rejected",
+      "result": "PASS"
+    },
+    {
+      "name": "Traversal outside release rejected",
+      "result": "PASS"
+    },
+    {
+      "name": "Missing input file rejected",
+      "result": "PASS"
+    },
+    {
+      "name": "NUL path rejected",
+      "result": "PASS"
+    },
+    {
+      "name": "User-provided adjacent input is allowed",
+      "result": "PASS"
+    },
+    {
+      "name": "Config sibling symlink escape rejected",
+      "result": "PASS"
+    },
+    {
+      "name": "Invalid archive member ../bad",
+      "result": "PASS"
+    },
+    {
+      "name": "Invalid archive member /absolute",
+      "result": "PASS"
+    },
+    {
+      "name": "Invalid archive member a\\b",
+      "result": "PASS"
+    },
+    {
+      "name": "Invalid archive member foo/../bar",
+      "result": "PASS"
+    },
+    {
+      "name": "Invalid archive member .env",
+      "result": "PASS"
+    },
+    {
+      "name": "Invalid archive member .git/config",
+      "result": "PASS"
+    },
+    {
+      "name": "Invalid archive member __pycache__/code.py",
+      "result": "PASS"
+    },
+    {
+      "name": "Invalid archive member id_rsa",
+      "result": "PASS"
+    },
+    {
+      "name": "Invalid archive member foo/./bar",
+      "result": "PASS"
+    },
+    {
+      "name": "Canonical nested release member allowed",
+      "result": "PASS"
+    },
+    {
+      "name": "Checksum line parsed",
+      "result": "PASS"
+    },
+    {
+      "name": "Duplicate checksum member rejected",
+      "result": "PASS"
+    },
+    {
+      "name": "Incorrect digest rejected",
+      "result": "PASS"
+    },
+    {
+      "name": "Release inventory refuses symlink",
+      "result": "PASS"
+    },
+    {
+      "name": "Release inventory checks bytes",
+      "result": "PASS"
+    },
+    {
+      "name": "Unmodified miniature release verifies",
+      "result": "PASS"
+    },
+    {
+      "name": "Release guard rejects modified bytes",
+      "result": "PASS"
+    },
+    {
+      "name": "Release guard rejects extra members",
+      "result": "PASS"
+    },
+    {
+      "name": "Matching ZIP entry hashes verified",
+      "result": "PASS"
+    },
+    {
+      "name": "ZIP traversal member blocked",
+      "result": "PASS"
+    },
+    {
+      "name": "Release gate refuses fabricated gameplay authorization",
+      "result": "PASS"
+    },
+    {
+      "name": "Self-asserted source cannot verify server state False",
+      "result": "PASS"
+    },
+    {
+      "name": "Claimed cap remains explicitly unverified False",
+      "result": "PASS"
+    },
+    {
+      "name": "Operator metadata does not become authority False",
+      "result": "PASS"
+    },
+    {
+      "name": "Self-asserted source cannot verify server state True",
+      "result": "PASS"
+    },
+    {
+      "name": "Claimed cap remains explicitly unverified True",
+      "result": "PASS"
+    },
+    {
+      "name": "Operator metadata does not become authority True",
+      "result": "PASS"
+    },
+    {
+      "name": "Baseline label preserves declared unverified source",
+      "result": "PASS"
+    },
+    {
+      "name": "Independent historical plan replay still valid",
+      "result": "PASS"
+    },
+    {
+      "name": "Server authorization remains null",
+      "result": "PASS"
+    },
+    {
+      "name": "Budget never marked approved",
+      "result": "PASS"
+    },
+    {
+      "name": "Report schema preserved",
+      "result": "PASS"
+    },
+    {
+      "name": "Historic mode not live",
+      "result": "PASS"
+    },
+    {
+      "name": "All game writes remain zero",
+      "result": "PASS"
+    },
+    {
+      "name": "Gameplay gate STOP",
+      "result": "PASS"
+    },
+    {
+      "name": "No game score prediction certified",
+      "result": "PASS"
+    },
+    {
+      "name": "Candidate count remains consistent",
+      "result": "PASS"
+    },
+    {
+      "name": "Candidate starts unchanged",
+      "result": "PASS"
+    },
+    {
+      "name": "R160 independent audits remain active",
+      "result": "PASS"
+    },
+    {
+      "name": "Reported hypothetical envelopes preserved",
+      "result": "PASS"
+    },
+    {
+      "name": "New provenance guard does not promote server authenticity",
+      "result": "PASS"
+    },
+    {
+      "name": "No true accuracy is invented",
+      "result": "PASS"
+    }
+  ],
+  "full_historical_end_to_end_runs": 1,
+  "prior_r160_checks_documented_not_rerun": 63,
+  "historical_sample_candidate_count": 20,
+  "historical_candidate_set_unchanged": true,
+  "official_live_server_state_confirmed": false,
+  "true_forecast_accuracy_measured": false,
+  "game_writes": 0,
+  "gameplay_gate": "STOP",
+  "independent_fresh_context_human_review_performed": false
+}

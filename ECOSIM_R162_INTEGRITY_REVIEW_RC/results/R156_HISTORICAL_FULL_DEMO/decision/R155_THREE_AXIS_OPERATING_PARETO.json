@@ -1,0 +1,221 @@
+{
+  "schema": "ECOSIM_R155_PARTIAL_OPERATING_THREE_AXIS_SAMPLED_PARETO_V1",
+  "status": "CONDITIONAL_SAMPLED_NOT_GLOBAL_OPTIMUM",
+  "evaluated": 45,
+  "front": [
+    {
+      "candidate_id": "P-9ffda18c4ae7",
+      "path_id": "business_tax_reduced_synthetic",
+      "terminal_partial_index_proxy_delta": 1.61870538,
+      "five_year_conditional_net_operating_delta_ecu": -1039034.70831041,
+      "five_year_project_card_need_ecu": 700600,
+      "actual_available_money_ecu": null,
+      "actual_year_5_index": null,
+      "source_coverage": "FOUR_TAXES_SIX_FEES_PARTIAL_INSTITUTION_WAGES_AND_MATERIALS"
+    },
+    {
+      "candidate_id": "P-9ffda18c4ae7",
+      "path_id": "unchanged_synthetic",
+      "terminal_partial_index_proxy_delta": 1.613609,
+      "five_year_conditional_net_operating_delta_ecu": 0.0,
+      "five_year_project_card_need_ecu": 700600,
+      "actual_available_money_ecu": null,
+      "actual_year_5_index": null,
+      "source_coverage": "FOUR_TAXES_SIX_FEES_PARTIAL_INSTITUTION_WAGES_AND_MATERIALS"
+    },
+    {
+      "candidate_id": "P-9ffda18c4ae7",
+      "path_id": "business_tax_increased_synthetic",
+      "terminal_partial_index_proxy_delta": 1.60851262,
+      "five_year_conditional_net_operating_delta_ecu": 991998.60652994,
+      "five_year_project_card_need_ecu": 700600,
+      "actual_available_money_ecu": null,
+      "actual_year_5_index": null,
+      "source_coverage": "FOUR_TAXES_SIX_FEES_PARTIAL_INSTITUTION_WAGES_AND_MATERIALS"
+    },
+    {
+      "candidate_id": "P-a2f6bade1bf2",
+      "path_id": "business_tax_reduced_synthetic",
+      "terminal_partial_index_proxy_delta": 1.59558716,
+      "five_year_conditional_net_operating_delta_ecu": -1039034.70831041,
+      "five_year_project_card_need_ecu": 693600,
+      "actual_available_money_ecu": null,
+      "actual_year_5_index": null,
+      "source_coverage": "FOUR_TAXES_SIX_FEES_PARTIAL_INSTITUTION_WAGES_AND_MATERIALS"
+    },
+    {
+      "candidate_id": "P-a2f6bade1bf2",
+      "path_id": "unchanged_synthetic",
+      "terminal_partial_index_proxy_delta": 1.590511,
+      "five_year_conditional_net_operating_delta_ecu": 0.0,
+      "five_year_project_card_need_ecu": 693600,
+      "actual_available_money_ecu": null,
+      "actual_year_5_index": null,
+      "source_coverage": "FOUR_TAXES_SIX_FEES_PARTIAL_INSTITUTION_WAGES_AND_MATERIALS"
+    },
+    {
+      "candidate_id": "P-a2f6bade1bf2",
+      "path_id": "business_tax_increased_synthetic",
+      "terminal_partial_index_proxy_delta": 1.58543484,
+      "five_year_conditional_net_operating_delta_ecu": 991998.60652994,
+      "five_year_project_card_need_ecu": 693600,
+      "actual_available_money_ecu": null,
+      "actual_year_5_index": null,
+      "source_coverage": "FOUR_TAXES_SIX_FEES_PARTIAL_INSTITUTION_WAGES_AND_MATERIALS"
+    },
+    {
+      "candidate_id": "P-5751d0c900aa",
+      "path_id": "business_tax_reduced_synthetic",
+      "terminal_partial_index_proxy_delta": 1.34941783,
+      "five_year_conditional_net_operating_delta_ecu": -1039034.70831041,
+      "five_year_project_card_need_ecu": 487800,
+      "actual_available_money_ecu": null,
+      "actual_year_5_index": null,
+      "source_coverage": "FOUR_TAXES_SIX_FEES_PARTIAL_INSTITUTION_WAGES_AND_MATERIALS"
+    },
+    {
+      "candidate_id": "P-5751d0c900aa",
+      "path_id": "unchanged_synthetic",
+      "terminal_partial_index_proxy_delta": 1.344387,
+      "five_year_conditional_net_operating_delta_ecu": 0.0,
+      "five_year_project_card_need_ecu": 487800,
+      "actual_available_money_ecu": null,
+      "actual_year_5_index": null,
+      "source_coverage": "FOUR_TAXES_SIX_FEES_PARTIAL_INSTITUTION_WAGES_AND_MATERIALS"
+    },
+    {
+      "candidate_id": "P-5751d0c900aa",
+      "path_id": "business_tax_increased_synthetic",
+      "terminal_partial_index_proxy_delta": 1.33935617,
+      "five_year_conditional_net_operating_delta_ecu": 991998.60652994,
+      "five_year_project_card_need_ecu": 487800,
+      "actual_available_money_ecu": null,
+      "actual_year_5_index": null,
+      "source_coverage": "FOUR_TAXES_SIX_FEES_PARTIAL_INSTITUTION_WAGES_AND_MATERIALS"
+    },
+    {
+      "candidate_id": "P-027954559c67",
+      "path_id": "business_tax_reduced_synthetic",
+      "terminal_partial_index_proxy_delta": 1.33175183,
+      "five_year_conditional_net_operating_delta_ecu": -1039034.70831041,
+      "five_year_project_card_need_ecu": 477700,
+      "actual_available_money_ecu": null,
+      "actual_year_5_index": null,
+      "source_coverage": "FOUR_TAXES_SIX_FEES_PARTIAL_INSTITUTION_WAGES_AND_MATERIALS"
+    },
+    {
+      "candidate_id": "P-027954559c67",
+      "path_id": "unchanged_synthetic",
+      "terminal_partial_index_proxy_delta": 1.326721,
+      "five_year_conditional_net_operating_delta_ecu": 0.0,
+      "five_year_project_card_need_ecu": 477700,
+      "actual_available_money_ecu": null,
+      "actual_year_5_index": null,
+      "source_coverage": "FOUR_TAXES_SIX_FEES_PARTIAL_INSTITUTION_WAGES_AND_MATERIALS"
+    },
+    {
+      "candidate_id": "P-027954559c67",
+      "path_id": "business_tax_increased_synthetic",
+      "terminal_partial_index_proxy_delta": 1.32169017,
+      "five_year_conditional_net_operating_delta_ecu": 991998.60652994,
+      "five_year_project_card_need_ecu": 477700,
+      "actual_available_money_ecu": null,
+      "actual_year_5_index": null,
+      "source_coverage": "FOUR_TAXES_SIX_FEES_PARTIAL_INSTITUTION_WAGES_AND_MATERIALS"
+    },
+    {
+      "candidate_id": "P-38dcd54304ff",
+      "path_id": "business_tax_reduced_synthetic",
+      "terminal_partial_index_proxy_delta": 1.2812029,
+      "five_year_conditional_net_operating_delta_ecu": -1039034.70831041,
+      "five_year_project_card_need_ecu": 445300,
+      "actual_available_money_ecu": null,
+      "actual_year_5_index": null,
+      "source_coverage": "FOUR_TAXES_SIX_FEES_PARTIAL_INSTITUTION_WAGES_AND_MATERIALS"
+    },
+    {
+      "candidate_id": "P-38dcd54304ff",
+      "path_id": "unchanged_synthetic",
+      "terminal_partial_index_proxy_delta": 1.276212,
+      "five_year_conditional_net_operating_delta_ecu": 0.0,
+      "five_year_project_card_need_ecu": 445300,
+      "actual_available_money_ecu": null,
+      "actual_year_5_index": null,
+      "source_coverage": "FOUR_TAXES_SIX_FEES_PARTIAL_INSTITUTION_WAGES_AND_MATERIALS"
+    },
+    {
+      "candidate_id": "P-38dcd54304ff",
+      "path_id": "business_tax_increased_synthetic",
+      "terminal_partial_index_proxy_delta": 1.2712211,
+      "five_year_conditional_net_operating_delta_ecu": 991998.60652994,
+      "five_year_project_card_need_ecu": 445300,
+      "actual_available_money_ecu": null,
+      "actual_year_5_index": null,
+      "source_coverage": "FOUR_TAXES_SIX_FEES_PARTIAL_INSTITUTION_WAGES_AND_MATERIALS"
+    },
+    {
+      "candidate_id": "P-68be1bc65a7b",
+      "path_id": "business_tax_reduced_synthetic",
+      "terminal_partial_index_proxy_delta": 0.81682923,
+      "five_year_conditional_net_operating_delta_ecu": -1039034.70831041,
+      "five_year_project_card_need_ecu": 237500,
+      "actual_available_money_ecu": null,
+      "actual_year_5_index": null,
+      "source_coverage": "FOUR_TAXES_SIX_FEES_PARTIAL_INSTITUTION_WAGES_AND_MATERIALS"
+    },
+    {
+      "candidate_id": "P-aa61047c535c",
+      "path_id": "business_tax_reduced_synthetic",
+      "terminal_partial_index_proxy_delta": 0.81682923,
+      "five_year_conditional_net_operating_delta_ecu": -1039034.70831041,
+      "five_year_project_card_need_ecu": 237500,
+      "actual_available_money_ecu": null,
+      "actual_year_5_index": null,
+      "source_coverage": "FOUR_TAXES_SIX_FEES_PARTIAL_INSTITUTION_WAGES_AND_MATERIALS"
+    },
+    {
+      "candidate_id": "P-68be1bc65a7b",
+      "path_id": "unchanged_synthetic",
+      "terminal_partial_index_proxy_delta": 0.812014,
+      "five_year_conditional_net_operating_delta_ecu": 0.0,
+      "five_year_project_card_need_ecu": 237500,
+      "actual_available_money_ecu": null,
+      "actual_year_5_index": null,
+      "source_coverage": "FOUR_TAXES_SIX_FEES_PARTIAL_INSTITUTION_WAGES_AND_MATERIALS"
+    },
+    {
+      "candidate_id": "P-aa61047c535c",
+      "path_id": "unchanged_synthetic",
+      "terminal_partial_index_proxy_delta": 0.812014,
+      "five_year_conditional_net_operating_delta_ecu": 0.0,
+      "five_year_project_card_need_ecu": 237500,
+      "actual_available_money_ecu": null,
+      "actual_year_5_index": null,
+      "source_coverage": "FOUR_TAXES_SIX_FEES_PARTIAL_INSTITUTION_WAGES_AND_MATERIALS"
+    },
+    {
+      "candidate_id": "P-68be1bc65a7b",
+      "path_id": "business_tax_increased_synthetic",
+      "terminal_partial_index_proxy_delta": 0.80719877,
+      "five_year_conditional_net_operating_delta_ecu": 991998.60652994,
+      "five_year_project_card_need_ecu": 237500,
+      "actual_available_money_ecu": null,
+      "actual_year_5_index": null,
+      "source_coverage": "FOUR_TAXES_SIX_FEES_PARTIAL_INSTITUTION_WAGES_AND_MATERIALS"
+    },
+    {
+      "candidate_id": "P-aa61047c535c",
+      "path_id": "business_tax_increased_synthetic",
+      "terminal_partial_index_proxy_delta": 0.80719877,
+      "five_year_conditional_net_operating_delta_ecu": 991998.60652994,
+      "five_year_project_card_need_ecu": 237500,
+      "actual_available_money_ecu": null,
+      "actual_year_5_index": null,
+      "source_coverage": "FOUR_TAXES_SIX_FEES_PARTIAL_INSTITUTION_WAGES_AND_MATERIALS"
+    }
+  ],
+  "exogenous_bases_fixed_across_paths": true,
+  "unknown_fiscal_components_not_assumed_zero": true,
+  "real_budget_or_terminal_score_validated": false,
+  "gameplay_gate": "STOP"
+}

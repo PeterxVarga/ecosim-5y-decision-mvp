@@ -1,0 +1,58 @@
+{
+  "schema": "ECOSIM_R157_RELEASE_MANIFEST_V1",
+  "base_release": "R156",
+  "new_release": "R157",
+  "reexecuted_r156_checks": 68,
+  "new_r157_checks": 66,
+  "actual_game_forecast_validated": false,
+  "gameplay_gate": "STOP",
+  "eco_sim_writes": 0,
+  "current_live_market_team_available": false,
+  "scenario_min_is_true_score_lower_bound": false,
+  "files": {
+    "tools/robust_decision_r157.py": {
+      "sha256": "e64515a13f14a45bdcd226bfb82b0497ae0e4c189f0badccf535ade270a4beff",
+      "bytes": 5308
+    },
+    "tools/robust_r146.py": {
+      "sha256": "837b88eacf1fb8533606fd499415dd6a2ee611a797828035a785712aff9c20a1",
+      "bytes": 4970
+    },
+    "tools/strategy_5y.py": {
+      "sha256": "e1a75e6aa5bd1c19a13da7f2e7aeac96a7fa05275cc4e0fe24dc1260a334d7c9",
+      "bytes": 30950
+    },
+    "tools/decision_desk_r149.py": {
+      "sha256": "65b7fb345872e71d07e309f09d9530e7d1e03733649313ed771cd4a2d9446400",
+      "bytes": 39680
+    },
+    "tools/decision_view_r149.py": {
+      "sha256": "7c8108eda1de599ac198555eeb353fd506ce4dd069f37c2666b9af65ece0d667",
+      "bytes": 18991
+    },
+    "tools/qualify_r157.py": {
+      "sha256": "07932b2c843f1f068844b916aa20f52caf8785b504434698b1076af2dcbfbd7c",
+      "bytes": 11202
+    },
+    "inputs/mvp_run.r157_robust_historical.json": {
+      "sha256": "43690da62fa1ab7f17d54a478a548fdace7b9a870495323c3d1a7a4befacf386",
+      "bytes": 1765
+    },
+    "results/R157_QUALIFICATION.json": {
+      "sha256": "203384b9c61ff944a4008b0a719a0dd70e966ccec5b67d7130550d403018fff3",
+      "bytes": 3329
+    },
+    "results/R157_HISTORICAL_ROBUST_DEMO/DECISION_DESK.json": {
+      "sha256": "4d1e2d6c57f552b8b4afbc9006bab10de5ef1c54445738bab1670656873466fc",
+      "bytes": 524613
+    },
+    "README_R157.md": {
+      "sha256": "42d8dd9b7af84c65175cf1f5ef094fb33691daa46bde47f5fe0f844e454065fd",
+      "bytes": 5409
+    },
+    "R157_DELIVERY.md": {
+      "sha256": "192ffd69ccb70b759950e368ae7d0e921637759307cb7cf9789a1232da391afa",
+      "bytes": 1045
+    }
+  }
+}

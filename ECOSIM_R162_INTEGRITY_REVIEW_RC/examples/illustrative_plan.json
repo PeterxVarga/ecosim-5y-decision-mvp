@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "type": "ILLUSTRATIVE, not approved or feasible",
+    "description": "K=3 example from R142A, not actual game plan."
+  },
+  "years": [
+    {
+      "year": 1,
+      "start_project_ids": [
+        8,
+        13,
+        27
+      ]
+    },
+    {
+      "year": 2,
+      "start_project_ids": []
+    },
+    {
+      "year": 3,
+      "start_project_ids": []
+    },
+    {
+      "year": 4,
+      "start_project_ids": []
+    },
+    {
+      "year": 5,
+      "start_project_ids": []
+    }
+  ],
+  "baseline": {
+    "source": "2026-10-30_TEST_ROUND_PROJECT_CARDS_NOT_LIVE",
+    "initially_active_project_ids": [
+      14,
+      22,
+      23,
+      24,
+      34,
+      35
+    ],
+    "verified_current_market": false
+  }
+}

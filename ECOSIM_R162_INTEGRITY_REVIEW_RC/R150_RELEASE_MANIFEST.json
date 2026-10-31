@@ -1,0 +1,30 @@
+{
+  "schema": "ECOSIM_R150_RELEASE_MANIFEST_V1",
+  "date": "2026-10-31",
+  "supersedes": "ECOSIM_R149_OFFLINE_DECISION_MVP_20261031.zip",
+  "single_optimization_owner": "tools/strategy_5y.py",
+  "previous_layers_retained": "R143-R149 code/data (R149 desk and display extended)",
+  "new_modules": [
+    "tools/decision_quality_r150.py",
+    "tools/compare_runs_r150.py",
+    "tools/qualify_r150.py"
+  ],
+  "extended_modules": [
+    "tools/decision_desk_r149.py",
+    "tools/decision_view_r149.py"
+  ],
+  "new_user_outputs": [
+    "results/R150_MVP_DEMO/DECISION_DESK.json",
+    "results/R150_MVP_DEMO/DECISION_DESK.md",
+    "results/R150_MVP_DEMO/DECISION_DESK.html",
+    "results/R150_MVP_DEMO/REPORT_COMPARISON_ILLUSTRATIVE.json"
+  ],
+  "qualification": "results/R150_QUALIFICATION.json",
+  "qualification_total_pass": 330,
+  "real_model_accuracy": null,
+  "actual_winning_strategy_proven": false,
+  "gameplay_gate": "STOP",
+  "game_writes": 0,
+  "network_actions": 0,
+  "codex_calls": 0
+}

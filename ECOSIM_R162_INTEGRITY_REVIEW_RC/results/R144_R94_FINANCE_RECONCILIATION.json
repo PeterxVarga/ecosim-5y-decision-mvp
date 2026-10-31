@@ -1,0 +1,94 @@
+{
+  "mode": "READ_ONLY_HISTORICAL_TEST_R94_2026_10_30",
+  "provenance": {
+    "team": "Jutalom a nap végén",
+    "market": "Z",
+    "period": "1/1",
+    "source": "2026-10-30 recorded finance.csv from former Work audit",
+    "source_sha256": "97304166cefae515fa75bccfd782ca634408dd8a22d8cfca9d867f60b811d4c0",
+    "source_rows": 113
+  },
+  "rows": {
+    "expense_without_loan_and_reserve": {
+      "row_id": "finance.cash_flow.t0.r44",
+      "label": "Kiadások összesen hitel & tartalék nélkül",
+      "p0_ecu": 4487043.0,
+      "p1_ecu": 4511224.0
+    },
+    "expense_total": {
+      "row_id": "finance.cash_flow.t0.r43",
+      "label": "Kiadások összesen",
+      "p0_ecu": 4487043.0,
+      "p1_ecu": 5376812.0
+    },
+    "reserve_formation": {
+      "row_id": "finance.cash_flow.t0.r42",
+      "label": "Tartalékképzésre",
+      "p0_ecu": 0.0,
+      "p1_ecu": 865588.0
+    },
+    "net_result": {
+      "row_id": "finance.cash_flow.t0.r45",
+      "label": "A periódus nettó eredményessége",
+      "p0_ecu": 962785.0,
+      "p1_ecu": 865588.0
+    },
+    "project_oneoff_expense": {
+      "row_id": "finance.cash_flow.t0.r26",
+      "label": "Projekt - egyedi alapon összesen",
+      "p0_ecu": 0.0,
+      "p1_ecu": 0.0
+    },
+    "income_total": {
+      "row_id": "finance.cash_flow.t1.r39",
+      "label": "Bevételek összesen",
+      "p0_ecu": 5449828.0,
+      "p1_ecu": 5376812.0
+    },
+    "development_support_company_income": {
+      "row_id": "finance.cash_flow.t1.r13",
+      "label": "Vállalatoktól érkező fejlesztési támogatás",
+      "p0_ecu": 62025.0,
+      "p1_ecu": 62025.0
+    },
+    "prior_end_cash_income": {
+      "row_id": "finance.cash_flow.t1.r35",
+      "label": "Előző év végi pénzállomány",
+      "p0_ecu": 184600.0,
+      "p1_ecu": 0.0
+    },
+    "wealth_cash_value": {
+      "row_id": "finance.wealth.t0.r12",
+      "label": "Pénzállomány",
+      "p0_ecu": 184600.0,
+      "p1_ecu": 865588.0
+    },
+    "wealth_loans": {
+      "row_id": "finance.wealth.t0.r11",
+      "label": "Hitelállomány",
+      "p0_ecu": 0.0,
+      "p1_ecu": 0.0
+    }
+  },
+  "checks": {
+    "p0_income_minus_unreserved_expense_equals_net": true,
+    "p0_unreserved_expense_plus_reserve_equals_total_expense": true,
+    "p1_income_minus_unreserved_expense_equals_net": true,
+    "p1_unreserved_expense_plus_reserve_equals_total_expense": true,
+    "p1_income_equals_total_expense": true,
+    "p1_reserve_equals_wealth_cash": true,
+    "p1_project_oneoff_zero": true,
+    "p1_prior_cash_line_zero": true
+  },
+  "all_checks_pass": true,
+  "p1_observed_net_ecu": 865588.0,
+  "p1_observed_reserve_ecu": 865588.0,
+  "p1_spendable_cash_confirmed": false,
+  "future_game_balance_from_this_source": "UNKNOWN",
+  "cannot_infer": [
+    "future revenue or expenditure",
+    "loan limits or grant settlement",
+    "available project spending power",
+    "future market or migration outcome"
+  ]
+}

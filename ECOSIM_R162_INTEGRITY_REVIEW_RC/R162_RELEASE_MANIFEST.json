@@ -1,0 +1,14 @@
+{
+  "schema": "ECOSIM_R162_IMMUTABLE_OFFLINE_RELEASE_V1",
+  "qualifier": "PASS_OFFLINE_ONLY",
+  "gameplay_gate": "STOP",
+  "game_actions": 0,
+  "live_eco_sim_data_verified": false,
+  "true_predictive_accuracy_measured": false,
+  "new_adversarial_checks_executed": 44,
+  "prior_r161_checks_documented_not_rerun": 62,
+  "historical_candidate_ids_unchanged_count": 20,
+  "independent_external_reviewer": false,
+  "sha256sums_sha256": "225cb6b35175cd026894dc505fd2608b8c14f2a89a5316d65ceae54a3867d9bd",
+  "file_count": 341
+}

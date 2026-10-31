@@ -1,0 +1,31 @@
+{
+  "schema": "ECOSIM_R149_OFFLINE_DECISION_MVP_V1",
+  "mode": "CURRENT_SNAPSHOT_REVIEW",
+  "state_path": "inputs/official_state.template.json",
+  "start_year": 1,
+  "project_cap_assumption": null,
+  "annual_envelopes": [
+    {
+      "id": "owner_declared_not_verified",
+      "limits_ecu": [
+        100000,
+        100000,
+        100000,
+        100000,
+        100000
+      ],
+      "source_class": "USER_DECLARED_BUDGET_NOT_SERVER_VERIFIED",
+      "reason": "Replace with documented hypothesis; never imply future cash is verified"
+    }
+  ],
+  "search": {
+    "beam": 6,
+    "shortlist": 12,
+    "options_per_envelope": 5,
+    "same_year_conditions": "CONDITIONAL"
+  },
+  "historical_read_only_snapshots_path": "inputs/historical_passive_summary_20261030.json",
+  "league_observations_path": "inputs/league_observations.template.json",
+  "paired_plan_observations_path": "inputs/paired_plan.template.json",
+  "forecast_audit_path": "inputs/forecast_audit.template.json"
+}

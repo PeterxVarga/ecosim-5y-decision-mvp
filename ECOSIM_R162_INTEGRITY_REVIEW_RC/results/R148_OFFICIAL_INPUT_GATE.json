@@ -1,0 +1,75 @@
+{
+  "schema": "ECOSIM_R148_INPUT_READINESS_V1",
+  "fields_observed": [],
+  "specific_missing_or_invalid_evidence": [
+    {
+      "field": "source_evidence_id",
+      "issue": "MISSING_PROVENANCE"
+    },
+    {
+      "field": "timestamp",
+      "issue": "MISSING_PROVENANCE"
+    },
+    {
+      "field": "team",
+      "issue": "MISSING_PROVENANCE"
+    },
+    {
+      "field": "market",
+      "issue": "MISSING_PROVENANCE"
+    },
+    {
+      "field": "period",
+      "issue": "MISSING_PROVENANCE"
+    },
+    {
+      "field": "period",
+      "issue": "NOT_INTEGER_1_TO_5"
+    },
+    {
+      "field": "project_cap",
+      "issue": "UNKNOWN_OR_INVALID"
+    },
+    {
+      "field": "prior_project1",
+      "issue": "MUST_EXPLICITLY_BE_BOOLEAN"
+    },
+    {
+      "field": "active_projects",
+      "issue": "UNAVAILABLE_OR_INVALID_ID_LIST"
+    },
+    {
+      "field": "current_selections",
+      "issue": "UNAVAILABLE_OR_INVALID_ID_LIST"
+    },
+    {
+      "field": "baseline_index_factors",
+      "issue": "ALL_FACTOR_VALUES_REQUIRED"
+    },
+    {
+      "field": "current_index_weights",
+      "issue": "SIX_NONNEGATIVE_WEIGHTS_SUM_TO_ONE"
+    },
+    {
+      "field": "loan_rates",
+      "issue": "ALL_THREE_NONNEGATIVE_RATES_REQUIRED_FOR_LOAN_MODEL"
+    },
+    {
+      "field": "confirmed_spendable_cash",
+      "issue": "FIVE_YEAR_CONFIRMED_ENVELOPES_UNAVAILABLE; scenario-only financing remains"
+    },
+    {
+      "field": "committed_costs",
+      "issue": "FIVE_YEAR_CONFIRMED_ENVELOPES_UNAVAILABLE; scenario-only financing remains"
+    },
+    {
+      "field": "official_preview",
+      "issue": "NO_SAME_PERIOD_CONTROLLED_PREVIEW"
+    }
+  ],
+  "derived_if_valid": {},
+  "official_state_complete_for_all_future_years": false,
+  "actual_game_score_forecast_verified": false,
+  "gameplay_decision": "STOP",
+  "does_not_treat_historical_test_as_live": true
+}

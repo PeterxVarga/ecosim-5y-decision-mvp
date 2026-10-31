@@ -1,0 +1,74 @@
+{
+  "schema": "ECOSIM_R154_FOUR_TAX_FORMULA_SOURCE_ANCHORS_V1",
+  "source_has_not_been_executed_on_game": true,
+  "anchors": [
+    {
+      "channel": "Bi",
+      "source_filename": "840.41fdc8e1.chunk.js",
+      "webpack_module_id": 5168,
+      "byte_span": [
+        44690,
+        44735
+      ],
+      "source_span_sha256": "93d045f604886d3ac1761325e8f061b06b13b15d3db65c30e8e445962ba6bd19",
+      "source_full_file_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "client_formula_only": true,
+      "source_does_not_prove": [
+        "authoritative server settlement",
+        "future tax base",
+        "availability of project financing"
+      ]
+    },
+    {
+      "channel": "_i",
+      "source_filename": "840.41fdc8e1.chunk.js",
+      "webpack_module_id": 5168,
+      "byte_span": [
+        44736,
+        44921
+      ],
+      "source_span_sha256": "f79529580a193f9a78f60ccce1e31aebf46a0e597b5cdc8d6072d5297730c56e",
+      "source_full_file_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "client_formula_only": true,
+      "source_does_not_prove": [
+        "authoritative server settlement",
+        "future tax base",
+        "availability of project financing"
+      ]
+    },
+    {
+      "channel": "Ui",
+      "source_filename": "840.41fdc8e1.chunk.js",
+      "webpack_module_id": 5168,
+      "byte_span": [
+        44922,
+        45098
+      ],
+      "source_span_sha256": "5e0623f823f25033e535ef66a98b9ab29007a039a0c732ba77983687f8b1a965",
+      "source_full_file_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "client_formula_only": true,
+      "source_does_not_prove": [
+        "authoritative server settlement",
+        "future tax base",
+        "availability of project financing"
+      ]
+    },
+    {
+      "channel": "Yi",
+      "source_filename": "840.41fdc8e1.chunk.js",
+      "webpack_module_id": 5168,
+      "byte_span": [
+        45099,
+        45275
+      ],
+      "source_span_sha256": "680bf14f21c845c5be66bda7df853e509c0f43a9adb760883aeedd784c8a0281",
+      "source_full_file_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "client_formula_only": true,
+      "source_does_not_prove": [
+        "authoritative server settlement",
+        "future tax base",
+        "availability of project financing"
+      ]
+    }
+  ]
+}

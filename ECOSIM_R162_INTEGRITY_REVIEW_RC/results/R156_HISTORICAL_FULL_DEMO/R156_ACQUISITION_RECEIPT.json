@@ -1,0 +1,71 @@
+{
+  "schema": "ECOSIM_R156_ACQUISITION_RECEIPT_V1",
+  "capture_mode": "HISTORICAL_REFERENCE",
+  "provided_by": "OPERATOR_EXPORT_NOT_INDEPENDENTLY_SERVER_VERIFIED",
+  "gameplay_gate": "STOP",
+  "has_live_ecosim_session": false,
+  "sources": {
+    "factors": "R94 2026-10-30 PLAN analysis export",
+    "projects": "R94 2026-10-30 PLAN project cards",
+    "market_index_weights": "Archived client aggregation weights, test only"
+  },
+  "source_note": "Historical original R94 p1 PLAN, not latest market; no login, no live validation",
+  "file_sha256": {
+    "manifest.json": "38717a117e0f58a542c8396499d3c537feee2afe5c4d6c64257c5ea8e4e5d963",
+    "factors.csv": "a4565791738a91b233570bd3d056c2646d34c9402f29ac7d6681ea5a7a1ed9d5",
+    "projects.csv": "07a67443a2e4ecfe10c4d7a0b28902a49b92981b79252add581f3ae2c67f3082",
+    "parameters.json": "fc490cd98b8699f2cb497233088f77047c15ff564eb4d6ec32543e87674b3aed"
+  },
+  "market_cap_observed": false,
+  "market_index_weights_observed": true,
+  "index_reconciliation": "AGREES_WITH_DISPLAYED_FACTORS_NOT_SERVER_VERIFIED",
+  "index_residual": 0.00373333,
+  "project_states": {
+    "rows": 35,
+    "prior_running": 6,
+    "new_selected": 0,
+    "previous_project1": false,
+    "is_operator_transcription_not_server_verified": true
+  },
+  "readiness": {
+    "schema": "ECOSIM_R148_INPUT_READINESS_V1",
+    "fields_observed": [
+      "source_evidence_id",
+      "timestamp",
+      "team",
+      "market",
+      "period"
+    ],
+    "specific_missing_or_invalid_evidence": [
+      {
+        "field": "project_cap",
+        "issue": "UNKNOWN_OR_INVALID"
+      },
+      {
+        "field": "loan_rates",
+        "issue": "ALL_THREE_NONNEGATIVE_RATES_REQUIRED_FOR_LOAN_MODEL"
+      },
+      {
+        "field": "confirmed_spendable_cash",
+        "issue": "FIVE_YEAR_CONFIRMED_ENVELOPES_UNAVAILABLE; scenario-only financing remains"
+      },
+      {
+        "field": "committed_costs",
+        "issue": "FIVE_YEAR_CONFIRMED_ENVELOPES_UNAVAILABLE; scenario-only financing remains"
+      },
+      {
+        "field": "official_preview",
+        "issue": "NO_SAME_PERIOD_CONTROLLED_PREVIEW"
+      }
+    ],
+    "derived_if_valid": {
+      "observed_factor_index_aggregation": 52.483733333
+    },
+    "official_state_complete_for_all_future_years": false,
+    "actual_game_score_forecast_verified": false,
+    "gameplay_decision": "STOP",
+    "does_not_treat_historical_test_as_live": true
+  },
+  "not_a_server_certification": true,
+  "not_a_future_index_prediction": true
+}

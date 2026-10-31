@@ -1,0 +1,235 @@
+{
+  "schema": "ECOSIM_R155_SOURCE_OPERATING_PATHS_V1",
+  "source_class": "SYNTHETIC_TEST_ONLY",
+  "path_counterfactuals": [
+    {
+      "schema": "ECOSIM_R155_SOURCE_OPERATING_COUNTERFACTUAL_V1",
+      "source_class": "SYNTHETIC_TEST_ONLY",
+      "path_id": "unchanged_synthetic",
+      "annual_rows": [
+        {
+          "year": 1,
+          "six_fee_baseline_ecu": 369571.95112968,
+          "six_fee_counterfactual_ecu": 369571.95112968,
+          "six_fee_delta_ecu": 0.0,
+          "covered_institution_payroll_material_baseline_ecu": 407179.12,
+          "covered_institution_payroll_material_counterfactual_ecu": 407179.12,
+          "covered_institution_cost_delta_ecu": 0.0,
+          "partial_annual_operating_net_delta_ecu": 0.0,
+          "server_settled_net_ecu": null,
+          "unmodeled_population_and_staff_feedback": "UNKNOWN_NOT_ZERO"
+        },
+        {
+          "year": 2,
+          "six_fee_baseline_ecu": 378671.65292563,
+          "six_fee_counterfactual_ecu": 378671.65292563,
+          "six_fee_delta_ecu": 0.0,
+          "covered_institution_payroll_material_baseline_ecu": 407779.12,
+          "covered_institution_payroll_material_counterfactual_ecu": 407779.12,
+          "covered_institution_cost_delta_ecu": 0.0,
+          "partial_annual_operating_net_delta_ecu": 0.0,
+          "server_settled_net_ecu": null,
+          "unmodeled_population_and_staff_feedback": "UNKNOWN_NOT_ZERO"
+        },
+        {
+          "year": 3,
+          "six_fee_baseline_ecu": 387848.20325773,
+          "six_fee_counterfactual_ecu": 387848.20325773,
+          "six_fee_delta_ecu": 0.0,
+          "covered_institution_payroll_material_baseline_ecu": 408379.12,
+          "covered_institution_payroll_material_counterfactual_ecu": 408379.12,
+          "covered_institution_cost_delta_ecu": 0.0,
+          "partial_annual_operating_net_delta_ecu": 0.0,
+          "server_settled_net_ecu": null,
+          "unmodeled_population_and_staff_feedback": "UNKNOWN_NOT_ZERO"
+        },
+        {
+          "year": 4,
+          "six_fee_baseline_ecu": 397102.51985398,
+          "six_fee_counterfactual_ecu": 397102.51985398,
+          "six_fee_delta_ecu": 0.0,
+          "covered_institution_payroll_material_baseline_ecu": 408979.12,
+          "covered_institution_payroll_material_counterfactual_ecu": 408979.12,
+          "covered_institution_cost_delta_ecu": 0.0,
+          "partial_annual_operating_net_delta_ecu": 0.0,
+          "server_settled_net_ecu": null,
+          "unmodeled_population_and_staff_feedback": "UNKNOWN_NOT_ZERO"
+        },
+        {
+          "year": 5,
+          "six_fee_baseline_ecu": 406435.51830146,
+          "six_fee_counterfactual_ecu": 406435.51830146,
+          "six_fee_delta_ecu": 0.0,
+          "covered_institution_payroll_material_baseline_ecu": 409579.12,
+          "covered_institution_payroll_material_counterfactual_ecu": 409579.12,
+          "covered_institution_cost_delta_ecu": 0.0,
+          "partial_annual_operating_net_delta_ecu": 0.0,
+          "server_settled_net_ecu": null,
+          "unmodeled_population_and_staff_feedback": "UNKNOWN_NOT_ZERO"
+        }
+      ],
+      "five_year_partial_operating_net_delta_ecu": 0.0,
+      "five_year_six_fee_delta_ecu": 0.0,
+      "five_year_covered_institution_cost_delta_ecu": 0.0,
+      "actual_city_cashflow_ecu": null,
+      "actual_market_and_migration_response": null,
+      "full_city_expenses_and_revenues": "UNMODELLED_NOT_ZERO",
+      "available_budget_from_partial_delta_ecu": null,
+      "gameplay_gate": "STOP"
+    },
+    {
+      "schema": "ECOSIM_R155_SOURCE_OPERATING_COUNTERFACTUAL_V1",
+      "source_class": "SYNTHETIC_TEST_ONLY",
+      "path_id": "business_tax_reduced_synthetic",
+      "annual_rows": [
+        {
+          "year": 1,
+          "six_fee_baseline_ecu": 369571.95112968,
+          "six_fee_counterfactual_ecu": 350205.60085418,
+          "six_fee_delta_ecu": -19366.3502755,
+          "covered_institution_payroll_material_baseline_ecu": 407179.12,
+          "covered_institution_payroll_material_counterfactual_ecu": 410539.12,
+          "covered_institution_cost_delta_ecu": 3360.0,
+          "partial_annual_operating_net_delta_ecu": -22726.3502755,
+          "server_settled_net_ecu": null,
+          "unmodeled_population_and_staff_feedback": "UNKNOWN_NOT_ZERO"
+        },
+        {
+          "year": 2,
+          "six_fee_baseline_ecu": 378671.65292563,
+          "six_fee_counterfactual_ecu": 358774.20810537,
+          "six_fee_delta_ecu": -19897.44482026,
+          "covered_institution_payroll_material_baseline_ecu": 407779.12,
+          "covered_institution_payroll_material_counterfactual_ecu": 411139.12,
+          "covered_institution_cost_delta_ecu": 3360.0,
+          "partial_annual_operating_net_delta_ecu": -23257.44482026,
+          "server_settled_net_ecu": null,
+          "unmodeled_population_and_staff_feedback": "UNKNOWN_NOT_ZERO"
+        },
+        {
+          "year": 3,
+          "six_fee_baseline_ecu": 387848.20325773,
+          "six_fee_counterfactual_ecu": 367410.55602316,
+          "six_fee_delta_ecu": -20437.64723457,
+          "covered_institution_payroll_material_baseline_ecu": 408379.12,
+          "covered_institution_payroll_material_counterfactual_ecu": 411739.12,
+          "covered_institution_cost_delta_ecu": 3360.0,
+          "partial_annual_operating_net_delta_ecu": -23797.64723457,
+          "server_settled_net_ecu": null,
+          "unmodeled_population_and_staff_feedback": "UNKNOWN_NOT_ZERO"
+        },
+        {
+          "year": 4,
+          "six_fee_baseline_ecu": 397102.51985398,
+          "six_fee_counterfactual_ecu": 376115.37586317,
+          "six_fee_delta_ecu": -20987.14399081,
+          "covered_institution_payroll_material_baseline_ecu": 408979.12,
+          "covered_institution_payroll_material_counterfactual_ecu": 412339.12,
+          "covered_institution_cost_delta_ecu": 3360.0,
+          "partial_annual_operating_net_delta_ecu": -24347.14399081,
+          "server_settled_net_ecu": null,
+          "unmodeled_population_and_staff_feedback": "UNKNOWN_NOT_ZERO"
+        },
+        {
+          "year": 5,
+          "six_fee_baseline_ecu": 406435.51830146,
+          "six_fee_counterfactual_ecu": 384889.39631219,
+          "six_fee_delta_ecu": -21546.12198927,
+          "covered_institution_payroll_material_baseline_ecu": 409579.12,
+          "covered_institution_payroll_material_counterfactual_ecu": 412939.12,
+          "covered_institution_cost_delta_ecu": 3360.0,
+          "partial_annual_operating_net_delta_ecu": -24906.12198927,
+          "server_settled_net_ecu": null,
+          "unmodeled_population_and_staff_feedback": "UNKNOWN_NOT_ZERO"
+        }
+      ],
+      "five_year_partial_operating_net_delta_ecu": -119034.70831041,
+      "five_year_six_fee_delta_ecu": -102234.70831041,
+      "five_year_covered_institution_cost_delta_ecu": 16800.0,
+      "actual_city_cashflow_ecu": null,
+      "actual_market_and_migration_response": null,
+      "full_city_expenses_and_revenues": "UNMODELLED_NOT_ZERO",
+      "available_budget_from_partial_delta_ecu": null,
+      "gameplay_gate": "STOP"
+    },
+    {
+      "schema": "ECOSIM_R155_SOURCE_OPERATING_COUNTERFACTUAL_V1",
+      "source_class": "SYNTHETIC_TEST_ONLY",
+      "path_id": "business_tax_increased_synthetic",
+      "annual_rows": [
+        {
+          "year": 1,
+          "six_fee_baseline_ecu": 369571.95112968,
+          "six_fee_counterfactual_ecu": 388661.01917616,
+          "six_fee_delta_ecu": 19089.06804648,
+          "covered_institution_payroll_material_baseline_ecu": 407179.12,
+          "covered_institution_payroll_material_counterfactual_ecu": 412942.12,
+          "covered_institution_cost_delta_ecu": 5763.0,
+          "partial_annual_operating_net_delta_ecu": 13326.06804648,
+          "server_settled_net_ecu": null,
+          "unmodeled_population_and_staff_feedback": "UNKNOWN_NOT_ZERO"
+        },
+        {
+          "year": 2,
+          "six_fee_baseline_ecu": 378671.65292563,
+          "six_fee_counterfactual_ecu": 398287.94004463,
+          "six_fee_delta_ecu": 19616.287119,
+          "covered_institution_payroll_material_baseline_ecu": 407779.12,
+          "covered_institution_payroll_material_counterfactual_ecu": 413542.12,
+          "covered_institution_cost_delta_ecu": 5763.0,
+          "partial_annual_operating_net_delta_ecu": 13853.287119,
+          "server_settled_net_ecu": null,
+          "unmodeled_population_and_staff_feedback": "UNKNOWN_NOT_ZERO"
+        },
+        {
+          "year": 3,
+          "six_fee_baseline_ecu": 387848.20325773,
+          "six_fee_counterfactual_ecu": 408001.2109358,
+          "six_fee_delta_ecu": 20153.00767807,
+          "covered_institution_payroll_material_baseline_ecu": 408379.12,
+          "covered_institution_payroll_material_counterfactual_ecu": 414142.12,
+          "covered_institution_cost_delta_ecu": 5763.0,
+          "partial_annual_operating_net_delta_ecu": 14390.00767807,
+          "server_settled_net_ecu": null,
+          "unmodeled_population_and_staff_feedback": "UNKNOWN_NOT_ZERO"
+        },
+        {
+          "year": 4,
+          "six_fee_baseline_ecu": 397102.51985398,
+          "six_fee_counterfactual_ecu": 417801.96155343,
+          "six_fee_delta_ecu": 20699.44169945,
+          "covered_institution_payroll_material_baseline_ecu": 408979.12,
+          "covered_institution_payroll_material_counterfactual_ecu": 414742.12,
+          "covered_institution_cost_delta_ecu": 5763.0,
+          "partial_annual_operating_net_delta_ecu": 14936.44169945,
+          "server_settled_net_ecu": null,
+          "unmodeled_population_and_staff_feedback": "UNKNOWN_NOT_ZERO"
+        },
+        {
+          "year": 5,
+          "six_fee_baseline_ecu": 406435.51830146,
+          "six_fee_counterfactual_ecu": 427691.3202884,
+          "six_fee_delta_ecu": 21255.80198694,
+          "covered_institution_payroll_material_baseline_ecu": 409579.12,
+          "covered_institution_payroll_material_counterfactual_ecu": 415342.12,
+          "covered_institution_cost_delta_ecu": 5763.0,
+          "partial_annual_operating_net_delta_ecu": 15492.80198694,
+          "server_settled_net_ecu": null,
+          "unmodeled_population_and_staff_feedback": "UNKNOWN_NOT_ZERO"
+        }
+      ],
+      "five_year_partial_operating_net_delta_ecu": 71998.60652994,
+      "five_year_six_fee_delta_ecu": 100813.60652994,
+      "five_year_covered_institution_cost_delta_ecu": 28815.0,
+      "actual_city_cashflow_ecu": null,
+      "actual_market_and_migration_response": null,
+      "full_city_expenses_and_revenues": "UNMODELLED_NOT_ZERO",
+      "available_budget_from_partial_delta_ecu": null,
+      "gameplay_gate": "STOP"
+    }
+  ],
+  "source_coverage": "SIX_FEES_EIGHT_WAGE_COMPONENTS_SEVEN_MATERIAL_COMPONENTS",
+  "population_company_capacity_and_competitor_feedback": "UNKNOWN_NOT_ZERO",
+  "partial_income_not_spendable_budget": true,
+  "gameplay_gate": "STOP"
+}

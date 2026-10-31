@@ -1,0 +1,105 @@
+{
+  "schema": "ECOSIM_R148_FINANCE_SOURCE_ANCHORS_V1",
+  "records": [
+    {
+      "id": "long_loan_open_borrow_rate",
+      "filename": "840.41fdc8e1.chunk.js",
+      "byte_span": [
+        3310,
+        3560
+      ],
+      "span_sha256": "52e05a286eb62e22a76597618ee5f45436f75495d98c880a16a9883697a5583b",
+      "file_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "evidence_type": "STATIC_CLIENT_CALCULATION_NOT_SERVER_AUTHORITY"
+    },
+    {
+      "id": "long_repayment_clamp",
+      "filename": "840.41fdc8e1.chunk.js",
+      "byte_span": [
+        3540,
+        3779
+      ],
+      "span_sha256": "106762c79205e82bfc96ae7530071887110a05436ac5188f4310edf4c743bbca",
+      "file_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "evidence_type": "STATIC_CLIENT_CALCULATION_NOT_SERVER_AUTHORITY"
+    },
+    {
+      "id": "short_interest_previous_borrow",
+      "filename": "840.41fdc8e1.chunk.js",
+      "byte_span": [
+        42900,
+        43370
+      ],
+      "span_sha256": "3a0b7af78bb38172c4212d6fd222c1acbd2623be80fc8d30ff10748e8d6c6b63",
+      "file_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "evidence_type": "STATIC_CLIENT_CALCULATION_NOT_SERVER_AUTHORITY"
+    },
+    {
+      "id": "reserve_formation",
+      "filename": "840.41fdc8e1.chunk.js",
+      "byte_span": [
+        43550,
+        43830
+      ],
+      "span_sha256": "62d0ea5d6d502b3a14c0c741b5035e35e40688ae572bdb8d87ec7b3a812d9b48",
+      "file_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "evidence_type": "STATIC_CLIENT_CALCULATION_NOT_SERVER_AUTHORITY"
+    },
+    {
+      "id": "short_borrow_subtotal",
+      "filename": "840.41fdc8e1.chunk.js",
+      "byte_span": [
+        46050,
+        46350
+      ],
+      "span_sha256": "16d0b575eea9031caa2135bf77426c794bcabd4ace221d97fac1b6a00373e84f",
+      "file_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "evidence_type": "STATIC_CLIENT_CALCULATION_NOT_SERVER_AUTHORITY"
+    },
+    {
+      "id": "prior_cash_display_branch",
+      "filename": "840.41fdc8e1.chunk.js",
+      "byte_span": [
+        46500,
+        46800
+      ],
+      "span_sha256": "990656292f2af412bd9b5e3d07b388385e8869ebb207a15d421ff992c633b3fd",
+      "file_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "evidence_type": "STATIC_CLIENT_CALCULATION_NOT_SERVER_AUTHORITY"
+    },
+    {
+      "id": "new_project_and_active_cost",
+      "filename": "840.41fdc8e1.chunk.js",
+      "byte_span": [
+        70150,
+        70500
+      ],
+      "span_sha256": "b9243df709e207d0ec0456de9db00aecd3197658b2dfe9cea45e544de1a73900",
+      "file_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "evidence_type": "STATIC_CLIENT_CALCULATION_NOT_SERVER_AUTHORITY"
+    },
+    {
+      "id": "new_project_support_income",
+      "filename": "840.41fdc8e1.chunk.js",
+      "byte_span": [
+        23460,
+        23710
+      ],
+      "span_sha256": "e158aba800bc311472ce9e0858e3ff826bd4d7ab7b7dc15d7b5914b73109a44c",
+      "file_sha256": "5a56f45f6ecf56d444af6e1066f05f586c7230fefe0bff98d20dff4547d37a08",
+      "evidence_type": "STATIC_CLIENT_CALCULATION_NOT_SERVER_AUTHORITY"
+    },
+    {
+      "id": "effect_multiplier",
+      "filename": "main.97a786da.js",
+      "byte_span": [
+        968650,
+        968900
+      ],
+      "span_sha256": "a3bf13d82cb366f81cca510d19904361a83a74b6e69c40d8aee035fc8073ebc8",
+      "file_sha256": "be03faf4eece31663e8cb8f8df0c364fd8a0701d16a300563d3356c191d64fc5",
+      "evidence_type": "STATIC_CLIENT_CALCULATION_NOT_SERVER_AUTHORITY"
+    }
+  ],
+  "original_bundles_not_distributed": true
+}

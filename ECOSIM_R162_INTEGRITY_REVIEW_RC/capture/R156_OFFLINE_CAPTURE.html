@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="hu"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'none'; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<title>EcoSim R156 · Offline adatátvétel</title><style>
+:root{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color-scheme:light dark}
+*{box-sizing:border-box}body{margin:0;background:#101826;color:#f0f5fb}main{max-width:950px;margin:0 auto;padding:1.5rem 1.1rem 4rem}
+h1{font-size:1.75rem;letter-spacing:-.025em}h2{font-size:1.1rem;margin-bottom:1rem}p,small{color:#b5c2d3;line-height:1.55}
+article{border:1px solid #334153;border-radius:16px;margin:1rem 0;padding:1.25rem;background:#192435}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}label{display:block;font-size:.9rem;margin:.5rem 0}
+input,select,textarea{font-family:inherit;font-size:1rem;background:#0e1726;color:#f0f5fb;border:1px solid #506078;border-radius:8px;padding:.65rem;width:100%;margin-top:.3rem}
+textarea{font-family:ui-monospace,monospace;font-size:.8rem;min-height:140px;resize:vertical}
+#factors_csv{min-height:265px}#projects_csv{min-height:220px}
+button{border:0;background:#a3d0fa;color:#0c1723;padding:.85rem 1.2rem;border-radius:9px;font-weight:700;cursor:pointer}
+button:focus-visible{outline:3px solid orange}#status{white-space:pre-wrap;color:#ffcc93;line-height:1.5;min-height:2rem}
+.tag{display:inline-block;background:#2b3c51;border:1px solid #52677f;padding:.2rem .5rem;border-radius:100px;font-size:.8rem}
+@media(max-width:650px){.grid{grid-template-columns:1fr}}
+</style></head><body><main>
+<span class="tag">Teljesen offline · csak megfigyelés</span><h1>EcoSim R156 – adatcsomag készítő</h1>
+<p>Másold be kizárólag a játékban <strong>jogszerűen megjelenített</strong> PLAN/FACT adatokat. Ez a fájl nem lép kapcsolatba az EcoSimmel, nem olvas bejelentkezést és nem módosít semmit. A letöltött JSON nem szerverhitelesített bizonyíték.</p>
+<article><h2>1. Azonosítás és időpont</h2><div class="grid">
+<label>Állapot típusa<select id="capture_mode"><option value="CURRENT_READONLY">Aktuális, csak olvasott</option><option value="HISTORICAL_REFERENCE">Történeti referencia</option></select></label>
+<label>Megfigyelt oszlop<select id="kind"><option value="PLAN">PLAN – terv</option><option value="FACT">FACT – lezárt tény</option></select></label>
+<label>Csapat<input id="team" autocomplete="off"></label><label>Piac<input id="market" autocomplete="off"></label>
+<label>Forduló<input id="round" autocomplete="off"></label><label>Virtuális év<select id="period"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></label>
+<label>Megfigyelés időpontja időzónával (ISO 8601)<input id="captured_at_local" placeholder="2026-11-02T18:00:00+01:00" autocomplete="off"></label>
+<label>Bizonyíték-azonosító (pl. képernyőkép saját neve)<input id="source_evidence_id" autocomplete="off"></label></div>
+</article><article><h2>2. SmartCity faktorok</h2>
+<p>Mind a 29 faktor és a megjelenített „Okosváros index”, ugyanabból a periódusból és oszlopból. A sablon üres: nem tölti ki a régi tesztértékeket.</p>
+<textarea id="factors_csv" spellcheck="false"></textarea>
+<label>A faktoradatok forrása<input id="factors_source" placeholder="Oldal, nézet, képernyőkép vagy időpont" autocomplete="off"></label>
+</article><article><h2>3. Projektek</h2>
+<p>A 35 projekt státusza: <code>previous_running</code> = korábban futó, <code>selected_new</code> = ebben az évben kiválasztott. Minden cellát kifejezetten igazolt <code>true</code>/<code>false</code> értékre tölts ki.</p>
+<textarea id="projects_csv" spellcheck="false"></textarea>
+<label>A projektstátuszok forrása<input id="projects_source" autocomplete="off"></label>
+</article><article><h2>4. Piaci és csapatparaméterek</h2>
+<p>Az eredeti UI-n kijelzett projektlimit és hat indexsúly. Ha nem szerepelnek megbízhatóan a felületen, maradjanak <code>null</code> értékűek. Ne importálj teljes hálózati választ, HAR-t, tokent vagy cookie-t.</p>
+<textarea id="parameters" spellcheck="false"></textarea><div class="grid">
+<label>Piaci projektlimit forrása<input id="cap_source" autocomplete="off"></label>
+<label>Indexsúlyok forrása<input id="weights_source" autocomplete="off"></label></div>
+<label>Forrásjegyzet<textarea id="source_note" style="min-height:80px" placeholder="Melyik EcoSim nézet, melyik oszlop? Tény vagy terv?"></textarea></label>
+</article>
+<button type="button" id="export">Ellenőrzés és adatcsomag letöltése</button>
+<p id="status" role="status" aria-live="polite"></p>
+<p><strong>Adatvédelem:</strong> nincs külső könyvtár, hálózati hívás, cookie-/session-hozzáférés vagy távoli mentés. A letöltött JSON-t később ehhez a beszélgetéshez csatolhatod; terminál nem szükséges a kitöltéshez.</p>
+</main><script>
+'use strict';
+const FACTOR_SKELETON="metric,value\nFizetőképes piac,\nVállalkozások száma,\nVállalkozóbarátság,\nFoglalkoztatottság,\nFenntarthatóság,\nVízgazdálkodás,\nLevegőminőség,\nZöld területek aránya,\nHulladékgazdálkodási helyzet,\nAdminisztráció,\nLakásgazdálkodás,\nDigitalizáció,\nKözbiztonság,\nOktatási intézmények,\nEgészségügy,\nSzociális,\nSport,\nMűvelődés,\nÁtlagos lakásérték,\nRossz szoc. helyzetben lévők aránya,\nTelepülésfejlettség,\nKözlekedési minőség,\n\"Tömegközlekedők aránya, %\",\nAutók száma / 100 fő,\nLakossági viszonyok/elégedettség,\nMunkakörülmények,\nLakosság képzettsége,\nMunkanélküli arány,\nAdósság / vagyon,\nOkosváros index,\n";
+const PROJECT_SKELETON="project_id,previous_running,selected_new\n1,,\n2,,\n3,,\n4,,\n5,,\n6,,\n7,,\n8,,\n9,,\n10,,\n11,,\n12,,\n13,,\n14,,\n15,,\n16,,\n17,,\n18,,\n19,,\n20,,\n21,,\n22,,\n23,,\n24,,\n25,,\n26,,\n27,,\n28,,\n29,,\n30,,\n31,,\n32,,\n33,,\n34,,\n35,,\n";
+const PARAM_SKELETON={market:{maxProjectPerTurn:null,smartcity_total_weights:null},team:{}};
+document.getElementById('factors_csv').value=FACTOR_SKELETON;
+document.getElementById('projects_csv').value=PROJECT_SKELETON;
+document.getElementById('parameters').value=JSON.stringify(PARAM_SKELETON,null,2);
+const get=id=>document.getElementById(id).value.trim();
+const fail=(m)=>{throw new Error(m)};
+function lines(csv){return csv.trim().split(/\r?\n/).filter(x=>x.trim());}
+const forbidden=/\b(?:bearer\s+|authorization\s*[:=]|cookie\s*[:=]|set-cookie\s*[:=]|access_token\s*[:=]|refresh_token\s*[:=]|password\s*[:=]|sessionid\s*[:=])|\beyJ[A-Za-z0-9_-]{18,}\.eyJ[A-Za-z0-9_-]{18,}\.[A-Za-z0-9_-]+\b/i;
+function collect(){
+const meta={schema:'ECOSIM_R156_LOCAL_OPERATOR_EXPORT_V1', capture_mode:get('capture_mode'),kind:get('kind'),team:get('team'),market:get('market'),round:get('round'),period:Number(get('period')),captured_at_local:get('captured_at_local'),source_evidence_id:get('source_evidence_id'),source_note:get('source_note'),factors_csv:get('factors_csv'),projects_csv:get('projects_csv')};
+for(const k of ['team','market','round','captured_at_local','source_evidence_id'])if(!meta[k])fail('Hiányzó azonosító: '+k);
+if(meta.capture_mode==='CURRENT_READONLY'&&!/(Z|[+-]\d\d:\d\d)$/.test(meta.captured_at_local))fail('Aktuális rögzítéshez időzónás ISO 8601 időpont szükséges.');
+if(lines(meta.factors_csv).length!==31)fail('Pontosan 30 faktor/index adatsor és egy fejléc kell.');
+if(lines(meta.projects_csv).length!==36)fail('Pontosan 35 projekt adatsor és egy fejléc kell.');
+if(!meta.factors_csv.startsWith('metric,value')||!meta.projects_csv.startsWith('project_id,previous_running,selected_new'))fail('Hibás CSV-fejlécek.');
+if(lines(meta.projects_csv).slice(1).some(x=>!/^\d+,(true|false),(true|false)$/.test(x)))fail('A projektek mindegyikéhez true/false mezők szükségesek.');
+const params=JSON.parse(get('parameters'));
+if(typeof params!=='object'||!params||Array.isArray(params)||Object.keys(params).some(k=>!['market','team'].includes(k)))fail('Csak market és team kulcsú paraméterek fogadhatók el.');
+const market=params.market||{};
+if(market.maxProjectPerTurn!==null&&market.maxProjectPerTurn!==undefined&&(!Number.isInteger(market.maxProjectPerTurn)||market.maxProjectPerTurn<0||market.maxProjectPerTurn>20))fail('Piaci projektlimit csak 0..20 egész szám vagy null lehet.');
+const sources={factors:get('factors_source'),projects:get('projects_source')};
+if(market.maxProjectPerTurn!==null&&market.maxProjectPerTurn!==undefined)sources.market_project_cap=get('cap_source');
+if(market.smartcity_total_weights!==null&&market.smartcity_total_weights!==undefined)sources.market_index_weights=get('weights_source');
+if(meta.capture_mode==='CURRENT_READONLY'&&(!sources.factors||!sources.projects))fail('Aktuális adatokhoz forrásazonosító szükséges a faktorokhoz és projektekhez.');
+if(sources.market_project_cap===''||sources.market_index_weights==='')fail('A megadott piaci paraméterhez bizonyítékforrás szükséges.');
+meta.parameters=params;meta.field_sources=Object.fromEntries(Object.entries(sources).filter(([,v])=>v));
+if(forbidden.test(JSON.stringify(meta)))fail('Lehetséges hitelesítő adat az exportban. Ne illessz be tokent, cookie-t vagy HAR-t.');
+return meta;
+}
+document.getElementById('export').addEventListener('click',()=>{
+const el=document.getElementById('status');try{
+const packet=collect();const blob=new Blob([JSON.stringify(packet,null,2)+'\n'],{type:'application/json'});
+const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='ecosim-r156-readonly-capture.json';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
+el.textContent='A helyi JSON-adatcsomag elkészült. Továbbra is csak operátor által rögzített adat: nem szerverhitelesítés, játékbeli döntés STOP.';
+}catch(err){el.textContent='Ellenőrzési hiba: '+err.message;}
+});
+</script></body></html>

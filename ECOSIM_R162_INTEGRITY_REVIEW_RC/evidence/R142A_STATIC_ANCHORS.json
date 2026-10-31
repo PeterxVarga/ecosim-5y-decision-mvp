@@ -1,0 +1,110 @@
+[
+  {
+    "source_file": "840.41fdc8e1.chunk.js",
+    "anchor": "maxProjectPerTurn",
+    "byte_offset": 88926,
+    "evidence_window_sha256": "8f2ff69efd6aac698795518364f9c24cfcd042e2f83bb9db2684e00d5d3c8918",
+    "window_bounds": [
+      88826,
+      89043
+    ],
+    "observation": "actual project cap is a market field, not hardcoded value",
+    "limitations": "Static source presence only; current market value unknown."
+  },
+  {
+    "source_file": "202.9a5bf90a.chunk.js",
+    "anchor": "maxProjectPerTurn",
+    "byte_offset": 15060,
+    "evidence_window_sha256": "74f76821fce24456a0843db91e00bedcf294b0afb5894586cede42e12142f1f1",
+    "window_bounds": [
+      14960,
+      15177
+    ],
+    "observation": "project-card receives limit including a previous-period adjustment",
+    "limitations": "Static source presence only; current market value unknown."
+  },
+  {
+    "source_file": "202.9a5bf90a.chunk.js",
+    "anchor": "Math.max(a-i,0)",
+    "byte_offset": 16130,
+    "evidence_window_sha256": "4cf868f7dca789448d88a6b61ae471a57db351cba10088cb2837a95ff0e27e35",
+    "window_bounds": [
+      16030,
+      16245
+    ],
+    "observation": "card computes remaining new project slots",
+    "limitations": "Static source presence only; current market value unknown."
+  },
+  {
+    "source_file": "202.9a5bf90a.chunk.js",
+    "anchor": "C.market.projects[h].condition",
+    "byte_offset": 15229,
+    "evidence_window_sha256": "7c6cdd7eb162b3ce5ecbe42f030feb1dc5cd3d04c085902c5ce83cfeb139dd58",
+    "window_bounds": [
+      15129,
+      15359
+    ],
+    "observation": "project prerequisites are checked",
+    "limitations": "Static source presence only; current market value unknown."
+  },
+  {
+    "source_file": "840.41fdc8e1.chunk.js",
+    "anchor": "loans.long.change",
+    "byte_offset": 3621,
+    "evidence_window_sha256": "31eb9a4333ef0134d49ae393f05dc8af854c3b096668b2a87608a7d7dff470e7",
+    "window_bounds": [
+      3521,
+      3738
+    ],
+    "observation": "long-loan user decision appears in client",
+    "limitations": "Static source presence only; current market value unknown."
+  },
+  {
+    "source_file": "840.41fdc8e1.chunk.js",
+    "anchor": "loans.short.interestRate",
+    "byte_offset": 3347,
+    "evidence_window_sha256": "bb34cccbe8894e7f41fa159ef25b9320fd91be5c02968db66cc6ab5ce6ba10f2",
+    "window_bounds": [
+      3247,
+      3471
+    ],
+    "observation": "short-loan interest parameter from market",
+    "limitations": "Static source presence only; current market value unknown."
+  },
+  {
+    "source_file": "840.41fdc8e1.chunk.js",
+    "anchor": "getShortLoanBorrow",
+    "byte_offset": 40292,
+    "evidence_window_sha256": "9ae4bde0cebb0a42d63dd4a9ba8fd3e7776e893d774c2a90b034c03ba9f0d163",
+    "window_bounds": [
+      40192,
+      40410
+    ],
+    "observation": "short loan cash flow display uses a named computation",
+    "limitations": "Static source presence only; current market value unknown."
+  },
+  {
+    "source_file": "840.41fdc8e1.chunk.js",
+    "anchor": "getReserveFormation",
+    "byte_offset": 38027,
+    "evidence_window_sha256": "c3bed7bb4816dc5b71969466a84f56c4885c63320bdd74f6f1c765c2b607deb7",
+    "window_bounds": [
+      37927,
+      38146
+    ],
+    "observation": "reserve formation uses a computed branch",
+    "limitations": "Static source presence only; current market value unknown."
+  },
+  {
+    "source_file": "main.97a786da.js",
+    "anchor": "repeatable",
+    "byte_offset": 968762,
+    "evidence_window_sha256": "4389fdd9729982a63f4360268b0fda4c4ddd10c4724f7c9e57d9509b625f85fc",
+    "window_bounds": [
+      968662,
+      968872
+    ],
+    "observation": "new/repeated project logic in common frontend",
+    "limitations": "Static source presence only; current market value unknown."
+  }
+]

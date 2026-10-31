@@ -1,0 +1,37 @@
+{
+  "schema": "ECOSIM_R150_OFFLINE_REPORT_COMPARISON_V1",
+  "comparison_class": "HISTORICAL_OR_NONCURRENT_COMPARISON_ONLY",
+  "before_source_context": {
+    "team": null,
+    "market": null,
+    "period": null,
+    "capture_mode": null,
+    "observed_column_kind": null,
+    "round": null
+  },
+  "after_source_context": {
+    "team": null,
+    "market": null,
+    "period": null,
+    "capture_mode": null,
+    "observed_column_kind": null,
+    "round": null
+  },
+  "yearly_realized_effect_claim": null,
+  "causal_change_identified": false,
+  "same_period_candidate_id_set_comparable": false,
+  "candidate_counts": {
+    "before": 15,
+    "after": 15
+  },
+  "same_period_candidate_overlap": null,
+  "hypothetical_envelope_changes": {},
+  "unmatched_envelope_ids": {
+    "only_before": [],
+    "only_after": []
+  },
+  "model_predictions_independently_validated": false,
+  "permission_to_change_game": false,
+  "gameplay_gate": "STOP",
+  "interpretation": "Changes in offline plans are descriptive and may reflect changed assumptions, search or input. They are not an observed causal city transition."
+}

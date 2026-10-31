@@ -1,0 +1,543 @@
+{
+  "method": "Local multiplicative approximation using displayed 2026-10-31 p1 factor values and displayed project percentage effects. Known metric names only. Not a prediction of server results. Excludes effects on unavailable metric aliases or nonlinear state feedback. Finance first-year project-cost formula applies to nonrepeatable newly started projects. No project limit/budget assumed.",
+  "baseline_from_UI": {
+    "Fizetőképes piac": 72.5,
+    "Vállalkozások száma": 50.45,
+    "Vállalkozóbarátság": 28.33,
+    "Foglalkoztatottság": 97.31,
+    "Fenntarthatóság": 49.39,
+    "Vízgazdálkodás": 53,
+    "Levegőminőség": 50.11,
+    "Zöld területek aránya": 30.95,
+    "Hulladékgazdálkodási helyzet": 49.16,
+    "Adminisztráció": 30.17,
+    "Adósság / vagyon": 100,
+    "Lakásgazdálkodás": 36.4,
+    "Digitalizáció": 74.65,
+    "Közbiztonság": 31.27,
+    "Oktatási intézmények": 62.11,
+    "Egészségügy": 45.98,
+    "Szociális": 66.76,
+    "Sport": 41.94,
+    "Művelődés": 41.93,
+    "Rossz szoc. helyzetben lévők aránya": 20.98,
+    "Átlagos lakásérték": 50.59,
+    "Településfejlettség": 55.6,
+    "Közlekedési minőség": 60.86,
+    "Tömegközlekedők aránya, %": 60.19,
+    "Autók száma / 100 fő": 47.48,
+    "Lakossági viszonyok/elégedettség": 17.93,
+    "Munkakörülmények": 48.7,
+    "Lakosság képzettsége": 20.64,
+    "Munkanélküli arány": 2.69
+  },
+  "baseline_weighted_index_from_displayed_factors": 52.48373333333333,
+  "candidates": [
+    {
+      "id": 13,
+      "name": "Informatikai fejlesztés",
+      "gross_year1": 46200,
+      "initial_cash": 55000,
+      "run_cost": -8800,
+      "partner_support": 0,
+      "effects_count": 5,
+      "direct_mapping_effect_count": 5,
+      "unmapped_effect_count": 0,
+      "unmapped_metrics": [],
+      "proxy_delta": 0.21643749999999784,
+      "delta_per_10k": 0.04684794372294326,
+      "project_conditions": []
+    },
+    {
+      "id": 33,
+      "name": "A Népliget megújítása",
+      "gross_year1": 201000,
+      "initial_cash": 198000,
+      "run_cost": 3000,
+      "partner_support": 5000,
+      "effects_count": 9,
+      "direct_mapping_effect_count": 8,
+      "unmapped_effect_count": 1,
+      "unmapped_metrics": [
+        "Kisvállalkozások száma"
+      ],
+      "proxy_delta": 0.20516638333333503,
+      "delta_per_10k": 0.01020728275290224,
+      "project_conditions": []
+    },
+    {
+      "id": 27,
+      "name": "Vasútfejlesztés",
+      "gross_year1": 15000,
+      "initial_cash": 15000,
+      "run_cost": 0,
+      "partner_support": 0,
+      "effects_count": 11,
+      "direct_mapping_effect_count": 10,
+      "unmapped_effect_count": 1,
+      "unmapped_metrics": [
+        "Kisvállalkozások száma"
+      ],
+      "proxy_delta": 0.1523203916666631,
+      "delta_per_10k": 0.10154692777777541,
+      "project_conditions": []
+    },
+    {
+      "id": 4,
+      "name": "Körforgásos gazdaság mintaprojekt",
+      "gross_year1": 43000,
+      "initial_cash": 41000,
+      "run_cost": 2000,
+      "partner_support": 14000,
+      "effects_count": 11,
+      "direct_mapping_effect_count": 8,
+      "unmapped_effect_count": 3,
+      "unmapped_metrics": [
+        "Munkanélküliség",
+        "Kisvállalkozások száma",
+        "Középvállalkozások száma"
+      ],
+      "proxy_delta": 0.11487119999999607,
+      "delta_per_10k": 0.02671423255813862,
+      "project_conditions": []
+    },
+    {
+      "id": 12,
+      "name": "Lakás- és helyiséggazdálkodás",
+      "gross_year1": 71000,
+      "initial_cash": 83000,
+      "run_cost": -12000,
+      "partner_support": 5000,
+      "effects_count": 13,
+      "direct_mapping_effect_count": 11,
+      "unmapped_effect_count": 2,
+      "unmapped_metrics": [
+        "Munkanélküliség",
+        "Kisvállalkozások száma"
+      ],
+      "proxy_delta": 0.11029046666666176,
+      "delta_per_10k": 0.015533868544600248,
+      "project_conditions": []
+    },
+    {
+      "id": 8,
+      "name": "Okos Gazdaság Alkalmazások",
+      "gross_year1": 29000,
+      "initial_cash": 26000,
+      "run_cost": 3000,
+      "partner_support": 3500,
+      "effects_count": 5,
+      "direct_mapping_effect_count": 4,
+      "unmapped_effect_count": 1,
+      "unmapped_metrics": [
+        "Kisvállalkozások száma"
+      ],
+      "proxy_delta": 0.10740162500000139,
+      "delta_per_10k": 0.03703504310344875,
+      "project_conditions": []
+    },
+    {
+      "id": 21,
+      "name": "Közlekedési Múzeum",
+      "gross_year1": 35000,
+      "initial_cash": 35000,
+      "run_cost": 0,
+      "partner_support": 0,
+      "effects_count": 12,
+      "direct_mapping_effect_count": 11,
+      "unmapped_effect_count": 1,
+      "unmapped_metrics": [
+        "Kisvállalkozások száma"
+      ],
+      "proxy_delta": 0.10388722500000114,
+      "delta_per_10k": 0.02968206428571461,
+      "project_conditions": []
+    },
+    {
+      "id": 32,
+      "name": "Megújuló energia park",
+      "gross_year1": 190000,
+      "initial_cash": 235000,
+      "run_cost": -45000,
+      "partner_support": 10000,
+      "effects_count": 8,
+      "direct_mapping_effect_count": 7,
+      "unmapped_effect_count": 1,
+      "unmapped_metrics": [
+        "Középvállalkozások száma"
+      ],
+      "proxy_delta": 0.09606586666666317,
+      "delta_per_10k": 0.005056098245613851,
+      "project_conditions": []
+    },
+    {
+      "id": 16,
+      "name": "Nyitott Alkotó és Innovációs Terek",
+      "gross_year1": 43000,
+      "initial_cash": 39000,
+      "run_cost": 4000,
+      "partner_support": 10000,
+      "effects_count": 10,
+      "direct_mapping_effect_count": 8,
+      "unmapped_effect_count": 2,
+      "unmapped_metrics": [
+        "Munkanélküliség",
+        "Kisvállalkozások száma"
+      ],
+      "proxy_delta": 0.09144081249999658,
+      "delta_per_10k": 0.021265305232557347,
+      "project_conditions": []
+    },
+    {
+      "id": 26,
+      "name": "Reptér elérhetőség javítása",
+      "gross_year1": 28000,
+      "initial_cash": 28000,
+      "run_cost": 0,
+      "partner_support": 0,
+      "effects_count": 11,
+      "direct_mapping_effect_count": 8,
+      "unmapped_effect_count": 3,
+      "unmapped_metrics": [
+        "Munkanélküliség",
+        "Kisvállalkozások száma",
+        "Középvállalkozások száma"
+      ],
+      "proxy_delta": 0.0887069500000024,
+      "delta_per_10k": 0.031681053571429425,
+      "project_conditions": []
+    },
+    {
+      "id": 2,
+      "name": "Kereskedelmi és Kulturális Központ",
+      "gross_year1": 156000,
+      "initial_cash": 148000,
+      "run_cost": 8000,
+      "partner_support": 25000,
+      "effects_count": 16,
+      "direct_mapping_effect_count": 13,
+      "unmapped_effect_count": 3,
+      "unmapped_metrics": [
+        "Munkanélküliség",
+        "Kisvállalkozások száma",
+        "Középvállalkozások száma"
+      ],
+      "proxy_delta": 0.08078095416666287,
+      "delta_per_10k": 0.005178266292734799,
+      "project_conditions": []
+    },
+    {
+      "id": 19,
+      "name": "Multifunkcionális Sportcentrum",
+      "gross_year1": 282000,
+      "initial_cash": 255000,
+      "run_cost": 27000,
+      "partner_support": 88000,
+      "effects_count": 11,
+      "direct_mapping_effect_count": 10,
+      "unmapped_effect_count": 1,
+      "unmapped_metrics": [
+        "Kisvállalkozások száma"
+      ],
+      "proxy_delta": 0.08059811249999882,
+      "delta_per_10k": 0.002858089095744639,
+      "project_conditions": []
+    },
+    {
+      "id": 31,
+      "name": "P+R parkolók a vasút mellett",
+      "gross_year1": 68500,
+      "initial_cash": 72000,
+      "run_cost": -3500,
+      "partner_support": 4000,
+      "effects_count": 9,
+      "direct_mapping_effect_count": 9,
+      "unmapped_effect_count": 0,
+      "unmapped_metrics": [],
+      "proxy_delta": 0.07540147083333437,
+      "delta_per_10k": 0.011007513990267791,
+      "project_conditions": [
+        "Vasútfejlesztés — Fut"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Bicikliútfejlesztés",
+      "gross_year1": 53500,
+      "initial_cash": 51000,
+      "run_cost": 2500,
+      "partner_support": 2000,
+      "effects_count": 9,
+      "direct_mapping_effect_count": 8,
+      "unmapped_effect_count": 1,
+      "unmapped_metrics": [
+        "Kisvállalkozások száma"
+      ],
+      "proxy_delta": 0.07181514166666858,
+      "delta_per_10k": 0.013423390965732446,
+      "project_conditions": []
+    },
+    {
+      "id": 1,
+      "name": "Szomszédsági Gazdaság Modell",
+      "gross_year1": 26400,
+      "initial_cash": 24000,
+      "run_cost": 2400,
+      "partner_support": 3000,
+      "effects_count": 10,
+      "direct_mapping_effect_count": 8,
+      "unmapped_effect_count": 2,
+      "unmapped_metrics": [
+        "Munkanélküliség",
+        "Kisvállalkozások száma"
+      ],
+      "proxy_delta": 0.056343833333329485,
+      "delta_per_10k": 0.021342361111109653,
+      "project_conditions": []
+    },
+    {
+      "id": 3,
+      "name": "Helyi élelmiszerellátás",
+      "gross_year1": 33500,
+      "initial_cash": 32000,
+      "run_cost": 1500,
+      "partner_support": 3000,
+      "effects_count": 12,
+      "direct_mapping_effect_count": 10,
+      "unmapped_effect_count": 2,
+      "unmapped_metrics": [
+        "Munkanélküliség",
+        "Kisvállalkozások száma"
+      ],
+      "proxy_delta": 0.05260887499999711,
+      "delta_per_10k": 0.015704141791043912,
+      "project_conditions": []
+    },
+    {
+      "id": 7,
+      "name": "HGF Innovációs Tudásközpont",
+      "gross_year1": 33000,
+      "initial_cash": 21000,
+      "run_cost": 12000,
+      "partner_support": 8000,
+      "effects_count": 6,
+      "direct_mapping_effect_count": 5,
+      "unmapped_effect_count": 1,
+      "unmapped_metrics": [
+        "Kisvállalkozások száma"
+      ],
+      "proxy_delta": 0.047304333333329396,
+      "delta_per_10k": 0.014334646464645271,
+      "project_conditions": []
+    },
+    {
+      "id": 10,
+      "name": "Innovációs Alap",
+      "gross_year1": 29500,
+      "initial_cash": 15500,
+      "run_cost": 14000,
+      "partner_support": 10000,
+      "effects_count": 10,
+      "direct_mapping_effect_count": 7,
+      "unmapped_effect_count": 3,
+      "unmapped_metrics": [
+        "Munkanélküliség",
+        "Kisvállalkozások száma",
+        "Középvállalkozások száma"
+      ],
+      "proxy_delta": 0.04692844999999579,
+      "delta_per_10k": 0.015907949152540946,
+      "project_conditions": []
+    },
+    {
+      "id": 9,
+      "name": "Közösségi Finanszírozási Rendszer",
+      "gross_year1": 10500,
+      "initial_cash": 9000,
+      "run_cost": 1500,
+      "partner_support": 12000,
+      "effects_count": 10,
+      "direct_mapping_effect_count": 9,
+      "unmapped_effect_count": 1,
+      "unmapped_metrics": [
+        "Kisvállalkozások száma"
+      ],
+      "proxy_delta": 0.04415886666666324,
+      "delta_per_10k": 0.04205606349206023,
+      "project_conditions": []
+    },
+    {
+      "id": 30,
+      "name": "Közösségi kerékpár szolgáltatás bővítés (Bubi)",
+      "gross_year1": 26000,
+      "initial_cash": 21000,
+      "run_cost": 5000,
+      "partner_support": 3000,
+      "effects_count": 8,
+      "direct_mapping_effect_count": 8,
+      "unmapped_effect_count": 0,
+      "unmapped_metrics": [],
+      "proxy_delta": 0.04410698750000108,
+      "delta_per_10k": 0.016964225961538876,
+      "project_conditions": [
+        "Bicikliútfejlesztés — Fut"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Képzési együttműködések koordinációja",
+      "gross_year1": 19000,
+      "initial_cash": 16000,
+      "run_cost": 3000,
+      "partner_support": 1500,
+      "effects_count": 9,
+      "direct_mapping_effect_count": 8,
+      "unmapped_effect_count": 1,
+      "unmapped_metrics": [
+        "Munkanélküliség"
+      ],
+      "proxy_delta": 0.04399262500000134,
+      "delta_per_10k": 0.023154013157895444,
+      "project_conditions": []
+    },
+    {
+      "id": 28,
+      "name": "Új trolibuszútvonal",
+      "gross_year1": 5000,
+      "initial_cash": 5000,
+      "run_cost": 0,
+      "partner_support": 0,
+      "effects_count": 6,
+      "direct_mapping_effect_count": 6,
+      "unmapped_effect_count": 0,
+      "unmapped_metrics": [],
+      "proxy_delta": 0.04295330000000064,
+      "delta_per_10k": 0.08590660000000128,
+      "project_conditions": []
+    },
+    {
+      "id": 17,
+      "name": "Pályaorientáció és Tehetséggondozás",
+      "gross_year1": 10500,
+      "initial_cash": 10500,
+      "run_cost": 0,
+      "partner_support": 10000,
+      "effects_count": 9,
+      "direct_mapping_effect_count": 6,
+      "unmapped_effect_count": 3,
+      "unmapped_metrics": [
+        "Munkanélküliség",
+        "Kisvállalkozások száma",
+        "Középvállalkozások száma"
+      ],
+      "proxy_delta": 0.0403468124999975,
+      "delta_per_10k": 0.03842553571428333,
+      "project_conditions": []
+    },
+    {
+      "id": 15,
+      "name": "Pincerendszer hasznosítása",
+      "gross_year1": 71000,
+      "initial_cash": 75000,
+      "run_cost": -4000,
+      "partner_support": 2000,
+      "effects_count": 8,
+      "direct_mapping_effect_count": 7,
+      "unmapped_effect_count": 1,
+      "unmapped_metrics": [
+        "Kisvállalkozások száma"
+      ],
+      "proxy_delta": 0.03679066666666131,
+      "delta_per_10k": 0.005181784037557931,
+      "project_conditions": []
+    },
+    {
+      "id": 6,
+      "name": "Gazdasági és Foglalkoztatási Együttműködés",
+      "gross_year1": 16000,
+      "initial_cash": 8000,
+      "run_cost": 8000,
+      "partner_support": 2000,
+      "effects_count": 10,
+      "direct_mapping_effect_count": 7,
+      "unmapped_effect_count": 3,
+      "unmapped_metrics": [
+        "Munkanélküliség",
+        "Kisvállalkozások száma",
+        "Középvállalkozások száma"
+      ],
+      "proxy_delta": 0.035581437499999424,
+      "delta_per_10k": 0.02223839843749964,
+      "project_conditions": []
+    },
+    {
+      "id": 18,
+      "name": "Műemléki Dreher-villa új funkcióval",
+      "gross_year1": 71500,
+      "initial_cash": 75000,
+      "run_cost": -3500,
+      "partner_support": 5000,
+      "effects_count": 7,
+      "direct_mapping_effect_count": 6,
+      "unmapped_effect_count": 1,
+      "unmapped_metrics": [
+        "Kisvállalkozások száma"
+      ],
+      "proxy_delta": 0.031745437499999696,
+      "delta_per_10k": 0.004439921328671286,
+      "project_conditions": []
+    },
+    {
+      "id": 25,
+      "name": "Bosch Önvezető Jármű Tesztközpont",
+      "gross_year1": 20000,
+      "initial_cash": 20000,
+      "run_cost": 0,
+      "partner_support": 4500,
+      "effects_count": 11,
+      "direct_mapping_effect_count": 8,
+      "unmapped_effect_count": 3,
+      "unmapped_metrics": [
+        "Munkanélküliség",
+        "Kisvállalkozások száma",
+        "Középvállalkozások száma"
+      ],
+      "proxy_delta": 0.030572704166665687,
+      "delta_per_10k": 0.015286352083332844,
+      "project_conditions": []
+    },
+    {
+      "id": 5,
+      "name": "Vállalati Társadalmi Felelősség Platform",
+      "gross_year1": 7000,
+      "initial_cash": 5000,
+      "run_cost": 2000,
+      "partner_support": 15000,
+      "effects_count": 8,
+      "direct_mapping_effect_count": 8,
+      "unmapped_effect_count": 0,
+      "unmapped_metrics": [],
+      "proxy_delta": 0.026818662499998425,
+      "delta_per_10k": 0.038312374999997754,
+      "project_conditions": []
+    },
+    {
+      "id": 11,
+      "name": "Helyi Krízisalap",
+      "gross_year1": 26000,
+      "initial_cash": 21000,
+      "run_cost": 5000,
+      "partner_support": 8000,
+      "effects_count": 8,
+      "direct_mapping_effect_count": 6,
+      "unmapped_effect_count": 2,
+      "unmapped_metrics": [
+        "Munkanélküliség",
+        "Kisvállalkozások száma"
+      ],
+      "proxy_delta": 0.025577749999996513,
+      "delta_per_10k": 0.009837596153844812,
+      "project_conditions": []
+    }
+  ]
+}

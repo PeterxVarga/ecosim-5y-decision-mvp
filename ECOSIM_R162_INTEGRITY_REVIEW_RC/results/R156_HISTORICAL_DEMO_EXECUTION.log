@@ -1,0 +1,20 @@
+{
+  "packet": "/mnt/data/ECOSIM_R156_READONLY_MARKET_TEAM_BRIDGE/results/R156_HISTORICAL_FULL_DEMO",
+  "receipt": "/mnt/data/ECOSIM_R156_READONLY_MARKET_TEAM_BRIDGE/results/R156_HISTORICAL_FULL_DEMO/R156_ACQUISITION_RECEIPT.json",
+  "gameplay_gate": "STOP",
+  "server_verified": false,
+  "decision_run": {
+    "mode": "HISTORICAL_REFERENCE",
+    "candidates": 15,
+    "index_residual": 0.00373333,
+    "missing_fields": [
+      "project_cap",
+      "confirmed_spendable_cash",
+      "committed_costs",
+      "loan_rates",
+      "official_preview"
+    ],
+    "output_directory": "/mnt/data/ECOSIM_R156_READONLY_MARKET_TEAM_BRIDGE/results/R156_HISTORICAL_FULL_DEMO/decision",
+    "gameplay_gate": "STOP"
+  }
+}

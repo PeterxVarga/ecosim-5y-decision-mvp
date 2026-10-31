@@ -1,0 +1,14 @@
+{
+  "schema": "ECOSIM_R152_LOCAL_OBSERVATION_BUNDLE_V1",
+  "capture_mode": "CURRENT_READONLY",
+  "kind": "PLAN",
+  "team": "FILL_FROM_OFFICIAL_UI",
+  "market": "FILL_FROM_OFFICIAL_UI",
+  "round": "REPLACE_ROUND",
+  "period": 1,
+  "captured_at_local": "REPLACE_WITH_ISO8601_TIME_WITH_ZONE",
+  "source_evidence_id": "REPLACE_WITH_EVIDENCE_ID",
+  "factor_table_path": "factors.fill_from_authorized_export.csv",
+  "project_states_path": "projects.fill_from_authorized_export.csv",
+  "parameters_path": "market_team_params.fill_from_official_setup.json"
+}

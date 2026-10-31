@@ -1,0 +1,38 @@
+{
+  "not_approved_budgets": true,
+  "gameplay_decision": "STOP",
+  "annual_budget_illustrative_scenarios": {
+    "50000": {
+      "year1_ids": [
+        26,
+        27,
+        28
+      ],
+      "terminal_mapped_delta": 0.812014,
+      "five_year_cost": 237500,
+      "unmodeled_effects": 12
+    },
+    "200000": {
+      "year1_ids": [
+        4,
+        12,
+        13,
+        27
+      ],
+      "terminal_mapped_delta": 1.704913,
+      "five_year_cost": 890200,
+      "unmodeled_effects": 22
+    },
+    "100000": {
+      "year1_ids": [
+        13,
+        17,
+        20,
+        27
+      ],
+      "terminal_mapped_delta": 1.351972,
+      "five_year_cost": 491300,
+      "unmodeled_effects": 18
+    }
+  }
+}

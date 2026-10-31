@@ -1,0 +1,676 @@
+{
+  "schema": "ECOSIM_R155_SOURCE_OPERATING_COMPONENTS_V1",
+  "source_class": "SYNTHETIC_TEST_ONLY",
+  "assumption_note": "All future population, parking and service demand, institutional staffing, wages and fee parameters are synthetic; no EcoSim market forecast or income authorization.",
+  "market": {
+    "parking": {
+      "ratio": [
+        0.82,
+        0.83,
+        0.84,
+        0.85,
+        0.86
+      ],
+      "elasticity": [
+        0.28,
+        0.28,
+        0.28,
+        0.28,
+        0.28
+      ],
+      "damper": [
+        1.2,
+        1.2,
+        1.2,
+        1.2,
+        1.2
+      ],
+      "reference_fee": [
+        20,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    "rental_multiplier": 0.1
+  },
+  "annual_city_bases": [
+    {
+      "population": 12000,
+      "parking_car_index": 330,
+      "burial_units": 100,
+      "housing_unit_count": 3100,
+      "rental_unit_count": 120,
+      "rental_factor": 0.15,
+      "transport_units": 1400,
+      "transport_ratio": 0.25,
+      "transport_wages_ecu": 24000,
+      "staff": {
+        "edu_nursery": 40,
+        "edu_kindergarten": 40,
+        "edu_primary": 40,
+        "edu_middle": 40,
+        "sport": 10,
+        "culture": 10,
+        "health": 10,
+        "social": 10,
+        "service_water": 4,
+        "service_waste": 4,
+        "service_3": 4,
+        "service_4": 4,
+        "service_5": 4,
+        "service_6": 4,
+        "office": 6
+      },
+      "wage_rates": {
+        "education": 1500,
+        "sport": 1400,
+        "health": 1700,
+        "social": 1480,
+        "services": 1350,
+        "bureau": 1620
+      },
+      "material_ratios": {
+        "education": 0.12,
+        "sport": 0.1,
+        "health": 0.13,
+        "social": 0.09,
+        "services": 0.16,
+        "bureau": 0.08
+      },
+      "service_material_multiplier": 1.03
+    },
+    {
+      "population": 12200,
+      "parking_car_index": 335,
+      "burial_units": 102,
+      "housing_unit_count": 3160,
+      "rental_unit_count": 125,
+      "rental_factor": 0.16,
+      "transport_units": 1470,
+      "transport_ratio": 0.25,
+      "transport_wages_ecu": 24600,
+      "staff": {
+        "edu_nursery": 40,
+        "edu_kindergarten": 40,
+        "edu_primary": 40,
+        "edu_middle": 40,
+        "sport": 10,
+        "culture": 10,
+        "health": 10,
+        "social": 10,
+        "service_water": 4,
+        "service_waste": 4,
+        "service_3": 4,
+        "service_4": 4,
+        "service_5": 4,
+        "service_6": 4,
+        "office": 6
+      },
+      "wage_rates": {
+        "education": 1500,
+        "sport": 1400,
+        "health": 1700,
+        "social": 1480,
+        "services": 1350,
+        "bureau": 1620
+      },
+      "material_ratios": {
+        "education": 0.12,
+        "sport": 0.1,
+        "health": 0.13,
+        "social": 0.09,
+        "services": 0.16,
+        "bureau": 0.08
+      },
+      "service_material_multiplier": 1.03
+    },
+    {
+      "population": 12400,
+      "parking_car_index": 340,
+      "burial_units": 104,
+      "housing_unit_count": 3220,
+      "rental_unit_count": 130,
+      "rental_factor": 0.16999999999999998,
+      "transport_units": 1540,
+      "transport_ratio": 0.25,
+      "transport_wages_ecu": 25200,
+      "staff": {
+        "edu_nursery": 40,
+        "edu_kindergarten": 40,
+        "edu_primary": 40,
+        "edu_middle": 40,
+        "sport": 10,
+        "culture": 10,
+        "health": 10,
+        "social": 10,
+        "service_water": 4,
+        "service_waste": 4,
+        "service_3": 4,
+        "service_4": 4,
+        "service_5": 4,
+        "service_6": 4,
+        "office": 6
+      },
+      "wage_rates": {
+        "education": 1500,
+        "sport": 1400,
+        "health": 1700,
+        "social": 1480,
+        "services": 1350,
+        "bureau": 1620
+      },
+      "material_ratios": {
+        "education": 0.12,
+        "sport": 0.1,
+        "health": 0.13,
+        "social": 0.09,
+        "services": 0.16,
+        "bureau": 0.08
+      },
+      "service_material_multiplier": 1.03
+    },
+    {
+      "population": 12600,
+      "parking_car_index": 345,
+      "burial_units": 106,
+      "housing_unit_count": 3280,
+      "rental_unit_count": 135,
+      "rental_factor": 0.18,
+      "transport_units": 1610,
+      "transport_ratio": 0.25,
+      "transport_wages_ecu": 25800,
+      "staff": {
+        "edu_nursery": 40,
+        "edu_kindergarten": 40,
+        "edu_primary": 40,
+        "edu_middle": 40,
+        "sport": 10,
+        "culture": 10,
+        "health": 10,
+        "social": 10,
+        "service_water": 4,
+        "service_waste": 4,
+        "service_3": 4,
+        "service_4": 4,
+        "service_5": 4,
+        "service_6": 4,
+        "office": 6
+      },
+      "wage_rates": {
+        "education": 1500,
+        "sport": 1400,
+        "health": 1700,
+        "social": 1480,
+        "services": 1350,
+        "bureau": 1620
+      },
+      "material_ratios": {
+        "education": 0.12,
+        "sport": 0.1,
+        "health": 0.13,
+        "social": 0.09,
+        "services": 0.16,
+        "bureau": 0.08
+      },
+      "service_material_multiplier": 1.03
+    },
+    {
+      "population": 12800,
+      "parking_car_index": 350,
+      "burial_units": 108,
+      "housing_unit_count": 3340,
+      "rental_unit_count": 140,
+      "rental_factor": 0.19,
+      "transport_units": 1680,
+      "transport_ratio": 0.25,
+      "transport_wages_ecu": 26400,
+      "staff": {
+        "edu_nursery": 40,
+        "edu_kindergarten": 40,
+        "edu_primary": 40,
+        "edu_middle": 40,
+        "sport": 10,
+        "culture": 10,
+        "health": 10,
+        "social": 10,
+        "service_water": 4,
+        "service_waste": 4,
+        "service_3": 4,
+        "service_4": 4,
+        "service_5": 4,
+        "service_6": 4,
+        "office": 6
+      },
+      "wage_rates": {
+        "education": 1500,
+        "sport": 1400,
+        "health": 1700,
+        "social": 1480,
+        "services": 1350,
+        "bureau": 1620
+      },
+      "material_ratios": {
+        "education": 0.12,
+        "sport": 0.1,
+        "health": 0.13,
+        "social": 0.09,
+        "services": 0.16,
+        "bureau": 0.08
+      },
+      "service_material_multiplier": 1.03
+    }
+  ],
+  "baseline_fees": {
+    "burial": 35,
+    "parking": 20,
+    "communal": 11,
+    "services": 80,
+    "rental": 130,
+    "transport": 4
+  },
+  "paths": [
+    {
+      "id": "unchanged_synthetic",
+      "assumption_note": "Synthetic illustrative fee/worker changes aligned by ID with tax paths; no causal market response known",
+      "fees_by_year": [
+        {
+          "burial": 35,
+          "parking": 20,
+          "communal": 11,
+          "services": 80,
+          "rental": 130,
+          "transport": 4
+        },
+        {
+          "burial": 35,
+          "parking": 20,
+          "communal": 11,
+          "services": 80,
+          "rental": 130,
+          "transport": 4
+        },
+        {
+          "burial": 35,
+          "parking": 20,
+          "communal": 11,
+          "services": 80,
+          "rental": 130,
+          "transport": 4
+        },
+        {
+          "burial": 35,
+          "parking": 20,
+          "communal": 11,
+          "services": 80,
+          "rental": 130,
+          "transport": 4
+        },
+        {
+          "burial": 35,
+          "parking": 20,
+          "communal": 11,
+          "services": 80,
+          "rental": 130,
+          "transport": 4
+        }
+      ],
+      "staff_by_year": [
+        {
+          "edu_nursery": 40,
+          "edu_kindergarten": 40,
+          "edu_primary": 40,
+          "edu_middle": 40,
+          "sport": 10,
+          "culture": 10,
+          "health": 10,
+          "social": 10,
+          "service_water": 4,
+          "service_waste": 4,
+          "service_3": 4,
+          "service_4": 4,
+          "service_5": 4,
+          "service_6": 4,
+          "office": 6
+        },
+        {
+          "edu_nursery": 40,
+          "edu_kindergarten": 40,
+          "edu_primary": 40,
+          "edu_middle": 40,
+          "sport": 10,
+          "culture": 10,
+          "health": 10,
+          "social": 10,
+          "service_water": 4,
+          "service_waste": 4,
+          "service_3": 4,
+          "service_4": 4,
+          "service_5": 4,
+          "service_6": 4,
+          "office": 6
+        },
+        {
+          "edu_nursery": 40,
+          "edu_kindergarten": 40,
+          "edu_primary": 40,
+          "edu_middle": 40,
+          "sport": 10,
+          "culture": 10,
+          "health": 10,
+          "social": 10,
+          "service_water": 4,
+          "service_waste": 4,
+          "service_3": 4,
+          "service_4": 4,
+          "service_5": 4,
+          "service_6": 4,
+          "office": 6
+        },
+        {
+          "edu_nursery": 40,
+          "edu_kindergarten": 40,
+          "edu_primary": 40,
+          "edu_middle": 40,
+          "sport": 10,
+          "culture": 10,
+          "health": 10,
+          "social": 10,
+          "service_water": 4,
+          "service_waste": 4,
+          "service_3": 4,
+          "service_4": 4,
+          "service_5": 4,
+          "service_6": 4,
+          "office": 6
+        },
+        {
+          "edu_nursery": 40,
+          "edu_kindergarten": 40,
+          "edu_primary": 40,
+          "edu_middle": 40,
+          "sport": 10,
+          "culture": 10,
+          "health": 10,
+          "social": 10,
+          "service_water": 4,
+          "service_waste": 4,
+          "service_3": 4,
+          "service_4": 4,
+          "service_5": 4,
+          "service_6": 4,
+          "office": 6
+        }
+      ]
+    },
+    {
+      "id": "business_tax_reduced_synthetic",
+      "assumption_note": "Synthetic illustrative fee/worker changes aligned by ID with tax paths; no causal market response known",
+      "fees_by_year": [
+        {
+          "burial": 35,
+          "parking": 18,
+          "communal": 11,
+          "services": 75,
+          "rental": 130,
+          "transport": 4
+        },
+        {
+          "burial": 35,
+          "parking": 18,
+          "communal": 11,
+          "services": 75,
+          "rental": 130,
+          "transport": 4
+        },
+        {
+          "burial": 35,
+          "parking": 18,
+          "communal": 11,
+          "services": 75,
+          "rental": 130,
+          "transport": 4
+        },
+        {
+          "burial": 35,
+          "parking": 18,
+          "communal": 11,
+          "services": 75,
+          "rental": 130,
+          "transport": 4
+        },
+        {
+          "burial": 35,
+          "parking": 18,
+          "communal": 11,
+          "services": 75,
+          "rental": 130,
+          "transport": 4
+        }
+      ],
+      "staff_by_year": [
+        {
+          "edu_nursery": 40,
+          "edu_kindergarten": 40,
+          "edu_primary": 42,
+          "edu_middle": 40,
+          "sport": 10,
+          "culture": 10,
+          "health": 10,
+          "social": 10,
+          "service_water": 4,
+          "service_waste": 4,
+          "service_3": 4,
+          "service_4": 4,
+          "service_5": 4,
+          "service_6": 4,
+          "office": 6
+        },
+        {
+          "edu_nursery": 40,
+          "edu_kindergarten": 40,
+          "edu_primary": 42,
+          "edu_middle": 40,
+          "sport": 10,
+          "culture": 10,
+          "health": 10,
+          "social": 10,
+          "service_water": 4,
+          "service_waste": 4,
+          "service_3": 4,
+          "service_4": 4,
+          "service_5": 4,
+          "service_6": 4,
+          "office": 6
+        },
+        {
+          "edu_nursery": 40,
+          "edu_kindergarten": 40,
+          "edu_primary": 42,
+          "edu_middle": 40,
+          "sport": 10,
+          "culture": 10,
+          "health": 10,
+          "social": 10,
+          "service_water": 4,
+          "service_waste": 4,
+          "service_3": 4,
+          "service_4": 4,
+          "service_5": 4,
+          "service_6": 4,
+          "office": 6
+        },
+        {
+          "edu_nursery": 40,
+          "edu_kindergarten": 40,
+          "edu_primary": 42,
+          "edu_middle": 40,
+          "sport": 10,
+          "culture": 10,
+          "health": 10,
+          "social": 10,
+          "service_water": 4,
+          "service_waste": 4,
+          "service_3": 4,
+          "service_4": 4,
+          "service_5": 4,
+          "service_6": 4,
+          "office": 6
+        },
+        {
+          "edu_nursery": 40,
+          "edu_kindergarten": 40,
+          "edu_primary": 42,
+          "edu_middle": 40,
+          "sport": 10,
+          "culture": 10,
+          "health": 10,
+          "social": 10,
+          "service_water": 4,
+          "service_waste": 4,
+          "service_3": 4,
+          "service_4": 4,
+          "service_5": 4,
+          "service_6": 4,
+          "office": 6
+        }
+      ]
+    },
+    {
+      "id": "business_tax_increased_synthetic",
+      "assumption_note": "Synthetic illustrative fee/worker changes aligned by ID with tax paths; no causal market response known",
+      "fees_by_year": [
+        {
+          "burial": 35,
+          "parking": 22,
+          "communal": 11,
+          "services": 85,
+          "rental": 130,
+          "transport": 4
+        },
+        {
+          "burial": 35,
+          "parking": 22,
+          "communal": 11,
+          "services": 85,
+          "rental": 130,
+          "transport": 4
+        },
+        {
+          "burial": 35,
+          "parking": 22,
+          "communal": 11,
+          "services": 85,
+          "rental": 130,
+          "transport": 4
+        },
+        {
+          "burial": 35,
+          "parking": 22,
+          "communal": 11,
+          "services": 85,
+          "rental": 130,
+          "transport": 4
+        },
+        {
+          "burial": 35,
+          "parking": 22,
+          "communal": 11,
+          "services": 85,
+          "rental": 130,
+          "transport": 4
+        }
+      ],
+      "staff_by_year": [
+        {
+          "edu_nursery": 40,
+          "edu_kindergarten": 40,
+          "edu_primary": 40,
+          "edu_middle": 40,
+          "sport": 10,
+          "culture": 10,
+          "health": 13,
+          "social": 10,
+          "service_water": 4,
+          "service_waste": 4,
+          "service_3": 4,
+          "service_4": 4,
+          "service_5": 4,
+          "service_6": 4,
+          "office": 6
+        },
+        {
+          "edu_nursery": 40,
+          "edu_kindergarten": 40,
+          "edu_primary": 40,
+          "edu_middle": 40,
+          "sport": 10,
+          "culture": 10,
+          "health": 13,
+          "social": 10,
+          "service_water": 4,
+          "service_waste": 4,
+          "service_3": 4,
+          "service_4": 4,
+          "service_5": 4,
+          "service_6": 4,
+          "office": 6
+        },
+        {
+          "edu_nursery": 40,
+          "edu_kindergarten": 40,
+          "edu_primary": 40,
+          "edu_middle": 40,
+          "sport": 10,
+          "culture": 10,
+          "health": 13,
+          "social": 10,
+          "service_water": 4,
+          "service_waste": 4,
+          "service_3": 4,
+          "service_4": 4,
+          "service_5": 4,
+          "service_6": 4,
+          "office": 6
+        },
+        {
+          "edu_nursery": 40,
+          "edu_kindergarten": 40,
+          "edu_primary": 40,
+          "edu_middle": 40,
+          "sport": 10,
+          "culture": 10,
+          "health": 13,
+          "social": 10,
+          "service_water": 4,
+          "service_waste": 4,
+          "service_3": 4,
+          "service_4": 4,
+          "service_5": 4,
+          "service_6": 4,
+          "office": 6
+        },
+        {
+          "edu_nursery": 40,
+          "edu_kindergarten": 40,
+          "edu_primary": 40,
+          "edu_middle": 40,
+          "sport": 10,
+          "culture": 10,
+          "health": 13,
+          "social": 10,
+          "service_water": 4,
+          "service_waste": 4,
+          "service_3": 4,
+          "service_4": 4,
+          "service_5": 4,
+          "service_6": 4,
+          "office": 6
+        }
+      ]
+    }
+  ],
+  "fixed_exogenous_bases_across_paths": true,
+  "excluded_from_nonproject_cash": true
+}

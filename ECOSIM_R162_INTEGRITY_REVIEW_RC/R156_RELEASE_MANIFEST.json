@@ -1,0 +1,55 @@
+{
+  "schema": "ECOSIM_R156_RELEASE_MANIFEST_V1",
+  "base_release": "R155",
+  "new_release": "R156",
+  "new_checks": 68,
+  "historical_e2e_candidates": 15,
+  "historical_index_residual": 0.00373333,
+  "current_market_team_session_available": false,
+  "historical_reference_only": true,
+  "full_city_forecast_validated": false,
+  "gameplay_gate": "STOP",
+  "game_changes": 0,
+  "files": {
+    "tools/readonly_intake_r156.py": {
+      "sha256": "556d192e7e1378b0b20a21a853586b54809cf667c24ab3b9b0bf8eef35caabbe",
+      "bytes": 11875
+    },
+    "tools/qualify_r156.py": {
+      "sha256": "989f7ed7c3e04192bccab6ed7ef6fab470f983eda03780644ca29be64843e2ca",
+      "bytes": 10054
+    },
+    "capture/R156_OFFLINE_CAPTURE.html": {
+      "sha256": "021089acc55dec9abe67e629613693ad79e2de0a7f01bb5a4894b46c3266e426",
+      "bytes": 10150
+    },
+    "capture/R156_HISTORICAL_TEST_EXPORT.json": {
+      "sha256": "dc3d62ba008a7bf0a47a35809bdfbba7c2f1aa2feeca2a8976281c6d4f90f83f",
+      "bytes": 2369
+    },
+    "capture/R156_CURRENT_EMPTY_TEMPLATE.json": {
+      "sha256": "c2c3fd1b0de3349ce4dc3a82053c3769555c5e0d35e5364af1277b8dcc7ba05d",
+      "bytes": 1399
+    },
+    "results/R156_QUALIFICATION.json": {
+      "sha256": "e812ab484a622ed6ac392fe8be9d35a28d2d5802785b33e1f328f56d2a4024a0",
+      "bytes": 3298
+    },
+    "results/R156_HISTORICAL_FULL_DEMO/R156_ACQUISITION_RECEIPT.json": {
+      "sha256": "ea7a7d10505016b5ecf192641e8ab00d0f4d20058af8e9e30333f70169a10f74",
+      "bytes": 2498
+    },
+    "results/R156_HISTORICAL_FULL_DEMO/decision/DECISION_DESK.json": {
+      "sha256": "5f5875952e0e529cb0ab91682658b7625f95da362c7b94ab8cff3e162d924471",
+      "bytes": 319462
+    },
+    "README_R156.md": {
+      "sha256": "4849b25d43de7ac936c250643ea538e17f67083e1dc4f344e7335b0954c728e8",
+      "bytes": 5464
+    },
+    "R156_DELIVERY.md": {
+      "sha256": "d638daf6a461c9d1f5c21e8b4753f1aa4ecf1fe4faed3908c9e00a8e23aa819d",
+      "bytes": 1463
+    }
+  }
+}

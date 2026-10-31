@@ -1,0 +1,52 @@
+{
+  "provenance": "EcoSim X-Challenge 2026 megnyitó 2026-10-29, video https://www.youtube.com/watch?v=3GNCkvECOdk; auto-generated Hungarian subtitles; nonbinding when official live config differs",
+  "claims": [
+    {
+      "id": "VIDEO_PROJECTS",
+      "t": "21:08",
+      "claim": "4 projects/year, 20 over 5 years",
+      "hypothetical_default": 4,
+      "applies_to": "presentation of competition rules",
+      "requires": "actual market.maxProjectPerTurn and previous project1 state",
+      "status": "OFFICIAL_SPOKEN_NOT_LIVE_CONFIG"
+    },
+    {
+      "id": "VIDEO_LOAN",
+      "t": "21:57",
+      "claim": "12% borrowing interest mentioned",
+      "hypothetical_rate": 0.12,
+      "requires": "loan product, term, live market rate and limits",
+      "status": "OFFICIAL_SPOKEN_NOT_LIVE_CONFIG"
+    },
+    {
+      "id": "VIDEO_TERMINAL",
+      "t": "39:49",
+      "claim": "Final year-5 rank in league is decisive",
+      "requires": "actual scoring and progression rules",
+      "status": "OFFICIAL_SPOKEN"
+    },
+    {
+      "id": "VIDEO_LEAGUE",
+      "t": "38:23",
+      "claim": "top two league teams expected to advance; certain third places may qualify based on relative closeness",
+      "requires": "final organizer confirmation",
+      "status": "PRELIMINARY_ORAL"
+    },
+    {
+      "id": "VIDEO_MIGRATION",
+      "t": "18:41",
+      "claim": "team results affected by other teams via migration of residents and companies",
+      "requires": "true future transitions",
+      "status": "OFFICIAL_SPOKEN_UNKNOWN_FORMULA"
+    },
+    {
+      "id": "VIDEO_PLAN_FACT",
+      "t": "19:12",
+      "claim": "planned values are estimates; realized facts can differ",
+      "requires": "observations for calibration",
+      "status": "OFFICIAL_SPOKEN"
+    }
+  ],
+  "actual_market_cap": null,
+  "actual_loan_interest": null
+}

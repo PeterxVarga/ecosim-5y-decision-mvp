@@ -1,0 +1,25 @@
+{
+  "schema": "ECOSIM_R148_RELEASE_V1",
+  "build_date": "2026-10-31",
+  "input_version": "R147_20261031",
+  "change_type": "REUSE_AND_INTEGRATE_NO_PARALLEL_ENGINE",
+  "offline_checks": 231,
+  "new_checks": 58,
+  "real_calibration_pairs": 0,
+  "verified_terminal_score": null,
+  "game_writes": 0,
+  "codex_used": false,
+  "gameplay_gate": "STOP",
+  "files": [
+    "tools/annual_transition_r148.py",
+    "tools/readiness_r148.py",
+    "tools/qualify_r148.py",
+    "tools/strategy_5y.py",
+    "tools/policy_tracks.py",
+    "tools/joint_5y.py",
+    "results/R148_QUALIFICATION.json",
+    "results/R148_SOURCE_BOUNDED_100K_ILLUSTRATIVE.json",
+    "results/R148_OFFICIAL_INPUT_GATE.json",
+    "evidence/R148_FINANCE_SOURCE_ANCHORS.json"
+  ]
+}

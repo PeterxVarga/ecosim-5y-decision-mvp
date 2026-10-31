@@ -1,0 +1,65 @@
+{
+  "source_evidence_id": "HISTORICAL_UI_R94_SUMMARY",
+  "capture_mode": "HISTORICAL_REFERENCE",
+  "kind": "PLAN",
+  "recomputed_display_index": 52.483733,
+  "index_reconciliation_status": "AGREES_WITH_DISPLAYED_FACTORS_NOT_SERVER_VERIFIED",
+  "original_display_index": 52.48,
+  "rounding_residual": 0.00373333,
+  "live_state_verified_from_capture": false,
+  "operator_trust_not_server_verified": true,
+  "gameplay_gate": "STOP",
+  "bundle_schema": "ECOSIM_R152_LOCAL_OBSERVATION_BUNDLE_V1",
+  "evidence_files": {
+    "manifest": {
+      "filename": "manifest.json",
+      "sha256": "ed5cd63d76ebf90cf45eafa94ea7b6e4fd01eb1abf337a2628221ded725cbfba",
+      "bytes": 511
+    },
+    "factors": {
+      "filename": "factors_p1_plan.csv",
+      "sha256": "94d0851ac8ea0111b85a9c82e8bfc4200f68d2432b75d15219cea7db7baafa98",
+      "bytes": 849
+    },
+    "parameters": {
+      "filename": "parameters.json",
+      "sha256": "fc490cd98b8699f2cb497233088f77047c15ff564eb4d6ec32543e87674b3aed",
+      "bytes": 221
+    },
+    "project_status": {
+      "filename": "projects_p0_to_p1.csv",
+      "sha256": "1b23d1a54e2c5da5ed4dbbcf33ca9460c6f0b04fd5d07339a2a69b149c164dc7",
+      "bytes": 587
+    },
+    "finance_R94": {
+      "filename": "finance_R94_test_snapshot.csv",
+      "sha256": "97304166cefae515fa75bccfd782ca634408dd8a22d8cfca9d867f60b811d4c0",
+      "bytes": 33071
+    }
+  },
+  "finance_R94_reconciliation": {
+    "status": "HISTORICAL_ACCOUNTING_RECONCILED_NOT_SPENDABLE_BUDGET",
+    "p1_observed_net_ecu": 865588.0,
+    "all_checks_pass": true,
+    "checks": {
+      "p0_income_minus_unreserved_expense_equals_net": true,
+      "p0_unreserved_expense_plus_reserve_equals_total_expense": true,
+      "p1_income_minus_unreserved_expense_equals_net": true,
+      "p1_unreserved_expense_plus_reserve_equals_total_expense": true,
+      "p1_income_equals_total_expense": true,
+      "p1_reserve_equals_wealth_cash": true,
+      "p1_project_oneoff_zero": true,
+      "p1_prior_cash_line_zero": true
+    }
+  },
+  "project_states": {
+    "rows": 35,
+    "prior_running": 6,
+    "new_selected": 0,
+    "previous_project1": false,
+    "is_operator_transcription_not_server_verified": true
+  },
+  "input_classification": "HISTORICAL_TEST_ROUND_NOT_CURRENT",
+  "realized_transition_pair_count": 0,
+  "authoritative_server_state_verified": false
+}

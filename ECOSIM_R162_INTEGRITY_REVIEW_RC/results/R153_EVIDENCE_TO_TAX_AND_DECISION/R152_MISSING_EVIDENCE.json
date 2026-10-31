@@ -1,0 +1,86 @@
+{
+  "schema": "ECOSIM_R152_GAP_REPORT_V1",
+  "packet_mode": "HISTORICAL_REFERENCE",
+  "current_operator_supplied_for_conditional_search": false,
+  "gameplay_gate": "STOP",
+  "independently_server_verified": false,
+  "fields": [
+    {
+      "priority": "P0",
+      "name": "project_cap",
+      "why": "Actual market project limit",
+      "status": "MISSING_OR_UNVERIFIED",
+      "details": "UNKNOWN_OR_INVALID"
+    },
+    {
+      "priority": "P0",
+      "name": "baseline_index_factors",
+      "why": "Observed index factors",
+      "status": "OPERATOR_SUPPLIED_NOT_SERVER_VERIFIED",
+      "details": null
+    },
+    {
+      "priority": "P0",
+      "name": "current_index_weights",
+      "why": "Current market weights",
+      "status": "OPERATOR_SUPPLIED_NOT_SERVER_VERIFIED",
+      "details": null
+    },
+    {
+      "priority": "P0",
+      "name": "active_projects",
+      "why": "Existing projects",
+      "status": "OPERATOR_SUPPLIED_NOT_SERVER_VERIFIED",
+      "details": null
+    },
+    {
+      "priority": "P0",
+      "name": "current_selections",
+      "why": "Already selected projects",
+      "status": "OPERATOR_SUPPLIED_NOT_SERVER_VERIFIED",
+      "details": null
+    },
+    {
+      "priority": "P0",
+      "name": "prior_project1",
+      "why": "Prior project1 special adjustment",
+      "status": "OPERATOR_SUPPLIED_NOT_SERVER_VERIFIED",
+      "details": null
+    },
+    {
+      "priority": "P0",
+      "name": "confirmed_spendable_cash",
+      "why": "Authoritative cash available by year",
+      "status": "MISSING_OR_UNVERIFIED",
+      "details": "FIVE_YEAR_CONFIRMED_ENVELOPES_UNAVAILABLE; scenario-only financing remains"
+    },
+    {
+      "priority": "P0",
+      "name": "committed_costs",
+      "why": "Committed cash obligations",
+      "status": "MISSING_OR_UNVERIFIED",
+      "details": "FIVE_YEAR_CONFIRMED_ENVELOPES_UNAVAILABLE; scenario-only financing remains"
+    },
+    {
+      "priority": "P0",
+      "name": "loan_rates",
+      "why": "Applicable loan rates",
+      "status": "MISSING_OR_UNVERIFIED",
+      "details": "ALL_THREE_NONNEGATIVE_RATES_REQUIRED_FOR_LOAN_MODEL"
+    },
+    {
+      "priority": "P0",
+      "name": "official_preview",
+      "why": "Controlled approved game preview",
+      "status": "MISSING_OR_UNVERIFIED",
+      "details": "NO_SAME_PERIOD_CONTROLLED_PREVIEW"
+    }
+  ],
+  "must_not_infer": [
+    "R94 historical net as available budget",
+    "four/year spoken cap as verified market cap",
+    "p0 FACT to p1 PLAN as realized change",
+    "synthetic proxy as full-year score",
+    "operator-supplied data as independently authenticated server data"
+  ]
+}

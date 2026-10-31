@@ -1,0 +1,139 @@
+{
+  "type": "COST_CALENDAR_ONLY_NOT_ECOSIM_5Y_SIMULATOR",
+  "no_live_actions": true,
+  "score_forecast": "UNKNOWN_NOT_CALCULATED",
+  "final_gameplay_decision": "STOP",
+  "oral_video_scenarios_not_market_parameters": {
+    "hypothetical_projects_per_year": 4,
+    "hypothetical_loan_annual_interest": 0.12,
+    "video_timestamps": [
+      "21:08",
+      "21:57"
+    ],
+    "warning": "Actual market and loan-product config unknown; these are not enforced game rules"
+  },
+  "provenance": "2026-10-30 test-round project cards; manual 2026-10-31; R142A client findings",
+  "annual": [
+    {
+      "year": 1,
+      "new_project_ids": [
+        8,
+        13,
+        27
+      ],
+      "all_started_ids": [
+        8,
+        13,
+        27
+      ],
+      "conservative_project_cash_requirement_ecu": 99000,
+      "signed_client_project_expense_proxy_ecu": 90200,
+      "new_partner_support_label_ecu_not_available_cash": 3500,
+      "positive_maintenance_only_ecu": 3000,
+      "signed_maintenance_ecu": -5800,
+      "funding_status": "UNKNOWN"
+    },
+    {
+      "year": 2,
+      "new_project_ids": [],
+      "all_started_ids": [
+        8,
+        13,
+        27
+      ],
+      "conservative_project_cash_requirement_ecu": 3000,
+      "signed_client_project_expense_proxy_ecu": -5800,
+      "new_partner_support_label_ecu_not_available_cash": 0,
+      "positive_maintenance_only_ecu": 3000,
+      "signed_maintenance_ecu": -5800,
+      "funding_status": "UNKNOWN"
+    },
+    {
+      "year": 3,
+      "new_project_ids": [],
+      "all_started_ids": [
+        8,
+        13,
+        27
+      ],
+      "conservative_project_cash_requirement_ecu": 3000,
+      "signed_client_project_expense_proxy_ecu": -5800,
+      "new_partner_support_label_ecu_not_available_cash": 0,
+      "positive_maintenance_only_ecu": 3000,
+      "signed_maintenance_ecu": -5800,
+      "funding_status": "UNKNOWN"
+    },
+    {
+      "year": 4,
+      "new_project_ids": [],
+      "all_started_ids": [
+        8,
+        13,
+        27
+      ],
+      "conservative_project_cash_requirement_ecu": 3000,
+      "signed_client_project_expense_proxy_ecu": -5800,
+      "new_partner_support_label_ecu_not_available_cash": 0,
+      "positive_maintenance_only_ecu": 3000,
+      "signed_maintenance_ecu": -5800,
+      "funding_status": "UNKNOWN"
+    },
+    {
+      "year": 5,
+      "new_project_ids": [],
+      "all_started_ids": [
+        8,
+        13,
+        27
+      ],
+      "conservative_project_cash_requirement_ecu": 3000,
+      "signed_client_project_expense_proxy_ecu": -5800,
+      "new_partner_support_label_ecu_not_available_cash": 0,
+      "positive_maintenance_only_ecu": 3000,
+      "signed_maintenance_ecu": -5800,
+      "funding_status": "UNKNOWN"
+    }
+  ],
+  "five_year_conservative_project_cash_requirement_sum_ecu": 111000,
+  "warnings": [
+    {
+      "issue": "project_limit_gate_UNKNOWN",
+      "requires": [
+        "maxProjectPerTurn",
+        "project1_active_previous_period",
+        "already_selected_project_ids_current_period"
+      ]
+    },
+    {
+      "year": 1,
+      "issue": "confirmed_financing_UNKNOWN"
+    },
+    {
+      "year": 2,
+      "issue": "confirmed_financing_UNKNOWN"
+    },
+    {
+      "year": 3,
+      "issue": "confirmed_financing_UNKNOWN"
+    },
+    {
+      "year": 4,
+      "issue": "confirmed_financing_UNKNOWN"
+    },
+    {
+      "year": 5,
+      "issue": "confirmed_financing_UNKNOWN"
+    }
+  ],
+  "assumptions": [
+    "all newly started projects treated as nonrepeatable",
+    "positive maintenance every year after start including first",
+    "negative maintenance never counted as funding",
+    "grants reported separately; timing, eligibility and settlement not established",
+    "project delay and nonlinear index impact not computed",
+    "baseline financing, market changes and existing debts not modeled",
+    "existing running projects have zero card values; may have unreported commitments",
+    "later-year project limits and prior states unavailable",
+    "all conditional cash comparisons use user-supplied values not server validation"
+  ]
+}
