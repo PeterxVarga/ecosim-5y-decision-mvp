@@ -1,0 +1,121 @@
+{
+  "schema": "ECOSIM_R165_R94_READONLY_RECONCILIATION_V1",
+  "compared_sources": {
+    "new": "evidence/r165_test_round_browser_20261031/READONLY_EVIDENCE.json",
+    "old_projects": "ECOSIM_R162_INTEGRITY_REVIEW_RC/data/ecosim_projects_20261030.json",
+    "old_finance": "ECOSIM_R162_INTEGRITY_REVIEW_RC/results/R144_R94_FINANCE_RECONCILIATION.json"
+  },
+  "validation": {
+    "projects_matching": 14,
+    "projects_compared": 14,
+    "core_financial_items_matching": 4,
+    "core_financial_items_compared": 4,
+    "service_fee_detail_minus_aggregate_ecu": {
+      "p0_fact": -2,
+      "p1_plan": -2
+    }
+  },
+  "project_details": [
+    {
+      "project_id": 1,
+      "unchanged": true
+    },
+    {
+      "project_id": 2,
+      "unchanged": true
+    },
+    {
+      "project_id": 3,
+      "unchanged": true
+    },
+    {
+      "project_id": 4,
+      "unchanged": true
+    },
+    {
+      "project_id": 5,
+      "unchanged": true
+    },
+    {
+      "project_id": 6,
+      "unchanged": true
+    },
+    {
+      "project_id": 7,
+      "unchanged": true
+    },
+    {
+      "project_id": 8,
+      "unchanged": true
+    },
+    {
+      "project_id": 9,
+      "unchanged": true
+    },
+    {
+      "project_id": 10,
+      "unchanged": true
+    },
+    {
+      "project_id": 11,
+      "unchanged": true
+    },
+    {
+      "project_id": 12,
+      "unchanged": true
+    },
+    {
+      "project_id": 13,
+      "unchanged": true
+    },
+    {
+      "project_id": 14,
+      "unchanged": true
+    }
+  ],
+  "finance_details": [
+    {
+      "label": "A periódus nettó eredményessége",
+      "p0_matches": true,
+      "p1_matches": true,
+      "historical_p0": 962785,
+      "historical_p1": 865588,
+      "observed_p0": 962785,
+      "observed_p1": 865588
+    },
+    {
+      "label": "Bevételek összesen",
+      "p0_matches": true,
+      "p1_matches": true,
+      "historical_p0": 5449828,
+      "historical_p1": 5376812,
+      "observed_p0": 5449828,
+      "observed_p1": 5376812
+    },
+    {
+      "label": "Tartalékképzésre",
+      "p0_matches": true,
+      "p1_matches": true,
+      "historical_p0": 0,
+      "historical_p1": 865588,
+      "observed_p0": 0,
+      "observed_p1": 865588
+    },
+    {
+      "label": "Kiadások összesen hitel & tartalék nélkül",
+      "p0_matches": true,
+      "p1_matches": true,
+      "historical_p0": 4487043,
+      "historical_p1": 4511224,
+      "observed_p0": 4487043,
+      "observed_p1": 4511224
+    }
+  ],
+  "conclusion": "CURRENT_OPENED_TABS_MATCH_HISTORICAL_TEST_ROUND_ON_CHECKED_FIELDS; NOT LIVE 5-YEAR GAME CALIBRATION",
+  "readiness": {
+    "new_market_config_observed": false,
+    "spendable_cash_confirmed": false,
+    "annual_forecast_fact_pair_confirmed": false,
+    "gameplay_gate": "STOP"
+  }
+}
