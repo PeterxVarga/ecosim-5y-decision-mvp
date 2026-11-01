@@ -16,7 +16,7 @@ def sample():
                             {'year':5,'max_project_ids':[], 'max_cost_ecu':0.,'reserve_project_ids':[], 'reserve_cost_ecu':0.}]}
     plans=[{'candidate_id':'P1','project_ids_by_year':[[1],[3],[5],[],[]], 'conservative_project_need_ecu_by_year':[100,90,90,0,0]},
            {'candidate_id':'P2','project_ids_by_year':[[2],[4],[6],[],[]], 'conservative_project_need_ecu_by_year':[80,70,70,0,0]}]
-    d={'schema':'ECOSIM_R149_OFFLINE_DECISION_MVP_V1','gameplay_gate':'STOP','game_writes':0,'run_mode':'HISTORICAL_ILLUSTRATION',
+    d={'schema':'ECOSIM_R149_OFFLINE_DECISION_DESK_RESULT_V1','gameplay_gate':'STOP','game_writes':0,'run_mode':'HISTORICAL_ILLUSTRATION',
        'inputs':{'state':{'sha256':H}},'start_year':1,'candidate_comparison':plans}
     for key in m.bridge.__globals__['KEYS']:
         d[key]={'source_class':'SYNTHETIC_TEST_ONLY','gameplay_gate':'STOP'}

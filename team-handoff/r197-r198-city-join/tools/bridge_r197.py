@@ -24,7 +24,7 @@ def load(path):
 
 def assemble(tradeoff,tradeoff_sha,policy,policy_sha,city=None,city_sha=None):
     if tradeoff.get('schema')!='ECOSIM_R195_TWO_ENVELOPE_TRADEOFF_V1' or tradeoff.get('gameplay_gate')!='STOP' or tradeoff.get('financing_approved') is not False:raise ValueError('R195_PROOF_GATE_FAILED')
-    if policy.get('schema')!='ECOSIM_R149_OFFLINE_DECISION_MVP_V1' or policy.get('gameplay_gate')!='STOP' or policy.get('game_writes')!=0:raise ValueError('R149_PROOF_GATE_FAILED')
+    if policy.get('schema')!='ECOSIM_R149_OFFLINE_DECISION_DESK_RESULT_V1' or policy.get('gameplay_gate')!='STOP' or policy.get('game_writes')!=0:raise ValueError('R149_PROOF_GATE_FAILED')
     pinputs=policy.get('inputs') or {}
     inp=pinputs.get('state') or pinputs.get('read_only_capture') or {}
     if inp.get('sha256')!=tradeoff.get('input_state_sha256'):raise ValueError('STATE_HASH_MISMATCH')

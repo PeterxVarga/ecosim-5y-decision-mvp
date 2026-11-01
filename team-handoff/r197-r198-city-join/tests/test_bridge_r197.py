@@ -6,7 +6,7 @@ H='a'*64
 
 def data():
  t={'schema':'ECOSIM_R195_TWO_ENVELOPE_TRADEOFF_V1','gameplay_gate':'STOP','financing_approved':False,'mode':'historical-test','input_state_sha256':H,'max_model_score':.45,'reserve_model_score':.43,'annual_comparison':[{'year':1}]}
- d={'schema':'ECOSIM_R149_OFFLINE_DECISION_MVP_V1','gameplay_gate':'STOP','game_writes':0,'run_mode':'HISTORICAL_ILLUSTRATION','inputs':{'state':{'sha256':H}},'start_year':1}
+ d={'schema':'ECOSIM_R149_OFFLINE_DECISION_DESK_RESULT_V1','gameplay_gate':'STOP','game_writes':0,'run_mode':'HISTORICAL_ILLUSTRATION','inputs':{'state':{'sha256':H}},'start_year':1}
  for key in m.KEYS:d[key]={'source_class':'SYNTHETIC_TEST_ONLY','gameplay_gate':'STOP'}
  return t,d
 class Tests(unittest.TestCase):
