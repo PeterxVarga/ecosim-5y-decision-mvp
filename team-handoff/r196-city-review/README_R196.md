@@ -34,4 +34,4 @@ Következő *nagy ROI-jú* lépés: friss, ténylegesen megfigyelt füladatok é
 
 ## Kvalifikáció
 
-`python3 -m unittest discover -s team-handoff/r196-city-review/tests -v` – 24 szigorú, offline ellenőrzés. Az eredeti teljes R162–R195 natív teszt külön kvalifikációt kapott; az R196 egyelőre PR-ban ellenőrzendő, nem élesített változtatás.
+`python3 -m unittest discover -s team-handoff/r196-city-review/tests -v` – 26 szigorú, offline ellenőrzés. Az eredeti teljes R162–R195 natív teszt külön kvalifikációt kapott; az R196 egyelőre PR-ban ellenőrzendő, nem élesített változtatás.

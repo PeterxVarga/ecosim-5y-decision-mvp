@@ -12,6 +12,7 @@ import math
 import re
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
+from urllib.parse import urlsplit
 
 SCHEMA = 'ECOSIM_R196_CITY_CROSS_TAB_REVIEW_V1'
 EVIDENCE_SCHEMA = 'ECOSIM_R196_OPERATOR_CITY_VIEWS_V1'
@@ -132,7 +133,14 @@ def review(result, result_hash, evidence=None, *, now=None):
             if not isinstance(source, str) or not source.strip() or len(source) > 512:
                 raise CityHold('EVIDENCE_SOURCE_MISSING_' + key)
             uri = raw.get('source_view')
-            if not isinstance(uri,str) or not uri.startswith('https://edu.ecosim.hu/simulation'):
+            if not isinstance(uri,str):
+                raise CityHold('SOURCE_VIEW_INVALID_' + key)
+            u = urlsplit(uri)
+            expected_path = '/simulation/' + key
+            # A view attribution is only trusted for its exact documented
+            # page. Reject prefix spoofing and accidental login tokens.
+            if (u.scheme != 'https' or u.netloc != 'edu.ecosim.hu'
+                or u.query or u.fragment or u.path.rstrip('/') != expected_path):
                 raise CityHold('SOURCE_VIEW_INVALID_' + key)
             age = now.astimezone(timezone.utc) - _timestamp(raw.get('captured_at_local'))
             if result['mode'] == 'current-readonly' and not -timedelta(minutes=5) <= age <= timedelta(hours=48):

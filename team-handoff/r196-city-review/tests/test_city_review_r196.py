@@ -99,6 +99,14 @@ class CityReviewTests(unittest.TestCase):
         v=evidence();v['tabs']['finance']['source_view']='https://evil.test/'
         self.assertHold(lambda:review(tradeoff('current-readonly'),HASH,v,now=NOW))
 
+    def test_simulation_prefix_spoof_fails(self):
+        v=evidence();v['tabs']['finance']['source_view']='https://edu.ecosim.hu/simulation/finance.evil.test'
+        self.assertHold(lambda:review(tradeoff('current-readonly'),HASH,v,now=NOW))
+
+    def test_url_query_token_fails(self):
+        v=evidence();v['tabs']['income']['source_view']='https://edu.ecosim.hu/simulation/income?token=secret'
+        self.assertHold(lambda:review(tradeoff('current-readonly'),HASH,v,now=NOW))
+
     def test_unsafe_result_fails(self):
         r=tradeoff();r['gameplay_gate']='GO'
         self.assertHold(lambda:review(r,HASH,now=NOW))
