@@ -14,6 +14,13 @@ fi
 [[ -f "$HERE/tools/run_r191_shadow.py" ]] || { echo 'HOLD=R193_RUNNER_MISSING' >&2; exit 2; }
 [[ -f "$HERE/tools/hungarian_decision_r193.py" ]] || { echo 'HOLD=R193_REPORTER_MISSING' >&2; exit 2; }
 [[ -f "$HERE/examples/historical_test_state.json" ]] || { echo 'HOLD=HISTORICAL_FIXTURE_MISSING' >&2; exit 2; }
+[[ -f "$REPO/team-handoff/r189-r190/tools/bounded_shadow_r189.py" ]] || {
+  echo 'HOLD=R189_SHARED_SIBLING_SOURCE_MISSING' >&2; exit 2;
+}
+R189_BLOB="$(git hash-object "$REPO/team-handoff/r189-r190/tools/bounded_shadow_r189.py")"
+[[ "$R189_BLOB" == '5042d7da2d762bd393ab0e6848acee46e2bdbae8' ]] || {
+  echo 'HOLD=R189_SHARED_SIBLING_SOURCE_DRIFT' >&2; exit 2;
+}
 
 OUT="$(mktemp -d "${TMPDIR:-/tmp}/ecosim-r193-native-XXXXXXXX")"
 WORKTREE="$OUT/pinned-r162"

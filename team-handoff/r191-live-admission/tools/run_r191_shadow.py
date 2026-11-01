@@ -12,6 +12,23 @@ import json
 import subprocess
 import sys
 from pathlib import Path
+
+# Reuse exactly one R189 implementation already committed on the sibling lane.
+# Direct Python execution sets sys.path to this tools/ directory, so the sibling
+# is not importable without explicitly resolving its canonical location.
+R189_TOOLS = Path(__file__).resolve().parents[2] / 'r189-r190' / 'tools'
+R189_SOURCE = R189_TOOLS / 'bounded_shadow_r189.py'
+if (not R189_SOURCE.is_file() or R189_SOURCE.is_symlink()
+        or R189_SOURCE.resolve().parent != R189_TOOLS.resolve()):
+    raise SystemExit('HOLD=PINNED_R189_SIBLING_SOURCE_MISSING_OR_UNSAFE')
+_R189_BYTES = R189_SOURCE.read_bytes()
+_R189_BLOB = hashlib.sha1(b'blob ' + str(len(_R189_BYTES)).encode('ascii') + b'\0' + _R189_BYTES).hexdigest()
+if _R189_BLOB != '5042d7da2d762bd393ab0e6848acee46e2bdbae8':
+    raise SystemExit('HOLD=UNREVIEWED_R189_SOURCE_DRIFT')
+sys.path.insert(0, str(R189_TOOLS))
+import bounded_shadow_r189 as _r189_mod
+if Path(getattr(_r189_mod, '__file__', '')).resolve() != R189_SOURCE.resolve():
+    raise SystemExit('HOLD=WRONG_R189_MODULE_ORIGIN')
 from bounded_shadow_r189 import improve,Hold
 from admission_r191 import AdmissionHold,validate_state,validate_r156_bundle,year1_finance
 from catalog_gate_r192 import CatalogHold,validate_catalog
