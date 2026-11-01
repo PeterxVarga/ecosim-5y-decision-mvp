@@ -1,0 +1,19 @@
+{
+  "schema": "ECOSIM_R196_OPERATOR_CITY_VIEWS_V1",
+  "mode": "current-readonly",
+  "tradeoff_sha256": null,
+  "input_state_sha256": null,
+  "catalog_sha256": null,
+  "tabs": {
+    "summary": {"status":"MISSING"},
+    "projects": {"status":"MISSING"},
+    "institutions": {"status":"MISSING"},
+    "transport": {"status":"MISSING"},
+    "income": {"status":"MISSING"},
+    "population": {"status":"MISSING"},
+    "corporations": {"status":"MISSING"},
+    "loans": {"status":"MISSING"},
+    "finance": {"status":"MISSING"},
+    "analysis": {"status":"MISSING"}
+  }
+}
