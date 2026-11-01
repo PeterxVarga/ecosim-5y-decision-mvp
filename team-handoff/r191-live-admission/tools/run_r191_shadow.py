@@ -14,6 +14,7 @@ import sys
 from pathlib import Path
 from bounded_shadow_r189 import improve,Hold
 from admission_r191 import AdmissionHold,validate_state,validate_r156_bundle,year1_finance
+from catalog_gate_r192 import CatalogHold,validate_catalog
 
 R162_PIN='9d2d17d822bb97a210151e269454a0432a1952ae'
 
@@ -41,7 +42,7 @@ def verify_source(root):
     return top
 
 
-def run(root,state_path,annual_budget,cap,*,mode,r156_bundle=None,year1_finance_path=None,now=None):
+def run(root,state_path,annual_budget,cap,*,mode,r156_bundle=None,year1_finance_path=None,card_catalog_path=None,now=None):
     root=Path(root).resolve();state_path=Path(state_path).resolve()
     verify_source(root)
     if type(annual_budget) is not int or not 0<=annual_budget<=1_000_000_000_000:
@@ -50,10 +51,6 @@ def run(root,state_path,annual_budget,cap,*,mode,r156_bundle=None,year1_finance_
     # Import exactly the pinned R162 hardened parser, not json.loads in this runner.
     sys.path.insert(0,str(root/'tools'))
     from json_integrity_r162 import read_json
-    from strategy_5y import search,derive_config
-    from portfolio_5y import project_index
-    from robust_decision_r157 import replay
-    from independent_audit_r160 import audit_plan
 
     state=read_json(state_path)
     state_mode={'historical-test':'historical','current-readonly':'current'}.get(mode)
@@ -63,16 +60,24 @@ def run(root,state_path,annual_budget,cap,*,mode,r156_bundle=None,year1_finance_
     if state_mode=='current':
         if r156_bundle is None or year1_finance_path is None:
             raise Hold('CURRENT_R156_BUNDLE_AND_YEAR1_FINANCE_REQUIRED')
+        if card_catalog_path is None:
+            raise Hold('CURRENT_35_CARD_OBSERVATION_REQUIRED')
         capture=validate_r156_bundle(state,r156_bundle,now=now)
         finance=year1_finance(read_json(Path(year1_finance_path)),state,
                               illustrative_first_year_budget=annual_budget)
         admission['r156_capture']=capture
         admission['year1_finance']=finance
+        admission['catalog_parity']=validate_catalog(read_json(Path(card_catalog_path)),state,
+            read_json(root/'data/ecosim_projects_20261030.json'),now=now)
     else:
-        if r156_bundle is not None or year1_finance_path is not None:
+        if r156_bundle is not None or year1_finance_path is not None or card_catalog_path is not None:
             raise Hold('HISTORICAL_RUN_MUST_NOT_ACCEPT_LIVE_ADMISSION_DOCUMENTS')
         admission['year1_finance']={'status':'HISTORICAL_HYPOTHETICAL_ENVELOPE_ONLY'}
     start_year=admission['current_period'];budgets=[annual_budget]*(6-start_year)
+    from strategy_5y import search,derive_config
+    from portfolio_5y import project_index
+    from robust_decision_r157 import replay
+    from independent_audit_r160 import audit_plan
     idx=project_index();cfg=derive_config(state,idx,start_year,budgets,cap)
     if cfg['initial_active']!=frozenset(admission['active']) or cfg['fixed_first']!=frozenset(admission['fixed']):
         raise Hold('R162_NORMALIZATION_OR_CAPTURE_DRIFT')
@@ -123,6 +128,7 @@ def main(argv=None):
     p.add_argument('--mode',choices=['historical-test','current-readonly'],required=True)
     p.add_argument('--r156-bundle',type=Path)
     p.add_argument('--year1-finance',type=Path)
+    p.add_argument('--current-card-catalog',type=Path)
     p.add_argument('--annual-budget',type=int,required=True)
     p.add_argument('--cap',type=int,required=True)
     p.add_argument('--out',type=Path,required=True)
@@ -134,8 +140,9 @@ def main(argv=None):
     if dest.exists():raise SystemExit('HOLD: Existing output cannot be overwritten')
     try:
         receipt=run(repo,a.state,a.annual_budget,a.cap,mode=a.mode,
-                    r156_bundle=a.r156_bundle,year1_finance_path=a.year1_finance)
-    except (Hold,AdmissionHold,ValueError,OSError,KeyError,TypeError) as exc:
+                    r156_bundle=a.r156_bundle,year1_finance_path=a.year1_finance,
+                    card_catalog_path=a.current_card_catalog)
+    except (Hold,AdmissionHold,CatalogHold,ValueError,OSError,KeyError,TypeError) as exc:
         raise SystemExit('HOLD: '+str(exc)) from None
     # Atomic exclusive create: never modify existing output or input evidence.
     dest.parent.mkdir(parents=True,exist_ok=True)
