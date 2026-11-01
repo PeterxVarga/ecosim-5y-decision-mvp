@@ -1,0 +1,90 @@
+{
+  "provenance": {
+    "source": "R141_TEST_ROUND_P1_HISTORICAL_NOT_LIVE",
+    "captured_at_local": "2026-10-30T19:39:03+01:00",
+    "team": "Jutalom a nap végén",
+    "market": "Z",
+    "round": "Tesztforduló",
+    "current_period": 1,
+    "source_evidence_id": "R141_P1_PLUS_PROJECTS_20261030;CAP_AND_PREVIOUS_PROJECT1_ARE_HYPOTHESES"
+  },
+  "market": {
+    "maxProjectPerTurn": 4,
+    "cap_source": "ILLUSTRATIVE_NOT_LIVE_VERIFIED",
+    "short_loan_max": null,
+    "long_loan_max": null,
+    "loan_constraints_source": null,
+    "loan_rate_short": null,
+    "loan_rate_long": null,
+    "loan_rate_variable": null,
+    "smartcity_total_weights": null
+  },
+  "team": {
+    "project1_active_previous_period": false,
+    "confirmed_spendable_cash_ecu_by_year": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "committed_costs_ecu_by_year": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "already_selected_new_project_ids_current_period": [],
+    "new_selection_count_source": "ASSUMED_FOR_HISTORICAL_SCENARIO",
+    "confirmed_spendable_cash_source": "UNKNOWN_NOT_PROVIDED",
+    "initially_active_project_ids": [
+      14,
+      22,
+      23,
+      24,
+      34,
+      35
+    ],
+    "baseline_smartcity_factors": {
+      "Fizetőképes piac": 72.5,
+      "Vállalkozások száma": 50.45,
+      "Vállalkozóbarátság": 28.33,
+      "Foglalkoztatottság": 97.31,
+      "Fenntarthatóság": 49.39,
+      "Vízgazdálkodás": 53,
+      "Levegőminőség": 50.11,
+      "Zöld területek aránya": 30.95,
+      "Hulladékgazdálkodási helyzet": 49.16,
+      "Adminisztráció": 30.17,
+      "Adósság / vagyon": 100,
+      "Lakásgazdálkodás": 36.4,
+      "Digitalizáció": 74.65,
+      "Közbiztonság": 31.27,
+      "Oktatási intézmények": 62.11,
+      "Egészségügy": 45.98,
+      "Szociális": 66.76,
+      "Sport": 41.94,
+      "Művelődés": 41.93,
+      "Rossz szoc. helyzetben lévők aránya": 20.98,
+      "Átlagos lakásérték": 50.59,
+      "Településfejlettség": 55.6,
+      "Közlekedési minőség": 60.86,
+      "Tömegközlekedők aránya, %": 60.19,
+      "Autók száma / 100 fő": 47.48,
+      "Lakossági viszonyok/elégedettség": 17.93,
+      "Munkakörülmények": 48.7,
+      "Lakosság képzettsége": 20.64,
+      "Munkanélküli arány": 2.69
+    }
+  },
+  "verification": {
+    "game_preview_candidate": null,
+    "game_preview_index": null,
+    "game_preview_cashflow_ecu": null,
+    "preview_reversible_and_owner_approved": false,
+    "game_preview_baseline_index": null,
+    "original_state_restored_and_verified": false
+  },
+  "finance_counterfactual": null
+}
