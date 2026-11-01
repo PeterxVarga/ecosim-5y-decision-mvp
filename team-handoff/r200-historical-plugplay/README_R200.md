@@ -12,11 +12,12 @@ R195/R199 precisely replays two five-year project schedules under three historic
 - R175B crosswalk 29 historical factor mappings; no proof of full official public 26 labels versus 29 client factors formula equivalence.
 - Historical R154 four-tax and R155 six-fee source formula components evaluated using synthetic exogenous future city bases. R94 observed first-year raw four-tax sum: 499,925; observed six-fee sum: 1,802,870. Synthetic first-year modeled baselines: 454,368.608 ECU and 369,571.95112968 ECU. Their monetary scales and assumptions have not been matched; this discrepancy is a falsification prompt, not a quantified model-error claim.
 - The six displayed fee component values exceed the cash-flow fee subtotal by 2 units in both observed columns; the tool retains the discrepancy.
-- The two exact R195 schedules × three synthetic fiscal/operating paths are reused from the R199 report with checked annual IDs and costs. Scenario-specific dominance is descriptive only, on a two-candidate sample.
+- The two exact R195 schedules × three synthetic fiscal/operating paths are reused from the R199 report with checked annual IDs and costs.
+- **Expanded historical candidate comparison:** hash-locked R149 original full decision desk contains 15 further five-year project schedules × three tax/operating paths (45 calculations); R199 adds two nonidentical full schedules × three paths (6). The result is 17 distinct candidates and 51 conditional project-policy pairs. For each path a three-objective (partial index, partial net, hypothetical zero-opening cash stress) sample Pareto set is recomputed from the existing calculators. Not a global optimizer, and not a calibrated live projection.
 
 ## Tools and semantics
 
-The corpus loader uses one versioned JSON profile with 15 source roles, explicit source class, content SHA256, team/market/round/year identity. It emits R200.json and R200_HU.md including a ten-tab coverage matrix, factual R94 financial rows, R94 versus synthetic-basis discrepancy, and the partial R199 paired analysis.
+The corpus loader uses one versioned JSON profile with 16 source roles, explicit source class, content SHA256, team/market/round/year identity. It emits R200.json and R200_HU.md including a ten-tab coverage matrix, factual R94 financial rows, R94 versus synthetic-basis discrepancy, and the partial R199 paired analysis.
 
 It rejects JSON duplicate keys/nonfinite numbers, altered source hashes, path traversal, missing source roles, historical/current mode mixing, and accidental reuse of exact archived historical bytes as current evidence. It NEVER calls the EcoSim website or uses credential data.
 

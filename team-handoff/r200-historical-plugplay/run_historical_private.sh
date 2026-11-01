@@ -8,7 +8,7 @@ AUDIT="$SRC/ecosim-r168-audit/r175b-evidence"
 NATIVE="$SRC/ecosim-r199-native-20261102"
 R195="/tmp/ecosim-r195-tradeoff-2qiKmOEe"
 FIX="$HERE/fixtures"
-PROFILE="$HERE/profiles/historical_R94_R199.json"
+PROFILE="$HERE/profiles/historical_R94_R200.json"
 
 # Guard BEFORE any source copies, because the destination GitHub repo is public.
 for f in "$FIX/institutions_R94_readonly.json" "$FIX/R199_EXACT_PROJECT_POLICY_REPLAY.json" "$PROFILE"; do
@@ -28,6 +28,7 @@ copy_if_needed "$AUDIT/source/CROSSWALK.csv" "$FIX/R175B_factor_crosswalk.csv"
 copy_if_needed "$AUDIT/R175B_QUALIFICATION.json" "$FIX/R175B_QUALIFICATION.json"
 copy_if_needed "$R195/TRADEOFF.json" "$FIX/R195_TWO_PROJECT_PLANS.json"
 copy_if_needed "$NATIVE/native-output/R199.json" "$FIX/R199_EXACT_PROJECT_POLICY_REPLAY.json"
+copy_if_needed "$SRC/ecosim-r197-research-L62ruUfD/policy/DECISION_DESK.json" "$FIX/R149_COMPLETE_HISTORICAL_DECISION_DESK.json"
 if [[ ! -e "$PROFILE" ]]; then
  python3 -I -B "$HERE/tools/corpus_r200.py" --create-historical-profile "$PROFILE"
 fi

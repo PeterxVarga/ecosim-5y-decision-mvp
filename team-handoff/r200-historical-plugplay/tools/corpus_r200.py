@@ -23,6 +23,7 @@ ASSETS={
  "taxonomy_qualification":"team-handoff/r200-historical-plugplay/fixtures/R175B_QUALIFICATION.json",
  "r195":"team-handoff/r200-historical-plugplay/fixtures/R195_TWO_PROJECT_PLANS.json",
  "r199":"team-handoff/r200-historical-plugplay/fixtures/R199_EXACT_PROJECT_POLICY_REPLAY.json",
+ "r149":"team-handoff/r200-historical-plugplay/fixtures/R149_COMPLETE_HISTORICAL_DECISION_DESK.json",
  "tax":"ECOSIM_R162_INTEGRITY_REVIEW_RC/inputs/tax_counterfactual_r153.synthetic.json",
  "tax_revenue":"ECOSIM_R162_INTEGRITY_REVIEW_RC/inputs/tax_revenue_r154.synthetic.json",
  "operating":"ECOSIM_R162_INTEGRITY_REVIEW_RC/inputs/operating_r155.synthetic.json",
@@ -179,11 +180,21 @@ def inspect(profile,profile_path):
  check(len(catalog["numeric_observations"])==catalog["numeric_count"] and
        len(catalog["editable_fields"])==catalog["editable_count"],"INSTITUTION_NUMERIC_COVERAGE")
  taxonomy=csvdata(sources["taxonomy"])
- r195=docs["r195"];r199=docs["r199"]
+ r195=docs["r195"];r199=docs["r199"];desk=docs["r149"]
  check(r195["mode"]==r199["mode"]=="historical-test" and r199["gameplay_gate"]=="STOP"
        and r199["actual_cash_approved"] is False,"R199_NOT_HISTORICAL")
  check(r195["input_state_sha256"]==r199["source_state_sha256"]==
        sha(sources["baseline_state"]),"PROJECT_MODEL_SOURCE_DRIFT")
+ check(r199["r149_sha256"]==sha(sources["r149"]) and
+       desk["inputs"]["state"]["sha256"]==sha(sources["baseline_state"]) and
+       desk["run_mode"]=="HISTORICAL_ILLUSTRATION" and
+       desk["gameplay_gate"]=="STOP" and desk["game_writes"]==0,
+       "R149_R199_PROVENANCE_OR_GAME_GATE")
+ check(all(desk["inputs"][label]["sha256"]==sha(sources[role])
+       for label,role in (("tax_scenarios","tax"),
+                          ("tax_revenue_scenarios","tax_revenue"),
+                          ("operating_scenarios","operating"))),
+       "R149_SYNTHETIC_MODEL_SOURCE_HASH")
  check(r195["source_pin"]==r199["source_pin"] and
        len(r199["plans"])==2 and r199["project_policy_pairs"]==6,"R199_COVERAGE")
  for plan in r199["plans"]:
@@ -257,6 +268,52 @@ def inspect(profile,profile_path):
    candidates.append({"policy":path,"plan":role,"partial_index":a[0],
        "partial_net_ecu":a[1],"hypothetical_cash_stress_ecu":-a[2],
        "dominated_in_this_two_candidate_sample":dominated})
+ # Highest evidence-backed comparison: union the original 15 R149 schedules
+ # with the 2 newly replayed exact R195 schedules. This is a BOUNDED sample,
+ # NOT 17 novel optimized plans or the 5-year city optimum.
+ old_candidates=desk["candidate_comparison"]
+ old_pairs=desk["r158_annual_partial_cash_timing"]["combinations"]
+ check(len(old_candidates)==15 and len(old_pairs)==45,"R149_15_X_3")
+ candidate_lookup={q["candidate_id"]:q for q in old_candidates}
+ check(len(candidate_lookup)==15,"R149_DUPLICATE_CANDIDATES")
+ r199_ids={x["plan"] for x in r199["plans"]}
+ check(not (set(candidate_lookup)&r199_ids),"R149_R195_CANDIDATE_ID_COLLISION")
+ all_pairs=[]
+ for entry in old_pairs:
+  cid=entry["candidate_id"];p=candidate_lookup.get(cid)
+  check(p is not None,"R149_UNKNOWN_CANDIDATE")
+  check([x["projects_started_ids"] for x in entry["annual_rows"]]==p["project_ids_by_year"] and
+        [x["project_card_need_ecu"] for x in entry["annual_rows"]]==p["conservative_project_need_ecu_by_year"],
+        "R149_YEAR_COST_MISMATCH")
+  all_pairs.append({"policy":entry["path_id"],"plan":cid,
+   "partial_index":entry["conditional_terminal_mapped_proxy_delta"],
+   "partial_net_ecu":entry["five_year_partial_net_after_card_cost_ecu"],
+   "hypothetical_cash_stress_ecu":
+     entry["hypothetical_peak_zero_opening_cash_shortfall_positive_receipts_deferred_ecu"]})
+ all_pairs.extend({k:x[k] for k in ("policy","plan","partial_index","partial_net_ecu",
+                 "hypothetical_cash_stress_ecu")} for x in candidates)
+ paths=sorted({p["policy"] for p in candidates})
+ check(len(paths)==3 and len(all_pairs)==51 and
+       all(len([a for a in all_pairs if a["policy"]==path])==17 for path in paths),
+       "R149_R199_51_PAIR_UNION")
+ front=[]
+ for path in paths:
+  group=[v for v in all_pairs if v["policy"]==path]
+  survivors=[]
+  for a in group:
+   v=(a["partial_index"],a["partial_net_ecu"],-a["hypothetical_cash_stress_ecu"])
+   check(all(type(z) in (float,int) and math.isfinite(z) for z in v),
+         "NONFINITE_CONDITIONAL_MODEL_OBJECTIVE")
+   dominated=any(
+     all(x>=y-1e-7 for x,y in zip(
+       (b["partial_index"],b["partial_net_ecu"],-b["hypothetical_cash_stress_ecu"]),v))
+     and any(x>y+1e-7 for x,y in zip(
+       (b["partial_index"],b["partial_net_ecu"],-b["hypothetical_cash_stress_ecu"]),v))
+       for b in group if b is not a)
+   if not dominated:survivors.append(a["plan"])
+  front.append({"policy":path,"candidates":len(group),
+                "nondominated_sample_ids":sorted(survivors),
+                "not_global_optimum":True})
  return {"schema":OUTPUT_SCHEMA,"mode":"historical-test",
   "status":"PASS_ALL_AVAILABLE_TEST_SOURCE_ACCOUNTING_NO_CITY_OPTIMUM",
   "identity":ident,
@@ -281,6 +338,10 @@ def inspect(profile,profile_path):
   "ten_tab_evidence":{key:{"label":v[0],"status":v[1],"evidence":v[2]}
                       for key,v in TABS.items()},
   "r199_exact_test_scenarios":candidates,
+  "conditional_candidate_union":{"r149_old_candidates":15,"r195_exact_candidates":2,
+    "candidate_count":17,"scenario_pairs":len(all_pairs),
+    "bounded_sample_front_by_policy":front,
+    "not_server_scored_or_global_optimum":True},
   "observed_vs_synthetic_fiscal_reconciliation":measured_vs_model,
   "model_constraints":{"r195_budget_source":"HYPOTHESIS_NOT_APPROVED_CASH",
      "future_city_bases":"SYNTHETIC_EXOGENOUS",
@@ -336,7 +397,18 @@ def markdown(v):
   lines.append("| "+x["policy"]+" | "+x["plan"]+" | "+str(x["partial_index"])+
        " | "+str(x["partial_net_ecu"])+" | "+str(x["hypothetical_cash_stress_ecu"])+
        " | "+str(x["dominated_in_this_two_candidate_sample"])+" |")
- lines+=["","## Fennmaradó modellhatárok",""]
+ u=v["conditional_candidate_union"]
+ lines+=["","## Az összes már meglévő projektjelölt közös, feltételes döntési halmaza","",
+   "**R149 15 korábbi ötéves jelölt + R195 2 pontos terv = 17 külön jelölt, "+
+   str(u["scenario_pairs"])+" részmodell-párosítás. Ez újrafelhasználás, nem új optimalizáló.**","",
+   "| Szintetikus adó- és működési pálya | Vizsgált tervek | Mintabeli, háromtengelyes Pareto-jelöltek |",
+   "|---|---:|---|"]
+ for row in u["bounded_sample_front_by_policy"]:
+  lines.append("| "+row["policy"]+" | "+str(row["candidates"])+" | "+
+     ", ".join(row["nondominated_sample_ids"])+" |")
+ lines+=["","A Pareto csak a meglévő 17 projekttervre és a rögzített három részmodell-"
+   "pályára vonatkozik: nem bizonyít globális optimumot vagy tényleges pénzügyi megvalósíthatóságot.","",
+   "## Fennmaradó modellhatárok",""]
  for a,b in v["model_constraints"].items():lines.append("- "+a+": "+b)
  lines+=["","## Plug-and-play adatcsere",
    "Az egységes profil minden bemenethez forrásosztályt, SHA-256-ot és szerepet rendel. "

@@ -54,6 +54,10 @@ class R200Tests(unittest.TestCase):
   self.assertEqual({x['plan'] for x in r['r199_exact_test_scenarios']},
                    {'R195-max','R195-reserve'})
   self.assertFalse(r['citywide_optimum_certified'])
+  self.assertEqual(r['conditional_candidate_union']['candidate_count'],17)
+  self.assertEqual(r['conditional_candidate_union']['scenario_pairs'],51)
+  self.assertEqual(len(r['conditional_candidate_union']['bounded_sample_front_by_policy']),3)
+  self.assertTrue(all(row['candidates']==17 for row in r['conditional_candidate_union']['bounded_sample_front_by_policy']))
  def test_ten_views_not_10_complete(self):
   x=self.result()
   self.assertEqual(len(x['ten_tab_evidence']),10)
@@ -64,6 +68,9 @@ class R200Tests(unittest.TestCase):
   self.assertEqual(len(r['sources']),len(ASSETS))
   for key,item in self.p['sources'].items():
    self.assertEqual(item['sha256'],r['sources'][key]['sha256'])
+ def test_r149_provenance_tamper_holds(self):
+  self.p['sources']['r149']['sha256']='0'*64
+  self.hold(lambda:self.result(),'SOURCE_SHA_r149')
  def test_source_tamper_holds(self):
   self.p['sources']['finance']['sha256']='0'*64
   self.hold(lambda:self.result(),'SOURCE_SHA_finance')
