@@ -17,7 +17,7 @@ class RunnerIntegrationShims(unittest.TestCase):
         (self.root/'data'/'ecosim_projects_20261030.json').write_text('{}')
         self.state_path=self.base/'state.json';self.state_path.write_bytes((ROOT/'examples'/'historical_test_state.json').read_bytes())
         self.state=json.loads(self.state_path.read_text())
-        self.idx={i:dict(id=i,name='mock-'+str(i),startup_cost=0,investment=0,maintenance_cost=0,
+        self.idx={i:dict(id=i,name='mock-'+str(i),startup_cost=0,investment=0,maintenance_cost=0,partner_support=0,
                          project_conditions=[],effects=[]) for i in range(1,36)}
         self.calls=[];self.result_gate='STOP';self.first_invalid=False
         def audit_plan(idx,*,starts,**kwargs):
@@ -41,7 +41,8 @@ class RunnerIntegrationShims(unittest.TestCase):
             'strategy_5y':types.SimpleNamespace(search=search,derive_config=cfg),
             'portfolio_5y':types.SimpleNamespace(project_index=lambda:self.idx),
             'robust_decision_r157':types.SimpleNamespace(replay=replay),
-            'independent_audit_r160':types.SimpleNamespace(audit_plan=audit_plan)}
+            'independent_audit_r160':types.SimpleNamespace(audit_plan=audit_plan),
+            'r142_proxy_reference':types.SimpleNamespace(COEFF={'Digitalizáció':1})}
     def go(self):
         with patch.object(runner,'verify_source',return_value=self.root.parent), patch.dict(sys.modules,self.modules):
             return runner.run(self.root,self.state_path,100000,4,mode='historical-test')
@@ -49,6 +50,9 @@ class RunnerIntegrationShims(unittest.TestCase):
         r=self.go();self.assertEqual(r['schema'],'ECOSIM_R191_HARDENED_PINNED_SHADOW_V1')
         self.assertEqual(r['gameplay_gate'],'STOP');self.assertFalse(r['actual_gameplay_approved'])
         self.assertIn(('search','scenario_min'),self.calls)
+        self.assertIn('human_explanation_hu',r)
+        self.assertIn('Mit válasszunk most',r['human_explanation_hu']['markdown'])
+        self.assertIn('TÖRTÉNETI TESZT',r['human_explanation_hu']['markdown'])
         self.assertTrue(r['project_set_preserved']);self.assertFalse(r['admission']['official_server_attested'])
         self.assertTrue(r['annual_envelopes'][1]['basis']=='HYPOTHETICAL_UNVERIFIED')
     def test_selects_next_auditable_seed(self):

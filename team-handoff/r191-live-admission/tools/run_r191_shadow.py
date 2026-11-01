@@ -15,6 +15,7 @@ from pathlib import Path
 from bounded_shadow_r189 import improve,Hold
 from admission_r191 import AdmissionHold,validate_state,validate_r156_bundle,year1_finance
 from catalog_gate_r192 import CatalogHold,validate_catalog
+from hungarian_decision_r193 import explain as hungarian_explain
 
 R162_PIN='9d2d17d822bb97a210151e269454a0432a1952ae'
 
@@ -118,6 +119,10 @@ def run(root,state_path,annual_budget,cap,*,mode,r156_bundle=None,year1_finance_
         actual_gameplay_approved=False,actual_live_score_forecast_verified=False,
         live_ready_decision_authorization=False,gameplay_gate='STOP')
     if receipt['r162_result_game_action']!='STOP':raise Hold('R162_GAME_ACTION_GATE_NOT_STOP')
+    # R193: generate an auditable Hungarian recommendation only AFTER all original
+    # R156/R160/R162/R189/R191/R192 gates succeeded. Pure, deterministic prose.
+    from r142_proxy_reference import COEFF
+    receipt['human_explanation_hu']=hungarian_explain(receipt,idx,modeled_metrics=set(COEFF))
     return receipt
 
 
@@ -152,6 +157,7 @@ def main(argv=None):
             f.write('\n')
     except FileExistsError:raise SystemExit('HOLD: Output already created by another process') from None
     print('R191=PASS_MODEL_SHADOW_ONLY GAME_ACTION_GATE=STOP OUTPUT='+str(dest))
+    print(receipt['human_explanation_hu']['markdown'])
     return receipt
 
 if __name__=='__main__':main()
