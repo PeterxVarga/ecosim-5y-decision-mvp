@@ -29,7 +29,12 @@ spec.loader.exec_module(r207)
 SOURCE_BLOBS = {
     'strategy_5y.py':'ebc0022248f3cb5cd8f6fb4123f99f52ad60f87f',
     'portfolio_5y.py':'4b81b17e28c30ef6d2026edfdeb22ea2430deee2',
-    'independent_audit_r160.py':'baeb6bcc9e7e375e12a22f8f753c202325ebef8e'
+    'independent_audit_r160.py':'baeb6bcc9e7e375e12a22f8f753c202325ebef8e',
+    'tax_response_r153.py':'1e58e95ce17a3830d915a9159f45c5700fe1ebd8',
+    'tax_revenue_r154.py':'8fdb62126a78dd8bd51b9203f3a8765863d42540',
+    'operating_cash_r155.py':'0e38a3ea1b9718cbc03cfd0f36ff80e5ad4bbb36',
+    'temporal_cash_r158.py':'2d6c50266e5a214f2013a344c18a9878c5e42365',
+    'readonly_intake_r156.py':'af410a3df77a2ab1696b944d9835c80e42785303'
 }
 
 def run():
