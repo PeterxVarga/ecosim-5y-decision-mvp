@@ -45,11 +45,18 @@ def first_year_options(state, capture, finance, catalog, searches, *, requested_
          finance.get("status") == "PASS_OPERATOR_DECLARED_YEAR1_ENVELOPE_ONLY" and
          finance.get("actual_server_financing_approved") is False and
          finance.get("gameplay_gate") == "STOP", "YEAR1_FINANCE_GATE")
-    need(isinstance(catalog, dict) and catalog.get("schema") == "ECOSIM_R192_CATALOG_PARITY_V1" and
-         catalog.get("status") == "PASS_OPERATOR_REPORTED_35_CARD_DEFINITION_PARITY_ONLY" and
-         catalog.get("observed_card_count") == 35 and catalog.get("server_attested") is False and
-         catalog.get("gameplay_gate") == "STOP", "R192_CATALOG_GATE")
-    # The original R192 validator is invoked by the CLI, not bypassed here.
+    need(isinstance(catalog,dict) and (
+        (catalog.get("schema") == "ECOSIM_R192_CATALOG_PARITY_V1" and
+         catalog.get("status") == "PASS_OPERATOR_REPORTED_35_CARD_DEFINITION_PARITY_ONLY") or
+        (catalog.get("schema") == "ECOSIM_R212_SOURCE_ADAPTED_CATALOG_V1" and
+         catalog.get("status") == "PASS_OPERATOR_CAPTURE_COMPLETE_WITH_CATALOG_DRIFT_NOT_SERVER_ATTESTED" and
+         isinstance(catalog.get("current_card_definition_drift_ids"),list) and
+         catalog["current_card_definition_drift_ids"])
+        ) and catalog.get("observed_card_count") == 35 and
+        catalog.get("server_attested") is False and catalog.get("gameplay_gate") == "STOP",
+        "R192_CATALOG_GATE")
+    # R192 remains the default; R212 is an explicitly opted-in source-adapted mode,
+    # with independently validated full current card definitions and R160 plan audit.
     need(finite(requested_budget) and requested_budget >= 0, "ILLUSTRATIVE_BUDGET")
     need(finite(finance.get("current_year_budget_ceiling_ecu")) and
          requested_budget <= finance["current_year_budget_ceiling_ecu"] + 1e-7 and
@@ -212,6 +219,11 @@ def first_year_options(state, capture, finance, catalog, searches, *, requested_
             "mode": "current-readonly", "gameplay_gate": "STOP", "game_writes": 0,
             "current_server_authenticated": False, "finance_server_approved": False,
             "market": p.get("market"), "period": p["current_period"],
+            "project_catalog_source_schema":catalog["schema"],
+            "source_adapted_card_drift_ids":catalog.get("current_card_definition_drift_ids",[]),
+            "source_adapted_semantic_or_dependency_drift_ids":catalog.get("semantic_or_dependency_drift_ids",[]),
+            "current_observed_card_catalog_sha256":catalog.get("current_catalog_sha256"),
+            "current_card_catalog_source_evidence_id":catalog.get("source_evidence_id"),
             "requested_illustrative_year1_card_budget_ecu": requested_budget,
             "selected_options": chosen, "selected_count": len(chosen),
             "distinct_possible_first_actions": len(candidates), "audit_rejections": rejected,
@@ -230,6 +242,14 @@ def explain(packet):
     lines = ["# EcoSim – éles forduló előtti, csak olvasható döntési alternatívák", "",
              "**Játékmódosítás: STOP. A források kezelői megfigyelések, nem szerverhitelesítettek.**", "",
              "Az aktuális fordulóhoz egyeztetett, R160-auditált elsőéves alternatívák:", ""]
+    if packet.get("source_adapted_card_drift_ids"):
+        changed=", ".join(map(str,packet["source_adapted_card_drift_ids"]))
+        lines.extend(["**R212 kártyaadat-adaptáció**: a korábbi tesztkatalógushoz képest",
+                      f"megváltozott kártyaazonosítók: {changed}.",
+                      "A kereső a kezelő által rögzített jelenlegi 35 kártya adatait",
+                      "használta memóriában; a történeti keresőforrás változatlan.",
+                      "A szerveroldali kártyafeltételek, pontozás és finanszírozás",
+                      "**NEM hitelesítettek**. Kötelező emberi ellenőrzés.", ""])
     for i, item in enumerate(packet["selected_options"], 1):
         ids = ", ".join(str(v) for v in item["first_year_new_project_ids"]) or "Nincs új projekt"
         lines.extend([f"## {i}. alternatíva – {ids}",
@@ -256,24 +276,42 @@ def run_cli():
     ap.add_argument("--current-card-catalog", type=Path, required=True)
     ap.add_argument("--year1-budget", type=int, required=True, help="Explicit illustrative project-card ceiling; NOT approved funds")
     ap.add_argument("--out-dir", type=Path, required=True)
+    ap.add_argument("--allow-source-adapted-current-catalog", action="store_true",
+                    help="Opt in to validated 35-card current catalog drift; historical R162 files remain unchanged.")
     args = ap.parse_args()
     root = args.repo_root.resolve()
     tools = root / "ECOSIM_R162_INTEGRITY_REVIEW_RC" / "tools"
     r191tools = root / "team-handoff/r191-live-admission/tools"
     need(tools.is_dir() and r191tools.is_dir(), "ORIGINAL_MODULE_LAYOUT")
-    sys.path[:0] = [str(r191tools), str(tools)]
+    sys.path[:0] = [str(root / "team-handoff/r212-current-catalog"),str(r191tools),str(tools)]
     from json_integrity_r162 import read_json
     from admission_r191 import validate_state, validate_r156_bundle, year1_finance
-    from catalog_gate_r192 import validate_catalog
+    from catalog_gate_r192 import validate_catalog, CatalogHold
+    import strategy_5y
     from strategy_5y import search
+    from catalog_adapter_r212 import prepare as prepare_current_catalog, original_search_with_current_index
 
     state = read_json(args.state)
     validate_state(state, mode="current")
     capture = validate_r156_bundle(state, args.r156_bundle)
     finance = year1_finance(read_json(args.year1_finance), state,
                             illustrative_first_year_budget=args.year1_budget)
-    catalog = validate_catalog(read_json(args.current_card_catalog), state,
-                               read_json(root / "ECOSIM_R162_INTEGRITY_REVIEW_RC/data/ecosim_projects_20261030.json"))
+    raw_catalog=read_json(args.current_card_catalog)
+    original_catalog=read_json(root / "ECOSIM_R162_INTEGRITY_REVIEW_RC/data/ecosim_projects_20261030.json")
+    adapted_index=None
+    try:
+        catalog=validate_catalog(raw_catalog,state,original_catalog)
+    except CatalogHold as exc:
+        if (not args.allow_source_adapted_current_catalog or
+            not str(exc).startswith("CURRENT_CARD_DEFINITION_DRIFT_IDS_")):
+            raise
+        adapted=prepare_current_catalog(raw_catalog,state,original_catalog,
+            catalog_hash=hashlib.sha256(args.current_card_catalog.read_bytes()).hexdigest())
+        catalog,adapted_index=adapted["receipt"],adapted["index"]
+    def source_admitted_search(*a, **kw):
+        if adapted_index is None: return search(*a, **kw)
+        with original_search_with_current_index(strategy_5y, adapted_index):
+            return search(*a, **kw)
     need(not args.out_dir.exists() and not args.out_dir.resolve().is_relative_to(root), "PRIVATE_NEW_OUTPUT_ONLY")
     current_cap = state["market"]["maxProjectPerTurn"]
     p = state["provenance"]["current_period"]
@@ -284,7 +322,7 @@ def run_cli():
     searches=[]; scenario_holds=[]
     for name, objective, budget in specs:
         try:
-            res=search(state, start_year=p, budget_override=[budget]*(6-p),
+            res=source_admitted_search(state, start_year=p, budget_override=[budget]*(6-p),
                        cap_override=None, beam_width=4, shortlist=12,
                        allow_same_year=False, objective=objective)
         except ValueError as exc:
