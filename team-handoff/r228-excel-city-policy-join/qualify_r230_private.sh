@@ -7,7 +7,10 @@ export R230_R224="$HOME/Downloads/ecosim-r224-source-anchored-finance-20261102/R
 export R230_R222="$HOME/Downloads/ecosim-r222-current-conditions-20261102/R222_RECEIPT.json"
 export R230_MANIFEST="$HOME/Downloads/ecosim-r223-fresh-r156-20261102/r156_immutable/manifest.json"
 export R230_RESULT="$HOME/Downloads/ecosim-r230-first-year-readiness-20261102"
-test -f "$R230_RESULT/R230_READINESS_PRIVATE.json" || { echo "HOLD_R230_SOURCE_NOT_COLLECTED"; exit 3; }
+export R231_RESULT="$HOME/Downloads/ecosim-r231-finance-semantics-20261102"
+export R231_RULEBOOK="$HOME/Downloads/ecosim-r221-rulebook-readonly-20261102/rulebook_hu.pdf"
+export R231_RULEBOOK_TEXT="$HOME/Downloads/ecosim-r221-rulebook-readonly-20261102/rulebook_hu.txt"
+test -f "$R230_RESULT/R230_READINESS_PRIVATE.json" && test -f "$R231_RESULT/R230_READINESS_PRIVATE.json" || { echo "HOLD_R230_SOURCE_NOT_COLLECTED"; exit 3; }
 python3 -I -B "$HERE/test_readiness_r230.py"
 printf '%s\n' 'R230_SOURCE_GATED_FIRST_YEAR=PASS_24_SCENARIOS_13_VARIANTS' \
  'R191_CAP_AND_R192_TIME=HOLD_ACTUAL_EVIDENCE_MISSING' 'GAME_ACTION_GATE=STOP'

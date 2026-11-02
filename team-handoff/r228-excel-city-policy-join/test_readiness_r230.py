@@ -96,5 +96,55 @@ class R230RealSourceGates(unittest.TestCase):
         self.assertEqual((self.base/"new/R230_HU.md").read_bytes(),
                          (self.output/"R230_HU.md").read_bytes())
 
+
+    def test_r231_official_rulebook_auto_debt_not_an_actual_credit_offer(self):
+        obj=read_json(Path(os.environ["R231_RESULT"])/"R230_READINESS_PRIVATE.json")
+        policy=obj["source_backed_financing_semantics_R231"]
+        self.assertEqual(policy["source"],"R224_SHA_PINNED_OFFICIAL_HU_RULEBOOK")
+        self.assertTrue(policy["game_can_auto_borrow_to_balance_shortfall"])
+        self.assertFalse(policy["cash_shortfall_alone_proves_start_forbidden"])
+        self.assertTrue(policy["conservative_R191_cash_gate_is_not_equivalent_to_game_start_legality"])
+        self.assertIsNone(policy["game_project_start_cap_numeric_value"])
+        self.assertIsNone(policy["automatic_borrowing_interest_rate"])
+        self.assertIsNone(policy["automatic_borrowing_exact_amount"])
+        self.assertFalse(policy["full_financing_and_server_decision_verified"])
+        self.assertIsNone(obj["actual_eligible_first_year_actions"])
+        self.assertEqual(obj["game_writes"],0)
+    def test_r231_cash_stress_only_not_loan_forecast(self):
+        obj=read_json(Path(os.environ["R231_RESULT"])/"R230_READINESS_PRIVATE.json")
+        groups=obj["candidate_thresholds"]
+        self.assertEqual(len(groups),13)
+        for x in groups:
+            self.assertTrue(x["cash_stress_is_hypothetical_only"])
+            scenario=x["cash_shortfalls_given_illustrative_balances_ecu"]
+            self.assertEqual([v["illustrative_cash_ecu"] for v in scenario],
+                             [0,168621,337243,674486])
+            cost=x["source_R224_conservative_card_cost_ecu_NOT_SPENDABLE"]
+            for v in scenario:
+                self.assertEqual(v["unfunded_card_cost_only_ecu"],
+                                 max(0,cost-v["illustrative_cash_ecu"]))
+                self.assertIsNone(v["actual_automatic_loan_required_ecu"])
+            self.assertIsNone(x["game_start_legality_given_cash_shortfall"])
+            self.assertIsNone(x["auto_loan_interest_and_score_cost"])
+    def test_r231_forged_handbook_is_rejected(self):
+        pdf=Path(os.environ["R231_RULEBOOK"])
+        txt=Path(os.environ["R231_RULEBOOK_TEXT"])
+        copy_pdf=self.base/"manual.pdf";copy_pdf.write_bytes(pdf.read_bytes()+b"x")
+        with self.assertRaisesRegex(ValueError,"HOLD_R231_OFFICIAL_HANDBOOK_SOURCE_HASH"):
+            self.run_candidate(rulebook_path=copy_pdf,rulebook_text_path=txt)
+        copy_txt=self.base/"manual.txt";copy_txt.write_text(txt.read_text()+" Forgery")
+        with self.assertRaisesRegex(ValueError,"HOLD_R231_OFFICIAL_HANDBOOK_SOURCE_HASH"):
+            self.run_candidate(rulebook_path=pdf,rulebook_text_path=copy_txt)
+    def test_r231_repeat_is_byte_identical_and_preserves_old_r230(self):
+        result=self.run_candidate(rulebook_path=Path(os.environ["R231_RULEBOOK"]),
+                                  rulebook_text_path=Path(os.environ["R231_RULEBOOK_TEXT"]))
+        fresh=read_json(self.base/"new/R230_READINESS_PRIVATE.json")
+        saved=read_json(Path(os.environ["R231_RESULT"])/"R230_READINESS_PRIVATE.json")
+        self.assertEqual(result,fresh)
+        self.assertEqual(fresh,saved)
+        self.assertEqual((self.base/"new/R230_HU.md").read_bytes(),
+                         (Path(os.environ["R231_RESULT"])/"R230_HU.md").read_bytes())
+        self.assertNotIn("source_backed_financing_semantics_R231",self.result)
+
 if __name__=="__main__":
     unittest.main()

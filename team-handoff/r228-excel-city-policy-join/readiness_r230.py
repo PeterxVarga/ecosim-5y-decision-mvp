@@ -27,9 +27,11 @@ SCHEMA = "ECOSIM_R230_SOURCE_GATED_FIRST_YEAR_THRESHOLDS_V1"
 EXPECTED_R228 = "PASS_R227_EXCEL_SOURCE_JOIN_R145_R148_UNKNOWN_PRESERVED_NOT_LIVE"
 EXPECTED_R224 = "ECOSIM_R224_CURRENT_P1_CASHFLOW_SCENARIOS_NO_SPENDABLE_APPROVAL_V1"
 EXPECTED_R222 = "ECOSIM_R222_ALL_35_VISIBLE_PROJECT_CONDITIONS_PROOF_V1"
+R231_RULEBOOK_TEXT_SHA = "b0c9337837f6dd661497c7de5c073d02745eae12c79c7f980fc1ae33083af581"
 
 
-def build(r228_path, r224_path, r222_path, manifest_path, output, *,now=None):
+def build(r228_path, r224_path, r222_path, manifest_path, output, *,
+          now=None,rulebook_path=None,rulebook_text_path=None):
     dest = Path(output).resolve()
     need(dest.parent.is_dir() and not dest.exists()
          and not dest.is_relative_to(ROOT.resolve()), "NEW_PRIVATE_OUTPUT")
@@ -51,6 +53,37 @@ def build(r228_path, r224_path, r222_path, manifest_path, output, *,now=None):
          and r224.get("gameplay_gate") == "STOP"
          and r224.get("game_writes") == 0,
          "R224_ADMISSION_IS_NOT_LIVE")
+    # Optional R231 evidence-backed semantics: separate UI start-limit
+    # conditions from the R191 conservative cash-financing admission.
+    need((rulebook_path is None)==(rulebook_text_path is None),
+         "R231_BOTH_RULEBOOK_FORMS_REQUIRED")
+    rulebook=None
+    if rulebook_path is not None:
+        expected=r224.get("source_sha256",{}).get("official_rulebook_pdf")
+        need(isinstance(expected,str) and len(expected)==64
+             and digest(rulebook_path)==expected
+             and digest(rulebook_text_path)==R231_RULEBOOK_TEXT_SHA,
+             "R231_OFFICIAL_HANDBOOK_SOURCE_HASH")
+        content=Path(rulebook_text_path).read_text(encoding="utf8")
+        need("Egy\\nperiódusban meghatározott számú projekt indítható" in content
+             or "periódusban meghatározott számú projekt indítható" in content,
+             "R231_HANDBOOK_PROJECT_LIMIT_RULE")
+        need("automatikusan hitelt vesz fel a város" in content,
+             "R231_HANDBOOK_AUTO_BORROWING_RULE")
+        need("Adósság / vagyon" in content,
+             "R231_HANDBOOK_DEBT_PENALTY_RULE")
+        rulebook={"source":"R224_SHA_PINNED_OFFICIAL_HU_RULEBOOK",
+                  "pdf_sha256":expected,
+                  "text_sha256":R231_RULEBOOK_TEXT_SHA,
+                  "game_project_start_cap_numeric_value":None,
+                  "game_can_auto_borrow_to_balance_shortfall":True,
+                  "cash_shortfall_alone_proves_start_forbidden":False,
+                  "automatic_borrowing_interest_rate":None,
+                  "automatic_borrowing_exact_amount":None,
+                  "long_term_loan_rate_is_not_auto_loan_rate":True,
+                  "conservative_R191_cash_gate_is_not_equivalent_to_game_start_legality":True,
+                  "increased_debt_may_damage_city_score":True,
+                  "full_financing_and_server_decision_verified":False}
     cash=r224.get("cashflow",{})
     need(isinstance(cash,dict)
          and cash.get("grant_earmarking_verified") is False
@@ -142,6 +175,21 @@ def build(r228_path, r224_path, r222_path, manifest_path, output, *,now=None):
               "scenario_budgets_are_hypothetical":True}
         unique[key]["conditional_model_scenario_count"]+=1
     need(covered==24 and len(unique)==13,"SAMPLED_FIRST_YEAR_VARIANT_COVERAGE")
+    if rulebook is not None:
+        budgets=cash.get("hypothetical_annual_budget_ecu")
+        need(budgets==[0,168621,337243,674486] and
+             cash.get("scenario_funds_are_approved") is False,
+             "R231_SOURCE_BUDGET_GRID_STILL_UNAPPROVED")
+        for item in unique.values():
+            expense=item["source_R224_conservative_card_cost_ecu_NOT_SPENDABLE"]
+            item["cash_stress_is_hypothetical_only"]=True
+            item["cash_shortfalls_given_illustrative_balances_ecu"]=[
+                {"illustrative_cash_ecu":b,
+                 "unfunded_card_cost_only_ecu":max(0,expense-b),
+                 "actual_automatic_loan_required_ecu":None}
+                for b in budgets]
+            item["game_start_legality_given_cash_shortfall"]=None
+            item["auto_loan_interest_and_score_cost"]=None
     groups=sorted(unique.values(),key=lambda v:(
         v["starts_requested"],
         v["source_R224_conservative_card_cost_ecu_NOT_SPENDABLE"],
@@ -165,8 +213,13 @@ def build(r228_path, r224_path, r222_path, manifest_path, output, *,now=None):
       "distinct_sampled_first_year_variants":len(groups),
       "coverage_limit":"24_SAMPLED_HYPOTHETICAL_PATHS_NOT_ALL_FEASIBLE_ACTIONS",
       "candidate_thresholds":groups,
+      **({"source_backed_financing_semantics_R231":rulebook}
+         if rulebook is not None else {}),
       "source_sha256":{"R228":digest(r228_path),"R224":digest(r224_path),
-                        "R222":digest(r222_path),"R156_manifest":digest(manifest_path)},
+                        "R222":digest(r222_path),"R156_manifest":digest(manifest_path),
+                        **({"official_rulebook_pdf":digest(rulebook_path),
+                            "verified_rulebook_text":digest(rulebook_text_path)}
+                           if rulebook is not None else {})},
       "next_evidence":["ACTUAL_MARKET_I_PROJECT_CAP_SOURCE",
                        "OPERATOR_OBSERVED_SPENDABLE_AND_COMMITTED_YEAR1_ECU",
                        "ONE_HOUR_CURRENT_35_CARD_AND_R156_STATE_CAPTURE",
@@ -205,6 +258,31 @@ def build(r228_path, r224_path, r222_path, manifest_path, output, *,now=None):
         lines.append(f"| {ids} | {g['starts_requested']} | "
           f"{g['source_R224_conservative_card_cost_ecu_NOT_SPENDABLE']:,.0f} | "
           f"{g['conditional_model_scenario_count']} |")
+    if rulebook is not None:
+        lines.extend(["", "## R231 – finanszírozási szabály bizonyítéka és készpénzes stressz",
+          "A hitelesített kézikönyv szerint forráshiánynál a szimuláció "
+          "**automatikus hitelt is felvehet**. Ezért az R191 konzervatív "
+          "készpénz-felvételi kapuja **nem a játékszerver által igazolt, "
+          "kötelező Start-gomb feltétele**.",
+          "Az automatikus hitel tényleges összege, kamata, korlátja és "
+          "pontszámhatása **UNKNOWN**; a hosszú lejáratú hitel UI-kamata "
+          "nem használható helyette.",
+          "Az alábbi négy összeg R224-hipotézis, nem tényleges szabad pénz:",
+          ", ".join(map(lambda x:f'{x:,.0f} ECU',
+                        cash['hypothetical_annual_budget_ecu'])),
+          "",
+          "| Elsőéves projektek | Kártyaköltség ECU | Hipotetikus hiány 0 ECU pénznél | Hiány 168 621 ECU-nál | Hiány 337 243 ECU-nál |",
+          "|---|---:|---:|---:|---:|"])
+        for g in groups:
+            ids=", ".join(map(str,g["first_year_project_ids"])) or "nincs"
+            sc=g["cash_shortfalls_given_illustrative_balances_ecu"]
+            lines.append(f"| {ids} | "
+              f"{g['source_R224_conservative_card_cost_ecu_NOT_SPENDABLE']:,.0f} | "
+              f"{sc[0]['unfunded_card_cost_only_ecu']:,.0f} | "
+              f"{sc[1]['unfunded_card_cost_only_ecu']:,.0f} | "
+              f"{sc[2]['unfunded_card_cost_only_ecu']:,.0f} |")
+        lines.extend(["", "A hiányok csak egyszerű kártyaköltség-különbségek; "
+             "**nem** valós hitelprognózisok. A tényleges projektlimit továbbra is UNKNOWN."])
     lines.extend(["",
       "Az R229 R145/R148 ötéves projektindexei feltételesek; "
       "nincs hiteles teljes városi eredmény- vagy finanszírozási előrejelzés.",
@@ -224,7 +302,10 @@ def main():
     p=argparse.ArgumentParser()
     for k in ("r228","r224","r222","manifest","out-dir"):
         p.add_argument("--"+k,type=Path,required=True)
+    p.add_argument("--rulebook",type=Path)
+    p.add_argument("--rulebook-text",type=Path)
     args=p.parse_args()
-    build(args.r228,args.r224,args.r222,args.manifest,args.out_dir)
+    build(args.r228,args.r224,args.r222,args.manifest,args.out_dir,
+          rulebook_path=args.rulebook,rulebook_text_path=args.rulebook_text)
 if __name__=="__main__":
     main()

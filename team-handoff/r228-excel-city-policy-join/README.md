@@ -164,3 +164,27 @@ Even these operator inputs alone are **not server attestation or game action
 authorization**. Do not paste a fabricated cap or use synthetic R210 credentials
 to bypass the gate. Keep all private receipts and browser data out of public Git.
 No game writes, merge, deployment, or autonomous execution.
+
+## R231 – separate hard project start count from finance risk
+
+Official handbook evidence (SHA-verified against original R224): starts
+per period are limited; when income and own funds cannot cover expenses,
+the simulator may automatically borrow. Thus R191 conservative cash
+admission is NOT established as a literal in-game Start restriction.
+
+R231 extends original R230 in an optional mode. For the 13 unique first-year
+bundles times four hypothetical cash examples, report unfunded project card
+cost only, never an invented loan amount, interest rate or score effect.
+In particular, the 7.5% observed long-term loan rate must NOT be assigned
+to the automatic balancing credit.
+
+Private results are stored in the owner Fedora Downloads directory under
+ecosim-r231-finance-semantics-20261102.
+Reproduction:
+
+    bash team-handoff/r228-excel-city-policy-join/run_r231_private.sh --out-dir "$HOME/Downloads/another_NEW_private_R231_result"
+    bash team-handoff/r228-excel-city-policy-join/qualify_r230_private.sh
+
+R191 Market I cap and spendable money remain UNKNOWN; R192 same-hour current
+full-card capture remains HOLD. This is only hypothetical risk analysis.
+NO_GAME_WRITES, NO_MERGE, NO_DEPLOY.
