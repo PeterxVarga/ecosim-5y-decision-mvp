@@ -56,3 +56,35 @@ causal mapping.
 
 No user/session details, private receipts, browser context, project
 values or Excel are published in Git. NO_GAME_WRITES, NO_MERGE, NO_DEPLOY.
+
+## Codex native browser intake, permissions preserved
+
+On Fedora, Codex CLI 0.166.0 with active ChatGPT login and native browser
+tool successfully LISTED eight open tabs, including one existing EcoSim
+/simulation/income tab. No browser restart or DevTools port was needed.
+
+A separate strict read-only attempt to read the existing tab DOM reported
+BROWSER_ORIGIN_PERMISSION_DECLINED. Thus no page content was imported.
+This explicit browser permission must be granted by the owner via the
+browser UI. Do not bypass it using direct CDP, network calls or other
+access routes. Do not infer that a connection means content is authorized.
+
+The new codex_browser_intake.py validates and SHA-links the existing R236
+data gate and the Codex last-message JSON, counts declined origins as BLOCKED,
+and prevents unknown data from becoming approved. In particular there are
+ZERO new observed EcoSim page contents, saved P1 values or policy bounds.
+
+The private source and outcome are stored ONLY on owner Fedora:
+- ~/Downloads/ecosim-r236-source-freeze-20261102/codex-current-tabs-readonly-v1.txt
+- ~/Downloads/ecosim-r236-source-freeze-20261102/codex-browser-gated-v1/R236_CODEX_BROWSER_INTAKE_PRIVATE.json
+
+Reproduce from already captured blocked evidence only:
+    python3 -I -B team-handoff/r236-source-freeze/codex_browser_intake.py --r236 "$HOME/Downloads/ecosim-r236-source-freeze-20261102/result/R236_PRIVATE_LEDGER.json" --codex-result "$HOME/Downloads/ecosim-r236-source-freeze-20261102/codex-current-tabs-readonly-v1.txt" --out-dir "$HOME/Downloads/NEW_CODEX_PRIVATE_IMPORT"
+    bash team-handoff/r236-source-freeze/qualify_codex_browser_private.sh
+
+After explicit owner origin consent, re-run Codex ephemeral and read-only,
+using the NATIVE browser connector with existing open tabs only. Disable
+any navigation, click, hover, typing, page reload, network, save or submit.
+Feed the last-message JSON to this importer. Do not enable full tab
+navigation until side-effect safety is separately proven.
+NO_GAME_WRITES; NO_MERGE; NO_DEPLOY; R191/R192/R214 HOLD.
