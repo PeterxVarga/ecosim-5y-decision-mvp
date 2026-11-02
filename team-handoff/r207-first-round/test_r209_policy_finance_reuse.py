@@ -4,6 +4,9 @@ Calls source-identical existing fiscal models, NO new cash simulator, NO live da
 """
 from pathlib import Path
 import sys,json,hashlib,copy
+# Python -I omits the script directory from sys.path. Restore only this
+# checked sibling fixture directory before loading the pinned-model harness.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 from test_original_r162_integration import R162, SOURCE_BLOBS
 sys.path.insert(0,str(R162/'tools'))
 from observation_bundle_r152 import compile_bundle
