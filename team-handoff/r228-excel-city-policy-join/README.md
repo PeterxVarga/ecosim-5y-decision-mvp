@@ -131,3 +131,36 @@ and then run original R145/R148/R162 counterfactuals. Do not ask for
 re-exporting the 374 known XLSX rows.
 
 **GAME_ACTION_GATE=STOP. NO_GAME_WRITES, NO_MERGE, NO_DEPLOY.**
+
+## R230: real-source first-year thresholds, original R191/R192 admission HOLD
+
+The already-integrated R224/R229 24 hypothetical five-year schedules contain
+**13 distinct first-year project bundles**. R230 reuses them unchanged and
+materializes the exact *candidate start counts* and R224 conservative first-year
+card costs. These are **necessary scenario costs**, not sufficiency proofs for
+the city's real financial and project-start rules.
+
+R230 independently replays the original R191 validate_state current validator
+on the original R156 state, and reconciles the known R222 original R192
+same-hour capture failure. R191 presently returns
+CAP_UNKNOWN_OR_ASSUMED, and R192 returns
+HOLD_CATALOG_NOT_SAME_PERIOD_CAPTURE_WINDOW. R230 therefore exposes
+**zero actual eligible first-year actions**, not even the zero-project
+hypothesis. In particular, the R224 P1 cash-flow surplus and the
+hypothetical cap values 1/2/3 are never promoted to actual authority.
+
+Source-linked output is private:
+~/Downloads/ecosim-r230-first-year-readiness-20261102/R230_HU.md
+and R230_READINESS_PRIVATE.json. Run with:
+
+    bash team-handoff/r228-excel-city-policy-join/run_r230_private.sh \
+      --out-dir "$HOME/Downloads/another_NEW_private_R230_result"
+    bash team-handoff/r228-excel-city-policy-join/qualify_r230_private.sh
+
+Actual R191/R192/R214 owner evidence still requires: a source-identified
+Market I cap, same-period operator-observed spendable and committed ECU,
+and a coherent 35-card/source state snapshot within one hour.
+Even these operator inputs alone are **not server attestation or game action
+authorization**. Do not paste a fabricated cap or use synthetic R210 credentials
+to bypass the gate. Keep all private receipts and browser data out of public Git.
+No game writes, merge, deployment, or autonomous execution.
