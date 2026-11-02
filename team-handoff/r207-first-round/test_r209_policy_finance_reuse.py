@@ -16,7 +16,7 @@ from tax_revenue_r154 import validate as validate_tax, evaluate_counterfactual
 from operating_cash_r155 import validate as validate_operating, evaluate as operating_effects
 from temporal_cash_r158 import build_timing_bridge
 
-def exercise():
+def exercise(*, include_joined=False):
     for filename,pin in SOURCE_BLOBS.items():
         b=(R162/'tools'/filename).read_bytes()
         assert hashlib.sha1(b'blob '+str(len(b)).encode()+b'\0'+b).hexdigest()==pin
@@ -74,7 +74,7 @@ def exercise():
         expected=next(y for y in candidates if y['candidate_id']==x['candidate_id'])
         assert [y['projects_started_ids'] for y in x['annual_rows']]==expected['project_ids_by_year']
         assert abs(x['five_year_project_card_cost_ecu']-expected['five_year_conservative_project_need_ecu']) < 1e-4
-    return {'status':'PASS_HISTORICAL_SYNTHETIC_PARTIAL_POLICY_JOIN_ONLY',
+    result={'status':'PASS_HISTORICAL_SYNTHETIC_PARTIAL_POLICY_JOIN_ONLY',
         'source_class':'SYNTHETIC_TEST_ONLY','source_git_blobs':SOURCE_BLOBS,
         'five_year_project_schedules_evaluated':len(candidates),
         'tax_operating_scenarios':len(tax['paths']),
@@ -91,6 +91,9 @@ def exercise():
         'partial_zero_opening_financial_metrics_are_not_real_liquidity':True,
         'actual_city_forecast':False,'actual_spendable_cash':False,
         'gameplay_gate':'STOP','game_writes':0}
+    if include_joined:
+        return {'receipt':result,'joined':joined,'candidates':candidates}
+    return result
 
 if __name__=='__main__':
     print(json.dumps(exercise(),ensure_ascii=False,sort_keys=True,indent=2))
