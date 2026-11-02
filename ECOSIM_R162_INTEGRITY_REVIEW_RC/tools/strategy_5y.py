@@ -233,9 +233,13 @@ def candidate_pool(idx, base_active, baseline, weights=None, policy_multipliers=
 
 def search(state, start_year=1, budget_override=None, cap_override=None,
            beam_width=14, shortlist=36, allow_same_year=True,
-           terminal_policy_factor_multipliers=None, objective='nominal'):
+           terminal_policy_factor_multipliers=None, objective='nominal',
+           announced_absolute_cap=None):
     if objective not in ('nominal','scenario_min'):
         raise ValueError('Unsupported R157 search objective')
+    if announced_absolute_cap is not None and (
+            type(announced_absolute_cap) is not int or not 0<=announced_absolute_cap<=20):
+        raise ValueError('Announced absolute project cap must be an integer 0..20')
     idx=project_index();config=derive_config(state,idx,start_year,budget_override,cap_override)
     initial=config['initial_active'];bas=config['baseline']
     weights=(state.get('market') or {}).get('smartcity_total_weights')
@@ -276,6 +280,12 @@ def search(state, start_year=1, budget_override=None, cap_override=None,
             # year t co-start. For years >1, prior selected id 1 remains active.
             is_prev_project1=(config['project1prev'] if offset==0 else (1 in before))
             cap=config['cap'] + (int(is_prev_project1) if isinstance(is_prev_project1,bool) else 0)
+            # The client's special project-1 allowance can exceed the
+            # organizer's explicitly announced four-per-year competition cap.
+            # In verified-organizer scenario mode, never silently plan that
+            # optional fifth start; server semantics still need independent proof.
+            if announced_absolute_cap is not None:
+                cap=min(cap,announced_absolute_cap)
             if len(already_in_year)>cap:
                 raise ValueError('Existing current-year selections already exceed assumed effective cap')
             max_extra=max(0, min(cap-len(already_in_year), len(remaining)))
@@ -391,6 +401,9 @@ def search(state, start_year=1, budget_override=None, cap_override=None,
                          allow_same_year=allow_same_year)
         if audit['hard_rule_violations']:
             raise ValueError('R160_INDEPENDENT_REPLAY_REJECTED_SEARCH_PLAN: '+str(audit['hard_rule_violations']))
+        if announced_absolute_cap is not None and any(
+                len(year_ids)>announced_absolute_cap for year_ids in starts):
+            raise ValueError('ANNOUNCED_ABSOLUTE_YEAR_LIMIT_VIOLATION')
         row['r160_independent_constraint_replay']=audit
         independent_audits.append(audit)
     # R144: integrate client-supported aggregation and financial components.
@@ -421,6 +434,8 @@ def search(state, start_year=1, budget_override=None, cap_override=None,
                      baseline_static='No exogenous economic drift, no migration, no institution or tax action effects',
                      market_weights_source=('EXPLICIT_USER_MARKET_INPUT_NOT_INDEPENDENTLY_VERIFIED' if weights is not None else 'HISTORICAL_TEST_UI_R141'),
                      video_loan_rate='12 pct spoken example, NOT used for cash and credit calculations')
+    if announced_absolute_cap is not None:
+        assumptions['organizer_announced_absolute_limit_not_server_verified']=announced_absolute_cap
     gaps=['Full city transition remains unknown despite R144 known-formula bridge',
           'Actual market/team state, caps and loans from live authoritative export',
           'Finance affordability requires verified spendable amount, commitments and grant timing',
