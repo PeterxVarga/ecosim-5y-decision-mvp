@@ -80,6 +80,35 @@ class ExcelUiR145R148RealSource(unittest.TestCase):
     self.assertEqual(yr["unknown_policy_cash_impacts"],23)
     self.assertIsNone(yr["actual_index_forecast"])
     self.assertIsNone(yr["actual_cashflow_forecast"])
+ def test_existing_r224_finance_and_original_r148_replay_identity(self):
+  old=read_json(self.r224)
+  self.assertEqual(len(old["scenarios"]),24)
+  out=self.receipt
+  self.assertEqual(out["source_R224_finance_bridge_scenarios"],24)
+  self.assertEqual(out["source_R224_finance_and_game_authority"],"HYPOTHETICAL_ONLY")
+  self.assertEqual(out["source_R224_p1_conservative_surplus_ecu_NOT_SPENDABLE"],674486.0)
+  for source,joined in zip(old["scenarios"],out["conditional_joint_scenarios"]):
+   self.assertEqual(source["full_five_year_illustrative_starts"],joined["source_project_starts"])
+   self.assertEqual(source["initial_project_ids"],joined["first_year_project_ids"])
+   self.assertEqual(source["first_year_conservative_requirement_ecu"],
+                    joined["first_year_source_R224_conservative_requirement_ecu"])
+   self.assertEqual(source["hypothetical_annual_budget_ecu"]-
+                    source["first_year_conservative_requirement_ecu"],
+                    joined["first_year_hypothetical_budget_headroom_ecu"])
+   self.assertFalse(joined["actual_first_year_spend_authorized"])
+   self.assertFalse(joined["future_year_financing_verified"])
+ def test_r224_fake_first_year_cost_fails_closed(self):
+  o=read_json(self.r224)
+  o["scenarios"][2]["first_year_conservative_requirement_ecu"]=1_000_000
+  src=self.tmp/"forged_r224.json";src.write_text(json.dumps(o))
+  with self.assertRaisesRegex(ValueError,"HOLD_R224_FIRST_YEAR_COST_EXCEEDS_HYPOTHETICAL_BUDGET"):
+   join(self.excel,self.r226,self.tax,self.r156,src,self.tmp/"failcost")
+ def test_r224_fake_approved_cash_fails_closed(self):
+  o=read_json(self.r224)
+  o["cashflow"]["scenario_funds_are_approved"]=True
+  src=self.tmp/"forged_r224.json";src.write_text(json.dumps(o))
+  with self.assertRaisesRegex(ValueError,"HOLD_R224_HYPOTHETICAL_FINANCE_NOT_AUTHORIZED"):
+   join(self.excel,self.r226,self.tax,self.r156,src,self.tmp/"failapproval")
  def test_r153_r154_reject_false_money_percent_mapping(self):
   t=self.receipt["actual_tax_model_readiness"]
   self.assertEqual(t["source_verified_business_tax_percentage"],2.0)

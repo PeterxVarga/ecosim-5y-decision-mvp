@@ -75,6 +75,19 @@ does NOT call them with unsupported market data:
   `R154_actual_tax_revenue_forecast_allowed=false`.
 This is explicit rejection of a falsely precise model, not a test failure.
 
+## R224 finance-to-five-year bridge (same 24 candidates)
+
+The R228 replay now attaches R224's **original first-year conservative card
+requirement**, hypothetical budget headroom and explicit *no-authorization*
+flags to all 24 R145/R148 paths. The source schedule and first-year IDs must
+match exactly, the original R160 audit must pass, and no requirement may
+exceed its own hypothetical scenario budget. Any R224 claim of approved funds
+or game eligibility fails closed. This reuses R224's original scenarios,
+not a new optimizer; the Hungarian private report shows all 24 paired
+rows (cap/budget, P1 card load, project-only conditional fifth-year index).
+These numbers are NOT actual spendable funds, a full city score or P2–P5
+finance predictions.
+
 ## Private reproduction on authorized Fedora
 
 ```bash
@@ -88,9 +101,10 @@ The one-command runner takes the user-owned source XLSX and existing
 private source receipts (R226, current tax UI, R156, R224) but writes only
 to a **new directory**. Existing directories are not overwritten.
 Private output in
-`~/Downloads/ecosim-r228-source-joined-20261102/` includes:
+`~/Downloads/ecosim-r228-finance-joined-20261102/` includes:
 - `R228_RECEIPT.json`: 19 exact source links, four unmatched
-  controls, all conditional 24 × 5 joint rows, R153/R154 gate matrix
+  controls, all conditional 24 × 5 joint rows, first-year R224 cost/budget
+  source bridge, R153/R154 gate matrix
 - `R228_POLICY_UNKNOWN_CONTRACT_TEST_ONLY.json`: schema test,
   NEVER an actual operator policy or action list
 - `R228_HU.md`: operator-readable outcome and caveats.

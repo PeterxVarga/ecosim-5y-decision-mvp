@@ -236,6 +236,21 @@ def join(excel_path,r226_path,tax_path,r156_path,r224_path,out_dir):
       prior.get("current_R191_actual_spendable_cash") is None and
       prior.get("current_R214_live_advice_authorized") is False,
       "ORIGINAL_R224_CONDITIONAL_NOT_LIVE")
+ # The existing R224 monetary figure is scenario arithmetic, not funding
+ # authority. Refuse to join if any R224 advisory/source gate was upgraded.
+ financial=prior.get("cashflow",{})
+ need(isinstance(financial,dict) and
+      financial.get("grant_earmarking_verified") is False and
+      financial.get("incremental_project_funding_observed_and_approved") is False and
+      financial.get("scenario_funds_are_approved") is False and
+      financial.get("project_interactions_reforecasted_in_cash_flow") is False and
+      prior.get("future_year_budgets_assumed_same_not_observed") is True,
+      "R224_HYPOTHETICAL_FINANCE_NOT_AUTHORIZED")
+ p1_surplus=nval(financial.get("p1_surplus_excluding_prior_cash_and_both_grants_ecu"),
+                 "R224_CONSERVATIVE_SURPLUS")
+ need(p1_surplus>=0 and
+      financial.get("hypothetical_annual_budget_ecu")==[0,168621,337243,674486],
+      "R224_PINNED_SCENARIO_ENVELOPES")
  idx=project_index()
  weights={k:v[0] for k,v in WEIGHTS.items()}
  replay=[]
@@ -244,6 +259,21 @@ def join(excel_path,r226_path,tax_path,r156_path,r224_path,out_dir):
   need(isinstance(starts,list) and len(starts)==5 and
        all(isinstance(y,list) for y in starts),
        "R224_SCENARIO_START_SHAPE")
+  # Keep exact source candidates, no fuzzy first-year matching or new
+  # optimizer. A cost passes a HYPOTHETICAL budget, not a real account.
+  first=starts[0]
+  need(scenario.get("initial_project_ids")==first and
+       scenario.get("validated_by_original_r160") is True and
+       scenario.get("financing_authorized") is False and
+       scenario.get("not_an_eligible_game_action") is True and
+       scenario.get("source_history_project_conditions_current_verified") is False,
+       "R224_FIRST_YEAR_PROJECT_IDENTITY_AND_ADMISSION")
+  budget=nval(scenario.get("hypothetical_annual_budget_ecu"),"R224_BUDGET")
+  requirement=nval(scenario.get("first_year_conservative_requirement_ecu"),
+                   "R224_FIRST_YEAR_PROJECT_REQUIREMENT")
+  need(requirement>=0 and requirement<=budget and
+       (not first or requirement>0) and (first or requirement==0),
+       "R224_FIRST_YEAR_COST_EXCEEDS_HYPOTHETICAL_BUDGET")
   plan={"start_by_year":[{"start_project_ids":y} for y in starts]}
   years=replay_policy_joint(plan,track,state["team"]["baseline_smartcity_factors"],
                             idx,weights,1)
@@ -255,6 +285,11 @@ def join(excel_path,r226_path,tax_path,r156_path,r224_path,out_dir):
   replay.append({"hypothetical_cap":scenario["hypothetical_cap"],
     "hypothetical_budget":scenario["hypothetical_annual_budget_ecu"],
     "objective":scenario["objective"],"source_project_starts":starts,
+    "first_year_project_ids":first,
+    "first_year_source_R224_conservative_requirement_ecu":requirement,
+    "first_year_hypothetical_budget_headroom_ecu":budget-requirement,
+    "actual_first_year_spend_authorized":False,
+    "future_year_financing_verified":False,
     "annual_replay":[{"year":y["year"],
       "mapped_project_only_conditional_index_NOT_TOTAL_FORECAST":
          y["joint_mapped_factor_counterfactual_index"],
@@ -304,6 +339,9 @@ def join(excel_path,r226_path,tax_path,r156_path,r224_path,out_dir):
   "r148_original_joint_scenario_count":len(replay),
   "r148_original_joint_annual_rows":120,
   "r148_full_city_score_verified":False,
+  "source_R224_finance_bridge_scenarios":len(replay),
+  "source_R224_p1_conservative_surplus_ecu_NOT_SPENDABLE":p1_surplus,
+  "source_R224_finance_and_game_authority":"HYPOTHETICAL_ONLY",
   "actual_tax_model_readiness":tax_ready,
   "exact_links":results,"unmatched_controls":unmatched,
   "conditional_joint_scenarios":replay,
@@ -323,6 +361,17 @@ def join(excel_path,r226_path,tax_path,r156_path,r224_path,out_dir):
   "Ez nem valós ötéves pontszám és nem jogosult projektindítás.\n"
   "R191/R192/R214 továbbra is HOLD. GAME_ACTION_GATE=STOP, játékírás 0.\n",
   encoding="utf-8")
+ with (dest/"R228_HU.md").open("a",encoding="utf-8") as f:
+  f.write("\n## R224 elsőéves projektteher ↔ R145/R148 ötéves pályák\n\n")
+  f.write("**Mind a 24 sor feltételes; a keret nem elkölthető engedély, az index nem szerverpontszám.**\n\n")
+  f.write("| Hipotetikus cap | Keret ECU | Cél | Elsőéves projektek | Elsőéves konzervatív teher ECU | 5. év feltételes projektindex |\n")
+  f.write("|---:|---:|---|---|---:|---:|\n")
+  for sc in replay:
+   f.write(f"| {sc['hypothetical_cap']} | {sc['hypothetical_budget']:,.0f} | {sc['objective']} | "+
+           (", ".join(map(str,sc['first_year_project_ids'])) or "nincs")+" | "+
+           f"{sc['first_year_source_R224_conservative_requirement_ecu']:,.0f} | "+
+           f"{sc['annual_replay'][-1]['mapped_project_only_conditional_index_NOT_TOTAL_FORECAST']:.6f} |\n")
+  f.write("\nValós indítási limit, szabad pénz, P1 policy hatás, P2–P5 finanszírozás: UNKNOWN. GAME_ACTION_GATE=STOP.\n")
  print(json.dumps({"status":summary["status"],"excel":374,"ui_controls":23,
   "matched":19,"unmapped":4,"joint_scenarios":24,"joint_years":120,
   "unknown_policy_each_year":23,"tax_live_ready":False,

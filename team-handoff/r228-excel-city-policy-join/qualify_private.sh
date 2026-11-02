@@ -7,7 +7,7 @@ export R228_R226="$HOME/Downloads/ecosim-r226-final-census-20261102/R226_RECEIPT
 export R228_TAX="$HOME/Downloads/ecosim-r228-tax-active-view-readonly-20261102.json"
 export R228_R156="$HOME/Downloads/ecosim-r223-fresh-r156-20261102"
 export R228_R224="$HOME/Downloads/ecosim-r224-source-anchored-finance-20261102/R224_RECEIPT.json"
-export R228_RESULT="$HOME/Downloads/ecosim-r228-source-joined-20261102"
+export R228_RESULT="$HOME/Downloads/ecosim-r228-finance-joined-20261102"
 test -f "$R228_EXCEL" && test -f "$R228_RESULT/R228_RECEIPT.json" || {
  echo "HOLD_REAL_PRIVATE_SOURCE_REQUIRED";exit 3; }
 python3 -I -B "$HERE/test_source_join_r228.py"
