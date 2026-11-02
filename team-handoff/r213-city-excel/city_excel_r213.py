@@ -33,7 +33,7 @@ def digest(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 def exact_number(value,reason):
     hold(type(value) in (float,int) and math.isfinite(value),reason)
     return float(value)
-def load_xlsx(path):
+def load_xlsx(path,*,require_legacy_team=True):
     path=Path(path)
     hold(path.is_file() and not path.is_symlink() and path.suffix.lower()==".xlsx","EXCEL_FILE")
     with zipfile.ZipFile(path) as z:
@@ -84,7 +84,7 @@ def load_xlsx(path):
         cells[n]=values
     hold(cells[1][0]=="Összefoglaló" and not any(any(v is not None for v in values) for row,values in cells.items() if row>384),"EXPECTED_384_ROW_SOURCE")
     teams=cells[1][1:]
-    hold(len(teams)==5 and len(set(teams))==5 and TEAM in teams,"EXPECTED_FIVE_TEAMS")
+    hold(len(teams)==5 and len(set(teams))==5 and all(isinstance(t,str) and t.strip() for t in teams) and (not require_legacy_team or TEAM in teams),"EXPECTED_FIVE_TEAMS")
     records=[];section=SECTIONS[0]
     for rownum in range(2,385):
         values=cells.get(rownum,[None]*6)
