@@ -65,9 +65,12 @@ def first_year_options(state, capture, finance, catalog, searches, *, requested_
     need(isinstance(searches, list) and 1 <= len(searches) <= 6, "SEARCH_RUNS")
 
     candidates = {}
+    seen_scenarios = set()
     rejected = {"hard_rule": 0, "conditional_eligibility": 0, "other": 0}
     for name, objective, ceiling, result in searches:
         need(isinstance(name, str) and len(name) <= 80 and name and objective in ("nominal", "scenario_min"), "SCENARIO_LABEL")
+        need(name not in seen_scenarios, "DUPLICATE_SEARCH_SCENARIO")
+        seen_scenarios.add(name)
         need(finite(ceiling) and 0 <= ceiling <= requested_budget + 1e-7, "SCENARIO_FINANCE")
         need(isinstance(result, dict) and result.get("schema") == "ECOSIM_R148_SOURCE_BOUNDED_OFFLINE_STRATEGY_V1"
              and result.get("final_gameplay_decision") == "STOP"
@@ -90,47 +93,121 @@ def first_year_options(state, capture, finance, catalog, searches, *, requested_
             ids = first.get("start_project_ids")
             need(isinstance(ids, list) and all(type(i) is int and 1 <= i <= 35 for i in ids)
                  and len(ids) == len(set(ids)) and set(selected).issubset(ids), "FIRST_ACTION_IDS")
-            cost = first.get("conservative_card_cash_requirement_ecu")
-            need(finite(cost) and 0 <= cost <= ceiling + 1e-6, "FIRST_YEAR_CARD_COST")
+            need(len(ids) <= current_cap + int(project1), "FIRST_ACTION_CAP")
+            # All five model years must meet their *hypothetical*, not approved, envelope.
+            card_costs = [y.get("conservative_card_cash_requirement_ecu") for y in years]
+            need(all(finite(cost) and 0 <= cost <= ceiling + 1e-6 for cost in card_costs),
+                 "FIVE_YEAR_ILLUSTRATIVE_COST_ENVELOPE")
+            cost = card_costs[0]
             audit = plan.get("r160_independent_constraint_replay", {})
-            need(audit.get("schema") == "ECOSIM_R160_INDEPENDENT_PLAN_AUDIT_V1"
+            need(isinstance(audit, dict) and audit.get("schema") == "ECOSIM_R160_INDEPENDENT_PLAN_AUDIT_V1"
                  and audit.get("gameplay_gate") == "STOP"
                  and audit.get("actual_game_eligibility") is None
                  and audit.get("actual_funding_approval") is None, "R160_INDEPENDENT_AUDIT")
             need(len(audit.get("years", [])) == len(years), "R160_YEAR_COVERAGE")
             need(all(audit_row.get("year") == year_row["year"] and
                      audit_row.get("new_project_ids") == year_row.get("start_project_ids") and
+                     finite(audit_row.get("independently_replayed_conservative_cash_need_ecu")) and
                      abs(audit_row["independently_replayed_conservative_cash_need_ecu"] - year_row["conservative_card_cash_requirement_ecu"]) < 1e-5
                      for audit_row, year_row in zip(audit["years"], years)), "R160_FULL_COST_REPLAY")
+            total = sum(card_costs)
+            need(finite(plan.get("five_year_conservative_card_cost_ecu")) and
+                 abs(plan["five_year_conservative_card_cost_ecu"] - total) < 1e-4 and
+                 finite(audit.get("replayed_card_cost_total_ecu")) and
+                 abs(audit["replayed_card_cost_total_ecu"] - total) < 1e-4,
+                 "R160_FIVE_YEAR_COST_IDENTITY")
+            # R157 values are stresses of identified direct-card effects ONLY.
+            # They are NOT probabilities, lower bounds on game score, or a city forecast.
+            robust = plan.get("r157_robust_sensitivity")
+            need(isinstance(robust, dict) and robust.get("gameplay_gate") == "STOP" and
+                 robust.get("actual_five_year_score") is None and
+                 robust.get("scenario_min_is_game_lower_bound") is False and
+                 robust.get("unmodeled_city_dynamics_uncertainty_bounded") is False,
+                 "R157_UNCERTAINTY_GATE")
+            stresses = robust.get("scenario_profiles")
+            need(isinstance(stresses, list) and len(stresses) == 4 and
+                 len({x.get("profile_id") for x in stresses}) == 4,
+                 "R157_FOUR_MODEL_STRESSES")
+            stress_values = [x.get("conditional_clamp_only_low_delta") for x in stresses]
+            need(all(finite(v) for v in stress_values) and
+                 finite(robust.get("scenario_min_clamp_only_mapped_delta")) and
+                 abs(min(stress_values) - robust["scenario_min_clamp_only_mapped_delta"]) < 1e-6,
+                 "R157_STRESS_REPLAY")
             if audit.get("hard_rule_violations"):
                 rejected["hard_rule"] += 1
                 continue
             if audit.get("conditional_eligibility_items") or audit.get("status") != "PASS_DISPLAY_RULES_ONLY_NOT_SERVER_APPROVAL":
                 rejected["conditional_eligibility"] += 1
                 continue
+            nominal = plan.get("terminal_mapped_proxy_delta")
+            half = plan.get("illustrative_half_effect_sensitivity")
+            need(finite(nominal) and isinstance(half, list) and half and
+                 finite(half[-1].get("mapped_proxy_delta")), "NONFINITE_PROXY")
+            need(isinstance(plan.get("excluded_unknown_effects"), list), "UNKNOWN_EFFECTS_LIST")
             key = tuple(sorted(ids))
-            entry = {"first_year_new_project_ids": list(key),
-                     "first_year_conservative_card_need_ecu": cost,
-                     "conditional_five_year_proxy_delta": plan.get("terminal_mapped_proxy_delta"),
-                     "illustrative_half_effect_delta": plan.get("illustrative_half_effect_sensitivity", [{}])[-1].get("mapped_proxy_delta"),
-                     "excluded_unknown_effect_count": len(plan.get("excluded_unknown_effects", [])),
-                     "conditional_display_eligibility_count": 0,
-                     "example_future_project_starts": [y["start_project_ids"] for y in years[1:]],
-                     "sources": []}
-            need(finite(entry["conditional_five_year_proxy_delta"]) and
-                 finite(entry["illustrative_half_effect_delta"]), "NONFINITE_PROXY")
+            case = {"scenario": name, "search_objective": objective,
+                    "rank_within_search": ordinal, "nominal": nominal,
+                    "half": half[-1]["mapped_proxy_delta"],
+                    "r157_worst": robust["scenario_min_clamp_only_mapped_delta"],
+                    "unmapped": len(plan["excluded_unknown_effects"]),
+                    "future": [y["start_project_ids"] for y in years[1:]],
+                    "total_cost": total}
             if key not in candidates:
-                candidates[key] = entry
-            old = candidates[key]
-            old["sources"].append({"scenario": name, "search_objective": objective, "rank_within_search": ordinal})
-            # Same action seen under different scenarios: retain least conservative
-            # (smallest) cash estimate for presentation only if source agrees.
-            need(abs(old["first_year_conservative_card_need_ecu"] - cost) <= 1e-5, "FIRST_ACTION_COST_DRIFT")
+                candidates[key] = {"first_year_new_project_ids": list(key),
+                                   "first_year_conservative_card_need_ecu": cost,
+                                   "cases": []}
+            entry = candidates[key]
+            need(abs(entry["first_year_conservative_card_need_ecu"] - cost) <= 1e-5,
+                 "FIRST_ACTION_COST_DRIFT")
+            entry["cases"].append(case)
 
-    ordered = sorted(candidates.values(), key=lambda x: (
-        -len({z["scenario"] for z in x["sources"]}),
-        -x["illustrative_half_effect_delta"], x["first_year_conservative_card_need_ecu"], x["first_year_new_project_ids"]))
-    chosen = ordered[:3]
+    ordered = []
+    for entry in candidates.values():
+        cases = entry.pop("cases")
+        worst_case = min(cases, key=lambda v: (v["r157_worst"], v["nominal"], v["total_cost"]))
+        source_scenarios = sorted({v["scenario"] for v in cases})
+        entry.update({
+            # A spread across *searched plans* only. Never present it as a forecast interval.
+            "conditional_five_year_proxy_delta": worst_case["nominal"],
+            "illustrative_half_effect_delta": min(v["half"] for v in cases),
+            "sampled_r157_worst_direct_effect_delta": worst_case["r157_worst"],
+            "sampled_nominal_proxy_range": [min(v["nominal"] for v in cases), max(v["nominal"] for v in cases)],
+            "sampled_r157_stress_range": [min(v["r157_worst"] for v in cases), max(v["r157_worst"] for v in cases)],
+            "excluded_unknown_effect_count": max(v["unmapped"] for v in cases),
+            "conditional_display_eligibility_count": 0,
+            "example_future_project_starts": worst_case["future"],
+            "alternative_future_completion_count": len({tuple(tuple(y) for y in v["future"]) for v in cases}),
+            "five_year_card_cost_range_ecu": [min(v["total_cost"] for v in cases), max(v["total_cost"] for v in cases)],
+            "scenarios_observed": source_scenarios,
+            "sources": [{k:v[k] for k in ("scenario", "search_objective", "rank_within_search")} for v in cases]
+        })
+        ordered.append(entry)
+    ordered.sort(key=lambda x: (-len(x["scenarios_observed"]),
+                                -x["sampled_r157_worst_direct_effect_delta"],
+                                x["excluded_unknown_effect_count"],
+                                x["first_year_conservative_card_need_ecu"],
+                                x["first_year_new_project_ids"]))
+    # Budget-tier diversification: a 3-option advisory must not silently lose
+    # the lowest-envelope first action just because high-cost proxy gains rank higher.
+    # This is a presentation/sample coverage rule, NOT a claim of optimal financing.
+    chosen = []
+    covered = set()
+    for name, objective, ceiling, _ in sorted(searches, key=lambda row: (row[2],row[0])):
+        if len(chosen) >= 3:
+            break
+        if name in covered:
+            continue
+        pool = [entry for entry in ordered if name in entry["scenarios_observed"] and entry not in chosen]
+        if not pool:
+            continue
+        best = pool[0]
+        chosen.append(best)
+        covered.update(best["scenarios_observed"])
+    for entry in ordered:
+        if len(chosen) >= 3:
+            break
+        if entry not in chosen:
+            chosen.append(entry)
     return {"schema": SCHEMA, "status": "ADVISORY_ONLY_OPERATOR_DECLARED_LIVE_HOLD",
             "mode": "current-readonly", "gameplay_gate": "STOP", "game_writes": 0,
             "current_server_authenticated": False, "finance_server_approved": False,
@@ -138,6 +215,9 @@ def first_year_options(state, capture, finance, catalog, searches, *, requested_
             "requested_illustrative_year1_card_budget_ecu": requested_budget,
             "selected_options": chosen, "selected_count": len(chosen),
             "distinct_possible_first_actions": len(candidates), "audit_rejections": rejected,
+            "decision_quality": "SAMPLED_FIVE_YEAR_CONTINUATIONS_AND_R157_STRESSES_ONLY_NOT_GAME_BOUNDS",
+            "scenario_coverage": len(seen_scenarios),
+            "represented_scenarios_in_selected_options": sorted({name for item in chosen for name in item["scenarios_observed"]}),
             "live_game_recommendation": "NO_ACTION_WITHOUT_OWNER_APPROVAL_AND_SERVER_VALIDATION",
             "limitations": ["Operator-captured source is not independently server-attested",
                             "Future four-year card envelopes are hypothetical",
@@ -155,7 +235,10 @@ def explain(packet):
         lines.extend([f"## {i}. alternatíva – {ids}",
                       f"- Elsőéves konzervatív kártyateher: {item['first_year_conservative_card_need_ecu']:,.0f} ECU",
                       f"- Ötéves közvetlen proxyváltozás: {item['conditional_five_year_proxy_delta']:+.4f} (nem jósolt pontszám)",
-                      f"- Nem modellezett projekthatások: {item['excluded_unknown_effect_count']}",
+                      f"- R157 legrosszabb mintázott közvetlenhatás-szcenárió Δ: {item['sampled_r157_worst_direct_effect_delta']:+.4f}",
+                      f"- Mintázott ötéves proxy-intervallum: {item['sampled_nominal_proxy_range'][0]:+.4f} – {item['sampled_nominal_proxy_range'][1]:+.4f} (nem valós játékkorlát)",
+                      f"- Első éves döntéshez talált eltérő ötéves folytatások: {item['alternative_future_completion_count']}",
+                      f"- Nem modellezett projekthatások (legnagyobb a mintában): {item['excluded_unknown_effect_count']}",
                       f"- Összevetési szcenáriók száma: {len(item['sources'])}", ""])
     if not packet["selected_options"]:
         lines.append("Nincs a szigorú, feltétel nélküli R160-kapun átjutó jelölt. HOLD.")
