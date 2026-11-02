@@ -30,8 +30,18 @@ def make_result(ids=(1,2),cost=12000,objective="nominal",envelope=90000):
            "actual_game_eligibility":None,"actual_funding_approval":None,"status":"PASS_DISPLAY_RULES_ONLY_NOT_SERVER_APPROVAL",
            "hard_rule_violations":[],"conditional_eligibility_items":[],
            "years":[{"independently_replayed_conservative_cash_need_ecu":cost, "year":y["year"], "new_project_ids":y["start_project_ids"]} for y in years]}
+    audit["replayed_card_cost_total_ecu"] = cost*5
+    robust = {"gameplay_gate":"STOP", "actual_five_year_score":None,
+              "scenario_min_is_game_lower_bound":False,
+              "unmodeled_city_dynamics_uncertainty_bounded":False,
+              "scenario_min_clamp_only_mapped_delta":0.7,
+              "scenario_profiles":[{"profile_id":f"test_{i}",
+                                    "conditional_clamp_only_low_delta":x}
+                                   for i,x in enumerate((2.1,1.05,1.3,0.7))]}
     plan={"start_by_year":years,"r160_independent_constraint_replay":audit,
-          "terminal_mapped_proxy_delta":2.1,"illustrative_half_effect_sensitivity":[{"mapped_proxy_delta":1.05}],
+          "terminal_mapped_proxy_delta":2.1,"five_year_conservative_card_cost_ecu":cost*5,
+          "r157_robust_sensitivity":robust,
+          "illustrative_half_effect_sensitivity":[{"mapped_proxy_delta":1.05}],
           "excluded_unknown_effects":[{"metric":"x"}]}
     return {"schema":"ECOSIM_R148_SOURCE_BOUNDED_OFFLINE_STRATEGY_V1", "final_gameplay_decision":"STOP",
             "game_write_actions":0,"network_actions":0,"actual_five_year_score_forecast_validated":False,
@@ -54,6 +64,8 @@ class TestR207(unittest.TestCase):
         out=self.run_it()
         self.assertEqual(out['selected_count'],1)
         self.assertEqual(out['selected_options'][0]['first_year_new_project_ids'],[1,2])
+        self.assertEqual(out['selected_options'][0]['sampled_r157_worst_direct_effect_delta'],0.7)
+        self.assertEqual(out['selected_options'][0]['alternative_future_completion_count'],1)
         self.assertFalse(out['finance_server_approved'])
         self.assertEqual(out['game_writes'],0)
         self.assertIn('STOP',r.explain(out))
@@ -102,6 +114,69 @@ class TestR207(unittest.TestCase):
     def test_reject_partial_years(self):
         self.searches[0][3]['top_plans'][0]['start_by_year'].pop()
         self.reject('YEAR_SEQUENCE')
+    def test_same_first_action_different_futures_not_silently_collapsed(self):
+        one=make_result()
+        a=copy.deepcopy(one['top_plans'][0]);b=copy.deepcopy(a)
+        b['start_by_year'][1]['start_project_ids']=[5]
+        b['r160_independent_constraint_replay']['years'][1]['new_project_ids']=[5]
+        b['terminal_mapped_proxy_delta']=0.25
+        b['illustrative_half_effect_sensitivity']=[{'mapped_proxy_delta':0.15}]
+        b['r157_robust_sensitivity']['scenario_min_clamp_only_mapped_delta']=0.09
+        b['r157_robust_sensitivity']['scenario_profiles'][3]['conditional_clamp_only_low_delta']=0.09
+        one['top_plans']=[a,b]
+        self.searches=[('one','nominal',90000,one)]
+        out=self.run_it()
+        x=out['selected_options'][0]
+        self.assertEqual(len(x['sources']),2)
+        self.assertEqual(x['scenarios_observed'],['one'])
+        self.assertEqual(x['alternative_future_completion_count'],2)
+        self.assertEqual(x['sampled_nominal_proxy_range'],[0.25,2.1])
+        self.assertEqual(x['sampled_r157_worst_direct_effect_delta'],0.09)
+        self.assertEqual(x['example_future_project_starts'][0],[5])
+        self.assertEqual(out['scenario_coverage'],1)
+
+    def test_same_first_action_two_scenarios_sourced_separately(self):
+        a=make_result();b=make_result(envelope=80000)
+        self.searches=[('one','nominal',90000,a),('two','nominal',80000,b)]
+        out=self.run_it();x=out['selected_options'][0]
+        self.assertEqual(out['scenario_coverage'],2)
+        self.assertEqual(x['scenarios_observed'],['one','two'])
+        self.assertEqual(x['alternative_future_completion_count'],1)
+
+    def test_budget_tiers_survive_when_high_proxy_dominates(self):
+        low=make_result(ids=(3,), cost=20000, envelope=45000)
+        middle=make_result(ids=(4,), cost=30000, envelope=72000)
+        high=make_result(ids=(5,), cost=40000, envelope=90000)
+        for result,worst in ((low,0.15),(middle,0.45),(high,0.95)):
+            p=result['top_plans'][0]
+            p['r157_robust_sensitivity']['scenario_min_clamp_only_mapped_delta']=worst
+            p['r157_robust_sensitivity']['scenario_profiles'][3]['conditional_clamp_only_low_delta']=worst
+        self.searches=[('LOW','nominal',45000,low),('MID','nominal',72000,middle),('HIGH','nominal',90000,high)]
+        out=self.run_it()
+        self.assertEqual(out['selected_count'],3)
+        self.assertEqual([x['first_year_new_project_ids'] for x in out['selected_options']],[[3],[4],[5]])
+        self.assertEqual(out['represented_scenarios_in_selected_options'],['HIGH','LOW','MID'])
+
+    def test_reject_duplicate_scenario_label(self):
+        self.searches=[self.searches[0],self.searches[0]]
+        self.reject('DUPLICATE_SEARCH_SCENARIO')
+
+    def test_reject_future_year_finance_breach(self):
+        self.searches[0][3]['top_plans'][0]['start_by_year'][4]['conservative_card_cash_requirement_ecu']=100000
+        self.reject('FIVE_YEAR_ILLUSTRATIVE_COST_ENVELOPE')
+
+    def test_reject_total_cost_identity_drift(self):
+        self.searches[0][3]['top_plans'][0]['five_year_conservative_card_cost_ecu']=999
+        self.reject('R160_FIVE_YEAR_COST_IDENTITY')
+
+    def test_reject_unverified_city_dynamics(self):
+        self.searches[0][3]['top_plans'][0]['r157_robust_sensitivity']['unmodeled_city_dynamics_uncertainty_bounded']=True
+        self.reject('R157_UNCERTAINTY_GATE')
+
+    def test_reject_r157_stress_mismatch(self):
+        self.searches[0][3]['top_plans'][0]['r157_robust_sensitivity']['scenario_min_clamp_only_mapped_delta']=3
+        self.reject('R157_STRESS_REPLAY')
+
     def test_reject_mislabeled_objective(self):
         self.searches[0]=('one','scenario_min',90000,self.searches[0][3])
         self.reject('R162_OUTPUT_IDENTITY')
