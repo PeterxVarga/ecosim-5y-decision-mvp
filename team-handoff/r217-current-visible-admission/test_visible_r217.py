@@ -45,6 +45,28 @@ class LiveVisibleR217Tests(unittest.TestCase):
         self.assertEqual(cards["remaining_categories_unobserved"],21)
         self.assertFalse(cards["full_current_catalog_ready"])
         self.assertTrue(all(not c["project_conditions_observed"] for c in cards["captured_cards"]))
+    def test_sport_culture_cards_source_and_status(self):
+        source=self.private/"projects_sport.txt"
+        self.assertTrue(source.exists())
+        text=source.read_text(encoding="utf-8")
+        self.assertIn("# SOURCE_URL=https://edu.ecosim.hu/simulation/projects",text[:250])
+        self.assertIn("# VIEW=Sport és Kultúra",text[:350])
+        self.assertIn("Periódus: 1/5",text)
+        cards=parse_project_cards(text,self.org,expected_ids=range(15,25))
+        self.assertEqual(cards["count"],10)
+        self.assertEqual(cards["money_identical_to_historical_count"],10)
+        self.assertEqual(cards["effects_identical_to_historical_count"],10)
+        self.assertFalse(cards["full_current_catalog_ready"])
+        self.assertEqual([c["id"] for c in cards["captured_cards"]
+                          if c["displayed_status"]=="Fut"],[22,23,24])
+        self.assertTrue(all(not c["project_conditions_observed"]
+                            for c in cards["captured_cards"]))
+    def test_sport_missing_id_fails_closed(self):
+        source=(self.private/"projects_sport.txt").read_text(encoding="utf-8")
+        with self.assertRaisesRegex(ValueError,"HOLD_EXPECTED_CURRENT_CATEGORY_CARD_IDS"):
+            parse_project_cards(source.split("24 - Velodrom")[0],
+                                self.org,expected_ids=range(15,25))
+
     def test_missing_summary_project_must_block(self):
         t=self.pages["summary"].replace("<td>Új ügyfélközpont</td>","<td>WRONG_SOURCE_PROJECT</td>",1)
         with self.assertRaisesRegex(ValueError,"HOLD_HISTORICAL_CARD_NAME_ID_DRIFT"):

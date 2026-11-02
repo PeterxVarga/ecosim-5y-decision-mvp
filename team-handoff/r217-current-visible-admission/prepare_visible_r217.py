@@ -142,10 +142,11 @@ def parse_finance(finance,loans):
     result["long_loan_cap_ecu"]=None
     return result
 
-def parse_project_cards(text,historical):
+def parse_project_cards(text,historical,*,expected_ids=None):
     matches=list(PROJECT.finditer(text))
-    hold(len(matches)==14 and [int(m.group(1)) for m in matches]==list(range(1,15)),
-         "FIRST_FOURTEEN_ECONOMY_CARDS")
+    expected=list(range(1,15)) if expected_ids is None else list(expected_ids)
+    hold(len(matches)==len(expected) and [int(m.group(1)) for m in matches]==expected,
+         "FIRST_FOURTEEN_ECONOMY_CARDS" if expected_ids is None else "EXPECTED_CURRENT_CATEGORY_CARD_IDS")
     source={x["id"]:x for x in historical["projects"]}
     results=[];valid_money=0;valid_effects=0
     for i,m in enumerate(matches):
@@ -179,7 +180,7 @@ def parse_project_cards(text,historical):
     return {"captured_cards":results,"count":len(results),
             "money_identical_to_historical_count":valid_money,
             "effects_identical_to_historical_count":valid_effects,
-            "remaining_categories_unobserved":21,
+            "remaining_categories_unobserved":35-len(results),
             "full_current_catalog_ready":False}
 
 def build(folder,dest):

@@ -20,3 +20,43 @@ Az R217 R156 adatcsomag, pénzügyi résznyugta, 35 projektstátusz és forrásh
 
 ## Következő kritikus hiány
 Mind a 35 jelenlegi projektkártya (feltételekkel), a tényleges maxProjectPerTurn forrása, valamint a jelenleg elkölthető összeg és kötelezettségek külön megfigyelése. E nélkül az R214-hez nincs teljes engedélyezett bemenet. No game writes, no merge or deploy. GAME_ACTION_GATE=STOP.
+
+## R220: all four category views genuinely observed (2026-11-02)
+
+In the SAME logged-in Selejtező, Market I, P1 UI, the user switched four
+Project categories. The authorized read-only browser connector returned each
+active category's visible HTML/text, saved PRIVATE on Fedora as
+`projects_economy.txt`, `projects_sport.txt`, `projects_transport.txt`,
+`projects_environment.txt` with visible source URL, source class, identity,
+and a view label. Existing R217 summary and immutable R156 state retained.
+
+`qualify_all_views_r220.py` reuses the original R217 card parser and
+the original pinned R162 35-project dataset. It requires, in each of four views,
+exact sequential project IDs (1–14; 15–24; 25–31; 32–35), same named cards,
+exact displayed four financial values, same visible effect metric/% pairs,
+and current UI Start/Fut state equal to the current Summary's p0/p1 state.
+It also rechecks SHA hashes of all five R217 previously acquired page inputs.
+
+The private result `~/Downloads/ecosim-r220-all-35-current-source-20261102/R220_RECEIPT.json`
+proves **35/35 current visible card financial + displayed effect parity** and
+six running projects 14,22,23,24,34,35. Original two card reports are still
+not substitutes for current source. The existing R217 captured 14/35; R220
+uses the four private pages to prove complete *visible-field coverage*.
+
+**Critical HOLD remains unchanged:** The UI does not evidence the full R192
+project_conditions arrays or a formally verified market project start cap.
+The finance page's p1 reserve/earnings are NOT admitted as spendable funds.
+R192's full current card definition admission, R191 project-cap admission,
+and R214 finance/decision issuance are all **HOLD**; no automatic gameplay.
+No browser page bodies, account data, cookies, or R220 receipts enter Git.
+
+Reproduce with private sources already on Fedora:
+
+```bash
+env R220_PRIVATE_PAGES="$HOME/Downloads/ecosim-r217-live-readonly-20261102" \
+    R220_R217_DIR="$HOME/Downloads/ecosim-r217-current-admission-20261102" \
+    python3 -I -B team-handoff/r217-current-visible-admission/test_all_views_r220.py
+```
+
+The eight R220 tests include byte-determinism, fake status, altered name,
+wrong active category, missing category, and output-overwrite refusal.
