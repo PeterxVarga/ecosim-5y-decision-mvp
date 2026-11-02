@@ -79,6 +79,7 @@ def exercise():
         'project_model_display_condition_statuses':statuses,
         'sampled_policy_financial_rows':[{
              'project_plan':x['candidate_id'], 'policy':x['path_id'],
+             'first_year_project_ids':next(y['project_ids_by_year'][0] for y in candidates if y['candidate_id']==x['candidate_id']),
              'five_year_project_card_cost_ecu':x['five_year_project_card_cost_ecu'],
              'five_year_partial_net_after_card_cost_ecu':x['five_year_partial_net_after_card_cost_ecu'],
              'hypothetical_zero_opening_deferred_peak_shortfall_ecu':x['hypothetical_peak_zero_opening_cash_shortfall_positive_receipts_deferred_ecu'],
