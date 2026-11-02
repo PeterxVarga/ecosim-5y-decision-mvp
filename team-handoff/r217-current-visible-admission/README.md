@@ -60,3 +60,9 @@ env R220_PRIVATE_PAGES="$HOME/Downloads/ecosim-r217-live-readonly-20261102" \
 
 The eight R220 tests include byte-determinism, fake status, altered name,
 wrong active category, missing category, and output-overwrite refusal.
+
+## R222 forráshelyességi pontosítás (2026-11-02)
+
+Az R217 és R220 korábbi leírásában a projektfeltételek **nem megfigyeltként** szerepeltek, mert az eredeti, költségekre és hatásokra szűkített kártyaparser **nem olvasta ki** a látható `Projekt feltételek` szakaszt. Az eredeti négy, változatlan böngészős forrás újbóli elemzése megmutatta, hogy a 30. és 31. projektnél a feltételek **valóban meg vannak jelenítve**: Bubi ← Bicikliútfejlesztés fut; P+R ← Vasútfejlesztés fut. A másik 33 kártyán nem jelenik meg külön feltételblokk.
+
+A konkrét forrásazonosítók és az eredeti R192 `_card` ellenőrzése a `team-handoff/r222-visible-conditions/` láncban találhatók. A négy megfigyelés viszont 103,55 percen át történt, ezért az R192 **egyórás** aktuális felvételi időkapuja továbbra is **HOLD**. A jelenlegi Market I projektlimit és elkölthető cash továbbra is UNKNOWN; nem indítottunk játékműveletet.
