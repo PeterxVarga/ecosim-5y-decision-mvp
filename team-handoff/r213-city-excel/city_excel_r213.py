@@ -48,17 +48,23 @@ def load_xlsx(path,*,require_legacy_team=True):
             strings=ET.fromstring(z.read("xl/sharedStrings.xml"))
             shared=["".join(t.text or "" for t in si.iter(NS+"t")) for si in strings.findall(NS+"si")]
         sheet=ET.fromstring(z.read("xl/worksheets/sheet1.xml"))
+    columns="ABCDEF" if require_legacy_team else "ABCDEFGH"
     cells={}
     for row in sheet.findall("./"+NS+"sheetData/"+NS+"row"):
         n=int(row.attrib["r"])
         hold(1<=n<=500 and n not in cells,"ROW_INVALID")
-        values=[None]*6
+        values=[None]*len(columns)
         for c in row.findall(NS+"c"):
             address=c.attrib.get("r","")
             m=re.fullmatch(r"([A-Z]+)([0-9]+)",address)
             hold(bool(m),"CELL_ADDRESS")
             col,rnum=m.groups()
-            if col not in "ABCDEF" or len(col)!=1:continue
+            if col not in columns or len(col)!=1:
+                # Do not silently ignore a new team header beyond the
+                # established five- or seven-team layout.
+                if n==1 and (c.find(NS+"v") is not None or c.find(NS+"is") is not None):
+                    hold(False,"SUPPORTED_TEAM_COLUMNS")
+                continue
             hold(int(rnum)==n,"CELL_ROW")
             hold(c.find(NS+"f") is None,"FORMULA_CELL_NOT_REPRODUCIBLE")
             v=c.find(NS+"v")
@@ -83,11 +89,13 @@ def load_xlsx(path,*,require_legacy_team=True):
             values[ord(col)-65]=value
         cells[n]=values
     hold(cells[1][0]=="Összefoglaló" and not any(any(v is not None for v in values) for row,values in cells.items() if row>384),"EXPECTED_384_ROW_SOURCE")
-    teams=cells[1][1:]
-    hold(len(teams)==5 and len(set(teams))==5 and all(isinstance(t,str) and t.strip() for t in teams) and (not require_legacy_team or TEAM in teams),"EXPECTED_FIVE_TEAMS")
+    teams=list(cells[1][1:])
+    while teams and teams[-1] is None:teams.pop()
+    hold(len(teams)==5 if require_legacy_team else len(teams) in (5,7),"SUPPORTED_TEAM_COLUMNS")
+    hold(len(set(teams))==len(teams) and all(isinstance(t,str) and t.strip() for t in teams) and (not require_legacy_team or TEAM in teams),"EXPECTED_DISTINCT_TEAM_HEADERS")
     records=[];section=SECTIONS[0]
     for rownum in range(2,385):
-        values=cells.get(rownum,[None]*6)
+        values=cells.get(rownum,[None]*len(columns))
         label=values[0]
         if not isinstance(label,str) or not label.strip():continue
         depth=len(label)-len(label.lstrip(" "))
@@ -95,12 +103,14 @@ def load_xlsx(path,*,require_legacy_team=True):
             section=label.strip()
             hold(section in SECTIONS,"UNKNOWN_SECTION")
         records.append({"row":rownum,"section":section,"depth":depth,
-                        "label":label.strip(),"values":values[1:]})
+                        "label":label.strip(),"values":values[1:1+len(teams)]})
     hold(tuple(x["label"] for x in records if x["depth"]==0)==SECTIONS[1:],
          "TOP_LEVEL_SECTIONS")
     hold(len(records)==374,"SOURCE_ROW_COUNT")
     return {"sha256":digest(path),"rows":records,"teams":teams,
-            "sheet":"0","source_type":"HISTORICAL_TEST_ROUND_EXPORT_NOT_CURRENT"}
+            "sheet":"0","source_type":(
+                "HISTORICAL_TEST_ROUND_EXPORT_NOT_CURRENT" if require_legacy_team
+                else "UNVERIFIED_OPERATOR_EXCEL_NOT_CURRENT_PLAN")}
 def compare_r156(readout,export):
     hold(export.get("schema")=="ECOSIM_R156_LOCAL_OPERATOR_EXPORT_V1" and
          export.get("capture_mode")=="HISTORICAL_REFERENCE" and

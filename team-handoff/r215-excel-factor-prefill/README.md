@@ -1,7 +1,7 @@
 # R215 – forrásellenőrzött Excel-faktor-előkitöltés
 
 ## Felhasználói képesség
-Az R213 eredeti beolvasóját újrahasználva a következő, azonos 374 soros szerkezetű városi exportból egyetlen paranccsal előállítható az R156 29 mutatót és indexet tartalmazó faktor-CSV. Ez 30 mező kézi beírását válthatja ki. A régi R213 működés változatlan; az új opció más ötcsapatos oszlopneveket is megenged.
+Az R213 eredeti beolvasóját újrahasználva a következő, azonos 374 soros szerkezetű városi exportból egyetlen paranccsal előállítható az R156 29 mutatót és indexet tartalmazó faktor-CSV. Ez 30 mező kézi beírását válthatja ki. Az R216 kiterjesztés az új Selejtező_I export **hétcsapatos** A:H elrendezését is kezeli. Az eredeti R213 ötcsapatos forrásfeldolgozása változatlan és szigorú; az új R215 operátori mód csak 5 vagy 7 ellenőrzött csapatos, pontosan 374 címkézett soros exportot fogad. A tesztben 3 szintetikus forrássor-változást ellenőriztünk. A tényleges selejtezős fájl privát marad és nem kerül a repositoryba.
 
 ## Használat aktuális, ténylegesen exportált Excelből
 bash team-handoff/r215-excel-factor-prefill/run_private.sh --new-workbook /private/current_city.xlsx --team 'A SAJÁT AKTUÁLIS CSAPAT' --source-id 'CURRENT_OPERATOR_OBSERVED_CITY_EXPORT' --out-dir /private/new_r215_report
