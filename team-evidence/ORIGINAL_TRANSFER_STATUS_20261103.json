@@ -12,5 +12,6 @@
     "bytes": 1602800
   },
   "archive_sha256": "ca7e03556a31d3961b2b482b2aabee0f7567db62526edfdd91bf461237c9398d",
-  "note": "Git sources only; no game mutation. Missing R257/R258 are not claimed uploaded."
+  "note": "GitHub main publication verified: original binaries, Fedora R257 and R258 artifact paths are present. No new game mutation. R258 documents historical unsaved A/B trials; current server game state UNKNOWN.",
+  "git_main_commit_verified": "8001ab91a830ce034a0da1c5ddd29aab38f52a65"
 }
