@@ -1,0 +1,30 @@
+{
+  "bundle_sha256": "078882198dfa74f2d33453daba272c255d652a5021953022cb68dfc69778dce2",
+  "game_writes": 0,
+  "main_views_observed": 10,
+  "ready_for_final_optimization": false,
+  "schema": "ECOSIM_R238_UNIFIED_OBSERVED_P1_PRIVATE_NOT_STRATEGY_V1",
+  "selector_labels_incomplete": 27,
+  "source_controls": 23,
+  "source_excel_rows": 374,
+  "source_factor_pairs": 29,
+  "source_file_sha256": {
+    "income_browser": "4030a7eea7f7987c496f693fde4f614d3f4219d3f92f7c2017abf6593a70d2cb",
+    "p1_factors": "32713ad30fbb2eed6eb007a87928d19659a149e7d164ab23d2e9f2f61782b61d",
+    "p1_project_states": "07a67443a2e4ecfe10c4d7a0b28902a49b92981b79252add581f3ae2c67f3082",
+    "projects": "0438d35a1ea04fa4ee71a02a2205c652ea80a2ca8a61d2c99b8c30953ef3e944",
+    "r217": "13010cfda7699df7d62184b76d56088abc901aea2e04fb7b87a259a64344d8f2",
+    "r222": "bf7f2e69658ba9640ca338426c114ea1211d661702fe9087ec9ec3d61691db45",
+    "r224": "b8304765b993e7371f1aefa4186d44f0312be1d43a6903f1f0f0b188a39e17ac",
+    "r226": "abe3afa1bef4b63f2175c74a8fd3f6e39b339f26d8f7682fc437d733b95bd597",
+    "r228": "3416f2805c38d8c51f5e22cbd23dc4effe553893075e1c58a82b95072dac944b",
+    "r233": "4e2a53013917e2c1a802ca79dccb340cf6e41b733fdfc133bd3547fb32f7233f",
+    "r234": "825bda3bab57323c2ccc759548f97fc757c910dea74824a150c93294fae8d6db",
+    "r235": "5d6bad2a8ceb0614785f4edf4c478d19ceb5e6d1494cce932761dfddfdff03d4",
+    "r236": "42986e8f2dc3966062768987436b1b99e16dd418041be94880d8aa4ab7565663",
+    "xlsx": "a130d6606c4488112c8825d79d5fb6aaa65a65f4dca7d1e1f9e4029cdafe53f4"
+  },
+  "source_projects": 35,
+  "status": "PARTIAL_DATA_UNIFIED_NOT_COMPLETE",
+  "verified_policy_ranges": 0
+}
