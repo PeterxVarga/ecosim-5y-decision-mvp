@@ -1,24 +1,27 @@
 {
   "schema": "ecosim.original-library-artifact-inventory.v1",
   "captured_at": "2026-11-03",
-  "publication_status": "METADATA_ONLY_ORIGINAL_BINARY_FILES_NOT_YET_COMMITTED",
+  "publication_status": "R195_ORIGINAL_ZIP_ON_MAIN_OTHER_LIBRARY_ORIGINALS_NOT_YET_ON_MAIN",
   "repository_visibility": "PUBLIC",
   "scope": "User-provided original binary artifacts in accessible ChatGPT Library. Binary bytes inspected and hashed in ephemeral workspace; source remains Library, not GitHub main.",
   "artifacts": [
     {
       "name": "X-Challenge 2026 Selejtező_Jutalom a nap végén_Selejtező_I.xlsx",
       "size_bytes": 105709,
-      "sha256": "a130d6606c4488112c8825d79d5fb6aaa65a65f4dca7d1e1f9e4029cdafe53f4"
+      "sha256": "a130d6606c4488112c8825d79d5fb6aaa65a65f4dca7d1e1f9e4029cdafe53f4",
+      "on_main": false
     },
     {
       "name": "X-Challenge 2026 Tesztforduló_Jutalom a nap végén_Tesztforduló_Z (1)(1).xlsx",
       "size_bytes": 98265,
-      "sha256": "c6cd0681a28872beb556652b584674f442c5105c379f365027ee9dbd3efe69bc"
+      "sha256": "c6cd0681a28872beb556652b584674f442c5105c379f365027ee9dbd3efe69bc",
+      "on_main": false
     },
     {
       "name": "ecosim_R227_forraslefedettseg.xlsx",
       "size_bytes": 39491,
-      "sha256": "834ff600e610a7426890b4f9f588b5185290e10bfd46c852ff0ac2ab0df92459"
+      "sha256": "834ff600e610a7426890b4f9f588b5185290e10bfd46c852ff0ac2ab0df92459",
+      "on_main": false
     },
     {
       "name": "ecosim-r238-pinned-final-private-20261102.zip",
@@ -27,14 +30,26 @@
       "uncompressed_content_sha256": {
         "ECOSIM_P1_OBSERVED_PRIVATE": "078882198dfa74f2d33453daba272c255d652a5021953022cb68dfc69778dce2",
         "R238_RECEIPT": "d5497d8e5d0a12c4cf48f61d633de2d639d4d2ce1cf253f8fed099dc5fc5a464"
-      }
+      },
+      "on_main": false
     },
     {
       "name": "ecosim_R195_tradeoff_rc.zip",
       "size_bytes": 29071,
-      "sha256": "66bcab5f636382748dbe51cbc0ace53b48fa40ac0f406341a38ef88b327536e5"
+      "sha256": "66bcab5f636382748dbe51cbc0ace53b48fa40ac0f406341a38ef88b327536e5",
+      "on_main": true
     }
   ],
   "pending": "Exact binary Git blobs and Fedora-only R257/R258 directories. Do not represent this manifest as those files being published.",
-  "auth": "NO_GAME_WRITES_NO_SAVE"
+  "auth": "NO_GAME_WRITES_NO_SAVE",
+  "published_raw_git_blob": {
+    "path": "team-evidence/owner-originals-20261103/original-binaries/ecosim_R195_tradeoff_rc.zip",
+    "sha1": "619b575a85228a8b27fbba0009870106ddab6b71"
+  },
+  "transfer_bundle": {
+    "files": 13,
+    "name": "ecosim-library-original-binaries-13files-20261103.zip",
+    "sha256": "ca7e03556a31d3961b2b482b2aabee0f7567db62526edfdd91bf461237c9398d",
+    "status": "CREATED_IN_CONVERSATION_NOT_UPLOADED_TO_GITHUB"
+  }
 }
