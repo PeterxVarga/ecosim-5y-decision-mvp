@@ -1,0 +1,127 @@
+{
+  "data_bundle_integrity": "PASS_ARCHIVE_CRC_AND_RECEIPT_SHA256",
+  "source_authenticity_independently_proven": false,
+  "why_source_authenticity_unverified": "Original source files for the 14 source hashes are not bundled; only the joined dataset and SHA receipt are available.",
+  "strategy_ready": false,
+  "gameplay_allowed": false,
+  "summary": {
+    "excel_rows": 374,
+    "own_team_numeric_excel_p0": 324,
+    "teams": 7,
+    "projects": 35,
+    "currently_running_projects_observed": 6,
+    "factor_pairs": 29,
+    "changed_factor_pairs": 24,
+    "top_level_default_pages": 10,
+    "subview_selector_labels": 27,
+    "decision_controls": 23,
+    "exact_excel_p0_joins": 19,
+    "verified_full_bounds": 0,
+    "verified_saved_p1_actions": 0,
+    "verified_causal_effects": 0
+  },
+  "provenance": {
+    "source_zip_filename": "ecosim-r238-pinned-final-private-20261102.zip",
+    "archive_sha256": "c776a74e5a4cb81d6c37adf011bdb4ffda8de5f41577bf1661e0ce7c0876eca2",
+    "joined_dataset_sha256": "078882198dfa74f2d33453daba272c255d652a5021953022cb68dfc69778dce2",
+    "source_original_cards_captured_over_minutes": 103.553,
+    "codex_browser_status_in_zip": "HOST_UNAVAILABLE"
+  },
+  "source_views": [
+    {
+      "route": "summary",
+      "capture_note": "active/default only",
+      "selector_labels": []
+    },
+    {
+      "route": "projects",
+      "capture_note": "active/default only",
+      "selector_labels": [
+        "Gazdaságfejlesztés",
+        "Sport és Kultúra",
+        "Közlekedés",
+        "Környezet"
+      ]
+    },
+    {
+      "route": "institutions",
+      "capture_note": "active/default only",
+      "selector_labels": [
+        "Oktatás",
+        "Művelődés és sport",
+        "Egészségügy",
+        "Szolgáltató",
+        "Városi hivatal",
+        "Szociális intézmények"
+      ]
+    },
+    {
+      "route": "transport",
+      "capture_note": "active/default only",
+      "selector_labels": [
+        "Járművek",
+        "Közlekedési személyzet",
+        "Belsőégésű motoros buszok",
+        "Elektromos buszok"
+      ]
+    },
+    {
+      "route": "income",
+      "capture_note": "active/default only",
+      "selector_labels": [
+        "Szolgáltatások díjai",
+        "Adók",
+        "Állami törvények"
+      ]
+    },
+    {
+      "route": "population",
+      "capture_note": "active/default only",
+      "selector_labels": [
+        "Lakosság száma",
+        "Foglalkozás, kereset",
+        "Egyéb adatok"
+      ]
+    },
+    {
+      "route": "corporations",
+      "capture_note": "active/default only",
+      "selector_labels": [
+        "Kisvállalkozások",
+        "Közepes méretű vállalkozások",
+        "Nagyvállalkozások"
+      ]
+    },
+    {
+      "route": "loans",
+      "capture_note": "active/default only",
+      "selector_labels": [
+        "Hosszú távú hitelek",
+        "Rövidlejáratú hitelek"
+      ]
+    },
+    {
+      "route": "finance",
+      "capture_note": "active/default only",
+      "selector_labels": [
+        "Cash flow",
+        "Vagyoni kimutatás"
+      ]
+    },
+    {
+      "route": "analysis",
+      "capture_note": "active/default only",
+      "selector_labels": []
+    }
+  ],
+  "remaining_evidence_gaps": [
+    "Missing contents of alternate subviews; 27 selector labels do not equal 27 captured pages.",
+    "Coherent current project catalog in the same time window as current P1 state.",
+    "Server-verified project admission cap and spendable cash, including loan and grant constraints.",
+    "Current legal and dynamic min/max for 23 decision controls and proof of saved P1 actions.",
+    "Current market institution multiplier configuration and other hidden model parameters.",
+    "Policy causal impacts on cash/city factors (P1 plan is not P1 fact).",
+    "P2-P5 actual outcomes can only be observed in later periods."
+  ],
+  "safe_next_step": "Re-use existing R238 data; acquire missing active subview data read-only through authorized browser controls; do not run final strategy or write gameplay before admissibility gates."
+}

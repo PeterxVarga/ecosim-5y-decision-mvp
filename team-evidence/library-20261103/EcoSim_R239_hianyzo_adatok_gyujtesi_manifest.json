@@ -1,0 +1,502 @@
+{
+  "schema": "ECOSIM_R239_MISSING_CURRENT_SOURCE_CAPTURE_MANIFEST_V1",
+  "source_archive_name": "ecosim-r238-pinned-final-private-20261102.zip",
+  "r238_bundle_sha256_verified": "078882198dfa74f2d33453daba272c255d652a5021953022cb68dfc69778dce2",
+  "round": "Selejtező",
+  "market": "I",
+  "period": 1,
+  "source_status": "PARTIAL_10_MAIN_VIEWS_27_SELECTOR_LABELS",
+  "prior_capture_counts": {
+    "top_level_selected_views": 10,
+    "selector_labels": 27,
+    "projects_historical": 35,
+    "factor_pairs": 29,
+    "identified_control_surfaces": 23,
+    "full_policy_bounds": 0
+  },
+  "subview_targets": [
+    {
+      "route": "projects",
+      "selector_label": "Gazdaságfejlesztés",
+      "priority": "P0",
+      "prior_source_status": "NOT_VERIFIED_IN_R238_DEFAULT_VIEW",
+      "action": "CAPTURE_CURRENT_P1_WITH_CONSENTED_READONLY_BROWSER",
+      "requirements": [
+        "source URL",
+        "UTC capture time",
+        "round/team/market/period",
+        "P0 fact and P1 plan labeled distinctly",
+        "source hash",
+        "original visible fields"
+      ],
+      "mutation_prohibited": true
+    },
+    {
+      "route": "projects",
+      "selector_label": "Sport és Kultúra",
+      "priority": "P0",
+      "prior_source_status": "NOT_VERIFIED_IN_R238_DEFAULT_VIEW",
+      "action": "CAPTURE_CURRENT_P1_WITH_CONSENTED_READONLY_BROWSER",
+      "requirements": [
+        "source URL",
+        "UTC capture time",
+        "round/team/market/period",
+        "P0 fact and P1 plan labeled distinctly",
+        "source hash",
+        "original visible fields"
+      ],
+      "mutation_prohibited": true
+    },
+    {
+      "route": "projects",
+      "selector_label": "Közlekedés",
+      "priority": "P0",
+      "prior_source_status": "NOT_VERIFIED_IN_R238_DEFAULT_VIEW",
+      "action": "CAPTURE_CURRENT_P1_WITH_CONSENTED_READONLY_BROWSER",
+      "requirements": [
+        "source URL",
+        "UTC capture time",
+        "round/team/market/period",
+        "P0 fact and P1 plan labeled distinctly",
+        "source hash",
+        "original visible fields"
+      ],
+      "mutation_prohibited": true
+    },
+    {
+      "route": "projects",
+      "selector_label": "Környezet",
+      "priority": "P0",
+      "prior_source_status": "NOT_VERIFIED_IN_R238_DEFAULT_VIEW",
+      "action": "CAPTURE_CURRENT_P1_WITH_CONSENTED_READONLY_BROWSER",
+      "requirements": [
+        "source URL",
+        "UTC capture time",
+        "round/team/market/period",
+        "P0 fact and P1 plan labeled distinctly",
+        "source hash",
+        "original visible fields"
+      ],
+      "mutation_prohibited": true
+    },
+    {
+      "route": "institutions",
+      "selector_label": "Oktatás",
+      "priority": "P1",
+      "prior_source_status": "DEFAULT_OR_INNER_SNAPSHOT_PARTIALLY_OBSERVED",
+      "action": "CAPTURE_CURRENT_P1_WITH_CONSENTED_READONLY_BROWSER",
+      "requirements": [
+        "source URL",
+        "UTC capture time",
+        "round/team/market/period",
+        "P0 fact and P1 plan labeled distinctly",
+        "source hash",
+        "original visible fields"
+      ],
+      "mutation_prohibited": true
+    },
+    {
+      "route": "institutions",
+      "selector_label": "Művelődés és sport",
+      "priority": "P1",
+      "prior_source_status": "NOT_VERIFIED_IN_R238_DEFAULT_VIEW",
+      "action": "CAPTURE_CURRENT_P1_WITH_CONSENTED_READONLY_BROWSER",
+      "requirements": [
+        "source URL",
+        "UTC capture time",
+        "round/team/market/period",
+        "P0 fact and P1 plan labeled distinctly",
+        "source hash",
+        "original visible fields"
+      ],
+      "mutation_prohibited": true
+    },
+    {
+      "route": "institutions",
+      "selector_label": "Egészségügy",
+      "priority": "P1",
+      "prior_source_status": "NOT_VERIFIED_IN_R238_DEFAULT_VIEW",
+      "action": "CAPTURE_CURRENT_P1_WITH_CONSENTED_READONLY_BROWSER",
+      "requirements": [
+        "source URL",
+        "UTC capture time",
+        "round/team/market/period",
+        "P0 fact and P1 plan labeled distinctly",
+        "source hash",
+        "original visible fields"
+      ],
+      "mutation_prohibited": true
+    },
+    {
+      "route": "institutions",
+      "selector_label": "Szolgáltató",
+      "priority": "P1",
+      "prior_source_status": "NOT_VERIFIED_IN_R238_DEFAULT_VIEW",
+      "action": "CAPTURE_CURRENT_P1_WITH_CONSENTED_READONLY_BROWSER",
+      "requirements": [
+        "source URL",
+        "UTC capture time",
+        "round/team/market/period",
+        "P0 fact and P1 plan labeled distinctly",
+        "source hash",
+        "original visible fields"
+      ],
+      "mutation_prohibited": true
+    },
+    {
+      "route": "institutions",
+      "selector_label": "Városi hivatal",
+      "priority": "P1",
+      "prior_source_status": "NOT_VERIFIED_IN_R238_DEFAULT_VIEW",
+      "action": "CAPTURE_CURRENT_P1_WITH_CONSENTED_READONLY_BROWSER",
+      "requirements": [
+        "source URL",
+        "UTC capture time",
+        "round/team/market/period",
+        "P0 fact and P1 plan labeled distinctly",
+        "source hash",
+        "original visible fields"
+      ],
+      "mutation_prohibited": true
+    },
+    {
+      "route": "institutions",
+      "selector_label": "Szociális intézmények",
+      "priority": "P1",
+      "prior_source_status": "NOT_VERIFIED_IN_R238_DEFAULT_VIEW",
+      "action": "CAPTURE_CURRENT_P1_WITH_CONSENTED_READONLY_BROWSER",
+      "requirements": [
+        "source URL",
+        "UTC capture time",
+        "round/team/market/period",
+        "P0 fact and P1 plan labeled distinctly",
+        "source hash",
+        "original visible fields"
+      ],
+      "mutation_prohibited": true
+    },
+    {
+      "route": "transport",
+      "selector_label": "Járművek",
+      "priority": "P1",
+      "prior_source_status": "DEFAULT_OR_INNER_SNAPSHOT_PARTIALLY_OBSERVED",
+      "action": "CAPTURE_CURRENT_P1_WITH_CONSENTED_READONLY_BROWSER",
+      "requirements": [
+        "source URL",
+        "UTC capture time",
+        "round/team/market/period",
+        "P0 fact and P1 plan labeled distinctly",
+        "source hash",
+        "original visible fields"
+      ],
+      "mutation_prohibited": true
+    },
+    {
+      "route": "transport",
+      "selector_label": "Közlekedési személyzet",
+      "priority": "P1",
+      "prior_source_status": "NOT_VERIFIED_IN_R238_DEFAULT_VIEW",
+      "action": "CAPTURE_CURRENT_P1_WITH_CONSENTED_READONLY_BROWSER",
+      "requirements": [
+        "source URL",
+        "UTC capture time",
+        "round/team/market/period",
+        "P0 fact and P1 plan labeled distinctly",
+        "source hash",
+        "original visible fields"
+      ],
+      "mutation_prohibited": true
+    },
+    {
+      "route": "transport",
+      "selector_label": "Belsőégésű motoros buszok",
+      "priority": "P1",
+      "prior_source_status": "DEFAULT_OR_INNER_SNAPSHOT_PARTIALLY_OBSERVED",
+      "action": "CAPTURE_CURRENT_P1_WITH_CONSENTED_READONLY_BROWSER",
+      "requirements": [
+        "source URL",
+        "UTC capture time",
+        "round/team/market/period",
+        "P0 fact and P1 plan labeled distinctly",
+        "source hash",
+        "original visible fields"
+      ],
+      "mutation_prohibited": true
+    },
+    {
+      "route": "transport",
+      "selector_label": "Elektromos buszok",
+      "priority": "P1",
+      "prior_source_status": "NOT_VERIFIED_IN_R238_DEFAULT_VIEW",
+      "action": "CAPTURE_CURRENT_P1_WITH_CONSENTED_READONLY_BROWSER",
+      "requirements": [
+        "source URL",
+        "UTC capture time",
+        "round/team/market/period",
+        "P0 fact and P1 plan labeled distinctly",
+        "source hash",
+        "original visible fields"
+      ],
+      "mutation_prohibited": true
+    },
+    {
+      "route": "income",
+      "selector_label": "Szolgáltatások díjai",
+      "priority": "P0",
+      "prior_source_status": "DEFAULT_OR_INNER_SNAPSHOT_PARTIALLY_OBSERVED",
+      "action": "CAPTURE_CURRENT_P1_WITH_CONSENTED_READONLY_BROWSER",
+      "requirements": [
+        "source URL",
+        "UTC capture time",
+        "round/team/market/period",
+        "P0 fact and P1 plan labeled distinctly",
+        "source hash",
+        "original visible fields"
+      ],
+      "mutation_prohibited": true
+    },
+    {
+      "route": "income",
+      "selector_label": "Adók",
+      "priority": "P0",
+      "prior_source_status": "SEPARATE_OLDER_READONLY_SNAPSHOT_IN_R238; NEED_FRESH_VERIFICATION",
+      "action": "CAPTURE_CURRENT_P1_WITH_CONSENTED_READONLY_BROWSER",
+      "requirements": [
+        "source URL",
+        "UTC capture time",
+        "round/team/market/period",
+        "P0 fact and P1 plan labeled distinctly",
+        "source hash",
+        "original visible fields"
+      ],
+      "mutation_prohibited": true
+    },
+    {
+      "route": "income",
+      "selector_label": "Állami törvények",
+      "priority": "P0",
+      "prior_source_status": "NOT_VERIFIED_IN_R238_DEFAULT_VIEW",
+      "action": "CAPTURE_CURRENT_P1_WITH_CONSENTED_READONLY_BROWSER",
+      "requirements": [
+        "source URL",
+        "UTC capture time",
+        "round/team/market/period",
+        "P0 fact and P1 plan labeled distinctly",
+        "source hash",
+        "original visible fields"
+      ],
+      "mutation_prohibited": true
+    },
+    {
+      "route": "population",
+      "selector_label": "Lakosság száma",
+      "priority": "P2",
+      "prior_source_status": "DEFAULT_OR_INNER_SNAPSHOT_PARTIALLY_OBSERVED",
+      "action": "CAPTURE_CURRENT_P1_WITH_CONSENTED_READONLY_BROWSER",
+      "requirements": [
+        "source URL",
+        "UTC capture time",
+        "round/team/market/period",
+        "P0 fact and P1 plan labeled distinctly",
+        "source hash",
+        "original visible fields"
+      ],
+      "mutation_prohibited": true
+    },
+    {
+      "route": "population",
+      "selector_label": "Foglalkozás, kereset",
+      "priority": "P2",
+      "prior_source_status": "NOT_VERIFIED_IN_R238_DEFAULT_VIEW",
+      "action": "CAPTURE_CURRENT_P1_WITH_CONSENTED_READONLY_BROWSER",
+      "requirements": [
+        "source URL",
+        "UTC capture time",
+        "round/team/market/period",
+        "P0 fact and P1 plan labeled distinctly",
+        "source hash",
+        "original visible fields"
+      ],
+      "mutation_prohibited": true
+    },
+    {
+      "route": "population",
+      "selector_label": "Egyéb adatok",
+      "priority": "P2",
+      "prior_source_status": "NOT_VERIFIED_IN_R238_DEFAULT_VIEW",
+      "action": "CAPTURE_CURRENT_P1_WITH_CONSENTED_READONLY_BROWSER",
+      "requirements": [
+        "source URL",
+        "UTC capture time",
+        "round/team/market/period",
+        "P0 fact and P1 plan labeled distinctly",
+        "source hash",
+        "original visible fields"
+      ],
+      "mutation_prohibited": true
+    },
+    {
+      "route": "corporations",
+      "selector_label": "Kisvállalkozások",
+      "priority": "P2",
+      "prior_source_status": "DEFAULT_OR_INNER_SNAPSHOT_PARTIALLY_OBSERVED",
+      "action": "CAPTURE_CURRENT_P1_WITH_CONSENTED_READONLY_BROWSER",
+      "requirements": [
+        "source URL",
+        "UTC capture time",
+        "round/team/market/period",
+        "P0 fact and P1 plan labeled distinctly",
+        "source hash",
+        "original visible fields"
+      ],
+      "mutation_prohibited": true
+    },
+    {
+      "route": "corporations",
+      "selector_label": "Közepes méretű vállalkozások",
+      "priority": "P2",
+      "prior_source_status": "NOT_VERIFIED_IN_R238_DEFAULT_VIEW",
+      "action": "CAPTURE_CURRENT_P1_WITH_CONSENTED_READONLY_BROWSER",
+      "requirements": [
+        "source URL",
+        "UTC capture time",
+        "round/team/market/period",
+        "P0 fact and P1 plan labeled distinctly",
+        "source hash",
+        "original visible fields"
+      ],
+      "mutation_prohibited": true
+    },
+    {
+      "route": "corporations",
+      "selector_label": "Nagyvállalkozások",
+      "priority": "P2",
+      "prior_source_status": "NOT_VERIFIED_IN_R238_DEFAULT_VIEW",
+      "action": "CAPTURE_CURRENT_P1_WITH_CONSENTED_READONLY_BROWSER",
+      "requirements": [
+        "source URL",
+        "UTC capture time",
+        "round/team/market/period",
+        "P0 fact and P1 plan labeled distinctly",
+        "source hash",
+        "original visible fields"
+      ],
+      "mutation_prohibited": true
+    },
+    {
+      "route": "loans",
+      "selector_label": "Hosszú távú hitelek",
+      "priority": "P0",
+      "prior_source_status": "DEFAULT_OR_INNER_SNAPSHOT_PARTIALLY_OBSERVED",
+      "action": "CAPTURE_CURRENT_P1_WITH_CONSENTED_READONLY_BROWSER",
+      "requirements": [
+        "source URL",
+        "UTC capture time",
+        "round/team/market/period",
+        "P0 fact and P1 plan labeled distinctly",
+        "source hash",
+        "original visible fields"
+      ],
+      "mutation_prohibited": true
+    },
+    {
+      "route": "loans",
+      "selector_label": "Rövidlejáratú hitelek",
+      "priority": "P0",
+      "prior_source_status": "NOT_VERIFIED_IN_R238_DEFAULT_VIEW",
+      "action": "CAPTURE_CURRENT_P1_WITH_CONSENTED_READONLY_BROWSER",
+      "requirements": [
+        "source URL",
+        "UTC capture time",
+        "round/team/market/period",
+        "P0 fact and P1 plan labeled distinctly",
+        "source hash",
+        "original visible fields"
+      ],
+      "mutation_prohibited": true
+    },
+    {
+      "route": "finance",
+      "selector_label": "Cash flow",
+      "priority": "P0",
+      "prior_source_status": "DEFAULT_OR_INNER_SNAPSHOT_PARTIALLY_OBSERVED",
+      "action": "CAPTURE_CURRENT_P1_WITH_CONSENTED_READONLY_BROWSER",
+      "requirements": [
+        "source URL",
+        "UTC capture time",
+        "round/team/market/period",
+        "P0 fact and P1 plan labeled distinctly",
+        "source hash",
+        "original visible fields"
+      ],
+      "mutation_prohibited": true
+    },
+    {
+      "route": "finance",
+      "selector_label": "Vagyoni kimutatás",
+      "priority": "P0",
+      "prior_source_status": "NOT_VERIFIED_IN_R238_DEFAULT_VIEW",
+      "action": "CAPTURE_CURRENT_P1_WITH_CONSENTED_READONLY_BROWSER",
+      "requirements": [
+        "source URL",
+        "UTC capture time",
+        "round/team/market/period",
+        "P0 fact and P1 plan labeled distinctly",
+        "source hash",
+        "original visible fields"
+      ],
+      "mutation_prohibited": true
+    }
+  ],
+  "non_subview_critical_gaps": [
+    {
+      "priority": "P0",
+      "target": "Piacspecifikus project cap maxProjectPerTurn",
+      "status": "UNKNOWN",
+      "source_required": "current authenticated UI or documented current market rule; do not infer 4/year from organizer-only rule"
+    },
+    {
+      "priority": "P0",
+      "target": "Valóban elkölthető projektkeret és lekötések",
+      "status": "UNKNOWN",
+      "source_required": "current finance/cash+loan+grant earmark rules and project commitments"
+    },
+    {
+      "priority": "P0",
+      "target": "P1 mentett szakpolitikai értékek és korlátok",
+      "status": "0/23 FULL NUMERIC",
+      "source_required": "visible current form property and rule bounds; HTML value attribute alone insufficient"
+    },
+    {
+      "priority": "P0",
+      "target": "35 projektkártya friss koherens forrásfelvétele",
+      "status": "35 historical, NOT one-hour coherent",
+      "source_required": "all project categories same market-period and coordinated capture time"
+    },
+    {
+      "priority": "P1",
+      "target": "Oktatási min/max szorzók és adó jogszabályi limitek",
+      "status": "FORMULAS ONLY",
+      "source_required": "actual market config and/or visible field limitations"
+    },
+    {
+      "priority": "FUTURE",
+      "target": "P2–P5 tényállapot, P1 TERV→TÉNY eltérés",
+      "status": "NOT YET OBSERVABLE IN P1",
+      "source_required": "period transition after current round"
+    }
+  ],
+  "captured_fresh_this_turn": {
+    "route": "income",
+    "subview": "Szolgáltatások díjai",
+    "check": "three tables and six inputs; normalized table bodies identical to original R238 income view",
+    "source_storage_on_owner_fedora": "~/Downloads/ecosim-r238-pinned-final-private-20261102/R239_CURRENT_P1_SERVICE_FEES_READONLY_20261103.json",
+    "not_alternative_new_subview": true
+  },
+  "collector_mode": "CONSENTED_UI_READ_ONLY; NEVER_SAVE_OR_START",
+  "readiness": "HOLD_NO_FINAL_5Y_OPTIMIZATION",
+  "source_reuse_policy": "Append trusted observed data to R238, not rewrite original sources",
+  "unknown_values_are_not_zero": true,
+  "game_writes": 0,
+  "permission_bypass_allowed": false
+}

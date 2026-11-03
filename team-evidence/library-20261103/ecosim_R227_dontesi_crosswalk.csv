@@ -1,0 +1,24 @@
+index,Mezőazonosító,Terület,Alnézet,Mező,Aktuális UI p0,Excel-sor,Excel p0,Egyezés,Forrás,P1 döntés,Min,Max,Hatás,Éles engedély
+0,edu.pay,Intézmények,Oktatás / Döntések,Bérek,550.0,,,NINCS EGYÉRTELMŰ EXCEL-SOR,R226,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,NEM
+1,edu.training,Intézmények,Oktatás / Döntések,Képzés,12000.0,,,NINCS EGYÉRTELMŰ EXCEL-SOR,R226,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,NEM
+2,edu.development,Intézmények,Oktatás / Döntések,Fejlesztés,50000.0,,,NINCS EGYÉRTELMŰ EXCEL-SOR,R226,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,NEM
+3,edu.secondary,Intézmények,Oktatás / Középiskolák,Nyitás / Zárás (+/-),0.0,42.0,0.0,EGYEZIK,R226,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,NEM
+4,edu.primary,Intézmények,Oktatás / Általános iskolák,Nyitás / Zárás (+/-),0.0,50.0,0.0,EGYEZIK,R226,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,NEM
+5,edu.kindergarten,Intézmények,Oktatás / Óvodák,Nyitás / Zárás (+/-),0.0,58.0,0.0,EGYEZIK,R226,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,NEM
+6,edu.nursery,Intézmények,Oktatás / Bölcsődék,Nyitás / Zárás (+/-),0.0,66.0,0.0,EGYEZIK,R226,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,NEM
+7,bus.buy,Közösségi közlekedés,Belsőégésű motoros buszok,Busz beszerzés / eladás (+/-),0.0,122.0,0.0,EGYEZIK,R226,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,NEM
+8,bus.age,Közösségi közlekedés,Belsőégésű motoros buszok,Beszerzett buszok életkora,0.0,124.0,0.0,EGYEZIK,R226,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,NEM
+9,bus.maint,Közösségi közlekedés,Belsőégésű motoros buszok,Karbantartás,175000.0,127.0,175000.0,EGYEZIK,R226,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,NEM
+10,infra.maint,Közösségi közlekedés,Közlekedés / Infrastruktúra,Karbantartás,150000.0,145.0,150000.0,EGYEZIK,R226,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,NEM
+11,infra.comms,Közösségi közlekedés,Közlekedés / Infrastruktúra,Kommunikáció,28000.0,146.0,28000.0,EGYEZIK,R226,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,NEM
+12,fee.transit,Bevételek,Szolgáltatások díjai,Tömegközlekedés / fő,12.4,191.0,12.4,EGYEZIK,R226,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,NEM
+13,fee.funeral,Bevételek,Szolgáltatások díjai,Temetkezés / fő,32.2,192.0,32.2,EGYEZIK,R226,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,NEM
+14,fee.parking,Bevételek,Szolgáltatások díjai,Parkolási díj (éves) / hely,3.8,193.0,3.8,EGYEZIK,R226,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,NEM
+15,fee.utility,Bevételek,Szolgáltatások díjai,Kommunális / fő,8.5,194.0,8.5,EGYEZIK,R226,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,NEM
+16,fee.water,Bevételek,Szolgáltatások díjai,"Víz, csatorna, távhő / fő",33.2,195.0,33.2,EGYEZIK,R226,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,NEM
+17,fee.rental,Bevételek,Szolgáltatások díjai,Bérlakás díjak / fő,45.0,196.0,45.0,EGYEZIK,R226,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,NEM
+18,loan.long_delta,Hitelek,Hosszú távú hitelek,Felvétel / Visszafizetés (+/-),0.0,,,NINCS EGYÉRTELMŰ EXCEL-SOR,R226,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,NEM
+19,tax.business,Bevételek,Adók,"Iparűzési adó, %",2.0,198.0,2.0,EGYEZIK,Aktuális Adók UI,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,NEM
+20,tax.vehicle,Bevételek,Adók,"Gépjármű adó, %",1.9,199.0,1.9,EGYEZIK,Aktuális Adók UI,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,NEM
+21,tax.community,Bevételek,Adók,"Kommunális adó, %",1.1,200.0,1.1,EGYEZIK,Aktuális Adók UI,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,NEM
+22,tax.property,Bevételek,Adók,"Építményadó, %",0.5,201.0,0.5,EGYEZIK,Aktuális Adók UI,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,NEM
