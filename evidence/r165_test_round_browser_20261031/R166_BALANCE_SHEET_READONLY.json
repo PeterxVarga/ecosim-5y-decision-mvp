@@ -1,0 +1,254 @@
+{
+  "schema": "ECOSIM_R166_BROWSER_BALANCE_SHEET_OBSERVATION_V1",
+  "metadata": {
+    "competition": "X-Challenge 2026 Tesztforduló",
+    "market": "Z",
+    "team": "Jutalom a nap végén",
+    "period": "1/1",
+    "captured_at_utc": "2026-10-31T19:14:06.616Z",
+    "source_url": "https://edu.ecosim.hu/simulation/finance",
+    "visible_tab": "Vagyoni kimutatás",
+    "observation": "CONNECTED_BROWSER_READ_ONLY_DOM",
+    "p0": "FACT",
+    "p1": "PLAN",
+    "has_authenticated_backend_export": false,
+    "game_mutations": 0,
+    "live_competition_verified": false
+  },
+  "balance_sheet": {
+    "rows": [
+      {
+        "row": 1,
+        "label": "Külső beépítetlen terület",
+        "p0_fact_ecu": 493000,
+        "p1_plan_ecu": 493000
+      },
+      {
+        "row": 2,
+        "label": "Belső beépítetlen terület",
+        "p0_fact_ecu": 400000,
+        "p1_plan_ecu": 400000
+      },
+      {
+        "row": 3,
+        "label": "Lakások",
+        "p0_fact_ecu": 2540000,
+        "p1_plan_ecu": 2489200
+      },
+      {
+        "row": 4,
+        "label": "Egyéb ingatlanok",
+        "p0_fact_ecu": 59400,
+        "p1_plan_ecu": 59400
+      },
+      {
+        "row": 5,
+        "label": "Buszok",
+        "p0_fact_ecu": 334739,
+        "p1_plan_ecu": 325956
+      },
+      {
+        "row": 6,
+        "label": "Ingóságok",
+        "p0_fact_ecu": 857000,
+        "p1_plan_ecu": 853919
+      },
+      {
+        "row": 7,
+        "label": "Üzletrészek/cégtulajdonlások",
+        "p0_fact_ecu": 495487,
+        "p1_plan_ecu": 495487
+      },
+      {
+        "row": 8,
+        "label": "Energia vállalat",
+        "p0_fact_ecu": 0,
+        "p1_plan_ecu": 0
+      },
+      {
+        "row": 9,
+        "label": "Hulladékgazdálkodási vállalat",
+        "p0_fact_ecu": 330000,
+        "p1_plan_ecu": 330000
+      },
+      {
+        "row": 10,
+        "label": "Pénzügyi befektetések",
+        "p0_fact_ecu": 0,
+        "p1_plan_ecu": 0
+      },
+      {
+        "row": 11,
+        "label": "Hitelállomány",
+        "p0_fact_ecu": 0,
+        "p1_plan_ecu": 0
+      },
+      {
+        "row": 12,
+        "label": "Pénzállomány",
+        "p0_fact_ecu": 184600,
+        "p1_plan_ecu": 865588
+      },
+      {
+        "row": 13,
+        "label": "Forgalomképes összesen",
+        "p0_fact_ecu": 5364226,
+        "p1_plan_ecu": 5982551
+      },
+      {
+        "row": 14,
+        "label": "Piacok",
+        "p0_fact_ecu": 15000,
+        "p1_plan_ecu": 15000
+      },
+      {
+        "row": 15,
+        "label": "Sportpálya",
+        "p0_fact_ecu": 70000,
+        "p1_plan_ecu": 70000
+      },
+      {
+        "row": 16,
+        "label": "Intézményi telephelyek",
+        "p0_fact_ecu": 5850000,
+        "p1_plan_ecu": 5850000
+      },
+      {
+        "row": 17,
+        "label": "Bérlakások",
+        "p0_fact_ecu": 1954303,
+        "p1_plan_ecu": 1915217
+      },
+      {
+        "row": 18,
+        "label": "Színház",
+        "p0_fact_ecu": 130000,
+        "p1_plan_ecu": 130000
+      },
+      {
+        "row": 19,
+        "label": "Egyéb ingatlanok",
+        "p0_fact_ecu": 350000,
+        "p1_plan_ecu": 350000
+      },
+      {
+        "row": 20,
+        "label": "Korlátozottan forgalomképes összesen",
+        "p0_fact_ecu": 8369303,
+        "p1_plan_ecu": 8330217
+      },
+      {
+        "row": 21,
+        "label": "Strandfürdő",
+        "p0_fact_ecu": 150000,
+        "p1_plan_ecu": 150000
+      },
+      {
+        "row": 22,
+        "label": "Közlekedési hálózat és buszpályaudvar",
+        "p0_fact_ecu": 400000,
+        "p1_plan_ecu": 400000
+      },
+      {
+        "row": 23,
+        "label": "Parkok",
+        "p0_fact_ecu": 110000,
+        "p1_plan_ecu": 110000
+      },
+      {
+        "row": 24,
+        "label": "Forgalomképtelen összesen",
+        "p0_fact_ecu": 660000,
+        "p1_plan_ecu": 660000
+      },
+      {
+        "row": 25,
+        "label": "Összvagyon",
+        "p0_fact_ecu": 14373529,
+        "p1_plan_ecu": 14952768
+      }
+    ],
+    "totals": {
+      "p0_fact": {
+        "cash": 184600,
+        "tradeable": 5364226,
+        "restricted": 8369303,
+        "untradeable": 660000,
+        "total": 14373529
+      },
+      "p1_plan": {
+        "cash": 865588,
+        "tradeable": 5982551,
+        "restricted": 8330217,
+        "untradeable": 660000,
+        "total": 14952768
+      },
+      "delta_p1_minus_p0": {
+        "cash": 680988,
+        "total": 579239
+      }
+    }
+  },
+  "cross_check": {
+    "against": "evidence/r165_test_round_browser_20261031/READONLY_EVIDENCE.json",
+    "checks": {
+      "p1_planned_cash_equals_reserve": true,
+      "p1_planned_cash_equals_net_result": true,
+      "p0_asset_cash_matches_prior_year_cash_line": true,
+      "p1_prior_year_cash_line_zero": true,
+      "zero_debt_in_asset_view": true,
+      "asset_subtotals_match_total_p0": false,
+      "asset_subtotals_match_total_p1": false
+    },
+    "arithmetic": {
+      "p0_fact": {
+        "tradeable_displayed": 5364226,
+        "tradeable_line_sum": 5694226,
+        "tradeable_aggregate_minus_lines": -330000,
+        "restricted_displayed": 8369303,
+        "restricted_line_sum": 8369303,
+        "untradeable_displayed": 660000,
+        "untradeable_line_sum": 660000,
+        "aggregate_category_sum": 14393529,
+        "overall_displayed": 14373529,
+        "overall_minus_categories": -20000
+      },
+      "p1_plan": {
+        "tradeable_displayed": 5982551,
+        "tradeable_line_sum": 6312550,
+        "tradeable_aggregate_minus_lines": -329999,
+        "restricted_displayed": 8330217,
+        "restricted_line_sum": 8330217,
+        "untradeable_displayed": 660000,
+        "untradeable_line_sum": 660000,
+        "aggregate_category_sum": 14972768,
+        "overall_displayed": 14952768,
+        "overall_minus_categories": -20000
+      }
+    },
+    "p1_financial_result": 865588,
+    "p1_reserve": 865588,
+    "p0_previous_year_cash_revenue_line": 184600,
+    "p1_previous_year_cash_revenue_line": 0
+  },
+  "funding_interpretation": {
+    "cash_is_observed_in_p1_plan": true,
+    "spendable_cash_verified": false,
+    "project_budget_verified": false,
+    "timing_of_cash_availability_verified": false,
+    "asset_value_not_equivalent_to_liquid_cash": true,
+    "restricted_and_untradeable_assets_not_cash": true,
+    "do_not_add_p0_cash_to_p1_cash_without_rule": true,
+    "no_gameplay_action": true,
+    "decision_gate": "STOP"
+  },
+  "known_missing": [
+    "project financing rule and actual spendable budget",
+    "when p1 reserve becomes liquid",
+    "whether the financial model accepts supplementary cash uses",
+    "meaning of 20000 ECU overall-to-subtotals mismatch",
+    "meaning of 330000 ECU tradeable lines-to-subtotal mismatch",
+    "actual five-year competition settings",
+    "loan limits, collateral rules and short-term terms"
+  ]
+}

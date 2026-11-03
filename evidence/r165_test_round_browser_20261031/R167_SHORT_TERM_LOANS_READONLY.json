@@ -1,0 +1,63 @@
+{
+  "schema": "ECOSIM_R167_BROWSER_SHORT_TERM_LOAN_OBSERVATION_V1",
+  "metadata": {
+    "competition": "X-Challenge 2026 Tesztforduló",
+    "market": "Z",
+    "team": "Jutalom a nap végén",
+    "period": "1/1",
+    "captured_at_utc": "2026-10-31T19:16:42.237Z",
+    "source_url": "https://edu.ecosim.hu/simulation/loans",
+    "selected_in_page_view": "Rövidlejáratú hitelek",
+    "source_type": "SIGNED_IN_BROWSER_READONLY_VISIBLE_DOM",
+    "p0_meaning": "tény",
+    "p1_meaning": "terv",
+    "backend_api_verification": false,
+    "game_mutations": 0,
+    "live_competition_verified": false
+  },
+  "displayed_rule_text_hu": "Automatikus kerül felvételre, amennyiben a város pénzügyi helyzete negatív. A rövidlejáratú hitelek kamata magasabb, mint a hosszúlejáratúaké.",
+  "short_term": {
+    "rows": [
+      {
+        "label": "Rövidlejáratú hitel",
+        "p0_fact": 0,
+        "p1_plan": 0
+      },
+      {
+        "label": "Kamat, %",
+        "p0_fact": 12,
+        "p1_plan": 12
+      }
+    ],
+    "annual_interest_rate_pct_displayed": 12,
+    "interest_horizon_unconfirmed": true,
+    "automatic_on_negative_financial_state_described": true,
+    "precise_trigger_definition_unconfirmed": true,
+    "loan_maturity_and_repayment_unconfirmed": true,
+    "borrowing_cap_unconfirmed": true
+  },
+  "prior_observation_not_independently_reopened_this_capture": {
+    "loan_type": "Hosszú távú hitelek",
+    "displayed_rate_pct": 7.5,
+    "p0_balance": 0,
+    "p1_balance": 0,
+    "source": "Earlier R164 signed-in browser visible DOM observation",
+    "same_round_market_period": true
+  },
+  "consistency_against_r165_finance": {
+    "source_file": "evidence/r165_test_round_browser_20261031/READONLY_EVIDENCE.json",
+    "two_short_term_loan_finance_rows_found": 2,
+    "finance_rows_zero": true
+  },
+  "gap_and_financing_interpretation": {
+    "interest_rate_spread_percentage_points": 4.5,
+    "displayed_zero_short_term_balance_does_not_mean_borrowing_is_unavailable": true,
+    "negative_cash_automatic_loan_may_trigger": true,
+    "rate_of_long_term_loan_not_authorization_for_unlimited_borrowing": true,
+    "exact_automatic_trigger_unproven": true,
+    "cash_shortfall_not_yet_calibrated": true,
+    "do_not_change_project_budget": true,
+    "do_not_automate_game_actions": true,
+    "gameplay_action_gate": "STOP"
+  }
+}

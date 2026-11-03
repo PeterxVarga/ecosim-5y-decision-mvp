@@ -1,0 +1,1510 @@
+{
+  "schema": "ECOSIM_R165_BROWSER_READONLY_TEST_ROUND_EVIDENCE_V1",
+  "metadata": {
+    "competition": "X-Challenge 2026 Tesztforduló",
+    "market": "Z",
+    "team": "Jutalom a nap végén",
+    "period": "1/1",
+    "p0_column": "FACT",
+    "p1_column": "PLAN",
+    "captured_at_utc": "2026-10-31T19:08:59.911Z",
+    "capture_method": "CONNECTED_BROWSER_GET_TAB_CONTEXT_TEXT",
+    "read_only": true,
+    "gameplay_action_performed": false,
+    "source_urls": [
+      "https://edu.ecosim.hu/simulation/projects",
+      "https://edu.ecosim.hu/simulation/finance",
+      "https://edu.ecosim.hu/simulation/income"
+    ],
+    "source_scope": "visible tabs only; project page category Gazdaságfejlesztés",
+    "not_server_authenticated_export": true,
+    "live_five_year_competition_verified": false
+  },
+  "finance": {
+    "expenses": [
+      {
+        "row": 0,
+        "label": "Okt. intézmények",
+        "p0_fact": 972400,
+        "p1_plan": 972400,
+        "p1_input_empty": false
+      },
+      {
+        "row": 1,
+        "label": "Sport intézmények",
+        "p0_fact": 83300,
+        "p1_plan": 83300,
+        "p1_input_empty": false
+      },
+      {
+        "row": 2,
+        "label": "Műv. intézmények",
+        "p0_fact": 38250,
+        "p1_plan": 38250,
+        "p1_input_empty": false
+      },
+      {
+        "row": 3,
+        "label": "Eü. intézmények",
+        "p0_fact": 79200,
+        "p1_plan": 79200,
+        "p1_input_empty": false
+      },
+      {
+        "row": 4,
+        "label": "Szoc. intézmények",
+        "p0_fact": 70840,
+        "p1_plan": 70840,
+        "p1_input_empty": false
+      },
+      {
+        "row": 5,
+        "label": "Szolgáltató",
+        "p0_fact": 178035,
+        "p1_plan": 178035,
+        "p1_input_empty": false
+      },
+      {
+        "row": 6,
+        "label": "Tömegközlekedés",
+        "p0_fact": 300860,
+        "p1_plan": 301300,
+        "p1_input_empty": false
+      },
+      {
+        "row": 7,
+        "label": "Városi hivatal",
+        "p0_fact": 120150,
+        "p1_plan": 120150,
+        "p1_input_empty": false
+      },
+      {
+        "row": 8,
+        "label": "Bérek (közterhekkel) összesen",
+        "p0_fact": 1843035,
+        "p1_plan": 1843475,
+        "p1_input_empty": false
+      },
+      {
+        "row": 9,
+        "label": "Okt. intézmények",
+        "p0_fact": 262548,
+        "p1_plan": 267410,
+        "p1_input_empty": false
+      },
+      {
+        "row": 10,
+        "label": "Sport intézmények",
+        "p0_fact": 29155,
+        "p1_plan": 29988,
+        "p1_input_empty": false
+      },
+      {
+        "row": 11,
+        "label": "Műv. intézmények",
+        "p0_fact": 13388,
+        "p1_plan": 13770,
+        "p1_input_empty": false
+      },
+      {
+        "row": 12,
+        "label": "Eü. intézmények",
+        "p0_fact": 55440,
+        "p1_plan": 55440,
+        "p1_input_empty": false
+      },
+      {
+        "row": 13,
+        "label": "Szoc. intézmények",
+        "p0_fact": 28336,
+        "p1_plan": 28336,
+        "p1_input_empty": false
+      },
+      {
+        "row": 14,
+        "label": "Szolgáltató",
+        "p0_fact": 729943,
+        "p1_plan": 729943,
+        "p1_input_empty": false
+      },
+      {
+        "row": 15,
+        "label": "Városi hivatal",
+        "p0_fact": 48060,
+        "p1_plan": 48060,
+        "p1_input_empty": false
+      },
+      {
+        "row": 16,
+        "label": "Képzés",
+        "p0_fact": 98625,
+        "p1_plan": 98650,
+        "p1_input_empty": false
+      },
+      {
+        "row": 17,
+        "label": "Közlekedési vállalat",
+        "p0_fact": 1086013,
+        "p1_plan": 1103651,
+        "p1_input_empty": false
+      },
+      {
+        "row": 18,
+        "label": "Dologi összesen",
+        "p0_fact": 2351508,
+        "p1_plan": 2375249,
+        "p1_input_empty": false
+      },
+      {
+        "row": 19,
+        "label": "Oktatási célokra",
+        "p0_fact": 50000,
+        "p1_plan": 50000,
+        "p1_input_empty": false
+      },
+      {
+        "row": 20,
+        "label": "Művelődés és sport célokra",
+        "p0_fact": 43000,
+        "p1_plan": 43000,
+        "p1_input_empty": false
+      },
+      {
+        "row": 21,
+        "label": "Egészségügyi célokra",
+        "p0_fact": 40000,
+        "p1_plan": 40000,
+        "p1_input_empty": false
+      },
+      {
+        "row": 22,
+        "label": "Szociális célokra",
+        "p0_fact": 45000,
+        "p1_plan": 45000,
+        "p1_input_empty": false
+      },
+      {
+        "row": 23,
+        "label": "Környezeti célokra",
+        "p0_fact": 25000,
+        "p1_plan": 25000,
+        "p1_input_empty": false
+      },
+      {
+        "row": 24,
+        "label": "Lakásfelújítás célokra",
+        "p0_fact": 35000,
+        "p1_plan": 35000,
+        "p1_input_empty": false
+      },
+      {
+        "row": 25,
+        "label": "Projekt - egyedi alapon összesen",
+        "p0_fact": 0,
+        "p1_plan": 0,
+        "p1_input_empty": false
+      },
+      {
+        "row": 26,
+        "label": "Kommunikáció",
+        "p0_fact": 54500,
+        "p1_plan": 54500,
+        "p1_input_empty": false
+      },
+      {
+        "row": 27,
+        "label": "Busz beszerzés",
+        "p0_fact": 0,
+        "p1_plan": 0,
+        "p1_input_empty": false
+      },
+      {
+        "row": 28,
+        "label": "Egyéb működési kiadások összesen",
+        "p0_fact": 292500,
+        "p1_plan": 292500,
+        "p1_input_empty": false
+      },
+      {
+        "row": 29,
+        "label": "Rövidlejáratú hitelek",
+        "p0_fact": 0,
+        "p1_plan": 0,
+        "p1_input_empty": false
+      },
+      {
+        "row": 30,
+        "label": "Vált. lejáratú hitelek",
+        "p0_fact": 0,
+        "p1_plan": 0,
+        "p1_input_empty": false
+      },
+      {
+        "row": 31,
+        "label": "Hosszúlejáratú hitelek",
+        "p0_fact": 0,
+        "p1_plan": 0,
+        "p1_input_empty": false
+      },
+      {
+        "row": 32,
+        "label": "Kamatfizetések összesen",
+        "p0_fact": 0,
+        "p1_plan": 0,
+        "p1_input_empty": false
+      },
+      {
+        "row": 33,
+        "label": "Rövidlejáratú hitelek",
+        "p0_fact": 0,
+        "p1_plan": 0,
+        "p1_input_empty": false
+      },
+      {
+        "row": 34,
+        "label": "Változó lejáratú hitelek",
+        "p0_fact": 0,
+        "p1_plan": 0,
+        "p1_input_empty": false
+      },
+      {
+        "row": 35,
+        "label": "Hosszúlejáratú hitelek",
+        "p0_fact": 0,
+        "p1_plan": 0,
+        "p1_input_empty": false
+      },
+      {
+        "row": 36,
+        "label": "Hitel visszafizetés összesen",
+        "p0_fact": 0,
+        "p1_plan": 0,
+        "p1_input_empty": false
+      },
+      {
+        "row": 37,
+        "label": "Értékpapírvétel",
+        "p0_fact": 0,
+        "p1_plan": 0,
+        "p1_input_empty": false
+      },
+      {
+        "row": 38,
+        "label": "Egyéb bevételek",
+        "p0_fact": 0,
+        "p1_plan": 0,
+        "p1_input_empty": false
+      },
+      {
+        "row": 39,
+        "label": "Egyéb kiadások",
+        "p0_fact": 0,
+        "p1_plan": 0,
+        "p1_input_empty": false
+      },
+      {
+        "row": 40,
+        "label": "Egyéb tételek összesen",
+        "p0_fact": 0,
+        "p1_plan": 0,
+        "p1_input_empty": false
+      },
+      {
+        "row": 41,
+        "label": "Tartalékképzésre",
+        "p0_fact": 0,
+        "p1_plan": 865588,
+        "p1_input_empty": false
+      },
+      {
+        "row": 42,
+        "label": "Kiadások összesen",
+        "p0_fact": 4487043,
+        "p1_plan": 5376812,
+        "p1_input_empty": false
+      },
+      {
+        "row": 43,
+        "label": "Kiadások összesen hitel & tartalék nélkül",
+        "p0_fact": 4487043,
+        "p1_plan": 4511224,
+        "p1_input_empty": false
+      },
+      {
+        "row": 44,
+        "label": "A periódus nettó eredményessége",
+        "p0_fact": 962785,
+        "p1_plan": 865588,
+        "p1_input_empty": false
+      },
+      {
+        "row": 45,
+        "label": "Hitel visszafizetés",
+        "p0_fact": 0,
+        "p1_plan": 0,
+        "p1_input_empty": false
+      },
+      {
+        "row": 46,
+        "label": "Tartalékképzés / átvezetés",
+        "p0_fact": 0,
+        "p1_plan": 865588,
+        "p1_input_empty": false
+      }
+    ],
+    "revenues": [
+      {
+        "row": 0,
+        "label": "Óvodai nevelés",
+        "p0_fact": 97300,
+        "p1_plan": 107614,
+        "p1_input_empty": false
+      },
+      {
+        "row": 1,
+        "label": "Iskolai oktatás",
+        "p0_fact": 525840,
+        "p1_plan": 530320,
+        "p1_input_empty": false
+      },
+      {
+        "row": 2,
+        "label": "Szociális",
+        "p0_fact": 342120,
+        "p1_plan": 351450,
+        "p1_input_empty": false
+      },
+      {
+        "row": 3,
+        "label": "Tömegközlekedés",
+        "p0_fact": 559790,
+        "p1_plan": 507092,
+        "p1_input_empty": false
+      },
+      {
+        "row": 4,
+        "label": "Művelődés",
+        "p0_fact": 225897,
+        "p1_plan": 226650,
+        "p1_input_empty": false
+      },
+      {
+        "row": 5,
+        "label": "Normatív állami hozzájárulás",
+        "p0_fact": 1750947,
+        "p1_plan": 1723126,
+        "p1_input_empty": false
+      },
+      {
+        "row": 6,
+        "label": "Társadalombiztosítás hozzájárulása",
+        "p0_fact": 105419,
+        "p1_plan": 105770,
+        "p1_input_empty": false
+      },
+      {
+        "row": 7,
+        "label": "Iparűzési adó",
+        "p0_fact": 401330,
+        "p1_plan": 402640,
+        "p1_input_empty": false
+      },
+      {
+        "row": 8,
+        "label": "Gépjárműadó",
+        "p0_fact": 57803,
+        "p1_plan": 59087,
+        "p1_input_empty": false
+      },
+      {
+        "row": 9,
+        "label": "Kommunális adó",
+        "p0_fact": 27591,
+        "p1_plan": 27591,
+        "p1_input_empty": false
+      },
+      {
+        "row": 10,
+        "label": "Építményadó",
+        "p0_fact": 13201,
+        "p1_plan": 13201,
+        "p1_input_empty": false
+      },
+      {
+        "row": 11,
+        "label": "Fejlesztési célú állami támogatás",
+        "p0_fact": 130000,
+        "p1_plan": 130000,
+        "p1_input_empty": false
+      },
+      {
+        "row": 12,
+        "label": "Vállalatoktól érkező fejlesztési támogatás",
+        "p0_fact": 62025,
+        "p1_plan": 62025,
+        "p1_input_empty": false
+      },
+      {
+        "row": 13,
+        "label": "Támogatás lakosságszám alapján",
+        "p0_fact": 600224,
+        "p1_plan": 677691,
+        "p1_input_empty": false
+      },
+      {
+        "row": 14,
+        "label": "Adók",
+        "p0_fact": 1292174,
+        "p1_plan": 1372235,
+        "p1_input_empty": false
+      },
+      {
+        "row": 15,
+        "label": "Illetékek",
+        "p0_fact": 150598,
+        "p1_plan": 151100,
+        "p1_input_empty": false
+      },
+      {
+        "row": 16,
+        "label": "Díjak",
+        "p0_fact": 75299,
+        "p1_plan": 75550,
+        "p1_input_empty": false
+      },
+      {
+        "row": 17,
+        "label": "Jármű eladás",
+        "p0_fact": 0,
+        "p1_plan": 0,
+        "p1_input_empty": false
+      },
+      {
+        "row": 18,
+        "label": "Ingatlan értékesítés",
+        "p0_fact": 0,
+        "p1_plan": 0,
+        "p1_input_empty": false
+      },
+      {
+        "row": 19,
+        "label": "Intézményi tevékenységből",
+        "p0_fact": 225897,
+        "p1_plan": 226650,
+        "p1_input_empty": false
+      },
+      {
+        "row": 20,
+        "label": "Temetkezés",
+        "p0_fact": 32973,
+        "p1_plan": 33617,
+        "p1_input_empty": false
+      },
+      {
+        "row": 21,
+        "label": "Parkolásüzemeltetés",
+        "p0_fact": 70847,
+        "p1_plan": 72422,
+        "p1_input_empty": false
+      },
+      {
+        "row": 22,
+        "label": "Kommunális",
+        "p0_fact": 233776,
+        "p1_plan": 233776,
+        "p1_input_empty": false
+      },
+      {
+        "row": 23,
+        "label": "Víz, csatorna, távhő",
+        "p0_fact": 913100,
+        "p1_plan": 913100,
+        "p1_input_empty": false
+      },
+      {
+        "row": 24,
+        "label": "Bérlakás díjak",
+        "p0_fact": 45263,
+        "p1_plan": 45263,
+        "p1_input_empty": false
+      },
+      {
+        "row": 25,
+        "label": "Tömegközlekedés",
+        "p0_fact": 506911,
+        "p1_plan": 563855,
+        "p1_input_empty": false
+      },
+      {
+        "row": 26,
+        "label": "Szolgáltatások díjai",
+        "p0_fact": 1802868,
+        "p1_plan": 1862031,
+        "p1_input_empty": false
+      },
+      {
+        "row": 27,
+        "label": "Rövidlejáratú hitel",
+        "p0_fact": 0,
+        "p1_plan": 0,
+        "p1_input_empty": false
+      },
+      {
+        "row": 28,
+        "label": "Változó lejáratú hitel",
+        "p0_fact": 0,
+        "p1_plan": 0,
+        "p1_input_empty": false
+      },
+      {
+        "row": 29,
+        "label": "Hosszúlejáratú hitel",
+        "p0_fact": 0,
+        "p1_plan": 0,
+        "p1_input_empty": false
+      },
+      {
+        "row": 30,
+        "label": "Kötvény",
+        "p0_fact": 0,
+        "p1_plan": 0,
+        "p1_input_empty": false
+      },
+      {
+        "row": 31,
+        "label": "Hitelfelvétel",
+        "p0_fact": 0,
+        "p1_plan": 0,
+        "p1_input_empty": false
+      },
+      {
+        "row": 32,
+        "label": "Értékpapíreladás és lejárat",
+        "p0_fact": 0,
+        "p1_plan": 0,
+        "p1_input_empty": false
+      },
+      {
+        "row": 33,
+        "label": "Osztalékok/kamatok",
+        "p0_fact": 923,
+        "p1_plan": 0,
+        "p1_input_empty": false
+      },
+      {
+        "row": 34,
+        "label": "Előző év végi pénzállomány",
+        "p0_fact": 184600,
+        "p1_plan": 0,
+        "p1_input_empty": false
+      },
+      {
+        "row": 35,
+        "label": "Területfejlesztésből származó",
+        "p0_fact": 0,
+        "p1_plan": 0,
+        "p1_input_empty": false
+      },
+      {
+        "row": 36,
+        "label": "Üzlethelyiség bérbeadásából származó",
+        "p0_fact": 87000,
+        "p1_plan": 87000,
+        "p1_input_empty": false
+      },
+      {
+        "row": 37,
+        "label": "Egyéb tételek",
+        "p0_fact": 272523,
+        "p1_plan": 87000,
+        "p1_input_empty": false
+      },
+      {
+        "row": 38,
+        "label": "Bevételek összesen",
+        "p0_fact": 5449828,
+        "p1_plan": 5376812,
+        "p1_input_empty": false
+      },
+      {
+        "row": 39,
+        "label": "Bevételek összesen /hitelek nélkül",
+        "p0_fact": 5449828,
+        "p1_plan": 5376812,
+        "p1_input_empty": false
+      },
+      {
+        "row": 40,
+        "label": "Hitelfelvétel",
+        "p0_fact": 0,
+        "p1_plan": 0,
+        "p1_input_empty": false
+      }
+    ]
+  },
+  "income": {
+    "service_revenues": [
+      {
+        "row": 0,
+        "label": "Temetkezés",
+        "p0_fact": 32973,
+        "p1_plan": 33617,
+        "p1_input_empty": false
+      },
+      {
+        "row": 1,
+        "label": "Parkolásüzemeltetés",
+        "p0_fact": 70847,
+        "p1_plan": 72422,
+        "p1_input_empty": false
+      },
+      {
+        "row": 2,
+        "label": "Kommunális",
+        "p0_fact": 233776,
+        "p1_plan": 233776,
+        "p1_input_empty": false
+      },
+      {
+        "row": 3,
+        "label": "Víz, csatorna, távhő",
+        "p0_fact": 913100,
+        "p1_plan": 913100,
+        "p1_input_empty": false
+      },
+      {
+        "row": 4,
+        "label": "Személyszállítás",
+        "p0_fact": 506911,
+        "p1_plan": 563855,
+        "p1_input_empty": false
+      },
+      {
+        "row": 5,
+        "label": "Bérlakás díjak",
+        "p0_fact": 45263,
+        "p1_plan": 45263,
+        "p1_input_empty": false
+      }
+    ],
+    "service_fee_inputs": [
+      {
+        "row": 0,
+        "label": "Tömegközlekedés / fő",
+        "p0_fact": 12.4,
+        "p1_plan": null,
+        "p1_input_empty": true
+      },
+      {
+        "row": 1,
+        "label": "Temetkezés / fő",
+        "p0_fact": 32.2,
+        "p1_plan": null,
+        "p1_input_empty": true
+      },
+      {
+        "row": 2,
+        "label": "Parkolási díj (éves) / hely",
+        "p0_fact": 3.8,
+        "p1_plan": null,
+        "p1_input_empty": true
+      },
+      {
+        "row": 3,
+        "label": "Kommunális / fő",
+        "p0_fact": 8.5,
+        "p1_plan": null,
+        "p1_input_empty": true
+      },
+      {
+        "row": 4,
+        "label": "Víz, csatorna, távhő / fő",
+        "p0_fact": 33.2,
+        "p1_plan": null,
+        "p1_input_empty": true
+      },
+      {
+        "row": 5,
+        "label": "Bérlakás díjak / fő",
+        "p0_fact": 45,
+        "p1_plan": null,
+        "p1_input_empty": true
+      }
+    ],
+    "service_factor_effects": [
+      {
+        "row": 0,
+        "label": "Levegőminőség",
+        "p0_fact": 50,
+        "p1_plan": 50.11,
+        "p1_input_empty": false
+      },
+      {
+        "row": 1,
+        "label": "Hulladékgazdálkodási helyzet",
+        "p0_fact": 50,
+        "p1_plan": 49.16,
+        "p1_input_empty": false
+      },
+      {
+        "row": 2,
+        "label": "Szociális",
+        "p0_fact": 64.41,
+        "p1_plan": 66.76,
+        "p1_input_empty": false
+      },
+      {
+        "row": 3,
+        "label": "Tömegközlekedők aránya, %",
+        "p0_fact": 54.29,
+        "p1_plan": 60.19,
+        "p1_input_empty": false
+      },
+      {
+        "row": 4,
+        "label": "Közbiztonság",
+        "p0_fact": 32.24,
+        "p1_plan": 31.27,
+        "p1_input_empty": false
+      },
+      {
+        "row": 5,
+        "label": "Rossz szoc. helyzetben lévők aránya",
+        "p0_fact": 24.65,
+        "p1_plan": 20.98,
+        "p1_input_empty": false
+      }
+    ]
+  },
+  "projects": {
+    "view": "Gazdaságfejlesztés",
+    "cards": [
+      {
+        "project_id": 1,
+        "project_name": "Szomszédsági Gazdaság Modell",
+        "visible_status": "Start button visible",
+        "financial_card": {
+          "startup_ecu": 6000,
+          "maintenance_signed_ecu": 2400,
+          "investment_ecu": 18000,
+          "partner_development_support_displayed_ecu": 3000
+        },
+        "listed_effects": [
+          {
+            "metric": "Vállalkozóbarátság",
+            "effect_pct": 1
+          },
+          {
+            "metric": "Fenntarthatóság",
+            "effect_pct": 0.5
+          },
+          {
+            "metric": "Zöld területek aránya",
+            "effect_pct": 0.1
+          },
+          {
+            "metric": "Hulladékgazdálkodási helyzet",
+            "effect_pct": 0.5
+          },
+          {
+            "metric": "Szociális",
+            "effect_pct": 0.4
+          },
+          {
+            "metric": "Rossz szoc. helyzetben lévők aránya",
+            "effect_pct": -0.2
+          },
+          {
+            "metric": "Településfejlettség",
+            "effect_pct": 0.4
+          },
+          {
+            "metric": "Lakossági viszonyok/elégedettség",
+            "effect_pct": 0.5
+          },
+          {
+            "metric": "Munkanélküliség",
+            "effect_pct": -0.3
+          },
+          {
+            "metric": "Kisvállalkozások száma",
+            "effect_pct": 0.04
+          }
+        ]
+      },
+      {
+        "project_id": 2,
+        "project_name": "Kereskedelmi és Kulturális Központ",
+        "visible_status": "Start button visible",
+        "financial_card": {
+          "startup_ecu": 28000,
+          "maintenance_signed_ecu": 8000,
+          "investment_ecu": 120000,
+          "partner_development_support_displayed_ecu": 25000
+        },
+        "listed_effects": [
+          {
+            "metric": "Vállalkozóbarátság",
+            "effect_pct": 1
+          },
+          {
+            "metric": "Fenntarthatóság",
+            "effect_pct": -0.2
+          },
+          {
+            "metric": "Levegőminőség",
+            "effect_pct": -0.3
+          },
+          {
+            "metric": "Zöld területek aránya",
+            "effect_pct": -0.7
+          },
+          {
+            "metric": "Digitalizáció",
+            "effect_pct": 0.2
+          },
+          {
+            "metric": "Közbiztonság",
+            "effect_pct": 0.5
+          },
+          {
+            "metric": "Művelődés",
+            "effect_pct": 0.8
+          },
+          {
+            "metric": "Rossz szoc. helyzetben lévők aránya",
+            "effect_pct": -0.1
+          },
+          {
+            "metric": "Településfejlettség",
+            "effect_pct": 1.7
+          },
+          {
+            "metric": "Közlekedési minőség",
+            "effect_pct": 0.7
+          },
+          {
+            "metric": "Tömegközlekedők aránya, %",
+            "effect_pct": 0.1
+          },
+          {
+            "metric": "Lakossági viszonyok/elégedettség",
+            "effect_pct": 0.8
+          },
+          {
+            "metric": "Munkakörülmények",
+            "effect_pct": 0.4
+          },
+          {
+            "metric": "Munkanélküliség",
+            "effect_pct": -0.8
+          },
+          {
+            "metric": "Kisvállalkozások száma",
+            "effect_pct": 0.06
+          },
+          {
+            "metric": "Középvállalkozások száma",
+            "effect_pct": 1
+          }
+        ]
+      },
+      {
+        "project_id": 3,
+        "project_name": "Helyi élelmiszerellátás",
+        "visible_status": "Start button visible",
+        "financial_card": {
+          "startup_ecu": 7000,
+          "maintenance_signed_ecu": 1500,
+          "investment_ecu": 25000,
+          "partner_development_support_displayed_ecu": 3000
+        },
+        "listed_effects": [
+          {
+            "metric": "Vállalkozóbarátság",
+            "effect_pct": 0.6
+          },
+          {
+            "metric": "Fenntarthatóság",
+            "effect_pct": 0.4
+          },
+          {
+            "metric": "Levegőminőség",
+            "effect_pct": 0.1
+          },
+          {
+            "metric": "Hulladékgazdálkodási helyzet",
+            "effect_pct": 0.3
+          },
+          {
+            "metric": "Digitalizáció",
+            "effect_pct": 0.3
+          },
+          {
+            "metric": "Egészségügy",
+            "effect_pct": 0.1
+          },
+          {
+            "metric": "Szociális",
+            "effect_pct": 0.2
+          },
+          {
+            "metric": "Rossz szoc. helyzetben lévők aránya",
+            "effect_pct": -0.4
+          },
+          {
+            "metric": "Településfejlettség",
+            "effect_pct": 0.3
+          },
+          {
+            "metric": "Lakossági viszonyok/elégedettség",
+            "effect_pct": 0.5
+          },
+          {
+            "metric": "Munkanélküliség",
+            "effect_pct": -0.2
+          },
+          {
+            "metric": "Kisvállalkozások száma",
+            "effect_pct": 0.03
+          }
+        ]
+      },
+      {
+        "project_id": 4,
+        "project_name": "Körforgásos gazdaság mintaprojekt",
+        "visible_status": "Start button visible",
+        "financial_card": {
+          "startup_ecu": 8000,
+          "maintenance_signed_ecu": 2000,
+          "investment_ecu": 33000,
+          "partner_development_support_displayed_ecu": 14000
+        },
+        "listed_effects": [
+          {
+            "metric": "Vállalkozóbarátság",
+            "effect_pct": 0.4
+          },
+          {
+            "metric": "Fenntarthatóság",
+            "effect_pct": 1.5
+          },
+          {
+            "metric": "Levegőminőség",
+            "effect_pct": 0.3
+          },
+          {
+            "metric": "Hulladékgazdálkodási helyzet",
+            "effect_pct": 3
+          },
+          {
+            "metric": "Digitalizáció",
+            "effect_pct": 0.1
+          },
+          {
+            "metric": "Településfejlettség",
+            "effect_pct": 0.3
+          },
+          {
+            "metric": "Lakossági viszonyok/elégedettség",
+            "effect_pct": 0.2
+          },
+          {
+            "metric": "Lakosság képzettsége",
+            "effect_pct": 0.2
+          },
+          {
+            "metric": "Munkanélküliség",
+            "effect_pct": -0.2
+          },
+          {
+            "metric": "Kisvállalkozások száma",
+            "effect_pct": 0.02
+          },
+          {
+            "metric": "Középvállalkozások száma",
+            "effect_pct": 1
+          }
+        ]
+      },
+      {
+        "project_id": 5,
+        "project_name": "Vállalati Társadalmi Felelősség Platform",
+        "visible_status": "Start button visible",
+        "financial_card": {
+          "startup_ecu": 3000,
+          "maintenance_signed_ecu": 2000,
+          "investment_ecu": 2000,
+          "partner_development_support_displayed_ecu": 15000
+        },
+        "listed_effects": [
+          {
+            "metric": "Fenntarthatóság",
+            "effect_pct": 0.1
+          },
+          {
+            "metric": "Adminisztráció",
+            "effect_pct": 0.5
+          },
+          {
+            "metric": "Lakásgazdálkodás",
+            "effect_pct": 0.1
+          },
+          {
+            "metric": "Digitalizáció",
+            "effect_pct": 0.1
+          },
+          {
+            "metric": "Oktatási intézmények",
+            "effect_pct": 0.3
+          },
+          {
+            "metric": "Művelődés",
+            "effect_pct": 0.2
+          },
+          {
+            "metric": "Lakossági viszonyok/elégedettség",
+            "effect_pct": 0.4
+          },
+          {
+            "metric": "Lakosság képzettsége",
+            "effect_pct": 0.3
+          }
+        ]
+      },
+      {
+        "project_id": 6,
+        "project_name": "Gazdasági és Foglalkoztatási Együttműködés",
+        "visible_status": "Start button visible",
+        "financial_card": {
+          "startup_ecu": 5000,
+          "maintenance_signed_ecu": 8000,
+          "investment_ecu": 3000,
+          "partner_development_support_displayed_ecu": 2000
+        },
+        "listed_effects": [
+          {
+            "metric": "Vállalkozóbarátság",
+            "effect_pct": 0.7
+          },
+          {
+            "metric": "Oktatási intézmények",
+            "effect_pct": 0.3
+          },
+          {
+            "metric": "Szociális",
+            "effect_pct": 0.4
+          },
+          {
+            "metric": "Rossz szoc. helyzetben lévők aránya",
+            "effect_pct": -0.5
+          },
+          {
+            "metric": "Lakossági viszonyok/elégedettség",
+            "effect_pct": 0.3
+          },
+          {
+            "metric": "Munkakörülmények",
+            "effect_pct": 0.2
+          },
+          {
+            "metric": "Lakosság képzettsége",
+            "effect_pct": 0.5
+          },
+          {
+            "metric": "Munkanélküliség",
+            "effect_pct": -1
+          },
+          {
+            "metric": "Kisvállalkozások száma",
+            "effect_pct": 0.01
+          },
+          {
+            "metric": "Középvállalkozások száma",
+            "effect_pct": 1
+          }
+        ]
+      },
+      {
+        "project_id": 7,
+        "project_name": "HGF Innovációs Tudásközpont",
+        "visible_status": "Start button visible",
+        "financial_card": {
+          "startup_ecu": 6000,
+          "maintenance_signed_ecu": 12000,
+          "investment_ecu": 15000,
+          "partner_development_support_displayed_ecu": 8000
+        },
+        "listed_effects": [
+          {
+            "metric": "Vállalkozóbarátság",
+            "effect_pct": 0.8
+          },
+          {
+            "metric": "Adminisztráció",
+            "effect_pct": 0.7
+          },
+          {
+            "metric": "Digitalizáció",
+            "effect_pct": 0.5
+          },
+          {
+            "metric": "Településfejlettség",
+            "effect_pct": 0.1
+          },
+          {
+            "metric": "Lakosság képzettsége",
+            "effect_pct": 0.2
+          },
+          {
+            "metric": "Kisvállalkozások száma",
+            "effect_pct": 0.01
+          }
+        ]
+      },
+      {
+        "project_id": 8,
+        "project_name": "Okos Gazdaság Alkalmazások",
+        "visible_status": "Start button visible",
+        "financial_card": {
+          "startup_ecu": 4000,
+          "maintenance_signed_ecu": 3000,
+          "investment_ecu": 22000,
+          "partner_development_support_displayed_ecu": 3500
+        },
+        "listed_effects": [
+          {
+            "metric": "Vállalkozóbarátság",
+            "effect_pct": 0.5
+          },
+          {
+            "metric": "Adminisztráció",
+            "effect_pct": 1.1
+          },
+          {
+            "metric": "Digitalizáció",
+            "effect_pct": 2
+          },
+          {
+            "metric": "Munkakörülmények",
+            "effect_pct": 0.3
+          },
+          {
+            "metric": "Kisvállalkozások száma",
+            "effect_pct": 0.03
+          }
+        ]
+      },
+      {
+        "project_id": 9,
+        "project_name": "Közösségi Finanszírozási Rendszer",
+        "visible_status": "Start button visible",
+        "financial_card": {
+          "startup_ecu": 2500,
+          "maintenance_signed_ecu": 1500,
+          "investment_ecu": 6500,
+          "partner_development_support_displayed_ecu": 12000
+        },
+        "listed_effects": [
+          {
+            "metric": "Fenntarthatóság",
+            "effect_pct": 0.2
+          },
+          {
+            "metric": "Adminisztráció",
+            "effect_pct": 0.3
+          },
+          {
+            "metric": "Lakásgazdálkodás",
+            "effect_pct": 0.1
+          },
+          {
+            "metric": "Digitalizáció",
+            "effect_pct": 0.5
+          },
+          {
+            "metric": "Szociális",
+            "effect_pct": 0.3
+          },
+          {
+            "metric": "Sport",
+            "effect_pct": 0.1
+          },
+          {
+            "metric": "Művelődés",
+            "effect_pct": 0.2
+          },
+          {
+            "metric": "Településfejlettség",
+            "effect_pct": 0.2
+          },
+          {
+            "metric": "Lakossági viszonyok/elégedettség",
+            "effect_pct": 0.6
+          },
+          {
+            "metric": "Kisvállalkozások száma",
+            "effect_pct": 0.01
+          }
+        ]
+      },
+      {
+        "project_id": 10,
+        "project_name": "Innovációs Alap",
+        "visible_status": "Start button visible",
+        "financial_card": {
+          "startup_ecu": 3500,
+          "maintenance_signed_ecu": 14000,
+          "investment_ecu": 12000,
+          "partner_development_support_displayed_ecu": 10000
+        },
+        "listed_effects": [
+          {
+            "metric": "Vállalkozóbarátság",
+            "effect_pct": 1
+          },
+          {
+            "metric": "Fenntarthatóság",
+            "effect_pct": 0.2
+          },
+          {
+            "metric": "Adminisztráció",
+            "effect_pct": 0.1
+          },
+          {
+            "metric": "Digitalizáció",
+            "effect_pct": 0.3
+          },
+          {
+            "metric": "Lakossági viszonyok/elégedettség",
+            "effect_pct": 0.2
+          },
+          {
+            "metric": "Munkakörülmények",
+            "effect_pct": 0.4
+          },
+          {
+            "metric": "Lakosság képzettsége",
+            "effect_pct": 0.1
+          },
+          {
+            "metric": "Munkanélküliség",
+            "effect_pct": -0.3
+          },
+          {
+            "metric": "Kisvállalkozások száma",
+            "effect_pct": 0.04
+          },
+          {
+            "metric": "Középvállalkozások száma",
+            "effect_pct": 2
+          }
+        ]
+      },
+      {
+        "project_id": 11,
+        "project_name": "Helyi Krízisalap",
+        "visible_status": "Start button visible",
+        "financial_card": {
+          "startup_ecu": 3000,
+          "maintenance_signed_ecu": 5000,
+          "investment_ecu": 18000,
+          "partner_development_support_displayed_ecu": 8000
+        },
+        "listed_effects": [
+          {
+            "metric": "Vállalkozóbarátság",
+            "effect_pct": 0.4
+          },
+          {
+            "metric": "Adminisztráció",
+            "effect_pct": 0.1
+          },
+          {
+            "metric": "Digitalizáció",
+            "effect_pct": 0.2
+          },
+          {
+            "metric": "Szociális",
+            "effect_pct": 0.3
+          },
+          {
+            "metric": "Lakossági viszonyok/elégedettség",
+            "effect_pct": 0.1
+          },
+          {
+            "metric": "Munkakörülmények",
+            "effect_pct": 0.2
+          },
+          {
+            "metric": "Munkanélküliség",
+            "effect_pct": -0.6
+          },
+          {
+            "metric": "Kisvállalkozások száma",
+            "effect_pct": 0.02
+          }
+        ]
+      },
+      {
+        "project_id": 12,
+        "project_name": "Lakás- és helyiséggazdálkodás",
+        "visible_status": "Start button visible",
+        "financial_card": {
+          "startup_ecu": 8000,
+          "maintenance_signed_ecu": -12000,
+          "investment_ecu": 75000,
+          "partner_development_support_displayed_ecu": 5000
+        },
+        "listed_effects": [
+          {
+            "metric": "Vállalkozóbarátság",
+            "effect_pct": 0.3
+          },
+          {
+            "metric": "Fenntarthatóság",
+            "effect_pct": 0.4
+          },
+          {
+            "metric": "Hulladékgazdálkodási helyzet",
+            "effect_pct": 0.1
+          },
+          {
+            "metric": "Adminisztráció",
+            "effect_pct": 0.2
+          },
+          {
+            "metric": "Lakásgazdálkodás",
+            "effect_pct": 3
+          },
+          {
+            "metric": "Digitalizáció",
+            "effect_pct": 0.1
+          },
+          {
+            "metric": "Közbiztonság",
+            "effect_pct": 1
+          },
+          {
+            "metric": "Szociális",
+            "effect_pct": 1
+          },
+          {
+            "metric": "Rossz szoc. helyzetben lévők aránya",
+            "effect_pct": -1.6
+          },
+          {
+            "metric": "Településfejlettség",
+            "effect_pct": 0.2
+          },
+          {
+            "metric": "Lakossági viszonyok/elégedettség",
+            "effect_pct": 0.6
+          },
+          {
+            "metric": "Munkanélküliség",
+            "effect_pct": -0.2
+          },
+          {
+            "metric": "Kisvállalkozások száma",
+            "effect_pct": 0.03
+          }
+        ]
+      },
+      {
+        "project_id": 13,
+        "project_name": "Informatikai fejlesztés",
+        "visible_status": "Start button visible",
+        "financial_card": {
+          "startup_ecu": 12000,
+          "maintenance_signed_ecu": -8800,
+          "investment_ecu": 43000,
+          "partner_development_support_displayed_ecu": 0
+        },
+        "listed_effects": [
+          {
+            "metric": "Adminisztráció",
+            "effect_pct": 4
+          },
+          {
+            "metric": "Digitalizáció",
+            "effect_pct": 3
+          },
+          {
+            "metric": "Lakossági viszonyok/elégedettség",
+            "effect_pct": 0.7
+          },
+          {
+            "metric": "Munkakörülmények",
+            "effect_pct": 1.3
+          },
+          {
+            "metric": "Lakosság képzettsége",
+            "effect_pct": 0.6
+          }
+        ]
+      },
+      {
+        "project_id": 14,
+        "project_name": "Új ügyfélközpont",
+        "visible_status": "Fut",
+        "financial_card": {
+          "startup_ecu": 0,
+          "maintenance_signed_ecu": 0,
+          "investment_ecu": 0,
+          "partner_development_support_displayed_ecu": 0
+        },
+        "listed_effects": []
+      }
+    ]
+  },
+  "audit": {
+    "finance_identity": {
+      "p0_fact": true,
+      "p1_plan": true,
+      "p1_reserve_equals_net": true
+    },
+    "service_revenue_display_reconciliation": {
+      "sum_visible_service_rows_ecu": {
+        "p0_fact": 1802870,
+        "p1_plan": 1862033
+      },
+      "finance_aggregate_ecu": {
+        "p0_fact": 1802868,
+        "p1_plan": 1862031
+      },
+      "difference_aggregate_minus_visible_rows_ecu": {
+        "p0_fact": -2,
+        "p1_plan": -2
+      }
+    },
+    "project_cards_visible": 14,
+    "project_ids_seen": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "not_observed_project_card_details": 21,
+    "known_missing": [
+      "actual market maxProjectPerTurn",
+      "confirmed spendable project cash",
+      "partner development support receipt timing",
+      "short term loan parameters",
+      "annual FACT/PLAN paired calibration",
+      "real live competition configuration",
+      "project cards in 3 other categories"
+    ],
+    "decision_gate": "STOP"
+  }
+}
