@@ -1,0 +1,8 @@
+# Internal, locally captured EcoSim snapshots and reproducible reports.
+# This GitHub repository is PUBLIC. Never commit source snapshots or profiles.
+/fixtures/
+/profiles/
+/evidence/
+/__pycache__/
+/tests/__pycache__/
+/tools/__pycache__/

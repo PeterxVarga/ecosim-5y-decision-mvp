@@ -1,0 +1,20 @@
+{
+  "schema": "ECOSIM_R199_NATIVE_QUALIFICATION_V1",
+  "mode": "historical-test",
+  "source_parent_sha": "7072f98db43eeaab4e8e65bfe6bd687e7dd425d5",
+  "source_state_sha256": "f4ce8fb67731e4a8e0a1a25a9ddf87e9954d13fb32deb1316be7cc0d055ba18c",
+  "r195_sha256": "37fac836cb3b7cf985bba48ce3abf9220e57e2011586cceff0d519e8e0664a94",
+  "r149_sha256": "8fe07915e5f8ced5cad29d65198e6bd69310c0e843e404f527e0e7aeb3f5439d",
+  "r199_result_sha256": "0c2a3b25dd041fb85b4b3e911deaf88e91d7d7d445b745323bf7f6c063959b68",
+  "r199_exact_plans": 2,
+  "r199_policy_pairs": 6,
+  "r149_controls": 15,
+  "test_results": {
+    "r196_legacy": 26,
+    "r197_r198_r199": 42
+  },
+  "current_mode_validated": false,
+  "live_financing_approved": false,
+  "game_writes": 0,
+  "gameplay_gate": "STOP"
+}
