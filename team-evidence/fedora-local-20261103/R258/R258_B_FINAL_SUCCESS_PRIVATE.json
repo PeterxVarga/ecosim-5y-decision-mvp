@@ -1,0 +1,466 @@
+{
+  "schema": "ECOSIM_R258_B_FOLLOWUP_TO_LIVE_A_UNSAVED_UI_TRIAL_V1",
+  "created_utc": "2026-11-03T17:59:13.293Z",
+  "team": "Jutalom a nap végén",
+  "market": "I",
+  "period": "1/5",
+  "owner_scope": "TEMPORARY_START_CANCEL_PROJECTS_ONLY",
+  "game_save_actions": 0,
+  "next_period_actions": 0,
+  "direct_game_API_calls": 0,
+  "initial": {
+    "tag": "START",
+    "summary": {
+      "at": "2026-11-03T17:59:18.209Z",
+      "label": "START_summary",
+      "path": "/simulation/summary",
+      "newProjectCount": 0,
+      "changedProjectKeys": [],
+      "pageText": "Edu\nDashboard\nCourses\nLobby\nSimulation\nSummary\nProjects\nCity institutions\nPublic transport\nRevenues\nPopulation\nBusinesses\nLoans\nFinances\nAnalysis\nX-Challenge 2026 Selejtező\nEN\nSelejtező\nPool: I\nJutalom a nap végén\n4h 59m\nPeriod: 1/5\nView\nExport\nSave\nCity overview\nSmartCity summary\nAs a city manager in the SmartCity simulation, your goal is to turn a traditional town into a modern SmartCity that is attractive for both residents and businesses. So your goal is to reach the highest SmartCity index that is possible! Competing cities in the region are also working towards this goal. Beyond the SmartCity Index, factors such as the mobility of residents and businesses play a crucial role in the success of your town. The SmartCity index, the main performance indicator of the simulation, is composed of several sub-indices and factors, which are listed below. Open the manual for more details.\nSmartCity index =Economy * 0.25 +Environment * 0.2 +Governance * 0.15 +Living conditions * 0.15 +Mobility * 0.1 +People * 0.15\nSmartCity index\nEconomic change\nSmartCity index\nSmartCity index\n\tp0 (actual)\tp1 (target)\nSolvent market\t72.5\t72.5\nNumber of companies\t50\t50.45\nBusiness-friendliness\t28.33\t28.33\nEmployment rate\t96.57\t97.31\nEconomy\t61.85\t62.15\nSustainability\t49.39\t49.39\nWater management\t53\t53\nAir quality\t50\t50.11\nRatio of green areas\t31\t30.95\nWaste management situation\t50\t49.16\nEnvironment\t46.68\t46.52\nAdministration\t30\t30.17\nDebt/wealth ratio\t100\t100\nHousing management\t36.53\t36.4\nDigitalization\t74.01\t74.65\nGovernance\t71.85\t72.07\nPublic safety\t32.24\t31.27\nEducational institutions\t56.64\t62.11\nHealthcare\t48.02\t45.98\nSocial\t64.41\t66.76\nSports\t42\t41.94\nCulture\t42\t41.93\nRatio of people in poor social situation\t24.65\t20.98\nAverage housing value\t50\t50.59\nLiving conditions\t51.33\t52.45\nSettlement development\t55.46\t55.6\nTravel quality\t63.19\t60.86\nRatio of public transport\t54.29\t60.19\nNumber of cars / 100 people\t46.6\t47.48\nMobility\t46\t47.01\nPopulation conditions/satisfaction\t16.48\t17.93\nWorking conditions\t48.4\t48.7\nPopulation education level\t19.51\t20.64\nUnemployment rate\t3.43\t2.69\nPeople\t27.27\t28.42\nSmartCity index\t51.96\t52.48\nMarket Rank\t1\t-\nProject table\n\tp0 (actual)\tp1 (target)\nNeighbourhood Economy Model\tNot running\tNot running\nCommercial and Cultural Centre\tNot running\tNot running\nLocal Food Supply\tNot running\tNot running\nCircular Economy Pilot Project\tNot running\tNot running\nCorporate Social Responsibility Platform\tNot running\tNot running\nEconomic and Employment Cooperation\tNot running\tNot running\nLocal Economic Development Innovation and Knowledge Centre\tNot running\tNot running\nSmart Economy Applications\tNot running\tNot running\nCommunity Funding System\tNot running\tNot running\nInnovation Fund\tNot running\tNot running\nLocal Crisis Fund\tNot running\tNot running\nHousing and Premises Management\tNot running\tNot running\nIT Development\tNot running\tNot running\nNew Customer Service Centre\tRun\tRun\nUtilisation of the Cellar System\tNot running\tNot running\nOpen Creative and Innovation Spaces\tNot running\tNot running\nCareer Guidance and Talent Development\tNot running\tNot running\nListed Dreher Villa with a New Function\tNot running\tNot running\nMultifunctional Sports Centre\tNot running\tNot running\nCoordination of Training Partnerships\tNot running\tNot running\nTransport Museum\tNot running\tNot running\nOpera House Rehearsal Centre and Workshop House\tRun\tRun\nBasketball Hall\tRun\tRun\nVelodrome\tRun\tRun\nBosch Autonomous Vehicle Test Centre\tNot running\tNot running\nImproving Airport Access\tNot running\tNot running\nRailway Development\tNot running\tNot running\nNew Trolleybus Line\tNot running\tNot running\nCycle Path Development\tNot running\tNot running\nExpansion of the Community Bike Service (Bubi)\tNot running\tNot running\nP+R Car Parks by the Railway\tNot running\tNot running\nRenewable Energy Park\tNot running\tNot running\nRenewal of Népliget\tNot running\tNot running\nRobert Bosch Campus Expansion\tRun\tRun\nRichter Centre – New Corporate Headquarters\tRun\tRun"
+    },
+    "finance": {
+      "at": "2026-11-03T17:59:24.392Z",
+      "label": "START_finance",
+      "path": "/simulation/finance",
+      "newProjectCount": 0,
+      "changedProjectKeys": [],
+      "pageText": "Edu\nDashboard\nCourses\nLobby\nSimulation\nSummary\nProjects\nCity institutions\nPublic transport\nRevenues\nPopulation\nBusinesses\nLoans\nFinances\nAnalysis\nX-Challenge 2026 Selejtező\nEN\nSelejtező\nPool: I\nJutalom a nap végén\n4h 59m\nPeriod: 1/5\nView\nExport\nSave\nCash flow\nExpenses, %\nRevenues, %\nExpenses\n\tp0 (actual)\tp1 (target)\nEducational institutions\t972 400\t972 400\nSports institutions\t83 300\t83 300\nCultural institutions\t38 250\t38 250\nHealth institutions\t79 200\t79 200\nSocial institutions\t70 840\t70 840\nService providers\t178 035\t178 035\nPublic transport\t300 860\t301 300\nCity office\t120 150\t120 150\nTotal wages (including taxes)\t1 843 035\t1 843 475\nEducational institutions\t262 548\t267 410\nSports institutions\t29 155\t29 988\nCultural institutions\t13 388\t13 770\nHealth institutions\t55 440\t55 440\nSocial institutions\t28 336\t28 336\nService providers\t729 943\t729 943\nCity office\t48 060\t48 060\nTraining\t98 625\t98 650\nPublic transport\t1 086 013\t1 103 651\nTotal material costs\t2 351 508\t2 375 249\nFor educational purposes\t50 000\t50 000\nFor cultural and sports purposes\t43 000\t43 000\nFor health care purposes\t40 000\t40 000\nFor social purposes\t45 000\t45 000\nFor environmental purposes\t25 000\t25 000\nFor home renovation purposes\t35 000\t35 000\nFor projects\t0\t0\nFor communication purposes\t54 500\t54 500\nBus purchase\t0\t0\nTotal other operating expenses\t292 500\t292 500\nShort-term loan interest\t0\t0\nVariable maturity loan interest\t0\t0\nLong-term loan interest\t0\t0\nTotal interest payments\t0\t0\nShort-term loan repayment\t0\t0\nVariable maturity loan repayment\t-0\t-0\nLong-term loan repayment\t0\t-0\nTotal loan repayment\t0\t0\nSecurities acquisition\t0\t0\nOther incomes\t0\t0\nOther costs\t0\t0\nTotal other items\t0\t0\nFor reserve formation\t0\t1 051 111\nTotal expenses\t4 487 043\t5 562 335\nTotal expenses (excluding credit and reserves)\t4 487 043\t4 511 224\nPeriod net efficiency\t962 785\t1 051 111\nTotal loan repayment\t0\t0\nReserve formation/transfer\t0\t1 051 111\nRevenue\n\tp0 (actual)\tp1 (target)\nPreschool education\t97 300\t107 614\nSchool teaching\t525 840\t530 320\nSocial\t342 120\t351 450\nPublic transport\t559 790\t507 092\nCulture\t225 897\t226 650\nNormative state contribution\t1 750 947\t1 723 126\nSocial security contributions\t105 419\t105 770\nBusiness tax\t401 330\t402 640\nVehicle tax\t57 803\t59 087\nCommunal tax\t27 591\t27 591\nBuilding tax\t13 201\t13 201\nGovernment funding for development\t130 000\t130 000\nDevelopment funding from companies\t62 025\t62 025\nSupport based on population\t600 224\t677 691\nTaxes\t1 292 174\t1 372 235\nFees\t150 598\t151 100\nCharges\t75 299\t75 550\nVehicle sales\t0\t0\nProperty sales\t0\t0\nInstitutional Activities\t225 897\t226 650\nFuneral Services\t32 973\t33 617\nParking Management\t70 847\t72 422\nCommunal Services\t233 776\t233 776\nWater, Sewage, District Heating\t913 100\t913 100\nRental Apartment Fees\t45 263\t45 263\nPublic Transport\t506 911\t563 855\nAll Service Fees\t1 802 868\t1 862 031\nShort-Term Loans\t0\t0\nVariable Maturity Loans\t0\t0\nLong-Term Loans\t0\t0\nBonds\t0\t0\nTotal Borrowing\t0\t0\nSecurities Sales and Maturity\t0\t0\nDividends/Reserves\t923\t923\nPrevious Year End Cash\t184 600\t184 600\nDerived from Area Development\t0\t0\nDerived from Leasing Retail Space\t87 000\t87 000\nOther Revenues\t272 523\t272 523\nTotal Revenues\t5 449 828\t5 562 335\nTotal Revenues Without Loans\t5 449 828\t5 562 335\nBorrowing\t0\t0"
+    },
+    "score": {
+      "p0": 51.96,
+      "p1": 52.48
+    },
+    "expense": {
+      "p0": 0,
+      "p1": 0
+    },
+    "net": {
+      "p0": 962785,
+      "p1": 1051111
+    },
+    "borrow": {
+      "p0": 0,
+      "p1": 0
+    },
+    "returnedToOriginalDecisions": true
+  },
+  "A_not_repeated": {
+    "status": "EARLIER_THIS_TURN_UI_OBSERVED",
+    "score": 53.28,
+    "projectExpense": 305200,
+    "periodNet": 768280,
+    "loan": 0,
+    "rollback_project_count_verified": 0
+  },
+  "B": {
+    "label": "B",
+    "projectIDs": [
+      4,
+      13,
+      21,
+      27
+    ],
+    "score": {
+      "p0": 51.96,
+      "p1": 53.16
+    },
+    "expense": {
+      "p0": 0,
+      "p1": 139200
+    },
+    "net": {
+      "p0": 962785,
+      "p1": 929332
+    },
+    "borrow": {
+      "p0": 0,
+      "p1": 0
+    },
+    "projectKeys": [
+      "circularEconomy",
+      "municipalIt",
+      "railDevelopment",
+      "transportMuseum"
+    ],
+    "summary": {
+      "at": "2026-11-03T17:59:39.106Z",
+      "label": "TRIAL_B_summary",
+      "path": "/simulation/summary",
+      "newProjectCount": 4,
+      "changedProjectKeys": [
+        "circularEconomy",
+        "municipalIt",
+        "railDevelopment",
+        "transportMuseum"
+      ],
+      "pageText": "Edu\nDashboard\nCourses\nLobby\nSimulation\nSummary\nProjects\nCity institutions\nPublic transport\nRevenues\nPopulation\nBusinesses\nLoans\nFinances\nAnalysis\nX-Challenge 2026 Selejtező\nEN\nSelejtező\nPool: I\nJutalom a nap végén\n4h 59m\nPeriod: 1/5\nView\nExport\nSave\nCity overview\nSmartCity summary\nAs a city manager in the SmartCity simulation, your goal is to turn a traditional town into a modern SmartCity that is attractive for both residents and businesses. So your goal is to reach the highest SmartCity index that is possible! Competing cities in the region are also working towards this goal. Beyond the SmartCity Index, factors such as the mobility of residents and businesses play a crucial role in the success of your town. The SmartCity index, the main performance indicator of the simulation, is composed of several sub-indices and factors, which are listed below. Open the manual for more details.\nSmartCity index =Economy * 0.25 +Environment * 0.2 +Governance * 0.15 +Living conditions * 0.15 +Mobility * 0.1 +People * 0.15\nSmartCity index\nEconomic change\nSmartCity index\nSmartCity index\n\tp0 (actual)\tp1 (target)\nSolvent market\t72.5\t72.88\nNumber of companies\t50\t50.51\nBusiness-friendliness\t28.33\t28.5\nEmployment rate\t96.57\t97.49\nEconomy\t61.85\t62.35\nSustainability\t49.39\t50.78\nWater management\t53\t53\nAir quality\t50\t50.56\nRatio of green areas\t31\t31.29\nWaste management situation\t50\t50.61\nEnvironment\t46.68\t47.25\nAdministration\t30\t31.37\nDebt/wealth ratio\t100\t100\nHousing management\t36.53\t36.4\nDigitalization\t74.01\t77.28\nGovernance\t71.85\t73.35\nPublic safety\t32.24\t31.63\nEducational institutions\t56.64\t62.3\nHealthcare\t48.02\t45.98\nSocial\t64.41\t66.76\nSports\t42\t42.1\nCulture\t42\t43.09\nRatio of people in poor social situation\t24.65\t21.06\nAverage housing value\t50\t50.59\nLiving conditions\t51.33\t52.67\nSettlement development\t55.46\t57.23\nTravel quality\t63.19\t62.63\nRatio of public transport\t54.29\t62.03\nNumber of cars / 100 people\t46.6\t47.51\nMobility\t46\t48.75\nPopulation conditions/satisfaction\t16.48\t18.37\nWorking conditions\t48.4\t49.53\nPopulation education level\t19.51\t20.87\nUnemployment rate\t3.43\t2.51\nPeople\t27.27\t28.96\nSmartCity index\t51.96\t53.16\nMarket Rank\t1\t-\nProject table\n\tp0 (actual)\tp1 (target)\nNeighbourhood Economy Model\tNot running\tNot running\nCommercial and Cultural Centre\tNot running\tNot running\nLocal Food Supply\tNot running\tNot running\nCircular Economy Pilot Project\tNot running\tRun\nCorporate Social Responsibility Platform\tNot running\tNot running\nEconomic and Employment Cooperation\tNot running\tNot running\nLocal Economic Development Innovation and Knowledge Centre\tNot running\tNot running\nSmart Economy Applications\tNot running\tNot running\nCommunity Funding System\tNot running\tNot running\nInnovation Fund\tNot running\tNot running\nLocal Crisis Fund\tNot running\tNot running\nHousing and Premises Management\tNot running\tNot running\nIT Development\tNot running\tRun\nNew Customer Service Centre\tRun\tRun\nUtilisation of the Cellar System\tNot running\tNot running\nOpen Creative and Innovation Spaces\tNot running\tNot running\nCareer Guidance and Talent Development\tNot running\tNot running\nListed Dreher Villa with a New Function\tNot running\tNot running\nMultifunctional Sports Centre\tNot running\tNot running\nCoordination of Training Partnerships\tNot running\tNot running\nTransport Museum\tNot running\tRun\nOpera House Rehearsal Centre and Workshop House\tRun\tRun\nBasketball Hall\tRun\tRun\nVelodrome\tRun\tRun\nBosch Autonomous Vehicle Test Centre\tNot running\tNot running\nImproving Airport Access\tNot running\tNot running\nRailway Development\tNot running\tRun\nNew Trolleybus Line\tNot running\tNot running\nCycle Path Development\tNot running\tNot running\nExpansion of the Community Bike Service (Bubi)\tNot running\tNot running\nP+R Car Parks by the Railway\tNot running\tNot running\nRenewable Energy Park\tNot running\tNot running\nRenewal of Népliget\tNot running\tNot running\nRobert Bosch Campus Expansion\tRun\tRun\nRichter Centre – New Corporate Headquarters\tRun\tRun"
+    },
+    "finance": {
+      "at": "2026-11-03T17:59:45.515Z",
+      "label": "TRIAL_B_finance",
+      "path": "/simulation/finance",
+      "newProjectCount": 4,
+      "changedProjectKeys": [
+        "circularEconomy",
+        "municipalIt",
+        "railDevelopment",
+        "transportMuseum"
+      ],
+      "pageText": "Edu\nDashboard\nCourses\nLobby\nSimulation\nSummary\nProjects\nCity institutions\nPublic transport\nRevenues\nPopulation\nBusinesses\nLoans\nFinances\nAnalysis\nX-Challenge 2026 Selejtező\nEN\nSelejtező\nPool: I\nJutalom a nap végén\n4h 59m\nPeriod: 1/5\nView\nExport\nSave\nCash flow\nExpenses, %\nRevenues, %\nExpenses\n\tp0 (actual)\tp1 (target)\nEducational institutions\t972 400\t972 400\nSports institutions\t83 300\t83 300\nCultural institutions\t38 250\t38 250\nHealth institutions\t79 200\t79 200\nSocial institutions\t70 840\t70 840\nService providers\t178 035\t178 035\nPublic transport\t300 860\t301 300\nCity office\t120 150\t120 150\nTotal wages (including taxes)\t1 843 035\t1 843 475\nEducational institutions\t262 548\t267 410\nSports institutions\t29 155\t29 988\nCultural institutions\t13 388\t13 770\nHealth institutions\t55 440\t55 440\nSocial institutions\t28 336\t28 336\nService providers\t729 943\t729 943\nCity office\t48 060\t48 060\nTraining\t98 625\t98 650\nPublic transport\t1 086 013\t1 103 651\nTotal material costs\t2 351 508\t2 375 249\nFor educational purposes\t50 000\t50 000\nFor cultural and sports purposes\t43 000\t43 000\nFor health care purposes\t40 000\t40 000\nFor social purposes\t45 000\t45 000\nFor environmental purposes\t25 000\t25 000\nFor home renovation purposes\t35 000\t35 000\nFor projects\t0\t139 200\nFor communication purposes\t54 500\t54 500\nBus purchase\t0\t0\nTotal other operating expenses\t292 500\t431 700\nShort-term loan interest\t0\t0\nVariable maturity loan interest\t0\t0\nLong-term loan interest\t0\t0\nTotal interest payments\t0\t0\nShort-term loan repayment\t0\t0\nVariable maturity loan repayment\t-0\t-0\nLong-term loan repayment\t0\t-0\nTotal loan repayment\t0\t0\nSecurities acquisition\t0\t0\nOther incomes\t0\t0\nOther costs\t0\t0\nTotal other items\t0\t0\nFor reserve formation\t0\t929 332\nTotal expenses\t4 487 043\t5 579 756\nTotal expenses (excluding credit and reserves)\t4 487 043\t4 650 424\nPeriod net efficiency\t962 785\t929 332\nTotal loan repayment\t0\t0\nReserve formation/transfer\t0\t929 332\nRevenue\n\tp0 (actual)\tp1 (target)\nPreschool education\t97 300\t107 614\nSchool teaching\t525 840\t530 320\nSocial\t342 120\t351 450\nPublic transport\t559 790\t492 221\nCulture\t225 897\t226 650\nNormative state contribution\t1 750 947\t1 708 255\nSocial security contributions\t105 419\t105 770\nBusiness tax\t401 330\t403 627\nVehicle tax\t57 803\t59 130\nCommunal tax\t27 591\t27 591\nBuilding tax\t13 201\t13 201\nGovernment funding for development\t130 000\t130 000\nDevelopment funding from companies\t62 025\t76 025\nSupport based on population\t600 224\t677 691\nTaxes\t1 292 174\t1 387 265\nFees\t150 598\t151 100\nCharges\t75 299\t75 550\nVehicle sales\t0\t0\nProperty sales\t0\t0\nInstitutional Activities\t225 897\t226 650\nFuneral Services\t32 973\t33 617\nParking Management\t70 847\t72 474\nCommunal Services\t233 776\t233 776\nWater, Sewage, District Heating\t913 100\t913 100\nRental Apartment Fees\t45 263\t45 263\nPublic Transport\t506 911\t581 065\nAll Service Fees\t1 802 868\t1 879 293\nShort-Term Loans\t0\t0\nVariable Maturity Loans\t0\t0\nLong-Term Loans\t0\t0\nBonds\t0\t0\nTotal Borrowing\t0\t0\nSecurities Sales and Maturity\t0\t0\nDividends/Reserves\t923\t923\nPrevious Year End Cash\t184 600\t184 600\nDerived from Area Development\t0\t0\nDerived from Leasing Retail Space\t87 000\t87 000\nOther Revenues\t272 523\t272 523\nTotal Revenues\t5 449 828\t5 579 756\nTotal Revenues Without Loans\t5 449 828\t5 579 756\nBorrowing\t0\t0"
+    },
+    "saved": false,
+    "rollback": {
+      "tag": "AFTER_B_ROLLBACK",
+      "summary": {
+        "at": "2026-11-03T17:59:56.596Z",
+        "label": "AFTER_B_ROLLBACK_summary",
+        "path": "/simulation/summary",
+        "newProjectCount": 0,
+        "changedProjectKeys": [],
+        "pageText": "Edu\nDashboard\nCourses\nLobby\nSimulation\nSummary\nProjects\nCity institutions\nPublic transport\nRevenues\nPopulation\nBusinesses\nLoans\nFinances\nAnalysis\nX-Challenge 2026 Selejtező\nEN\nSelejtező\nPool: I\nJutalom a nap végén\n4h 59m\nPeriod: 1/5\nView\nExport\nSave\nCity overview\nSmartCity summary\nAs a city manager in the SmartCity simulation, your goal is to turn a traditional town into a modern SmartCity that is attractive for both residents and businesses. So your goal is to reach the highest SmartCity index that is possible! Competing cities in the region are also working towards this goal. Beyond the SmartCity Index, factors such as the mobility of residents and businesses play a crucial role in the success of your town. The SmartCity index, the main performance indicator of the simulation, is composed of several sub-indices and factors, which are listed below. Open the manual for more details.\nSmartCity index =Economy * 0.25 +Environment * 0.2 +Governance * 0.15 +Living conditions * 0.15 +Mobility * 0.1 +People * 0.15\nSmartCity index\nEconomic change\nSmartCity index\nSmartCity index\n\tp0 (actual)\tp1 (target)\nSolvent market\t72.5\t72.5\nNumber of companies\t50\t50.45\nBusiness-friendliness\t28.33\t28.33\nEmployment rate\t96.57\t97.31\nEconomy\t61.85\t62.15\nSustainability\t49.39\t49.39\nWater management\t53\t53\nAir quality\t50\t50.11\nRatio of green areas\t31\t30.95\nWaste management situation\t50\t49.16\nEnvironment\t46.68\t46.52\nAdministration\t30\t30.17\nDebt/wealth ratio\t100\t100\nHousing management\t36.53\t36.4\nDigitalization\t74.01\t74.65\nGovernance\t71.85\t72.07\nPublic safety\t32.24\t31.27\nEducational institutions\t56.64\t62.11\nHealthcare\t48.02\t45.98\nSocial\t64.41\t66.76\nSports\t42\t41.94\nCulture\t42\t41.93\nRatio of people in poor social situation\t24.65\t20.98\nAverage housing value\t50\t50.59\nLiving conditions\t51.33\t52.45\nSettlement development\t55.46\t55.6\nTravel quality\t63.19\t60.86\nRatio of public transport\t54.29\t60.19\nNumber of cars / 100 people\t46.6\t47.48\nMobility\t46\t47.01\nPopulation conditions/satisfaction\t16.48\t17.93\nWorking conditions\t48.4\t48.7\nPopulation education level\t19.51\t20.64\nUnemployment rate\t3.43\t2.69\nPeople\t27.27\t28.42\nSmartCity index\t51.96\t52.48\nMarket Rank\t1\t-\nProject table\n\tp0 (actual)\tp1 (target)\nNeighbourhood Economy Model\tNot running\tNot running\nCommercial and Cultural Centre\tNot running\tNot running\nLocal Food Supply\tNot running\tNot running\nCircular Economy Pilot Project\tNot running\tNot running\nCorporate Social Responsibility Platform\tNot running\tNot running\nEconomic and Employment Cooperation\tNot running\tNot running\nLocal Economic Development Innovation and Knowledge Centre\tNot running\tNot running\nSmart Economy Applications\tNot running\tNot running\nCommunity Funding System\tNot running\tNot running\nInnovation Fund\tNot running\tNot running\nLocal Crisis Fund\tNot running\tNot running\nHousing and Premises Management\tNot running\tNot running\nIT Development\tNot running\tNot running\nNew Customer Service Centre\tRun\tRun\nUtilisation of the Cellar System\tNot running\tNot running\nOpen Creative and Innovation Spaces\tNot running\tNot running\nCareer Guidance and Talent Development\tNot running\tNot running\nListed Dreher Villa with a New Function\tNot running\tNot running\nMultifunctional Sports Centre\tNot running\tNot running\nCoordination of Training Partnerships\tNot running\tNot running\nTransport Museum\tNot running\tNot running\nOpera House Rehearsal Centre and Workshop House\tRun\tRun\nBasketball Hall\tRun\tRun\nVelodrome\tRun\tRun\nBosch Autonomous Vehicle Test Centre\tNot running\tNot running\nImproving Airport Access\tNot running\tNot running\nRailway Development\tNot running\tNot running\nNew Trolleybus Line\tNot running\tNot running\nCycle Path Development\tNot running\tNot running\nExpansion of the Community Bike Service (Bubi)\tNot running\tNot running\nP+R Car Parks by the Railway\tNot running\tNot running\nRenewable Energy Park\tNot running\tNot running\nRenewal of Népliget\tNot running\tNot running\nRobert Bosch Campus Expansion\tRun\tRun\nRichter Centre – New Corporate Headquarters\tRun\tRun"
+      },
+      "finance": {
+        "at": "2026-11-03T18:00:04.299Z",
+        "label": "AFTER_B_ROLLBACK_finance",
+        "path": "/simulation/finance",
+        "newProjectCount": 0,
+        "changedProjectKeys": [],
+        "pageText": "Edu\nDashboard\nCourses\nLobby\nSimulation\nSummary\nProjects\nCity institutions\nPublic transport\nRevenues\nPopulation\nBusinesses\nLoans\nFinances\nAnalysis\nX-Challenge 2026 Selejtező\nEN\nSelejtező\nPool: I\nJutalom a nap végén\n4h 59m\nPeriod: 1/5\nView\nExport\nSave\nCash flow\nExpenses, %\nRevenues, %\nExpenses\n\tp0 (actual)\tp1 (target)\nEducational institutions\t972 400\t972 400\nSports institutions\t83 300\t83 300\nCultural institutions\t38 250\t38 250\nHealth institutions\t79 200\t79 200\nSocial institutions\t70 840\t70 840\nService providers\t178 035\t178 035\nPublic transport\t300 860\t301 300\nCity office\t120 150\t120 150\nTotal wages (including taxes)\t1 843 035\t1 843 475\nEducational institutions\t262 548\t267 410\nSports institutions\t29 155\t29 988\nCultural institutions\t13 388\t13 770\nHealth institutions\t55 440\t55 440\nSocial institutions\t28 336\t28 336\nService providers\t729 943\t729 943\nCity office\t48 060\t48 060\nTraining\t98 625\t98 650\nPublic transport\t1 086 013\t1 103 651\nTotal material costs\t2 351 508\t2 375 249\nFor educational purposes\t50 000\t50 000\nFor cultural and sports purposes\t43 000\t43 000\nFor health care purposes\t40 000\t40 000\nFor social purposes\t45 000\t45 000\nFor environmental purposes\t25 000\t25 000\nFor home renovation purposes\t35 000\t35 000\nFor projects\t0\t0\nFor communication purposes\t54 500\t54 500\nBus purchase\t0\t0\nTotal other operating expenses\t292 500\t292 500\nShort-term loan interest\t0\t0\nVariable maturity loan interest\t0\t0\nLong-term loan interest\t0\t0\nTotal interest payments\t0\t0\nShort-term loan repayment\t0\t0\nVariable maturity loan repayment\t-0\t-0\nLong-term loan repayment\t0\t-0\nTotal loan repayment\t0\t0\nSecurities acquisition\t0\t0\nOther incomes\t0\t0\nOther costs\t0\t0\nTotal other items\t0\t0\nFor reserve formation\t0\t1 051 111\nTotal expenses\t4 487 043\t5 562 335\nTotal expenses (excluding credit and reserves)\t4 487 043\t4 511 224\nPeriod net efficiency\t962 785\t1 051 111\nTotal loan repayment\t0\t0\nXXXXXXXXXXXXXXXXXXXXXX\t\t\nRevenue\n\tp0 (actual)\tp1 (target)\nPreschool education\t97 300\t107 614\nSchool teaching\t525 840\t530 320\nSocial\t342 120\t351 450\nPublic transport\t559 790\t507 092\nCulture\t225 897\t226 650\nNormative state contribution\t1 750 947\t1 723 126\nSocial security contributions\t105 419\t105 770\nBusiness tax\t401 330\t402 640\nVehicle tax\t57 803\t59 087\nCommunal tax\t27 591\t27 591\nBuilding tax\t13 201\t13 201\nGovernment funding for development\t130 000\t130 000\nDevelopment funding from companies\t62 025\t62 025\nSupport based on population\t600 224\t677 691\nTaxes\t1 292 174\t1 372 235\nFees\t150 598\t151 100\nCharges\t75 299\t75 550\nVehicle sales\t0\t0\nProperty sales\t0\t0\nInstitutional Activities\t225 897\t226 650\nFuneral Services\t32 973\t33 617\nParking Management\t70 847\t72 422\nCommunal Services\t233 776\t233 776\nWater, Sewage, District Heating\t913 100\t913 100\nRental Apartment Fees\t45 263\t45 263\nPublic Transport\t506 911\t563 855\nAll Service Fees\t1 802 868\t1 862 031\nShort-Term Loans\t0\t0\nVariable Maturity Loans\t0\t0\nLong-Term Loans\t0\t0\nBonds\t0\t0\nTotal Borrowing\t0\t0\nSecurities Sales and Maturity\t0\t0\nDividends/Reserves\t923\t923\nPrevious Year End Cash\t184 600\t184 600\nDerived from Area Development\t0\t0\nDerived from Leasing Retail Space\t87 000\t87 000\nOther Revenues\t272 523\t272 523\nTotal Revenues\t5 449 828\t5 562 335\nTotal Revenues Without Loans\t5 449 828\t5 562 335\nBorrowing\t0\t0"
+      },
+      "score": {
+        "p0": 51.96,
+        "p1": 52.48
+      },
+      "expense": {
+        "p0": 0,
+        "p1": 0
+      },
+      "net": {
+        "p0": 962785,
+        "p1": 1051111
+      },
+      "borrow": {
+        "p0": 0,
+        "p1": 0
+      },
+      "returnedToOriginalDecisions": true
+    }
+  },
+  "final": {
+    "status": "VALID",
+    "path": "/simulation/finance",
+    "team": "Jutalom a nap végén",
+    "period": 1,
+    "projectKeys": [
+      "neighbourhoodEconomy",
+      "commercialCulturalCentre",
+      "localFoodSupply",
+      "circularEconomy",
+      "csrPlatform",
+      "employmentCooperation",
+      "innovationKnowledgeCentre",
+      "smartEconomyApps",
+      "crowdfunding",
+      "innovationFund",
+      "localCrisisFund",
+      "housingAndPremises",
+      "municipalIt",
+      "customerServiceCentre",
+      "cellarSystem",
+      "makerSpaces",
+      "careerGuidance",
+      "dreherVilla",
+      "sportsCentre",
+      "trainingCooperation",
+      "transportMuseum",
+      "operaWorkshop",
+      "basketballHall",
+      "velodrome",
+      "autonomousVehicleTestCentre",
+      "airportAccess",
+      "railDevelopment",
+      "trolleybusLine",
+      "cyclePathDevelopment",
+      "bikeSharing",
+      "parkAndRide",
+      "renewableEnergyPark",
+      "nepligetRenewal",
+      "boschCampus",
+      "richterHeadquarters"
+    ],
+    "originalRunning": [
+      "customerServiceCentre",
+      "operaWorkshop",
+      "basketballHall",
+      "velodrome",
+      "boschCampus",
+      "richterHeadquarters"
+    ],
+    "changedProjects": [],
+    "projectValues": {
+      "neighbourhoodEconomy": 0,
+      "commercialCulturalCentre": 0,
+      "localFoodSupply": 0,
+      "circularEconomy": 0,
+      "csrPlatform": 0,
+      "employmentCooperation": 0,
+      "innovationKnowledgeCentre": 0,
+      "smartEconomyApps": 0,
+      "crowdfunding": 0,
+      "innovationFund": 0,
+      "localCrisisFund": 0,
+      "housingAndPremises": 0,
+      "municipalIt": 0,
+      "customerServiceCentre": 1,
+      "cellarSystem": 0,
+      "makerSpaces": 0,
+      "careerGuidance": 0,
+      "dreherVilla": 0,
+      "sportsCentre": 0,
+      "trainingCooperation": 0,
+      "transportMuseum": 0,
+      "operaWorkshop": 1,
+      "basketballHall": 1,
+      "velodrome": 1,
+      "autonomousVehicleTestCentre": 0,
+      "airportAccess": 0,
+      "railDevelopment": 0,
+      "trolleybusLine": 0,
+      "cyclePathDevelopment": 0,
+      "bikeSharing": 0,
+      "parkAndRide": 0,
+      "renewableEnergyPark": 0,
+      "nepligetRenewal": 0,
+      "boschCampus": 1,
+      "richterHeadquarters": 1
+    },
+    "otherPolicyLeaves": {
+      "institutions.education.middleSchool.change": 0,
+      "institutions.education.elementarySchool.change": 0,
+      "institutions.education.kindergarten.change": 0,
+      "institutions.education.nursery.change": 0,
+      "institutions.education.wage": 550,
+      "institutions.education.development": 50000,
+      "institutions.education.training": 12000,
+      "institutions.healthCare.doctorsOffice.change": 0,
+      "institutions.healthCare.wage": 550,
+      "institutions.healthCare.development": 40000,
+      "institutions.healthCare.training": 10000,
+      "institutions.sport.wage": 425,
+      "institutions.sport.change": 0,
+      "institutions.sport.development": 43000,
+      "institutions.sport.training": 10000,
+      "institutions.culture.change": 0,
+      "institutions.services.wage": 415,
+      "institutions.services.training": 33000,
+      "institutions.bureau.wage": 445,
+      "institutions.bureau.training": 5000,
+      "institutions.social.socialHome.change": 0,
+      "institutions.social.wage": 385,
+      "institutions.social.development": 45000,
+      "institutions.social.training": 10000,
+      "institutions.environment.development": 25000,
+      "institutions.environment.training": 5000,
+      "institutions.environment.civilSupport": 17000,
+      "institutions.homeRenovation.development": 35000,
+      "institutions.homeRenovation.training": 11000,
+      "publicTransport.hr.drivers.hire": 0,
+      "publicTransport.hr.drivers.wage": 460,
+      "publicTransport.hr.drivers.training": 30,
+      "publicTransport.hr.mechanics.hire": 0,
+      "publicTransport.hr.mechanics.wage": 480,
+      "publicTransport.hr.mechanics.training": 50,
+      "publicTransport.hr.office.hire": 1,
+      "publicTransport.hr.office.wage": 440,
+      "publicTransport.hr.office.training": 25,
+      "publicTransport.bus.change": 0,
+      "publicTransport.bus.age": 0,
+      "publicTransport.bus.maintenance": 175000,
+      "publicTransport.electricBus.change": 0,
+      "publicTransport.electricBus.age": 0,
+      "publicTransport.electricBus.maintenance": 15000,
+      "publicTransport.infrastructure.maintenance": 150000,
+      "publicTransport.infrastructure.communication": 28000,
+      "income.services.burialCost": 32.2,
+      "income.services.parkingManagementCost": 3.8,
+      "income.services.communalCost": 8.5,
+      "income.services.servicesCost": 33.2,
+      "income.services.transportCost": 12.4,
+      "income.services.rentalCost": 45,
+      "income.taxes.business": 2,
+      "income.taxes.vehicle": 1.9,
+      "income.taxes.communal": 1.1,
+      "income.taxes.building": 0.5,
+      "loans.long.change": 0,
+      "training": 100000,
+      "communication": 54500,
+      "financing.shareNominalValue": 0,
+      "financing.shareInvestment": 0,
+      "financing.corporateBondsNominalValue": 0,
+      "financing.fixedDeposit": 0,
+      "financing.variableMaturityLoan": 0,
+      "financing.bondValue": 0
+    },
+    "display": "Edu\nDashboard\nCourses\nLobby\nSimulation\nSummary\nProjects\nCity institutions\nPublic transport\nRevenues\nPopulation\nBusinesses\nLoans\nFinances\nAnalysis\nX-Challenge 2026 Selejtező\nEN\nSelejtező\nPool: I\nJutalom a nap végén\n4h 59m\nPeriod: 1/5\nView\nExport\nSave\nCash flow\nExpenses, %\nRevenues, %\nExpenses\n\tp0 (actual)\tp1 (target)\nEducational institutions\t972 400\t972 400\nSports institutions\t83 300\t83 300\nCultural institutions\t38 250\t38 250\nHealth institutions\t79 200\t79 200\nSocial institutions\t70 840\t70 840\nService providers\t178 035\t178 035\nPublic transport\t300 860\t301 300\nCity office\t120 150\t120 150\nTotal wages (including taxes)\t1 843 035\t1 843 475\nEducational institutions\t262 548\t267 410\nSports institutions\t29 155\t29 988\nCultural institutions\t13 388\t13 770\nHealth institutions\t55 440\t55 440\nSocial institutions\t28 336\t28 336\nService providers\t729 943\t729 943\nCity office\t48 060\t48 060\nTraining\t98 625\t98 650\nPublic transport\t1 086 013\t1 103 651\nTotal material costs\t2 351 508\t2 375 249\nFor educational purposes\t50 000\t50 000\nFor cultural and sports purposes\t43 000\t43 000\nFor health care purposes\t40 000\t40 000\nFor social purposes\t45 000\t45 000\nFor environmental purposes\t25 000\t25 000\nFor home renovation purposes\t35 000\t35 000\nFor projects\t0\t0\nFor communication purposes\t54 500\t54 500\nBus purchase\t0\t0\nTotal other operating expenses\t292 500\t292 500\nShort-term loan interest\t0\t0\nVariable maturity loan interest\t0\t0\nLong-term loan interest\t0\t0\nTotal interest payments\t0\t0\nShort-term loan repayment\t0\t0\nVariable maturity loan repayment\t-0\t-0\nLong-term loan repayment\t0\t-0\nTotal loan repayment\t0\t0\nSecurities acquisition\t0\t0\nOther incomes\t0\t0\nOther costs\t0\t0\nTotal other items\t0\t0\nFor reserve formation\t0\t1 051 111\nTotal expenses\t4 487 043\t5 562 335\nTotal expenses (excluding credit and reserves)\t4 487 043\t4 511 224\nPeriod net efficiency\t962 785\t1 051 111\nTotal loan repayment\t0\t0\nXXXXXXXXXXXXXXXXXXXXXX\t\t\nRevenue\n\tp0 (actual)\tp1 (target)\nPreschool education\t97 300\t107 614\nSchool teaching\t525 840\t530 320\nSocial\t342 120\t351 450\nPublic transport\t559 790\t507 092\nCulture\t225 897\t226 650\nNormative state contribution\t1 750 947\t1 723 126\nSocial security contributions\t105 419\t105 770\nBusiness tax\t401 330\t402 640\nVehicle tax\t57 803\t59 087\nCommunal tax\t27 591\t27 591\nBuilding tax\t13 201\t13 201\nGovernment funding for development\t130 000\t130 000\nDevelopment funding from companies\t62 025\t62 025\nSupport based on population\t600 224\t677 691\nTaxes\t1 292 174\t1 372 235\nFees\t150 598\t151 100\nCharges\t75 299\t75 550\nVehicle sales\t0\t0\nProperty sales\t0\t0\nInstitutional Activities\t225 897\t226 650\nFuneral Services\t32 973\t33 617\nParking Management\t70 847\t72 422\nCommunal Services\t233 776\t233 776\nWater, Sewage, District Heating\t913 100\t913 100\nRental Apartment Fees\t45 263\t45 263\nPublic Transport\t506 911\t563 855\nAll Service Fees\t1 802 868\t1 862 031\nShort-Term Loans\t0\t0\nVariable Maturity Loans\t0\t0\nLong-Term Loans\t0\t0\nBonds\t0\t0\nTotal Borrowing\t0\t0\nSecurities Sales and Maturity\t0\t0\nDividends/Reserves\t923\t923\nPrevious Year End Cash\t184 600\t184 600\nDerived from Area Development\t0\t0\nDerived from Leasing Retail Space\t87 000\t87 000\nOther Revenues\t272 523\t272 523\nTotal Revenues\t5 449 828\t5 562 335\nTotal Revenues Without Loans\t5 449 828\t5 562 335\nBorrowing\t0\t0"
+  },
+  "finalBaselineMatches": true,
+  "finished_utc": "2026-11-03T18:00:04.453Z",
+  "records": [
+    {
+      "at": "2026-11-03T17:59:13.633Z",
+      "action": "nav",
+      "target": "summary",
+      "observedButton": "summary"
+    },
+    {
+      "at": "2026-11-03T17:59:18.209Z",
+      "action": "CAPTURE_START_summary",
+      "path": "/simulation/summary",
+      "count": 0
+    },
+    {
+      "at": "2026-11-03T17:59:21.803Z",
+      "action": "nav",
+      "target": "finance",
+      "observedButton": "finance"
+    },
+    {
+      "at": "2026-11-03T17:59:24.392Z",
+      "action": "CAPTURE_START_finance",
+      "path": "/simulation/finance",
+      "count": 0
+    },
+    {
+      "at": "2026-11-03T17:59:24.709Z",
+      "action": "nav",
+      "target": "projects",
+      "observedButton": "projects"
+    },
+    {
+      "at": "2026-11-03T17:59:26.479Z",
+      "action": "Start",
+      "target": 4,
+      "observedButton": "Start"
+    },
+    {
+      "at": "2026-11-03T17:59:28.173Z",
+      "action": "Start",
+      "target": 13,
+      "observedButton": "Start"
+    },
+    {
+      "at": "2026-11-03T17:59:29.088Z",
+      "action": "category",
+      "target": "Sports and Culture",
+      "observedButton": "Sports and Culture"
+    },
+    {
+      "at": "2026-11-03T17:59:30.606Z",
+      "action": "Start",
+      "target": 21,
+      "observedButton": "Start"
+    },
+    {
+      "at": "2026-11-03T17:59:31.480Z",
+      "action": "category",
+      "target": "Transport",
+      "observedButton": "Transport"
+    },
+    {
+      "at": "2026-11-03T17:59:32.920Z",
+      "action": "Start",
+      "target": 27,
+      "observedButton": "Start"
+    },
+    {
+      "at": "2026-11-03T17:59:33.700Z",
+      "action": "nav",
+      "target": "summary",
+      "observedButton": "summary"
+    },
+    {
+      "at": "2026-11-03T17:59:39.106Z",
+      "action": "CAPTURE_TRIAL_B_summary",
+      "path": "/simulation/summary",
+      "count": 4
+    },
+    {
+      "at": "2026-11-03T17:59:42.716Z",
+      "action": "nav",
+      "target": "finance",
+      "observedButton": "finance"
+    },
+    {
+      "at": "2026-11-03T17:59:45.515Z",
+      "action": "CAPTURE_TRIAL_B_finance",
+      "path": "/simulation/finance",
+      "count": 4
+    },
+    {
+      "at": "2026-11-03T17:59:45.834Z",
+      "action": "nav",
+      "target": "projects",
+      "observedButton": "projects"
+    },
+    {
+      "at": "2026-11-03T17:59:47.380Z",
+      "action": "Cancel",
+      "target": 27,
+      "observedButton": "Cancel"
+    },
+    {
+      "at": "2026-11-03T17:59:48.219Z",
+      "action": "category",
+      "target": "Sports and Culture",
+      "observedButton": "Sports and Culture"
+    },
+    {
+      "at": "2026-11-03T17:59:49.687Z",
+      "action": "Cancel",
+      "target": 21,
+      "observedButton": "Cancel"
+    },
+    {
+      "at": "2026-11-03T17:59:50.483Z",
+      "action": "category",
+      "target": "Economic Development",
+      "observedButton": "Economic Development"
+    },
+    {
+      "at": "2026-11-03T17:59:51.910Z",
+      "action": "Cancel",
+      "target": 13,
+      "observedButton": "Cancel"
+    },
+    {
+      "at": "2026-11-03T17:59:52.821Z",
+      "action": "Cancel",
+      "target": 4,
+      "observedButton": "Cancel"
+    },
+    {
+      "at": "2026-11-03T17:59:53.591Z",
+      "action": "nav",
+      "target": "summary",
+      "observedButton": "summary"
+    },
+    {
+      "at": "2026-11-03T17:59:56.596Z",
+      "action": "CAPTURE_AFTER_B_ROLLBACK_summary",
+      "path": "/simulation/summary",
+      "count": 0
+    },
+    {
+      "at": "2026-11-03T18:00:02.111Z",
+      "action": "nav",
+      "target": "finance",
+      "observedButton": "finance"
+    },
+    {
+      "at": "2026-11-03T18:00:04.299Z",
+      "action": "CAPTURE_AFTER_B_ROLLBACK_finance",
+      "path": "/simulation/finance",
+      "count": 0
+    }
+  ]
+}

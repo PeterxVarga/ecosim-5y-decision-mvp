@@ -1,0 +1,30 @@
+BASELINE_PROJECTS_0_ORIGINAL_6_PASS
+UI_nav=summary
+UI_nav=finance
+UI_nav=projects
+START_TRIAL_B
+UI_Start=4
+R258_FRESH_DOM_SELECTION_RETRY=Start_13_0
+UI_Start=13
+UI_category=Sports and Culture
+UI_Start=21
+UI_category=Transport
+UI_Start=27
+UI_nav=summary
+UI_nav=finance
+OBSERVED_TRIAL_B:{"index":53.16,"projectExpense":139200,"periodNet":929332,"loan":0}
+UI_nav=projects
+UI_Cancel=27
+RESTORED_PROJECT=27
+UI_category=Sports and Culture
+UI_Cancel=21
+RESTORED_PROJECT=21
+UI_category=Economic Development
+UI_Cancel=13
+RESTORED_PROJECT=13
+UI_Cancel=4
+RESTORED_PROJECT=4
+UI_nav=summary
+UI_nav=finance
+TRIAL_B_ROLLBACK_BASELINE_PASS
+R258_B_AFTER_A_RESTORE_ROLLBACK_PASS=/home/petervarga/Downloads/ecosim-r258-sequential-A-B-ui-trial-20261103/R258_B_FINAL_SUCCESS_PRIVATE.json

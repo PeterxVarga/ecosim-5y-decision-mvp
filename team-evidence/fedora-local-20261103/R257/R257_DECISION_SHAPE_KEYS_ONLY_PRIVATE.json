@@ -1,0 +1,383 @@
+{
+  "status": "SCHEMA_ONLY",
+  "path": "/simulation/transport",
+  "examined": 539,
+  "rows": [
+    {
+      "ownerPropKeys": [
+        "match",
+        "location",
+        "history",
+        "staticContext",
+        "activeItemIDs",
+        "activeHRItemIDs",
+        "activeVehicleItemIDs",
+        "decisionSetup",
+        "selectedCourseID",
+        "teamIndex",
+        "selectedPeriod",
+        "teams",
+        "simulation",
+        "setActiveItem",
+        "setActiveHRItem",
+        "setActiveVehicleItem",
+        "setCSVData"
+      ],
+      "decisionSetup": {
+        "type": "object",
+        "keys": [
+          "help",
+          "institutions",
+          "publicTransport",
+          "income",
+          "projects",
+          "loans",
+          "training",
+          "communication",
+          "financing"
+        ]
+      },
+      "simulation": {
+        "type": "object",
+        "keys": [
+          "init",
+          "market",
+          "saveState",
+          "csvGenerator",
+          "setup",
+          "teams",
+          "csvGeneratorFile"
+        ]
+      },
+      "teams": {
+        "type": "array",
+        "length": 7,
+        "firstKeys": [
+          "decisions",
+          "id",
+          "name",
+          "poolCodeNumber"
+        ]
+      },
+      "teamIndex": {
+        "type": "number"
+      },
+      "selectedPeriod": {
+        "type": "number"
+      },
+      "simulation_teams": {
+        "type": "array",
+        "length": 7,
+        "firstKeys": [
+          "decisions",
+          "id",
+          "name",
+          "poolCodeNumber"
+        ]
+      },
+      "simulation_market": {
+        "type": "object",
+        "keys": [
+          "performanceIndex",
+          "loans",
+          "institutions",
+          "publicTransport",
+          "population",
+          "development",
+          "finance",
+          "smartCityIndex",
+          "normatives",
+          "services",
+          "employment",
+          "environment",
+          "economyGrowth",
+          "housing",
+          "corporations",
+          "maxProjectPerTurn",
+          "investmentEffects",
+          "projects"
+        ]
+      }
+    },
+    {
+      "ownerPropKeys": [
+        "match",
+        "location",
+        "history",
+        "staticContext",
+        "activeItemIDs",
+        "activeHRItemIDs",
+        "activeVehicleItemIDs",
+        "decisionSetup",
+        "selectedCourseID",
+        "teamIndex",
+        "selectedPeriod",
+        "teams",
+        "simulation",
+        "setActiveItem",
+        "setActiveHRItem",
+        "setActiveVehicleItem",
+        "setCSVData"
+      ],
+      "decisionSetup": {
+        "type": "object",
+        "keys": [
+          "help",
+          "institutions",
+          "publicTransport",
+          "income",
+          "projects",
+          "loans",
+          "training",
+          "communication",
+          "financing"
+        ]
+      },
+      "simulation": {
+        "type": "object",
+        "keys": [
+          "init",
+          "market",
+          "saveState",
+          "csvGenerator",
+          "setup",
+          "teams",
+          "csvGeneratorFile"
+        ]
+      },
+      "teams": {
+        "type": "array",
+        "length": 7,
+        "firstKeys": [
+          "decisions",
+          "id",
+          "name",
+          "poolCodeNumber"
+        ]
+      },
+      "teamIndex": {
+        "type": "number"
+      },
+      "selectedPeriod": {
+        "type": "number"
+      },
+      "simulation_teams": {
+        "type": "array",
+        "length": 7,
+        "firstKeys": [
+          "decisions",
+          "id",
+          "name",
+          "poolCodeNumber"
+        ]
+      },
+      "simulation_market": {
+        "type": "object",
+        "keys": [
+          "performanceIndex",
+          "loans",
+          "institutions",
+          "publicTransport",
+          "population",
+          "development",
+          "finance",
+          "smartCityIndex",
+          "normatives",
+          "services",
+          "employment",
+          "environment",
+          "economyGrowth",
+          "housing",
+          "corporations",
+          "maxProjectPerTurn",
+          "investmentEffects",
+          "projects"
+        ]
+      }
+    },
+    {
+      "ownerPropKeys": [
+        "body",
+        "currentPeriod",
+        "finalPeriod",
+        "head",
+        "method",
+        "selectedPeriod",
+        "setDecision",
+        "setTooltip",
+        "tooltipInfo",
+        "valueObj",
+        "marketResearch",
+        "methodInfo"
+      ],
+      "selectedPeriod": {
+        "type": "number"
+      },
+      "valueObj": {
+        "type": "object",
+        "keys": [
+          "decisionSetup",
+          "market",
+          "period",
+          "selectedPeriod",
+          "teamID",
+          "teamIndex",
+          "teams"
+        ]
+      },
+      "body": {
+        "type": "array",
+        "length": 4,
+        "firstKeys": [
+          "type",
+          "field"
+        ]
+      },
+      "currentPeriod": {
+        "type": "number"
+      },
+      "finalPeriod": {
+        "type": "number"
+      }
+    },
+    {
+      "ownerPropKeys": [
+        "body",
+        "currentPeriod",
+        "finalPeriod",
+        "head",
+        "method",
+        "selectedPeriod",
+        "setDecision",
+        "setTooltip",
+        "tooltipInfo",
+        "valueObj",
+        "marketResearch",
+        "methodInfo",
+        "isAdmin",
+        "dispatch"
+      ],
+      "selectedPeriod": {
+        "type": "number"
+      },
+      "valueObj": {
+        "type": "object",
+        "keys": [
+          "decisionSetup",
+          "market",
+          "period",
+          "selectedPeriod",
+          "teamID",
+          "teamIndex",
+          "teams"
+        ]
+      },
+      "body": {
+        "type": "array",
+        "length": 4,
+        "firstKeys": [
+          "type",
+          "field"
+        ]
+      },
+      "currentPeriod": {
+        "type": "number"
+      },
+      "finalPeriod": {
+        "type": "number"
+      }
+    },
+    {
+      "ownerPropKeys": [
+        "body",
+        "currentPeriod",
+        "finalPeriod",
+        "head",
+        "method",
+        "selectedPeriod",
+        "setDecision",
+        "setTooltip",
+        "tooltipInfo",
+        "valueObj",
+        "marketResearch",
+        "methodInfo"
+      ],
+      "selectedPeriod": {
+        "type": "number"
+      },
+      "valueObj": {
+        "type": "object",
+        "keys": [
+          "decisionSetup",
+          "market",
+          "period",
+          "selectedPeriod",
+          "teamID",
+          "teamIndex",
+          "teams"
+        ]
+      },
+      "body": {
+        "type": "array",
+        "length": 11,
+        "firstKeys": [
+          "type",
+          "field"
+        ]
+      },
+      "currentPeriod": {
+        "type": "number"
+      },
+      "finalPeriod": {
+        "type": "number"
+      }
+    },
+    {
+      "ownerPropKeys": [
+        "body",
+        "currentPeriod",
+        "finalPeriod",
+        "head",
+        "method",
+        "selectedPeriod",
+        "setDecision",
+        "setTooltip",
+        "tooltipInfo",
+        "valueObj",
+        "marketResearch",
+        "methodInfo",
+        "isAdmin",
+        "dispatch"
+      ],
+      "selectedPeriod": {
+        "type": "number"
+      },
+      "valueObj": {
+        "type": "object",
+        "keys": [
+          "decisionSetup",
+          "market",
+          "period",
+          "selectedPeriod",
+          "teamID",
+          "teamIndex",
+          "teams"
+        ]
+      },
+      "body": {
+        "type": "array",
+        "length": 11,
+        "firstKeys": [
+          "type",
+          "field"
+        ]
+      },
+      "currentPeriod": {
+        "type": "number"
+      },
+      "finalPeriod": {
+        "type": "number"
+      }
+    }
+  ]
+}

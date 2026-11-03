@@ -1,0 +1,14 @@
+"use strict";
+const fs=require("fs"),path=require("path");const d=path.join(process.env.HOME,"Downloads/ecosim-r258-sequential-A-B-ui-trial-20261103");
+const p=JSON.parse(fs.readFileSync(path.join(d,"R258_INITIAL_TABS_PRIVATE.json"))).find(x=>x.type==="page");
+const ws=new WebSocket(p.webSocketDebuggerUrl),pending=new Map();let seq=0;
+ws.onmessage=e=>{let q;try{q=JSON.parse(e.data)}catch{return}const fn=pending.get(q.id);if(fn){pending.delete(q.id);fn(q)}};
+const send=(method,params={})=>new Promise((resolve,reject)=>{let id=++seq,t=setTimeout(()=>reject(Error("HOLD_TIMEOUT")),14000);pending.set(id,x=>{clearTimeout(t);resolve(x)});ws.send(JSON.stringify({id,method,params}))});
+(async()=>{await new Promise((yes,no)=>{ws.addEventListener("open",yes,{once:true});ws.addEventListener("error",no,{once:true})});
+const r=await send("Page.captureScreenshot",{format:"png",captureBeyondViewport:false,fromSurface:true});
+if(!r.result?.data)throw Error("HOLD_SCREENSHOT");
+const file=path.join(d,"R258_PROJECT_CDP_PRECLICK_VIEW_PRIVATE.png");
+if(fs.existsSync(file))throw Error("HOLD_OVERWRITE");
+fs.writeFileSync(file,Buffer.from(r.result.data,"base64"),{mode:0o600});
+console.log(file,fs.statSync(file).size);ws.close();
+})().catch(e=>{console.error(e.stack);ws.close();process.exitCode=2});

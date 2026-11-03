@@ -1,0 +1,68 @@
+{
+  "A_current_UI_result_from_connected_controller_output": {
+    "ids": [
+      4,
+      13,
+      27,
+      33
+    ],
+    "index": 53.28,
+    "loan_ECU": 0,
+    "net_ECU": 768280,
+    "projects_ECU": 305200
+  },
+  "A_earlier_independent_R249_receipt_hash": "92822177525799cb20cd2e9847ae4f001c78b7c30c8a33092e176ef9cfbfaf6c",
+  "A_extra_project_expense_ECU": 166000,
+  "A_index_advantage_points": 0.12,
+  "B_cancel_project_order": [
+    27,
+    21,
+    13,
+    4
+  ],
+  "B_cash_advantage_ECU": 161052,
+  "B_current_live_UI_receipt_sha256": "cc409ad229eff9b52fdab1d8b88f052621f0f37623a45c9ca05629287656b7a3",
+  "B_current_live_UI_result": {
+    "ids": [
+      4,
+      13,
+      21,
+      27
+    ],
+    "index": 53.16,
+    "loan_ECU": 0,
+    "net_ECU": 929332,
+    "projects_ECU": 139200
+  },
+  "B_native_UI_exact_4_start_4_cancel": true,
+  "B_other_policies_unchanged": true,
+  "B_postflight_base_index": 52.48,
+  "B_postflight_loan_ECU": 0,
+  "B_postflight_new_project_starts_remaining": 0,
+  "B_postflight_period_net_ECU": 1051111,
+  "B_postflight_project_expense_ECU": 0,
+  "B_start_project_order": [
+    4,
+    13,
+    21,
+    27
+  ],
+  "all_delta_pp": "UNKNOWN_NO_PRIOR_BASELINE",
+  "date_utc": "2026-11-03T18:01:47.909420+00:00",
+  "game_api_writes": 0,
+  "gameplay_gate": "STOP",
+  "hu_report_sha256": "36f41b4c5d1a63a7d085f14c745dff816dad234121ebb682caf7acfce31d25c5",
+  "isolated_test_browser_closed_checked": null,
+  "market": "I",
+  "next_period_action_count": 0,
+  "next_roi": "OWNER_SELECT_A_OR_B_THEN_EXPLICIT_SEPARATE_START_AND_SAVE_AUTHORIZATION",
+  "period": "1/5",
+  "save_action_count": 0,
+  "schema": "ECOSIM_R258_FINAL_A_THEN_B_LIVE_UNSAVED_UI_TRIAL_V1",
+  "status": "COMPLETED_BOTH_LIVE_UI_TRIALS_NO_SAVE_ROLLBACK_VERIFIED",
+  "team": "Jutalom a nap végén",
+  "whole_5y_e2e_pct": "UNKNOWN_NO_DENOMINATOR",
+  "whole_5y_strategy_status": "PARTIAL",
+  "whole_functional_pct": "UNKNOWN_NO_DENOMINATOR",
+  "whole_live_ready_pct": "UNKNOWN_NO_DENOMINATOR"
+}

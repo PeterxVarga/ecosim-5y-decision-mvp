@@ -1,0 +1,15 @@
+"use strict";
+const fs=require("fs"),path=require("path");
+const d=path.join(process.env.HOME,"Downloads/ecosim-r258-sequential-A-B-ui-trial-20261103");
+const tab=JSON.parse(fs.readFileSync(path.join(d,"R258_INITIAL_TABS_PRIVATE.json"))).find(x=>x.type==="page");
+const s=fs.readFileSync(path.join(d,"r258_sequential_ui_trial.cjs"),"utf8");
+const f=s.slice(s.indexOf("function readCurrent(){"),s.indexOf("async function evaluate(")).trim();
+const ws=new WebSocket(tab.webSocketDebuggerUrl),pending=new Map();let n=0;
+ws.onmessage=e=>{let q;try{q=JSON.parse(e.data)}catch{return}const cb=pending.get(q.id);if(cb){pending.delete(q.id);cb(q)}};
+const send=(method,params={})=>new Promise((yes,no)=>{let id=++n,t=setTimeout(()=>no(Error("HOLD_TIMEOUT")),12000);pending.set(id,m=>{clearTimeout(t);yes(m)});ws.send(JSON.stringify({id,method,params}))});
+(async()=>{await new Promise((yes,no)=>{ws.addEventListener("open",yes,{once:true});ws.addEventListener("error",no,{once:true})});
+const q=await send("Runtime.evaluate",{expression:"("+f+")()",throwOnSideEffect:true,returnByValue:true,awaitPromise:false,timeout:8500});
+if(q.error||q.result?.exceptionDetails)throw Error("HOLD_READ");
+const x=q.result?.result?.value;if(x.status!=="VALID")throw Error("HOLD_INVALID");
+console.log(JSON.stringify({path:x.path,changed:x.changedProjects.map(k=>({key:k,value:x.projectValues[k]})),count:x.changedProjects.length,policyLeavesCount:Object.keys(x.otherPolicyLeaves).length, projectBoxStatus:x.display.match(/4 - Circular Economy Pilot Project[\s\S]{0,1500}/)?.[0].slice(-320)}));
+ws.close()})().catch(e=>{console.error(e.stack);ws.close();process.exitCode=2});

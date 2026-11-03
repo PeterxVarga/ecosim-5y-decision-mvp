@@ -1,0 +1,400 @@
+{
+  "status": "FOUND_AUTH_CURRENT_OWNER_DECISIONS",
+  "path": "/simulation/transport",
+  "period": 1,
+  "team_match": true,
+  "team_count": 7,
+  "source_selected_period": 1,
+  "scalar_leaf_count_p0": 100,
+  "scalar_leaf_count_p1": 100,
+  "numeric_boolean_diffs": [],
+  "officeHire": {
+    "p0": 1,
+    "p1": 1
+  },
+  "projects": [
+    {
+      "id": "neighbourhoodEconomy",
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": "commercialCulturalCentre",
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": "localFoodSupply",
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": "circularEconomy",
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": "csrPlatform",
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": "employmentCooperation",
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": "innovationKnowledgeCentre",
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": "smartEconomyApps",
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": "crowdfunding",
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": "innovationFund",
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": "localCrisisFund",
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": "housingAndPremises",
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": "municipalIt",
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": "customerServiceCentre",
+      "p0": 1,
+      "p1": 1
+    },
+    {
+      "id": "cellarSystem",
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": "makerSpaces",
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": "careerGuidance",
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": "dreherVilla",
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": "sportsCentre",
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": "trainingCooperation",
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": "transportMuseum",
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": "operaWorkshop",
+      "p0": 1,
+      "p1": 1
+    },
+    {
+      "id": "basketballHall",
+      "p0": 1,
+      "p1": 1
+    },
+    {
+      "id": "velodrome",
+      "p0": 1,
+      "p1": 1
+    },
+    {
+      "id": "autonomousVehicleTestCentre",
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": "airportAccess",
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": "railDevelopment",
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": "trolleybusLine",
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": "cyclePathDevelopment",
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": "bikeSharing",
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": "parkAndRide",
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": "renewableEnergyPark",
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": "nepligetRenewal",
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": "boschCampus",
+      "p0": 1,
+      "p1": 1
+    },
+    {
+      "id": "richterHeadquarters",
+      "p0": 1,
+      "p1": 1
+    }
+  ],
+  "all_numeric_boolean_leaf_values": {
+    "0": {
+      "institutions.education.middleSchool.change": 0,
+      "institutions.education.elementarySchool.change": 0,
+      "institutions.education.kindergarten.change": 0,
+      "institutions.education.nursery.change": 0,
+      "institutions.education.wage": 550,
+      "institutions.education.development": 50000,
+      "institutions.education.training": 12000,
+      "institutions.healthCare.doctorsOffice.change": 0,
+      "institutions.healthCare.wage": 550,
+      "institutions.healthCare.development": 40000,
+      "institutions.healthCare.training": 10000,
+      "institutions.sport.wage": 425,
+      "institutions.sport.change": 0,
+      "institutions.sport.development": 43000,
+      "institutions.sport.training": 10000,
+      "institutions.culture.change": 0,
+      "institutions.services.wage": 415,
+      "institutions.services.training": 33000,
+      "institutions.bureau.wage": 445,
+      "institutions.bureau.training": 5000,
+      "institutions.social.socialHome.change": 0,
+      "institutions.social.wage": 385,
+      "institutions.social.development": 45000,
+      "institutions.social.training": 10000,
+      "institutions.environment.development": 25000,
+      "institutions.environment.training": 5000,
+      "institutions.environment.civilSupport": 17000,
+      "institutions.homeRenovation.development": 35000,
+      "institutions.homeRenovation.training": 11000,
+      "publicTransport.hr.drivers.hire": 0,
+      "publicTransport.hr.drivers.wage": 460,
+      "publicTransport.hr.drivers.training": 30,
+      "publicTransport.hr.mechanics.hire": 0,
+      "publicTransport.hr.mechanics.wage": 480,
+      "publicTransport.hr.mechanics.training": 50,
+      "publicTransport.hr.office.hire": 1,
+      "publicTransport.hr.office.wage": 440,
+      "publicTransport.hr.office.training": 25,
+      "publicTransport.bus.change": 0,
+      "publicTransport.bus.age": 0,
+      "publicTransport.bus.maintenance": 175000,
+      "publicTransport.electricBus.change": 0,
+      "publicTransport.electricBus.age": 0,
+      "publicTransport.electricBus.maintenance": 15000,
+      "publicTransport.infrastructure.maintenance": 150000,
+      "publicTransport.infrastructure.communication": 28000,
+      "income.services.burialCost": 32.2,
+      "income.services.parkingManagementCost": 3.8,
+      "income.services.communalCost": 8.5,
+      "income.services.servicesCost": 33.2,
+      "income.services.transportCost": 12.4,
+      "income.services.rentalCost": 45,
+      "income.taxes.business": 2,
+      "income.taxes.vehicle": 1.9,
+      "income.taxes.communal": 1.1,
+      "income.taxes.building": 0.5,
+      "projects.neighbourhoodEconomy": 0,
+      "projects.commercialCulturalCentre": 0,
+      "projects.localFoodSupply": 0,
+      "projects.circularEconomy": 0,
+      "projects.csrPlatform": 0,
+      "projects.employmentCooperation": 0,
+      "projects.innovationKnowledgeCentre": 0,
+      "projects.smartEconomyApps": 0,
+      "projects.crowdfunding": 0,
+      "projects.innovationFund": 0,
+      "projects.localCrisisFund": 0,
+      "projects.housingAndPremises": 0,
+      "projects.municipalIt": 0,
+      "projects.customerServiceCentre": 1,
+      "projects.cellarSystem": 0,
+      "projects.makerSpaces": 0,
+      "projects.careerGuidance": 0,
+      "projects.dreherVilla": 0,
+      "projects.sportsCentre": 0,
+      "projects.trainingCooperation": 0,
+      "projects.transportMuseum": 0,
+      "projects.operaWorkshop": 1,
+      "projects.basketballHall": 1,
+      "projects.velodrome": 1,
+      "projects.autonomousVehicleTestCentre": 0,
+      "projects.airportAccess": 0,
+      "projects.railDevelopment": 0,
+      "projects.trolleybusLine": 0,
+      "projects.cyclePathDevelopment": 0,
+      "projects.bikeSharing": 0,
+      "projects.parkAndRide": 0,
+      "projects.renewableEnergyPark": 0,
+      "projects.nepligetRenewal": 0,
+      "projects.boschCampus": 1,
+      "projects.richterHeadquarters": 1,
+      "loans.long.change": 0,
+      "training": 100000,
+      "communication": 54500,
+      "financing.shareNominalValue": 0,
+      "financing.shareInvestment": 0,
+      "financing.corporateBondsNominalValue": 0,
+      "financing.fixedDeposit": 0,
+      "financing.variableMaturityLoan": 0,
+      "financing.bondValue": 0
+    },
+    "1": {
+      "institutions.education.middleSchool.change": 0,
+      "institutions.education.elementarySchool.change": 0,
+      "institutions.education.kindergarten.change": 0,
+      "institutions.education.nursery.change": 0,
+      "institutions.education.wage": 550,
+      "institutions.education.development": 50000,
+      "institutions.education.training": 12000,
+      "institutions.healthCare.doctorsOffice.change": 0,
+      "institutions.healthCare.wage": 550,
+      "institutions.healthCare.development": 40000,
+      "institutions.healthCare.training": 10000,
+      "institutions.sport.wage": 425,
+      "institutions.sport.change": 0,
+      "institutions.sport.development": 43000,
+      "institutions.sport.training": 10000,
+      "institutions.culture.change": 0,
+      "institutions.services.wage": 415,
+      "institutions.services.training": 33000,
+      "institutions.bureau.wage": 445,
+      "institutions.bureau.training": 5000,
+      "institutions.social.socialHome.change": 0,
+      "institutions.social.wage": 385,
+      "institutions.social.development": 45000,
+      "institutions.social.training": 10000,
+      "institutions.environment.development": 25000,
+      "institutions.environment.training": 5000,
+      "institutions.environment.civilSupport": 17000,
+      "institutions.homeRenovation.development": 35000,
+      "institutions.homeRenovation.training": 11000,
+      "publicTransport.hr.drivers.hire": 0,
+      "publicTransport.hr.drivers.wage": 460,
+      "publicTransport.hr.drivers.training": 30,
+      "publicTransport.hr.mechanics.hire": 0,
+      "publicTransport.hr.mechanics.wage": 480,
+      "publicTransport.hr.mechanics.training": 50,
+      "publicTransport.hr.office.hire": 1,
+      "publicTransport.hr.office.wage": 440,
+      "publicTransport.hr.office.training": 25,
+      "publicTransport.bus.change": 0,
+      "publicTransport.bus.age": 0,
+      "publicTransport.bus.maintenance": 175000,
+      "publicTransport.electricBus.change": 0,
+      "publicTransport.electricBus.age": 0,
+      "publicTransport.electricBus.maintenance": 15000,
+      "publicTransport.infrastructure.maintenance": 150000,
+      "publicTransport.infrastructure.communication": 28000,
+      "income.services.burialCost": 32.2,
+      "income.services.parkingManagementCost": 3.8,
+      "income.services.communalCost": 8.5,
+      "income.services.servicesCost": 33.2,
+      "income.services.transportCost": 12.4,
+      "income.services.rentalCost": 45,
+      "income.taxes.business": 2,
+      "income.taxes.vehicle": 1.9,
+      "income.taxes.communal": 1.1,
+      "income.taxes.building": 0.5,
+      "projects.neighbourhoodEconomy": 0,
+      "projects.commercialCulturalCentre": 0,
+      "projects.localFoodSupply": 0,
+      "projects.circularEconomy": 0,
+      "projects.csrPlatform": 0,
+      "projects.employmentCooperation": 0,
+      "projects.innovationKnowledgeCentre": 0,
+      "projects.smartEconomyApps": 0,
+      "projects.crowdfunding": 0,
+      "projects.innovationFund": 0,
+      "projects.localCrisisFund": 0,
+      "projects.housingAndPremises": 0,
+      "projects.municipalIt": 0,
+      "projects.customerServiceCentre": 1,
+      "projects.cellarSystem": 0,
+      "projects.makerSpaces": 0,
+      "projects.careerGuidance": 0,
+      "projects.dreherVilla": 0,
+      "projects.sportsCentre": 0,
+      "projects.trainingCooperation": 0,
+      "projects.transportMuseum": 0,
+      "projects.operaWorkshop": 1,
+      "projects.basketballHall": 1,
+      "projects.velodrome": 1,
+      "projects.autonomousVehicleTestCentre": 0,
+      "projects.airportAccess": 0,
+      "projects.railDevelopment": 0,
+      "projects.trolleybusLine": 0,
+      "projects.cyclePathDevelopment": 0,
+      "projects.bikeSharing": 0,
+      "projects.parkAndRide": 0,
+      "projects.renewableEnergyPark": 0,
+      "projects.nepligetRenewal": 0,
+      "projects.boschCampus": 1,
+      "projects.richterHeadquarters": 1,
+      "loans.long.change": 0,
+      "training": 100000,
+      "communication": 54500,
+      "financing.shareNominalValue": 0,
+      "financing.shareInvestment": 0,
+      "financing.corporateBondsNominalValue": 0,
+      "financing.fixedDeposit": 0,
+      "financing.variableMaturityLoan": 0,
+      "financing.bondValue": 0
+    }
+  },
+  "saved_receipt_verified": false,
+  "game_mutations": 0
+}

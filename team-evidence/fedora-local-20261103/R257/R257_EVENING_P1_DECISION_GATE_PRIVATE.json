@@ -1,0 +1,89 @@
+{
+  "all_delta_pp": "UNKNOWN_NO_COMPARABLE_MEASURED_PRIOR_BASELINE",
+  "contest": "X-Challenge 2026 Selejtező",
+  "current_baseline": {
+    "game_countdown_at_snapshot": "5h 44m",
+    "new_projects_P1": 0,
+    "original_running_project_count": 6,
+    "original_running_project_ids": [
+      "basketballHall",
+      "boschCampus",
+      "customerServiceCentre",
+      "operaWorkshop",
+      "richterHeadquarters",
+      "velodrome"
+    ],
+    "period_net_efficiency_P1_ECU": 1051111,
+    "period_save_clicked_by_R257": false,
+    "project_expense_P1_ECU": 0,
+    "revenue_P1_ECU": 5562335,
+    "short_term_borrowing_P1_ECU": 0,
+    "smartcity_P0": "51.96",
+    "smartcity_P1": "52.48"
+  },
+  "decision_recheck": {
+    "current_game_server_saved_decision_receipt": null,
+    "exact_unrounded_index_for_office_change": null,
+    "office_P1_new_annual_person_event_if_keep_plus_one": true,
+    "office_direct_P1_employee_cost_ECU": 465,
+    "office_hire_P0": 1,
+    "office_hire_P1": 1,
+    "own_team_period_current_client_verified": true,
+    "p0_numeric_boolean_leaves": 100,
+    "p0_vs_p1_differing_numeric_boolean_leaves": 0,
+    "p1_numeric_boolean_leaves": 100
+  },
+  "functional_percent": "UNKNOWN_NO_VALID_FULL_PROJECT_DENOMINATOR",
+  "game_mutations": 0,
+  "gate": "STOP_GAMEPLAY_UNTIL_EXPLICIT_SELECTED_IDS_OFFICE_HIRE_AND_SAVE_AUTH",
+  "historical_unsaved_trials_only": {
+    "A": {
+      "P1_index": "53.28",
+      "UI_project_expense_ECU": 305200,
+      "ids": [
+        4,
+        13,
+        27,
+        33
+      ],
+      "period_net_ECU": 768280
+    },
+    "A_index_advantage": "0.12",
+    "B": {
+      "P1_index": "53.16",
+      "UI_project_expense_ECU": 139200,
+      "ids": [
+        4,
+        13,
+        21,
+        27
+      ],
+      "period_net_ECU": 929332
+    },
+    "B_cash_advantage_ECU": 161052,
+    "R256_15pct_hypothetical_revenue_loss_A_ECU": "-66070.25",
+    "R256_15pct_hypothetical_revenue_loss_B_ECU": "94981.75",
+    "five_year_winner_proven": false,
+    "hypothetical_cash_stress_is_actual_EcoSim_scenario": false
+  },
+  "integrated_five_year_E2E_percent": "UNKNOWN_NO_VALID_FULL_PROJECT_DENOMINATOR",
+  "live_game_use_percent": "UNKNOWN_NO_VALID_FULL_PROJECT_DENOMINATOR",
+  "market": "I",
+  "observed_utc": "2026-11-03T17:14:50.178Z",
+  "owner_decision_not_made": true,
+  "period": "1/5",
+  "project_start_actions": 0,
+  "report_created_utc": "2026-11-03T17:21:56.295814+00:00",
+  "save_actions": 0,
+  "save_authorized_by_this_message": false,
+  "schema": "ECOSIM_R257_EVENING_READONLY_OWNER_DECISION_GATE_V1",
+  "source_level": "CURRENT_AUTHENTICATED_BROWSER_DOM_AND_OWNER_REACT_DECISION_P0_P1",
+  "source_sha256": {
+    "R249_historical_unsaved_AB": "92822177525799cb20cd2e9847ae4f001c78b7c30c8a33092e176ef9cfbfaf6c",
+    "R256_model": "6344bf52988beb62b7e9f7099a4c75ad052c12a6329426bcd83838b34d92f3be",
+    "current_decisions": "e9642d9600a60915cfed94faa51ca05b8d32d9b3244b25c108f264154ee89337",
+    "four_live_pages": "52d2889a4e8bbfaf9d780d06bbd26fa49fdb9df84b9c470e750ef50881c5614c"
+  },
+  "team": "Jutalom a nap végén",
+  "whole_five_year_strategy": "PARTIAL"
+}

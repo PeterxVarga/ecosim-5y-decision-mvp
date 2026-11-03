@@ -1,0 +1,351 @@
+{
+  "status": "FOUND_CURRENT_TEAM",
+  "p1_visible_period": 1,
+  "team_index": 1,
+  "total_teams": 7,
+  "decisions": {
+    "type": "object",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ]
+  },
+  "period_0": {
+    "type": "object",
+    "keys": [
+      "help",
+      "institutions",
+      "publicTransport",
+      "income",
+      "projects",
+      "loans",
+      "training",
+      "communication",
+      "financing"
+    ]
+  },
+  "period_0_institutions": {
+    "type": "object",
+    "keys": [
+      "education",
+      "healthCare",
+      "sport",
+      "culture",
+      "services",
+      "bureau",
+      "social",
+      "environment",
+      "homeRenovation"
+    ]
+  },
+  "period_0_publicTransport": {
+    "type": "object",
+    "keys": [
+      "hr",
+      "bus",
+      "electricBus",
+      "infrastructure"
+    ]
+  },
+  "period_0_income": {
+    "type": "object",
+    "keys": [
+      "services",
+      "taxes"
+    ]
+  },
+  "period_0_projects": {
+    "type": "object",
+    "keys": [
+      "neighbourhoodEconomy",
+      "commercialCulturalCentre",
+      "localFoodSupply",
+      "circularEconomy",
+      "csrPlatform",
+      "employmentCooperation",
+      "innovationKnowledgeCentre",
+      "smartEconomyApps",
+      "crowdfunding",
+      "innovationFund",
+      "localCrisisFund",
+      "housingAndPremises",
+      "municipalIt",
+      "customerServiceCentre",
+      "cellarSystem",
+      "makerSpaces",
+      "careerGuidance",
+      "dreherVilla",
+      "sportsCentre",
+      "trainingCooperation",
+      "transportMuseum",
+      "operaWorkshop",
+      "basketballHall",
+      "velodrome",
+      "autonomousVehicleTestCentre",
+      "airportAccess",
+      "railDevelopment",
+      "trolleybusLine",
+      "cyclePathDevelopment",
+      "bikeSharing",
+      "parkAndRide",
+      "renewableEnergyPark",
+      "nepligetRenewal",
+      "boschCampus",
+      "richterHeadquarters"
+    ]
+  },
+  "period_0_loans": {
+    "type": "object",
+    "keys": [
+      "long"
+    ]
+  },
+  "period_0_training": {
+    "type": "number"
+  },
+  "period_0_communication": {
+    "type": "number"
+  },
+  "period_0_financing": {
+    "type": "object",
+    "keys": [
+      "shareNominalValue",
+      "shareInvestment",
+      "corporateBondsNominalValue",
+      "fixedDeposit",
+      "variableMaturityLoan",
+      "bondValue"
+    ]
+  },
+  "period_1": {
+    "type": "object",
+    "keys": [
+      "help",
+      "institutions",
+      "publicTransport",
+      "income",
+      "projects",
+      "loans",
+      "training",
+      "communication",
+      "financing"
+    ]
+  },
+  "period_1_institutions": {
+    "type": "object",
+    "keys": [
+      "education",
+      "healthCare",
+      "sport",
+      "culture",
+      "services",
+      "bureau",
+      "social",
+      "environment",
+      "homeRenovation"
+    ]
+  },
+  "period_1_publicTransport": {
+    "type": "object",
+    "keys": [
+      "hr",
+      "bus",
+      "electricBus",
+      "infrastructure"
+    ]
+  },
+  "period_1_income": {
+    "type": "object",
+    "keys": [
+      "services",
+      "taxes"
+    ]
+  },
+  "period_1_projects": {
+    "type": "object",
+    "keys": [
+      "neighbourhoodEconomy",
+      "commercialCulturalCentre",
+      "localFoodSupply",
+      "circularEconomy",
+      "csrPlatform",
+      "employmentCooperation",
+      "innovationKnowledgeCentre",
+      "smartEconomyApps",
+      "crowdfunding",
+      "innovationFund",
+      "localCrisisFund",
+      "housingAndPremises",
+      "municipalIt",
+      "customerServiceCentre",
+      "cellarSystem",
+      "makerSpaces",
+      "careerGuidance",
+      "dreherVilla",
+      "sportsCentre",
+      "trainingCooperation",
+      "transportMuseum",
+      "operaWorkshop",
+      "basketballHall",
+      "velodrome",
+      "autonomousVehicleTestCentre",
+      "airportAccess",
+      "railDevelopment",
+      "trolleybusLine",
+      "cyclePathDevelopment",
+      "bikeSharing",
+      "parkAndRide",
+      "renewableEnergyPark",
+      "nepligetRenewal",
+      "boschCampus",
+      "richterHeadquarters"
+    ]
+  },
+  "period_1_loans": {
+    "type": "object",
+    "keys": [
+      "long"
+    ]
+  },
+  "period_1_training": {
+    "type": "number"
+  },
+  "period_1_communication": {
+    "type": "number"
+  },
+  "period_1_financing": {
+    "type": "object",
+    "keys": [
+      "shareNominalValue",
+      "shareInvestment",
+      "corporateBondsNominalValue",
+      "fixedDeposit",
+      "variableMaturityLoan",
+      "bondValue"
+    ]
+  },
+  "period_2": {
+    "type": "array",
+    "length": 0,
+    "indices": [
+      {
+        "i": 0,
+        "keys": "undefined"
+      },
+      {
+        "i": 1,
+        "keys": "undefined"
+      },
+      {
+        "i": 2,
+        "keys": "undefined"
+      },
+      {
+        "i": 3,
+        "keys": "undefined"
+      },
+      {
+        "i": 4,
+        "keys": "undefined"
+      },
+      {
+        "i": 5,
+        "keys": "undefined"
+      }
+    ]
+  },
+  "period_3": {
+    "type": "array",
+    "length": 0,
+    "indices": [
+      {
+        "i": 0,
+        "keys": "undefined"
+      },
+      {
+        "i": 1,
+        "keys": "undefined"
+      },
+      {
+        "i": 2,
+        "keys": "undefined"
+      },
+      {
+        "i": 3,
+        "keys": "undefined"
+      },
+      {
+        "i": 4,
+        "keys": "undefined"
+      },
+      {
+        "i": 5,
+        "keys": "undefined"
+      }
+    ]
+  },
+  "period_4": {
+    "type": "array",
+    "length": 0,
+    "indices": [
+      {
+        "i": 0,
+        "keys": "undefined"
+      },
+      {
+        "i": 1,
+        "keys": "undefined"
+      },
+      {
+        "i": 2,
+        "keys": "undefined"
+      },
+      {
+        "i": 3,
+        "keys": "undefined"
+      },
+      {
+        "i": 4,
+        "keys": "undefined"
+      },
+      {
+        "i": 5,
+        "keys": "undefined"
+      }
+    ]
+  },
+  "period_5": {
+    "type": "array",
+    "length": 0,
+    "indices": [
+      {
+        "i": 0,
+        "keys": "undefined"
+      },
+      {
+        "i": 1,
+        "keys": "undefined"
+      },
+      {
+        "i": 2,
+        "keys": "undefined"
+      },
+      {
+        "i": 3,
+        "keys": "undefined"
+      },
+      {
+        "i": 4,
+        "keys": "undefined"
+      },
+      {
+        "i": 5,
+        "keys": "undefined"
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+[ {
+   "description": "",
+   "devtoolsFrontendUrl": "https://chrome-devtools-frontend.appspot.com/serve_rev/@2f9a11097447f226133bc1a31c787291a5eeab98/inspector.html?ws=127.0.0.1:9333/devtools/page/5C06056348A17755623A50D1ED11D252",
+   "id": "5C06056348A17755623A50D1ED11D252",
+   "title": "",
+   "type": "page",
+   "url": "https://edu.ecosim.hu/dashboard",
+   "webSocketDebuggerUrl": "ws://127.0.0.1:9333/devtools/page/5C06056348A17755623A50D1ED11D252"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "https://chrome-devtools-frontend.appspot.com/serve_rev/@2f9a11097447f226133bc1a31c787291a5eeab98/inspector.html?ws=127.0.0.1:9333/devtools/page/908A0E92758216D0D9879B0AD68760FB",
+   "id": "908A0E92758216D0D9879B0AD68760FB",
+   "title": "",
+   "type": "browser_ui",
+   "url": "chrome://omnibox-popup.top-chrome/",
+   "webSocketDebuggerUrl": "ws://127.0.0.1:9333/devtools/page/908A0E92758216D0D9879B0AD68760FB"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "https://chrome-devtools-frontend.appspot.com/serve_rev/@2f9a11097447f226133bc1a31c787291a5eeab98/inspector.html?ws=127.0.0.1:9333/devtools/page/010F62310917B7AAC2C12B71F6258A4E",
+   "id": "010F62310917B7AAC2C12B71F6258A4E",
+   "title": "",
+   "type": "browser_ui",
+   "url": "chrome://omnibox-popup.top-chrome/omnibox_popup_aim.html",
+   "webSocketDebuggerUrl": "ws://127.0.0.1:9333/devtools/page/010F62310917B7AAC2C12B71F6258A4E"
+} ]

@@ -1,0 +1,15 @@
+{
+  "schema": "ECOSIM_R258_CURRENT_OWNER_A_B_SEQUENTIAL_UNSAVED_UI_TRIAL_V1",
+  "created_utc": "2026-11-03T17:41:06.414Z",
+  "team": "Jutalom a nap végén",
+  "market": "I",
+  "period": "1/5",
+  "owner_scope": "TEMPORARY_START_CANCEL_PROJECTS_ONLY",
+  "game_save_actions": 0,
+  "next_period_actions": 0,
+  "direct_game_API_calls": 0,
+  "status": "HOLD",
+  "error": "HOLD_GUARDED_EVALUATION",
+  "final_utc": "2026-11-03T17:41:06.427Z",
+  "records": []
+}

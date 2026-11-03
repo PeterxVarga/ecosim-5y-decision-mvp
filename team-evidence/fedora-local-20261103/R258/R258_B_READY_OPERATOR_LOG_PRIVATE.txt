@@ -1,0 +1,21 @@
+BASELINE_PROJECTS_0_ORIGINAL_6_PASS
+UI_nav=summary
+UI_nav=finance
+UI_nav=projects
+START_TRIAL_B
+UI_Start=4
+UI_Start=13
+UI_category=Sports and Culture
+UI_Start=21
+UI_category=Transport
+R258_HOLD=HOLD_SCROLL_RETRY_Start_27
+BEST_EFFORT_ROLLBACK_PROJECTS=4,13,21
+UI_category=Sports and Culture
+UI_Cancel=21
+CLEANUP_CANCELLED=21
+UI_category=Economic Development
+UI_Cancel=13
+CLEANUP_CANCELLED=13
+UI_Cancel=4
+CLEANUP_CANCELLED=4
+CLEANUP_OBSERVED_NEW_COUNT=0

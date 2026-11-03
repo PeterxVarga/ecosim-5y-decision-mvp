@@ -1,0 +1,74 @@
+{
+  "schema": "ecosim.owner-original-binaries-transfer.v2",
+  "scope": "ChatGPT Library original bytes available 2026-11-03 (not Fedora-only R257/R258)",
+  "public_repository": true,
+  "originals": [
+    {
+      "name": "ECOSIM_R206_DRAFT_OFFLINE_SOURCE.zip",
+      "bytes": 9723,
+      "sha256": "52a686d7f89d6b7a48da77540e6b3ef7ab71c294e4f835bb6fba960b37e9f11d"
+    },
+    {
+      "name": "ECOSIM_R206_R207_CONSOLIDATED_OFFLINE.zip",
+      "bytes": 13912,
+      "sha256": "18d5db9ffbc6afa59b0edab85a20068b34488e8ec90b7f4970344542e31fae56"
+    },
+    {
+      "name": "ECOSIM_R208_R209_OFFLINE_INTEGRATED.zip",
+      "bytes": 24309,
+      "sha256": "1841e5f9ef68773d5606be098fe993bb0ca8de6a1f8905741f54a5866ec241e6"
+    },
+    {
+      "name": "X-Challenge 2026 Selejtező_Jutalom a nap végén_Selejtező_I.xlsx",
+      "bytes": 105709,
+      "sha256": "a130d6606c4488112c8825d79d5fb6aaa65a65f4dca7d1e1f9e4029cdafe53f4"
+    },
+    {
+      "name": "X-Challenge 2026 Tesztforduló_Jutalom a nap végén_Tesztforduló_Z (1)(1).xlsx",
+      "bytes": 98265,
+      "sha256": "c6cd0681a28872beb556652b584674f442c5105c379f365027ee9dbd3efe69bc"
+    },
+    {
+      "name": "ecosim-r238-pinned-final-private-20261102.zip",
+      "bytes": 37649,
+      "sha256": "c776a74e5a4cb81d6c37adf011bdb4ffda8de5f41577bf1661e0ce7c0876eca2"
+    },
+    {
+      "name": "ecosim_R194_one_command_integrated_team_rc.zip",
+      "bytes": 45202,
+      "sha256": "bbb60a350bd325c5a84e912cd61d014deedb2c7e9f9f3cdff28fa2dabcef4c12"
+    },
+    {
+      "name": "ecosim_R195_tradeoff_rc.zip",
+      "bytes": 29071,
+      "sha256": "66bcab5f636382748dbe51cbc0ace53b48fa40ac0f406341a38ef88b327536e5"
+    },
+    {
+      "name": "ecosim_R196_R198_joint_model_native_qualified.zip",
+      "bytes": 15995,
+      "sha256": "688d6854a9cd8da54fc2df2f6c35e8ef726b95fae598634bc6ec86ac5c122938"
+    },
+    {
+      "name": "ecosim_R196_citywide_evidence_gate_rc_v2.zip",
+      "bytes": 10145,
+      "sha256": "b6145f81dff3242422742af4bea824a400d769594a40d100270b1fa97930b0bf"
+    },
+    {
+      "name": "ecosim_R197_shared_state_city_packet.zip",
+      "bytes": 5872,
+      "sha256": "5c37877f915cd23419e2aa22c7e0436d1160124d4c9adc1d3b98b59dcab50ad9"
+    },
+    {
+      "name": "ecosim_R227_forraslefedettseg.xlsx",
+      "bytes": 39491,
+      "sha256": "834ff600e610a7426890b4f9f588b5185290e10bfd46c852ff0ac2ab0df92459"
+    },
+    {
+      "name": "ecosim_selejtezo_I_osszehasonlitas.xlsx",
+      "bytes": 11229,
+      "sha256": "00056709859e57be4a555afcf1a8c8f06d4a007a6efdd6cc64c5b9683f460b62"
+    }
+  ],
+  "federated_r257_r258_raw_included": false,
+  "game_writes": 0
+}

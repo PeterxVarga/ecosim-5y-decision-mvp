@@ -1,0 +1,16 @@
+{
+  "originals": 13,
+  "originals_bytes": 446572,
+  "r257": {
+    "status": "COPIED",
+    "files": 13,
+    "bytes": 80100
+  },
+  "r258": {
+    "status": "COPIED",
+    "files": 31,
+    "bytes": 1602800
+  },
+  "archive_sha256": "ca7e03556a31d3961b2b482b2aabee0f7567db62526edfdd91bf461237c9398d",
+  "note": "Git sources only; no game mutation. Missing R257/R258 are not claimed uploaded."
+}
