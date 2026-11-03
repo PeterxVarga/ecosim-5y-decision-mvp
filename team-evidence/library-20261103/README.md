@@ -16,7 +16,9 @@ Ez a könyvtár a felhasználó kifejezett kérésére a **nyilvános** EcoSim r
 
 ## Régebbi tesztforduló / Z. piac
 
-A `test-Z/` könyvtárban a `finance.csv`, `income.csv` és `source_index.csv` **2026-10-30-as tesztfordulós**, nem a selejtező I. piacára vonatkozó adatok. Tilos automatikusan az I. piaci P1 döntések kiindulásaként használni őket.
+A `test-Z/` könyvtárban a `finance.csv`, `income.csv`, `source_index.csv` és a korábbi XLSX-ből normalizált `ecosim_r213_historical_excel_normalized_private.json` **2026-10-30-as tesztfordulós**, nem a selejtező I. piacára vonatkozó adatok. Tilos automatikusan az I. piaci P1 döntések kiindulásaként használni őket.
+
+A `EcoSim_R195_5_eves_tervek_osszehasonlitasa.md` két feltételes historikus ötéves projektszcenáriót foglal össze; nem mentett, éles stratégia.
 
 ## Adateredet és korlátok
 
