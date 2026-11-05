@@ -1,0 +1,72 @@
+{
+  "schema": "ecosim.business-factor.p1-cross-section.v1",
+  "source_file": "X-Challenge 2026 Selejtező_Jutalom a nap végén_Selejtező_I (1).xlsx",
+  "source_sheets": {
+    "p0": "0",
+    "p1_fact": "1"
+  },
+  "source_cell_rows": {
+    "factor": 3,
+    "small_firms": 257,
+    "medium_firms": 261,
+    "large_firms": 265
+  },
+  "p0_all_teams_equal": {
+    "small": 4742,
+    "medium": 90,
+    "large": 25,
+    "factor": 50
+  },
+  "market": "I",
+  "p1_fact_teams": [
+    {
+      "team": "Bányász kódok",
+      "p1_small": 4765,
+      "p1_medium": 92,
+      "p1_large": 25,
+      "p1_business_factor": 50.51
+    },
+    {
+      "team": "Jutalom a nap végén",
+      "p1_small": 4765,
+      "p1_medium": 92,
+      "p1_large": 25,
+      "p1_business_factor": 50.51
+    },
+    {
+      "team": "Kiwi",
+      "p1_small": 4766,
+      "p1_medium": 96,
+      "p1_large": 25,
+      "p1_business_factor": 50.62
+    },
+    {
+      "team": "Kőbánya Optima",
+      "p1_small": 4765,
+      "p1_medium": 93,
+      "p1_large": 25,
+      "p1_business_factor": 50.52
+    },
+    {
+      "team": "Midas Nonprofit",
+      "p1_small": 4765,
+      "p1_medium": 92,
+      "p1_large": 25,
+      "p1_business_factor": 50.51
+    },
+    {
+      "team": "Zéró",
+      "p1_small": 4765,
+      "p1_medium": 92,
+      "p1_large": 25,
+      "p1_business_factor": 50.51
+    },
+    {
+      "team": "I7",
+      "p1_small": 4763,
+      "p1_medium": 91,
+      "p1_large": 25,
+      "p1_business_factor": 50.45
+    }
+  ]
+}

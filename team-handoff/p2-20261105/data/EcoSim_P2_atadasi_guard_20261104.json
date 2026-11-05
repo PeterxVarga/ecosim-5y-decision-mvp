@@ -1,0 +1,184 @@
+{
+  "scope": "I market / Jutalom a nap végén / P1 final historical to P2 read-only transition",
+  "evidence_level": "P1 intended saved inputs from run5; 55/55 post-save reload NOT available for run5",
+  "p2_live_state": "UNKNOWN",
+  "source_sha256": {
+    "EcoSim_futas_2.zip": "29f7c373504d097fb0252d67f7ee5a46f14369ac77a4d483ec9d7efe68c09b28",
+    "EcoSim_futas_3.zip": "6a81078a9273582dfeeaaa3f6b209fe393a4ef6f8d1ff4a008229bd6b6af2db1",
+    "EcoSim_futas_4.zip": "8645fca20f8a7491081d3666e84b6f5e564a49405952e557ac724cf8bc9edc20",
+    "EcoSim_futas_5.zip": "e929a09b5788d318f50d7d1a6711df16006ddcfe640a8f148af5d784b884c879",
+    "X-Challenge 2026 Selejtező_Jutalom a nap végén_Selejtező_I (1).xlsx": "23a76fd044fe698e66a18577642825eca1f058d5715cd8f85b05d0a3b9fd38ab"
+  },
+  "p1_final_inputs": {
+    "institutions.education.wage": "550",
+    "institutions.education.training": "14 400",
+    "institutions.education.development": "60 000",
+    "institutions.education.middleSchool.change": "1",
+    "institutions.education.elementarySchool.change": "0",
+    "institutions.education.kindergarten.change": "0",
+    "institutions.education.nursery.change": "0",
+    "institutions.sport.wage": "425",
+    "institutions.sport.training": "11 000",
+    "institutions.sport.development": "47 300",
+    "institutions.sport.change": "1",
+    "institutions.culture.change": "1",
+    "institutions.healthCare.wage": "580",
+    "institutions.healthCare.training": "13 000",
+    "institutions.healthCare.development": "48 000",
+    "institutions.healthCare.doctorsOffice.change": "1",
+    "institutions.services.wage": "395",
+    "institutions.services.training": "39 600",
+    "institutions.bureau.wage": "990",
+    "institutions.bureau.training": "6 000",
+    "institutions.environment.development": "30 000",
+    "institutions.environment.civilSupport": "20 400",
+    "institutions.social.wage": "462",
+    "institutions.social.training": "12 000",
+    "institutions.homeRenovation.development": "45 500",
+    "institutions.social.development": "58 500",
+    "institutions.social.socialHome.change": "1",
+    "publicTransport.hr.drivers.hire": "50",
+    "publicTransport.hr.drivers.wage": "460",
+    "publicTransport.hr.drivers.training": "50",
+    "publicTransport.hr.mechanics.hire": "10",
+    "publicTransport.hr.mechanics.wage": "480",
+    "publicTransport.hr.mechanics.training": "50",
+    "publicTransport.hr.office.hire": "-50",
+    "publicTransport.hr.office.wage": "440",
+    "publicTransport.hr.office.training": "50",
+    "publicTransport.bus.change": "-8",
+    "publicTransport.bus.age": "0",
+    "publicTransport.bus.maintenance": "192 500",
+    "publicTransport.infrastructure.maintenance": "165 000",
+    "publicTransport.infrastructure.communication": "33 600",
+    "publicTransport.electricBus.change": "0",
+    "publicTransport.electricBus.age": "0",
+    "publicTransport.electricBus.maintenance": "18 000",
+    "income.services.transportCost": "10.5",
+    "income.services.burialCost": "20",
+    "income.services.parkingManagementCost": "10",
+    "income.services.communalCost": "5",
+    "income.services.servicesCost": "50",
+    "income.services.rentalCost": "30",
+    "income.taxes.business": "0.3",
+    "income.taxes.vehicle": "2.5",
+    "income.taxes.communal": "0.4",
+    "income.taxes.building": "0.1",
+    "loans.long.change": "0"
+  },
+  "action_like_fields_reverify_each_period": {
+    "institutions.education.middleSchool.change": "1",
+    "institutions.education.elementarySchool.change": "0",
+    "institutions.education.kindergarten.change": "0",
+    "institutions.education.nursery.change": "0",
+    "institutions.sport.change": "1",
+    "institutions.culture.change": "1",
+    "institutions.healthCare.doctorsOffice.change": "1",
+    "institutions.social.socialHome.change": "1",
+    "publicTransport.hr.drivers.hire": "50",
+    "publicTransport.hr.mechanics.hire": "10",
+    "publicTransport.hr.office.hire": "-50",
+    "publicTransport.bus.change": "-8",
+    "publicTransport.electricBus.change": "0",
+    "loans.long.change": "0"
+  },
+  "nonzero_p1_actions_do_not_copy_blindly": {
+    "institutions.education.middleSchool.change": "1",
+    "institutions.sport.change": "1",
+    "institutions.culture.change": "1",
+    "institutions.healthCare.doctorsOffice.change": "1",
+    "institutions.social.socialHome.change": "1",
+    "publicTransport.hr.drivers.hire": "50",
+    "publicTransport.hr.mechanics.hire": "10",
+    "publicTransport.hr.office.hire": "-50",
+    "publicTransport.bus.change": "-8"
+  },
+  "observed_p1_bounds_not_verified_p2": {
+    "institutions.bureau.wage": {
+      "P1_observed": "max 990",
+      "evidence": "Run4 checks; 1200 requested -> 990 accepted",
+      "P1_final": "990"
+    },
+    "income.taxes.business": {
+      "P1_observed": "min 0.3",
+      "evidence": "Run4 checks; 0 requested -> 0.3 accepted",
+      "P1_final": "0.3"
+    },
+    "income.services.communalCost": {
+      "P1_observed": "min 5",
+      "evidence": "Run4 checks; 0 requested -> 5 accepted",
+      "P1_final": "5"
+    },
+    "income.services.burialCost": {
+      "P1_observed": "min 20",
+      "evidence": "Run3 checks; 0 requested -> 20 accepted",
+      "P1_final": "20"
+    },
+    "income.services.rentalCost": {
+      "P1_observed": "min 30",
+      "evidence": "Run3 checks; 0 requested -> 30 accepted",
+      "P1_final": "30"
+    }
+  },
+  "p2_requirements": {
+    "snapshot_identity": [
+      "course",
+      "market",
+      "team",
+      "period",
+      "server_time",
+      "deadline",
+      "data_source_timestamp"
+    ],
+    "finance": [
+      "start_cash",
+      "free_cash",
+      "committed_expenses",
+      "forecast_revenue",
+      "forecast_expenses",
+      "reserves",
+      "debt_balance",
+      "loan_limit",
+      "interest",
+      "repayment",
+      "project_payment_timing"
+    ],
+    "projects": [
+      "all_35_ids_current_status",
+      "already_started_this_period",
+      "remaining_start_capacity",
+      "prerequisites",
+      "start_cost",
+      "investment_cost",
+      "maintenance",
+      "partner_support",
+      "start_timing"
+    ],
+    "decisions": [
+      "all_55_or_more_editable_fields",
+      "saved_value",
+      "unsaved_draft_value",
+      "one_time_or_recurring",
+      "min_max_step",
+      "source_tab",
+      "readback_status"
+    ],
+    "score": [
+      "current_P2_PLAN_index",
+      "factor_details_29",
+      "category_scores",
+      "scoring_source_or_UNKNOWN"
+    ],
+    "team": [
+      "team_last_save_timestamp",
+      "possible_concurrent_edits",
+      "readback_receipt_or_UNKNOWN"
+    ]
+  },
+  "hard_gates": [
+    "NO_GAME_WRITE",
+    "NO_SAVE",
+    "NO_NEXT_PERIOD",
+    "NO_BROWSER_CONTROL_BY_ASSISTANT"
+  ]
+}

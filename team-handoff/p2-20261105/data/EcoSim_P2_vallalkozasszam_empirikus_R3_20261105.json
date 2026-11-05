@@ -1,0 +1,899 @@
+{
+  "schema": "ecosim.business-factor.empirical-reconstruction.r3",
+  "status": "STRONGLY_SUPPORTED_HYPOTHESIS_NOT_SERVER_SOURCE",
+  "no_game_writes": true,
+  "formula_hypothesis": "50 + 100*(current_period_company_count/previous_period_company_count - 1)",
+  "p0_company_total": 4857,
+  "samples": {
+    "p1_teams": [
+      {
+        "label": "I P1 FACT: Bányász kódok",
+        "source": "X-Challenge 2026 Selejtező_Jutalom a nap végén_Selejtező_I (1).xlsx",
+        "previous_total_displayed": 4857,
+        "current_total_displayed": 4882,
+        "observed_factor": 50.51,
+        "hypothesis_yoy_prediction": 50.514721021,
+        "difference_observed_minus_prediction": -0.004721021,
+        "exact_to_displayed_2_decimals": true,
+        "compatible_with_integer_rounding": true,
+        "alternative_50_times_growth": 50.257360511
+      },
+      {
+        "label": "I P1 FACT: Jutalom a nap végén",
+        "source": "X-Challenge 2026 Selejtező_Jutalom a nap végén_Selejtező_I (1).xlsx",
+        "previous_total_displayed": 4857,
+        "current_total_displayed": 4882,
+        "observed_factor": 50.51,
+        "hypothesis_yoy_prediction": 50.514721021,
+        "difference_observed_minus_prediction": -0.004721021,
+        "exact_to_displayed_2_decimals": true,
+        "compatible_with_integer_rounding": true,
+        "alternative_50_times_growth": 50.257360511
+      },
+      {
+        "label": "I P1 FACT: Kiwi",
+        "source": "X-Challenge 2026 Selejtező_Jutalom a nap végén_Selejtező_I (1).xlsx",
+        "previous_total_displayed": 4857,
+        "current_total_displayed": 4887,
+        "observed_factor": 50.62,
+        "hypothesis_yoy_prediction": 50.617665225,
+        "difference_observed_minus_prediction": 0.002334775,
+        "exact_to_displayed_2_decimals": true,
+        "compatible_with_integer_rounding": true,
+        "alternative_50_times_growth": 50.308832613
+      },
+      {
+        "label": "I P1 FACT: Kőbánya Optima",
+        "source": "X-Challenge 2026 Selejtező_Jutalom a nap végén_Selejtező_I (1).xlsx",
+        "previous_total_displayed": 4857,
+        "current_total_displayed": 4883,
+        "observed_factor": 50.52,
+        "hypothesis_yoy_prediction": 50.535309862,
+        "difference_observed_minus_prediction": -0.015309862,
+        "exact_to_displayed_2_decimals": false,
+        "compatible_with_integer_rounding": true,
+        "alternative_50_times_growth": 50.267654931
+      },
+      {
+        "label": "I P1 FACT: Midas Nonprofit",
+        "source": "X-Challenge 2026 Selejtező_Jutalom a nap végén_Selejtező_I (1).xlsx",
+        "previous_total_displayed": 4857,
+        "current_total_displayed": 4882,
+        "observed_factor": 50.51,
+        "hypothesis_yoy_prediction": 50.514721021,
+        "difference_observed_minus_prediction": -0.004721021,
+        "exact_to_displayed_2_decimals": true,
+        "compatible_with_integer_rounding": true,
+        "alternative_50_times_growth": 50.257360511
+      },
+      {
+        "label": "I P1 FACT: Zéró",
+        "source": "X-Challenge 2026 Selejtező_Jutalom a nap végén_Selejtező_I (1).xlsx",
+        "previous_total_displayed": 4857,
+        "current_total_displayed": 4882,
+        "observed_factor": 50.51,
+        "hypothesis_yoy_prediction": 50.514721021,
+        "difference_observed_minus_prediction": -0.004721021,
+        "exact_to_displayed_2_decimals": true,
+        "compatible_with_integer_rounding": true,
+        "alternative_50_times_growth": 50.257360511
+      },
+      {
+        "label": "I P1 FACT: I7",
+        "source": "X-Challenge 2026 Selejtező_Jutalom a nap végén_Selejtező_I (1).xlsx",
+        "previous_total_displayed": 4857,
+        "current_total_displayed": 4879,
+        "observed_factor": 50.45,
+        "hypothesis_yoy_prediction": 50.452954499,
+        "difference_observed_minus_prediction": -0.002954499,
+        "exact_to_displayed_2_decimals": true,
+        "compatible_with_integer_rounding": true,
+        "alternative_50_times_growth": 50.226477249
+      }
+    ],
+    "test_round_z_p1": [
+      {
+        "label": "Z TEST P1: EcoSim_elozo_kor_20261101.zip",
+        "source": "city-decisions-20261101/final-summary.json",
+        "previous_total_displayed": 4857,
+        "current_total_displayed": 4881,
+        "observed_factor": 50.49,
+        "hypothesis_yoy_prediction": 50.49413218,
+        "difference_observed_minus_prediction": -0.00413218,
+        "exact_to_displayed_2_decimals": true,
+        "compatible_with_integer_rounding": true,
+        "alternative_50_times_growth": 50.24706609
+      },
+      {
+        "label": "Z TEST P1: EcoSim_mostani_kor_20261103.zip",
+        "source": "round1-20261103/summary-before.json",
+        "previous_total_displayed": 4857,
+        "current_total_displayed": 4879,
+        "observed_factor": 50.45,
+        "hypothesis_yoy_prediction": 50.452954499,
+        "difference_observed_minus_prediction": -0.002954499,
+        "exact_to_displayed_2_decimals": true,
+        "compatible_with_integer_rounding": true,
+        "alternative_50_times_growth": 50.226477249
+      }
+    ],
+    "p2_plan": {
+      "label": "I P2 PLAN",
+      "source": "Pasted text(20261105-114749).txt+Pasted text(20261105-122441).txt",
+      "previous_total_displayed": 4882,
+      "current_total_displayed": 5362,
+      "observed_factor": 59.85,
+      "hypothesis_yoy_prediction": 59.832036051,
+      "difference_observed_minus_prediction": 0.017963949,
+      "exact_to_displayed_2_decimals": false,
+      "compatible_with_integer_rounding": true,
+      "alternative_50_times_growth": 54.916018025
+    }
+  },
+  "fit": {
+    "p1_fact_displayed_2_decimal_exact": 6,
+    "p1_fact_samples_total": 7,
+    "p1_fact_rounding_compatible": 7,
+    "historical_test_z_two_dec_exact": 2,
+    "p2_yoy_prediction_using_rounded_counts": 59.832036051,
+    "p2_actual_factor": 59.85,
+    "p2_yoy_bounds_if_count_rounded_to_integer": [
+      59.76758472407084,
+      59.89652699518493
+    ],
+    "p2_cumulative_since_p0_prediction": 60.39736462837142,
+    "p2_wrong_50_times_yoy_growth_prediction": 54.916018025399424,
+    "implied_previous_company_total_if_p2_total_exact": 4881.201638598088
+  },
+  "controlled_historical_preview": {
+    "projects": [
+      4,
+      13,
+      21,
+      27
+    ],
+    "before_factor": 50.45,
+    "after_factor": 50.51,
+    "rollback_factor": 50.45,
+    "observed_factor_delta": 0.06,
+    "project_card_additional_company_estimate": {
+      "small": 1.9054381595262473,
+      "medium": 0.9100000000000008
+    },
+    "project_card_effects": [
+      {
+        "project_id": 4,
+        "size": "small",
+        "shown_percent": 0.02
+      },
+      {
+        "project_id": 4,
+        "size": "medium",
+        "shown_percent": 1
+      },
+      {
+        "project_id": 21,
+        "size": "small",
+        "shown_percent": 0.01
+      },
+      {
+        "project_id": 27,
+        "size": "small",
+        "shown_percent": 0.01
+      }
+    ],
+    "predicted_factor_delta_under_hypothesis": 0.057966608,
+    "source": "ecosim-p1-codex-audit-20261104-135151.zip!ecosim-p1-codex-audit-20261104-135151/repo/team-evidence/fedora-local-20261103/R258/R258_B_FINAL_SUCCESS_PRIVATE.json",
+    "caveat": "Four projects toggled together, after-project company-count table missing; supports order of magnitude but does not isolate individual project contributions."
+  },
+  "p2_model_coefficients": {
+    "reference_period_displayed_company_total": 4882,
+    "company_factor_weight_within_29_factor_proxy": 0.0625,
+    "r2_observational_secant_factor_per_firm": 0.01945833333333334,
+    "r3_yoy_factor_per_firm_at_displayed_previous_count": 0.020483408439164276,
+    "r2_observational_index_per_firm": 0.0012161458333333338,
+    "r3_yoy_hypothetical_index_per_firm": 0.0012802130274477672,
+    "r3_to_r2_ratio": 1.0526805193574784,
+    "interpretation": "R3 maps project-conditional extra firms to index proxy; source formula, per-project dynamics, rounding, fiscal carryover still unknown."
+  },
+  "p2_portfolio_screen": {
+    "scenario_note": "Historical card effects, hypothetical cash budgets, max 4 starts; no P2 live project preview.",
+    "evaluated_unique_feasible_within_450000": 12386,
+    "by_budget": {
+      "75000": {
+        "feasible_combinations": 884,
+        "leaders": {
+          "direct": [
+            {
+              "ids": [
+                8,
+                9,
+                26,
+                28
+              ],
+              "cost": 72500,
+              "conditional_index_delta": 0.357230799,
+              "direct_delta": 0.357230799,
+              "small_extra": 2.613366,
+              "medium_extra": 1.08
+            },
+            {
+              "ids": [
+                8,
+                17,
+                26,
+                28
+              ],
+              "cost": 72500,
+              "conditional_index_delta": 0.354810874,
+              "direct_delta": 0.354810874,
+              "small_extra": 2.613366,
+              "medium_extra": 2.1708
+            },
+            {
+              "ids": [
+                5,
+                8,
+                9,
+                26
+              ],
+              "cost": 74500,
+              "conditional_index_delta": 0.343564612,
+              "direct_delta": 0.343564612,
+              "small_extra": 2.613366,
+              "medium_extra": 1.08
+            },
+            {
+              "ids": [
+                5,
+                8,
+                26,
+                28
+              ],
+              "cost": 69000,
+              "conditional_index_delta": 0.341514768,
+              "direct_delta": 0.341514768,
+              "small_extra": 2.090557,
+              "medium_extra": 1.08
+            }
+          ],
+          "old_P1_P2_secant": [
+            {
+              "ids": [
+                8,
+                9,
+                26,
+                28
+              ],
+              "cost": 72500,
+              "conditional_index_delta": 0.36172247,
+              "direct_delta": 0.357230799,
+              "small_extra": 2.613366,
+              "medium_extra": 1.08
+            },
+            {
+              "ids": [
+                8,
+                17,
+                26,
+                28
+              ],
+              "cost": 72500,
+              "conditional_index_delta": 0.360629118,
+              "direct_delta": 0.354810874,
+              "small_extra": 2.613366,
+              "medium_extra": 2.1708
+            },
+            {
+              "ids": [
+                5,
+                8,
+                9,
+                26
+              ],
+              "cost": 74500,
+              "conditional_index_delta": 0.348056284,
+              "direct_delta": 0.343564612,
+              "small_extra": 2.613366,
+              "medium_extra": 1.08
+            },
+            {
+              "ids": [
+                5,
+                8,
+                17,
+                26
+              ],
+              "cost": 74500,
+              "conditional_index_delta": 0.346965907,
+              "direct_delta": 0.341147664,
+              "small_extra": 2.613366,
+              "medium_extra": 2.1708
+            }
+          ],
+          "year_on_year_hypothesis": [
+            {
+              "ids": [
+                8,
+                9,
+                26,
+                28
+              ],
+              "cost": 72500,
+              "conditional_index_delta": 0.361959094,
+              "direct_delta": 0.357230799,
+              "small_extra": 2.613366,
+              "medium_extra": 1.08
+            },
+            {
+              "ids": [
+                8,
+                17,
+                26,
+                28
+              ],
+              "cost": 72500,
+              "conditional_index_delta": 0.360935626,
+              "direct_delta": 0.354810874,
+              "small_extra": 2.613366,
+              "medium_extra": 2.1708
+            },
+            {
+              "ids": [
+                5,
+                8,
+                9,
+                26
+              ],
+              "cost": 74500,
+              "conditional_index_delta": 0.348292907,
+              "direct_delta": 0.343564612,
+              "small_extra": 2.613366,
+              "medium_extra": 1.08
+            },
+            {
+              "ids": [
+                5,
+                8,
+                17,
+                26
+              ],
+              "cost": 74500,
+              "conditional_index_delta": 0.347272415,
+              "direct_delta": 0.341147664,
+              "small_extra": 2.613366,
+              "medium_extra": 2.1708
+            }
+          ]
+        }
+      },
+      "150000": {
+        "feasible_combinations": 5610,
+        "leaders": {
+          "direct": [
+            {
+              "ids": [
+                4,
+                8,
+                16,
+                21
+              ],
+              "cost": 150000,
+              "conditional_index_delta": 0.515849384,
+              "direct_delta": 0.515849384,
+              "small_extra": 4.704916,
+              "medium_extra": 1.08
+            },
+            {
+              "ids": [
+                4,
+                8,
+                16,
+                26
+              ],
+              "cost": 143000,
+              "conditional_index_delta": 0.506980049,
+              "direct_delta": 0.506980049,
+              "small_extra": 4.704916,
+              "medium_extra": 2.1708
+            },
+            {
+              "ids": [
+                4,
+                8,
+                21,
+                26
+              ],
+              "cost": 135000,
+              "conditional_index_delta": 0.505904973,
+              "direct_delta": 0.505904973,
+              "small_extra": 3.659089,
+              "medium_extra": 2.1708
+            },
+            {
+              "ids": [
+                8,
+                16,
+                21,
+                26
+              ],
+              "cost": 135000,
+              "conditional_index_delta": 0.490936787,
+              "direct_delta": 0.490936787,
+              "small_extra": 4.18195,
+              "medium_extra": 1.08
+            }
+          ],
+          "old_P1_P2_secant": [
+            {
+              "ids": [
+                4,
+                8,
+                16,
+                21
+              ],
+              "cost": 150000,
+              "conditional_index_delta": 0.522884685,
+              "direct_delta": 0.515849384,
+              "small_extra": 4.704916,
+              "medium_extra": 1.08
+            },
+            {
+              "ids": [
+                4,
+                8,
+                16,
+                26
+              ],
+              "cost": 143000,
+              "conditional_index_delta": 0.515341922,
+              "direct_delta": 0.506980049,
+              "small_extra": 4.704916,
+              "medium_extra": 2.1708
+            },
+            {
+              "ids": [
+                4,
+                8,
+                21,
+                26
+              ],
+              "cost": 135000,
+              "conditional_index_delta": 0.512994967,
+              "direct_delta": 0.505904973,
+              "small_extra": 3.659089,
+              "medium_extra": 2.1708
+            },
+            {
+              "ids": [
+                8,
+                16,
+                21,
+                26
+              ],
+              "cost": 135000,
+              "conditional_index_delta": 0.497336085,
+              "direct_delta": 0.490936787,
+              "small_extra": 4.18195,
+              "medium_extra": 1.08
+            }
+          ],
+          "year_on_year_hypothesis": [
+            {
+              "ids": [
+                4,
+                8,
+                16,
+                21
+              ],
+              "cost": 150000,
+              "conditional_index_delta": 0.523255308,
+              "direct_delta": 0.515849384,
+              "small_extra": 4.704916,
+              "medium_extra": 1.08
+            },
+            {
+              "ids": [
+                4,
+                8,
+                16,
+                26
+              ],
+              "cost": 143000,
+              "conditional_index_delta": 0.51578243,
+              "direct_delta": 0.506980049,
+              "small_extra": 4.704916,
+              "medium_extra": 2.1708
+            },
+            {
+              "ids": [
+                4,
+                8,
+                21,
+                26
+              ],
+              "cost": 135000,
+              "conditional_index_delta": 0.513368472,
+              "direct_delta": 0.505904973,
+              "small_extra": 3.659089,
+              "medium_extra": 2.1708
+            },
+            {
+              "ids": [
+                8,
+                16,
+                21,
+                26
+              ],
+              "cost": 135000,
+              "conditional_index_delta": 0.497673204,
+              "direct_delta": 0.490936787,
+              "small_extra": 4.18195,
+              "medium_extra": 1.08
+            }
+          ]
+        }
+      },
+      "300000": {
+        "feasible_combinations": 9900,
+        "leaders": {
+          "direct": [
+            {
+              "ids": [
+                8,
+                21,
+                26,
+                33
+              ],
+              "cost": 293000,
+              "conditional_index_delta": 0.586071911,
+              "direct_delta": 0.586071911,
+              "small_extra": 3.136227,
+              "medium_extra": 1.08
+            },
+            {
+              "ids": [
+                1,
+                4,
+                8,
+                33
+              ],
+              "cost": 299400,
+              "conditional_index_delta": 0.569139328,
+              "direct_delta": 0.569139328,
+              "small_extra": 5.227829,
+              "medium_extra": 1.08
+            },
+            {
+              "ids": [
+                1,
+                8,
+                16,
+                33
+              ],
+              "cost": 299400,
+              "conditional_index_delta": 0.553405708,
+              "direct_delta": 0.553405708,
+              "small_extra": 5.750848,
+              "medium_extra": 0.0
+            },
+            {
+              "ids": [
+                1,
+                8,
+                21,
+                33
+              ],
+              "cost": 291400,
+              "conditional_index_delta": 0.55332982,
+              "direct_delta": 0.55332982,
+              "small_extra": 4.704811,
+              "medium_extra": 0.0
+            }
+          ],
+          "old_P1_P2_secant": [
+            {
+              "ids": [
+                8,
+                21,
+                26,
+                33
+              ],
+              "cost": 293000,
+              "conditional_index_delta": 0.591199458,
+              "direct_delta": 0.586071911,
+              "small_extra": 3.136227,
+              "medium_extra": 1.08
+            },
+            {
+              "ids": [
+                1,
+                4,
+                8,
+                33
+              ],
+              "cost": 299400,
+              "conditional_index_delta": 0.576810569,
+              "direct_delta": 0.569139328,
+              "small_extra": 5.227829,
+              "medium_extra": 1.08
+            },
+            {
+              "ids": [
+                1,
+                8,
+                16,
+                33
+              ],
+              "cost": 299400,
+              "conditional_index_delta": 0.560399577,
+              "direct_delta": 0.553405708,
+              "small_extra": 5.750848,
+              "medium_extra": 0.0
+            },
+            {
+              "ids": [
+                1,
+                8,
+                21,
+                33
+              ],
+              "cost": 291400,
+              "conditional_index_delta": 0.559051557,
+              "direct_delta": 0.55332982,
+              "small_extra": 4.704811,
+              "medium_extra": 0.0
+            }
+          ],
+          "year_on_year_hypothesis": [
+            {
+              "ids": [
+                8,
+                21,
+                26,
+                33
+              ],
+              "cost": 293000,
+              "conditional_index_delta": 0.59146958,
+              "direct_delta": 0.586071911,
+              "small_extra": 3.136227,
+              "medium_extra": 1.08
+            },
+            {
+              "ids": [
+                1,
+                4,
+                8,
+                33
+              ],
+              "cost": 299400,
+              "conditional_index_delta": 0.577214694,
+              "direct_delta": 0.569139328,
+              "small_extra": 5.227829,
+              "medium_extra": 1.08
+            },
+            {
+              "ids": [
+                1,
+                8,
+                16,
+                33
+              ],
+              "cost": 299400,
+              "conditional_index_delta": 0.560768018,
+              "direct_delta": 0.553405708,
+              "small_extra": 5.750848,
+              "medium_extra": 0.0
+            },
+            {
+              "ids": [
+                1,
+                8,
+                21,
+                33
+              ],
+              "cost": 291400,
+              "conditional_index_delta": 0.559352981,
+              "direct_delta": 0.55332982,
+              "small_extra": 4.704811,
+              "medium_extra": 0.0
+            }
+          ]
+        }
+      },
+      "450000": {
+        "feasible_combinations": 12386,
+        "leaders": {
+          "direct": [
+            {
+              "ids": [
+                4,
+                8,
+                21,
+                33
+              ],
+              "cost": 308000,
+              "conditional_index_delta": 0.610524414,
+              "direct_delta": 0.610524414,
+              "small_extra": 3.659089,
+              "medium_extra": 1.08
+            },
+            {
+              "ids": [
+                4,
+                8,
+                16,
+                33
+              ],
+              "cost": 316000,
+              "conditional_index_delta": 0.610418964,
+              "direct_delta": 0.610418964,
+              "small_extra": 4.704916,
+              "medium_extra": 1.08
+            },
+            {
+              "ids": [
+                4,
+                8,
+                26,
+                33
+              ],
+              "cost": 301000,
+              "conditional_index_delta": 0.600715777,
+              "direct_delta": 0.600715777,
+              "small_extra": 3.659089,
+              "medium_extra": 2.1708
+            },
+            {
+              "ids": [
+                2,
+                4,
+                8,
+                33
+              ],
+              "cost": 429000,
+              "conditional_index_delta": 0.600709231,
+              "direct_delta": 0.600709231,
+              "small_extra": 6.273657,
+              "medium_extra": 2.1708
+            }
+          ],
+          "old_P1_P2_secant": [
+            {
+              "ids": [
+                4,
+                8,
+                16,
+                33
+              ],
+              "cost": 316000,
+              "conditional_index_delta": 0.617454265,
+              "direct_delta": 0.610418964,
+              "small_extra": 4.704916,
+              "medium_extra": 1.08
+            },
+            {
+              "ids": [
+                4,
+                8,
+                21,
+                33
+              ],
+              "cost": 308000,
+              "conditional_index_delta": 0.616287837,
+              "direct_delta": 0.610524414,
+              "small_extra": 3.659089,
+              "medium_extra": 1.08
+            },
+            {
+              "ids": [
+                2,
+                4,
+                8,
+                33
+              ],
+              "cost": 429000,
+              "conditional_index_delta": 0.610978922,
+              "direct_delta": 0.600709231,
+              "small_extra": 6.273657,
+              "medium_extra": 2.1708
+            },
+            {
+              "ids": [
+                4,
+                8,
+                26,
+                33
+              ],
+              "cost": 301000,
+              "conditional_index_delta": 0.607805772,
+              "direct_delta": 0.600715777,
+              "small_extra": 3.659089,
+              "medium_extra": 2.1708
+            }
+          ],
+          "year_on_year_hypothesis": [
+            {
+              "ids": [
+                4,
+                8,
+                16,
+                33
+              ],
+              "cost": 316000,
+              "conditional_index_delta": 0.617824889,
+              "direct_delta": 0.610418964,
+              "small_extra": 4.704916,
+              "medium_extra": 1.08
+            },
+            {
+              "ids": [
+                4,
+                8,
+                21,
+                33
+              ],
+              "cost": 308000,
+              "conditional_index_delta": 0.616591457,
+              "direct_delta": 0.610524414,
+              "small_extra": 3.659089,
+              "medium_extra": 1.08
+            },
+            {
+              "ids": [
+                2,
+                4,
+                8,
+                33
+              ],
+              "cost": 429000,
+              "conditional_index_delta": 0.611519934,
+              "direct_delta": 0.600709231,
+              "small_extra": 6.273657,
+              "medium_extra": 2.1708
+            },
+            {
+              "ids": [
+                4,
+                8,
+                26,
+                33
+              ],
+              "cost": 301000,
+              "conditional_index_delta": 0.608179276,
+              "direct_delta": 0.600715777,
+              "small_extra": 3.659089,
+              "medium_extra": 2.1708
+            }
+          ]
+        }
+      }
+    },
+    "focus_450k_16_vs_21": {
+      "ids_A": [
+        4,
+        8,
+        16,
+        33
+      ],
+      "ids_B": [
+        4,
+        8,
+        21,
+        33
+      ],
+      "old_R2_A_minus_B_conditional_index": 0.0011664284194763397,
+      "new_R3_A_minus_B_conditional_index": 0.001233431635949911,
+      "r3_yoy_hypothesis_zero_crossing_scale": 0.07875977288626596,
+      "warning": "Forecast difference within model only, not proven performance."
+    }
+  },
+  "limitations": [
+    "No authoritative EcoSim server formula/source was located.",
+    "Displayed integer business counts may hide fractional values, which prevents exact two-decimal reconstruction in every observation.",
+    "Cross-sectional association and joint four-project preview do not identify causal weights for small vs medium businesses.",
+    "P2 is a plan, not realized fact; save state unknown.",
+    "Project effect percentages date from an earlier TEST-Z project catalog, though P2 card costs/statuses were rechecked.",
+    "Large-company dynamics, delayed effects, saturation and P3-P5 evolution remain unknown."
+  ]
+}

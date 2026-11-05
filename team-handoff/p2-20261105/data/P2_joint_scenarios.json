@@ -1,0 +1,3674 @@
+{
+  "schema": "ecosim.p2.joint_project_finance.screen.v1",
+  "source": "P2_joined_input.json",
+  "run_scope": "OFFLINE_NO_GAME_WRITES",
+  "model_gate": "CONDITIONAL_PROJECT_ONLY_PROXY_NOT_ECOSIM_PREVIEW_OR_SERVER_FORECAST",
+  "baseline": {
+    "p1_fact_index": 58.87,
+    "p2_plan_index": 60.52,
+    "p2_reconstructed_index": 60.52115,
+    "p2_plan_reserve_ecu": 868143,
+    "p2_plan_total_revenue_ecu": 5693381,
+    "p2_plan_nonreserve_cost_ecu": 4825239,
+    "opening_cash_ecu": 309280,
+    "p2_signed_running_maintenance_ecu": -65800,
+    "p2_projects_running_count": 10,
+    "p2_projects_new_started": 0,
+    "loan_plan_ecu": 0,
+    "p2_plan_components": {
+      "Gazdaság": 74.36,
+      "Környezet": 49.89,
+      "Kormányzás": 86.11,
+      "Életkörülmények": 56.08,
+      "Mobilitás": 58.39,
+      "Emberek": 31.91
+    },
+    "p2_revenue_excluding_previous_year_cash_ecu": 5384101,
+    "p2_nonproject_cost_ecu": 4891039,
+    "p2_nonproject_operating_net_ecu": 493062,
+    "p2_annual_net_including_running_projects_ecu": 558862,
+    "p2_reserve_reconstructed_ecu": 868142,
+    "rounding_difference_ui_minus_reconstructed_ecu": 1
+  },
+  "data_quality": {
+    "p2_live_project_cost_status_count": 35,
+    "effect_count_historical": 272,
+    "effect_unmapped_count_historical": 30,
+    "unmapped_labels": [
+      "Kisvállalkozások száma",
+      "Középvállalkozások száma"
+    ],
+    "historical_live_cost_conflicts": [],
+    "finance_running_maintenance_reconciles": true
+  },
+  "restrictions": {
+    "new_project_limit": 4,
+    "limit_status": "REPORTED_ORGANIZER_FOUR_PER_YEAR_NOT_LIVE_VERIFIED",
+    "cash_envelopes_ecu": [
+      75000,
+      150000,
+      300000,
+      450000
+    ],
+    "cash_envelopes_are_hypothetical": true,
+    "cash_baseline_reserve_includes_p1_opening": true,
+    "initial_running_count": 10,
+    "cash_conservative": "incremental startup+investment+positive new maintenance, without grants or negative maintenance funding",
+    "existing_running_maintenance_included_in_baseline": true,
+    "project_effects_source": "2026-10-30 test round Z historical effects (unverified live I P2)",
+    "project_effects_applied_once": "HYPOTHETICAL immediate direct multiplier only; no indirect effects / future transitions",
+    "project_effects_unmapped_never_treated_as_zero": true,
+    "same_year_dependency": "BLOCKED_IF_PREREQ_NOT_ALREADY_RUNNING",
+    "gameplay_decision": "STOP",
+    "future_cash_p3_p5": "UNKNOWN",
+    "P2_game_plan_saved": "UNKNOWN"
+  },
+  "candidate_pool_count": 25,
+  "eligible_direct_single_count": 24,
+  "combinations_pre_eligibility_explored": 15275,
+  "single_candidates": [
+    {
+      "ids": [
+        33
+      ],
+      "names": [
+        "A Népliget megújítása"
+      ],
+      "upfront": 198000,
+      "positive_annual_maintenance": 3000,
+      "signed_annual_maintenance": 3000,
+      "four_year_conservative_p2_p5_cost": 210000,
+      "four_year_signed_p2_p5_project_line": 210000,
+      "support_displayed_not_cash": 5000,
+      "conservative_incremental_p2_cash_requirement": 201000,
+      "signed_p2_project_line_increment": 201000,
+      "delta": 0.21277538333333723,
+      "unmapped_count": 1,
+      "unmapped_metrics": [
+        "Kisvállalkozások száma"
+      ],
+      "cap_edge_count": 0,
+      "zero_baseline_count": 0
+    },
+    {
+      "ids": [
+        8
+      ],
+      "names": [
+        "Okos Gazdaság Alkalmazások"
+      ],
+      "upfront": 26000,
+      "positive_annual_maintenance": 3000,
+      "signed_annual_maintenance": 3000,
+      "four_year_conservative_p2_p5_cost": 38000,
+      "four_year_signed_p2_p5_project_line": 38000,
+      "support_displayed_not_cash": 3500,
+      "conservative_incremental_p2_cash_requirement": 29000,
+      "signed_p2_project_line_increment": 29000,
+      "delta": 0.14224462500000357,
+      "unmapped_count": 1,
+      "unmapped_metrics": [
+        "Kisvállalkozások száma"
+      ],
+      "cap_edge_count": 0,
+      "zero_baseline_count": 0
+    },
+    {
+      "ids": [
+        4
+      ],
+      "names": [
+        "Körforgásos gazdaság mintaprojekt"
+      ],
+      "upfront": 41000,
+      "positive_annual_maintenance": 2000,
+      "signed_annual_maintenance": 2000,
+      "four_year_conservative_p2_p5_cost": 49000,
+      "four_year_signed_p2_p5_project_line": 49000,
+      "support_displayed_not_cash": 14000,
+      "conservative_incremental_p2_cash_requirement": 43000,
+      "signed_p2_project_line_increment": 43000,
+      "delta": 0.13482679999999903,
+      "unmapped_count": 2,
+      "unmapped_metrics": [
+        "Kisvállalkozások száma",
+        "Középvállalkozások száma"
+      ],
+      "cap_edge_count": 0,
+      "zero_baseline_count": 1
+    },
+    {
+      "ids": [
+        16
+      ],
+      "names": [
+        "Nyitott Alkotó és Innovációs Terek"
+      ],
+      "upfront": 39000,
+      "positive_annual_maintenance": 4000,
+      "signed_annual_maintenance": 4000,
+      "four_year_conservative_p2_p5_cost": 55000,
+      "four_year_signed_p2_p5_project_line": 55000,
+      "support_displayed_not_cash": 10000,
+      "conservative_incremental_p2_cash_requirement": 43000,
+      "signed_p2_project_line_increment": 43000,
+      "delta": 0.11865612500000111,
+      "unmapped_count": 1,
+      "unmapped_metrics": [
+        "Kisvállalkozások száma"
+      ],
+      "cap_edge_count": 0,
+      "zero_baseline_count": 1
+    },
+    {
+      "ids": [
+        21
+      ],
+      "names": [
+        "Közlekedési Múzeum"
+      ],
+      "upfront": 35000,
+      "positive_annual_maintenance": 0,
+      "signed_annual_maintenance": 0,
+      "four_year_conservative_p2_p5_cost": 35000,
+      "four_year_signed_p2_p5_project_line": 35000,
+      "support_displayed_not_cash": 0,
+      "conservative_incremental_p2_cash_requirement": 35000,
+      "signed_p2_project_line_increment": 35000,
+      "delta": 0.11786217499999907,
+      "unmapped_count": 1,
+      "unmapped_metrics": [
+        "Kisvállalkozások száma"
+      ],
+      "cap_edge_count": 0,
+      "zero_baseline_count": 0
+    },
+    {
+      "ids": [
+        2
+      ],
+      "names": [
+        "Kereskedelmi és Kulturális Központ"
+      ],
+      "upfront": 148000,
+      "positive_annual_maintenance": 8000,
+      "signed_annual_maintenance": 8000,
+      "four_year_conservative_p2_p5_cost": 180000,
+      "four_year_signed_p2_p5_project_line": 180000,
+      "support_displayed_not_cash": 25000,
+      "conservative_incremental_p2_cash_requirement": 156000,
+      "signed_p2_project_line_increment": 156000,
+      "delta": 0.1101176958333312,
+      "unmapped_count": 2,
+      "unmapped_metrics": [
+        "Kisvállalkozások száma",
+        "Középvállalkozások száma"
+      ],
+      "cap_edge_count": 0,
+      "zero_baseline_count": 1
+    },
+    {
+      "ids": [
+        26
+      ],
+      "names": [
+        "Reptér elérhetőség javítása"
+      ],
+      "upfront": 28000,
+      "positive_annual_maintenance": 0,
+      "signed_annual_maintenance": 0,
+      "four_year_conservative_p2_p5_cost": 28000,
+      "four_year_signed_p2_p5_project_line": 28000,
+      "support_displayed_not_cash": 0,
+      "conservative_incremental_p2_cash_requirement": 28000,
+      "signed_p2_project_line_increment": 28000,
+      "delta": 0.10964828333333543,
+      "unmapped_count": 2,
+      "unmapped_metrics": [
+        "Kisvállalkozások száma",
+        "Középvállalkozások száma"
+      ],
+      "cap_edge_count": 0,
+      "zero_baseline_count": 1
+    },
+    {
+      "ids": [
+        19
+      ],
+      "names": [
+        "Multifunkcionális Sportcentrum"
+      ],
+      "upfront": 255000,
+      "positive_annual_maintenance": 27000,
+      "signed_annual_maintenance": 27000,
+      "four_year_conservative_p2_p5_cost": 363000,
+      "four_year_signed_p2_p5_project_line": 363000,
+      "support_displayed_not_cash": 88000,
+      "conservative_incremental_p2_cash_requirement": 282000,
+      "signed_p2_project_line_increment": 282000,
+      "delta": 0.0950735999999992,
+      "unmapped_count": 1,
+      "unmapped_metrics": [
+        "Kisvállalkozások száma"
+      ],
+      "cap_edge_count": 0,
+      "zero_baseline_count": 0
+    },
+    {
+      "ids": [
+        31
+      ],
+      "names": [
+        "P+R parkolók a vasút mellett"
+      ],
+      "upfront": 72000,
+      "positive_annual_maintenance": 0,
+      "signed_annual_maintenance": -3500,
+      "four_year_conservative_p2_p5_cost": 72000,
+      "four_year_signed_p2_p5_project_line": 58000,
+      "support_displayed_not_cash": 4000,
+      "conservative_incremental_p2_cash_requirement": 72000,
+      "signed_p2_project_line_increment": 68500,
+      "delta": 0.09353157083333485,
+      "unmapped_count": 0,
+      "unmapped_metrics": [],
+      "cap_edge_count": 0,
+      "zero_baseline_count": 0
+    },
+    {
+      "ids": [
+        29
+      ],
+      "names": [
+        "Bicikliútfejlesztés"
+      ],
+      "upfront": 51000,
+      "positive_annual_maintenance": 2500,
+      "signed_annual_maintenance": 2500,
+      "four_year_conservative_p2_p5_cost": 61000,
+      "four_year_signed_p2_p5_project_line": 61000,
+      "support_displayed_not_cash": 2000,
+      "conservative_incremental_p2_cash_requirement": 53500,
+      "signed_p2_project_line_increment": 53500,
+      "delta": 0.08418100833333142,
+      "unmapped_count": 1,
+      "unmapped_metrics": [
+        "Kisvállalkozások száma"
+      ],
+      "cap_edge_count": 0,
+      "zero_baseline_count": 0
+    },
+    {
+      "ids": [
+        1
+      ],
+      "names": [
+        "Szomszédsági Gazdaság Modell"
+      ],
+      "upfront": 24000,
+      "positive_annual_maintenance": 2400,
+      "signed_annual_maintenance": 2400,
+      "four_year_conservative_p2_p5_cost": 33600,
+      "four_year_signed_p2_p5_project_line": 33600,
+      "support_displayed_not_cash": 3000,
+      "conservative_incremental_p2_cash_requirement": 26400,
+      "signed_p2_project_line_increment": 26400,
+      "delta": 0.07760933333333497,
+      "unmapped_count": 1,
+      "unmapped_metrics": [
+        "Kisvállalkozások száma"
+      ],
+      "cap_edge_count": 0,
+      "zero_baseline_count": 1
+    },
+    {
+      "ids": [
+        7
+      ],
+      "names": [
+        "HGF Innovációs Tudásközpont"
+      ],
+      "upfront": 21000,
+      "positive_annual_maintenance": 12000,
+      "signed_annual_maintenance": 12000,
+      "four_year_conservative_p2_p5_cost": 69000,
+      "four_year_signed_p2_p5_project_line": 69000,
+      "support_displayed_not_cash": 8000,
+      "conservative_incremental_p2_cash_requirement": 33000,
+      "signed_p2_project_line_increment": 33000,
+      "delta": 0.07553883333333289,
+      "unmapped_count": 1,
+      "unmapped_metrics": [
+        "Kisvállalkozások száma"
+      ],
+      "cap_edge_count": 0,
+      "zero_baseline_count": 0
+    },
+    {
+      "ids": [
+        10
+      ],
+      "names": [
+        "Innovációs Alap"
+      ],
+      "upfront": 15500,
+      "positive_annual_maintenance": 14000,
+      "signed_annual_maintenance": 14000,
+      "four_year_conservative_p2_p5_cost": 71500,
+      "four_year_signed_p2_p5_project_line": 71500,
+      "support_displayed_not_cash": 10000,
+      "conservative_incremental_p2_cash_requirement": 29500,
+      "signed_p2_project_line_increment": 29500,
+      "delta": 0.06798715000000044,
+      "unmapped_count": 2,
+      "unmapped_metrics": [
+        "Kisvállalkozások száma",
+        "Középvállalkozások száma"
+      ],
+      "cap_edge_count": 0,
+      "zero_baseline_count": 1
+    },
+    {
+      "ids": [
+        3
+      ],
+      "names": [
+        "Helyi élelmiszerellátás"
+      ],
+      "upfront": 32000,
+      "positive_annual_maintenance": 1500,
+      "signed_annual_maintenance": 1500,
+      "four_year_conservative_p2_p5_cost": 38000,
+      "four_year_signed_p2_p5_project_line": 38000,
+      "support_displayed_not_cash": 3000,
+      "conservative_incremental_p2_cash_requirement": 33500,
+      "signed_p2_project_line_increment": 33500,
+      "delta": 0.06761857499999735,
+      "unmapped_count": 1,
+      "unmapped_metrics": [
+        "Kisvállalkozások száma"
+      ],
+      "cap_edge_count": 0,
+      "zero_baseline_count": 1
+    },
+    {
+      "ids": [
+        20
+      ],
+      "names": [
+        "Képzési együttműködések koordinációja"
+      ],
+      "upfront": 16000,
+      "positive_annual_maintenance": 3000,
+      "signed_annual_maintenance": 3000,
+      "four_year_conservative_p2_p5_cost": 28000,
+      "four_year_signed_p2_p5_project_line": 28000,
+      "support_displayed_not_cash": 1500,
+      "conservative_incremental_p2_cash_requirement": 19000,
+      "signed_p2_project_line_increment": 19000,
+      "delta": 0.05685012500000397,
+      "unmapped_count": 0,
+      "unmapped_metrics": [],
+      "cap_edge_count": 0,
+      "zero_baseline_count": 1
+    },
+    {
+      "ids": [
+        9
+      ],
+      "names": [
+        "Közösségi Finanszírozási Rendszer"
+      ],
+      "upfront": 9000,
+      "positive_annual_maintenance": 1500,
+      "signed_annual_maintenance": 1500,
+      "four_year_conservative_p2_p5_cost": 15000,
+      "four_year_signed_p2_p5_project_line": 15000,
+      "support_displayed_not_cash": 12000,
+      "conservative_incremental_p2_cash_requirement": 10500,
+      "signed_p2_project_line_increment": 10500,
+      "delta": 0.053059254166669234,
+      "unmapped_count": 1,
+      "unmapped_metrics": [
+        "Kisvállalkozások száma"
+      ],
+      "cap_edge_count": 0,
+      "zero_baseline_count": 0
+    },
+    {
+      "ids": [
+        28
+      ],
+      "names": [
+        "Új trolibuszútvonal"
+      ],
+      "upfront": 5000,
+      "positive_annual_maintenance": 0,
+      "signed_annual_maintenance": 0,
+      "four_year_conservative_p2_p5_cost": 5000,
+      "four_year_signed_p2_p5_project_line": 5000,
+      "support_displayed_not_cash": 0,
+      "conservative_incremental_p2_cash_requirement": 5000,
+      "signed_p2_project_line_increment": 5000,
+      "delta": 0.05105676666666881,
+      "unmapped_count": 0,
+      "unmapped_metrics": [],
+      "cap_edge_count": 0,
+      "zero_baseline_count": 0
+    },
+    {
+      "ids": [
+        17
+      ],
+      "names": [
+        "Pályaorientáció és Tehetséggondozás"
+      ],
+      "upfront": 10500,
+      "positive_annual_maintenance": 0,
+      "signed_annual_maintenance": 0,
+      "four_year_conservative_p2_p5_cost": 10500,
+      "four_year_signed_p2_p5_project_line": 10500,
+      "support_displayed_not_cash": 10000,
+      "conservative_incremental_p2_cash_requirement": 10500,
+      "signed_p2_project_line_increment": 10500,
+      "delta": 0.0509685000000033,
+      "unmapped_count": 2,
+      "unmapped_metrics": [
+        "Kisvállalkozások száma",
+        "Középvállalkozások száma"
+      ],
+      "cap_edge_count": 0,
+      "zero_baseline_count": 1
+    },
+    {
+      "ids": [
+        6
+      ],
+      "names": [
+        "Gazdasági és Foglalkoztatási Együttműködés"
+      ],
+      "upfront": 8000,
+      "positive_annual_maintenance": 8000,
+      "signed_annual_maintenance": 8000,
+      "four_year_conservative_p2_p5_cost": 40000,
+      "four_year_signed_p2_p5_project_line": 40000,
+      "support_displayed_not_cash": 2000,
+      "conservative_incremental_p2_cash_requirement": 16000,
+      "signed_p2_project_line_increment": 16000,
+      "delta": 0.050805500000002723,
+      "unmapped_count": 2,
+      "unmapped_metrics": [
+        "Kisvállalkozások száma",
+        "Középvállalkozások száma"
+      ],
+      "cap_edge_count": 0,
+      "zero_baseline_count": 1
+    },
+    {
+      "ids": [
+        25
+      ],
+      "names": [
+        "Bosch Önvezető Jármű Tesztközpont"
+      ],
+      "upfront": 20000,
+      "positive_annual_maintenance": 0,
+      "signed_annual_maintenance": 0,
+      "four_year_conservative_p2_p5_cost": 20000,
+      "four_year_signed_p2_p5_project_line": 20000,
+      "support_displayed_not_cash": 4500,
+      "conservative_incremental_p2_cash_requirement": 20000,
+      "signed_p2_project_line_increment": 20000,
+      "delta": 0.04972544166666637,
+      "unmapped_count": 2,
+      "unmapped_metrics": [
+        "Kisvállalkozások száma",
+        "Középvállalkozások száma"
+      ],
+      "cap_edge_count": 0,
+      "zero_baseline_count": 1
+    },
+    {
+      "ids": [
+        15
+      ],
+      "names": [
+        "Pincerendszer hasznosítása"
+      ],
+      "upfront": 75000,
+      "positive_annual_maintenance": 0,
+      "signed_annual_maintenance": -4000,
+      "four_year_conservative_p2_p5_cost": 75000,
+      "four_year_signed_p2_p5_project_line": 59000,
+      "support_displayed_not_cash": 2000,
+      "conservative_incremental_p2_cash_requirement": 75000,
+      "signed_p2_project_line_increment": 71000,
+      "delta": 0.043938416666669866,
+      "unmapped_count": 1,
+      "unmapped_metrics": [
+        "Kisvállalkozások száma"
+      ],
+      "cap_edge_count": 0,
+      "zero_baseline_count": 0
+    },
+    {
+      "ids": [
+        5
+      ],
+      "names": [
+        "Vállalati Társadalmi Felelősség Platform"
+      ],
+      "upfront": 5000,
+      "positive_annual_maintenance": 2000,
+      "signed_annual_maintenance": 2000,
+      "four_year_conservative_p2_p5_cost": 13000,
+      "four_year_signed_p2_p5_project_line": 13000,
+      "support_displayed_not_cash": 15000,
+      "conservative_incremental_p2_cash_requirement": 7000,
+      "signed_p2_project_line_increment": 7000,
+      "delta": 0.03766232499999944,
+      "unmapped_count": 0,
+      "unmapped_metrics": [],
+      "cap_edge_count": 0,
+      "zero_baseline_count": 0
+    },
+    {
+      "ids": [
+        18
+      ],
+      "names": [
+        "Műemléki Dreher-villa új funkcióval"
+      ],
+      "upfront": 75000,
+      "positive_annual_maintenance": 0,
+      "signed_annual_maintenance": -3500,
+      "four_year_conservative_p2_p5_cost": 75000,
+      "four_year_signed_p2_p5_project_line": 61000,
+      "support_displayed_not_cash": 5000,
+      "conservative_incremental_p2_cash_requirement": 75000,
+      "signed_p2_project_line_increment": 71500,
+      "delta": 0.03661062500000156,
+      "unmapped_count": 1,
+      "unmapped_metrics": [
+        "Kisvállalkozások száma"
+      ],
+      "cap_edge_count": 0,
+      "zero_baseline_count": 0
+    },
+    {
+      "ids": [
+        11
+      ],
+      "names": [
+        "Helyi Krízisalap"
+      ],
+      "upfront": 21000,
+      "positive_annual_maintenance": 5000,
+      "signed_annual_maintenance": 5000,
+      "four_year_conservative_p2_p5_cost": 41000,
+      "four_year_signed_p2_p5_project_line": 41000,
+      "support_displayed_not_cash": 8000,
+      "conservative_incremental_p2_cash_requirement": 26000,
+      "signed_p2_project_line_increment": 26000,
+      "delta": 0.035314312499998834,
+      "unmapped_count": 1,
+      "unmapped_metrics": [
+        "Kisvállalkozások száma"
+      ],
+      "cap_edge_count": 0,
+      "zero_baseline_count": 1
+    }
+  ],
+  "by_hypothetical_p2_budget": {
+    "75000": {
+      "feasible_combo_count": 884,
+      "top_nominal": [
+        {
+          "ids": [
+            8,
+            9,
+            26,
+            28
+          ],
+          "names": [
+            "Okos Gazdaság Alkalmazások",
+            "Közösségi Finanszírozási Rendszer",
+            "Reptér elérhetőség javítása",
+            "Új trolibuszútvonal"
+          ],
+          "upfront": 68000,
+          "positive_annual_maintenance": 4500,
+          "signed_annual_maintenance": 4500,
+          "four_year_conservative_p2_p5_cost": 86000,
+          "four_year_signed_p2_p5_project_line": 86000,
+          "support_displayed_not_cash": 15500,
+          "conservative_incremental_p2_cash_requirement": 72500,
+          "signed_p2_project_line_increment": 72500,
+          "mapped_proxy_delta_p2": 0.357231,
+          "mapped_proxy_delta_half_effect": 0.17831,
+          "mapped_proxy_delta_onehalf_effect": 0.536763,
+          "scenario_min_mapped_proxy_delta": 0.17831,
+          "mapped_proxy_index_if_direct_effects_only": 60.878381,
+          "scenario_no_grant_reserve_after_conservative_increment": 795643,
+          "unknown_effect_records": 4,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 1,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            8,
+            17,
+            26,
+            28
+          ],
+          "names": [
+            "Okos Gazdaság Alkalmazások",
+            "Pályaorientáció és Tehetséggondozás",
+            "Reptér elérhetőség javítása",
+            "Új trolibuszútvonal"
+          ],
+          "upfront": 69500,
+          "positive_annual_maintenance": 3000,
+          "signed_annual_maintenance": 3000,
+          "four_year_conservative_p2_p5_cost": 81500,
+          "four_year_signed_p2_p5_project_line": 81500,
+          "support_displayed_not_cash": 13500,
+          "conservative_incremental_p2_cash_requirement": 72500,
+          "signed_p2_project_line_increment": 72500,
+          "mapped_proxy_delta_p2": 0.354811,
+          "mapped_proxy_delta_half_effect": 0.177182,
+          "mapped_proxy_delta_onehalf_effect": 0.532886,
+          "scenario_min_mapped_proxy_delta": 0.177182,
+          "mapped_proxy_index_if_direct_effects_only": 60.875961,
+          "scenario_no_grant_reserve_after_conservative_increment": 795643,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            5,
+            8,
+            9,
+            26
+          ],
+          "names": [
+            "Vállalati Társadalmi Felelősség Platform",
+            "Okos Gazdaság Alkalmazások",
+            "Közösségi Finanszírozási Rendszer",
+            "Reptér elérhetőség javítása"
+          ],
+          "upfront": 68000,
+          "positive_annual_maintenance": 6500,
+          "signed_annual_maintenance": 6500,
+          "four_year_conservative_p2_p5_cost": 94000,
+          "four_year_signed_p2_p5_project_line": 94000,
+          "support_displayed_not_cash": 30500,
+          "conservative_incremental_p2_cash_requirement": 74500,
+          "signed_p2_project_line_increment": 74500,
+          "mapped_proxy_delta_p2": 0.343565,
+          "mapped_proxy_delta_half_effect": 0.171545,
+          "mapped_proxy_delta_onehalf_effect": 0.516061,
+          "scenario_min_mapped_proxy_delta": 0.171545,
+          "mapped_proxy_index_if_direct_effects_only": 60.864715,
+          "scenario_no_grant_reserve_after_conservative_increment": 793643,
+          "unknown_effect_records": 4,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 1,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            5,
+            8,
+            26,
+            28
+          ],
+          "names": [
+            "Vállalati Társadalmi Felelősség Platform",
+            "Okos Gazdaság Alkalmazások",
+            "Reptér elérhetőség javítása",
+            "Új trolibuszútvonal"
+          ],
+          "upfront": 64000,
+          "positive_annual_maintenance": 5000,
+          "signed_annual_maintenance": 5000,
+          "four_year_conservative_p2_p5_cost": 84000,
+          "four_year_signed_p2_p5_project_line": 84000,
+          "support_displayed_not_cash": 18500,
+          "conservative_incremental_p2_cash_requirement": 69000,
+          "signed_p2_project_line_increment": 69000,
+          "mapped_proxy_delta_p2": 0.341515,
+          "mapped_proxy_delta_half_effect": 0.170532,
+          "mapped_proxy_delta_onehalf_effect": 0.512949,
+          "scenario_min_mapped_proxy_delta": 0.170532,
+          "mapped_proxy_index_if_direct_effects_only": 60.862665,
+          "scenario_no_grant_reserve_after_conservative_increment": 799143,
+          "unknown_effect_records": 3,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 1,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            5,
+            8,
+            17,
+            26
+          ],
+          "names": [
+            "Vállalati Társadalmi Felelősség Platform",
+            "Okos Gazdaság Alkalmazások",
+            "Pályaorientáció és Tehetséggondozás",
+            "Reptér elérhetőség javítása"
+          ],
+          "upfront": 69500,
+          "positive_annual_maintenance": 5000,
+          "signed_annual_maintenance": 5000,
+          "four_year_conservative_p2_p5_cost": 89500,
+          "four_year_signed_p2_p5_project_line": 89500,
+          "support_displayed_not_cash": 28500,
+          "conservative_incremental_p2_cash_requirement": 74500,
+          "signed_p2_project_line_increment": 74500,
+          "mapped_proxy_delta_p2": 0.341148,
+          "mapped_proxy_delta_half_effect": 0.170418,
+          "mapped_proxy_delta_onehalf_effect": 0.51219,
+          "scenario_min_mapped_proxy_delta": 0.170418,
+          "mapped_proxy_index_if_direct_effects_only": 60.862298,
+          "scenario_no_grant_reserve_after_conservative_increment": 793643,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            1,
+            8,
+            9,
+            28
+          ],
+          "names": [
+            "Szomszédsági Gazdaság Modell",
+            "Okos Gazdaság Alkalmazások",
+            "Közösségi Finanszírozási Rendszer",
+            "Új trolibuszútvonal"
+          ],
+          "upfront": 64000,
+          "positive_annual_maintenance": 6900,
+          "signed_annual_maintenance": 6900,
+          "four_year_conservative_p2_p5_cost": 91600,
+          "four_year_signed_p2_p5_project_line": 91600,
+          "support_displayed_not_cash": 18500,
+          "conservative_incremental_p2_cash_requirement": 70900,
+          "signed_p2_project_line_increment": 70900,
+          "mapped_proxy_delta_p2": 0.324813,
+          "mapped_proxy_delta_half_effect": 0.162196,
+          "mapped_proxy_delta_onehalf_effect": 0.487851,
+          "scenario_min_mapped_proxy_delta": 0.162196,
+          "mapped_proxy_index_if_direct_effects_only": 60.845963,
+          "scenario_no_grant_reserve_after_conservative_increment": 797243,
+          "unknown_effect_records": 3,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 1,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            1,
+            8,
+            17,
+            28
+          ],
+          "names": [
+            "Szomszédsági Gazdaság Modell",
+            "Okos Gazdaság Alkalmazások",
+            "Pályaorientáció és Tehetséggondozás",
+            "Új trolibuszútvonal"
+          ],
+          "upfront": 65500,
+          "positive_annual_maintenance": 5400,
+          "signed_annual_maintenance": 5400,
+          "four_year_conservative_p2_p5_cost": 87100,
+          "four_year_signed_p2_p5_project_line": 87100,
+          "support_displayed_not_cash": 16500,
+          "conservative_incremental_p2_cash_requirement": 70900,
+          "signed_p2_project_line_increment": 70900,
+          "mapped_proxy_delta_p2": 0.322457,
+          "mapped_proxy_delta_half_effect": 0.161084,
+          "mapped_proxy_delta_onehalf_effect": 0.48412,
+          "scenario_min_mapped_proxy_delta": 0.161084,
+          "mapped_proxy_index_if_direct_effects_only": 60.843607,
+          "scenario_no_grant_reserve_after_conservative_increment": 797243,
+          "unknown_effect_records": 4,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            5,
+            21,
+            26,
+            28
+          ],
+          "names": [
+            "Vállalati Társadalmi Felelősség Platform",
+            "Közlekedési Múzeum",
+            "Reptér elérhetőség javítása",
+            "Új trolibuszútvonal"
+          ],
+          "upfront": 73000,
+          "positive_annual_maintenance": 2000,
+          "signed_annual_maintenance": 2000,
+          "four_year_conservative_p2_p5_cost": 81000,
+          "four_year_signed_p2_p5_project_line": 81000,
+          "support_displayed_not_cash": 15000,
+          "conservative_incremental_p2_cash_requirement": 75000,
+          "signed_p2_project_line_increment": 75000,
+          "mapped_proxy_delta_p2": 0.317869,
+          "mapped_proxy_delta_half_effect": 0.158524,
+          "mapped_proxy_delta_onehalf_effect": 0.478037,
+          "scenario_min_mapped_proxy_delta": 0.158524,
+          "mapped_proxy_index_if_direct_effects_only": 60.839019,
+          "scenario_no_grant_reserve_after_conservative_increment": 793143,
+          "unknown_effect_records": 3,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 1,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            8,
+            9,
+            10,
+            28
+          ],
+          "names": [
+            "Okos Gazdaság Alkalmazások",
+            "Közösségi Finanszírozási Rendszer",
+            "Innovációs Alap",
+            "Új trolibuszútvonal"
+          ],
+          "upfront": 55500,
+          "positive_annual_maintenance": 18500,
+          "signed_annual_maintenance": 18500,
+          "four_year_conservative_p2_p5_cost": 129500,
+          "four_year_signed_p2_p5_project_line": 129500,
+          "support_displayed_not_cash": 25500,
+          "conservative_incremental_p2_cash_requirement": 74000,
+          "signed_p2_project_line_increment": 74000,
+          "mapped_proxy_delta_p2": 0.315482,
+          "mapped_proxy_delta_half_effect": 0.157457,
+          "mapped_proxy_delta_onehalf_effect": 0.474076,
+          "scenario_min_mapped_proxy_delta": 0.157457,
+          "mapped_proxy_index_if_direct_effects_only": 60.836632,
+          "scenario_no_grant_reserve_after_conservative_increment": 794143,
+          "unknown_effect_records": 4,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 1,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            8,
+            9,
+            21
+          ],
+          "names": [
+            "Okos Gazdaság Alkalmazások",
+            "Közösségi Finanszírozási Rendszer",
+            "Közlekedési Múzeum"
+          ],
+          "upfront": 70000,
+          "positive_annual_maintenance": 4500,
+          "signed_annual_maintenance": 4500,
+          "four_year_conservative_p2_p5_cost": 88000,
+          "four_year_signed_p2_p5_project_line": 88000,
+          "support_displayed_not_cash": 15500,
+          "conservative_incremental_p2_cash_requirement": 74500,
+          "signed_p2_project_line_increment": 74500,
+          "mapped_proxy_delta_p2": 0.314074,
+          "mapped_proxy_delta_half_effect": 0.15681,
+          "mapped_proxy_delta_onehalf_effect": 0.471792,
+          "scenario_min_mapped_proxy_delta": 0.15681,
+          "mapped_proxy_index_if_direct_effects_only": 60.835224,
+          "scenario_no_grant_reserve_after_conservative_increment": 793643,
+          "unknown_effect_records": 3,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 0,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        }
+      ],
+      "top_sensitivity_min": [
+        {
+          "ids": [
+            8,
+            9,
+            26,
+            28
+          ],
+          "names": [
+            "Okos Gazdaság Alkalmazások",
+            "Közösségi Finanszírozási Rendszer",
+            "Reptér elérhetőség javítása",
+            "Új trolibuszútvonal"
+          ],
+          "upfront": 68000,
+          "positive_annual_maintenance": 4500,
+          "signed_annual_maintenance": 4500,
+          "four_year_conservative_p2_p5_cost": 86000,
+          "four_year_signed_p2_p5_project_line": 86000,
+          "support_displayed_not_cash": 15500,
+          "conservative_incremental_p2_cash_requirement": 72500,
+          "signed_p2_project_line_increment": 72500,
+          "mapped_proxy_delta_p2": 0.357231,
+          "mapped_proxy_delta_half_effect": 0.17831,
+          "mapped_proxy_delta_onehalf_effect": 0.536763,
+          "scenario_min_mapped_proxy_delta": 0.17831,
+          "mapped_proxy_index_if_direct_effects_only": 60.878381,
+          "scenario_no_grant_reserve_after_conservative_increment": 795643,
+          "unknown_effect_records": 4,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 1,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            8,
+            17,
+            26,
+            28
+          ],
+          "names": [
+            "Okos Gazdaság Alkalmazások",
+            "Pályaorientáció és Tehetséggondozás",
+            "Reptér elérhetőség javítása",
+            "Új trolibuszútvonal"
+          ],
+          "upfront": 69500,
+          "positive_annual_maintenance": 3000,
+          "signed_annual_maintenance": 3000,
+          "four_year_conservative_p2_p5_cost": 81500,
+          "four_year_signed_p2_p5_project_line": 81500,
+          "support_displayed_not_cash": 13500,
+          "conservative_incremental_p2_cash_requirement": 72500,
+          "signed_p2_project_line_increment": 72500,
+          "mapped_proxy_delta_p2": 0.354811,
+          "mapped_proxy_delta_half_effect": 0.177182,
+          "mapped_proxy_delta_onehalf_effect": 0.532886,
+          "scenario_min_mapped_proxy_delta": 0.177182,
+          "mapped_proxy_index_if_direct_effects_only": 60.875961,
+          "scenario_no_grant_reserve_after_conservative_increment": 795643,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            5,
+            8,
+            9,
+            26
+          ],
+          "names": [
+            "Vállalati Társadalmi Felelősség Platform",
+            "Okos Gazdaság Alkalmazások",
+            "Közösségi Finanszírozási Rendszer",
+            "Reptér elérhetőség javítása"
+          ],
+          "upfront": 68000,
+          "positive_annual_maintenance": 6500,
+          "signed_annual_maintenance": 6500,
+          "four_year_conservative_p2_p5_cost": 94000,
+          "four_year_signed_p2_p5_project_line": 94000,
+          "support_displayed_not_cash": 30500,
+          "conservative_incremental_p2_cash_requirement": 74500,
+          "signed_p2_project_line_increment": 74500,
+          "mapped_proxy_delta_p2": 0.343565,
+          "mapped_proxy_delta_half_effect": 0.171545,
+          "mapped_proxy_delta_onehalf_effect": 0.516061,
+          "scenario_min_mapped_proxy_delta": 0.171545,
+          "mapped_proxy_index_if_direct_effects_only": 60.864715,
+          "scenario_no_grant_reserve_after_conservative_increment": 793643,
+          "unknown_effect_records": 4,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 1,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            5,
+            8,
+            26,
+            28
+          ],
+          "names": [
+            "Vállalati Társadalmi Felelősség Platform",
+            "Okos Gazdaság Alkalmazások",
+            "Reptér elérhetőség javítása",
+            "Új trolibuszútvonal"
+          ],
+          "upfront": 64000,
+          "positive_annual_maintenance": 5000,
+          "signed_annual_maintenance": 5000,
+          "four_year_conservative_p2_p5_cost": 84000,
+          "four_year_signed_p2_p5_project_line": 84000,
+          "support_displayed_not_cash": 18500,
+          "conservative_incremental_p2_cash_requirement": 69000,
+          "signed_p2_project_line_increment": 69000,
+          "mapped_proxy_delta_p2": 0.341515,
+          "mapped_proxy_delta_half_effect": 0.170532,
+          "mapped_proxy_delta_onehalf_effect": 0.512949,
+          "scenario_min_mapped_proxy_delta": 0.170532,
+          "mapped_proxy_index_if_direct_effects_only": 60.862665,
+          "scenario_no_grant_reserve_after_conservative_increment": 799143,
+          "unknown_effect_records": 3,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 1,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            5,
+            8,
+            17,
+            26
+          ],
+          "names": [
+            "Vállalati Társadalmi Felelősség Platform",
+            "Okos Gazdaság Alkalmazások",
+            "Pályaorientáció és Tehetséggondozás",
+            "Reptér elérhetőség javítása"
+          ],
+          "upfront": 69500,
+          "positive_annual_maintenance": 5000,
+          "signed_annual_maintenance": 5000,
+          "four_year_conservative_p2_p5_cost": 89500,
+          "four_year_signed_p2_p5_project_line": 89500,
+          "support_displayed_not_cash": 28500,
+          "conservative_incremental_p2_cash_requirement": 74500,
+          "signed_p2_project_line_increment": 74500,
+          "mapped_proxy_delta_p2": 0.341148,
+          "mapped_proxy_delta_half_effect": 0.170418,
+          "mapped_proxy_delta_onehalf_effect": 0.51219,
+          "scenario_min_mapped_proxy_delta": 0.170418,
+          "mapped_proxy_index_if_direct_effects_only": 60.862298,
+          "scenario_no_grant_reserve_after_conservative_increment": 793643,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            1,
+            8,
+            9,
+            28
+          ],
+          "names": [
+            "Szomszédsági Gazdaság Modell",
+            "Okos Gazdaság Alkalmazások",
+            "Közösségi Finanszírozási Rendszer",
+            "Új trolibuszútvonal"
+          ],
+          "upfront": 64000,
+          "positive_annual_maintenance": 6900,
+          "signed_annual_maintenance": 6900,
+          "four_year_conservative_p2_p5_cost": 91600,
+          "four_year_signed_p2_p5_project_line": 91600,
+          "support_displayed_not_cash": 18500,
+          "conservative_incremental_p2_cash_requirement": 70900,
+          "signed_p2_project_line_increment": 70900,
+          "mapped_proxy_delta_p2": 0.324813,
+          "mapped_proxy_delta_half_effect": 0.162196,
+          "mapped_proxy_delta_onehalf_effect": 0.487851,
+          "scenario_min_mapped_proxy_delta": 0.162196,
+          "mapped_proxy_index_if_direct_effects_only": 60.845963,
+          "scenario_no_grant_reserve_after_conservative_increment": 797243,
+          "unknown_effect_records": 3,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 1,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            1,
+            8,
+            17,
+            28
+          ],
+          "names": [
+            "Szomszédsági Gazdaság Modell",
+            "Okos Gazdaság Alkalmazások",
+            "Pályaorientáció és Tehetséggondozás",
+            "Új trolibuszútvonal"
+          ],
+          "upfront": 65500,
+          "positive_annual_maintenance": 5400,
+          "signed_annual_maintenance": 5400,
+          "four_year_conservative_p2_p5_cost": 87100,
+          "four_year_signed_p2_p5_project_line": 87100,
+          "support_displayed_not_cash": 16500,
+          "conservative_incremental_p2_cash_requirement": 70900,
+          "signed_p2_project_line_increment": 70900,
+          "mapped_proxy_delta_p2": 0.322457,
+          "mapped_proxy_delta_half_effect": 0.161084,
+          "mapped_proxy_delta_onehalf_effect": 0.48412,
+          "scenario_min_mapped_proxy_delta": 0.161084,
+          "mapped_proxy_index_if_direct_effects_only": 60.843607,
+          "scenario_no_grant_reserve_after_conservative_increment": 797243,
+          "unknown_effect_records": 4,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            5,
+            21,
+            26,
+            28
+          ],
+          "names": [
+            "Vállalati Társadalmi Felelősség Platform",
+            "Közlekedési Múzeum",
+            "Reptér elérhetőség javítása",
+            "Új trolibuszútvonal"
+          ],
+          "upfront": 73000,
+          "positive_annual_maintenance": 2000,
+          "signed_annual_maintenance": 2000,
+          "four_year_conservative_p2_p5_cost": 81000,
+          "four_year_signed_p2_p5_project_line": 81000,
+          "support_displayed_not_cash": 15000,
+          "conservative_incremental_p2_cash_requirement": 75000,
+          "signed_p2_project_line_increment": 75000,
+          "mapped_proxy_delta_p2": 0.317869,
+          "mapped_proxy_delta_half_effect": 0.158524,
+          "mapped_proxy_delta_onehalf_effect": 0.478037,
+          "scenario_min_mapped_proxy_delta": 0.158524,
+          "mapped_proxy_index_if_direct_effects_only": 60.839019,
+          "scenario_no_grant_reserve_after_conservative_increment": 793143,
+          "unknown_effect_records": 3,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 1,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            8,
+            9,
+            10,
+            28
+          ],
+          "names": [
+            "Okos Gazdaság Alkalmazások",
+            "Közösségi Finanszírozási Rendszer",
+            "Innovációs Alap",
+            "Új trolibuszútvonal"
+          ],
+          "upfront": 55500,
+          "positive_annual_maintenance": 18500,
+          "signed_annual_maintenance": 18500,
+          "four_year_conservative_p2_p5_cost": 129500,
+          "four_year_signed_p2_p5_project_line": 129500,
+          "support_displayed_not_cash": 25500,
+          "conservative_incremental_p2_cash_requirement": 74000,
+          "signed_p2_project_line_increment": 74000,
+          "mapped_proxy_delta_p2": 0.315482,
+          "mapped_proxy_delta_half_effect": 0.157457,
+          "mapped_proxy_delta_onehalf_effect": 0.474076,
+          "scenario_min_mapped_proxy_delta": 0.157457,
+          "mapped_proxy_index_if_direct_effects_only": 60.836632,
+          "scenario_no_grant_reserve_after_conservative_increment": 794143,
+          "unknown_effect_records": 4,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 1,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            8,
+            9,
+            21
+          ],
+          "names": [
+            "Okos Gazdaság Alkalmazások",
+            "Közösségi Finanszírozási Rendszer",
+            "Közlekedési Múzeum"
+          ],
+          "upfront": 70000,
+          "positive_annual_maintenance": 4500,
+          "signed_annual_maintenance": 4500,
+          "four_year_conservative_p2_p5_cost": 88000,
+          "four_year_signed_p2_p5_project_line": 88000,
+          "support_displayed_not_cash": 15500,
+          "conservative_incremental_p2_cash_requirement": 74500,
+          "signed_p2_project_line_increment": 74500,
+          "mapped_proxy_delta_p2": 0.314074,
+          "mapped_proxy_delta_half_effect": 0.15681,
+          "mapped_proxy_delta_onehalf_effect": 0.471792,
+          "scenario_min_mapped_proxy_delta": 0.15681,
+          "mapped_proxy_index_if_direct_effects_only": 60.835224,
+          "scenario_no_grant_reserve_after_conservative_increment": 793643,
+          "unknown_effect_records": 3,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 0,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        }
+      ]
+    },
+    "150000": {
+      "feasible_combo_count": 5610,
+      "top_nominal": [
+        {
+          "ids": [
+            4,
+            8,
+            16,
+            21
+          ],
+          "names": [
+            "Körforgásos gazdaság mintaprojekt",
+            "Okos Gazdaság Alkalmazások",
+            "Nyitott Alkotó és Innovációs Terek",
+            "Közlekedési Múzeum"
+          ],
+          "upfront": 141000,
+          "positive_annual_maintenance": 9000,
+          "signed_annual_maintenance": 9000,
+          "four_year_conservative_p2_p5_cost": 177000,
+          "four_year_signed_p2_p5_project_line": 177000,
+          "support_displayed_not_cash": 27500,
+          "conservative_incremental_p2_cash_requirement": 150000,
+          "signed_p2_project_line_increment": 150000,
+          "mapped_proxy_delta_p2": 0.515849,
+          "mapped_proxy_delta_half_effect": 0.257359,
+          "mapped_proxy_delta_onehalf_effect": 0.775473,
+          "scenario_min_mapped_proxy_delta": 0.257359,
+          "mapped_proxy_index_if_direct_effects_only": 61.036999,
+          "scenario_no_grant_reserve_after_conservative_increment": 718143,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            4,
+            8,
+            16,
+            26
+          ],
+          "names": [
+            "Körforgásos gazdaság mintaprojekt",
+            "Okos Gazdaság Alkalmazások",
+            "Nyitott Alkotó és Innovációs Terek",
+            "Reptér elérhetőség javítása"
+          ],
+          "upfront": 134000,
+          "positive_annual_maintenance": 9000,
+          "signed_annual_maintenance": 9000,
+          "four_year_conservative_p2_p5_cost": 170000,
+          "four_year_signed_p2_p5_project_line": 170000,
+          "support_displayed_not_cash": 27500,
+          "conservative_incremental_p2_cash_requirement": 143000,
+          "signed_p2_project_line_increment": 143000,
+          "mapped_proxy_delta_p2": 0.50698,
+          "mapped_proxy_delta_half_effect": 0.253089,
+          "mapped_proxy_delta_onehalf_effect": 0.761675,
+          "scenario_min_mapped_proxy_delta": 0.253089,
+          "mapped_proxy_index_if_direct_effects_only": 61.02813,
+          "scenario_no_grant_reserve_after_conservative_increment": 725143,
+          "unknown_effect_records": 6,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 3,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            4,
+            8,
+            21,
+            26
+          ],
+          "names": [
+            "Körforgásos gazdaság mintaprojekt",
+            "Okos Gazdaság Alkalmazások",
+            "Közlekedési Múzeum",
+            "Reptér elérhetőség javítása"
+          ],
+          "upfront": 130000,
+          "positive_annual_maintenance": 5000,
+          "signed_annual_maintenance": 5000,
+          "four_year_conservative_p2_p5_cost": 150000,
+          "four_year_signed_p2_p5_project_line": 150000,
+          "support_displayed_not_cash": 17500,
+          "conservative_incremental_p2_cash_requirement": 135000,
+          "signed_p2_project_line_increment": 135000,
+          "mapped_proxy_delta_p2": 0.505905,
+          "mapped_proxy_delta_half_effect": 0.252622,
+          "mapped_proxy_delta_onehalf_effect": 0.759851,
+          "scenario_min_mapped_proxy_delta": 0.252622,
+          "mapped_proxy_index_if_direct_effects_only": 61.027055,
+          "scenario_no_grant_reserve_after_conservative_increment": 733143,
+          "unknown_effect_records": 6,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            8,
+            16,
+            21,
+            26
+          ],
+          "names": [
+            "Okos Gazdaság Alkalmazások",
+            "Nyitott Alkotó és Innovációs Terek",
+            "Közlekedési Múzeum",
+            "Reptér elérhetőség javítása"
+          ],
+          "upfront": 128000,
+          "positive_annual_maintenance": 7000,
+          "signed_annual_maintenance": 7000,
+          "four_year_conservative_p2_p5_cost": 156000,
+          "four_year_signed_p2_p5_project_line": 156000,
+          "support_displayed_not_cash": 13500,
+          "conservative_incremental_p2_cash_requirement": 135000,
+          "signed_p2_project_line_increment": 135000,
+          "mapped_proxy_delta_p2": 0.490937,
+          "mapped_proxy_delta_half_effect": 0.244837,
+          "mapped_proxy_delta_onehalf_effect": 0.738304,
+          "scenario_min_mapped_proxy_delta": 0.244837,
+          "mapped_proxy_index_if_direct_effects_only": 61.012087,
+          "scenario_no_grant_reserve_after_conservative_increment": 733143,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            4,
+            16,
+            21,
+            26
+          ],
+          "names": [
+            "Körforgásos gazdaság mintaprojekt",
+            "Nyitott Alkotó és Innovációs Terek",
+            "Közlekedési Múzeum",
+            "Reptér elérhetőség javítása"
+          ],
+          "upfront": 143000,
+          "positive_annual_maintenance": 6000,
+          "signed_annual_maintenance": 6000,
+          "four_year_conservative_p2_p5_cost": 167000,
+          "four_year_signed_p2_p5_project_line": 167000,
+          "support_displayed_not_cash": 24000,
+          "conservative_incremental_p2_cash_requirement": 149000,
+          "signed_p2_project_line_increment": 149000,
+          "mapped_proxy_delta_p2": 0.482801,
+          "mapped_proxy_delta_half_effect": 0.240948,
+          "mapped_proxy_delta_onehalf_effect": 0.725561,
+          "scenario_min_mapped_proxy_delta": 0.240948,
+          "mapped_proxy_index_if_direct_effects_only": 61.003951,
+          "scenario_no_grant_reserve_after_conservative_increment": 719143,
+          "unknown_effect_records": 6,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 3,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            1,
+            4,
+            8,
+            16
+          ],
+          "names": [
+            "Szomszédsági Gazdaság Modell",
+            "Körforgásos gazdaság mintaprojekt",
+            "Okos Gazdaság Alkalmazások",
+            "Nyitott Alkotó és Innovációs Terek"
+          ],
+          "upfront": 130000,
+          "positive_annual_maintenance": 11400,
+          "signed_annual_maintenance": 11400,
+          "four_year_conservative_p2_p5_cost": 175600,
+          "four_year_signed_p2_p5_project_line": 175600,
+          "support_displayed_not_cash": 30500,
+          "conservative_incremental_p2_cash_requirement": 141400,
+          "signed_p2_project_line_increment": 141400,
+          "mapped_proxy_delta_p2": 0.47602,
+          "mapped_proxy_delta_half_effect": 0.237339,
+          "mapped_proxy_delta_onehalf_effect": 0.716049,
+          "scenario_min_mapped_proxy_delta": 0.237339,
+          "mapped_proxy_index_if_direct_effects_only": 60.99717,
+          "scenario_no_grant_reserve_after_conservative_increment": 726743,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 3,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            1,
+            4,
+            8,
+            21
+          ],
+          "names": [
+            "Szomszédsági Gazdaság Modell",
+            "Körforgásos gazdaság mintaprojekt",
+            "Okos Gazdaság Alkalmazások",
+            "Közlekedési Múzeum"
+          ],
+          "upfront": 126000,
+          "positive_annual_maintenance": 7400,
+          "signed_annual_maintenance": 7400,
+          "four_year_conservative_p2_p5_cost": 155600,
+          "four_year_signed_p2_p5_project_line": 155600,
+          "support_displayed_not_cash": 20500,
+          "conservative_incremental_p2_cash_requirement": 133400,
+          "signed_p2_project_line_increment": 133400,
+          "mapped_proxy_delta_p2": 0.474171,
+          "mapped_proxy_delta_half_effect": 0.236678,
+          "mapped_proxy_delta_onehalf_effect": 0.712479,
+          "scenario_min_mapped_proxy_delta": 0.236678,
+          "mapped_proxy_index_if_direct_effects_only": 60.995321,
+          "scenario_no_grant_reserve_after_conservative_increment": 734743,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            4,
+            7,
+            8,
+            16
+          ],
+          "names": [
+            "Körforgásos gazdaság mintaprojekt",
+            "HGF Innovációs Tudásközpont",
+            "Okos Gazdaság Alkalmazások",
+            "Nyitott Alkotó és Innovációs Terek"
+          ],
+          "upfront": 127000,
+          "positive_annual_maintenance": 21000,
+          "signed_annual_maintenance": 21000,
+          "four_year_conservative_p2_p5_cost": 211000,
+          "four_year_signed_p2_p5_project_line": 211000,
+          "support_displayed_not_cash": 35500,
+          "conservative_incremental_p2_cash_requirement": 148000,
+          "signed_p2_project_line_increment": 148000,
+          "mapped_proxy_delta_p2": 0.474156,
+          "mapped_proxy_delta_half_effect": 0.236354,
+          "mapped_proxy_delta_onehalf_effect": 0.713411,
+          "scenario_min_mapped_proxy_delta": 0.236354,
+          "mapped_proxy_index_if_direct_effects_only": 60.995306,
+          "scenario_no_grant_reserve_after_conservative_increment": 720143,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            4,
+            7,
+            8,
+            21
+          ],
+          "names": [
+            "Körforgásos gazdaság mintaprojekt",
+            "HGF Innovációs Tudásközpont",
+            "Okos Gazdaság Alkalmazások",
+            "Közlekedési Múzeum"
+          ],
+          "upfront": 123000,
+          "positive_annual_maintenance": 17000,
+          "signed_annual_maintenance": 17000,
+          "four_year_conservative_p2_p5_cost": 191000,
+          "four_year_signed_p2_p5_project_line": 191000,
+          "support_displayed_not_cash": 25500,
+          "conservative_incremental_p2_cash_requirement": 140000,
+          "signed_p2_project_line_increment": 140000,
+          "mapped_proxy_delta_p2": 0.472051,
+          "mapped_proxy_delta_half_effect": 0.235631,
+          "mapped_proxy_delta_onehalf_effect": 0.709263,
+          "scenario_min_mapped_proxy_delta": 0.235631,
+          "mapped_proxy_index_if_direct_effects_only": 60.993201,
+          "scenario_no_grant_reserve_after_conservative_increment": 728143,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 1,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            4,
+            8,
+            10,
+            16
+          ],
+          "names": [
+            "Körforgásos gazdaság mintaprojekt",
+            "Okos Gazdaság Alkalmazások",
+            "Innovációs Alap",
+            "Nyitott Alkotó és Innovációs Terek"
+          ],
+          "upfront": 121500,
+          "positive_annual_maintenance": 23000,
+          "signed_annual_maintenance": 23000,
+          "four_year_conservative_p2_p5_cost": 213500,
+          "four_year_signed_p2_p5_project_line": 213500,
+          "support_displayed_not_cash": 37500,
+          "conservative_incremental_p2_cash_requirement": 144500,
+          "signed_p2_project_line_increment": 144500,
+          "mapped_proxy_delta_p2": 0.466371,
+          "mapped_proxy_delta_half_effect": 0.23252,
+          "mapped_proxy_delta_onehalf_effect": 0.701557,
+          "scenario_min_mapped_proxy_delta": 0.23252,
+          "mapped_proxy_index_if_direct_effects_only": 60.987521,
+          "scenario_no_grant_reserve_after_conservative_increment": 723643,
+          "unknown_effect_records": 6,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 3,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        }
+      ],
+      "top_sensitivity_min": [
+        {
+          "ids": [
+            4,
+            8,
+            16,
+            21
+          ],
+          "names": [
+            "Körforgásos gazdaság mintaprojekt",
+            "Okos Gazdaság Alkalmazások",
+            "Nyitott Alkotó és Innovációs Terek",
+            "Közlekedési Múzeum"
+          ],
+          "upfront": 141000,
+          "positive_annual_maintenance": 9000,
+          "signed_annual_maintenance": 9000,
+          "four_year_conservative_p2_p5_cost": 177000,
+          "four_year_signed_p2_p5_project_line": 177000,
+          "support_displayed_not_cash": 27500,
+          "conservative_incremental_p2_cash_requirement": 150000,
+          "signed_p2_project_line_increment": 150000,
+          "mapped_proxy_delta_p2": 0.515849,
+          "mapped_proxy_delta_half_effect": 0.257359,
+          "mapped_proxy_delta_onehalf_effect": 0.775473,
+          "scenario_min_mapped_proxy_delta": 0.257359,
+          "mapped_proxy_index_if_direct_effects_only": 61.036999,
+          "scenario_no_grant_reserve_after_conservative_increment": 718143,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            4,
+            8,
+            16,
+            26
+          ],
+          "names": [
+            "Körforgásos gazdaság mintaprojekt",
+            "Okos Gazdaság Alkalmazások",
+            "Nyitott Alkotó és Innovációs Terek",
+            "Reptér elérhetőség javítása"
+          ],
+          "upfront": 134000,
+          "positive_annual_maintenance": 9000,
+          "signed_annual_maintenance": 9000,
+          "four_year_conservative_p2_p5_cost": 170000,
+          "four_year_signed_p2_p5_project_line": 170000,
+          "support_displayed_not_cash": 27500,
+          "conservative_incremental_p2_cash_requirement": 143000,
+          "signed_p2_project_line_increment": 143000,
+          "mapped_proxy_delta_p2": 0.50698,
+          "mapped_proxy_delta_half_effect": 0.253089,
+          "mapped_proxy_delta_onehalf_effect": 0.761675,
+          "scenario_min_mapped_proxy_delta": 0.253089,
+          "mapped_proxy_index_if_direct_effects_only": 61.02813,
+          "scenario_no_grant_reserve_after_conservative_increment": 725143,
+          "unknown_effect_records": 6,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 3,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            4,
+            8,
+            21,
+            26
+          ],
+          "names": [
+            "Körforgásos gazdaság mintaprojekt",
+            "Okos Gazdaság Alkalmazások",
+            "Közlekedési Múzeum",
+            "Reptér elérhetőség javítása"
+          ],
+          "upfront": 130000,
+          "positive_annual_maintenance": 5000,
+          "signed_annual_maintenance": 5000,
+          "four_year_conservative_p2_p5_cost": 150000,
+          "four_year_signed_p2_p5_project_line": 150000,
+          "support_displayed_not_cash": 17500,
+          "conservative_incremental_p2_cash_requirement": 135000,
+          "signed_p2_project_line_increment": 135000,
+          "mapped_proxy_delta_p2": 0.505905,
+          "mapped_proxy_delta_half_effect": 0.252622,
+          "mapped_proxy_delta_onehalf_effect": 0.759851,
+          "scenario_min_mapped_proxy_delta": 0.252622,
+          "mapped_proxy_index_if_direct_effects_only": 61.027055,
+          "scenario_no_grant_reserve_after_conservative_increment": 733143,
+          "unknown_effect_records": 6,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            8,
+            16,
+            21,
+            26
+          ],
+          "names": [
+            "Okos Gazdaság Alkalmazások",
+            "Nyitott Alkotó és Innovációs Terek",
+            "Közlekedési Múzeum",
+            "Reptér elérhetőség javítása"
+          ],
+          "upfront": 128000,
+          "positive_annual_maintenance": 7000,
+          "signed_annual_maintenance": 7000,
+          "four_year_conservative_p2_p5_cost": 156000,
+          "four_year_signed_p2_p5_project_line": 156000,
+          "support_displayed_not_cash": 13500,
+          "conservative_incremental_p2_cash_requirement": 135000,
+          "signed_p2_project_line_increment": 135000,
+          "mapped_proxy_delta_p2": 0.490937,
+          "mapped_proxy_delta_half_effect": 0.244837,
+          "mapped_proxy_delta_onehalf_effect": 0.738304,
+          "scenario_min_mapped_proxy_delta": 0.244837,
+          "mapped_proxy_index_if_direct_effects_only": 61.012087,
+          "scenario_no_grant_reserve_after_conservative_increment": 733143,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            4,
+            16,
+            21,
+            26
+          ],
+          "names": [
+            "Körforgásos gazdaság mintaprojekt",
+            "Nyitott Alkotó és Innovációs Terek",
+            "Közlekedési Múzeum",
+            "Reptér elérhetőség javítása"
+          ],
+          "upfront": 143000,
+          "positive_annual_maintenance": 6000,
+          "signed_annual_maintenance": 6000,
+          "four_year_conservative_p2_p5_cost": 167000,
+          "four_year_signed_p2_p5_project_line": 167000,
+          "support_displayed_not_cash": 24000,
+          "conservative_incremental_p2_cash_requirement": 149000,
+          "signed_p2_project_line_increment": 149000,
+          "mapped_proxy_delta_p2": 0.482801,
+          "mapped_proxy_delta_half_effect": 0.240948,
+          "mapped_proxy_delta_onehalf_effect": 0.725561,
+          "scenario_min_mapped_proxy_delta": 0.240948,
+          "mapped_proxy_index_if_direct_effects_only": 61.003951,
+          "scenario_no_grant_reserve_after_conservative_increment": 719143,
+          "unknown_effect_records": 6,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 3,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            1,
+            4,
+            8,
+            16
+          ],
+          "names": [
+            "Szomszédsági Gazdaság Modell",
+            "Körforgásos gazdaság mintaprojekt",
+            "Okos Gazdaság Alkalmazások",
+            "Nyitott Alkotó és Innovációs Terek"
+          ],
+          "upfront": 130000,
+          "positive_annual_maintenance": 11400,
+          "signed_annual_maintenance": 11400,
+          "four_year_conservative_p2_p5_cost": 175600,
+          "four_year_signed_p2_p5_project_line": 175600,
+          "support_displayed_not_cash": 30500,
+          "conservative_incremental_p2_cash_requirement": 141400,
+          "signed_p2_project_line_increment": 141400,
+          "mapped_proxy_delta_p2": 0.47602,
+          "mapped_proxy_delta_half_effect": 0.237339,
+          "mapped_proxy_delta_onehalf_effect": 0.716049,
+          "scenario_min_mapped_proxy_delta": 0.237339,
+          "mapped_proxy_index_if_direct_effects_only": 60.99717,
+          "scenario_no_grant_reserve_after_conservative_increment": 726743,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 3,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            1,
+            4,
+            8,
+            21
+          ],
+          "names": [
+            "Szomszédsági Gazdaság Modell",
+            "Körforgásos gazdaság mintaprojekt",
+            "Okos Gazdaság Alkalmazások",
+            "Közlekedési Múzeum"
+          ],
+          "upfront": 126000,
+          "positive_annual_maintenance": 7400,
+          "signed_annual_maintenance": 7400,
+          "four_year_conservative_p2_p5_cost": 155600,
+          "four_year_signed_p2_p5_project_line": 155600,
+          "support_displayed_not_cash": 20500,
+          "conservative_incremental_p2_cash_requirement": 133400,
+          "signed_p2_project_line_increment": 133400,
+          "mapped_proxy_delta_p2": 0.474171,
+          "mapped_proxy_delta_half_effect": 0.236678,
+          "mapped_proxy_delta_onehalf_effect": 0.712479,
+          "scenario_min_mapped_proxy_delta": 0.236678,
+          "mapped_proxy_index_if_direct_effects_only": 60.995321,
+          "scenario_no_grant_reserve_after_conservative_increment": 734743,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            4,
+            7,
+            8,
+            16
+          ],
+          "names": [
+            "Körforgásos gazdaság mintaprojekt",
+            "HGF Innovációs Tudásközpont",
+            "Okos Gazdaság Alkalmazások",
+            "Nyitott Alkotó és Innovációs Terek"
+          ],
+          "upfront": 127000,
+          "positive_annual_maintenance": 21000,
+          "signed_annual_maintenance": 21000,
+          "four_year_conservative_p2_p5_cost": 211000,
+          "four_year_signed_p2_p5_project_line": 211000,
+          "support_displayed_not_cash": 35500,
+          "conservative_incremental_p2_cash_requirement": 148000,
+          "signed_p2_project_line_increment": 148000,
+          "mapped_proxy_delta_p2": 0.474156,
+          "mapped_proxy_delta_half_effect": 0.236354,
+          "mapped_proxy_delta_onehalf_effect": 0.713411,
+          "scenario_min_mapped_proxy_delta": 0.236354,
+          "mapped_proxy_index_if_direct_effects_only": 60.995306,
+          "scenario_no_grant_reserve_after_conservative_increment": 720143,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            4,
+            7,
+            8,
+            21
+          ],
+          "names": [
+            "Körforgásos gazdaság mintaprojekt",
+            "HGF Innovációs Tudásközpont",
+            "Okos Gazdaság Alkalmazások",
+            "Közlekedési Múzeum"
+          ],
+          "upfront": 123000,
+          "positive_annual_maintenance": 17000,
+          "signed_annual_maintenance": 17000,
+          "four_year_conservative_p2_p5_cost": 191000,
+          "four_year_signed_p2_p5_project_line": 191000,
+          "support_displayed_not_cash": 25500,
+          "conservative_incremental_p2_cash_requirement": 140000,
+          "signed_p2_project_line_increment": 140000,
+          "mapped_proxy_delta_p2": 0.472051,
+          "mapped_proxy_delta_half_effect": 0.235631,
+          "mapped_proxy_delta_onehalf_effect": 0.709263,
+          "scenario_min_mapped_proxy_delta": 0.235631,
+          "mapped_proxy_index_if_direct_effects_only": 60.993201,
+          "scenario_no_grant_reserve_after_conservative_increment": 728143,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 1,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            4,
+            8,
+            10,
+            16
+          ],
+          "names": [
+            "Körforgásos gazdaság mintaprojekt",
+            "Okos Gazdaság Alkalmazások",
+            "Innovációs Alap",
+            "Nyitott Alkotó és Innovációs Terek"
+          ],
+          "upfront": 121500,
+          "positive_annual_maintenance": 23000,
+          "signed_annual_maintenance": 23000,
+          "four_year_conservative_p2_p5_cost": 213500,
+          "four_year_signed_p2_p5_project_line": 213500,
+          "support_displayed_not_cash": 37500,
+          "conservative_incremental_p2_cash_requirement": 144500,
+          "signed_p2_project_line_increment": 144500,
+          "mapped_proxy_delta_p2": 0.466371,
+          "mapped_proxy_delta_half_effect": 0.23252,
+          "mapped_proxy_delta_onehalf_effect": 0.701557,
+          "scenario_min_mapped_proxy_delta": 0.23252,
+          "mapped_proxy_index_if_direct_effects_only": 60.987521,
+          "scenario_no_grant_reserve_after_conservative_increment": 723643,
+          "unknown_effect_records": 6,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 3,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        }
+      ]
+    },
+    "300000": {
+      "feasible_combo_count": 9900,
+      "top_nominal": [
+        {
+          "ids": [
+            8,
+            21,
+            26,
+            33
+          ],
+          "names": [
+            "Okos Gazdaság Alkalmazások",
+            "Közlekedési Múzeum",
+            "Reptér elérhetőség javítása",
+            "A Népliget megújítása"
+          ],
+          "upfront": 287000,
+          "positive_annual_maintenance": 6000,
+          "signed_annual_maintenance": 6000,
+          "four_year_conservative_p2_p5_cost": 311000,
+          "four_year_signed_p2_p5_project_line": 311000,
+          "support_displayed_not_cash": 8500,
+          "conservative_incremental_p2_cash_requirement": 293000,
+          "signed_p2_project_line_increment": 293000,
+          "mapped_proxy_delta_p2": 0.586072,
+          "mapped_proxy_delta_half_effect": 0.29215,
+          "mapped_proxy_delta_onehalf_effect": 0.88177,
+          "scenario_min_mapped_proxy_delta": 0.29215,
+          "mapped_proxy_index_if_direct_effects_only": 61.107222,
+          "scenario_no_grant_reserve_after_conservative_increment": 575143,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 1,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            1,
+            4,
+            8,
+            33
+          ],
+          "names": [
+            "Szomszédsági Gazdaság Modell",
+            "Körforgásos gazdaság mintaprojekt",
+            "Okos Gazdaság Alkalmazások",
+            "A Népliget megújítása"
+          ],
+          "upfront": 289000,
+          "positive_annual_maintenance": 10400,
+          "signed_annual_maintenance": 10400,
+          "four_year_conservative_p2_p5_cost": 330600,
+          "four_year_signed_p2_p5_project_line": 330600,
+          "support_displayed_not_cash": 25500,
+          "conservative_incremental_p2_cash_requirement": 299400,
+          "signed_p2_project_line_increment": 299400,
+          "mapped_proxy_delta_p2": 0.569139,
+          "mapped_proxy_delta_half_effect": 0.284149,
+          "mapped_proxy_delta_onehalf_effect": 0.854974,
+          "scenario_min_mapped_proxy_delta": 0.284149,
+          "mapped_proxy_index_if_direct_effects_only": 61.090289,
+          "scenario_no_grant_reserve_after_conservative_increment": 568743,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            1,
+            8,
+            16,
+            33
+          ],
+          "names": [
+            "Szomszédsági Gazdaság Modell",
+            "Okos Gazdaság Alkalmazások",
+            "Nyitott Alkotó és Innovációs Terek",
+            "A Népliget megújítása"
+          ],
+          "upfront": 287000,
+          "positive_annual_maintenance": 12400,
+          "signed_annual_maintenance": 12400,
+          "four_year_conservative_p2_p5_cost": 336600,
+          "four_year_signed_p2_p5_project_line": 336600,
+          "support_displayed_not_cash": 21500,
+          "conservative_incremental_p2_cash_requirement": 299400,
+          "signed_p2_project_line_increment": 299400,
+          "mapped_proxy_delta_p2": 0.553406,
+          "mapped_proxy_delta_half_effect": 0.276172,
+          "mapped_proxy_delta_onehalf_effect": 0.831701,
+          "scenario_min_mapped_proxy_delta": 0.276172,
+          "mapped_proxy_index_if_direct_effects_only": 61.074556,
+          "scenario_no_grant_reserve_after_conservative_increment": 568743,
+          "unknown_effect_records": 4,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            1,
+            8,
+            21,
+            33
+          ],
+          "names": [
+            "Szomszédsági Gazdaság Modell",
+            "Okos Gazdaság Alkalmazások",
+            "Közlekedési Múzeum",
+            "A Népliget megújítása"
+          ],
+          "upfront": 283000,
+          "positive_annual_maintenance": 8400,
+          "signed_annual_maintenance": 8400,
+          "four_year_conservative_p2_p5_cost": 316600,
+          "four_year_signed_p2_p5_project_line": 316600,
+          "support_displayed_not_cash": 11500,
+          "conservative_incremental_p2_cash_requirement": 291400,
+          "signed_p2_project_line_increment": 291400,
+          "mapped_proxy_delta_p2": 0.55333,
+          "mapped_proxy_delta_half_effect": 0.275955,
+          "mapped_proxy_delta_onehalf_effect": 0.832127,
+          "scenario_min_mapped_proxy_delta": 0.275955,
+          "mapped_proxy_index_if_direct_effects_only": 61.07448,
+          "scenario_no_grant_reserve_after_conservative_increment": 576743,
+          "unknown_effect_records": 4,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 1,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            7,
+            8,
+            21,
+            33
+          ],
+          "names": [
+            "HGF Innovációs Tudásközpont",
+            "Okos Gazdaság Alkalmazások",
+            "Közlekedési Múzeum",
+            "A Népliget megújítása"
+          ],
+          "upfront": 280000,
+          "positive_annual_maintenance": 18000,
+          "signed_annual_maintenance": 18000,
+          "four_year_conservative_p2_p5_cost": 352000,
+          "four_year_signed_p2_p5_project_line": 352000,
+          "support_displayed_not_cash": 16500,
+          "conservative_incremental_p2_cash_requirement": 298000,
+          "signed_p2_project_line_increment": 298000,
+          "mapped_proxy_delta_p2": 0.551405,
+          "mapped_proxy_delta_half_effect": 0.274956,
+          "mapped_proxy_delta_onehalf_effect": 0.829348,
+          "scenario_min_mapped_proxy_delta": 0.274956,
+          "mapped_proxy_index_if_direct_effects_only": 61.072555,
+          "scenario_no_grant_reserve_after_conservative_increment": 570143,
+          "unknown_effect_records": 4,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 0,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            4,
+            8,
+            20,
+            33
+          ],
+          "names": [
+            "Körforgásos gazdaság mintaprojekt",
+            "Okos Gazdaság Alkalmazások",
+            "Képzési együttműködések koordinációja",
+            "A Népliget megújítása"
+          ],
+          "upfront": 281000,
+          "positive_annual_maintenance": 11000,
+          "signed_annual_maintenance": 11000,
+          "four_year_conservative_p2_p5_cost": 325000,
+          "four_year_signed_p2_p5_project_line": 325000,
+          "support_displayed_not_cash": 24000,
+          "conservative_incremental_p2_cash_requirement": 292000,
+          "signed_p2_project_line_increment": 292000,
+          "mapped_proxy_delta_p2": 0.547488,
+          "mapped_proxy_delta_half_effect": 0.273546,
+          "mapped_proxy_delta_onehalf_effect": 0.821826,
+          "scenario_min_mapped_proxy_delta": 0.273546,
+          "mapped_proxy_index_if_direct_effects_only": 61.068638,
+          "scenario_no_grant_reserve_after_conservative_increment": 576143,
+          "unknown_effect_records": 4,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            4,
+            8,
+            9,
+            33
+          ],
+          "names": [
+            "Körforgásos gazdaság mintaprojekt",
+            "Okos Gazdaság Alkalmazások",
+            "Közösségi Finanszírozási Rendszer",
+            "A Népliget megújítása"
+          ],
+          "upfront": 274000,
+          "positive_annual_maintenance": 9500,
+          "signed_annual_maintenance": 9500,
+          "four_year_conservative_p2_p5_cost": 312000,
+          "four_year_signed_p2_p5_project_line": 312000,
+          "support_displayed_not_cash": 34500,
+          "conservative_incremental_p2_cash_requirement": 283500,
+          "signed_p2_project_line_increment": 283500,
+          "mapped_proxy_delta_p2": 0.544189,
+          "mapped_proxy_delta_half_effect": 0.271774,
+          "mapped_proxy_delta_onehalf_effect": 0.817248,
+          "scenario_min_mapped_proxy_delta": 0.271774,
+          "mapped_proxy_index_if_direct_effects_only": 61.065339,
+          "scenario_no_grant_reserve_after_conservative_increment": 584643,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 1,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            1,
+            8,
+            26,
+            33
+          ],
+          "names": [
+            "Szomszédsági Gazdaság Modell",
+            "Okos Gazdaság Alkalmazások",
+            "Reptér elérhetőség javítása",
+            "A Népliget megújítása"
+          ],
+          "upfront": 276000,
+          "positive_annual_maintenance": 8400,
+          "signed_annual_maintenance": 8400,
+          "four_year_conservative_p2_p5_cost": 309600,
+          "four_year_signed_p2_p5_project_line": 309600,
+          "support_displayed_not_cash": 11500,
+          "conservative_incremental_p2_cash_requirement": 284400,
+          "signed_p2_project_line_increment": 284400,
+          "mapped_proxy_delta_p2": 0.543597,
+          "mapped_proxy_delta_half_effect": 0.271469,
+          "mapped_proxy_delta_onehalf_effect": 0.816387,
+          "scenario_min_mapped_proxy_delta": 0.271469,
+          "mapped_proxy_index_if_direct_effects_only": 61.064747,
+          "scenario_no_grant_reserve_after_conservative_increment": 583743,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            8,
+            10,
+            21,
+            33
+          ],
+          "names": [
+            "Okos Gazdaság Alkalmazások",
+            "Innovációs Alap",
+            "Közlekedési Múzeum",
+            "A Népliget megújítása"
+          ],
+          "upfront": 274500,
+          "positive_annual_maintenance": 20000,
+          "signed_annual_maintenance": 20000,
+          "four_year_conservative_p2_p5_cost": 354500,
+          "four_year_signed_p2_p5_project_line": 354500,
+          "support_displayed_not_cash": 18500,
+          "conservative_incremental_p2_cash_requirement": 294500,
+          "signed_p2_project_line_increment": 294500,
+          "mapped_proxy_delta_p2": 0.543567,
+          "mapped_proxy_delta_half_effect": 0.271109,
+          "mapped_proxy_delta_onehalf_effect": 0.817375,
+          "scenario_min_mapped_proxy_delta": 0.271109,
+          "mapped_proxy_index_if_direct_effects_only": 61.064717,
+          "scenario_no_grant_reserve_after_conservative_increment": 573643,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 1,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            3,
+            8,
+            21,
+            33
+          ],
+          "names": [
+            "Helyi élelmiszerellátás",
+            "Okos Gazdaság Alkalmazások",
+            "Közlekedési Múzeum",
+            "A Népliget megújítása"
+          ],
+          "upfront": 291000,
+          "positive_annual_maintenance": 7500,
+          "signed_annual_maintenance": 7500,
+          "four_year_conservative_p2_p5_cost": 321000,
+          "four_year_signed_p2_p5_project_line": 321000,
+          "support_displayed_not_cash": 11500,
+          "conservative_incremental_p2_cash_requirement": 298500,
+          "signed_p2_project_line_increment": 298500,
+          "mapped_proxy_delta_p2": 0.543344,
+          "mapped_proxy_delta_half_effect": 0.270961,
+          "mapped_proxy_delta_onehalf_effect": 0.817152,
+          "scenario_min_mapped_proxy_delta": 0.270961,
+          "mapped_proxy_index_if_direct_effects_only": 61.064494,
+          "scenario_no_grant_reserve_after_conservative_increment": 569643,
+          "unknown_effect_records": 4,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 1,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        }
+      ],
+      "top_sensitivity_min": [
+        {
+          "ids": [
+            8,
+            21,
+            26,
+            33
+          ],
+          "names": [
+            "Okos Gazdaság Alkalmazások",
+            "Közlekedési Múzeum",
+            "Reptér elérhetőség javítása",
+            "A Népliget megújítása"
+          ],
+          "upfront": 287000,
+          "positive_annual_maintenance": 6000,
+          "signed_annual_maintenance": 6000,
+          "four_year_conservative_p2_p5_cost": 311000,
+          "four_year_signed_p2_p5_project_line": 311000,
+          "support_displayed_not_cash": 8500,
+          "conservative_incremental_p2_cash_requirement": 293000,
+          "signed_p2_project_line_increment": 293000,
+          "mapped_proxy_delta_p2": 0.586072,
+          "mapped_proxy_delta_half_effect": 0.29215,
+          "mapped_proxy_delta_onehalf_effect": 0.88177,
+          "scenario_min_mapped_proxy_delta": 0.29215,
+          "mapped_proxy_index_if_direct_effects_only": 61.107222,
+          "scenario_no_grant_reserve_after_conservative_increment": 575143,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 1,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            1,
+            4,
+            8,
+            33
+          ],
+          "names": [
+            "Szomszédsági Gazdaság Modell",
+            "Körforgásos gazdaság mintaprojekt",
+            "Okos Gazdaság Alkalmazások",
+            "A Népliget megújítása"
+          ],
+          "upfront": 289000,
+          "positive_annual_maintenance": 10400,
+          "signed_annual_maintenance": 10400,
+          "four_year_conservative_p2_p5_cost": 330600,
+          "four_year_signed_p2_p5_project_line": 330600,
+          "support_displayed_not_cash": 25500,
+          "conservative_incremental_p2_cash_requirement": 299400,
+          "signed_p2_project_line_increment": 299400,
+          "mapped_proxy_delta_p2": 0.569139,
+          "mapped_proxy_delta_half_effect": 0.284149,
+          "mapped_proxy_delta_onehalf_effect": 0.854974,
+          "scenario_min_mapped_proxy_delta": 0.284149,
+          "mapped_proxy_index_if_direct_effects_only": 61.090289,
+          "scenario_no_grant_reserve_after_conservative_increment": 568743,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            1,
+            8,
+            16,
+            33
+          ],
+          "names": [
+            "Szomszédsági Gazdaság Modell",
+            "Okos Gazdaság Alkalmazások",
+            "Nyitott Alkotó és Innovációs Terek",
+            "A Népliget megújítása"
+          ],
+          "upfront": 287000,
+          "positive_annual_maintenance": 12400,
+          "signed_annual_maintenance": 12400,
+          "four_year_conservative_p2_p5_cost": 336600,
+          "four_year_signed_p2_p5_project_line": 336600,
+          "support_displayed_not_cash": 21500,
+          "conservative_incremental_p2_cash_requirement": 299400,
+          "signed_p2_project_line_increment": 299400,
+          "mapped_proxy_delta_p2": 0.553406,
+          "mapped_proxy_delta_half_effect": 0.276172,
+          "mapped_proxy_delta_onehalf_effect": 0.831701,
+          "scenario_min_mapped_proxy_delta": 0.276172,
+          "mapped_proxy_index_if_direct_effects_only": 61.074556,
+          "scenario_no_grant_reserve_after_conservative_increment": 568743,
+          "unknown_effect_records": 4,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            1,
+            8,
+            21,
+            33
+          ],
+          "names": [
+            "Szomszédsági Gazdaság Modell",
+            "Okos Gazdaság Alkalmazások",
+            "Közlekedési Múzeum",
+            "A Népliget megújítása"
+          ],
+          "upfront": 283000,
+          "positive_annual_maintenance": 8400,
+          "signed_annual_maintenance": 8400,
+          "four_year_conservative_p2_p5_cost": 316600,
+          "four_year_signed_p2_p5_project_line": 316600,
+          "support_displayed_not_cash": 11500,
+          "conservative_incremental_p2_cash_requirement": 291400,
+          "signed_p2_project_line_increment": 291400,
+          "mapped_proxy_delta_p2": 0.55333,
+          "mapped_proxy_delta_half_effect": 0.275955,
+          "mapped_proxy_delta_onehalf_effect": 0.832127,
+          "scenario_min_mapped_proxy_delta": 0.275955,
+          "mapped_proxy_index_if_direct_effects_only": 61.07448,
+          "scenario_no_grant_reserve_after_conservative_increment": 576743,
+          "unknown_effect_records": 4,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 1,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            7,
+            8,
+            21,
+            33
+          ],
+          "names": [
+            "HGF Innovációs Tudásközpont",
+            "Okos Gazdaság Alkalmazások",
+            "Közlekedési Múzeum",
+            "A Népliget megújítása"
+          ],
+          "upfront": 280000,
+          "positive_annual_maintenance": 18000,
+          "signed_annual_maintenance": 18000,
+          "four_year_conservative_p2_p5_cost": 352000,
+          "four_year_signed_p2_p5_project_line": 352000,
+          "support_displayed_not_cash": 16500,
+          "conservative_incremental_p2_cash_requirement": 298000,
+          "signed_p2_project_line_increment": 298000,
+          "mapped_proxy_delta_p2": 0.551405,
+          "mapped_proxy_delta_half_effect": 0.274956,
+          "mapped_proxy_delta_onehalf_effect": 0.829348,
+          "scenario_min_mapped_proxy_delta": 0.274956,
+          "mapped_proxy_index_if_direct_effects_only": 61.072555,
+          "scenario_no_grant_reserve_after_conservative_increment": 570143,
+          "unknown_effect_records": 4,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 0,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            4,
+            8,
+            20,
+            33
+          ],
+          "names": [
+            "Körforgásos gazdaság mintaprojekt",
+            "Okos Gazdaság Alkalmazások",
+            "Képzési együttműködések koordinációja",
+            "A Népliget megújítása"
+          ],
+          "upfront": 281000,
+          "positive_annual_maintenance": 11000,
+          "signed_annual_maintenance": 11000,
+          "four_year_conservative_p2_p5_cost": 325000,
+          "four_year_signed_p2_p5_project_line": 325000,
+          "support_displayed_not_cash": 24000,
+          "conservative_incremental_p2_cash_requirement": 292000,
+          "signed_p2_project_line_increment": 292000,
+          "mapped_proxy_delta_p2": 0.547488,
+          "mapped_proxy_delta_half_effect": 0.273546,
+          "mapped_proxy_delta_onehalf_effect": 0.821826,
+          "scenario_min_mapped_proxy_delta": 0.273546,
+          "mapped_proxy_index_if_direct_effects_only": 61.068638,
+          "scenario_no_grant_reserve_after_conservative_increment": 576143,
+          "unknown_effect_records": 4,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            4,
+            8,
+            9,
+            33
+          ],
+          "names": [
+            "Körforgásos gazdaság mintaprojekt",
+            "Okos Gazdaság Alkalmazások",
+            "Közösségi Finanszírozási Rendszer",
+            "A Népliget megújítása"
+          ],
+          "upfront": 274000,
+          "positive_annual_maintenance": 9500,
+          "signed_annual_maintenance": 9500,
+          "four_year_conservative_p2_p5_cost": 312000,
+          "four_year_signed_p2_p5_project_line": 312000,
+          "support_displayed_not_cash": 34500,
+          "conservative_incremental_p2_cash_requirement": 283500,
+          "signed_p2_project_line_increment": 283500,
+          "mapped_proxy_delta_p2": 0.544189,
+          "mapped_proxy_delta_half_effect": 0.271774,
+          "mapped_proxy_delta_onehalf_effect": 0.817248,
+          "scenario_min_mapped_proxy_delta": 0.271774,
+          "mapped_proxy_index_if_direct_effects_only": 61.065339,
+          "scenario_no_grant_reserve_after_conservative_increment": 584643,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 1,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            1,
+            8,
+            26,
+            33
+          ],
+          "names": [
+            "Szomszédsági Gazdaság Modell",
+            "Okos Gazdaság Alkalmazások",
+            "Reptér elérhetőség javítása",
+            "A Népliget megújítása"
+          ],
+          "upfront": 276000,
+          "positive_annual_maintenance": 8400,
+          "signed_annual_maintenance": 8400,
+          "four_year_conservative_p2_p5_cost": 309600,
+          "four_year_signed_p2_p5_project_line": 309600,
+          "support_displayed_not_cash": 11500,
+          "conservative_incremental_p2_cash_requirement": 284400,
+          "signed_p2_project_line_increment": 284400,
+          "mapped_proxy_delta_p2": 0.543597,
+          "mapped_proxy_delta_half_effect": 0.271469,
+          "mapped_proxy_delta_onehalf_effect": 0.816387,
+          "scenario_min_mapped_proxy_delta": 0.271469,
+          "mapped_proxy_index_if_direct_effects_only": 61.064747,
+          "scenario_no_grant_reserve_after_conservative_increment": 583743,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            8,
+            10,
+            21,
+            33
+          ],
+          "names": [
+            "Okos Gazdaság Alkalmazások",
+            "Innovációs Alap",
+            "Közlekedési Múzeum",
+            "A Népliget megújítása"
+          ],
+          "upfront": 274500,
+          "positive_annual_maintenance": 20000,
+          "signed_annual_maintenance": 20000,
+          "four_year_conservative_p2_p5_cost": 354500,
+          "four_year_signed_p2_p5_project_line": 354500,
+          "support_displayed_not_cash": 18500,
+          "conservative_incremental_p2_cash_requirement": 294500,
+          "signed_p2_project_line_increment": 294500,
+          "mapped_proxy_delta_p2": 0.543567,
+          "mapped_proxy_delta_half_effect": 0.271109,
+          "mapped_proxy_delta_onehalf_effect": 0.817375,
+          "scenario_min_mapped_proxy_delta": 0.271109,
+          "mapped_proxy_index_if_direct_effects_only": 61.064717,
+          "scenario_no_grant_reserve_after_conservative_increment": 573643,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 1,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            3,
+            8,
+            21,
+            33
+          ],
+          "names": [
+            "Helyi élelmiszerellátás",
+            "Okos Gazdaság Alkalmazások",
+            "Közlekedési Múzeum",
+            "A Népliget megújítása"
+          ],
+          "upfront": 291000,
+          "positive_annual_maintenance": 7500,
+          "signed_annual_maintenance": 7500,
+          "four_year_conservative_p2_p5_cost": 321000,
+          "four_year_signed_p2_p5_project_line": 321000,
+          "support_displayed_not_cash": 11500,
+          "conservative_incremental_p2_cash_requirement": 298500,
+          "signed_p2_project_line_increment": 298500,
+          "mapped_proxy_delta_p2": 0.543344,
+          "mapped_proxy_delta_half_effect": 0.270961,
+          "mapped_proxy_delta_onehalf_effect": 0.817152,
+          "scenario_min_mapped_proxy_delta": 0.270961,
+          "mapped_proxy_index_if_direct_effects_only": 61.064494,
+          "scenario_no_grant_reserve_after_conservative_increment": 569643,
+          "unknown_effect_records": 4,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 1,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        }
+      ]
+    },
+    "450000": {
+      "feasible_combo_count": 12386,
+      "top_nominal": [
+        {
+          "ids": [
+            4,
+            8,
+            21,
+            33
+          ],
+          "names": [
+            "Körforgásos gazdaság mintaprojekt",
+            "Okos Gazdaság Alkalmazások",
+            "Közlekedési Múzeum",
+            "A Népliget megújítása"
+          ],
+          "upfront": 300000,
+          "positive_annual_maintenance": 8000,
+          "signed_annual_maintenance": 8000,
+          "four_year_conservative_p2_p5_cost": 332000,
+          "four_year_signed_p2_p5_project_line": 332000,
+          "support_displayed_not_cash": 22500,
+          "conservative_incremental_p2_cash_requirement": 308000,
+          "signed_p2_project_line_increment": 308000,
+          "mapped_proxy_delta_p2": 0.610524,
+          "mapped_proxy_delta_half_effect": 0.304558,
+          "mapped_proxy_delta_onehalf_effect": 0.917901,
+          "scenario_min_mapped_proxy_delta": 0.304558,
+          "mapped_proxy_index_if_direct_effects_only": 61.131674,
+          "scenario_no_grant_reserve_after_conservative_increment": 560143,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 1,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            4,
+            8,
+            16,
+            33
+          ],
+          "names": [
+            "Körforgásos gazdaság mintaprojekt",
+            "Okos Gazdaság Alkalmazások",
+            "Nyitott Alkotó és Innovációs Terek",
+            "A Népliget megújítása"
+          ],
+          "upfront": 304000,
+          "positive_annual_maintenance": 12000,
+          "signed_annual_maintenance": 12000,
+          "four_year_conservative_p2_p5_cost": 352000,
+          "four_year_signed_p2_p5_project_line": 352000,
+          "support_displayed_not_cash": 32500,
+          "conservative_incremental_p2_cash_requirement": 316000,
+          "signed_p2_project_line_increment": 316000,
+          "mapped_proxy_delta_p2": 0.610419,
+          "mapped_proxy_delta_half_effect": 0.30473,
+          "mapped_proxy_delta_onehalf_effect": 0.917068,
+          "scenario_min_mapped_proxy_delta": 0.30473,
+          "mapped_proxy_index_if_direct_effects_only": 61.131569,
+          "scenario_no_grant_reserve_after_conservative_increment": 552143,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            4,
+            8,
+            26,
+            33
+          ],
+          "names": [
+            "Körforgásos gazdaság mintaprojekt",
+            "Okos Gazdaság Alkalmazások",
+            "Reptér elérhetőség javítása",
+            "A Népliget megújítása"
+          ],
+          "upfront": 293000,
+          "positive_annual_maintenance": 8000,
+          "signed_annual_maintenance": 8000,
+          "four_year_conservative_p2_p5_cost": 325000,
+          "four_year_signed_p2_p5_project_line": 325000,
+          "support_displayed_not_cash": 22500,
+          "conservative_incremental_p2_cash_requirement": 301000,
+          "signed_p2_project_line_increment": 301000,
+          "mapped_proxy_delta_p2": 0.600716,
+          "mapped_proxy_delta_half_effect": 0.300053,
+          "mapped_proxy_delta_onehalf_effect": 0.90199,
+          "scenario_min_mapped_proxy_delta": 0.300053,
+          "mapped_proxy_index_if_direct_effects_only": 61.121866,
+          "scenario_no_grant_reserve_after_conservative_increment": 567143,
+          "unknown_effect_records": 6,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            2,
+            4,
+            8,
+            33
+          ],
+          "names": [
+            "Kereskedelmi és Kulturális Központ",
+            "Körforgásos gazdaság mintaprojekt",
+            "Okos Gazdaság Alkalmazások",
+            "A Népliget megújítása"
+          ],
+          "upfront": 413000,
+          "positive_annual_maintenance": 16000,
+          "signed_annual_maintenance": 16000,
+          "four_year_conservative_p2_p5_cost": 477000,
+          "four_year_signed_p2_p5_project_line": 477000,
+          "support_displayed_not_cash": 47500,
+          "conservative_incremental_p2_cash_requirement": 429000,
+          "signed_p2_project_line_increment": 429000,
+          "mapped_proxy_delta_p2": 0.600709,
+          "mapped_proxy_delta_half_effect": 0.300168,
+          "mapped_proxy_delta_onehalf_effect": 0.901624,
+          "scenario_min_mapped_proxy_delta": 0.300168,
+          "mapped_proxy_index_if_direct_effects_only": 61.121859,
+          "scenario_no_grant_reserve_after_conservative_increment": 439143,
+          "unknown_effect_records": 6,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            8,
+            16,
+            21,
+            33
+          ],
+          "names": [
+            "Okos Gazdaság Alkalmazások",
+            "Nyitott Alkotó és Innovációs Terek",
+            "Közlekedési Múzeum",
+            "A Népliget megújítása"
+          ],
+          "upfront": 298000,
+          "positive_annual_maintenance": 10000,
+          "signed_annual_maintenance": 10000,
+          "four_year_conservative_p2_p5_cost": 338000,
+          "four_year_signed_p2_p5_project_line": 338000,
+          "support_displayed_not_cash": 18500,
+          "conservative_incremental_p2_cash_requirement": 308000,
+          "signed_p2_project_line_increment": 308000,
+          "mapped_proxy_delta_p2": 0.595242,
+          "mapped_proxy_delta_half_effect": 0.296695,
+          "mapped_proxy_delta_onehalf_effect": 0.895645,
+          "scenario_min_mapped_proxy_delta": 0.296695,
+          "mapped_proxy_index_if_direct_effects_only": 61.116392,
+          "scenario_no_grant_reserve_after_conservative_increment": 560143,
+          "unknown_effect_records": 4,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 1,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            4,
+            16,
+            21,
+            33
+          ],
+          "names": [
+            "Körforgásos gazdaság mintaprojekt",
+            "Nyitott Alkotó és Innovációs Terek",
+            "Közlekedési Múzeum",
+            "A Népliget megújítása"
+          ],
+          "upfront": 313000,
+          "positive_annual_maintenance": 9000,
+          "signed_annual_maintenance": 9000,
+          "four_year_conservative_p2_p5_cost": 349000,
+          "four_year_signed_p2_p5_project_line": 349000,
+          "support_displayed_not_cash": 29000,
+          "conservative_incremental_p2_cash_requirement": 322000,
+          "signed_p2_project_line_increment": 322000,
+          "mapped_proxy_delta_p2": 0.587442,
+          "mapped_proxy_delta_half_effect": 0.29289,
+          "mapped_proxy_delta_onehalf_effect": 0.88366,
+          "scenario_min_mapped_proxy_delta": 0.29289,
+          "mapped_proxy_index_if_direct_effects_only": 61.108592,
+          "scenario_no_grant_reserve_after_conservative_increment": 546143,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            8,
+            21,
+            26,
+            33
+          ],
+          "names": [
+            "Okos Gazdaság Alkalmazások",
+            "Közlekedési Múzeum",
+            "Reptér elérhetőség javítása",
+            "A Népliget megújítása"
+          ],
+          "upfront": 287000,
+          "positive_annual_maintenance": 6000,
+          "signed_annual_maintenance": 6000,
+          "four_year_conservative_p2_p5_cost": 311000,
+          "four_year_signed_p2_p5_project_line": 311000,
+          "support_displayed_not_cash": 8500,
+          "conservative_incremental_p2_cash_requirement": 293000,
+          "signed_p2_project_line_increment": 293000,
+          "mapped_proxy_delta_p2": 0.586072,
+          "mapped_proxy_delta_half_effect": 0.29215,
+          "mapped_proxy_delta_onehalf_effect": 0.88177,
+          "scenario_min_mapped_proxy_delta": 0.29215,
+          "mapped_proxy_index_if_direct_effects_only": 61.107222,
+          "scenario_no_grant_reserve_after_conservative_increment": 575143,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 1,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            2,
+            8,
+            21,
+            33
+          ],
+          "names": [
+            "Kereskedelmi és Kulturális Központ",
+            "Okos Gazdaság Alkalmazások",
+            "Közlekedési Múzeum",
+            "A Népliget megújítása"
+          ],
+          "upfront": 407000,
+          "positive_annual_maintenance": 14000,
+          "signed_annual_maintenance": 14000,
+          "four_year_conservative_p2_p5_cost": 463000,
+          "four_year_signed_p2_p5_project_line": 463000,
+          "support_displayed_not_cash": 33500,
+          "conservative_incremental_p2_cash_requirement": 421000,
+          "signed_p2_project_line_increment": 421000,
+          "mapped_proxy_delta_p2": 0.585982,
+          "mapped_proxy_delta_half_effect": 0.292246,
+          "mapped_proxy_delta_onehalf_effect": 0.881208,
+          "scenario_min_mapped_proxy_delta": 0.292246,
+          "mapped_proxy_index_if_direct_effects_only": 61.107132,
+          "scenario_no_grant_reserve_after_conservative_increment": 447143,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 1,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            2,
+            8,
+            16,
+            33
+          ],
+          "names": [
+            "Kereskedelmi és Kulturális Központ",
+            "Okos Gazdaság Alkalmazások",
+            "Nyitott Alkotó és Innovációs Terek",
+            "A Népliget megújítása"
+          ],
+          "upfront": 411000,
+          "positive_annual_maintenance": 18000,
+          "signed_annual_maintenance": 18000,
+          "four_year_conservative_p2_p5_cost": 483000,
+          "four_year_signed_p2_p5_project_line": 483000,
+          "support_displayed_not_cash": 43500,
+          "conservative_incremental_p2_cash_requirement": 429000,
+          "signed_p2_project_line_increment": 429000,
+          "mapped_proxy_delta_p2": 0.585774,
+          "mapped_proxy_delta_half_effect": 0.292391,
+          "mapped_proxy_delta_onehalf_effect": 0.880152,
+          "scenario_min_mapped_proxy_delta": 0.292391,
+          "mapped_proxy_index_if_direct_effects_only": 61.106924,
+          "scenario_no_grant_reserve_after_conservative_increment": 439143,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            8,
+            16,
+            26,
+            33
+          ],
+          "names": [
+            "Okos Gazdaság Alkalmazások",
+            "Nyitott Alkotó és Innovációs Terek",
+            "Reptér elérhetőség javítása",
+            "A Népliget megújítása"
+          ],
+          "upfront": 291000,
+          "positive_annual_maintenance": 10000,
+          "signed_annual_maintenance": 10000,
+          "four_year_conservative_p2_p5_cost": 331000,
+          "four_year_signed_p2_p5_project_line": 331000,
+          "support_displayed_not_cash": 18500,
+          "conservative_incremental_p2_cash_requirement": 301000,
+          "signed_p2_project_line_increment": 301000,
+          "mapped_proxy_delta_p2": 0.585373,
+          "mapped_proxy_delta_half_effect": 0.292174,
+          "mapped_proxy_delta_onehalf_effect": 0.879598,
+          "scenario_min_mapped_proxy_delta": 0.292174,
+          "mapped_proxy_index_if_direct_effects_only": 61.106523,
+          "scenario_no_grant_reserve_after_conservative_increment": 567143,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        }
+      ],
+      "top_sensitivity_min": [
+        {
+          "ids": [
+            4,
+            8,
+            16,
+            33
+          ],
+          "names": [
+            "Körforgásos gazdaság mintaprojekt",
+            "Okos Gazdaság Alkalmazások",
+            "Nyitott Alkotó és Innovációs Terek",
+            "A Népliget megújítása"
+          ],
+          "upfront": 304000,
+          "positive_annual_maintenance": 12000,
+          "signed_annual_maintenance": 12000,
+          "four_year_conservative_p2_p5_cost": 352000,
+          "four_year_signed_p2_p5_project_line": 352000,
+          "support_displayed_not_cash": 32500,
+          "conservative_incremental_p2_cash_requirement": 316000,
+          "signed_p2_project_line_increment": 316000,
+          "mapped_proxy_delta_p2": 0.610419,
+          "mapped_proxy_delta_half_effect": 0.30473,
+          "mapped_proxy_delta_onehalf_effect": 0.917068,
+          "scenario_min_mapped_proxy_delta": 0.30473,
+          "mapped_proxy_index_if_direct_effects_only": 61.131569,
+          "scenario_no_grant_reserve_after_conservative_increment": 552143,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            4,
+            8,
+            21,
+            33
+          ],
+          "names": [
+            "Körforgásos gazdaság mintaprojekt",
+            "Okos Gazdaság Alkalmazások",
+            "Közlekedési Múzeum",
+            "A Népliget megújítása"
+          ],
+          "upfront": 300000,
+          "positive_annual_maintenance": 8000,
+          "signed_annual_maintenance": 8000,
+          "four_year_conservative_p2_p5_cost": 332000,
+          "four_year_signed_p2_p5_project_line": 332000,
+          "support_displayed_not_cash": 22500,
+          "conservative_incremental_p2_cash_requirement": 308000,
+          "signed_p2_project_line_increment": 308000,
+          "mapped_proxy_delta_p2": 0.610524,
+          "mapped_proxy_delta_half_effect": 0.304558,
+          "mapped_proxy_delta_onehalf_effect": 0.917901,
+          "scenario_min_mapped_proxy_delta": 0.304558,
+          "mapped_proxy_index_if_direct_effects_only": 61.131674,
+          "scenario_no_grant_reserve_after_conservative_increment": 560143,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 1,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            2,
+            4,
+            8,
+            33
+          ],
+          "names": [
+            "Kereskedelmi és Kulturális Központ",
+            "Körforgásos gazdaság mintaprojekt",
+            "Okos Gazdaság Alkalmazások",
+            "A Népliget megújítása"
+          ],
+          "upfront": 413000,
+          "positive_annual_maintenance": 16000,
+          "signed_annual_maintenance": 16000,
+          "four_year_conservative_p2_p5_cost": 477000,
+          "four_year_signed_p2_p5_project_line": 477000,
+          "support_displayed_not_cash": 47500,
+          "conservative_incremental_p2_cash_requirement": 429000,
+          "signed_p2_project_line_increment": 429000,
+          "mapped_proxy_delta_p2": 0.600709,
+          "mapped_proxy_delta_half_effect": 0.300168,
+          "mapped_proxy_delta_onehalf_effect": 0.901624,
+          "scenario_min_mapped_proxy_delta": 0.300168,
+          "mapped_proxy_index_if_direct_effects_only": 61.121859,
+          "scenario_no_grant_reserve_after_conservative_increment": 439143,
+          "unknown_effect_records": 6,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            4,
+            8,
+            26,
+            33
+          ],
+          "names": [
+            "Körforgásos gazdaság mintaprojekt",
+            "Okos Gazdaság Alkalmazások",
+            "Reptér elérhetőség javítása",
+            "A Népliget megújítása"
+          ],
+          "upfront": 293000,
+          "positive_annual_maintenance": 8000,
+          "signed_annual_maintenance": 8000,
+          "four_year_conservative_p2_p5_cost": 325000,
+          "four_year_signed_p2_p5_project_line": 325000,
+          "support_displayed_not_cash": 22500,
+          "conservative_incremental_p2_cash_requirement": 301000,
+          "signed_p2_project_line_increment": 301000,
+          "mapped_proxy_delta_p2": 0.600716,
+          "mapped_proxy_delta_half_effect": 0.300053,
+          "mapped_proxy_delta_onehalf_effect": 0.90199,
+          "scenario_min_mapped_proxy_delta": 0.300053,
+          "mapped_proxy_index_if_direct_effects_only": 61.121866,
+          "scenario_no_grant_reserve_after_conservative_increment": 567143,
+          "unknown_effect_records": 6,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            8,
+            16,
+            21,
+            33
+          ],
+          "names": [
+            "Okos Gazdaság Alkalmazások",
+            "Nyitott Alkotó és Innovációs Terek",
+            "Közlekedési Múzeum",
+            "A Népliget megújítása"
+          ],
+          "upfront": 298000,
+          "positive_annual_maintenance": 10000,
+          "signed_annual_maintenance": 10000,
+          "four_year_conservative_p2_p5_cost": 338000,
+          "four_year_signed_p2_p5_project_line": 338000,
+          "support_displayed_not_cash": 18500,
+          "conservative_incremental_p2_cash_requirement": 308000,
+          "signed_p2_project_line_increment": 308000,
+          "mapped_proxy_delta_p2": 0.595242,
+          "mapped_proxy_delta_half_effect": 0.296695,
+          "mapped_proxy_delta_onehalf_effect": 0.895645,
+          "scenario_min_mapped_proxy_delta": 0.296695,
+          "mapped_proxy_index_if_direct_effects_only": 61.116392,
+          "scenario_no_grant_reserve_after_conservative_increment": 560143,
+          "unknown_effect_records": 4,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 1,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            4,
+            16,
+            21,
+            33
+          ],
+          "names": [
+            "Körforgásos gazdaság mintaprojekt",
+            "Nyitott Alkotó és Innovációs Terek",
+            "Közlekedési Múzeum",
+            "A Népliget megújítása"
+          ],
+          "upfront": 313000,
+          "positive_annual_maintenance": 9000,
+          "signed_annual_maintenance": 9000,
+          "four_year_conservative_p2_p5_cost": 349000,
+          "four_year_signed_p2_p5_project_line": 349000,
+          "support_displayed_not_cash": 29000,
+          "conservative_incremental_p2_cash_requirement": 322000,
+          "signed_p2_project_line_increment": 322000,
+          "mapped_proxy_delta_p2": 0.587442,
+          "mapped_proxy_delta_half_effect": 0.29289,
+          "mapped_proxy_delta_onehalf_effect": 0.88366,
+          "scenario_min_mapped_proxy_delta": 0.29289,
+          "mapped_proxy_index_if_direct_effects_only": 61.108592,
+          "scenario_no_grant_reserve_after_conservative_increment": 546143,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            2,
+            8,
+            16,
+            33
+          ],
+          "names": [
+            "Kereskedelmi és Kulturális Központ",
+            "Okos Gazdaság Alkalmazások",
+            "Nyitott Alkotó és Innovációs Terek",
+            "A Népliget megújítása"
+          ],
+          "upfront": 411000,
+          "positive_annual_maintenance": 18000,
+          "signed_annual_maintenance": 18000,
+          "four_year_conservative_p2_p5_cost": 483000,
+          "four_year_signed_p2_p5_project_line": 483000,
+          "support_displayed_not_cash": 43500,
+          "conservative_incremental_p2_cash_requirement": 429000,
+          "signed_p2_project_line_increment": 429000,
+          "mapped_proxy_delta_p2": 0.585774,
+          "mapped_proxy_delta_half_effect": 0.292391,
+          "mapped_proxy_delta_onehalf_effect": 0.880152,
+          "scenario_min_mapped_proxy_delta": 0.292391,
+          "mapped_proxy_index_if_direct_effects_only": 61.106924,
+          "scenario_no_grant_reserve_after_conservative_increment": 439143,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            2,
+            8,
+            21,
+            33
+          ],
+          "names": [
+            "Kereskedelmi és Kulturális Központ",
+            "Okos Gazdaság Alkalmazások",
+            "Közlekedési Múzeum",
+            "A Népliget megújítása"
+          ],
+          "upfront": 407000,
+          "positive_annual_maintenance": 14000,
+          "signed_annual_maintenance": 14000,
+          "four_year_conservative_p2_p5_cost": 463000,
+          "four_year_signed_p2_p5_project_line": 463000,
+          "support_displayed_not_cash": 33500,
+          "conservative_incremental_p2_cash_requirement": 421000,
+          "signed_p2_project_line_increment": 421000,
+          "mapped_proxy_delta_p2": 0.585982,
+          "mapped_proxy_delta_half_effect": 0.292246,
+          "mapped_proxy_delta_onehalf_effect": 0.881208,
+          "scenario_min_mapped_proxy_delta": 0.292246,
+          "mapped_proxy_index_if_direct_effects_only": 61.107132,
+          "scenario_no_grant_reserve_after_conservative_increment": 447143,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 1,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            8,
+            16,
+            26,
+            33
+          ],
+          "names": [
+            "Okos Gazdaság Alkalmazások",
+            "Nyitott Alkotó és Innovációs Terek",
+            "Reptér elérhetőség javítása",
+            "A Népliget megújítása"
+          ],
+          "upfront": 291000,
+          "positive_annual_maintenance": 10000,
+          "signed_annual_maintenance": 10000,
+          "four_year_conservative_p2_p5_cost": 331000,
+          "four_year_signed_p2_p5_project_line": 331000,
+          "support_displayed_not_cash": 18500,
+          "conservative_incremental_p2_cash_requirement": 301000,
+          "signed_p2_project_line_increment": 301000,
+          "mapped_proxy_delta_p2": 0.585373,
+          "mapped_proxy_delta_half_effect": 0.292174,
+          "mapped_proxy_delta_onehalf_effect": 0.879598,
+          "scenario_min_mapped_proxy_delta": 0.292174,
+          "mapped_proxy_index_if_direct_effects_only": 61.106523,
+          "scenario_no_grant_reserve_after_conservative_increment": 567143,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 2,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        },
+        {
+          "ids": [
+            8,
+            21,
+            26,
+            33
+          ],
+          "names": [
+            "Okos Gazdaság Alkalmazások",
+            "Közlekedési Múzeum",
+            "Reptér elérhetőség javítása",
+            "A Népliget megújítása"
+          ],
+          "upfront": 287000,
+          "positive_annual_maintenance": 6000,
+          "signed_annual_maintenance": 6000,
+          "four_year_conservative_p2_p5_cost": 311000,
+          "four_year_signed_p2_p5_project_line": 311000,
+          "support_displayed_not_cash": 8500,
+          "conservative_incremental_p2_cash_requirement": 293000,
+          "signed_p2_project_line_increment": 293000,
+          "mapped_proxy_delta_p2": 0.586072,
+          "mapped_proxy_delta_half_effect": 0.29215,
+          "mapped_proxy_delta_onehalf_effect": 0.88177,
+          "scenario_min_mapped_proxy_delta": 0.29215,
+          "mapped_proxy_index_if_direct_effects_only": 61.107222,
+          "scenario_no_grant_reserve_after_conservative_increment": 575143,
+          "unknown_effect_records": 5,
+          "unknown_effect_labels": [
+            "Kisvállalkozások száma",
+            "Középvállalkozások száma"
+          ],
+          "zero_baseline_effect_records": 1,
+          "ambiguous_clamp_records": 0,
+          "cost_data": "P2_VERIFIED",
+          "effects": "HISTORICAL_TEST_ONLY_UNVALIDATED_P2",
+          "status": "HYPOTHETICAL_NO_GAME_MUTATION"
+        }
+      ]
+    }
+  }
+}

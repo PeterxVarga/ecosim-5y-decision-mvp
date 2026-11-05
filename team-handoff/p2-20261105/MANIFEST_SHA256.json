@@ -1,0 +1,218 @@
+{
+  "schema_version": "ecosim.p2.publication.v1",
+  "repo": "PeterxVarga/ecosim-5y-decision-mvp",
+  "branch": "main",
+  "evidence_dates": [
+    "2026-11-04",
+    "2026-11-05"
+  ],
+  "game_mutations_in_publication": 0,
+  "project_status_cost_coverage": 35,
+  "source_verified_factors": 29,
+  "historical_project_effect_records": 272,
+  "repeat_nonzero_actions": 9,
+  "file_count_excluding_manifest": 49,
+  "file_entries": {
+    "README.md": {
+      "bytes": 3880,
+      "sha256": "22fee84ba155bfe364626954d5d09f33c88532024c03be20a68f0508b085b068"
+    },
+    "archived-runs/EcoSim_P2_R232_offline_bizonyitek_20261104.zip": {
+      "bytes": 523050,
+      "sha256": "56511976ae87934a8118d1be68cbc486679ef820e335d28aa33be3fdde6898dc"
+    },
+    "archived-runs/EcoSim_P2_indirekt_30_stressz_csomag_20261105.zip": {
+      "bytes": 111942,
+      "sha256": "4506668d156a2292b8fc4dd2435301dfba14a6157776f7bc1c02af589cc968c2"
+    },
+    "archived-runs/EcoSim_P2_integralt_offline_modell_csomag_20261105.zip": {
+      "bytes": 63692,
+      "sha256": "9509b9269a8b4c4fcd4b133ecdfb31fc0b21c6f178494a48ca28c01d4e20f397"
+    },
+    "archived-runs/EcoSim_P2_vallalkozasszam_empirikus_R3_20261105.zip": {
+      "bytes": 86342,
+      "sha256": "2ae344d5d215d402d4cf71eefe69ef842849c1e65585dee1b162dee263e9d54a"
+    },
+    "archived-runs/EcoSim_futas_2.zip": {
+      "bytes": 93823,
+      "sha256": "29f7c373504d097fb0252d67f7ee5a46f14369ac77a4d483ec9d7efe68c09b28"
+    },
+    "archived-runs/EcoSim_futas_3.zip": {
+      "bytes": 137735,
+      "sha256": "6a81078a9273582dfeeaaa3f6b209fe393a4ef6f8d1ff4a008229bd6b6af2db1"
+    },
+    "archived-runs/EcoSim_futas_4.zip": {
+      "bytes": 94194,
+      "sha256": "8645fca20f8a7491081d3666e84b6f5e564a49405952e557ac724cf8bc9edc20"
+    },
+    "archived-runs/EcoSim_futas_5.zip": {
+      "bytes": 1837,
+      "sha256": "e929a09b5788d318f50d7d1a6711df16006ddcfe640a8f148af5d784b884c879"
+    },
+    "data/EcoSim_P1_7_csapat_vallalkozasszam_bizonyitek_20261105.json": {
+      "bytes": 1493,
+      "sha256": "42d442aca8facdd488f4b70cd9655a7b3f871deb7a49d6418d5b67fd85d6b93e"
+    },
+    "data/EcoSim_P2_9_muvelet_dontesi_guard_20261105.json": {
+      "bytes": 4624,
+      "sha256": "2b3babd95244a365f632f3849082285b15394969260f49ece2b00979ae6eec4f"
+    },
+    "data/EcoSim_P2_atadasi_guard_20261104.json": {
+      "bytes": 6699,
+      "sha256": "50b5e56384b25308d0c04656c0d3fad77d5cf9c77f6d1d361b032e37760e2e88"
+    },
+    "data/EcoSim_P2_vallalkozasszam_empirikus_R3_20261105.json": {
+      "bytes": 26892,
+      "sha256": "6a15667bda6b58b72de0120cb8ac9ca3d8fd28a5756f2c2a6890a0bfeb6e297b"
+    },
+    "data/EcoSim_P2_vallalkozasszam_forrasmegfigyelesek_20261105.json": {
+      "bytes": 4503,
+      "sha256": "4cfd865186c2be5acb5c4170384aab6299aa5c8314b57de7973498c73562858b"
+    },
+    "data/P2_indirect_business_sensitivity.json": {
+      "bytes": 359844,
+      "sha256": "9e03593d7866cfd59569a15e857d7571004865c40cd1f7688b6a1fbcbeaee559"
+    },
+    "data/P2_joined_input.json": {
+      "bytes": 105792,
+      "sha256": "814fb590b879bb2292295a27a0ffdde86dc69d0b9667d58babead975f80fabc8"
+    },
+    "data/P2_joint_scenarios.json": {
+      "bytes": 138011,
+      "sha256": "da5c843044d22bcb7307eee3fe45bbc500163f1f24c095369dab243ba7b88fb9"
+    },
+    "reports/ELSO_KOR.md": {
+      "bytes": 9172,
+      "sha256": "24091fdd21b1513d1f8eecc0d3199a1983365fb78a98585ae89e58c17982d5d5"
+    },
+    "reports/EcoSim_P1_futasok_tanulsagai_20261104.md": {
+      "bytes": 5292,
+      "sha256": "4c721ce5dd3fad5d23ebd6c8a1e24d5d753927da1c42d172b77935eb29a0a207"
+    },
+    "reports/EcoSim_P2_30_kozvetett_hatas_erzekenyseg_20261105.md": {
+      "bytes": 7975,
+      "sha256": "1a3b040a0fbffc9174df40739300d628fe77866a8da150f59f26bd483fc73982"
+    },
+    "reports/EcoSim_P2_9_muvelet_ROI_felulvizsgalat_20261105.md": {
+      "bytes": 5292,
+      "sha256": "148f3d19ab232dca11cb60d5ab3d7b2141b0ae60c623a66bd60bca6c60b6e5ea"
+    },
+    "reports/EcoSim_P2_Brave_Codex_elo_ellenorzes_20261105.md": {
+      "bytes": 15778,
+      "sha256": "a1d5446445905c945678c1b63e13ed4ceecd817c5a01aef82f96461c46b4b5bf"
+    },
+    "reports/EcoSim_P2_R3_README.txt": {
+      "bytes": 1311,
+      "sha256": "d210068796ba37b8eefdf06dbeeac6915ba4b32b1695d32c4c4116c7104bb3dc"
+    },
+    "reports/EcoSim_P2_ROI_kritikus_ut_20261104.md": {
+      "bytes": 6577,
+      "sha256": "53b98f35ea07370651c93daea95572d5639cd741c6c16aa7c6ff247d8a34cc69"
+    },
+    "reports/EcoSim_P2_alnezetek_readonly_20261105.txt": {
+      "bytes": 15736,
+      "sha256": "78dfb08484ed4de3ecf5b75839c8afdfafffffd1cc0e27b40c1111655e3e7f4d"
+    },
+    "reports/EcoSim_P2_projekt_penzugyi_osszekapcsolas_20261105.md": {
+      "bytes": 9647,
+      "sha256": "cf90ec9cb255db085cd098ffe6b738fa2032fa527b538fd874606ccc43ad9b00"
+    },
+    "reports/EcoSim_P2_tenyadat_alapu_dontesi_riport_20261104.md": {
+      "bytes": 4621,
+      "sha256": "aade752dc7fef368f54b1932a9f69b1a62b3f14940cf7e75335ac13b72312f20"
+    },
+    "reports/EcoSim_P2_vallalkozasszam_kapcsolat_R3_20261105.md": {
+      "bytes": 9251,
+      "sha256": "88e392789e059398ffc00050824083bcbc7094ed0cc825e23a46dfb64bc2c1b5"
+    },
+    "reports/P2_TELJES_HIANYLISTA_FALSZIFIKACIO.md": {
+      "bytes": 19895,
+      "sha256": "cc2d386c29553094d6bd30aa6e4a0f6658d3bbe060bd3898854284c2ee79d8c2"
+    },
+    "src/EcoSim_P2_vallalkozasszam_R3_empirikus_kalibracio.py": {
+      "bytes": 11676,
+      "sha256": "022e07a2b0114265f8699af64bedd5aff34faf6813a33ce29f2d3e05bc82d701"
+    },
+    "src/README_INDIRECT.md": {
+      "bytes": 1582,
+      "sha256": "e5356a93af2bc036fc564d923ce6e3549fb8fbbb386c4b5db7f232826c42a901"
+    },
+    "src/README_P2_OFFLINE.md": {
+      "bytes": 2193,
+      "sha256": "74936ba6683ab570def2c96108be1c40aebf06437870c676acbffcd0c71f0c7e"
+    },
+    "src/build_inputs.py": {
+      "bytes": 6300,
+      "sha256": "fafb82a7e9e42de4b0e8eb078869efdfb4107c9f4da7725a62645643733e99e1"
+    },
+    "src/city_bridge.py": {
+      "bytes": 12462,
+      "sha256": "d409ed5ec205bece1edf8ae2db81c9614c7cd7171bb116e6afb247b4c1af56dd"
+    },
+    "src/create_indirect_report.py": {
+      "bytes": 8974,
+      "sha256": "f5c2586b78e330a5810098c970361454f65aa7c59a5365aa25d8a4e4cc3d424f"
+    },
+    "src/create_report.py": {
+      "bytes": 11148,
+      "sha256": "b519794d601138c58a3ee8c0826c117d3d1aede636889eb66a7348b09116a5d1"
+    },
+    "src/effect_replay_r147.py": {
+      "bytes": 4606,
+      "sha256": "6c766c67dd1641145287b1c5a4e8c275894b71f1e468edd20738352edf6e6f0d"
+    },
+    "src/indirect_business_sensitivity.py": {
+      "bytes": 11318,
+      "sha256": "9e09f60a7853ae1cce3c4c0276439477a874a13da5a904ee5b18830e7b3a6118"
+    },
+    "src/p2_joint_screen.py": {
+      "bytes": 8551,
+      "sha256": "89f10d7077fc33a79e2d0dd8f32fc5ed79450f9e29c7ff84fb5724d404a6d947"
+    },
+    "src/portfolio_5y.py": {
+      "bytes": 9296,
+      "sha256": "e2c66805d01fcefe15ba8df9fcb78336ab5237a54ae80cf6096ff29447230261"
+    },
+    "src/r142_proxy_reference.py": {
+      "bytes": 9154,
+      "sha256": "134541ee25e9e7b16b2551ea5cfbebf93e7922fdca6bc919cfefa60793b3d568"
+    },
+    "src/strategy_5y.py": {
+      "bytes": 34388,
+      "sha256": "557bd638623ba6df6456cc8d813063633be201f0fb1a2686a6a52417fd995982"
+    },
+    "src/test_EcoSim_P2_vallalkozasszam_R3.py": {
+      "bytes": 2322,
+      "sha256": "807768a1ea17c87aefeccb6451155bac0ade2aa2042541b33b7e12d6b5e890e2"
+    },
+    "src/test_indirect_business_sensitivity.py": {
+      "bytes": 3194,
+      "sha256": "6bed4b59d2c62cee9fdd93b66b43e8725b991de6c2238c57a87aa9929728e4d6"
+    },
+    "src/test_joint_model.py": {
+      "bytes": 3380,
+      "sha256": "1f8bff89aeb63b5f6464afddc03a84239836b33686bf160200c74ed4132dafd9"
+    },
+    "workbooks/EcoSim_P1_versenytars_elemzes_20261104.xlsx": {
+      "bytes": 29265,
+      "sha256": "56b1d97ae8cc6dfe65b9b88628d6d7f2474ad13e6397c1ec9b1f465124e1ca3c"
+    },
+    "workbooks/EcoSim_P2_integralt_modell_empirikus_R3_20261105.xlsx": {
+      "bytes": 47424,
+      "sha256": "ef332b45ba2c69d6bef3ead85e64d1bc65c6d6d3cdc4d7dee7513727179ae161"
+    },
+    "workbooks/EcoSim_P2_integralt_modell_kozvetett_R2_20261105.xlsx": {
+      "bytes": 40449,
+      "sha256": "76e036481900eb114c2dc406605eddfddaa402b33f14a3224d7eb6e90e0fedb0"
+    },
+    "workbooks/EcoSim_P2_kozos_projekt_penzugyi_modell_20261105.xlsx": {
+      "bytes": 26917,
+      "sha256": "ab84bde18e8537035870c2d27b2a7e0a046ec6120bbe003e88b03529f5fb573e"
+    }
+  },
+  "validation": {
+    "offline_joint_indirect_tests": "17/17 PASS",
+    "offline_empirical_tests": "14/14 PASS",
+    "publication_side_effects": "NO GAME MUTATIONS"
+  }
+}

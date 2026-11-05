@@ -1,0 +1,159 @@
+{
+  "schema": "ecosim.business-index.historical-evidence.v1",
+  "type": "OBSERVATIONS_NOT_SERVER_FORMULA",
+  "p0_base": {
+    "small": 4742,
+    "medium": 90,
+    "large": 25,
+    "factor": 50
+  },
+  "p1_all_teams": [
+    {
+      "team": "Bányász kódok",
+      "p1_small": 4765,
+      "p1_medium": 92,
+      "p1_large": 25,
+      "p1_business_factor": 50.51
+    },
+    {
+      "team": "Jutalom a nap végén",
+      "p1_small": 4765,
+      "p1_medium": 92,
+      "p1_large": 25,
+      "p1_business_factor": 50.51
+    },
+    {
+      "team": "Kiwi",
+      "p1_small": 4766,
+      "p1_medium": 96,
+      "p1_large": 25,
+      "p1_business_factor": 50.62
+    },
+    {
+      "team": "Kőbánya Optima",
+      "p1_small": 4765,
+      "p1_medium": 93,
+      "p1_large": 25,
+      "p1_business_factor": 50.52
+    },
+    {
+      "team": "Midas Nonprofit",
+      "p1_small": 4765,
+      "p1_medium": 92,
+      "p1_large": 25,
+      "p1_business_factor": 50.51
+    },
+    {
+      "team": "Zéró",
+      "p1_small": 4765,
+      "p1_medium": 92,
+      "p1_large": 25,
+      "p1_business_factor": 50.51
+    },
+    {
+      "team": "I7",
+      "p1_small": 4763,
+      "p1_medium": 91,
+      "p1_large": 25,
+      "p1_business_factor": 50.45
+    }
+  ],
+  "p1_xlsx_source": "X-Challenge 2026 Selejtező_Jutalom a nap végén_Selejtező_I (1).xlsx",
+  "p1_z_historical_samples": [
+    {
+      "source": "EcoSim_elozo_kor_20261101.zip",
+      "summary_path": "city-decisions-20261101/final-summary.json",
+      "corporation_prefix": "city-decisions-20261101/businesses-{size}-reviewed.txt",
+      "raw_by_size": {
+        "small": [
+          4742,
+          4764
+        ],
+        "medium": [
+          90,
+          92
+        ],
+        "large": [
+          25,
+          25
+        ]
+      },
+      "previous_company_total": 4857,
+      "plan_company_total": 4881,
+      "previous_factor": 50.0,
+      "plan_factor": 50.49,
+      "evidence": "Time-separated snapshots, not one-variable trial"
+    },
+    {
+      "source": "EcoSim_mostani_kor_20261103.zip",
+      "summary_path": "round1-20261103/summary-before.json",
+      "corporation_prefix": "round1-20261103/businesses-{size}-before.txt",
+      "raw_by_size": {
+        "small": [
+          4742,
+          4763
+        ],
+        "medium": [
+          90,
+          91
+        ],
+        "large": [
+          25,
+          25
+        ]
+      },
+      "previous_company_total": 4857,
+      "plan_company_total": 4879,
+      "previous_factor": 50.0,
+      "plan_factor": 50.45,
+      "evidence": "time-separated snapshots: evidence of displayed business counts and index, NOT same-timestamp causal trial"
+    }
+  ],
+  "p1_project_B_historical_control": {
+    "source_zip": "ecosim-p1-codex-audit-20261104-135151.zip",
+    "source_inside_zip": "ecosim-p1-codex-audit-20261104-135151/repo/team-evidence/fedora-local-20261103/R258/R258_B_FINAL_SUCCESS_PRIVATE.json",
+    "trial_period": "P1/5",
+    "isolation": "FOUR_PROJECT_START_CANCEL_NO_SAVE",
+    "projects": [
+      4,
+      13,
+      21,
+      27
+    ],
+    "prior_factor": 50.45,
+    "trial_factor": 50.51,
+    "rollback_factor": 50.45,
+    "save_count": 0,
+    "caveat": "Project combination change; not a single-project identification. Project card effects sourced from test round Z."
+  },
+  "p2_current": {
+    "source_files": [
+      "Pasted text(20261105-114749).txt",
+      "Pasted text(20261105-122441).txt"
+    ],
+    "market": "I",
+    "team": "Jutalom a nap végén",
+    "period": "P2/5",
+    "p1_fact_company_sizes": {
+      "small": 4765,
+      "medium": 92,
+      "large": 25
+    },
+    "p2_plan_company_sizes": {
+      "small": 5226,
+      "medium": 108,
+      "large": 28
+    },
+    "p1_fact_factor": 50.51,
+    "p2_plan_factor": 59.85,
+    "plan_saved": "UNKNOWN"
+  },
+  "source_sha256": {
+    "X-Challenge 2026 Selejtező_Jutalom a nap végén_Selejtező_I (1).xlsx": "23a76fd044fe698e66a18577642825eca1f058d5715cd8f85b05d0a3b9fd38ab",
+    "EcoSim_elozo_kor_20261101.zip": "aeb2e9ff11cc9a294fb48c43d9c48a153c10b5d9c99f1bb9b621f399d1cfbbe6",
+    "EcoSim_mostani_kor_20261103.zip": "6cb7279bb199a05b7bd484cd660b693ca4a4d681c75246964d4ee271a8cdbeb4",
+    "ecosim-p1-codex-audit-20261104-135151.zip": "4caa775a57225a54fa00c7a9a7f9c68a5873a93781d8a9012319bec1271fc4b6",
+    "Pasted text(20261105-114749).txt": "8064906374a394fbd277725c37c04548168827b0cbc1be4d7d7d237d460c5d8e",
+    "Pasted text(20261105-122441).txt": "78dfb08484ed4de3ecf5b75839c8afdfafffffd1cc0e27b40c1111655e3e7f4d"
+  }
+}

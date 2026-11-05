@@ -1,0 +1,171 @@
+**Státusz: PARTIAL.** A hiányzó, egyértelműen címkézett projekt-, intézményi, közlekedési, bevételi, hitel-, lakossági és vállalkozási alnézeteket beolvastam. A projektköltségek és státuszok így az előző audit adataival együtt **35/35 projektre** rendelkezésre állnak. Az elemzési grafikonok ikonjai nem kaptak egyértelmű akadálymentes nevet, ezért azokat nem nyitottam meg; a változó lejáratú hitelnek sem jelent meg külön címkézett alnézete.
+
+A legfontosabb új eredmény: a korábban azonosított két műveleten túl **további hét P1-es egyszeri műveleti érték ismétlődik a P2-tervben**. Ezek közt **+50 járművezető**, **+10 szerelő** és **−50 irodai dolgozó** szerepel.
+
+Az ellenőrzött fejléc minden megnyitott alnézetben azonos maradt: **X-Challenge 2026 Selejtező · Jutalom a nap végén · I. piac · 2/5 periódus**. Az ellenőrzés 2026. november 5-én, körülbelül **13:20 CET-ig** történt. A P2-értékek tervértékek; a **60,52 index és 868 143 ECU tartalék nem végleges eredmény**. A mentettség továbbra is **UNKNOWN**.
+
+**Jelölések:** P1 = FACT; P2 = PLAN. **VERIFIED**: felületen olvasható; **DERIVED**: abból számított vagy következtetett; **UNKNOWN**: nem ellenőrizhető. A költségtáblázatokban a felület nem írta ki minden sor mellett a pénznemet; az ECU pénzügyi kontextus szerinti értelmezés, a pontos mezőegység **UNKNOWN**.
+
+## Projektlefedettség: 35/35
+
+Az előző audit a [Gazdaságfejlesztés](https://edu.ecosim.hu/simulation/projects) kategória **1–14.** projektjének költségeit és mind a 35 projekt P1/P2 státuszát tartalmazza. Az alábbi táblázat a most beolvasott **15–35.** projekteket egészíti ki. A státusz P1-ben és P2-ben mindegyiknél azonos. **VERIFIED.**
+
+Forrás minden sorhoz: [Projektek](https://edu.ecosim.hu/simulation/projects), a táblázat szerinti kategória. Az összegek sorrendje: **indítás / beruházás / fenntartás / partnertámogatás**.
+
+| ID | Projekt | Kategória | P1 / P2 státusz | Költségek és támogatás |
+|---:|---|---|---|---:|
+| 15 | Pincerendszer hasznosítása | Sport és Kultúra | Nem fut / nem fut | 12 000 / 63 000 / −4 000 / 2 000 |
+| 16 | Nyitott Alkotó és Innovációs Terek | Sport és Kultúra | Nem fut / nem fut | 6 000 / 33 000 / 4 000 / 10 000 |
+| 17 | Pályaorientáció és Tehetséggondozás | Sport és Kultúra | Nem fut / nem fut | 2 500 / 8 000 / 0 / 10 000 |
+| 18 | Műemléki Dreher-villa új funkcióval | Sport és Kultúra | Nem fut / nem fut | 10 000 / 65 000 / −3 500 / 5 000 |
+| 19 | Multifunkcionális Sportcentrum | Sport és Kultúra | Nem fut / nem fut | 15 000 / 240 000 / 27 000 / 88 000 |
+| 20 | Képzési együttműködések koordinációja | Sport és Kultúra | Nem fut / nem fut | 5 000 / 11 000 / 3 000 / 1 500 |
+| 21 | Közlekedési Múzeum | Sport és Kultúra | Nem fut / nem fut | 7 000 / 28 000 / 0 / 0 |
+| 22 | Operaház próbacentrum és műhelyház | Sport és Kultúra | Fut / fut | 0 / 0 / 0 / 0 |
+| 23 | Kosárlabdacsarnok | Sport és Kultúra | Fut / fut | 0 / 0 / 0 / 0 |
+| 24 | Velodrom | Sport és Kultúra | Fut / fut | 0 / 0 / 0 / 0 |
+| 25 | Bosch Önvezető Jármű Tesztközpont | Közlekedés | Nem fut / nem fut | 5 000 / 15 000 / 0 / 4 500 |
+| 26 | Reptér elérhetőség javítása | Közlekedés | Nem fut / nem fut | 8 000 / 20 000 / 0 / 0 |
+| 27 | Vasútfejlesztés | Közlekedés | Fut / fut | 3 000 / 12 000 / 0 / 0 |
+| 28 | Új trolibuszútvonal | Közlekedés | Nem fut / nem fut | 1 200 / 3 800 / 0 / 0 |
+| 29 | Bicikliútfejlesztés | Közlekedés | Nem fut / nem fut | 8 000 / 43 000 / 2 500 / 2 000 |
+| 30 | Közösségi kerékpár szolgáltatás bővítés (Bubi) | Közlekedés | Nem fut / nem fut | 3 000 / 18 000 / 5 000 / 3 000 |
+| 31 | P+R parkolók a vasút mellett | Közlekedés | Nem fut / nem fut | 8 000 / 64 000 / −3 500 / 4 000 |
+| 32 | Megújuló energia park | Környezet | Fut / fut | 25 000 / 210 000 / −45 000 / 10 000 |
+| 33 | A Népliget megújítása | Környezet | Nem fut / nem fut | 18 000 / 180 000 / 3 000 / 5 000 |
+| 34 | Robert Bosch campus bővítés | Környezet | Fut / fut | 0 / 0 / 0 / 0 |
+| 35 | Richter Központ – Új vállalati székház | Környezet | Fut / fut | 0 / 0 / 0 / 0 |
+
+A felület a **Bubihoz futó Bicikliútfejlesztést** ír elő; ez jelenleg nem fut, és a Bubi Start gombja tiltott. A **P+R feltétele a futó Vasútfejlesztés**, amely a tervben teljesül, és a Start gomb láthatóan aktív. A többi most megnyitott projektkártyán külön feltételsor nem jelent meg; ebből minden lehetséges feltétel hiánya nem bizonyítható. **VERIFIED / UNKNOWN.**
+
+A negatív fenntartási értékeket a felület előjelével közlöm. Hogy pontosan mikor és hogyan kerülnek a cash flow-ba, **UNKNOWN**.
+
+### Fontosabb projekt–tényező kapcsolatok
+
+A százalékok a projektkártyák által kijelzett hatások; nem bizonyított indexpont-változások. **VERIFIED**, [Projektek](https://edu.ecosim.hu/simulation/projects).
+
+- **17 Pályaorientáció:** képzettség **+1%**, oktatási intézmények **+0,7%**; a munkanélküliség soron a felület **+0,3%**-ot mutat. Ennek irányát különösen érdemes ellenőrizni.
+- **28 Új trolibuszútvonal:** közlekedési minőség **+0,8%**, levegőminőség **+0,5%**, fenntarthatóság **+0,3%**, tömegközlekedők aránya **+0,4%**.
+- **29 Bicikliútfejlesztés:** közlekedési minőség **+1,5%**, fenntarthatóság **+0,8%**, zöld területek **+0,3%**; a tömegközlekedők aránya **−0,2%**.
+- **31 P+R:** tömegközlekedők aránya **+1,5%**, közlekedési minőség **+1,2%**, de zöld területek **−0,6%**.
+- **33 Népliget:** zöld területek **+10%**, közbiztonság **+1,8%**, sport **+1,5%**, elégedettség **+1,4%**.
+
+Az előző audit közölte a **29 tényező P1/P2 táblázatát és a hat kategória súlyát**. A mostani gyűjtés a fenti döntési kapcsolatokat egészíti ki; a 35 projekt valamennyi egyedi hatásának teljes, strukturált leltára ebben a válaszban nincs reprodukálva, ezért e rész **PARTIAL**.
+
+## Intézményi döntések
+
+Forrás: [Intézmények](https://edu.ecosim.hu/simulation/institutions), a megnevezett alnézetek. A táblázatban minden döntési érték **P1 FACT → P2 PLAN / VERIFIED**. A felület a pénzmezők mellett külön egységet nem írt ki.
+
+| Alnézet | Bér | Képzés | További döntési keret |
+|---|---:|---:|---|
+| Oktatás | 550 → 550 | 14 400 → 14 400 | Fejlesztés 60 000 → 60 000 |
+| Művelődés és sport | 425 → 425 | 11 000 → 11 000 | Fejlesztés 47 300 → 47 300 |
+| Egészségügy | 580 → 580 | 13 000 → 13 000 | Fejlesztés 48 000 → 48 000 |
+| Szolgáltató | 395 → 395 | 39 600 → 39 600 | A nézetben további fejlesztési mező nem látszott |
+| Városi hivatal | 990 → 990 | 6 000 → 6 000 | Környezetfejlesztés 30 000 → 30 000; civil működési támogatás 20 400 → 20 400 |
+| Szociális intézmények | 462 → 462 | 12 000 → 12 000 | Lakásfelújítási támogatás 45 500 → 45 500; fejlesztés 58 500 → 58 500 |
+
+A P2-es nyitás/zárás mezők és kapacitáskövetkezményeik:
+
+| Intézménytípus | P1 művelet → P2 terv | Intézményszám P1 → P2 | Dolgozók P1 → P2 |
+|---|---:|---:|---:|
+| Középiskola | +1 → +1 | 8 → 9 | 552 → 621 fő |
+| Általános iskola | 0 → 0 | 13 → 13 | 663 → 663 fő |
+| Óvoda | 0 → 0 | 16 → 16 | 352 → 352 fő |
+| Bölcsőde | 0 → 0 | 10 → 10 | 270 → 270 fő |
+| Sportintézmény | +1 → +1 | 8 → 9 | 224 → 252 fő |
+| Művelődési intézmény | +1 → +1 | 6 → 7 | 108 → 126 fő |
+| Orvosi rendelő | +1 → +1 | 19 → 20 | 152 → 160 fő |
+| Szociális otthon | +1 → +1 | 9 → 10 | 207 → 230 fő |
+
+A kórház **1 → 1 db**, kapacitása **400 → 400**; a leírás szerint itt új kórház nyitása vagy meglévő zárása nem dönthető el. A szolgáltatói létszámok változatlanok: temetkezés **30**, parkolás **20**, kommunális **140**, víz/csatorna/távhő **101**, park- és közterületfenntartás **65**, ingatlankezelő **73 fő**. A városi hivatal **270 fő**.
+
+## Közlekedési döntések és személyzet
+
+Forrás: [Közlekedés](https://edu.ecosim.hu/simulation/transport). **P1 FACT → P2 PLAN / VERIFIED.**
+
+| Döntés vagy mutató | P1 → P2 |
+|---|---:|
+| Belsőégésű buszok beszerzése/eladása | −8 → −8 db |
+| Belsőégésű buszok száma | 62 → 54 db |
+| Beszerzett belsőégésű busz életkora | 0 → 0 év |
+| Belsőégésű busz karbantartása | 192 500 → 192 500 |
+| Elektromos buszok beszerzése/eladása | 0 → 0 db |
+| Elektromos buszok száma | 5 → 5 db |
+| Beszerzett elektromos busz életkora | 0 → 0 év |
+| Elektromos busz karbantartása | 18 000 → 18 000 |
+| Infrastruktúra-karbantartás | 165 000 → 165 000 |
+| Közlekedési kommunikáció | 33 600 → 33 600 |
+| Jármű-kihasználtság | 93,69% → 106,46% |
+
+A **106,46%** mutató mindkét busz-alnézetben azonosként jelenik meg; ezért nem bizonyított, hogy kizárólag a belsőégésű flottára vonatkozik. A járműkategóriák tényleges kapacitása külön nem volt számszerűen olvasható: **UNKNOWN**.
+
+| Személyzet | Felvétel/elbocsátás P1 → P2 | Zárólétszám P1 → P2 | Bér/fő | Képzés/fő | Kihasználtság P1 → P2 |
+|---|---:|---:|---:|---:|---:|
+| Járművezetők | +50 → +50 fő | 305 → 355 fő | 460 → 460 | 50 → 50 | 87,87% → 66,48% |
+| Szerelők | +10 → +10 fő | 34 → 44 fő | 480 → 480 | 50 → 50 | 93,07% → 61,5% |
+| Irodai dolgozók | −50 → −50 fő | 341 → 291 fő | 440 → 440 | 50 → 50 | 80,91% → 108,75% |
+
+A P2 személyi költség a három nézetben rendre **163 300**, **21 120** és **128 040**; a képzési költség **17 750**, **2 200** és **14 550**. A felület a számok mellett nem adta meg külön a pénznemet és időegységet.
+
+## Ismétlődő egyszeri műveletek
+
+A megvizsgált műveleti mezőkben **kilenc** nem nulla P1-érték ismétlődik P2-ben. A P2-es készlet- és létszámváltozások azt mutatják, hogy a terv újabb műveletként számol velük — **DERIVED**, a fenti források alapján.
+
+| Művelet | P1 FACT | P2 PLAN |
+|---|---:|---:|
+| Középiskola nyitása | +1 | +1 |
+| Sportintézmény nyitása | +1 | +1 |
+| Művelődési intézmény nyitása | +1 | +1 |
+| Orvosi rendelő nyitása | +1 | +1 |
+| Szociális otthon nyitása | +1 | +1 |
+| Belsőégésű busz eladása | −8 | −8 |
+| Járművezető felvétele | +50 | +50 |
+| Szerelő felvétele | +10 | +10 |
+| Irodai dolgozó elbocsátása | −50 | −50 |
+
+Ez a lista a **megtekintett, hozzáférhető műveleti mezőkre** teljes; a nem hozzáférhető vagy nem látható mezőkre nem terjeszthető ki. A P1-ben hasznos döntés P2-ben nem automatikusan helyes: különösen a **106,46%-os jármű-** és **108,75%-os irodai személyzeti kihasználtság**, valamint a vezetők és szerelők alacsonyabb tervezett kihasználtsága miatt.
+
+## Adók, szabályok és hitel
+
+Forrás: [Bevételek – Adók és Állami törvények](https://edu.ecosim.hu/simulation/income). **P1 FACT → P2 PLAN / VERIFIED.**
+
+A négy helyi adókulcs változatlan: iparűzési **0,3% → 0,3%**, gépjármű **2,5% → 2,5%**, kommunális **0,4% → 0,4%**, építményadó **0,1% → 0,1%**. Az előző auditban közölt hat szolgáltatási díj is változatlan.
+
+Az állami szabályok a leírás szerint nem állíthatók városvezetőként. A lakosságszám-alapú támogatási érték **9 → 9**, a közalkalmazotti minimálbér **350 → 350**. Normatívák: óvoda **52 → 54**, iskola **70 → 70**, szociális **30 → 30**, tömegközlekedés **4 → 4**, művelődés **3 → 3**, illetékek **2 → 2**, díjak **1 → 1**. A nézet nem adta meg e sorok minden egységét. A fejlesztési állami támogatás **130 000 → 130 000**, a vállalati fejlesztési támogatás **77 025 → 62 028**.
+
+Forrás: [Hitelek](https://edu.ecosim.hu/simulation/loans). **VERIFIED.**
+
+- Hosszú lejárat: P2 nyitó/záró állomány és döntés **0**, kamat **7,5%**. Egy periódusban a leírás szerint felvétel vagy visszafizetés lehetséges; a túlzott eladósodás büntetett.
+- Rövid lejárat: P2 összeg **0**, kamat **12%**. Negatív pénzügyi helyzet esetén a leírás szerint automatikusan keletkezik.
+- Konkrét hitellimit és változó lejárat részletes feltétele: **UNKNOWN**. Az előző cash flow-ban a változó lejáratú hitelfelvétel és kamat **0** volt, de ez nem a feltételek bizonyítéka.
+
+## Lakosság és vállalkozások
+
+Forrás: [Lakosság – Foglalkozás, kereset és Egyéb adatok](https://edu.ecosim.hu/simulation/population); [Vállalkozások](https://edu.ecosim.hu/simulation/corporations). **P1 FACT → P2 PLAN / VERIFIED.**
+
+A foglalkozási nézetben közalkalmazott **6 665 → 6 845 fő**, vállalkozásban dolgozó **41 087 → 46 688 fő**, munkanélküli **1 081 → 0 fő**. A nézet összesen **75 550 → 80 293 főt** mutat. Az aktív alkalmazottak átlagbére **442 → 445**, az átlagnyugdíj **227 → 228**; pénznem és időegység a soroknál nem szerepelt.
+
+A lakossági egyéb adatok szerint az autók száma **470 → 487 / 1 000 lakos**, az internetellátottság **86,53% → 88,09%**, a zöld területek aránya **30,95% → 29,87%**, a lakások száma **27 503 → 27 768 db**.
+
+**CONFLICT:** az adónézet ugyanezt az autószámot **470 → 487** értékkel, de „/ 100 fő” címkével mutatja. A lakossági „/ 1 000 lakos” és az összefoglaló **47,03 → 48,66 / 100 fő** közel összhangban áll; az adónézet címkéje feltehetően hibás, de ennek oka **UNKNOWN**.
+
+| Vállalkozásméret | Darabszám P1 → P2 | Foglalkoztatott P1 → P2 | Bevétel P1 → P2 |
+|---|---:|---:|---:|
+| Kisvállalkozás | 4 765 → 5 226 | 21 441 → 23 754 fő | 2 834 976 → 3 187 883 |
+| Közepes | 92 → 108 | 8 271 → 9 828 fő | 4 871 230 → 5 883 790 |
+| Nagy | 25 → 28 | 11 375 → 13 106 fő | 12 475 000 → 14 621 308 |
+
+## ROI-alternatívák és következő lépés
+
+A három alternatíva **előzetes összevetés**, nem rangsorolt optimum. A projektkártyák nominális költségei és hatásai láthatók, de a támogatás elszámolása, a pontos cash-flow-időzítés és a tényleges indexhatás **UNKNOWN**. Forrás: [Projektek](https://edu.ecosim.hu/simulation/projects).
+
+| Alternatíva | Látható indítás / beruházás / fenntartás / támogatás | Mi szól mellette és mi korlátozza? |
+|---|---:|---|
+| **Új trolibuszútvonal** | 1 200 / 3 800 / 0 / 0 | Kis névleges költség; több közlekedési és környezeti hatás. A túlterhelt járműkapacitásra gyakorolt tényleges hatása nem ismert. |
+| **Pályaorientáció és Tehetséggondozás** | 2 500 / 8 000 / 0 / 10 000 | A képzettségre és oktatásra hat; a névleges támogatás magas. A **+0,3%-os munkanélküliségi sor** értelmezése és támogatási elszámolása tisztázandó. |
+| **Vállalati Társadalmi Felelősség Platform** | 3 000 / 2 000 / 2 000 / 15 000 | Széles hatáskör és magas névleges támogatás; ismétlődő fenntartást jelez, a nettó pénzhatás nem bizonyított. |
+
+**A következő legjobb lépés:** a kilenc felsorolt, P1-ből ismétlődő egyszeri mezőt egyenként felülvizsgálni a P2 célállapotához képest, elsőként a **−8 busz**, **−50 irodai dolgozó**, **+50 vezető** és **+10 szerelő** mezőket. Ez a legközvetlenebbül ellenőrizhető döntési kockázat a projekt-ROI számítása előtt.
+
+A gyűjtés során csak címkézett olvasási alnézeteket nyitottam meg; döntési mezőt, projektet, hitelt vagy periódust nem módosítottam, és nem mentettem.
